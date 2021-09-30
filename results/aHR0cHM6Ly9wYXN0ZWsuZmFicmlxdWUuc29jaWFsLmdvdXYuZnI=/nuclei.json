@@ -1,0 +1,350 @@
+[
+  {
+    "templateID": "nginx-version",
+    "info": {
+      "name": "nginx version detect",
+      "author": [
+        "philippedelteil"
+      ],
+      "tags": [
+        "tech",
+        "nginx"
+      ],
+      "description": "Some nginx servers have the version on the response header. Useful when you need to find specific CVEs on your targets.",
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr",
+    "extracted_results": [
+      "nginx"
+    ],
+    "request": "GET / HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nContent-Security-Policy: base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-Pf9Cz28RZjKMPeCzfF2Tyw=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com\r\nContent-Type: text/html; charset=utf-8\r\nCsrf-Token: h8pV78l3RO8Qr8TOqtlasYOTxB7IJ5T8jsj9/kbMYi4RtnzplAWJMwKdXoPJwhWhMN2vaKap6dNRYaI5tl9zgg==\r\nDate: Thu, 30 Sep 2021 13:49:35 GMT\r\nEtag: W/\"82e6c1468025e4c1d65acac206fe7d31\"\r\nExpires: -1\r\nPragma: no-cache\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nSet-Cookie: _zammad_session_a138cfd0f37=f0671ae3928e76d57a1635e998efe59f; path=/; secure; HttpOnly\r\nX-Content-Type-Options: nosniff\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 81573235-7124-4fdd-b291-9429e6bd7185\r\nX-Runtime: 0.064555\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <title>Pastek</title>\n  <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\" />\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-04cc332d1a643ed79cbdb0bace5f45295e217f237070fe8c6d848a9677bfacaf.css\" />\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/application-print-135eb2e791ad7e5a9659045ded6fd5885050e21b1f55302ec6024cd0612e2338.css\" />\n  <script src=\"/assets/application-e3d8b4961555bcc08dac45f95cce65fa53fdb22ff3c9481b61ccbf25836f44a6.js\" nonce=\"Pf9Cz28RZjKMPeCzfF2Tyw==\" defer=\"defer\"></script>\n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"6/ySAWzrnTyt28YjL8BeNhOjTQgZVjm6Fh7n0Yj8NBp9gLsHMZlQ4L/pXG5M2xEmoO0mfnfYRJXJt7gWeG8ltg==\" />\n</head>\n<body>\n\n<!-- svgstore fallback -->\n<script nonce=\"Pf9Cz28RZjKMPeCzfF2Tyw==\">\n//<![CDATA[\n  /*\n    detect if browser is\n    - Chrome 14-20\n    - Android Browser 4.1+\n    - iOS 6-7\n    - Safari 6\n    - Edge 12\n    - IE 9-11\n  */\n  window.svgPolyfill = /\\bEdge\\/12\\b|\\bTrident\\/[567]\\b|\\bVersion\\/7.0 Safari\\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\\/(\\d+)/) || [])[1] < 537;\n\n  (function (doc) {\n    if(!svgPolyfill)\n      return\n\n    var scripts = doc.getElementsByTagName('script')\n    var script = scripts[scripts.length - 1]\n    var xhr = new XMLHttpRequest()\n    xhr.onload = function () {\n      var div = doc.createElement('div')\n      div.innerHTML = this.responseText\n      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'\n      script.parentNode.insertBefore(div, script)\n    }\n    xhr.open('get', 'assets/images/icons.svg', true)\n    xhr.send()\n  })(document)\n\n//]]>\n</script><div id=\"app\"></div>\n<div class=\"splash\">\n  <svg class=\"icon icon-logo\"><use xlink:href=\"assets/images/icons.svg#icon-logo\" /></svg>\n  <div class=\"splash-title\">Loading...</div>\n</div>\n\n\n</body>\n</html>\n",
+    "timestamp": "2021-09-30T13:49:35.282865515Z"
+  },
+  {
+    "templateID": "tech-detect",
+    "info": {
+      "name": "Wappalyzer Technology Detection",
+      "author": [
+        "hakluke"
+      ],
+      "tags": [
+        "tech"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher_name": "nginx",
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nContent-Security-Policy: base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-Gw1AtggNtE9lPgVEAE4cHQ=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com\r\nContent-Type: text/html; charset=utf-8\r\nCsrf-Token: gTElLsqgXkxMUGCrS19Fbt+eefgqH3FaZFLXhtGiceDE0q5sZSiqFS5qiXVEUZcydiVeNGMZFyZM+zJMyfilrg==\r\nDate: Thu, 30 Sep 2021 13:49:53 GMT\r\nEtag: W/\"d4f885b17eb89f774f75468229a2e95f\"\r\nExpires: -1\r\nPragma: no-cache\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nSet-Cookie: _zammad_session_a138cfd0f37=56736b7141ae948c79697caf163894fc; path=/; secure; HttpOnly\r\nX-Content-Type-Options: nosniff\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: a1c4e45b-3ab6-4ff9-8b9c-fd7f280c79f0\r\nX-Runtime: 0.022898\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <title>Pastek</title>\n  <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\" />\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-04cc332d1a643ed79cbdb0bace5f45295e217f237070fe8c6d848a9677bfacaf.css\" />\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/application-print-135eb2e791ad7e5a9659045ded6fd5885050e21b1f55302ec6024cd0612e2338.css\" />\n  <script src=\"/assets/application-e3d8b4961555bcc08dac45f95cce65fa53fdb22ff3c9481b61ccbf25836f44a6.js\" nonce=\"Gw1AtggNtE9lPgVEAE4cHQ==\" defer=\"defer\"></script>\n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"YPfaJzHiNJWOlR30w3+wcBuKpgplIGm13kzOFavlXoYlFFFlnmrAzOyv9CrMcWIssjGBxiwmD8n25Svfs7+KyA==\" />\n</head>\n<body>\n\n<!-- svgstore fallback -->\n<script nonce=\"Gw1AtggNtE9lPgVEAE4cHQ==\">\n//<![CDATA[\n  /*\n    detect if browser is\n    - Chrome 14-20\n    - Android Browser 4.1+\n    - iOS 6-7\n    - Safari 6\n    - Edge 12\n    - IE 9-11\n  */\n  window.svgPolyfill = /\\bEdge\\/12\\b|\\bTrident\\/[567]\\b|\\bVersion\\/7.0 Safari\\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\\/(\\d+)/) || [])[1] < 537;\n\n  (function (doc) {\n    if(!svgPolyfill)\n      return\n\n    var scripts = doc.getElementsByTagName('script')\n    var script = scripts[scripts.length - 1]\n    var xhr = new XMLHttpRequest()\n    xhr.onload = function () {\n      var div = doc.createElement('div')\n      div.innerHTML = this.responseText\n      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'\n      script.parentNode.insertBefore(div, script)\n    }\n    xhr.open('get', 'assets/images/icons.svg', true)\n    xhr.send()\n  })(document)\n\n//]]>\n</script><div id=\"app\"></div>\n<div class=\"splash\">\n  <svg class=\"icon icon-logo\"><use xlink:href=\"assets/images/icons.svg#icon-logo\" /></svg>\n  <div class=\"splash-title\">Loading...</div>\n</div>\n\n\n</body>\n</html>\n",
+    "timestamp": "2021-09-30T13:49:53.125567857Z"
+  },
+  {
+    "templateID": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher_name": "strict-transport-security",
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nContent-Security-Policy: base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-lx4b2wzRX4WVyr9uhNHzqg=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com\r\nContent-Type: text/html; charset=utf-8\r\nCsrf-Token: gyEuhNL4gddldW5yypzScB+iLAi1ocxxa0bRkVIPoHajoTOjfvIiXp1blUvlyiqCroAKYp5iFLf5cOj3A9kwKA==\r\nDate: Thu, 30 Sep 2021 13:50:04 GMT\r\nEtag: W/\"1c4a5a6ecb81e3781c4ab6a8d403166d\"\r\nExpires: -1\r\nPragma: no-cache\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nSet-Cookie: _zammad_session_a138cfd0f37=1f3f462d77a5103f8bb6329ed697426d; path=/; secure; HttpOnly\r\nX-Content-Type-Options: nosniff\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 860c0a04-49e4-4e47-9e8a-dde7207d684c\r\nX-Runtime: 0.037138\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <title>Pastek</title>\n  <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\" />\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-04cc332d1a643ed79cbdb0bace5f45295e217f237070fe8c6d848a9677bfacaf.css\" />\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/application-print-135eb2e791ad7e5a9659045ded6fd5885050e21b1f55302ec6024cd0612e2338.css\" />\n  <script src=\"/assets/application-e3d8b4961555bcc08dac45f95cce65fa53fdb22ff3c9481b61ccbf25836f44a6.js\" nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\" defer=\"defer\"></script>\n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"XZKaGlq1rWfwv8xZ6O5UWkvF4Ru1TxAOsIqrX1IDXht9Eoc99r8O7giRN2DHuKyo+ufHcZ6MyMgivJI5A9XORQ==\" />\n</head>\n<body>\n\n<!-- svgstore fallback -->\n<script nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\">\n//<![CDATA[\n  /*\n    detect if browser is\n    - Chrome 14-20\n    - Android Browser 4.1+\n    - iOS 6-7\n    - Safari 6\n    - Edge 12\n    - IE 9-11\n  */\n  window.svgPolyfill = /\\bEdge\\/12\\b|\\bTrident\\/[567]\\b|\\bVersion\\/7.0 Safari\\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\\/(\\d+)/) || [])[1] < 537;\n\n  (function (doc) {\n    if(!svgPolyfill)\n      return\n\n    var scripts = doc.getElementsByTagName('script')\n    var script = scripts[scripts.length - 1]\n    var xhr = new XMLHttpRequest()\n    xhr.onload = function () {\n      var div = doc.createElement('div')\n      div.innerHTML = this.responseText\n      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'\n      script.parentNode.insertBefore(div, script)\n    }\n    xhr.open('get', 'assets/images/icons.svg', true)\n    xhr.send()\n  })(document)\n\n//]]>\n</script><div id=\"app\"></div>\n<div class=\"splash\">\n  <svg class=\"icon icon-logo\"><use xlink:href=\"assets/images/icons.svg#icon-logo\" /></svg>\n  <div class=\"splash-title\">Loading...</div>\n</div>\n\n\n</body>\n</html>\n",
+    "timestamp": "2021-09-30T13:50:04.931872809Z"
+  },
+  {
+    "templateID": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher_name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nContent-Security-Policy: base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-lx4b2wzRX4WVyr9uhNHzqg=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com\r\nContent-Type: text/html; charset=utf-8\r\nCsrf-Token: gyEuhNL4gddldW5yypzScB+iLAi1ocxxa0bRkVIPoHajoTOjfvIiXp1blUvlyiqCroAKYp5iFLf5cOj3A9kwKA==\r\nDate: Thu, 30 Sep 2021 13:50:04 GMT\r\nEtag: W/\"1c4a5a6ecb81e3781c4ab6a8d403166d\"\r\nExpires: -1\r\nPragma: no-cache\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nSet-Cookie: _zammad_session_a138cfd0f37=1f3f462d77a5103f8bb6329ed697426d; path=/; secure; HttpOnly\r\nX-Content-Type-Options: nosniff\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 860c0a04-49e4-4e47-9e8a-dde7207d684c\r\nX-Runtime: 0.037138\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <title>Pastek</title>\n  <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\" />\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-04cc332d1a643ed79cbdb0bace5f45295e217f237070fe8c6d848a9677bfacaf.css\" />\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/application-print-135eb2e791ad7e5a9659045ded6fd5885050e21b1f55302ec6024cd0612e2338.css\" />\n  <script src=\"/assets/application-e3d8b4961555bcc08dac45f95cce65fa53fdb22ff3c9481b61ccbf25836f44a6.js\" nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\" defer=\"defer\"></script>\n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"XZKaGlq1rWfwv8xZ6O5UWkvF4Ru1TxAOsIqrX1IDXht9Eoc99r8O7giRN2DHuKyo+ufHcZ6MyMgivJI5A9XORQ==\" />\n</head>\n<body>\n\n<!-- svgstore fallback -->\n<script nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\">\n//<![CDATA[\n  /*\n    detect if browser is\n    - Chrome 14-20\n    - Android Browser 4.1+\n    - iOS 6-7\n    - Safari 6\n    - Edge 12\n    - IE 9-11\n  */\n  window.svgPolyfill = /\\bEdge\\/12\\b|\\bTrident\\/[567]\\b|\\bVersion\\/7.0 Safari\\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\\/(\\d+)/) || [])[1] < 537;\n\n  (function (doc) {\n    if(!svgPolyfill)\n      return\n\n    var scripts = doc.getElementsByTagName('script')\n    var script = scripts[scripts.length - 1]\n    var xhr = new XMLHttpRequest()\n    xhr.onload = function () {\n      var div = doc.createElement('div')\n      div.innerHTML = this.responseText\n      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'\n      script.parentNode.insertBefore(div, script)\n    }\n    xhr.open('get', 'assets/images/icons.svg', true)\n    xhr.send()\n  })(document)\n\n//]]>\n</script><div id=\"app\"></div>\n<div class=\"splash\">\n  <svg class=\"icon icon-logo\"><use xlink:href=\"assets/images/icons.svg#icon-logo\" /></svg>\n  <div class=\"splash-title\">Loading...</div>\n</div>\n\n\n</body>\n</html>\n",
+    "timestamp": "2021-09-30T13:50:04.934973728Z"
+  },
+  {
+    "templateID": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher_name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nContent-Security-Policy: base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-lx4b2wzRX4WVyr9uhNHzqg=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com\r\nContent-Type: text/html; charset=utf-8\r\nCsrf-Token: gyEuhNL4gddldW5yypzScB+iLAi1ocxxa0bRkVIPoHajoTOjfvIiXp1blUvlyiqCroAKYp5iFLf5cOj3A9kwKA==\r\nDate: Thu, 30 Sep 2021 13:50:04 GMT\r\nEtag: W/\"1c4a5a6ecb81e3781c4ab6a8d403166d\"\r\nExpires: -1\r\nPragma: no-cache\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nSet-Cookie: _zammad_session_a138cfd0f37=1f3f462d77a5103f8bb6329ed697426d; path=/; secure; HttpOnly\r\nX-Content-Type-Options: nosniff\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 860c0a04-49e4-4e47-9e8a-dde7207d684c\r\nX-Runtime: 0.037138\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <title>Pastek</title>\n  <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\" />\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-04cc332d1a643ed79cbdb0bace5f45295e217f237070fe8c6d848a9677bfacaf.css\" />\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/application-print-135eb2e791ad7e5a9659045ded6fd5885050e21b1f55302ec6024cd0612e2338.css\" />\n  <script src=\"/assets/application-e3d8b4961555bcc08dac45f95cce65fa53fdb22ff3c9481b61ccbf25836f44a6.js\" nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\" defer=\"defer\"></script>\n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"XZKaGlq1rWfwv8xZ6O5UWkvF4Ru1TxAOsIqrX1IDXht9Eoc99r8O7giRN2DHuKyo+ufHcZ6MyMgivJI5A9XORQ==\" />\n</head>\n<body>\n\n<!-- svgstore fallback -->\n<script nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\">\n//<![CDATA[\n  /*\n    detect if browser is\n    - Chrome 14-20\n    - Android Browser 4.1+\n    - iOS 6-7\n    - Safari 6\n    - Edge 12\n    - IE 9-11\n  */\n  window.svgPolyfill = /\\bEdge\\/12\\b|\\bTrident\\/[567]\\b|\\bVersion\\/7.0 Safari\\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\\/(\\d+)/) || [])[1] < 537;\n\n  (function (doc) {\n    if(!svgPolyfill)\n      return\n\n    var scripts = doc.getElementsByTagName('script')\n    var script = scripts[scripts.length - 1]\n    var xhr = new XMLHttpRequest()\n    xhr.onload = function () {\n      var div = doc.createElement('div')\n      div.innerHTML = this.responseText\n      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'\n      script.parentNode.insertBefore(div, script)\n    }\n    xhr.open('get', 'assets/images/icons.svg', true)\n    xhr.send()\n  })(document)\n\n//]]>\n</script><div id=\"app\"></div>\n<div class=\"splash\">\n  <svg class=\"icon icon-logo\"><use xlink:href=\"assets/images/icons.svg#icon-logo\" /></svg>\n  <div class=\"splash-title\">Loading...</div>\n</div>\n\n\n</body>\n</html>\n",
+    "timestamp": "2021-09-30T13:50:04.935606432Z"
+  },
+  {
+    "templateID": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher_name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nContent-Security-Policy: base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-lx4b2wzRX4WVyr9uhNHzqg=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com\r\nContent-Type: text/html; charset=utf-8\r\nCsrf-Token: gyEuhNL4gddldW5yypzScB+iLAi1ocxxa0bRkVIPoHajoTOjfvIiXp1blUvlyiqCroAKYp5iFLf5cOj3A9kwKA==\r\nDate: Thu, 30 Sep 2021 13:50:04 GMT\r\nEtag: W/\"1c4a5a6ecb81e3781c4ab6a8d403166d\"\r\nExpires: -1\r\nPragma: no-cache\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nSet-Cookie: _zammad_session_a138cfd0f37=1f3f462d77a5103f8bb6329ed697426d; path=/; secure; HttpOnly\r\nX-Content-Type-Options: nosniff\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 860c0a04-49e4-4e47-9e8a-dde7207d684c\r\nX-Runtime: 0.037138\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <title>Pastek</title>\n  <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\" />\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-04cc332d1a643ed79cbdb0bace5f45295e217f237070fe8c6d848a9677bfacaf.css\" />\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/application-print-135eb2e791ad7e5a9659045ded6fd5885050e21b1f55302ec6024cd0612e2338.css\" />\n  <script src=\"/assets/application-e3d8b4961555bcc08dac45f95cce65fa53fdb22ff3c9481b61ccbf25836f44a6.js\" nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\" defer=\"defer\"></script>\n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"XZKaGlq1rWfwv8xZ6O5UWkvF4Ru1TxAOsIqrX1IDXht9Eoc99r8O7giRN2DHuKyo+ufHcZ6MyMgivJI5A9XORQ==\" />\n</head>\n<body>\n\n<!-- svgstore fallback -->\n<script nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\">\n//<![CDATA[\n  /*\n    detect if browser is\n    - Chrome 14-20\n    - Android Browser 4.1+\n    - iOS 6-7\n    - Safari 6\n    - Edge 12\n    - IE 9-11\n  */\n  window.svgPolyfill = /\\bEdge\\/12\\b|\\bTrident\\/[567]\\b|\\bVersion\\/7.0 Safari\\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\\/(\\d+)/) || [])[1] < 537;\n\n  (function (doc) {\n    if(!svgPolyfill)\n      return\n\n    var scripts = doc.getElementsByTagName('script')\n    var script = scripts[scripts.length - 1]\n    var xhr = new XMLHttpRequest()\n    xhr.onload = function () {\n      var div = doc.createElement('div')\n      div.innerHTML = this.responseText\n      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'\n      script.parentNode.insertBefore(div, script)\n    }\n    xhr.open('get', 'assets/images/icons.svg', true)\n    xhr.send()\n  })(document)\n\n//]]>\n</script><div id=\"app\"></div>\n<div class=\"splash\">\n  <svg class=\"icon icon-logo\"><use xlink:href=\"assets/images/icons.svg#icon-logo\" /></svg>\n  <div class=\"splash-title\">Loading...</div>\n</div>\n\n\n</body>\n</html>\n",
+    "timestamp": "2021-09-30T13:50:04.935646133Z"
+  },
+  {
+    "templateID": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher_name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nContent-Security-Policy: base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-lx4b2wzRX4WVyr9uhNHzqg=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com\r\nContent-Type: text/html; charset=utf-8\r\nCsrf-Token: gyEuhNL4gddldW5yypzScB+iLAi1ocxxa0bRkVIPoHajoTOjfvIiXp1blUvlyiqCroAKYp5iFLf5cOj3A9kwKA==\r\nDate: Thu, 30 Sep 2021 13:50:04 GMT\r\nEtag: W/\"1c4a5a6ecb81e3781c4ab6a8d403166d\"\r\nExpires: -1\r\nPragma: no-cache\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nSet-Cookie: _zammad_session_a138cfd0f37=1f3f462d77a5103f8bb6329ed697426d; path=/; secure; HttpOnly\r\nX-Content-Type-Options: nosniff\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 860c0a04-49e4-4e47-9e8a-dde7207d684c\r\nX-Runtime: 0.037138\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <title>Pastek</title>\n  <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\" />\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-04cc332d1a643ed79cbdb0bace5f45295e217f237070fe8c6d848a9677bfacaf.css\" />\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/application-print-135eb2e791ad7e5a9659045ded6fd5885050e21b1f55302ec6024cd0612e2338.css\" />\n  <script src=\"/assets/application-e3d8b4961555bcc08dac45f95cce65fa53fdb22ff3c9481b61ccbf25836f44a6.js\" nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\" defer=\"defer\"></script>\n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"XZKaGlq1rWfwv8xZ6O5UWkvF4Ru1TxAOsIqrX1IDXht9Eoc99r8O7giRN2DHuKyo+ufHcZ6MyMgivJI5A9XORQ==\" />\n</head>\n<body>\n\n<!-- svgstore fallback -->\n<script nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\">\n//<![CDATA[\n  /*\n    detect if browser is\n    - Chrome 14-20\n    - Android Browser 4.1+\n    - iOS 6-7\n    - Safari 6\n    - Edge 12\n    - IE 9-11\n  */\n  window.svgPolyfill = /\\bEdge\\/12\\b|\\bTrident\\/[567]\\b|\\bVersion\\/7.0 Safari\\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\\/(\\d+)/) || [])[1] < 537;\n\n  (function (doc) {\n    if(!svgPolyfill)\n      return\n\n    var scripts = doc.getElementsByTagName('script')\n    var script = scripts[scripts.length - 1]\n    var xhr = new XMLHttpRequest()\n    xhr.onload = function () {\n      var div = doc.createElement('div')\n      div.innerHTML = this.responseText\n      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'\n      script.parentNode.insertBefore(div, script)\n    }\n    xhr.open('get', 'assets/images/icons.svg', true)\n    xhr.send()\n  })(document)\n\n//]]>\n</script><div id=\"app\"></div>\n<div class=\"splash\">\n  <svg class=\"icon icon-logo\"><use xlink:href=\"assets/images/icons.svg#icon-logo\" /></svg>\n  <div class=\"splash-title\">Loading...</div>\n</div>\n\n\n</body>\n</html>\n",
+    "timestamp": "2021-09-30T13:50:04.935676033Z"
+  },
+  {
+    "templateID": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher_name": "access-control-max-age",
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nContent-Security-Policy: base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-lx4b2wzRX4WVyr9uhNHzqg=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com\r\nContent-Type: text/html; charset=utf-8\r\nCsrf-Token: gyEuhNL4gddldW5yypzScB+iLAi1ocxxa0bRkVIPoHajoTOjfvIiXp1blUvlyiqCroAKYp5iFLf5cOj3A9kwKA==\r\nDate: Thu, 30 Sep 2021 13:50:04 GMT\r\nEtag: W/\"1c4a5a6ecb81e3781c4ab6a8d403166d\"\r\nExpires: -1\r\nPragma: no-cache\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nSet-Cookie: _zammad_session_a138cfd0f37=1f3f462d77a5103f8bb6329ed697426d; path=/; secure; HttpOnly\r\nX-Content-Type-Options: nosniff\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 860c0a04-49e4-4e47-9e8a-dde7207d684c\r\nX-Runtime: 0.037138\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <title>Pastek</title>\n  <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\" />\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-04cc332d1a643ed79cbdb0bace5f45295e217f237070fe8c6d848a9677bfacaf.css\" />\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/application-print-135eb2e791ad7e5a9659045ded6fd5885050e21b1f55302ec6024cd0612e2338.css\" />\n  <script src=\"/assets/application-e3d8b4961555bcc08dac45f95cce65fa53fdb22ff3c9481b61ccbf25836f44a6.js\" nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\" defer=\"defer\"></script>\n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"XZKaGlq1rWfwv8xZ6O5UWkvF4Ru1TxAOsIqrX1IDXht9Eoc99r8O7giRN2DHuKyo+ufHcZ6MyMgivJI5A9XORQ==\" />\n</head>\n<body>\n\n<!-- svgstore fallback -->\n<script nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\">\n//<![CDATA[\n  /*\n    detect if browser is\n    - Chrome 14-20\n    - Android Browser 4.1+\n    - iOS 6-7\n    - Safari 6\n    - Edge 12\n    - IE 9-11\n  */\n  window.svgPolyfill = /\\bEdge\\/12\\b|\\bTrident\\/[567]\\b|\\bVersion\\/7.0 Safari\\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\\/(\\d+)/) || [])[1] < 537;\n\n  (function (doc) {\n    if(!svgPolyfill)\n      return\n\n    var scripts = doc.getElementsByTagName('script')\n    var script = scripts[scripts.length - 1]\n    var xhr = new XMLHttpRequest()\n    xhr.onload = function () {\n      var div = doc.createElement('div')\n      div.innerHTML = this.responseText\n      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'\n      script.parentNode.insertBefore(div, script)\n    }\n    xhr.open('get', 'assets/images/icons.svg', true)\n    xhr.send()\n  })(document)\n\n//]]>\n</script><div id=\"app\"></div>\n<div class=\"splash\">\n  <svg class=\"icon icon-logo\"><use xlink:href=\"assets/images/icons.svg#icon-logo\" /></svg>\n  <div class=\"splash-title\">Loading...</div>\n</div>\n\n\n</body>\n</html>\n",
+    "timestamp": "2021-09-30T13:50:04.935703933Z"
+  },
+  {
+    "templateID": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher_name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nContent-Security-Policy: base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-lx4b2wzRX4WVyr9uhNHzqg=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com\r\nContent-Type: text/html; charset=utf-8\r\nCsrf-Token: gyEuhNL4gddldW5yypzScB+iLAi1ocxxa0bRkVIPoHajoTOjfvIiXp1blUvlyiqCroAKYp5iFLf5cOj3A9kwKA==\r\nDate: Thu, 30 Sep 2021 13:50:04 GMT\r\nEtag: W/\"1c4a5a6ecb81e3781c4ab6a8d403166d\"\r\nExpires: -1\r\nPragma: no-cache\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nSet-Cookie: _zammad_session_a138cfd0f37=1f3f462d77a5103f8bb6329ed697426d; path=/; secure; HttpOnly\r\nX-Content-Type-Options: nosniff\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 860c0a04-49e4-4e47-9e8a-dde7207d684c\r\nX-Runtime: 0.037138\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <title>Pastek</title>\n  <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\" />\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-04cc332d1a643ed79cbdb0bace5f45295e217f237070fe8c6d848a9677bfacaf.css\" />\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/application-print-135eb2e791ad7e5a9659045ded6fd5885050e21b1f55302ec6024cd0612e2338.css\" />\n  <script src=\"/assets/application-e3d8b4961555bcc08dac45f95cce65fa53fdb22ff3c9481b61ccbf25836f44a6.js\" nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\" defer=\"defer\"></script>\n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"XZKaGlq1rWfwv8xZ6O5UWkvF4Ru1TxAOsIqrX1IDXht9Eoc99r8O7giRN2DHuKyo+ufHcZ6MyMgivJI5A9XORQ==\" />\n</head>\n<body>\n\n<!-- svgstore fallback -->\n<script nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\">\n//<![CDATA[\n  /*\n    detect if browser is\n    - Chrome 14-20\n    - Android Browser 4.1+\n    - iOS 6-7\n    - Safari 6\n    - Edge 12\n    - IE 9-11\n  */\n  window.svgPolyfill = /\\bEdge\\/12\\b|\\bTrident\\/[567]\\b|\\bVersion\\/7.0 Safari\\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\\/(\\d+)/) || [])[1] < 537;\n\n  (function (doc) {\n    if(!svgPolyfill)\n      return\n\n    var scripts = doc.getElementsByTagName('script')\n    var script = scripts[scripts.length - 1]\n    var xhr = new XMLHttpRequest()\n    xhr.onload = function () {\n      var div = doc.createElement('div')\n      div.innerHTML = this.responseText\n      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'\n      script.parentNode.insertBefore(div, script)\n    }\n    xhr.open('get', 'assets/images/icons.svg', true)\n    xhr.send()\n  })(document)\n\n//]]>\n</script><div id=\"app\"></div>\n<div class=\"splash\">\n  <svg class=\"icon icon-logo\"><use xlink:href=\"assets/images/icons.svg#icon-logo\" /></svg>\n  <div class=\"splash-title\">Loading...</div>\n</div>\n\n\n</body>\n</html>\n",
+    "timestamp": "2021-09-30T13:50:04.935731233Z"
+  },
+  {
+    "templateID": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher_name": "clear-site-data",
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nContent-Security-Policy: base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-lx4b2wzRX4WVyr9uhNHzqg=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com\r\nContent-Type: text/html; charset=utf-8\r\nCsrf-Token: gyEuhNL4gddldW5yypzScB+iLAi1ocxxa0bRkVIPoHajoTOjfvIiXp1blUvlyiqCroAKYp5iFLf5cOj3A9kwKA==\r\nDate: Thu, 30 Sep 2021 13:50:04 GMT\r\nEtag: W/\"1c4a5a6ecb81e3781c4ab6a8d403166d\"\r\nExpires: -1\r\nPragma: no-cache\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nSet-Cookie: _zammad_session_a138cfd0f37=1f3f462d77a5103f8bb6329ed697426d; path=/; secure; HttpOnly\r\nX-Content-Type-Options: nosniff\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 860c0a04-49e4-4e47-9e8a-dde7207d684c\r\nX-Runtime: 0.037138\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <title>Pastek</title>\n  <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\" />\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-04cc332d1a643ed79cbdb0bace5f45295e217f237070fe8c6d848a9677bfacaf.css\" />\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/application-print-135eb2e791ad7e5a9659045ded6fd5885050e21b1f55302ec6024cd0612e2338.css\" />\n  <script src=\"/assets/application-e3d8b4961555bcc08dac45f95cce65fa53fdb22ff3c9481b61ccbf25836f44a6.js\" nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\" defer=\"defer\"></script>\n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"XZKaGlq1rWfwv8xZ6O5UWkvF4Ru1TxAOsIqrX1IDXht9Eoc99r8O7giRN2DHuKyo+ufHcZ6MyMgivJI5A9XORQ==\" />\n</head>\n<body>\n\n<!-- svgstore fallback -->\n<script nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\">\n//<![CDATA[\n  /*\n    detect if browser is\n    - Chrome 14-20\n    - Android Browser 4.1+\n    - iOS 6-7\n    - Safari 6\n    - Edge 12\n    - IE 9-11\n  */\n  window.svgPolyfill = /\\bEdge\\/12\\b|\\bTrident\\/[567]\\b|\\bVersion\\/7.0 Safari\\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\\/(\\d+)/) || [])[1] < 537;\n\n  (function (doc) {\n    if(!svgPolyfill)\n      return\n\n    var scripts = doc.getElementsByTagName('script')\n    var script = scripts[scripts.length - 1]\n    var xhr = new XMLHttpRequest()\n    xhr.onload = function () {\n      var div = doc.createElement('div')\n      div.innerHTML = this.responseText\n      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'\n      script.parentNode.insertBefore(div, script)\n    }\n    xhr.open('get', 'assets/images/icons.svg', true)\n    xhr.send()\n  })(document)\n\n//]]>\n</script><div id=\"app\"></div>\n<div class=\"splash\">\n  <svg class=\"icon icon-logo\"><use xlink:href=\"assets/images/icons.svg#icon-logo\" /></svg>\n  <div class=\"splash-title\">Loading...</div>\n</div>\n\n\n</body>\n</html>\n",
+    "timestamp": "2021-09-30T13:50:04.935793634Z"
+  },
+  {
+    "templateID": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher_name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nContent-Security-Policy: base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-lx4b2wzRX4WVyr9uhNHzqg=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com\r\nContent-Type: text/html; charset=utf-8\r\nCsrf-Token: gyEuhNL4gddldW5yypzScB+iLAi1ocxxa0bRkVIPoHajoTOjfvIiXp1blUvlyiqCroAKYp5iFLf5cOj3A9kwKA==\r\nDate: Thu, 30 Sep 2021 13:50:04 GMT\r\nEtag: W/\"1c4a5a6ecb81e3781c4ab6a8d403166d\"\r\nExpires: -1\r\nPragma: no-cache\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nSet-Cookie: _zammad_session_a138cfd0f37=1f3f462d77a5103f8bb6329ed697426d; path=/; secure; HttpOnly\r\nX-Content-Type-Options: nosniff\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 860c0a04-49e4-4e47-9e8a-dde7207d684c\r\nX-Runtime: 0.037138\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <title>Pastek</title>\n  <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\" />\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-04cc332d1a643ed79cbdb0bace5f45295e217f237070fe8c6d848a9677bfacaf.css\" />\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/application-print-135eb2e791ad7e5a9659045ded6fd5885050e21b1f55302ec6024cd0612e2338.css\" />\n  <script src=\"/assets/application-e3d8b4961555bcc08dac45f95cce65fa53fdb22ff3c9481b61ccbf25836f44a6.js\" nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\" defer=\"defer\"></script>\n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"XZKaGlq1rWfwv8xZ6O5UWkvF4Ru1TxAOsIqrX1IDXht9Eoc99r8O7giRN2DHuKyo+ufHcZ6MyMgivJI5A9XORQ==\" />\n</head>\n<body>\n\n<!-- svgstore fallback -->\n<script nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\">\n//<![CDATA[\n  /*\n    detect if browser is\n    - Chrome 14-20\n    - Android Browser 4.1+\n    - iOS 6-7\n    - Safari 6\n    - Edge 12\n    - IE 9-11\n  */\n  window.svgPolyfill = /\\bEdge\\/12\\b|\\bTrident\\/[567]\\b|\\bVersion\\/7.0 Safari\\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\\/(\\d+)/) || [])[1] < 537;\n\n  (function (doc) {\n    if(!svgPolyfill)\n      return\n\n    var scripts = doc.getElementsByTagName('script')\n    var script = scripts[scripts.length - 1]\n    var xhr = new XMLHttpRequest()\n    xhr.onload = function () {\n      var div = doc.createElement('div')\n      div.innerHTML = this.responseText\n      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'\n      script.parentNode.insertBefore(div, script)\n    }\n    xhr.open('get', 'assets/images/icons.svg', true)\n    xhr.send()\n  })(document)\n\n//]]>\n</script><div id=\"app\"></div>\n<div class=\"splash\">\n  <svg class=\"icon icon-logo\"><use xlink:href=\"assets/images/icons.svg#icon-logo\" /></svg>\n  <div class=\"splash-title\">Loading...</div>\n</div>\n\n\n</body>\n</html>\n",
+    "timestamp": "2021-09-30T13:50:04.935819934Z"
+  },
+  {
+    "templateID": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "It searches for missing security headers, but obviously, could be so less generic and could be useless for Bug Bounty.",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher_name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-cache, no-store\r\nContent-Security-Policy: base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-lx4b2wzRX4WVyr9uhNHzqg=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com\r\nContent-Type: text/html; charset=utf-8\r\nCsrf-Token: gyEuhNL4gddldW5yypzScB+iLAi1ocxxa0bRkVIPoHajoTOjfvIiXp1blUvlyiqCroAKYp5iFLf5cOj3A9kwKA==\r\nDate: Thu, 30 Sep 2021 13:50:04 GMT\r\nEtag: W/\"1c4a5a6ecb81e3781c4ab6a8d403166d\"\r\nExpires: -1\r\nPragma: no-cache\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nServer: nginx\r\nSet-Cookie: _zammad_session_a138cfd0f37=1f3f462d77a5103f8bb6329ed697426d; path=/; secure; HttpOnly\r\nX-Content-Type-Options: nosniff\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies: none\r\nX-Request-Id: 860c0a04-49e4-4e47-9e8a-dde7207d684c\r\nX-Runtime: 0.037138\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <title>Pastek</title>\n  <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\" />\n  <link rel=\"stylesheet\" media=\"all\" href=\"/assets/application-04cc332d1a643ed79cbdb0bace5f45295e217f237070fe8c6d848a9677bfacaf.css\" />\n  <link rel=\"stylesheet\" media=\"print\" href=\"/assets/application-print-135eb2e791ad7e5a9659045ded6fd5885050e21b1f55302ec6024cd0612e2338.css\" />\n  <script src=\"/assets/application-e3d8b4961555bcc08dac45f95cce65fa53fdb22ff3c9481b61ccbf25836f44a6.js\" nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\" defer=\"defer\"></script>\n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\" content=\"XZKaGlq1rWfwv8xZ6O5UWkvF4Ru1TxAOsIqrX1IDXht9Eoc99r8O7giRN2DHuKyo+ufHcZ6MyMgivJI5A9XORQ==\" />\n</head>\n<body>\n\n<!-- svgstore fallback -->\n<script nonce=\"lx4b2wzRX4WVyr9uhNHzqg==\">\n//<![CDATA[\n  /*\n    detect if browser is\n    - Chrome 14-20\n    - Android Browser 4.1+\n    - iOS 6-7\n    - Safari 6\n    - Edge 12\n    - IE 9-11\n  */\n  window.svgPolyfill = /\\bEdge\\/12\\b|\\bTrident\\/[567]\\b|\\bVersion\\/7.0 Safari\\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\\/(\\d+)/) || [])[1] < 537;\n\n  (function (doc) {\n    if(!svgPolyfill)\n      return\n\n    var scripts = doc.getElementsByTagName('script')\n    var script = scripts[scripts.length - 1]\n    var xhr = new XMLHttpRequest()\n    xhr.onload = function () {\n      var div = doc.createElement('div')\n      div.innerHTML = this.responseText\n      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'\n      script.parentNode.insertBefore(div, script)\n    }\n    xhr.open('get', 'assets/images/icons.svg', true)\n    xhr.send()\n  })(document)\n\n//]]>\n</script><div id=\"app\"></div>\n<div class=\"splash\">\n  <svg class=\"icon icon-logo\"><use xlink:href=\"assets/images/icons.svg#icon-logo\" /></svg>\n  <div class=\"splash-title\">Loading...</div>\n</div>\n\n\n</body>\n</html>\n",
+    "timestamp": "2021-09-30T13:50:04.935848834Z"
+  },
+  {
+    "templateID": "oauth2-detect",
+    "info": {
+      "name": "OAuth 2.0 Authorization Server Detection Template",
+      "author": [
+        "righettod"
+      ],
+      "tags": [
+        "tech",
+        "oauth"
+      ],
+      "description": "Try to detect OAuth 2.0 Authorization Server via the \"oauth/token\" endpoint",
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "http",
+    "host": "https://pastek.fabrique.social.gouv.fr",
+    "matched": "https://pastek.fabrique.social.gouv.fr/oauth/token",
+    "request": "POST /oauth/token HTTP/1.1\r\nHost: pastek.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 117\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\ngrant_type=authorization_code&client_id=xxx&redirect_uri=https%3A%2F%2Fprojectdiscovery.io&code=xxx&client_secret=xxx",
+    "response": "HTTP/1.1 401 Unauthorized\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: private, no-store\r\nContent-Type: application/json; charset=utf-8\r\nDate: Thu, 30 Sep 2021 13:51:12 GMT\r\nPragma: no-cache\r\nServer: nginx\r\nWww-Authenticate: Bearer realm=\"Doorkeeper\", error=\"invalid_client\", error_description=\"Client authentication failed due to unknown client, no client authentication included, or unsupported authentication method.\"\r\nX-Request-Id: f2cf5933-c634-4cd8-b0b9-070eddd74ea3\r\nX-Runtime: 0.019926\r\n\r\n{\"error\":\"invalid_client\",\"error_description\":\"Client authentication failed due to unknown client, no client authentication included, or unsupported authentication method.\"}",
+    "timestamp": "2021-09-30T13:51:12.923108202Z"
+  }
+]
