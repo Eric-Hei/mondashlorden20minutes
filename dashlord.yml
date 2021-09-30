@@ -1,7 +1,7 @@
-title: DashLord example
-description: Bonnes pratiques techniques
-entity: Ministères sociaux
-footer: Powered by SocialGouv
+title: Mon DashLord en 20 minutes
+description: Cockpit conformité technique
+entity: Moi
+footer: Powered by Eric H
 tools:
   404: true
   screenshot: true
@@ -18,7 +18,7 @@ tools:
   codescan: true
   stats: true
 urls:
-  - url: https://www.fabrique.social.gouv.fr
+  - url: https://www.google.fr
+  - url: https://pastek.fabrique.social.gouv.fr
     repositories:
-      - socialgouv/www
-  - url: https://beta.gouv.fr
+      - zammad/zammad
