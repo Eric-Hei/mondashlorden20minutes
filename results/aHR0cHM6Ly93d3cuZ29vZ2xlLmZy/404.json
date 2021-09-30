@@ -1,0 +1,822 @@
+{
+  "links": [
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/",
+        "path": "/",
+        "href": "https://www.google.fr/"
+      },
+      "link": "https://www.google.fr/",
+      "line": "--2021-09-30 13:44:33--  https://www.google.fr/",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/robots.txt",
+        "path": "/robots.txt",
+        "href": "https://www.google.fr/robots.txt"
+      },
+      "link": "https://www.google.fr/robots.txt",
+      "line": "--2021-09-30 13:44:33--  https://www.google.fr/robots.txt",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/images/nav_logo229.png",
+        "path": "/images/nav_logo229.png",
+        "href": "https://www.google.fr/images/nav_logo229.png"
+      },
+      "link": "https://www.google.fr/images/nav_logo229.png",
+      "line": "--2021-09-30 13:44:33--  https://www.google.fr/images/nav_logo229.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png",
+        "path": "/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png",
+        "href": "https://www.google.fr/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png"
+      },
+      "link": "https://www.google.fr/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png",
+      "line": "--2021-09-30 13:44:33--  https://www.google.fr/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": "?hl=en&authuser=0",
+        "query": "hl=en&authuser=0",
+        "pathname": "/advanced_search",
+        "path": "/advanced_search?hl=en&authuser=0",
+        "href": "https://www.google.fr/advanced_search?hl=en&authuser=0"
+      },
+      "link": "https://www.google.fr/advanced_search?hl=en&authuser=0",
+      "line": "--2021-09-30 13:44:33--  https://www.google.fr/advanced_search?hl=en&authuser=0",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/intl/en/ads/",
+        "path": "/intl/en/ads/",
+        "href": "https://www.google.fr/intl/en/ads/"
+      },
+      "link": "https://www.google.fr/intl/en/ads/",
+      "line": "--2021-09-30 13:44:33--  https://www.google.fr/intl/en/ads/",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "ads.google.com",
+        "port": null,
+        "hostname": "ads.google.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/intl/en/home/",
+        "path": "/intl/en/home/",
+        "href": "https://ads.google.com/intl/en/home/"
+      },
+      "link": "https://ads.google.com/intl/en/home/",
+      "line": "--2021-09-30 13:44:33--  https://ads.google.com/intl/en/home/",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/",
+        "path": "/services/",
+        "href": "https://www.google.fr/services/"
+      },
+      "link": "https://www.google.fr/services/",
+      "line": "--2021-09-30 13:44:33--  https://www.google.fr/services/",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/intl/en/about.html",
+        "path": "/intl/en/about.html",
+        "href": "https://www.google.fr/intl/en/about.html"
+      },
+      "link": "https://www.google.fr/intl/en/about.html",
+      "line": "--2021-09-30 13:44:33--  https://www.google.fr/intl/en/about.html",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/intl/en/about/",
+        "path": "/intl/en/about/",
+        "href": "https://www.google.fr/intl/en/about/"
+      },
+      "link": "https://www.google.fr/intl/en/about/",
+      "line": "--2021-09-30 13:44:33--  https://www.google.fr/intl/en/about/",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "about.google",
+        "port": null,
+        "hostname": "about.google",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/intl/en/",
+        "path": "/intl/en/",
+        "href": "https://about.google/intl/en/"
+      },
+      "link": "https://about.google/intl/en/",
+      "line": "--2021-09-30 13:44:33--  https://about.google/intl/en/",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": "?prefdom=US&sig=K_SZ3BmtueWkmF3hEu9iINtuHm8wo%3D",
+        "query": "prefdom=US&sig=K_SZ3BmtueWkmF3hEu9iINtuHm8wo%3D",
+        "pathname": "/setprefdomain",
+        "path": "/setprefdomain?prefdom=US&sig=K_SZ3BmtueWkmF3hEu9iINtuHm8wo%3D",
+        "href": "https://www.google.fr/setprefdomain?prefdom=US&sig=K_SZ3BmtueWkmF3hEu9iINtuHm8wo%3D"
+      },
+      "link": "https://www.google.fr/setprefdomain?prefdom=US&sig=K_SZ3BmtueWkmF3hEu9iINtuHm8wo%3D",
+      "line": "--2021-09-30 13:44:33--  https://www.google.fr/setprefdomain?prefdom=US&sig=K_SZ3BmtueWkmF3hEu9iINtuHm8wo%3D",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/intl/en/policies/privacy/",
+        "path": "/intl/en/policies/privacy/",
+        "href": "https://www.google.fr/intl/en/policies/privacy/"
+      },
+      "link": "https://www.google.fr/intl/en/policies/privacy/",
+      "line": "--2021-09-30 13:44:34--  https://www.google.fr/intl/en/policies/privacy/",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/intl/en/policies/terms/",
+        "path": "/intl/en/policies/terms/",
+        "href": "https://www.google.fr/intl/en/policies/terms/"
+      },
+      "link": "https://www.google.fr/intl/en/policies/terms/",
+      "line": "--2021-09-30 13:44:34--  https://www.google.fr/intl/en/policies/terms/",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": "?tab=ww",
+        "query": "tab=ww",
+        "pathname": "/webhp",
+        "path": "/webhp?tab=ww",
+        "href": "https://www.google.fr/webhp?tab=ww"
+      },
+      "link": "https://www.google.fr/webhp?tab=ww",
+      "line": "--2021-09-30 13:44:34--  https://www.google.fr/webhp?tab=ww",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": "?q=https://support.google.com/websearch/%3Fp%3Dws_results_help%26hl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8KwCCAE&usg=AOvVaw0OSaEugxwIs5ldD8p7vw4P",
+        "query": "q=https://support.google.com/websearch/%3Fp%3Dws_results_help%26hl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8KwCCAE&usg=AOvVaw0OSaEugxwIs5ldD8p7vw4P",
+        "pathname": "/url",
+        "path": "/url?q=https://support.google.com/websearch/%3Fp%3Dws_results_help%26hl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8KwCCAE&usg=AOvVaw0OSaEugxwIs5ldD8p7vw4P",
+        "href": "https://www.google.fr/url?q=https://support.google.com/websearch/%3Fp%3Dws_results_help%26hl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8KwCCAE&usg=AOvVaw0OSaEugxwIs5ldD8p7vw4P"
+      },
+      "link": "https://www.google.fr/url?q=https://support.google.com/websearch/%3Fp%3Dws_results_help%26hl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8KwCCAE&usg=AOvVaw0OSaEugxwIs5ldD8p7vw4P",
+      "line": "--2021-09-30 13:44:34--  https://www.google.fr/url?q=https://support.google.com/websearch/%3Fp%3Dws_results_help%26hl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8KwCCAE&usg=AOvVaw0OSaEugxwIs5ldD8p7vw4P",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "support.google.com",
+        "port": null,
+        "hostname": "support.google.com",
+        "hash": null,
+        "search": "?p=ws_results_help&hl=en&fg=1",
+        "query": "p=ws_results_help&hl=en&fg=1",
+        "pathname": "/websearch/",
+        "path": "/websearch/?p=ws_results_help&hl=en&fg=1",
+        "href": "https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1"
+      },
+      "link": "https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1",
+      "line": "--2021-09-30 13:44:34--  https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "support.google.com",
+        "port": null,
+        "hostname": "support.google.com",
+        "hash": null,
+        "search": "?p=ws_results_help&hl=en&fg=1&visit_id=637686062742465032-3318875169&rd=1",
+        "query": "p=ws_results_help&hl=en&fg=1&visit_id=637686062742465032-3318875169&rd=1",
+        "pathname": "/websearch/topic/3378866",
+        "path": "/websearch/topic/3378866?p=ws_results_help&hl=en&fg=1&visit_id=637686062742465032-3318875169&rd=1",
+        "href": "https://support.google.com/websearch/topic/3378866?p=ws_results_help&hl=en&fg=1&visit_id=637686062742465032-3318875169&rd=1"
+      },
+      "link": "https://support.google.com/websearch/topic/3378866?p=ws_results_help&hl=en&fg=1&visit_id=637686062742465032-3318875169&rd=1",
+      "line": "--2021-09-30 13:44:34--  https://support.google.com/websearch/topic/3378866?p=ws_results_help&hl=en&fg=1&visit_id=637686062742465032-3318875169&rd=1",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "support.google.com",
+        "port": null,
+        "hostname": "support.google.com",
+        "hash": null,
+        "search": "?visit_id=637686062742465032-3318875169&hl=en&rd=2",
+        "query": "visit_id=637686062742465032-3318875169&hl=en&rd=2",
+        "pathname": "/websearch/",
+        "path": "/websearch/?visit_id=637686062742465032-3318875169&hl=en&rd=2",
+        "href": "https://support.google.com/websearch/?visit_id=637686062742465032-3318875169&hl=en&rd=2"
+      },
+      "link": "https://support.google.com/websearch/?visit_id=637686062742465032-3318875169&hl=en&rd=2",
+      "line": "--2021-09-30 13:44:34--  https://support.google.com/websearch/?visit_id=637686062742465032-3318875169&hl=en&rd=2",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": "?q=https://policies.google.com/privacy%3Fhl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8awCCAI&usg=AOvVaw2J_OEPHRvYl6n9acv0Ei-d",
+        "query": "q=https://policies.google.com/privacy%3Fhl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8awCCAI&usg=AOvVaw2J_OEPHRvYl6n9acv0Ei-d",
+        "pathname": "/url",
+        "path": "/url?q=https://policies.google.com/privacy%3Fhl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8awCCAI&usg=AOvVaw2J_OEPHRvYl6n9acv0Ei-d",
+        "href": "https://www.google.fr/url?q=https://policies.google.com/privacy%3Fhl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8awCCAI&usg=AOvVaw2J_OEPHRvYl6n9acv0Ei-d"
+      },
+      "link": "https://www.google.fr/url?q=https://policies.google.com/privacy%3Fhl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8awCCAI&usg=AOvVaw2J_OEPHRvYl6n9acv0Ei-d",
+      "line": "--2021-09-30 13:44:34--  https://www.google.fr/url?q=https://policies.google.com/privacy%3Fhl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8awCCAI&usg=AOvVaw2J_OEPHRvYl6n9acv0Ei-d",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "policies.google.com",
+        "port": null,
+        "hostname": "policies.google.com",
+        "hash": null,
+        "search": "?hl=en&fg=1",
+        "query": "hl=en&fg=1",
+        "pathname": "/privacy",
+        "path": "/privacy?hl=en&fg=1",
+        "href": "https://policies.google.com/privacy?hl=en&fg=1"
+      },
+      "link": "https://policies.google.com/privacy?hl=en&fg=1",
+      "line": "--2021-09-30 13:44:34--  https://policies.google.com/privacy?hl=en&fg=1",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": "?q=https://policies.google.com/terms%3Fhl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8qwCCAM&usg=AOvVaw1iBvHZJXBSUDg2Aj8nTmgU",
+        "query": "q=https://policies.google.com/terms%3Fhl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8qwCCAM&usg=AOvVaw1iBvHZJXBSUDg2Aj8nTmgU",
+        "pathname": "/url",
+        "path": "/url?q=https://policies.google.com/terms%3Fhl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8qwCCAM&usg=AOvVaw1iBvHZJXBSUDg2Aj8nTmgU",
+        "href": "https://www.google.fr/url?q=https://policies.google.com/terms%3Fhl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8qwCCAM&usg=AOvVaw1iBvHZJXBSUDg2Aj8nTmgU"
+      },
+      "link": "https://www.google.fr/url?q=https://policies.google.com/terms%3Fhl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8qwCCAM&usg=AOvVaw1iBvHZJXBSUDg2Aj8nTmgU",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/url?q=https://policies.google.com/terms%3Fhl%3Den%26fg%3D1&sa=U&ved=0ahUKEwj2otKs6qbzAhWJF1kFHVEIBSwQ8qwCCAM&usg=AOvVaw1iBvHZJXBSUDg2Aj8nTmgU",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "policies.google.com",
+        "port": null,
+        "hostname": "policies.google.com",
+        "hash": null,
+        "search": "?hl=en&fg=1",
+        "query": "hl=en&fg=1",
+        "pathname": "/terms",
+        "path": "/terms?hl=en&fg=1",
+        "href": "https://policies.google.com/terms?hl=en&fg=1"
+      },
+      "link": "https://policies.google.com/terms?hl=en&fg=1",
+      "line": "--2021-09-30 13:44:35--  https://policies.google.com/terms?hl=en&fg=1",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/css/business-solutions.min.css",
+        "path": "/services/css/business-solutions.min.css",
+        "href": "https://www.google.fr/services/css/business-solutions.min.css"
+      },
+      "link": "https://www.google.fr/services/css/business-solutions.min.css",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/services/css/business-solutions.min.css",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/hero-bg_m_1x.png",
+        "path": "/services/images/hero-bg_m_1x.png",
+        "href": "https://www.google.fr/services/images/hero-bg_m_1x.png"
+      },
+      "link": "https://www.google.fr/services/images/hero-bg_m_1x.png",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/services/images/hero-bg_m_1x.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/hero-bg_m_2x.png",
+        "path": "/services/images/hero-bg_m_2x.png",
+        "href": "https://www.google.fr/services/images/hero-bg_m_2x.png"
+      },
+      "link": "https://www.google.fr/services/images/hero-bg_m_2x.png",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/services/images/hero-bg_m_2x.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/section-advertise-card-img_1x.jpg",
+        "path": "/services/images/section-advertise-card-img_1x.jpg",
+        "href": "https://www.google.fr/services/images/section-advertise-card-img_1x.jpg"
+      },
+      "link": "https://www.google.fr/services/images/section-advertise-card-img_1x.jpg",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/services/images/section-advertise-card-img_1x.jpg",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/section-advertise-card-img_2x.jpg",
+        "path": "/services/images/section-advertise-card-img_2x.jpg",
+        "href": "https://www.google.fr/services/images/section-advertise-card-img_2x.jpg"
+      },
+      "link": "https://www.google.fr/services/images/section-advertise-card-img_2x.jpg",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/services/images/section-advertise-card-img_2x.jpg",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/cloud_logo_lockup_1x.png",
+        "path": "/services/images/cloud_logo_lockup_1x.png",
+        "href": "https://www.google.fr/services/images/cloud_logo_lockup_1x.png"
+      },
+      "link": "https://www.google.fr/services/images/cloud_logo_lockup_1x.png",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/services/images/cloud_logo_lockup_1x.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/cloud_logo_lockup_2x.png",
+        "path": "/services/images/cloud_logo_lockup_2x.png",
+        "href": "https://www.google.fr/services/images/cloud_logo_lockup_2x.png"
+      },
+      "link": "https://www.google.fr/services/images/cloud_logo_lockup_2x.png",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/services/images/cloud_logo_lockup_2x.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/section-earn-card-img_1x.jpg",
+        "path": "/services/images/section-earn-card-img_1x.jpg",
+        "href": "https://www.google.fr/services/images/section-earn-card-img_1x.jpg"
+      },
+      "link": "https://www.google.fr/services/images/section-earn-card-img_1x.jpg",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/services/images/section-earn-card-img_1x.jpg",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/section-earn-card-img_2x.jpg",
+        "path": "/services/images/section-earn-card-img_2x.jpg",
+        "href": "https://www.google.fr/services/images/section-earn-card-img_2x.jpg"
+      },
+      "link": "https://www.google.fr/services/images/section-earn-card-img_2x.jpg",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/services/images/section-earn-card-img_2x.jpg",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/js/business-solutions.min.js",
+        "path": "/services/js/business-solutions.min.js",
+        "href": "https://www.google.fr/services/js/business-solutions.min.js"
+      },
+      "link": "https://www.google.fr/services/js/business-solutions.min.js",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/services/js/business-solutions.min.js",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/ads/images/phone-search-animation/phone_1x.png",
+        "path": "/ads/images/phone-search-animation/phone_1x.png",
+        "href": "https://www.google.fr/ads/images/phone-search-animation/phone_1x.png"
+      },
+      "link": "https://www.google.fr/ads/images/phone-search-animation/phone_1x.png",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/ads/images/phone-search-animation/phone_1x.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/ads/images/phone-search-animation/phone_2x.png",
+        "path": "/ads/images/phone-search-animation/phone_2x.png",
+        "href": "https://www.google.fr/ads/images/phone-search-animation/phone_2x.png"
+      },
+      "link": "https://www.google.fr/ads/images/phone-search-animation/phone_2x.png",
+      "line": "--2021-09-30 13:44:35--  https://www.google.fr/ads/images/phone-search-animation/phone_2x.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/ads/images/phone-search-animation/phone-small_1x.png",
+        "path": "/ads/images/phone-search-animation/phone-small_1x.png",
+        "href": "https://www.google.fr/ads/images/phone-search-animation/phone-small_1x.png"
+      },
+      "link": "https://www.google.fr/ads/images/phone-search-animation/phone-small_1x.png",
+      "line": "--2021-09-30 13:44:36--  https://www.google.fr/ads/images/phone-search-animation/phone-small_1x.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/ads/images/phone-search-animation/phone-small_2x.png",
+        "path": "/ads/images/phone-search-animation/phone-small_2x.png",
+        "href": "https://www.google.fr/ads/images/phone-search-animation/phone-small_2x.png"
+      },
+      "link": "https://www.google.fr/ads/images/phone-search-animation/phone-small_2x.png",
+      "line": "--2021-09-30 13:44:36--  https://www.google.fr/ads/images/phone-search-animation/phone-small_2x.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/hero-bg_1x.png",
+        "path": "/services/images/hero-bg_1x.png",
+        "href": "https://www.google.fr/services/images/hero-bg_1x.png"
+      },
+      "link": "https://www.google.fr/services/images/hero-bg_1x.png",
+      "line": "--2021-09-30 13:44:36--  https://www.google.fr/services/images/hero-bg_1x.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/hero-bg_2x.png",
+        "path": "/services/images/hero-bg_2x.png",
+        "href": "https://www.google.fr/services/images/hero-bg_2x.png"
+      },
+      "link": "https://www.google.fr/services/images/hero-bg_2x.png",
+      "line": "--2021-09-30 13:44:36--  https://www.google.fr/services/images/hero-bg_2x.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/phone-graybar_1x.png",
+        "path": "/services/images/phone-graybar_1x.png",
+        "href": "https://www.google.fr/services/images/phone-graybar_1x.png"
+      },
+      "link": "https://www.google.fr/services/images/phone-graybar_1x.png",
+      "line": "--2021-09-30 13:44:36--  https://www.google.fr/services/images/phone-graybar_1x.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/phone-graybar_2x.png",
+        "path": "/services/images/phone-graybar_2x.png",
+        "href": "https://www.google.fr/services/images/phone-graybar_2x.png"
+      },
+      "link": "https://www.google.fr/services/images/phone-graybar_2x.png",
+      "line": "--2021-09-30 13:44:36--  https://www.google.fr/services/images/phone-graybar_2x.png",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/hero-phone-photo_1x.jpg",
+        "path": "/services/images/hero-phone-photo_1x.jpg",
+        "href": "https://www.google.fr/services/images/hero-phone-photo_1x.jpg"
+      },
+      "link": "https://www.google.fr/services/images/hero-phone-photo_1x.jpg",
+      "line": "--2021-09-30 13:44:36--  https://www.google.fr/services/images/hero-phone-photo_1x.jpg",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "www.google.fr",
+        "port": null,
+        "hostname": "www.google.fr",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/services/images/hero-phone-photo_2x.jpg",
+        "path": "/services/images/hero-phone-photo_2x.jpg",
+        "href": "https://www.google.fr/services/images/hero-phone-photo_2x.jpg"
+      },
+      "link": "https://www.google.fr/services/images/hero-phone-photo_2x.jpg",
+      "line": "--2021-09-30 13:44:36--  https://www.google.fr/services/images/hero-phone-photo_2x.jpg",
+      "broken": false
+    }
+  ],
+  "broken": []
+}
