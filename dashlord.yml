@@ -3,7 +3,7 @@ description: Cockpit conformité technique
 entity: Moi
 footer: Powered by Eric H
 tools:
-  404: true
+  404: false
   screenshot: true
   nmap: true
   zap: true
