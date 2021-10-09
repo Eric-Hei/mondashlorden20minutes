@@ -3,7 +3,7 @@
   "cookies": [
     {
       "name": "_zammad_session_a138cfd0f37",
-      "value": "e79ba72b7cc9e1070e07d42b03932d70",
+      "value": "ba28bc5cad407f7fdedc761a9bd6b882",
       "domain": "pastek.fabrique.social.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -19,22 +19,22 @@
   "headers": {
     "cache-control": "no-cache, no-store",
     "content-encoding": "gzip",
-    "content-security-policy": "base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-SZl/4jw4f0smMuhSceqiJg=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com",
+    "content-security-policy": "base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-ycEVxMIvmWpw0ZzV/4il3w=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com",
     "content-type": "text/html; charset=utf-8",
-    "csrf-token": "/dxDnulgL1wI3ZBADKUnwCzicjK/QOq26MmiT2OskO+SsUyftN66rwFElzxiXvx86ppt1NMMM6CjZWaA4AVcvA==",
-    "date": "Thu, 30 Sep 2021 13:46:53 GMT",
-    "etag": "W/\"47b855edba57b979f148341dcb4ca373\"",
+    "csrf-token": "hOxOO2ZEG+hZw1LsvCpNNis4o/TY3aZjTWKvb92aaUR9XC6VeTGqHgbQrvM/6uDkzRegJyhi+sWLREXNRjwTlg==",
+    "date": "Sat, 09 Oct 2021 15:59:51 GMT",
+    "etag": "W/\"b8d2fae5c4d4eecde4142195f570d044\"",
     "expires": "-1",
     "pragma": "no-cache",
     "referrer-policy": "strict-origin-when-cross-origin",
     "server": "nginx",
-    "set-cookie": "_zammad_session_a138cfd0f37=e79ba72b7cc9e1070e07d42b03932d70; path=/; secure; HttpOnly",
+    "set-cookie": "_zammad_session_a138cfd0f37=ba28bc5cad407f7fdedc761a9bd6b882; path=/; secure; HttpOnly",
     "x-content-type-options": "nosniff",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN",
     "x-permitted-cross-domain-policies": "none",
-    "x-request-id": "c41b6433-5cbb-4574-bcfa-cc296564d52c",
-    "x-runtime": "0.016023",
+    "x-request-id": "844c7d4b-f11a-4604-8df8-61afaee0e330",
+    "x-runtime": "0.021286",
     "x-xss-protection": "1; mode=block"
   },
   "endpoints": [

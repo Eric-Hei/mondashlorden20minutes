@@ -416,7 +416,7 @@
               "ip"           : "pastek.fabrique.social.gouv.fr/154.41.70.5",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "89 >= 30 days"
+              "finding"      : "80 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -682,7 +682,7 @@
               "ip"           : "pastek.fabrique.social.gouv.fr/154.41.70.5",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-fuMZII8WzhCCCoyh5WWpFA=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com"
+              "finding"      : "base-uri 'self' https://pastek.fabrique.social.gouv.fr; default-src 'self' ws: wss: https://log.zammad.com https://images.zammad.com; font-src 'self' data:; img-src * data:; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' 'strict-dynamic' 'nonce-nrrH/rlFrCsn0MQurYjofg=='; style-src 'self' 'unsafe-inline'; frame-src www.youtube.com player.vimeo.com"
           }
 ,         {
               "id"           : "X-XSS-Protection",
@@ -1254,6 +1254,6 @@
               "ip"           : "pastek.fabrique.social.gouv.fr/154.41.70.5",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "112"
+              "finding"      : "111"
           }
 ]
