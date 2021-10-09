@@ -1,1 +1,2528 @@
-{"@version":"2.10.0","@generated":"Thu, 30 Sep 2021 13:48:07","site":[{"@name":"https://www.google.fr","@host":"www.google.fr","@port":"443","@ssl":"true","alerts":[{"pluginid":"10054","alertRef":"10054","alert":"Cookie with SameSite Attribute None","name":"Cookie with SameSite Attribute None","riskcode":"1","confidence":"2","riskdesc":"Low (Medium)","desc":"<p>A cookie has been set with its SameSite attribute set to \"none\", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.<\/p>","instances":[{"uri":"https://www.google.fr","method":"GET"},{"uri":"https://www.google.fr/?hl","method":"GET"},{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET"},{"uri":"https://www.google.fr/","method":"GET"},{"uri":"https://www.google.fr/index.html","method":"GET"},{"uri":"https://www.google.fr/search","method":"GET"},{"uri":"https://www.google.fr/?hl=*","method":"GET"}],"count":"8","solution":"<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.<\/p>","reference":"<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site<\/p>","cweid":"1275","wascid":"13","sourceid":"3"},{"pluginid":"10010","alertRef":"10010","alert":"Cookie No HttpOnly Flag","name":"Cookie No HttpOnly Flag","riskcode":"1","confidence":"2","riskdesc":"Low (Medium)","desc":"<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.<\/p>","instances":[{"uri":"https://www.google.fr/?hl","method":"GET","param":"1P_JAR","evidence":"Set-Cookie: 1P_JAR"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET","param":"1P_JAR","evidence":"Set-Cookie: 1P_JAR"},{"uri":"https://www.google.fr/?gws_rd=ssl$","method":"GET","param":"1P_JAR","evidence":"Set-Cookie: 1P_JAR"},{"uri":"https://www.google.fr","method":"GET","param":"1P_JAR","evidence":"Set-Cookie: 1P_JAR"},{"uri":"https://www.google.fr/index.html","method":"GET","param":"1P_JAR","evidence":"Set-Cookie: 1P_JAR"},{"uri":"https://www.google.fr/preferences","method":"GET","param":"1P_JAR","evidence":"Set-Cookie: 1P_JAR"},{"uri":"https://www.google.fr/?hl=*","method":"GET","param":"1P_JAR","evidence":"Set-Cookie: 1P_JAR"},{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET","param":"1P_JAR","evidence":"Set-Cookie: 1P_JAR"},{"uri":"https://www.google.fr/","method":"GET","param":"1P_JAR","evidence":"Set-Cookie: 1P_JAR"},{"uri":"https://www.google.fr/?pt1=true$","method":"GET","param":"1P_JAR","evidence":"Set-Cookie: 1P_JAR"},{"uri":"https://www.google.fr/search","method":"GET","param":"1P_JAR","evidence":"Set-Cookie: 1P_JAR"}],"count":"11","solution":"<p>Ensure that the HttpOnly flag is set for all cookies.<\/p>","reference":"<p>https://owasp.org/www-community/HttpOnly<\/p>","cweid":"1004","wascid":"13","sourceid":"3"},{"pluginid":"10038","alertRef":"10038","alert":"Content Security Policy (CSP) Header Not Set","name":"Content Security Policy (CSP) Header Not Set","riskcode":"2","confidence":"3","riskdesc":"Medium (High)","desc":"<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.<\/p>","instances":[{"uri":"https://www.google.fr/?hl","method":"GET"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET"},{"uri":"https://www.google.fr","method":"GET"},{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET"},{"uri":"https://www.google.fr/?hl=*","method":"GET"},{"uri":"https://www.google.fr/index.html","method":"GET"},{"uri":"https://www.google.fr/sdch","method":"GET"},{"uri":"https://www.google.fr/groups","method":"GET"},{"uri":"https://www.google.fr/search/static","method":"GET"},{"uri":"https://www.google.fr/","method":"GET"},{"uri":"https://www.google.fr/?gws_rd=ssl$","method":"GET"}],"count":"11","solution":"<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: \"Content-Security-Policy\" for Chrome 25+, Firefox 23+ and Safari 7+, \"X-Content-Security-Policy\" for Firefox 4.0+ and Internet Explorer 10+, and \"X-WebKit-CSP\" for Chrome 14+ and Safari 6+.<\/p>","reference":"<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy<\/p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html<\/p><p>http://www.w3.org/TR/CSP/<\/p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html<\/p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/<\/p><p>http://caniuse.com/#feat=contentsecuritypolicy<\/p><p>http://content-security-policy.com/<\/p>","cweid":"693","wascid":"15","sourceid":"3"},{"pluginid":"10110","alertRef":"10110","alert":"Dangerous JS Functions","name":"Dangerous JS Functions","riskcode":"1","confidence":"1","riskdesc":"Low (Low)","desc":"<p>A dangerous JS function seems to be in use that would leave the site vulnerable.<\/p>","instances":[{"uri":"https://www.google.fr/?gws_rd=ssl$","method":"GET","evidence":"eval"},{"uri":"https://www.google.fr/","method":"GET","evidence":"eval"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET","evidence":"eval"},{"uri":"https://www.google.fr/m","method":"GET","evidence":"eval"},{"uri":"https://www.google.fr","method":"GET","evidence":"eval"},{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET","evidence":"eval"},{"uri":"https://www.google.fr/index.html","method":"GET","evidence":"eval"},{"uri":"https://www.google.fr/?hl","method":"GET","evidence":"eval"},{"uri":"https://www.google.fr/?hl=*","method":"GET","evidence":"eval"},{"uri":"https://www.google.fr/wml","method":"GET","evidence":"eval"},{"uri":"https://www.google.fr/?pt1=true$","method":"GET","evidence":"eval"},{"uri":"https://www.google.fr/preferences","method":"GET","evidence":"eval"}],"count":"12","solution":"<p>See the references for security advice on the use of these functions.<\/p>","reference":"<p>https://angular.io/guide/security<\/p>","cweid":"749","sourceid":"3"},{"pluginid":"10036","alertRef":"10036","alert":"Server Leaks Version Information via \"Server\" HTTP Response Header Field","name":"Server Leaks Version Information via \"Server\" HTTP Response Header Field","riskcode":"1","confidence":"3","riskdesc":"Low (High)","desc":"<p>The web/application server is leaking version information via the \"Server\" HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.<\/p>","instances":[{"uri":"https://www.google.fr/books?*buy","method":"GET","evidence":"OFE/0.1"},{"uri":"https://www.google.fr/books/about","method":"GET","evidence":"OFE/0.1"},{"uri":"https://www.google.fr/books?*jtp","method":"GET","evidence":"OFE/0.1"},{"uri":"https://www.google.fr/bkshp?*q","method":"GET","evidence":"OFE/0.1"},{"uri":"https://www.google.fr/books?*output","method":"GET","evidence":"OFE/0.1"},{"uri":"https://www.google.fr/books?*pg","method":"GET","evidence":"OFE/0.1"},{"uri":"https://www.google.fr/books?*jscmd","method":"GET","evidence":"OFE/0.1"},{"uri":"https://www.google.fr/books?*zoom","method":"GET","evidence":"OFE/0.1"},{"uri":"https://www.google.fr/books?*q","method":"GET","evidence":"OFE/0.1"},{"uri":"https://www.google.fr/books?*q=subject:","method":"GET","evidence":"OFE/0.1"},{"uri":"https://www.google.fr/books?*q=related:","method":"GET","evidence":"OFE/0.1"},{"uri":"https://www.google.fr/books?*q=editions:","method":"GET","evidence":"OFE/0.1"}],"count":"12","solution":"<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the \"Server\" header or provide generic details.<\/p>","reference":"<p>http://httpd.apache.org/docs/current/mod/core.html#servertokens<\/p><p>http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007<\/p><p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx<\/p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html<\/p>","cweid":"200","wascid":"13","sourceid":"3"},{"pluginid":"10094","alertRef":"10094","alert":"Base64 Disclosure","name":"Base64 Disclosure","riskcode":"0","confidence":"2","riskdesc":"Informational (Medium)","desc":"<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).<\/p>","instances":[{"uri":"https://www.google.fr/?hl","method":"GET","evidence":"ACT90oFPYigyBrrCwAHaL2y2d1jDECNCcA"},{"uri":"https://www.google.fr","method":"GET","evidence":"Nbx8J7PEVvvxDeRcr3bZ8YO_JEC5Jqq4zhm6PsvqKH4jPC2kNgToSrQ0aSp0Hv6F2fYZH8gTq656ReNqCuu-wKXjjIbPgfV4yMZ8rZu1D3f-i7w_kFQm6yNS2UH-h8J1SB8p5Sgp6jOz0hhez8ohiby9FYwxoEh7b0n-Tu7z_L0"},{"uri":"https://www.google.fr/?gws_rd=ssl$","method":"GET","evidence":"ACT90oFPYigyBrrCwAHaL2y2d1jDECNCcA"},{"uri":"https://www.google.fr/imgres","method":"GET","evidence":"com/appsmarket/v2/installedApps/"},{"uri":"https://www.google.fr/?hl=*","method":"GET","evidence":"ACT90oFPYigyBrrCwAHaL2y2d1jDECNCcA"},{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET","evidence":"ACT90oFPYigyBrrCwAHaL2y2d1jDECNCcA"},{"uri":"https://www.google.fr/preferences","method":"GET","evidence":"iVBORw0KGgoAAAANSUhEUgAAABkAAAAPCAYAAAARZmTlAAAAK0lEQVQ4y2P8//8/A60B4/C0ZNasWf/T0tIYqUWP+mTUJ6M+Gcw+GdKWAABcofTjqOulhgAAAABJRU5ErkJggg=="},{"uri":"https://www.google.fr/","method":"GET","evidence":"UhgUP7JZGGyZxcod9RRy50_3rTqGh9Qt9-3r-A7UoHQIfStOrCsdGQrQMHXWNkTZ8jqW9KZBi9foYLeberhte7gK0JtQzqU_qLWbG2iHMEFHPkWyX-FU1IvoEnIvjZdQhYXDqsAe8Ydoj09_6JwRyZtmwjzCpHAsmuDnahIKh90"},{"uri":"https://www.google.fr/?pt1=true$","method":"GET","evidence":"ACT90oFPYigyBrrCwAHaL2y2d1jDECNCcA"},{"uri":"https://www.google.fr/index.html","method":"GET","evidence":"ACT90oFPYigyBrrCwAHaL2y2d1jDECNCcA"},{"uri":"https://www.google.fr/","method":"GET","evidence":"ebR1ZbZMc2b19LBFf_dlTH-2JzYWpMdka0NikYo7EP6vUo8V8RlmFpwB0V5lrCAwVcglvasEEjOTUt2brZyDhqZwD8EOX53HbpKikKrv8b8ZQIH8mWcuVlok_AVGpGEC0qYJaFu4qWmM4jjYjg5alzWMF7VMHMENrQXkp6MO2yQ"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET","evidence":"ACT90oFPYigyBrrCwAHaL2y2d1jDECNCcA"}],"count":"12","solution":"<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.<\/p>","otherinfo":"<p>\\x0000$�ҁOb(2\\x0006���\\x0001�/l�wX�\\x0010#Bp<\/p>","reference":"<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage<\/p>","cweid":"200","wascid":"13","sourceid":"3"},{"pluginid":"10109","alertRef":"10109","alert":"Modern Web Application","name":"Modern Web Application","riskcode":"0","confidence":"2","riskdesc":"Informational (Medium)","desc":"<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.<\/p>","instances":[{"uri":"https://www.google.fr/?hl=*","method":"GET","evidence":"<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwiPxPTV6qbzAhWxGVkFHTtMCzEQtw8ICw\">Report inappropriate predictions<\/a>"},{"uri":"https://www.google.fr/imgres","method":"GET","evidence":"<script data-id=\"_gd\" nonce=\"2UZTY6UU1ptCaRo1k9ys+g\">window.WIZ_global_data = {\"AY2V6d\":true,\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/cameos\",\"/cameos/*\",\"/cbk\",\"/cbk/*\",\"/coronavirus-map\",\"/coronavirus-map/*\",\"/covid19-map\",\"/covid19-map/*\",\"/display-ads-user-messaging-embed\",\"/display-ads-user-messaging-embed/*\",\"/finance\",\"/finance/*\",\"/history\",\"/history/*\",\"/local/business\",\"/local/business/*\",\"/local/cars/tools\",\"/local/cars/tools/*\",\"/local/follow\",\"/local/follow/*\",\"/local/imagery/report\",\"/local/imagery/report/*\",\"/local/realestate\",\"/local/realestate/*\",\"/localguides\",\"/localguides/*\",\"/maps/notifications/webviews\",\"/maps/notifications/webviews/*\",\"/maps/rpc\",\"/maps/rpc/*\",\"/preferences/notifications\",\"/preferences/notifications/*\",\"/s2\",\"/s2/*\",\"/search/notifications\",\"/search/notifications/*\",\"/search/questions\",\"/search/questions/*\",\"/setting/search/privateresults\",\"/setting/search/privateresults/*\",\"/shopping/ratings\",\"/shopping/ratings/*\",\"/travel/activities\",\"/travel/activities/*\",\"/wizrpcui\",\"/wizrpcui/*\"],\"EpwAsb\":1633095960264000,\"FdrFJe\":\"-5042682998449435024\",\"GVlsxf\":\"www.google.com\",\"Im6cmf\":\"/_/VisualFrontendUi\",\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MZbqOb\":\"//www.google.fr/setprefs?cs\\u003d2\\u0026sig\\u003d0_oOkvtsmmeuHrdiJByrKQlDQx3mY%3D\\u0026prev\\u003dhttps://www.google.fr/imgres\\u0026hl\\u003dfr\",\"OVFmqb\":\"%.@.\\\"img\\\",\\\"gws-wiz-img\\\",\\\"\\\",\\\"i\\\",false,false,null,null,null,null,\\\"AIPXvyg13RhXl8GrzSwMlmxJDpdXXKqfBg\\\",\\\"\\\",\\\"mL9VYcKQEOqR5NoPqLGTqA0\\\",0,\\\"fr\\\",null,false,false,3,5,null,null,null,\\\"/complete/deleteitems?deltok\\\\u003d$DELTOK\\\\u0026client\\\\u003d$CLIENT\\\\u0026delq\\\\u003d$DELQUERY\\\",null,null,null,null,true]\",\"Og7bYc\":\"%.@.false]\",\"PYFuDc\":\"DUMMY_X_CLIENT_DATA_WIZ_GLOBAL_KEY_DO_NOT_USE\",\"Qokmvc\":true,\"QrtxK\":\"\",\"S06Grb\":\"\",\"UDh4De\":\"//www.google.fr/setprefs?cs\\u003d0\\u0026sig\\u003d0_oOkvtsmmeuHrdiJByrKQlDQx3mY%3D\\u0026prev\\u003dhttps://www.google.fr/imgres\\u0026hl\\u003dfr\",\"Y12zTb\":\"//www.google.fr/setprefs?cs\\u003d1\\u0026sig\\u003d0_oOkvtsmmeuHrdiJByrKQlDQx3mY%3D\\u0026prev\\u003dhttps://www.google.fr/imgres\\u0026hl\\u003dfr\",\"Yllh3e\":\"%.@.1633009560264258,89721066,3573864616]\",\"cfb2h\":\"boq_visualfrontendserver_20210928.17_p0\",\"d2zrDf\":\"%.@.null,null,false,false,null,null,null,false,null,null,null,null,null,null,null,null,null,null,null,true,null,null,null,null,null,null,null,null,null,false,false,null,null,null,null,null,false,null,null,null,null,null,null,null,false,false,false,null,28,null,null,false,false,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,3,null,null,-1,1500,500,false,null,null,50,true,null,\\\"mq331AQCKAE\\\\u003d\\\",null,false,false,null,0,8,null,true,null,null,null,false,null,null,25,null,false,null,false,null,null,null,null,false,null,null,null,true,null,null,2]\",\"eNnkwf\":\"1633009559\",\"ejMLCd\":\"DUMMY_X_GEO_WIZ_GLOBAL_KEY_DO_NOT_USE\",\"eptZe\":\"/_/VisualFrontendUi/\",\"fPDxwd\":[1763433,1772879,45814370,45852239,47825529],\"gGcLoe\":true,\"nQyAE\":{\"EV8yxc\":\"0\",\"ZUnjQb\":\"0\",\"TFtxd\":\"false\",\"WjMLC\":\"false\",\"Ix7enf\":\"false\",\"HYDafc\":\"-1.0\",\"wTZmyb\":\"true\",\"XvEDBf\":\"true\",\"hb1VBf\":\"313\",\"D88Eab\":\"false\",\"iu6b9\":\"0\",\"znfaGc\":\"864\",\"Etfn\":\"false\",\"tp4Gi\":\"2\",\"n0TQeb\":\"2500\",\"gaC8Zc\":\"false\",\"n7LBcd\":\"500\",\"YE5Aub\":\"DEFAULT_DO_NOT_DISPLAY\",\"xP3jaf\":\"false\",\"Ldqcce\":\"false\",\"wuZIkf\":\"400\",\"D35Vee\":\"100\",\"G5i9gc\":\"0.5\",\"cIQILe\":\"0\",\"XcrMIc\":\"300\",\"MfIHqf\":\"false\",\"A3Czee\":\"true\",\"wmif7\":\"400\",\"gKD34\":\"2500\",\"wgyLtf\":\"false\",\"eYh19c\":\"false\",\"GSS1We\":\"500\",\"iT441e\":\"TOOLTIP_WITHOUT_SWIPE_ANIMATION\",\"cYbvgc\":\"1\",\"XWOFRd\":\"false\",\"PccRGf\":\"true\",\"tAt3of\":\"3\",\"BgZTfd\":\"150\",\"lrGlid\":\"DESKTOP_AUTOPLAY\",\"Tnvype\":\"130\",\"z1MgYd\":\"true\",\"FaTuNc\":\"false\",\"Pzfjj\":\"\",\"lgOET\":\"\",\"gWfAcc\":\"true\",\"if9bCd\":\"true\",\"HJlzAc\":\"false\",\"AvrhYb\":\"false\",\"YPJcgd\":\"freeze_then_replay\",\"mLjsRd\":\"\",\"PdDiOd\":\"0\",\"SsOV8c\":\"0\",\"fgoNEc\":\"false\",\"j5wK6c\":\"0\",\"yApddf\":\"false\",\"fWge5b\":\"0\",\"HjXbFf\":\"false\",\"biZ5Sd\":\"5\",\"A1qd8e\":\"false\",\"fqVElf\":\"true\",\"UUgjSc\":\"false\",\"LBGwTb\":\"100\",\"kawmrb\":\"false\",\"KTcKId\":\"false\",\"Wnp79b\":\"false\",\"Ze51f\":\"10000\",\"syardb\":\"1.0\",\"Eecdhd\":\"\",\"aXtosc\":\"15\",\"A85Lb\":\"true\",\"bwARGe\":\"true\",\"AoFpWc\":\"false\",\"vgkWnf\":\"true\",\"efUU2b\":\"false\",\"Ilr02d\":\"false\",\"L12WE\":\"false\",\"gnkERd\":\"false\",\"Cz6W9c\":\"false\",\"Dj8c4\":\"false\",\"LPP0Ke\":\"false\",\"OEFXhc\":\"\",\"tBSlob\":\"false\",\"bXgOyd\":\"FKCM8yyBZ0iqpJr79GT0RGmfgvRj\",\"KDlcdd\":\"1000\",\"slmb5e\":\"1000\",\"zR9JOe\":\"2\"},\"ocxFnb\":\"%.@.null,null,false,null,true,null,null,null,null,true,null,false,null,null,null,null,null,true,null,9,null,null,null,null,null,null,null,false,null,null,null,null,null,null,false,null,null,null,false,null,null,0,false,null,\\\"\\\",null,null,null,null,null,null,null,false,false,null,null,null,true,null,false,3,true,false,null,null,1,null,false,false,null,null,null,null,false,null,\\\"\\\",false,null,null,null,10000]\",\"p0fdxb\":\"AOvVaw2SDedRWdv8Cp9EeSNZy9jU\",\"q21il\":\"AIzaSyCQt-eqCfjcJvF5zo_yMw5aP4hlfL57Y6A\",\"qwAQke\":\"VisualFrontendUi\",\"qymVe\":\"w69Gp_yDThsl9KEPFxz-f3RRJdk\",\"r84ZEe\":\"//www.google.fr/setprefs?safeui\\u003dimages\\u0026sig\\u003d0_oOkvtsmmeuHrdiJByrKQlDQx3mY%3D\\u0026prev\\u003dhttps://www.google.fr/imgres\",\"rtQCxc\":240,\"tJXnsc\":0,\"uS02ke\":\"mL9VYcKQEOqR5NoPqLGTqA0\",\"vXmutd\":\"%.@.\\\"US\\\",\\\"ZZ\\\",\\\"NKcC7g\\\\u003d\\\\u003d\\\"]\",\"vk7rPe\":\"//www.google.fr/preferences?hl\\u003dfr\\u0026prev\\u003dhttps://www.google.fr/imgres?sfr%3Dvfe#appearance\",\"w2btAe\":\"%.@.null,null,\\\"\\\",false,null,null,true,false]\",\"zChJod\":\"%.@.null,\\\"https://www.google.fr/log?format\\\\u003djson\\\\u0026hasfast\\\\u003dtrue\\\"]\",\"zvLu9e\":\"%.@.\\\"img\\\",\\\"gws-wiz-img\\\",\\\"\\\",\\\"i\\\",false,false,null,null,null,null,\\\"AIPXvyg13RhXl8GrzSwMlmxJDpdXXKqfBg\\\",\\\"\\\",\\\"mL9VYcKQEOqR5NoPqLGTqA0\\\",0,\\\"fr\\\",null,false,false,3,5,null,null,null,\\\"/complete/deleteitems?deltok\\\\u003d$DELTOK\\\\u0026client\\\\u003d$CLIENT\\\\u0026delq\\\\u003d$DELQUERY\\\",null,null,null,null,true]\"};<\/script>"},{"uri":"https://www.google.fr/index.html","method":"GET","evidence":"<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwiM8ezV6qbzAhWqFlkFHZJsC00Qtw8ICw\">Report inappropriate predictions<\/a>"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET","evidence":"<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwjLr_XV6qbzAhWkEVkFHTnEDkIQtw8ICw\">Report inappropriate predictions<\/a>"},{"uri":"https://www.google.fr/?gws_rd=ssl$","method":"GET","evidence":"<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwid7fvV6qbzAhXQMlkFHa3VCdQQtw8ICw\">Report inappropriate predictions<\/a>"},{"uri":"https://www.google.fr/","method":"GET","evidence":"<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwjlwePV6qbzAhXzMlkFHbV4DAAQtw8ICw\">Report inappropriate predictions<\/a>"},{"uri":"https://www.google.fr/?pt1=true$","method":"GET","evidence":"<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwjizILW6qbzAhW2FlkFHVIkA9kQtw8ICw\">Report inappropriate predictions<\/a>"},{"uri":"https://www.google.fr","method":"GET","evidence":"<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwj6zM_V6qbzAhVkFFkFHdmVDIYQtw8ICw\">Report inappropriate predictions<\/a>"},{"uri":"https://www.google.fr/?hl","method":"GET","evidence":"<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwisie3V6qbzAhXbMlkFHZYTA4sQtw8ICw\">Report inappropriate predictions<\/a>"},{"uri":"https://www.google.fr/preferences","method":"GET","evidence":"<a href=\"#\" aria-controls=\"srhSec\" aria-current=\"true\">Search results<\/a>"},{"uri":"https://www.google.fr/m","method":"GET","evidence":"<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwib_ZfW6qbzAhWrKFkFHdTvDZkQtw8ICw\">Report inappropriate predictions<\/a>"},{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET","evidence":"<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwiOq_vV6qbzAhW2FFkFHf2VAuUQtw8ICw\">Report inappropriate predictions<\/a>"}],"count":"12","solution":"<p>This is an informational alert and so no changes are required.<\/p>","otherinfo":"<p>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.<\/p>","reference":"<p><\/p>","sourceid":"3"},{"pluginid":"10055","alertRef":"10055","alert":"CSP: Wildcard Directive","name":"CSP: Wildcard Directive","riskcode":"2","confidence":"2","riskdesc":"Medium (Medium)","desc":"<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: <\/p><p>style-src, img-src, connects-src, frame-src, frame-ancestors, font-src, media-src, object-src, manifest-src, prefetch-src, form-action<\/p><p><\/p><p>The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.<\/p>","instances":[{"uri":"https://www.google.fr/imgres","method":"GET","evidence":"script-src 'nonce-2UZTY6UU1ptCaRo1k9ys+g' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://www.googleapis.com/appsmarket/v2/installedApps/;report-uri /_/VisualFrontendUi/cspreport"},{"uri":"https://www.google.fr/imgres","method":"GET","evidence":"script-src 'nonce-2UZTY6UU1ptCaRo1k9ys+g' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/VisualFrontendUi/cspreport;worker-src 'self'"},{"uri":"https://www.google.fr/history/optout?fg=1&hl=en","method":"GET","evidence":"script-src 'nonce-T6EAPafQjC6rTyqVl+2hSA' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://www.googleapis.com/appsmarket/v2/installedApps/;report-uri /history/_/SearchCustomizationUi/cspreport"},{"uri":"https://www.google.fr/history/optout?fg=1&hl=en","method":"GET","evidence":"require-trusted-types-for 'script';report-uri /history/_/SearchCustomizationUi/cspreport"},{"uri":"https://www.google.fr/history/optout?fg=1&hl=en","method":"GET","evidence":"script-src 'nonce-T6EAPafQjC6rTyqVl+2hSA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /history/_/SearchCustomizationUi/cspreport;worker-src 'self'"},{"uri":"https://www.google.fr/gwt/","method":"GET","evidence":"require-trusted-types-for 'script'"}],"count":"6","solution":"<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.<\/p>","reference":"<p>http://www.w3.org/TR/CSP2/<\/p><p>http://www.w3.org/TR/CSP/<\/p><p>http://caniuse.com/#search=content+security+policy<\/p><p>http://content-security-policy.com/<\/p><p>https://github.com/shapesecurity/salvation<\/p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources<\/p>","cweid":"693","wascid":"15","sourceid":"3"},{"pluginid":"10021","alertRef":"10021","alert":"X-Content-Type-Options Header Missing","name":"X-Content-Type-Options Header Missing","riskcode":"1","confidence":"2","riskdesc":"Low (Medium)","desc":"<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.<\/p>","instances":[{"uri":"https://www.google.fr/?pt1=true$","method":"GET","param":"X-Content-Type-Options"},{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET","param":"X-Content-Type-Options"},{"uri":"https://www.google.fr","method":"GET","param":"X-Content-Type-Options"},{"uri":"https://www.google.fr/?hl","method":"GET","param":"X-Content-Type-Options"},{"uri":"https://www.google.fr/?hl=*","method":"GET","param":"X-Content-Type-Options"},{"uri":"https://www.google.fr/m","method":"GET","param":"X-Content-Type-Options"},{"uri":"https://www.google.fr/index.html","method":"GET","param":"X-Content-Type-Options"},{"uri":"https://www.google.fr/preferences","method":"GET","param":"X-Content-Type-Options"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET","param":"X-Content-Type-Options"},{"uri":"https://www.google.fr/?gws_rd=ssl$","method":"GET","param":"X-Content-Type-Options"},{"uri":"https://www.google.fr/","method":"GET","param":"X-Content-Type-Options"}],"count":"11","solution":"<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.<\/p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.<\/p>","otherinfo":"<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.<\/p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.<\/p>","reference":"<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx<\/p><p>https://owasp.org/www-community/Security_Headers<\/p>","cweid":"693","wascid":"15","sourceid":"3"},{"pluginid":"10108","alertRef":"10108","alert":"Reverse Tabnabbing","name":"Reverse Tabnabbing","riskcode":"2","confidence":"2","riskdesc":"Medium (Medium)","desc":"<p>At least one link on this page is vulnerable to Reverse tabnabbing as it uses a target attribute without using both of the \"noopener\" and \"noreferrer\" keywords in the \"rel\" attribute, which allows the target page to take control of this page.<\/p>","instances":[{"uri":"https://www.google.fr/?pt1=true$","method":"GET","evidence":"<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail<\/a>"},{"uri":"https://www.google.fr/","method":"GET","evidence":"<a target=_top id=gb_70 href=\"https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.fr/&ec=GAZAAQ\" class=gb4>Sign in<\/a>"},{"uri":"https://www.google.fr/?hl=*","method":"GET","evidence":"<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail<\/a>"},{"uri":"https://www.google.fr/m","method":"GET","evidence":"<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail<\/a>"},{"uri":"https://www.google.fr/","method":"GET","evidence":"<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail<\/a>"},{"uri":"https://www.google.fr/preferences","method":"GET","evidence":"<a class=\"gb_3 gb_4 gb_3d gb_3c\" href=\"https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.fr/preferences&amp;ec=GAZAAQ\" target=\"_top\">Sign in<\/a>"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET","evidence":"<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail<\/a>"},{"uri":"https://www.google.fr/?hl","method":"GET","evidence":"<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail<\/a>"},{"uri":"https://www.google.fr/index.html","method":"GET","evidence":"<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail<\/a>"},{"uri":"https://www.google.fr","method":"GET","evidence":"<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail<\/a>"},{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET","evidence":"<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail<\/a>"},{"uri":"https://www.google.fr/?gws_rd=ssl$","method":"GET","evidence":"<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail<\/a>"}],"count":"12","solution":"<p>Do not use a target attribute, or if you have to then also add the attribute: rel=\"noopener noreferrer\".<\/p>","reference":"<p>https://owasp.org/www-community/attacks/Reverse_Tabnabbing<\/p><p>https://dev.to/ben/the-targetblank-vulnerability-by-example<\/p><p>https://mathiasbynens.github.io/rel-noopener/<\/p><p>https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c<\/p>","sourceid":"3"},{"pluginid":"10049","alertRef":"10049","alert":"Non-Storable Content","name":"Non-Storable Content","riskcode":"0","confidence":"2","riskdesc":"Informational (Medium)","desc":"<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.<\/p>","instances":[{"uri":"https://www.google.fr/sitemap.xml","method":"GET","evidence":"private"},{"uri":"https://www.google.fr","method":"GET","evidence":"private"},{"uri":"https://www.google.fr/","method":"GET","evidence":"private"},{"uri":"https://www.google.fr/index.html","method":"GET","evidence":"private"},{"uri":"https://www.google.fr/robots.txt","method":"GET","evidence":"private"},{"uri":"https://www.google.fr/search","method":"GET","evidence":"private"}],"count":"6","solution":"<p>The content may be marked as storable by ensuring that the following conditions are satisfied:<\/p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)<\/p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)<\/p><p>The \"no-store\" cache directive must not appear in the request or response header fields<\/p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response<\/p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)<\/p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:<\/p><p>It must contain an \"Expires\" header field<\/p><p>It must contain a \"max-age\" response directive<\/p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive<\/p><p>It must contain a \"Cache Control Extension\" that allows it to be cached<\/p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   <\/p>","reference":"<p>https://tools.ietf.org/html/rfc7234<\/p><p>https://tools.ietf.org/html/rfc7231<\/p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)<\/p>","cweid":"524","wascid":"13","sourceid":"3"},{"pluginid":"10020","alertRef":"10020","alert":"X-Frame-Options Header Not Set","name":"X-Frame-Options Header Not Set","riskcode":"2","confidence":"2","riskdesc":"Medium (Medium)","desc":"<p>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks.<\/p>","instances":[{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","param":"X-Frame-Options"},{"uri":"https://www.google.fr/search/howsearchworks/crawling-indexing/","method":"GET","param":"X-Frame-Options"},{"uri":"https://www.google.fr/search/howsearchworks/algorithms/","method":"GET","param":"X-Frame-Options"},{"uri":"https://www.google.fr/toolbar/ie8/sidebar.html","method":"GET","param":"X-Frame-Options"},{"uri":"https://www.google.fr/services/","method":"GET","param":"X-Frame-Options"},{"uri":"https://www.google.fr/landing/signout.html","method":"GET","param":"X-Frame-Options"},{"uri":"https://www.google.fr/chrome/","method":"GET","param":"X-Frame-Options"},{"uri":"https://www.google.fr/search/howsearchworks/responses/","method":"GET","param":"X-Frame-Options"},{"uri":"https://www.google.fr/search/howsearchworks/mission/","method":"GET","param":"X-Frame-Options"},{"uri":"https://www.google.fr/search/howsearchworks/mission/users/","method":"GET","param":"X-Frame-Options"},{"uri":"https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2","method":"GET","param":"X-Frame-Options"},{"uri":"https://www.google.fr/movies/about/","method":"GET","param":"X-Frame-Options"}],"count":"12","solution":"<p>Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive. <\/p>","reference":"<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options<\/p>","cweid":"1021","wascid":"15","sourceid":"3"},{"pluginid":"10098","alertRef":"10098","alert":"Cross-Domain Misconfiguration","name":"Cross-Domain Misconfiguration","riskcode":"2","confidence":"2","riskdesc":"Medium (Medium)","desc":"<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server<\/p>","instances":[{"uri":"https://www.google.fr/maps/_/js/k=maps.m.en.UacAzfJZL68.2019.O/m=sc2,per,mo,lp,ti,ds,stx,bom,b/am=N5Qg/rt=j/d=1/rs=ACT90oEYWFuYT-pM80YjRgbCrbap4jFm7w","method":"GET","evidence":"Access-Control-Allow-Origin: *"},{"uri":"https://www.google.fr/maps/api/staticmap","method":"GET","evidence":"Access-Control-Allow-Origin: *"},{"uri":"https://www.google.fr/maps/_/ss/k=maps.m.9gmpAHSMcoE.L.F4.O/m=sc2,per,mo,lp,ti,ds,stx,bom,b/am=N5Qg/d=1/rs=ACT90oHSc4IoNCLmLbulCjijJgDhx87dzg","method":"GET","evidence":"Access-Control-Allow-Origin: *"}],"count":"3","solution":"<p>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).<\/p><p>Configure the \"Access-Control-Allow-Origin\" HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.<\/p>","otherinfo":"<p>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.<\/p>","reference":"<p>http://www.hpenterprisesecurity.com/vulncat/en/vulncat/vb/html5_overly_permissive_cors_policy.html<\/p>","cweid":"264","wascid":"14","sourceid":"3"},{"pluginid":"10023","alertRef":"10023","alert":"Information Disclosure - Debug Error Messages","name":"Information Disclosure - Debug Error Messages","riskcode":"1","confidence":"2","riskdesc":"Low (Medium)","desc":"<p>The response appeared to contain common error messages returned by platforms such as ASP.NET, and Web-servers such as IIS and Apache. You can configure the list of common debug messages.<\/p>","instances":[{"uri":"https://www.google.fr/search?q=related:https://www.merriam-webster.com/dictionary/zap+ZAP&sa=X&ved=2ahUKEwic_-XZ6qbzAhXmF1kFHc5OBeMQH3oECBwQBw","method":"GET","evidence":"internal server error"},{"uri":"https://www.google.fr/search?q=related:https://www.merriam-webster.com/dictionary/zap+ZAP&sa=X&ved=2ahUKEwj755Ta6qbzAhVxEFkFHQ6PD2oQH3oECBQQBw","method":"GET","evidence":"internal server error"},{"uri":"https://www.google.fr/search?q=related:https://new.myzap.com/+ZAP&sa=X&ved=2ahUKEwic_-XZ6qbzAhXmF1kFHc5OBeMQH3oECAUQBA","method":"GET","evidence":"internal server error"},{"uri":"https://www.google.fr/search?q=related:https://www.zapbi.com/+ZAP&sa=X&ved=2ahUKEwicos_Y6qbzAhWFGFkFHRZRCNMQH3oECAQQBQ","method":"GET","evidence":"internal server error"},{"uri":"https://www.google.fr/search?q=related:https://www.zapbi.com/+ZAP&sa=X&ved=2ahUKEwj755Ta6qbzAhVxEFkFHQ6PD2oQH3oECAYQBQ","method":"GET","evidence":"internal server error"},{"uri":"https://www.google.fr/search?q=related:https://www.zapbi.com/+ZAP&sa=X&ved=2ahUKEwic_-XZ6qbzAhXmF1kFHc5OBeMQH3oECBYQBQ","method":"GET","evidence":"internal server error"},{"uri":"https://www.google.fr/search?q=related:https://github.com/uber-go/zap+ZAP&sa=X&ved=2ahUKEwic_-XZ6qbzAhXmF1kFHc5OBeMQH3oECBIQBw","method":"GET","evidence":"internal server error"},{"uri":"https://www.google.fr/search?q=related:https://github.com/uber-go/zap+ZAP&sa=X&ved=2ahUKEwj755Ta6qbzAhVxEFkFHQ6PD2oQH3oECBUQBw","method":"GET","evidence":"internal server error"},{"uri":"https://www.google.fr/search?q=related:https://www.merriam-webster.com/dictionary/zap+ZAP&sa=X&ved=2ahUKEwicos_Y6qbzAhWFGFkFHRZRCNMQH3oECBcQBw","method":"GET","evidence":"internal server error"},{"uri":"https://www.google.fr/search?q=related:https://new.myzap.com/+ZAP&sa=X&ved=2ahUKEwicos_Y6qbzAhWFGFkFHRZRCNMQH3oECAMQBA","method":"GET","evidence":"internal server error"},{"uri":"https://www.google.fr/search?q=related:https://github.com/uber-go/zap+ZAP&sa=X&ved=2ahUKEwicos_Y6qbzAhWFGFkFHRZRCNMQH3oECBQQBw","method":"GET","evidence":"internal server error"},{"uri":"https://www.google.fr/search?q=related:https://new.myzap.com/+ZAP&sa=X&ved=2ahUKEwj755Ta6qbzAhVxEFkFHQ6PD2oQH3oECAoQBA","method":"GET","evidence":"internal server error"}],"count":"12","solution":"<p>Disable debugging messages before pushing to production.<\/p>","reference":"<p><\/p>","cweid":"200","wascid":"13","sourceid":"3"},{"pluginid":"10031","alertRef":"10031","alert":"User Controllable HTML Element Attribute (Potential XSS)","name":"User Controllable HTML Element Attribute (Potential XSS)","riskcode":"0","confidence":"1","riskdesc":"Informational (Low)","desc":"<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.<\/p>","instances":[{"uri":"https://www.google.fr/preferences?fg=1&hl=en","method":"GET","param":"hl"},{"uri":"https://www.google.fr/advanced_search?fg=1&hl=en","method":"GET","param":"hl"},{"uri":"https://www.google.fr/preferences?fg=1&hl=en","method":"GET","param":"hl"},{"uri":"https://www.google.fr/history/optout?fg=1&hl=en","method":"GET","param":"hl"},{"uri":"https://www.google.fr/preferences?fg=1&hl=en","method":"GET","param":"hl"},{"uri":"https://www.google.fr/history/optout?fg=1&hl=en","method":"GET","param":"fg"},{"uri":"https://www.google.fr/search?btnK=Google+Search&ei=l79VYbqlGOSo5NoP2auysAg&iflsig=ALs-wAMAAAAAYVXNp7W3sfpqJZTccc9GoV1oYN8E1Ypk&q=ZAP&source=hp","method":"GET","param":"q"},{"uri":"https://www.google.fr/advanced_search?fg=1&hl=en","method":"GET","param":"hl"},{"uri":"https://www.google.fr/history/optout?fg=1&hl=en","method":"GET","param":"hl"},{"uri":"https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2","method":"GET","param":"fg"}],"count":"10","solution":"<p>Validate all input and sanitize output it before writing to any HTML attributes.<\/p>","otherinfo":"<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:<\/p><p><\/p><p>https://www.google.fr/preferences?fg=1&hl=en<\/p><p><\/p><p>appears to include user input in: <\/p><p><\/p><p>a(n) [html] tag [lang] attribute <\/p><p><\/p><p>The user input found was:<\/p><p>hl=en<\/p><p><\/p><p>The user-controlled value was:<\/p><p>en<\/p>","reference":"<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute<\/p>","cweid":"20","wascid":"20","sourceid":"3"},{"pluginid":"90033","alertRef":"90033","alert":"Loosely Scoped Cookie","name":"Loosely Scoped Cookie","riskcode":"0","confidence":"1","riskdesc":"Informational (Low)","desc":"<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.<\/p>","instances":[{"uri":"https://www.google.fr/search","method":"GET"},{"uri":"https://www.google.fr/?hl=*","method":"GET"},{"uri":"https://www.google.fr/index.html","method":"GET"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET"},{"uri":"https://www.google.fr/preferences","method":"GET"},{"uri":"https://www.google.fr/?hl","method":"GET"},{"uri":"https://www.google.fr/","method":"GET"},{"uri":"https://www.google.fr/","method":"GET"},{"uri":"https://www.google.fr/?pt1=true$","method":"GET"},{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET"},{"uri":"https://www.google.fr/?gws_rd=ssl$","method":"GET"},{"uri":"https://www.google.fr","method":"GET"}],"count":"12","solution":"<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).<\/p>","otherinfo":"<p>The origin domain used for comparison was: <\/p><p>www.google.fr<\/p><p>1P_JAR=2021-09-30-13<\/p><p><\/p>","reference":"<p>https://tools.ietf.org/html/rfc6265#section-4.1<\/p><p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html<\/p><p>http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies<\/p>","cweid":"565","wascid":"15","sourceid":"3"},{"pluginid":"10096","alertRef":"10096","alert":"Timestamp Disclosure - Unix","name":"Timestamp Disclosure - Unix","riskcode":"0","confidence":"1","riskdesc":"Informational (Low)","desc":"<p>A timestamp was disclosed by the application/web server - Unix<\/p>","instances":[{"uri":"https://www.google.fr","method":"GET","evidence":"23953921"},{"uri":"https://www.google.fr/","method":"GET","evidence":"23953921"},{"uri":"https://www.google.fr","method":"GET","evidence":"416666667"},{"uri":"https://www.google.fr","method":"GET","evidence":"89724004"},{"uri":"https://www.google.fr","method":"GET","evidence":"397607489"},{"uri":"https://www.google.fr/","method":"GET","evidence":"19026041"},{"uri":"https://www.google.fr/","method":"GET","evidence":"397607489"},{"uri":"https://www.google.fr/","method":"GET","evidence":"21600000"},{"uri":"https://www.google.fr","method":"GET","evidence":"21600000"},{"uri":"https://www.google.fr","method":"GET","evidence":"19026041"},{"uri":"https://www.google.fr/","method":"GET","evidence":"89731827"},{"uri":"https://www.google.fr/","method":"GET","evidence":"20733901"},{"uri":"https://www.google.fr/","method":"GET","evidence":"416666667"}],"count":"13","solution":"<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.<\/p>","otherinfo":"<p>23953921, which evaluates to: 1970-10-05 05:52:01<\/p>","reference":"<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage<\/p>","cweid":"200","wascid":"13","sourceid":"3"},{"pluginid":"10040","alertRef":"10040","alert":"Secure Pages Include Mixed Content","name":"Secure Pages Include Mixed Content","riskcode":"1","confidence":"2","riskdesc":"Low (Medium)","desc":"<p>The page includes mixed content, that is content accessed via HTTP instead of HTTPS.<\/p>","instances":[{"uri":"https://www.google.fr/search?q=ZAP+signification&sa=X&ved=2ahUKEwj755Ta6qbzAhVxEFkFHQ6PD2oQ1QJ6BAgeEAE","method":"GET","evidence":"http://ssl.gstatic.com/dictionary/static/sounds/20200429/zap--_us_1.mp3"},{"uri":"https://www.google.fr/search?q=ZAP+signification&sa=X&ved=2ahUKEwic_-XZ6qbzAhXmF1kFHc5OBeMQ1QJ6BAgjEAE","method":"GET","evidence":"http://ssl.gstatic.com/dictionary/static/sounds/20200429/zap--_us_1.mp3"},{"uri":"https://www.google.fr/search?q=ZAP+signification&sa=X&ved=2ahUKEwicos_Y6qbzAhWFGFkFHRZRCNMQ1QJ6BAgZEAE","method":"GET","evidence":"http://ssl.gstatic.com/dictionary/static/sounds/20200429/zap--_us_1.mp3"}],"count":"3","solution":"<p>A page that is available over SSL/TLS must be comprised completely of content which is transmitted over SSL/TLS.<\/p><p>The page must not contain any content that is transmitted over unencrypted HTTP.<\/p><p> This includes content from third party sites.<\/p>","otherinfo":"<p>tag=audio src=http://ssl.gstatic.com/dictionary/static/sounds/20200429/zap--_us_1.mp3<\/p><p><\/p>","reference":"<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html<\/p>","cweid":"311","wascid":"4","sourceid":"3"},{"pluginid":"10063","alertRef":"10063","alert":"Permissions Policy Header Not Set","name":"Permissions Policy Header Not Set","riskcode":"1","confidence":"2","riskdesc":"Low (Medium)","desc":"<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.<\/p>","instances":[{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET"},{"uri":"https://www.google.fr","method":"GET"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET"},{"uri":"https://www.google.fr/?gws_rd=ssl$","method":"GET"},{"uri":"https://www.google.fr/","method":"GET"},{"uri":"https://www.google.fr/?hl=*","method":"GET"},{"uri":"https://www.google.fr/groups","method":"GET"},{"uri":"https://www.google.fr/?hl","method":"GET"},{"uri":"https://www.google.fr/search/static","method":"GET"},{"uri":"https://www.google.fr/index.html","method":"GET"},{"uri":"https://www.google.fr/sdch","method":"GET"}],"count":"11","solution":"<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.<\/p>","reference":"<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy<\/p><p>https://developers.google.com/web/updates/2018/06/feature-policy<\/p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/<\/p><p>https://w3c.github.io/webappsec-feature-policy/<\/p><p>https://www.smashingmagazine.com/2018/12/feature-policy/<\/p>","cweid":"693","wascid":"15","sourceid":"3"},{"pluginid":"10027","alertRef":"10027","alert":"Information Disclosure - Suspicious Comments","name":"Information Disclosure - Suspicious Comments","riskcode":"0","confidence":"1","riskdesc":"Informational (Low)","desc":"<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.<\/p>","instances":[{"uri":"https://www.google.fr/?pt1=true$","method":"GET","evidence":"Db"},{"uri":"https://www.google.fr/?hl=*","method":"GET","evidence":"Db"},{"uri":"https://www.google.fr/?hl","method":"GET","evidence":"Db"},{"uri":"https://www.google.fr/","method":"GET","evidence":"from"},{"uri":"https://www.google.fr/?gws_rd=ssl$","method":"GET","evidence":"Db"},{"uri":"https://www.google.fr/","method":"GET","evidence":"Db"},{"uri":"https://www.google.fr/index.html","method":"GET","evidence":"Db"},{"uri":"https://www.google.fr/imgres","method":"GET","evidence":"user"},{"uri":"https://www.google.fr/imgres","method":"GET","evidence":"SELECT"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET","evidence":"Db"},{"uri":"https://www.google.fr","method":"GET","evidence":"Db"},{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET","evidence":"Db"}],"count":"12","solution":"<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.<\/p>","otherinfo":"<p>The following pattern was used: \\bDB\\b and was detected 2 times, the first in the element starting with: \"<script nonce=\"fQhKZwvwxteRvNc4gJ32Mw==\">(function(){<\/p><p>window.rwt=function(){return!0};}).call(this);(function(){<\/p><p>window.jsarwt=f\", see evidence field for the suspicious comment/snippet.<\/p>","reference":"<p><\/p>","cweid":"200","wascid":"13","sourceid":"3"},{"pluginid":"10035","alertRef":"10035","alert":"Strict-Transport-Security Header Not Set","name":"Strict-Transport-Security Header Not Set","riskcode":"1","confidence":"3","riskdesc":"Low (High)","desc":"<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.<\/p>","instances":[{"uri":"https://www.google.fr/sitemap.xml","method":"GET"},{"uri":"https://www.google.fr/xhtml/","method":"GET"},{"uri":"https://www.google.fr/groups","method":"GET"},{"uri":"https://www.google.fr/","method":"GET"},{"uri":"https://www.google.fr/search/about","method":"GET"},{"uri":"https://www.google.fr/sdch","method":"GET"},{"uri":"https://www.google.fr/robots.txt","method":"GET"},{"uri":"https://www.google.fr/imgres","method":"GET"},{"uri":"https://www.google.fr/search/static","method":"GET"},{"uri":"https://www.google.fr/default","method":"GET"},{"uri":"https://www.google.fr/u/","method":"GET"},{"uri":"https://www.google.fr/m/finance","method":"GET"}],"count":"12","solution":"<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.<\/p>","reference":"<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html<\/p><p>https://owasp.org/www-community/Security_Headers<\/p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security<\/p><p>http://caniuse.com/stricttransportsecurity<\/p><p>http://tools.ietf.org/html/rfc6797<\/p>","cweid":"319","wascid":"15","sourceid":"3"},{"pluginid":"10055","alertRef":"10055","alert":"CSP: Notices","name":"CSP: Notices","riskcode":"1","confidence":"2","riskdesc":"Low (Medium)","desc":"<p>Warnings:<\/p><p>The report-uri directive has ben deprecated in favor of the new report-to directive<\/p><p>The report-uri directive has ben deprecated in favor of the new report-to directive<\/p><p>Unrecognized directive require-trusted-types-for<\/p><p>The report-uri directive has ben deprecated in favor of the new report-to directive<\/p><p><\/p>","instances":[{"uri":"https://www.google.fr/history/optout?fg=1&hl=en","method":"GET","evidence":"require-trusted-types-for 'script';report-uri /history/_/SearchCustomizationUi/cspreport"},{"uri":"https://www.google.fr/gwt/","method":"GET","evidence":"require-trusted-types-for 'script'"},{"uri":"https://www.google.fr/imgres","method":"GET","evidence":"script-src 'nonce-2UZTY6UU1ptCaRo1k9ys+g' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/VisualFrontendUi/cspreport;worker-src 'self'"},{"uri":"https://www.google.fr/history/optout?fg=1&hl=en","method":"GET","evidence":"script-src 'nonce-T6EAPafQjC6rTyqVl+2hSA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /history/_/SearchCustomizationUi/cspreport;worker-src 'self'"},{"uri":"https://www.google.fr/imgres","method":"GET","evidence":"script-src 'nonce-2UZTY6UU1ptCaRo1k9ys+g' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://www.googleapis.com/appsmarket/v2/installedApps/;report-uri /_/VisualFrontendUi/cspreport"},{"uri":"https://www.google.fr/history/optout?fg=1&hl=en","method":"GET","evidence":"script-src 'nonce-T6EAPafQjC6rTyqVl+2hSA' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://www.googleapis.com/appsmarket/v2/installedApps/;report-uri /history/_/SearchCustomizationUi/cspreport"}],"count":"6","solution":"<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.<\/p>","reference":"<p>http://www.w3.org/TR/CSP2/<\/p><p>http://www.w3.org/TR/CSP/<\/p><p>http://caniuse.com/#search=content+security+policy<\/p><p>http://content-security-policy.com/<\/p><p>https://github.com/shapesecurity/salvation<\/p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources<\/p>","cweid":"693","wascid":"15","sourceid":"3"},{"pluginid":"90003","alertRef":"90003","alert":"Sub Resource Integrity Attribute Missing","name":"Sub Resource Integrity Attribute Missing","riskcode":"2","confidence":"3","riskdesc":"Medium (High)","desc":"<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. <\/p>","instances":[{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","evidence":"<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" nonce=\"_4PT5t4PgGixl1scmwnDrA\">"},{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","evidence":"<link rel=\"apple-touch-icon-precomposed\" sizes=\"180x180\" href=\"https://storage.googleapis.com/operating-anagram-8280/apple-touch-icon.png\">"},{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","evidence":"<script src=\"https://www.gstatic.com/external_hosted/picturefill/picturefill.min.js\" nonce=\"_4PT5t4PgGixl1scmwnDrA\"><\/script>"},{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","evidence":"<link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans:400,500|Product+Sans:400&amp;lang=en\" nonce=\"_4PT5t4PgGixl1scmwnDrA\">"},{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","evidence":"<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://storage.googleapis.com/operating-anagram-8280/favicon-32x32.png\">"},{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","evidence":"<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://storage.googleapis.com/operating-anagram-8280/favicon-16x16.png\">"},{"uri":"https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2","method":"GET","evidence":"<link href=\"https://www.google.com/services/\" rel=\"canonical\">"},{"uri":"https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2","method":"GET","evidence":"<link href=\"https://www.google.com/images/branding/product/ico/googleg_alldp.ico\" rel=\n    \"shortcut icon\" type=\"image/x-icon\">"},{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","evidence":"<link rel=\"shortcut icon\" href=\"https://storage.googleapis.com/operating-anagram-8280/favicon.ico\">"},{"uri":"https://www.google.fr/history/optout?fg=1&hl=en","method":"GET","evidence":"<script noCollect src=\"https://www.gstatic.com/_/mss/boq-footprints/_/js/k=boq-footprints.SearchCustomizationUi.en.WITOUW_6sBU.es5.O/am=IAAg/d=1/excm=_b,_tp,optoutview/ed=1/dg=0/wt=2/esmo=1/rs=AJJuxJauOlLQ6cRryk8uowFP__udwLbKaA/m=_b,_tp\" defer id=\"base-js\" nonce=\"T6EAPafQjC6rTyqVl+2hSA\"><\/script>"},{"uri":"https://www.google.fr/imgres","method":"GET","evidence":"<script noCollect src=\"https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFrontendUi.fr.HFuXaZAmGb0.es5.O/am=EvjAOCT0JwAAIMABAFCocgQDEACAIEQGYGAIDmSAQAMQwDEAhAAAJMACAAAAXBwwSoEBAAACEgAwASYQAIAABAOEwAQEAIRmAMwdACoAAAAAAAAQ93jgAQQAAAAAAAAACCNiAAAAAAAA0EQAAAAAAAAE/d=1/excm=_b,_tp,standaloneimageview/ed=1/dg=0/wt=2/esmo=1/rs=AH7-fg5uoL9ZXkpiQkREhpvTdl22evAdEg/m=_b,_tp\" defer id=\"base-js\" nonce=\"2UZTY6UU1ptCaRo1k9ys+g\"><\/script>"},{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","evidence":"<link rel=\"canonical\" href=\"https://www.google.com/intl/fr/search/howsearchworks/\">"}],"count":"12","solution":"<p>Provide a valid integrity attribute to the tag.<\/p>","reference":"<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity<\/p>","cweid":"345","wascid":"15","sourceid":"3"},{"pluginid":"10017","alertRef":"10017","alert":"Cross-Domain JavaScript Source File Inclusion","name":"Cross-Domain JavaScript Source File Inclusion","riskcode":"1","confidence":"2","riskdesc":"Low (Medium)","desc":"<p>The page includes one or more script files from a third-party domain.<\/p>","instances":[{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","param":"//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-touch.min.js","evidence":"<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-touch.min.js\" nonce=\"_4PT5t4PgGixl1scmwnDrA\"><\/script>"},{"uri":"https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2","method":"GET","param":"//ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js","evidence":"<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js\" nonce=\"IVKQNYS2NeTgpOAsU09A5A\"><\/script>"},{"uri":"https://www.google.fr/imgres","method":"GET","param":"https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFrontendUi.fr.HFuXaZAmGb0.es5.O/am=EvjAOCT0JwAAIMABAFCocgQDEACAIEQGYGAIDmSAQAMQwDEAhAAAJMACAAAAXBwwSoEBAAACEgAwASYQAIAABAOEwAQEAIRmAMwdACoAAAAAAAAQ93jgAQQAAAAAAAAACCNiAAAAAAAA0EQAAAAAAAAE/d=1/excm=_b,_tp,standaloneimageview/ed=1/dg=0/wt=2/esmo=1/rs=AH7-fg5uoL9ZXkpiQkREhpvTdl22evAdEg/m=_b,_tp","evidence":"<script noCollect src=\"https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFrontendUi.fr.HFuXaZAmGb0.es5.O/am=EvjAOCT0JwAAIMABAFCocgQDEACAIEQGYGAIDmSAQAMQwDEAhAAAJMACAAAAXBwwSoEBAAACEgAwASYQAIAABAOEwAQEAIRmAMwdACoAAAAAAAAQ93jgAQQAAAAAAAAACCNiAAAAAAAA0EQAAAAAAAAE/d=1/excm=_b,_tp,standaloneimageview/ed=1/dg=0/wt=2/esmo=1/rs=AH7-fg5uoL9ZXkpiQkREhpvTdl22evAdEg/m=_b,_tp\" defer id=\"base-js\" nonce=\"2UZTY6UU1ptCaRo1k9ys+g\"><\/script>"},{"uri":"https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2","method":"GET","param":"//ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-messages.min.js","evidence":"<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-messages.min.js\" nonce=\"IVKQNYS2NeTgpOAsU09A5A\"><\/script>"},{"uri":"https://www.google.fr/history/optout?fg=1&hl=en","method":"GET","param":"https://www.gstatic.com/_/mss/boq-footprints/_/js/k=boq-footprints.SearchCustomizationUi.en.WITOUW_6sBU.es5.O/am=IAAg/d=1/excm=_b,_tp,optoutview/ed=1/dg=0/wt=2/esmo=1/rs=AJJuxJauOlLQ6cRryk8uowFP__udwLbKaA/m=_b,_tp","evidence":"<script noCollect src=\"https://www.gstatic.com/_/mss/boq-footprints/_/js/k=boq-footprints.SearchCustomizationUi.en.WITOUW_6sBU.es5.O/am=IAAg/d=1/excm=_b,_tp,optoutview/ed=1/dg=0/wt=2/esmo=1/rs=AJJuxJauOlLQ6cRryk8uowFP__udwLbKaA/m=_b,_tp\" defer id=\"base-js\" nonce=\"T6EAPafQjC6rTyqVl+2hSA\"><\/script>"},{"uri":"https://www.google.fr/landing/signout.html","method":"GET","param":"//www.google.com/js/google.js","evidence":"<script src=\"//www.google.com/js/google.js\" nonce=\"hTWobz0R65qanCgIfzz_mw\">\n<\/script>"},{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","param":"//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js","evidence":"<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js\" nonce=\"_4PT5t4PgGixl1scmwnDrA\"><\/script>"},{"uri":"https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2","method":"GET","param":"//ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-animate.min.js","evidence":"<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-animate.min.js\" nonce=\"IVKQNYS2NeTgpOAsU09A5A\"><\/script>"},{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","param":"//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.min.js","evidence":"<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.min.js\" nonce=\"_4PT5t4PgGixl1scmwnDrA\"><\/script>"},{"uri":"https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2","method":"GET","param":"//www.gstatic.com/external_hosted/modernizr/v2_8_3/basic.js","evidence":"<script src=\"//www.gstatic.com/external_hosted/modernizr/v2_8_3/basic.js\" nonce=\"IVKQNYS2NeTgpOAsU09A5A\"><\/script>"},{"uri":"https://www.google.fr/landing/signout.html","method":"GET","param":"//www.google.com/js/maia.js","evidence":"<script src=\"//www.google.com/js/maia.js\" nonce=\"hTWobz0R65qanCgIfzz_mw\">\n<\/script>"},{"uri":"https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2","method":"GET","param":"//www.google.com/ads/js/peitho2/peitho2.min.js","evidence":"<script async data-gtmid=\"GTM-DJXNX\" src=\n    \"//www.google.com/ads/js/peitho2/peitho2.min.js\" nonce=\"IVKQNYS2NeTgpOAsU09A5A\"><\/script>"},{"uri":"https://www.google.fr/search/howsearchworks/","method":"GET","param":"https://www.gstatic.com/external_hosted/picturefill/picturefill.min.js","evidence":"<script src=\"https://www.gstatic.com/external_hosted/picturefill/picturefill.min.js\" nonce=\"_4PT5t4PgGixl1scmwnDrA\"><\/script>"},{"uri":"https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2","method":"GET","param":"//www.gstatic.com/external_hosted/picturefill/picturefill.min.js","evidence":"<script src=\"//www.gstatic.com/external_hosted/picturefill/picturefill.min.js\" nonce=\"IVKQNYS2NeTgpOAsU09A5A\"><\/script>"}],"count":"14","solution":"<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.<\/p>","reference":"<p><\/p>","cweid":"829","wascid":"15","sourceid":"3"},{"pluginid":"10202","alertRef":"10202","alert":"Absence of Anti-CSRF Tokens","name":"Absence of Anti-CSRF Tokens","riskcode":"1","confidence":"2","riskdesc":"Low (Medium)","desc":"<p>No Anti-CSRF tokens were found in a HTML submission form.<\/p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.<\/p><p><\/p><p>CSRF attacks are effective in a number of situations, including:<\/p><p>    * The victim has an active session on the target site.<\/p><p>    * The victim is authenticated via HTTP auth on the target site.<\/p><p>    * The victim is on the same local network as the target site.<\/p><p><\/p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.<\/p>","instances":[{"uri":"https://www.google.fr/?hl","method":"GET","evidence":"<form action=\"/search\" method=\"GET\" role=\"search\">"},{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET","evidence":"<form action=\"/search\" method=\"GET\" role=\"search\">"},{"uri":"https://www.google.fr/?pt1=true$","method":"GET","evidence":"<form action=\"/search\" method=\"GET\" role=\"search\">"},{"uri":"https://www.google.fr","method":"GET","evidence":"<form action=\"/search\" method=\"GET\" role=\"search\">"},{"uri":"https://www.google.fr/","method":"GET","evidence":"<form action=\"/search\" name=\"f\">"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET","evidence":"<form action=\"/search\" method=\"GET\" role=\"search\">"},{"uri":"https://www.google.fr/index.html","method":"GET","evidence":"<form action=\"/search\" method=\"GET\" role=\"search\">"},{"uri":"https://www.google.fr/preferences","method":"GET","evidence":"<form action=\"/setprefs\" id=\"tsuid1\" method=\"GET\" name=\"langform\">"},{"uri":"https://www.google.fr/?hl=*","method":"GET","evidence":"<form action=\"/search\" method=\"GET\" role=\"search\">"},{"uri":"https://www.google.fr/?gws_rd=ssl$","method":"GET","evidence":"<form action=\"/search\" method=\"GET\" role=\"search\">"},{"uri":"https://www.google.fr/m","method":"GET","evidence":"<form action=\"/search\" method=\"GET\" role=\"search\">"},{"uri":"https://www.google.fr/","method":"GET","evidence":"<form action=\"/search\" method=\"GET\" role=\"search\">"}],"count":"12","solution":"<p>Phase: Architecture and Design<\/p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.<\/p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.<\/p><p><\/p><p>Phase: Implementation<\/p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.<\/p><p><\/p><p>Phase: Architecture and Design<\/p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).<\/p><p>Note that this can be bypassed using XSS.<\/p><p><\/p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.<\/p><p>Note that this can be bypassed using XSS.<\/p><p><\/p><p>Use the ESAPI Session Management control.<\/p><p>This control includes a component for CSRF.<\/p><p><\/p><p>Do not use the GET method for any request that triggers a state change.<\/p><p><\/p><p>Phase: Implementation<\/p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.<\/p>","otherinfo":"<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF] was found in the following HTML form: [Form 1: \"btnI\" \"btnK\" \"ei\" \"gbqfbb\" \"iflsig\" \"q\" \"source\" ].<\/p>","reference":"<p>http://projects.webappsec.org/Cross-Site-Request-Forgery<\/p><p>http://cwe.mitre.org/data/definitions/352.html<\/p>","cweid":"352","wascid":"9","sourceid":"3"},{"pluginid":"90011","alertRef":"90011","alert":"Charset Mismatch (Header Versus Meta Content-Type Charset)","name":"Charset Mismatch (Header Versus Meta Content-Type Charset)","riskcode":"0","confidence":"1","riskdesc":"Informational (Low)","desc":"<p>This check identifies responses where the HTTP Content-Type header declares a charset different from the charset defined by the body of the HTML or XML. When there's a charset mismatch between the HTTP header and content body Web browsers can be forced into an undesirable content-sniffing mode to determine the content's correct character set.<\/p><p><\/p><p>An attacker could manipulate content on the page to be interpreted in an encoding of their choice. For example, if an attacker can control content at the beginning of the page, they could inject script using UTF-7 encoded text and manipulate some browsers into interpreting that text.<\/p>","instances":[{"uri":"https://www.google.fr/","method":"GET"}],"count":"1","solution":"<p>Force UTF-8 for all text content in both the HTTP header and meta tags in HTML or encoding declarations in XML.<\/p>","otherinfo":"<p>There was a charset mismatch between the HTTP Header and the META content-type encoding declarations: [ISO-8859-1] and [UTF-8] do not match.<\/p>","reference":"<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection<\/p>","cweid":"436","wascid":"15","sourceid":"3"},{"pluginid":"10055","alertRef":"10055","alert":"CSP: script-src unsafe-inline","name":"CSP: script-src unsafe-inline","riskcode":"2","confidence":"2","riskdesc":"Medium (Medium)","desc":"<p>script-src includes unsafe-inline.<\/p>","instances":[{"uri":"https://www.google.fr/imgres","method":"GET","evidence":"script-src 'nonce-2UZTY6UU1ptCaRo1k9ys+g' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/VisualFrontendUi/cspreport;worker-src 'self'"},{"uri":"https://www.google.fr/history/optout?fg=1&hl=en","method":"GET","evidence":"script-src 'nonce-T6EAPafQjC6rTyqVl+2hSA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /history/_/SearchCustomizationUi/cspreport;worker-src 'self'"}],"count":"2","solution":"<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.<\/p>","reference":"<p>http://www.w3.org/TR/CSP2/<\/p><p>http://www.w3.org/TR/CSP/<\/p><p>http://caniuse.com/#search=content+security+policy<\/p><p>http://content-security-policy.com/<\/p><p>https://github.com/shapesecurity/salvation<\/p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources<\/p>","cweid":"693","wascid":"15","sourceid":"3"},{"pluginid":"10062","alertRef":"10062","alert":"PII Disclosure","name":"PII Disclosure","riskcode":"3","confidence":"3","riskdesc":"High (High)","desc":"<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.<\/p>","instances":[{"uri":"https://www.google.fr/travel/hotels","method":"GET","evidence":"6700933117928712739"}],"count":"1","solution":"<p><\/p>","otherinfo":"<p>Credit Card Type detected: Maestro<\/p><p>Bank Identification Number: 670093<\/p><p>Brand: MAESTRO<\/p><p>Category: STANDARD<\/p><p>Issuer: VISA AUSTRIA<\/p>","reference":"<p><\/p>","cweid":"359","wascid":"13","sourceid":"3"},{"pluginid":"10015","alertRef":"10015","alert":"Incomplete or No Cache-control Header Set","name":"Incomplete or No Cache-control Header Set","riskcode":"1","confidence":"2","riskdesc":"Low (Medium)","desc":"<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content.<\/p>","instances":[{"uri":"https://www.google.fr/index.html","method":"GET","param":"Cache-Control","evidence":"private, max-age=0"},{"uri":"https://www.google.fr/?pt1=true$","method":"GET","param":"Cache-Control","evidence":"private, max-age=0"},{"uri":"https://www.google.fr/sitemap.xml","method":"GET","param":"Cache-Control","evidence":"private, max-age=0"},{"uri":"https://www.google.fr/?gws_rd=ssl$&hl=*","method":"GET","param":"Cache-Control","evidence":"private, max-age=0"},{"uri":"https://www.google.fr/?gws_rd=ssl$","method":"GET","param":"Cache-Control","evidence":"private, max-age=0"},{"uri":"https://www.google.fr/","method":"GET","param":"Cache-Control","evidence":"private, max-age=0"},{"uri":"https://www.google.fr/?hl=*","method":"GET","param":"Cache-Control","evidence":"private, max-age=0"},{"uri":"https://www.google.fr/?hl","method":"GET","param":"Cache-Control","evidence":"private, max-age=0"},{"uri":"https://www.google.fr/?*&gws_rd=ssl&hl=*","method":"GET","param":"Cache-Control","evidence":"private, max-age=0"},{"uri":"https://www.google.fr/robots.txt","method":"GET","param":"Cache-Control","evidence":"private, max-age=0"},{"uri":"https://www.google.fr","method":"GET","param":"Cache-Control","evidence":"private, max-age=0"}],"count":"11","solution":"<p>Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate.<\/p>","reference":"<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching<\/p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control<\/p>","cweid":"525","wascid":"13","sourceid":"3"},{"pluginid":"10049","alertRef":"10049","alert":"Storable and Cacheable Content","name":"Storable and Cacheable Content","riskcode":"0","confidence":"2","riskdesc":"Informational (Medium)","desc":"<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.<\/p>","instances":[{"uri":"https://www.google.fr/groups","method":"GET"},{"uri":"https://www.google.fr/search/howsearchworks","method":"GET","evidence":"max-age=1800"},{"uri":"https://www.google.fr/search/static","method":"GET"},{"uri":"https://www.google.fr/sdch","method":"GET"},{"uri":"https://www.google.fr/search/about","method":"GET","evidence":"max-age=1800"}],"count":"5","solution":"<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:<\/p><p>Cache-Control: no-cache, no-store, must-revalidate, private<\/p><p>Pragma: no-cache<\/p><p>Expires: 0<\/p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. <\/p>","otherinfo":"<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.<\/p>","reference":"<p>https://tools.ietf.org/html/rfc7234<\/p><p>https://tools.ietf.org/html/rfc7231<\/p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)<\/p>","cweid":"524","wascid":"13","sourceid":"3"},{"pluginid":"10024","alertRef":"10024","alert":"Information Disclosure - Sensitive Information in URL","name":"Information Disclosure - Sensitive Information in URL","riskcode":"0","confidence":"2","riskdesc":"Informational (Medium)","desc":"<p>The request appeared to contain sensitive information leaked in the URL. This can violate PCI and most organizational compliance policies. You can configure the list of strings for this check to add or remove values specific to your environment.<\/p>","instances":[{"uri":"https://www.google.fr/citations?user","method":"GET","param":"user","evidence":"user"}],"count":"1","solution":"<p>Do not pass sensitive information in URIs.<\/p>","otherinfo":"<p>The URL contains potentially sensitive information. The following string was found via the pattern: user<\/p><p>user<\/p>","reference":"<p><\/p>","cweid":"200","wascid":"13","sourceid":"3"},{"pluginid":"10054","alertRef":"10054","alert":"Cookie without SameSite Attribute","name":"Cookie without SameSite Attribute","riskcode":"1","confidence":"2","riskdesc":"Low (Medium)","desc":"<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.<\/p>","instances":[{"uri":"https://www.google.fr/","method":"GET","param":"NID","evidence":"Set-Cookie: NID"},{"uri":"https://www.google.fr/","method":"GET","param":"1P_JAR","evidence":"Set-Cookie: 1P_JAR"}],"count":"2","solution":"<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.<\/p>","reference":"<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site<\/p>","cweid":"1275","wascid":"13","sourceid":"3"},{"pluginid":"10011","alertRef":"10011","alert":"Cookie Without Secure Flag","name":"Cookie Without Secure Flag","riskcode":"1","confidence":"2","riskdesc":"Low (Medium)","desc":"<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.<\/p>","instances":[{"uri":"https://www.google.fr/","method":"GET","param":"NID","evidence":"Set-Cookie: NID"}],"count":"1","solution":"<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.<\/p>","reference":"<p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html<\/p>","cweid":"614","wascid":"13","sourceid":"3"}]}]}
+{
+	"@version": "2.11.0",
+	"@generated": "Sat, 9 Oct 2021 16:00:30",
+	"site":[ 
+		{
+			"@name": "https://www.google.fr",
+			"@host": "www.google.fr",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "10055",
+					"alertRef": "10055",
+					"alert": "CSP: Wildcard Directive",
+					"name": "CSP: Wildcard Directive",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: </p><p>script-src, style-src, img-src, connects-src, frame-src, frame-ancestors, font-src, media-src, object-src, manifest-src, worker-src, prefetch-src, form-action</p><p></p><p>The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/gwt/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "require-trusted-types-for 'script'"
+						},
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "require-trusted-types-for 'script';report-uri /history/_/SearchCustomizationUi/cspreport"
+						},
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "script-src 'nonce-xUWJmW9fT7Vie139LWmLfA' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://www.googleapis.com/appsmarket/v2/installedApps/;report-uri /history/_/SearchCustomizationUi/cspreport"
+						},
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "script-src 'nonce-xUWJmW9fT7Vie139LWmLfA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /history/_/SearchCustomizationUi/cspreport;worker-src 'self'"
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "script-src 'nonce-G5BNgxVv8t94EB0G5m5Lxg' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://www.googleapis.com/appsmarket/v2/installedApps/;report-uri /_/VisualFrontendUi/cspreport"
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "script-src 'nonce-G5BNgxVv8t94EB0G5m5Lxg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/VisualFrontendUi/cspreport;worker-src 'self'"
+						}
+					],
+					"count": "6",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "402"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055",
+					"alert": "CSP: script-src unsafe-inline",
+					"name": "CSP: script-src unsafe-inline",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>script-src includes unsafe-inline.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/gwt/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "require-trusted-types-for 'script'"
+						},
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "require-trusted-types-for 'script';report-uri /history/_/SearchCustomizationUi/cspreport"
+						},
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "script-src 'nonce-xUWJmW9fT7Vie139LWmLfA' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://www.googleapis.com/appsmarket/v2/installedApps/;report-uri /history/_/SearchCustomizationUi/cspreport"
+						},
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "script-src 'nonce-xUWJmW9fT7Vie139LWmLfA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /history/_/SearchCustomizationUi/cspreport;worker-src 'self'"
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "script-src 'nonce-G5BNgxVv8t94EB0G5m5Lxg' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://www.googleapis.com/appsmarket/v2/installedApps/;report-uri /_/VisualFrontendUi/cspreport"
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "script-src 'nonce-G5BNgxVv8t94EB0G5m5Lxg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/VisualFrontendUi/cspreport;worker-src 'self'"
+						}
+					],
+					"count": "6",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "435"
+				},
+				{
+					"pluginid": "10038",
+					"alertRef": "10038",
+					"alert": "Content Security Policy (CSP) Header Not Set",
+					"name": "Content Security Policy (CSP) Header Not Set",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?*&gws_rd=ssl&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/groups",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/sdch",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search/static",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "11",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: \"Content-Security-Policy\" for Chrome 25+, Firefox 23+ and Safari 7+, \"X-Content-Security-Policy\" for Firefox 4.0+ and Internet Explorer 10+, and \"X-WebKit-CSP\" for Chrome 14+ and Safari 6+.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10098",
+					"alertRef": "10098",
+					"alert": "Cross-Domain Misconfiguration",
+					"name": "Cross-Domain Misconfiguration",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/maps/_/js/k=maps.m.fr.PmSHqEZb6UU.2019.O/m=sc2,per,mo,lp,ti,ds,stx,bom,b/am=N5Qg/rt=j/d=1/rs=ACT90oFn0tUCmLzUahHMddsHbJTD_jxjuQ",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
+							"uri": "https://www.google.fr/maps/_/ss/k=maps.m.AQM-0yQa9wc.L.F4.O/m=sc2,per,mo,lp,ti,ds,stx,bom,b/am=N5Qg/d=1/rs=ACT90oHiriJRgcNDz7dj2z68z_vU9WFL6g",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
+							"uri": "https://www.google.fr/maps/api/staticmap",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						}
+					],
+					"count": "3",
+					"solution": "<p>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</p><p>Configure the \"Access-Control-Allow-Origin\" HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</p>",
+					"otherinfo": "<p>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</p>",
+					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
+					"cweid": "264",
+					"wascid": "14",
+					"sourceid": "1475"
+				},
+				{
+					"pluginid": "10108",
+					"alertRef": "10108",
+					"alert": "Reverse Tabnabbing",
+					"name": "Reverse Tabnabbing",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>At least one link on this page is vulnerable to Reverse tabnabbing as it uses a target attribute without using both of the \"noopener\" and \"noreferrer\" keywords in the \"rel\" attribute, which allows the target page to take control of this page.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail</a>"
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail</a>"
+						},
+						{
+							"uri": "https://www.google.fr/?*&gws_rd=ssl&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail</a>"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail</a>"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail</a>"
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail</a>"
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail</a>"
+						},
+						{
+							"uri": "https://www.google.fr/?pt1=true$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail</a>"
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail</a>"
+						},
+						{
+							"uri": "https://www.google.fr/m",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"gb_f\" data-pid=\"23\" href=\"https://mail.google.com/mail/&amp;ogbl\" target=\"_top\">Gmail</a>"
+						},
+						{
+							"uri": "https://www.google.fr/preferences",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"gb_3 gb_4 gb_3d gb_3c\" href=\"https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.fr/preferences&amp;ec=GAZAAQ\" target=\"_top\">Sign in</a>"
+						}
+					],
+					"count": "11",
+					"solution": "<p>Do not use a target attribute, or if you have to then also add the attribute: rel=\"noopener noreferrer\".</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-community/attacks/Reverse_Tabnabbing</p><p>https://dev.to/ben/the-targetblank-vulnerability-by-example</p><p>https://mathiasbynens.github.io/rel-noopener/</p><p>https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90003",
+					"alertRef": "90003",
+					"alert": "Sub Resource Integrity Attribute Missing",
+					"name": "Sub Resource Integrity Attribute Missing",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script noCollect src=\"https://www.gstatic.com/_/mss/boq-footprints/_/js/k=boq-footprints.SearchCustomizationUi.en.igL-eMPMLJU.es5.O/am=IAAg/d=1/excm=_b,_tp,optoutview/ed=1/dg=0/wt=2/esmo=1/rs=AJJuxJYq4m2DW_IUCFD-8oYwaVZZiWgkzQ/m=_b,_tp\" defer id=\"base-js\" nonce=\"xUWJmW9fT7Vie139LWmLfA\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script noCollect src=\"https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFrontendUi.fr.SniTtoAodFQ.es5.O/am=EvjAOCT0JwAgIMABAFCo8ggGIAAAQYgMwMAQHMgAgQYQgGMACAEkwAIAAABcHDBKgQEAAAISAJggEwgAQACCAQjBFAgACI0BMHcAVAAAAAAAACDu8cADCAAAAAAAAAAQRsQAAAAAAADQRAAAAAAAAAQ/d=1/excm=_b,_tp,standaloneimageview/ed=1/dg=0/wt=2/esmo=1/rs=AH7-fg5Rl3aHHS7sLg5hQPHIxLY84B9PUQ/m=_b,_tp\" defer id=\"base-js\" nonce=\"G5BNgxVv8t94EB0G5m5Lxg\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"apple-touch-icon-precomposed\" sizes=\"180x180\" href=\"https://storage.googleapis.com/operating-anagram-8280/apple-touch-icon.png\">"
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"canonical\" href=\"https://www.google.com/intl/fr/search/howsearchworks/\">"
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"https://storage.googleapis.com/operating-anagram-8280/favicon-16x16.png\">"
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://storage.googleapis.com/operating-anagram-8280/favicon-32x32.png\">"
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"shortcut icon\" href=\"https://storage.googleapis.com/operating-anagram-8280/favicon.ico\">"
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans:400,500|Product+Sans:400&amp;lang=en\" nonce=\"KdepOFagcqsYPREV2GwVEw\">"
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" nonce=\"KdepOFagcqsYPREV2GwVEw\">"
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://www.gstatic.com/external_hosted/picturefill/picturefill.min.js\" nonce=\"KdepOFagcqsYPREV2GwVEw\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://www.google.com/images/branding/product/ico/googleg_alldp.ico\" rel=\n    \"shortcut icon\" type=\"image/x-icon\">"
+						},
+						{
+							"uri": "https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link href=\"https://www.google.com/services/\" rel=\"canonical\">"
+						}
+					],
+					"count": "12",
+					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
+					"cweid": "345",
+					"wascid": "15",
+					"sourceid": "435"
+				},
+				{
+					"pluginid": "10020",
+					"alertRef": "10020",
+					"alert": "X-Frame-Options Header Not Set",
+					"name": "X-Frame-Options Header Not Set",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/chrome/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/landing/signout.html",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/movies/about/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/algorithms/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/crawling-indexing/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/mission/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/mission/users/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/responses/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/services/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/toolbar/ie8/sidebar.html",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "12",
+					"solution": "<p>Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive. </p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
+					"cweid": "1021",
+					"wascid": "15",
+					"sourceid": "2657"
+				},
+				{
+					"pluginid": "10202",
+					"alertRef": "10202",
+					"alert": "Absence of Anti-CSRF Tokens",
+					"name": "Absence of Anti-CSRF Tokens",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/search\" method=\"GET\" role=\"search\">"
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/search\" method=\"GET\" role=\"search\">"
+						},
+						{
+							"uri": "https://www.google.fr/?*&gws_rd=ssl&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/search\" method=\"GET\" role=\"search\">"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/search\" method=\"GET\" role=\"search\">"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/search\" method=\"GET\" role=\"search\">"
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/search\" method=\"GET\" role=\"search\">"
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/search\" method=\"GET\" role=\"search\">"
+						},
+						{
+							"uri": "https://www.google.fr/?pt1=true$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/search\" method=\"GET\" role=\"search\">"
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/search\" method=\"GET\" role=\"search\">"
+						},
+						{
+							"uri": "https://www.google.fr/m",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/search\" method=\"GET\" role=\"search\">"
+						},
+						{
+							"uri": "https://www.google.fr/preferences",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form action=\"/setprefs\" id=\"tsuid1\" method=\"GET\" name=\"langform\">"
+						}
+					],
+					"count": "11",
+					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
+					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"btnI\" \"btnK\" \"ei\" \"gbqfbb\" \"iflsig\" \"q\" \"source\" ].</p>",
+					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
+					"cweid": "352",
+					"wascid": "9",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90022",
+					"alertRef": "90022",
+					"alert": "Application Error Disclosure",
+					"name": "Application Error Disclosure",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/shopping/product/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HTTP/1.1 500 Internal Server Error"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "792"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055",
+					"alert": "CSP: Notices",
+					"name": "CSP: Notices",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Warnings:</p><p>Unrecognized directive require-trusted-types-for</p><p></p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/gwt/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "require-trusted-types-for 'script'"
+						},
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "require-trusted-types-for 'script';report-uri /history/_/SearchCustomizationUi/cspreport"
+						},
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "script-src 'nonce-xUWJmW9fT7Vie139LWmLfA' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://www.googleapis.com/appsmarket/v2/installedApps/;report-uri /history/_/SearchCustomizationUi/cspreport"
+						},
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "script-src 'nonce-xUWJmW9fT7Vie139LWmLfA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /history/_/SearchCustomizationUi/cspreport;worker-src 'self'"
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "script-src 'nonce-G5BNgxVv8t94EB0G5m5Lxg' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.gstatic.com https://www.google-analytics.com https://www.googleapis.com/appsmarket/v2/installedApps/;report-uri /_/VisualFrontendUi/cspreport"
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "script-src 'nonce-G5BNgxVv8t94EB0G5m5Lxg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/VisualFrontendUi/cspreport;worker-src 'self'"
+						}
+					],
+					"count": "6",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "402"
+				},
+				{
+					"pluginid": "10010",
+					"alertRef": "10010",
+					"alert": "Cookie No HttpOnly Flag",
+					"name": "Cookie No HttpOnly Flag",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "1P_JAR",
+							"attack": "",
+							"evidence": "Set-Cookie: 1P_JAR"
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "1P_JAR",
+							"attack": "",
+							"evidence": "Set-Cookie: 1P_JAR"
+						},
+						{
+							"uri": "https://www.google.fr/?*&gws_rd=ssl&hl=*",
+							"method": "GET",
+							"param": "1P_JAR",
+							"attack": "",
+							"evidence": "Set-Cookie: 1P_JAR"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$",
+							"method": "GET",
+							"param": "1P_JAR",
+							"attack": "",
+							"evidence": "Set-Cookie: 1P_JAR"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "1P_JAR",
+							"attack": "",
+							"evidence": "Set-Cookie: 1P_JAR"
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "1P_JAR",
+							"attack": "",
+							"evidence": "Set-Cookie: 1P_JAR"
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "1P_JAR",
+							"attack": "",
+							"evidence": "Set-Cookie: 1P_JAR"
+						},
+						{
+							"uri": "https://www.google.fr/?pt1=true$",
+							"method": "GET",
+							"param": "1P_JAR",
+							"attack": "",
+							"evidence": "Set-Cookie: 1P_JAR"
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "1P_JAR",
+							"attack": "",
+							"evidence": "Set-Cookie: 1P_JAR"
+						},
+						{
+							"uri": "https://www.google.fr/preferences",
+							"method": "GET",
+							"param": "1P_JAR",
+							"attack": "",
+							"evidence": "Set-Cookie: 1P_JAR"
+						},
+						{
+							"uri": "https://www.google.fr/search",
+							"method": "GET",
+							"param": "1P_JAR",
+							"attack": "",
+							"evidence": "Set-Cookie: 1P_JAR"
+						}
+					],
+					"count": "11",
+					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
+					"cweid": "1004",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10054",
+					"alertRef": "10054",
+					"alert": "Cookie with SameSite Attribute None",
+					"name": "Cookie with SameSite Attribute None",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A cookie has been set with its SameSite attribute set to \"none\", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "7",
+					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
+					"cweid": "1275",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10017",
+					"alertRef": "10017",
+					"alert": "Cross-Domain JavaScript Source File Inclusion",
+					"name": "Cross-Domain JavaScript Source File Inclusion",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "https://www.gstatic.com/_/mss/boq-footprints/_/js/k=boq-footprints.SearchCustomizationUi.en.igL-eMPMLJU.es5.O/am=IAAg/d=1/excm=_b,_tp,optoutview/ed=1/dg=0/wt=2/esmo=1/rs=AJJuxJYq4m2DW_IUCFD-8oYwaVZZiWgkzQ/m=_b,_tp",
+							"attack": "",
+							"evidence": "<script noCollect src=\"https://www.gstatic.com/_/mss/boq-footprints/_/js/k=boq-footprints.SearchCustomizationUi.en.igL-eMPMLJU.es5.O/am=IAAg/d=1/excm=_b,_tp,optoutview/ed=1/dg=0/wt=2/esmo=1/rs=AJJuxJYq4m2DW_IUCFD-8oYwaVZZiWgkzQ/m=_b,_tp\" defer id=\"base-js\" nonce=\"xUWJmW9fT7Vie139LWmLfA\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFrontendUi.fr.SniTtoAodFQ.es5.O/am=EvjAOCT0JwAgIMABAFCo8ggGIAAAQYgMwMAQHMgAgQYQgGMACAEkwAIAAABcHDBKgQEAAAISAJggEwgAQACCAQjBFAgACI0BMHcAVAAAAAAAACDu8cADCAAAAAAAAAAQRsQAAAAAAADQRAAAAAAAAAQ/d=1/excm=_b,_tp,standaloneimageview/ed=1/dg=0/wt=2/esmo=1/rs=AH7-fg5Rl3aHHS7sLg5hQPHIxLY84B9PUQ/m=_b,_tp",
+							"attack": "",
+							"evidence": "<script noCollect src=\"https://www.gstatic.com/_/mss/boq-search/_/js/k=boq-search.VisualFrontendUi.fr.SniTtoAodFQ.es5.O/am=EvjAOCT0JwAgIMABAFCo8ggGIAAAQYgMwMAQHMgAgQYQgGMACAEkwAIAAABcHDBKgQEAAAISAJggEwgAQACCAQjBFAgACI0BMHcAVAAAAAAAACDu8cADCAAAAAAAAAAQRsQAAAAAAADQRAAAAAAAAAQ/d=1/excm=_b,_tp,standaloneimageview/ed=1/dg=0/wt=2/esmo=1/rs=AH7-fg5Rl3aHHS7sLg5hQPHIxLY84B9PUQ/m=_b,_tp\" defer id=\"base-js\" nonce=\"G5BNgxVv8t94EB0G5m5Lxg\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/landing/signout.html",
+							"method": "GET",
+							"param": "//www.google.com/js/google.js",
+							"attack": "",
+							"evidence": "<script src=\"//www.google.com/js/google.js\" nonce=\"ruzkdwt3mf4wDpkdO9WgSw\">\n</script>"
+						},
+						{
+							"uri": "https://www.google.fr/landing/signout.html",
+							"method": "GET",
+							"param": "//www.google.com/js/maia.js",
+							"attack": "",
+							"evidence": "<script src=\"//www.google.com/js/maia.js\" nonce=\"ruzkdwt3mf4wDpkdO9WgSw\">\n</script>"
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.min.js",
+							"attack": "",
+							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.min.js\" nonce=\"KdepOFagcqsYPREV2GwVEw\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-touch.min.js",
+							"attack": "",
+							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-touch.min.js\" nonce=\"KdepOFagcqsYPREV2GwVEw\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js",
+							"attack": "",
+							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js\" nonce=\"KdepOFagcqsYPREV2GwVEw\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/search/howsearchworks/",
+							"method": "GET",
+							"param": "https://www.gstatic.com/external_hosted/picturefill/picturefill.min.js",
+							"attack": "",
+							"evidence": "<script src=\"https://www.gstatic.com/external_hosted/picturefill/picturefill.min.js\" nonce=\"KdepOFagcqsYPREV2GwVEw\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2",
+							"method": "GET",
+							"param": "//ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-animate.min.js",
+							"attack": "",
+							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-animate.min.js\" nonce=\"si330iM1Rb8_jTJZfr2Znw\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2",
+							"method": "GET",
+							"param": "//ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-messages.min.js",
+							"attack": "",
+							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-messages.min.js\" nonce=\"si330iM1Rb8_jTJZfr2Znw\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2",
+							"method": "GET",
+							"param": "//ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js",
+							"attack": "",
+							"evidence": "<script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js\" nonce=\"si330iM1Rb8_jTJZfr2Znw\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2",
+							"method": "GET",
+							"param": "//www.google.com/ads/js/peitho2/peitho2.min.js",
+							"attack": "",
+							"evidence": "<script async data-gtmid=\"GTM-DJXNX\" src=\n    \"//www.google.com/ads/js/peitho2/peitho2.min.js\" nonce=\"si330iM1Rb8_jTJZfr2Znw\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2",
+							"method": "GET",
+							"param": "//www.gstatic.com/external_hosted/modernizr/v2_8_3/basic.js",
+							"attack": "",
+							"evidence": "<script src=\"//www.gstatic.com/external_hosted/modernizr/v2_8_3/basic.js\" nonce=\"si330iM1Rb8_jTJZfr2Znw\"></script>"
+						},
+						{
+							"uri": "https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2",
+							"method": "GET",
+							"param": "//www.gstatic.com/external_hosted/picturefill/picturefill.min.js",
+							"attack": "",
+							"evidence": "<script src=\"//www.gstatic.com/external_hosted/picturefill/picturefill.min.js\" nonce=\"si330iM1Rb8_jTJZfr2Znw\"></script>"
+						}
+					],
+					"count": "14",
+					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "829",
+					"wascid": "15",
+					"sourceid": "435"
+				},
+				{
+					"pluginid": "10110",
+					"alertRef": "10110",
+					"alert": "Dangerous JS Functions",
+					"name": "Dangerous JS Functions",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
+							"uri": "https://www.google.fr/?*&gws_rd=ssl&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
+							"uri": "https://www.google.fr/?pt1=true$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
+							"uri": "https://www.google.fr/m",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
+							"uri": "https://www.google.fr/preferences",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						}
+					],
+					"count": "11",
+					"solution": "<p>See the references for security advice on the use of these functions.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://angular.io/guide/security</p>",
+					"cweid": "749",
+					"wascid": "-1",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10015",
+					"alertRef": "10015",
+					"alert": "Incomplete or No Cache-control Header Set",
+					"name": "Incomplete or No Cache-control Header Set",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "private, max-age=0"
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "private, max-age=0"
+						},
+						{
+							"uri": "https://www.google.fr/?*&gws_rd=ssl&hl=*",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "private, max-age=0"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "private, max-age=0"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "private, max-age=0"
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "private, max-age=0"
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "private, max-age=0"
+						},
+						{
+							"uri": "https://www.google.fr/?pt1=true$",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "private, max-age=0"
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "private, max-age=0"
+						},
+						{
+							"uri": "https://www.google.fr/robots.txt",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "private, max-age=0"
+						},
+						{
+							"uri": "https://www.google.fr/sitemap.xml",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "private, max-age=0"
+						}
+					],
+					"count": "11",
+					"solution": "<p>Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
+					"cweid": "525",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10023",
+					"alertRef": "10023",
+					"alert": "Information Disclosure - Debug Error Messages",
+					"name": "Information Disclosure - Debug Error Messages",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The response appeared to contain common error messages returned by platforms such as ASP.NET, and Web-servers such as IIS and Apache. You can configure the list of common debug messages.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/search?q=related:https://github.com/uber-go/zap+ZAP&sa=X&ved=2ahUKEwiHjuCi2b3zAhXKq3IEHYgAB9kQH3oECBgQBw",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "internal server error"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=related:https://github.com/uber-go/zap+ZAP&sa=X&ved=2ahUKEwiJk7Wk2b3zAhXEYjUKHQuTBK4QH3oECBoQBw",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "internal server error"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=related:https://github.com/zaproxy/zaproxy+ZAP&sa=X&ved=2ahUKEwiHjuCi2b3zAhXKq3IEHYgAB9kQH3oECCYQBw",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "internal server error"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=related:https://github.com/zaproxy/zaproxy+ZAP&sa=X&ved=2ahUKEwiJk7Wk2b3zAhXEYjUKHQuTBK4QH3oECCIQBw",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "internal server error"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=related:https://new.myzap.com/+ZAP&sa=X&ved=2ahUKEwiHjuCi2b3zAhXKq3IEHYgAB9kQH3oECAYQBA",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "internal server error"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=related:https://new.myzap.com/+ZAP&sa=X&ved=2ahUKEwiJk7Wk2b3zAhXEYjUKHQuTBK4QH3oECAcQBA",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "internal server error"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=related:https://new.myzap.com/+ZAP&sa=X&ved=2ahUKEwiWvMWk2b3zAhXwlHIEHYPZAX8QH3oECAcQBA",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "internal server error"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=related:https://www.merriam-webster.com/dictionary/zap+ZAP&sa=X&ved=2ahUKEwiHjuCi2b3zAhXKq3IEHYgAB9kQH3oECBMQBw",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "internal server error"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=related:https://www.merriam-webster.com/dictionary/zap+ZAP&sa=X&ved=2ahUKEwiJk7Wk2b3zAhXEYjUKHQuTBK4QH3oECBIQBw",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "internal server error"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=related:https://www.zapbi.com/+ZAP&sa=X&ved=2ahUKEwiHjuCi2b3zAhXKq3IEHYgAB9kQH3oECAQQBQ",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "internal server error"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=related:https://www.zapbi.com/+ZAP&sa=X&ved=2ahUKEwiJk7Wk2b3zAhXEYjUKHQuTBK4QH3oECAYQBQ",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "internal server error"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=related:https://www.zapbi.com/+ZAP&sa=X&ved=2ahUKEwiWvMWk2b3zAhXwlHIEHYPZAX8QH3oECAMQBQ",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "internal server error"
+						}
+					],
+					"count": "12",
+					"solution": "<p>Disable debugging messages before pushing to production.</p>",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "1731"
+				},
+				{
+					"pluginid": "10063",
+					"alertRef": "10063",
+					"alert": "Permissions Policy Header Not Set",
+					"name": "Permissions Policy Header Not Set",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?*&gws_rd=ssl&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/groups",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/sdch",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search/static",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "11",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10040",
+					"alertRef": "10040",
+					"alert": "Secure Pages Include Mixed Content",
+					"name": "Secure Pages Include Mixed Content",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The page includes mixed content, that is content accessed via HTTP instead of HTTPS.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/search?q=ZAP+signification&sa=X&ved=2ahUKEwiHjuCi2b3zAhXKq3IEHYgAB9kQ1QJ6BAgfEAE",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "http://ssl.gstatic.com/dictionary/static/sounds/20200429/zap--_us_1.mp3"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=ZAP+signification&sa=X&ved=2ahUKEwiJk7Wk2b3zAhXEYjUKHQuTBK4Q1QJ6BAgfEAE",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "http://ssl.gstatic.com/dictionary/static/sounds/20200429/zap--_us_1.mp3"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=ZAP+signification&sa=X&ved=2ahUKEwiWvMWk2b3zAhXwlHIEHYPZAX8Q1QJ6BAgjEAE",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "http://ssl.gstatic.com/dictionary/static/sounds/20200429/zap--_us_1.mp3"
+						},
+						{
+							"uri": "https://www.google.fr/search?q=ZAP+signification&sa=X&ved=2ahUKEwjZ3-2k2b3zAhVqgnIEHZThDXgQ1QJ6BAgfEAE",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "http://ssl.gstatic.com/dictionary/static/sounds/20200429/zap--_us_1.mp3"
+						}
+					],
+					"count": "4",
+					"solution": "<p>A page that is available over SSL/TLS must be comprised completely of content which is transmitted over SSL/TLS.</p><p>The page must not contain any content that is transmitted over unencrypted HTTP.</p><p> This includes content from third party sites.</p>",
+					"otherinfo": "<p>tag=audio src=http://ssl.gstatic.com/dictionary/static/sounds/20200429/zap--_us_1.mp3</p><p></p>",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
+					"cweid": "311",
+					"wascid": "4",
+					"sourceid": "1946"
+				},
+				{
+					"pluginid": "10036",
+					"alertRef": "10036",
+					"alert": "Server Leaks Version Information via \"Server\" HTTP Response Header Field",
+					"name": "Server Leaks Version Information via \"Server\" HTTP Response Header Field",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>The web/application server is leaking version information via the \"Server\" HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/bkshp?*q",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "OFE/0.1"
+						},
+						{
+							"uri": "https://www.google.fr/books/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "OFE/0.1"
+						},
+						{
+							"uri": "https://www.google.fr/books?*buy",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "OFE/0.1"
+						},
+						{
+							"uri": "https://www.google.fr/books?*jscmd",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "OFE/0.1"
+						},
+						{
+							"uri": "https://www.google.fr/books?*jtp",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "OFE/0.1"
+						},
+						{
+							"uri": "https://www.google.fr/books?*output",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "OFE/0.1"
+						},
+						{
+							"uri": "https://www.google.fr/books?*pg",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "OFE/0.1"
+						},
+						{
+							"uri": "https://www.google.fr/books?*q",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "OFE/0.1"
+						},
+						{
+							"uri": "https://www.google.fr/books?*q=editions:",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "OFE/0.1"
+						},
+						{
+							"uri": "https://www.google.fr/books?*q=related:",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "OFE/0.1"
+						},
+						{
+							"uri": "https://www.google.fr/books?*q=subject:",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "OFE/0.1"
+						},
+						{
+							"uri": "https://www.google.fr/books?*zoom",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "OFE/0.1"
+						}
+					],
+					"count": "12",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the \"Server\" header or provide generic details.</p>",
+					"otherinfo": "",
+					"reference": "<p>http://httpd.apache.org/docs/current/mod/core.html#servertokens</p><p>http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</p><p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "439"
+				},
+				{
+					"pluginid": "10035",
+					"alertRef": "10035",
+					"alert": "Strict-Transport-Security Header Not Set",
+					"name": "Strict-Transport-Security Header Not Set",
+					"riskcode": "1",
+					"confidence": "3",
+					"riskdesc": "Low (High)",
+					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/default",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/groups",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/m/finance",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/sdch",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search/about",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search/static",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/u/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/xhtml/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "12",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
+					"cweid": "319",
+					"wascid": "15",
+					"sourceid": "346"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1862590698"
+						},
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "21600000"
+						},
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "23953814"
+						},
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "400609191"
+						},
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "416666667"
+						},
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "89723288"
+						},
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "89723914"
+						}
+					],
+					"count": "7",
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>1862590698, which evaluates to: 2029-01-08 18:18:18</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10021",
+					"alertRef": "10021",
+					"alert": "X-Content-Type-Options Header Missing",
+					"name": "X-Content-Type-Options Header Missing",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?*&gws_rd=ssl&hl=*",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?pt1=true$",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/m",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/preferences",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "11",
+					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
+					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
+					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "cDkp_8bE74FWQlNdXu4W3S_mFegpaSmlt6jdNdW_6pM2cER-fkz2hC_O3WOVPXr6wSorYfEI98PJK4HgHvZV0EuvHiUdOCA438QK_v2v_zZl02q5UKD2amdgkGx9NyIMhT-DASwWpNDGmRBN1TkAImhvcZXxDod86GxFPMvRkMc"
+						},
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "UdAbpjyMBlOvFY6kQpl06q5vVZpahVgVAJQvZVsmymh4AAqfRhlLhGQJz538ZhspcNSoQ6N1l5nTGt1xKIFQ77K922U0r34JguIpnWWACPAKGk-Onc9ZuduGSRAKC1thW-w6qvddiHrzvHljQSd8wFMxYHC5Dl0J2tsbu2OOIqE"
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "RCjLdJivDjuFKmxxSQEGycsHaspS5r1vDqkMQwLjYcyUX0h4yVL8bqw4a1Eiu1dz_7QssZd81SX1s2IdtJSVzlUu4bXzwfHApqMxssQ0XBNUEbYUYuNVMfMPzJbnMVclbzI9KtX6RKBMZBfjdKkUjBirVm269aK8DO7hU25H6FQ"
+						},
+						{
+							"uri": "https://www.google.fr/?*&gws_rd=ssl&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ACT90oEH4ZNe2UtVTl-dETYhW2QfmQoFew"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ACT90oEH4ZNe2UtVTl-dETYhW2QfmQoFew"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ACT90oEH4ZNe2UtVTl-dETYhW2QfmQoFew"
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ACT90oEH4ZNe2UtVTl-dETYhW2QfmQoFew"
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ACT90oEH4ZNe2UtVTl-dETYhW2QfmQoFew"
+						},
+						{
+							"uri": "https://www.google.fr/?pt1=true$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "ACT90oEH4ZNe2UtVTl-dETYhW2QfmQoFew"
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/appsmarket/v2/installedApps/"
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "dbC4ZFfoKbY7lJNMiGm2sfttVorea9m98o2oJUhCzWS03U4ClCiMR2dhrrs7ZCNvehfmn5BONEKm9wwDyx2Ys3yX2NXPmO5jOI2ZsCJ6-edIFtaTNAs5joWWcW9QnUXhASTj0vWP0UVqgoTpZFneUBnCNCbIIol3Nt5-26XBfSE"
+						},
+						{
+							"uri": "https://www.google.fr/preferences",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "iVBORw0KGgoAAAANSUhEUgAAABkAAAAPCAYAAAARZmTlAAAAK0lEQVQ4y2P8//8/A60B4/C0ZNasWf/T0tIYqUWP+mTUJ6M+Gcw+GdKWAABcofTjqOulhgAAAABJRU5ErkJggg=="
+						}
+					],
+					"count": "12",
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>p9)\uFFFD\uFFFD\uFFFD\uFFFDVBS]^\uFFFD\\x0016\uFFFD/\uFFFD\\x0015\uFFFD)i)\uFFFD\uFFFD\uFFFD\uFFFD5\u057F\uFFFD6pD~~L\uFFFD\uFFFD/\uFFFD\uFFFDc\uFFFD=z\uFFFD\uFFFD*+a\uFFFD\\x0008\uFFFD\uFFFD\uFFFD+\uFFFD\uFFFD\\x001e\uFFFDU\uFFFDK\uFFFD\\x001e%\\x001d8 8\uFFFD\uFFFD</p><p>\uFFFD\uFFFD\uFFFD\uFFFD6e\uFFFDj\uFFFDP\uFFFD\uFFFDjg`\uFFFDl}7\"\\x000c\uFFFD?\uFFFD\\x0001,\\x0016\uFFFD\uFFFD\u0199\\x0010M\uFFFD9\\x0000\"hoq\uFFFD\uFFFD\\x000e\uFFFD|\uFFFDlE<\uFFFD\u0450\uFFFD</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10024",
+					"alertRef": "10024",
+					"alert": "Information Disclosure - Sensitive Information in URL",
+					"name": "Information Disclosure - Sensitive Information in URL",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The request appeared to contain sensitive information leaked in the URL. This can violate PCI and most organizational compliance policies. You can configure the list of strings for this check to add or remove values specific to your environment.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/citations?user",
+							"method": "GET",
+							"param": "user",
+							"attack": "",
+							"evidence": "user"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Do not pass sensitive information in URIs.</p>",
+					"otherinfo": "<p>The URL contains potentially sensitive information. The following string was found via the pattern: user</p><p>user</p>",
+					"reference": "",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "491"
+				},
+				{
+					"pluginid": "10027",
+					"alertRef": "10027",
+					"alert": "Information Disclosure - Suspicious Comments",
+					"name": "Information Disclosure - Suspicious Comments",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "db"
+						},
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "db"
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "db"
+						},
+						{
+							"uri": "https://www.google.fr/?*&gws_rd=ssl&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "db"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "db"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "db"
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "db"
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "db"
+						},
+						{
+							"uri": "https://www.google.fr/?pt1=true$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "db"
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "SELECT"
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user"
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "db"
+						},
+						{
+							"uri": "https://www.google.fr/preferences",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "db"
+						}
+					],
+					"count": "13",
+					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bDB\\b and was detected 2 times, the first in the element starting with: \"<script nonce=\"jEn9kbCy/iBH13ZmgLH5lw==\">(function(){</p><p>window.rwt=function(){return!0};}).call(this);(function(){</p><p>window.jsarwt=f\", see evidence field for the suspicious comment/snippet.</p>",
+					"reference": "",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90033",
+					"alertRef": "90033",
+					"alert": "Loosely Scoped Cookie",
+					"name": "Loosely Scoped Cookie",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?*&gws_rd=ssl&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/?pt1=true$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/preferences",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "12",
+					"solution": "<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>",
+					"otherinfo": "<p>The origin domain used for comparison was: </p><p>www.google.fr</p><p>1P_JAR=2021-10-09-15</p><p>NID=511=cDkp_8bE74FWQlNdXu4W3S_mFegpaSmlt6jdNdW_6pM2cER-fkz2hC_O3WOVPXr6wSorYfEI98PJK4HgHvZV0EuvHiUdOCA438QK_v2v_zZl02q5UKD2amdgkGx9NyIMhT-DASwWpNDGmRBN1TkAImhvcZXxDod86GxFPMvRkMc</p><p></p>",
+					"reference": "<p>https://tools.ietf.org/html/rfc6265#section-4.1</p><p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p><p>http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</p>",
+					"cweid": "565",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwiOrvOf2b3zAhUKFFkFHergBG8Qtw8ICw\">Report inappropriate predictions</a>"
+						},
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwjl_J2g2b3zAhWYEVkFHadlA9MQtw8ICw\">Report inappropriate predictions</a>"
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwjBvcCg2b3zAhUDFlkFHZPGCSwQtw8ICw\">Report inappropriate predictions</a>"
+						},
+						{
+							"uri": "https://www.google.fr/?*&gws_rd=ssl&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwj2u9Kg2b3zAhWWF1kFHXMiBg0Qtw8ICw\">Report inappropriate predictions</a>"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwihntmg2b3zAhW6F1kFHe5nAswQtw8ICw\">Report inappropriate predictions</a>"
+						},
+						{
+							"uri": "https://www.google.fr/?gws_rd=ssl$&hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwjowtGg2b3zAhXQFVkFHU8XAMwQtw8ICw\">Report inappropriate predictions</a>"
+						},
+						{
+							"uri": "https://www.google.fr/?hl",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwjW4smg2b3zAhXoFFkFHbJfCH0Qtw8ICw\">Report inappropriate predictions</a>"
+						},
+						{
+							"uri": "https://www.google.fr/?hl=*",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwj2xMug2b3zAhUJMVkFHUPSC38Qtw8ICw\">Report inappropriate predictions</a>"
+						},
+						{
+							"uri": "https://www.google.fr/?pt1=true$",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwjinNmg2b3zAhV7MVkFHW9CAOYQtw8ICw\">Report inappropriate predictions</a>"
+						},
+						{
+							"uri": "https://www.google.fr/imgres",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script data-id=\"_gd\" nonce=\"G5BNgxVv8t94EB0G5m5Lxg\">window.WIZ_global_data = {\"AY2V6d\":true,\"DpimGf\":false,\"EP1ykd\":[\"/_/*\",\"/cameos\",\"/cameos/*\",\"/cbk\",\"/cbk/*\",\"/coronavirus-map\",\"/coronavirus-map/*\",\"/covid19-map\",\"/covid19-map/*\",\"/display-ads-user-messaging-embed\",\"/display-ads-user-messaging-embed/*\",\"/finance\",\"/finance/*\",\"/history\",\"/history/*\",\"/local/business\",\"/local/business/*\",\"/local/cars/tools\",\"/local/cars/tools/*\",\"/local/follow\",\"/local/follow/*\",\"/local/imagery/report\",\"/local/imagery/report/*\",\"/local/place/qa\",\"/local/place/qa/*\",\"/local/realestate\",\"/local/realestate/*\",\"/localguides\",\"/localguides/*\",\"/maps/notifications/webviews\",\"/maps/notifications/webviews/*\",\"/maps/rpc\",\"/maps/rpc/*\",\"/preferences/notifications\",\"/preferences/notifications/*\",\"/s2\",\"/s2/*\",\"/search/notifications\",\"/search/notifications/*\",\"/search/questions\",\"/search/questions/*\",\"/setting/search/privateresults\",\"/setting/search/privateresults/*\",\"/shopping/ratings\",\"/shopping/ratings/*\",\"/travel/activities\",\"/travel/activities/*\",\"/wizrpcui\",\"/wizrpcui/*\"],\"EpwAsb\":1633881559120000,\"FdrFJe\":\"-5246447252875354248\",\"GVlsxf\":\"www.google.com\",\"Im6cmf\":\"/_/VisualFrontendUi\",\"LVIXXb\":1,\"LoQv7e\":false,\"MT7f9b\":[],\"MZbqOb\":\"//www.google.fr/setprefs?cs\\u003d2\\u0026sig\\u003d0_JWcuuOywNZe9sgi1_KutJRyYnog%3D\\u0026prev\\u003dhttps://www.google.fr/imgres\\u0026hl\\u003dfr\",\"OVFmqb\":\"%.@.\\\"img\\\",\\\"gws-wiz-img\\\",\\\"\\\",\\\"i\\\",false,false,null,null,null,null,\\\"AIPXvyiRlvf0gXlhzk3SWsWYhaonp6yG0w\\\",\\\"\\\",\\\"V7xhYaaqB6GS5NoPpI2d-AI\\\",0,\\\"fr\\\",null,false,false,3,5,null,null,null,\\\"/complete/deleteitems?deltok\\\\u003d$DELTOK\\\\u0026client\\\\u003d$CLIENT\\\\u0026delq\\\\u003d$DELQUERY\\\",null,null,null,null,true]\",\"Og7bYc\":\"%.@.false]\",\"PYFuDc\":\"DUMMY_X_CLIENT_DATA_WIZ_GLOBAL_KEY_DO_NOT_USE\",\"Qokmvc\":true,\"QrtxK\":\"\",\"S06Grb\":\"\",\"UDh4De\":\"//www.google.fr/setprefs?cs\\u003d0\\u0026sig\\u003d0_JWcuuOywNZe9sgi1_KutJRyYnog%3D\\u0026prev\\u003dhttps://www.google.fr/imgres\\u0026hl\\u003dfr\",\"Y12zTb\":\"//www.google.fr/setprefs?cs\\u003d1\\u0026sig\\u003d0_JWcuuOywNZe9sgi1_KutJRyYnog%3D\\u0026prev\\u003dhttps://www.google.fr/imgres\\u0026hl\\u003dfr\",\"Yllh3e\":\"%.@.1633795159120102,89721121,789005988]\",\"cfb2h\":\"boq_visualfrontendserver_20211007.11_p0\",\"d2zrDf\":\"%.@.null,null,false,false,null,null,null,false,null,null,null,null,null,null,null,null,null,null,null,true,null,null,null,null,null,null,null,null,null,false,false,null,null,null,null,null,false,null,null,null,null,null,null,null,false,false,false,null,28,null,null,false,false,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,3,null,null,-1,1500,500,false,null,null,50,true,null,\\\"mq331AQCKAE\\\\u003d\\\",null,false,false,null,0,8,null,true,null,null,null,false,null,null,25,null,false,null,false,null,null,null,null,false,null,null,null,true,null,null,2]\",\"eNnkwf\":\"1633795158\",\"ejMLCd\":\"DUMMY_X_GEO_WIZ_GLOBAL_KEY_DO_NOT_USE\",\"eptZe\":\"/_/VisualFrontendUi/\",\"fPDxwd\":[1763433,1772879,45814370,47825529],\"gGcLoe\":true,\"nQyAE\":{\"EV8yxc\":\"0\",\"ZUnjQb\":\"0\",\"TFtxd\":\"false\",\"WjMLC\":\"false\",\"Ix7enf\":\"false\",\"HYDafc\":\"-1.0\",\"wTZmyb\":\"true\",\"XvEDBf\":\"true\",\"hb1VBf\":\"313\",\"D88Eab\":\"false\",\"iu6b9\":\"0\",\"znfaGc\":\"864\",\"Etfn\":\"false\",\"tp4Gi\":\"2\",\"n0TQeb\":\"2500\",\"gaC8Zc\":\"false\",\"n7LBcd\":\"500\",\"YE5Aub\":\"DEFAULT_DO_NOT_DISPLAY\",\"xP3jaf\":\"false\",\"Ldqcce\":\"false\",\"wuZIkf\":\"400\",\"D35Vee\":\"100\",\"G5i9gc\":\"0.5\",\"cIQILe\":\"0\",\"XcrMIc\":\"300\",\"MfIHqf\":\"false\",\"A3Czee\":\"true\",\"wmif7\":\"50\",\"gKD34\":\"2500\",\"wgyLtf\":\"false\",\"eYh19c\":\"false\",\"GSS1We\":\"500\",\"iT441e\":\"TOOLTIP_WITHOUT_SWIPE_ANIMATION\",\"cYbvgc\":\"1\",\"XWOFRd\":\"false\",\"PccRGf\":\"true\",\"tAt3of\":\"3\",\"BgZTfd\":\"150\",\"lrGlid\":\"DESKTOP_AUTOPLAY\",\"Tnvype\":\"130\",\"z1MgYd\":\"true\",\"FaTuNc\":\"false\",\"Pzfjj\":\"\",\"lgOET\":\"\",\"gWfAcc\":\"true\",\"if9bCd\":\"true\",\"HJlzAc\":\"false\",\"AvrhYb\":\"false\",\"YPJcgd\":\"freeze_then_replay\",\"mLjsRd\":\"\",\"PdDiOd\":\"0\",\"SsOV8c\":\"0\",\"fgoNEc\":\"false\",\"j5wK6c\":\"0\",\"yApddf\":\"false\",\"fWge5b\":\"0\",\"HjXbFf\":\"false\",\"biZ5Sd\":\"5\",\"A1qd8e\":\"false\",\"fqVElf\":\"true\",\"UUgjSc\":\"false\",\"LBGwTb\":\"100\",\"kawmrb\":\"false\",\"KTcKId\":\"false\",\"Wnp79b\":\"false\",\"Ze51f\":\"8000\",\"syardb\":\"1.0\",\"Eecdhd\":\"\",\"aXtosc\":\"15\",\"A85Lb\":\"true\",\"bwARGe\":\"true\",\"AoFpWc\":\"false\",\"vgkWnf\":\"true\",\"efUU2b\":\"false\",\"Ilr02d\":\"false\",\"L12WE\":\"false\",\"gnkERd\":\"false\",\"Cz6W9c\":\"false\",\"Dj8c4\":\"false\",\"LPP0Ke\":\"false\",\"OEFXhc\":\"\",\"tBSlob\":\"false\",\"bXgOyd\":\"FKCM8yyBZ0iqpJr79GT0RGmfgvRj\",\"KDlcdd\":\"1000\",\"slmb5e\":\"1000\",\"zR9JOe\":\"2\"},\"ocxFnb\":\"%.@.null,null,false,null,true,null,null,null,null,true,null,false,null,null,null,null,null,true,null,9,null,null,null,null,null,null,null,false,null,null,null,null,null,null,false,null,null,null,false,null,null,0,false,null,\\\"\\\",null,null,null,null,null,null,null,false,false,null,null,null,true,null,false,3,true,false,null,null,1,null,false,false,null,null,null,null,false,null,\\\"\\\",false,null,null,null,8000]\",\"p0fdxb\":\"AOvVaw1c0Uw35c3rBC7Od9NLDi8q\",\"q21il\":\"AIzaSyCQt-eqCfjcJvF5zo_yMw5aP4hlfL57Y6A\",\"qwAQke\":\"VisualFrontendUi\",\"qymVe\":\"7tzspfod-FInE_JGktPmb4iQABM\",\"r84ZEe\":\"//www.google.fr/setprefs?safeui\\u003dimages\\u0026sig\\u003d0_JWcuuOywNZe9sgi1_KutJRyYnog%3D\\u0026prev\\u003dhttps://www.google.fr/imgres\",\"rtQCxc\":240,\"tJXnsc\":0,\"uS02ke\":\"V7xhYaaqB6GS5NoPpI2d-AI\",\"vXmutd\":\"%.@.\\\"US\\\",\\\"ZZ\\\",\\\"FG4Mcw\\\\u003d\\\\u003d\\\"]\",\"vk7rPe\":\"//www.google.fr/preferences?hl\\u003dfr\\u0026prev\\u003dhttps://www.google.fr/imgres?sfr%3Dvfe#appearance\",\"w2btAe\":\"%.@.null,null,\\\"\\\",false,null,null,true,false]\",\"zChJod\":\"%.@.null,\\\"https://www.google.fr/log?format\\\\u003djson\\\\u0026hasfast\\\\u003dtrue\\\"]\",\"zvLu9e\":\"%.@.\\\"img\\\",\\\"gws-wiz-img\\\",\\\"\\\",\\\"i\\\",false,false,null,null,null,null,\\\"AIPXvyiRlvf0gXlhzk3SWsWYhaonp6yG0w\\\",\\\"\\\",\\\"V7xhYaaqB6GS5NoPpI2d-AI\\\",0,\\\"fr\\\",null,false,false,3,5,null,null,null,\\\"/complete/deleteitems?deltok\\\\u003d$DELTOK\\\\u0026client\\\\u003d$CLIENT\\\\u0026delq\\\\u003d$DELQUERY\\\",null,null,null,null,true]\"};</script>"
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"oBa0Fe wrSo4 aciXEb\" href=\"#\" id=\"sbfblt\" data-async-trigger=\"duf3-46\" role=\"button\" jsaction=\"trigger.szjOR\" data-ved=\"0ahUKEwjRtMCg2b3zAhXoFFkFHX_1Ch4Qtw8ICw\">Report inappropriate predictions</a>"
+						},
+						{
+							"uri": "https://www.google.fr/preferences",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"#\" aria-controls=\"srhSec\" aria-current=\"true\">Search results</a>"
+						}
+					],
+					"count": "12",
+					"solution": "<p>This is an informational alert and so no changes are required.</p>",
+					"otherinfo": "<p>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</p>",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						},
+						{
+							"uri": "https://www.google.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						},
+						{
+							"uri": "https://www.google.fr/search",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						},
+						{
+							"uri": "https://www.google.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						}
+					],
+					"count": "6",
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
+					"otherinfo": "",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10050",
+					"alertRef": "10050",
+					"alert": "Retrieved from Cache",
+					"name": "Retrieved from Cache",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/xjs/_/js/k=xjs.s.en_US.ilRqVBuqfoQ.O/am=CAAAAAABAAIQwAwEAAAAAAAoCAgeDAAAAAgANUICBgAAEABAAABCAAAgISDAAwIAAAB8BLoAgD8AgEewhAsAAAAAAAAEoCWYoQaJgAAgAAAAABCrCSoGhAQAQA/d=1/ed=1/dg=2/rs=ACT90oFMLWj5YPD6Ohd7Ys8tZnr-s3TJaA/m=cdos,cr,dpf,hsm,jsa,d,csi",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 49962"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
+					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "468"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049",
+					"alert": "Storable and Cacheable Content",
+					"name": "Storable and Cacheable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						},
+						{
+							"uri": "https://www.google.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						},
+						{
+							"uri": "https://www.google.fr/index.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						},
+						{
+							"uri": "https://www.google.fr/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						},
+						{
+							"uri": "https://www.google.fr/search",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						},
+						{
+							"uri": "https://www.google.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "private"
+						}
+					],
+					"count": "6",
+					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
+					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "302"
+				},
+				{
+					"pluginid": "10031",
+					"alertRef": "10031",
+					"alert": "User Controllable HTML Element Attribute (Potential XSS)",
+					"name": "User Controllable HTML Element Attribute (Potential XSS)",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.google.fr/advanced_search?fg=1&hl=en",
+							"method": "GET",
+							"param": "hl",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/advanced_search?fg=1&hl=en",
+							"method": "GET",
+							"param": "hl",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "fg",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "hl",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/history/optout?fg=1&hl=en",
+							"method": "GET",
+							"param": "hl",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/preferences?fg=1&hl=en",
+							"method": "GET",
+							"param": "hl",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/preferences?fg=1&hl=en",
+							"method": "GET",
+							"param": "hl",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/preferences?fg=1&hl=en",
+							"method": "GET",
+							"param": "hl",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/search?btnK=Google+Search&ei=VrxhYeV5mKPk2g-ny42YDQ&iflsig=ALs-wAMAAAAAYWHKZjWN5oesis45f5JJ_hu9Y_fRbzmi&q=ZAP&source=hp",
+							"method": "GET",
+							"param": "q",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.google.fr/services/?fg=1&subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2",
+							"method": "GET",
+							"param": "fg",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "10",
+					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://www.google.fr/advanced_search?fg=1&hl=en</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [html] tag [lang] attribute </p><p></p><p>The user input found was:</p><p>hl=en</p><p></p><p>The user-controlled value was:</p><p>en</p>",
+					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
+					"cweid": "20",
+					"wascid": "20",
+					"sourceid": "427"
+				}
+			]
+		}
+	]
+}

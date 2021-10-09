@@ -2,7 +2,7 @@
   "trackers": [
     {
       "type": "google",
-      "url": "https://www.gstatic.com/og/_/js/k=og.qtm.en_US.2NbhTa4sfT0.O/rt=j/m=qabr,q_dnp,qcwid,qapid,qald/exm=qaaw,qadd,qaid,qein,qhaw,qhbr,qhch,qhga,qhid,qhin,qhpr/d=1/ed=1/rs=AA2YrTvl8W6lTCs_Kdx1wiGPdcLo8JIa4Q",
+      "url": "https://www.gstatic.com/og/_/js/k=og.qtm.en_US.h9qh0-5wguQ.O/rt=j/m=qabr,q_dnp,qcwid,qapid,qald/exm=qaaw,qadd,qaid,qein,qhaw,qhbr,qhch,qhga,qhid,qhin,qhpr/d=1/ed=1/rs=AA2YrTv8hYdW91t8l5nZ9OM47lsQ8quCgQ",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -10,7 +10,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.gstatic.com/og/_/ss/k=og.qtm.Sd9En_EIu8g.L.W.O/m=qcwid/excm=qaaw,qadd,qaid,qein,qhaw,qhbr,qhch,qhga,qhid,qhin,qhpr/d=1/ed=1/ct=zgms/rs=AA2YrTv3to7MPQgSkojs0_xEXa7jugg5YA",
+      "url": "https://www.gstatic.com/og/_/ss/k=og.qtm.6RV9cpRCV4Y.L.W.O/m=qcwid/excm=qaaw,qadd,qaid,qein,qhaw,qhbr,qhch,qhga,qhid,qhin,qhpr/d=1/ed=1/ct=zgms/rs=AA2YrTvNJ2Am2renOz9tHqLkwIepdRYn7w",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -25,17 +25,33 @@
       }
     },
     {
+      "type": "google",
+      "url": "https://play.google.com/log?format=json&hasfast=true&authuser=0",
+      "details": {
+        "id": "google",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
       "type": "unknown",
       "url": "https://adservice.google.fr/adsid/google/ui"
+    },
+    {
+      "type": "google",
+      "url": "https://play.google.com/log?format=json&hasfast=true&authuser=0",
+      "details": {
+        "id": "google",
+        "message": "Use hosted Matomo instance"
+      }
     }
   ],
   "cookies": [
     {
       "name": "NID",
-      "value": "511=a5bAeBnh0X3Stvfop_th5dtFbfPj1FvWfvdBJtNAstPLxXnFXKb9N9QARSzXsryJ8elbxFqVUjncQz-NbuNwSTzoNY6lhaXZQBc3Bsgnh2Htb05eMmC3xGDgsN_8ITC1FafFM_C7d-pIN4ODUCe-MHBcjOM1wQIrEN5qhwWscg0",
+      "value": "511=XwsDuCQsBZKf2HpXsnonoVPnM-HG_uZPIEmTNo5Ds5QWej-SY_s6I-67ZAIzSuf8GgbP1zu1cHcTZ1dCA_VJGb12KnYJTZaBoWUouPpzP8uVSNbpIa_woieJFCFDAwBKZm274Apq52TN2aAVMkH8FTniVy5_pA160mWZ7By5ohg",
       "domain": ".google.fr",
       "path": "/",
-      "expires": 1648820931.476235,
+      "expires": 1649606458.546228,
       "size": 178,
       "httpOnly": true,
       "secure": false,
@@ -46,10 +62,10 @@
     },
     {
       "name": "1P_JAR",
-      "value": "2021-09-30-13",
+      "value": "2021-10-09-16",
       "domain": ".google.fr",
       "path": "/",
-      "expires": 1635601731.703552,
+      "expires": 1636387258.844692,
       "size": 19,
       "httpOnly": false,
       "secure": true,
@@ -61,7 +77,7 @@
     }
   ],
   "headers": {
-    "date": "Thu, 30 Sep 2021 13:48:51 GMT",
+    "date": "Sat, 09 Oct 2021 16:00:58 GMT",
     "expires": "-1",
     "cache-control": "private, max-age=0",
     "content-type": "text/html; charset=UTF-8",
@@ -69,16 +85,16 @@
     "p3p": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
     "content-encoding": "gzip",
     "server": "gws",
-    "content-length": "41959",
+    "content-length": "41901",
     "x-xss-protection": "0",
     "x-frame-options": "SAMEORIGIN",
-    "set-cookie": "1P_JAR=2021-09-30-13; expires=Sat, 30-Oct-2021 13:48:51 GMT; path=/; domain=.google.fr; Secure; SameSite=none\nNID=511=a5bAeBnh0X3Stvfop_th5dtFbfPj1FvWfvdBJtNAstPLxXnFXKb9N9QARSzXsryJ8elbxFqVUjncQz-NbuNwSTzoNY6lhaXZQBc3Bsgnh2Htb05eMmC3xGDgsN_8ITC1FafFM_C7d-pIN4ODUCe-MHBcjOM1wQIrEN5qhwWscg0; expires=Fri, 01-Apr-2022 13:48:51 GMT; path=/; domain=.google.fr; HttpOnly",
+    "set-cookie": "1P_JAR=2021-10-09-16; expires=Mon, 08-Nov-2021 16:00:58 GMT; path=/; domain=.google.fr; Secure; SameSite=none\nNID=511=XwsDuCQsBZKf2HpXsnonoVPnM-HG_uZPIEmTNo5Ds5QWej-SY_s6I-67ZAIzSuf8GgbP1zu1cHcTZ1dCA_VJGb12KnYJTZaBoWUouPpzP8uVSNbpIa_woieJFCFDAwBKZm274Apq52TN2aAVMkH8FTniVy5_pA160mWZ7By5ohg; expires=Sun, 10-Apr-2022 16:00:58 GMT; path=/; domain=.google.fr; HttpOnly",
     "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
   },
   "endpoints": [
     {
       "hostname": "www.google.fr",
-      "ip": "142.250.81.195",
+      "ip": "142.251.45.99",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -132,7 +148,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.250.65.67",
+      "ip": "172.217.1.195",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -186,7 +202,61 @@
     },
     {
       "hostname": "apis.google.com",
-      "ip": "172.217.2.110",
+      "ip": "142.251.45.110",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "EE. UU.",
+            "fr": "É.-U.",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "EE. UU.",
+            "fr": "É.-U.",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "play.google.com",
+      "ip": "172.217.15.110",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -240,7 +310,7 @@
     },
     {
       "hostname": "adservice.google.fr",
-      "ip": "142.250.65.66",
+      "ip": "142.251.33.194",
       "geoip": {
         "continent": {
           "code": "NA",
