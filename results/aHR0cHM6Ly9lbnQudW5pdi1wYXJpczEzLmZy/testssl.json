@@ -702,10 +702,10 @@
               "id"           : "ROBOT",
               "ip"           : "ent.univ-paris13.fr/81.194.43.200",
               "port"         : "443",
-              "severity"     : "CRITICAL",
+              "severity"     : "OK",
               "cve"          : "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
               "cwe"          : "CWE-203",
-              "finding"      : "VULNERABLE"
+              "finding"      : "not vulnerable"
           }
 ,         {
               "id"           : "secure_renego",
@@ -737,10 +737,10 @@
               "id"           : "BREACH",
               "ip"           : "ent.univ-paris13.fr/81.194.43.200",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "WARN",
               "cve"          : "CVE-2013-3587",
               "cwe"          : "CWE-310",
-              "finding"      : "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+              "finding"      : "Test failed as HTTP request stalled and was terminated"
           }
 ,         {
               "id"           : "POODLE_SSL",

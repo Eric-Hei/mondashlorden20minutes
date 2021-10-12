@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Tue, 12 Oct 2021 12:38:21",
+	"@generated": "Tue, 12 Oct 2021 14:28:48",
 	"site":[ 
 		{
 			"@name": "https://ent.univ-paris13.fr",
@@ -183,7 +183,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=760A829CA39F756A61C2157EDF1FDE58?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
+							"evidence": "<form id=\"fm1\" name=\"fm1\" class=\"fm-v clearfix\" action=\"/cas/login;CASSESSIONID=42190BEA822B3BFB189E9DEDFDAA1E51?service=https%3A%2F%2Fent.univ-paris13.fr\" method=\"post\">"
 						}
 					],
 					"count": "1",
@@ -232,7 +232,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10010",
@@ -519,7 +519,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10036",
@@ -628,12 +628,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LT-1032883-ZmQGz3NzZK32IIASUfxAoD4MZqiizS-cas1"
+							"evidence": "LT-4442901-peiSt3BjVea76tFnk3mtY1MNlZwMOf-cas2"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>-?\uFFFD\uFFFD}\uFFFD\uFFFD\uFFFD\uFFFD\\x0001\uFFFD\uFFFD\uFFFD\uFFFD+}\uFFFD \\x0004\uFFFD\\x0010(\\x000f\uFFFD\\x0019\uFFFD(\uFFFDK\uFFFD\\x001a\uFFFD</p>",
+					"otherinfo": "<p>-?\uFFFD\u337D\uFFFD_\uFFFDz$\uFFFD\uFFFD\\x0018\uFFFDy\uFFFD\uFFFD\uFFFDY\uFFFD\uFFFDkX\uFFFD\uFFFDeg\\x0003\\x000e\uFFFD\\x001a\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -689,7 +689,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				}
 			]
 		}
