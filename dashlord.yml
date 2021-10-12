@@ -18,7 +18,24 @@ tools:
   codescan: true
   stats: true
 urls:
-  - url: https://www.google.fr
-  - url: https://pastek.fabrique.social.gouv.fr
+  - url: https://unif.fr
+  - url: http://reseaupro.unpidf.fr
+
+  - url: https://www.parisnanterre.fr/welcome-desk
+
+  - url: https://www.univ-paris13.fr/welcome-desk
+
+  - url: https://parisregion.eu/parisregionfp.html#welcome
+
+  - url: https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux
+
+  - url: https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=38&profil=1
+
+  - url: https://datakairos.unif.fr
+
+  - url: https://www.univ-paris13.fr
+
+  - url: https://ent.univ-paris13.fr
+  
     repositories:
       - zammad/zammad
