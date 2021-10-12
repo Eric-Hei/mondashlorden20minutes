@@ -619,7 +619,7 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.50.159.150",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HSTS",
@@ -1217,6 +1217,6 @@
               "ip"           : "www.univ-gustave-eiffel.fr/193.50.159.150",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "200"
+              "finding"      : "123"
           }
 ]

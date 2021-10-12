@@ -44,7 +44,7 @@
   "cookies": [
     {
       "name": "PHPSESSID",
-      "value": "slruk4et3gq4f5j4m5rricpsq6",
+      "value": "lt4eae8ddivho2mu6cukr1f4l1",
       "domain": "www.univ-gustave-eiffel.fr",
       "path": "/",
       "expires": -1,
@@ -58,7 +58,7 @@
     }
   ],
   "headers": {
-    "date": "Tue, 12 Oct 2021 14:20:05 GMT",
+    "date": "Tue, 12 Oct 2021 15:54:59 GMT",
     "server": "Apache",
     "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
     "cache-control": "no-store, no-cache, must-revalidate",
@@ -219,7 +219,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.250.190.106",
+      "ip": "142.251.33.202",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -273,7 +273,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.250.190.35",
+      "ip": "142.250.73.195",
       "geoip": {
         "continent": {
           "code": "NA",
