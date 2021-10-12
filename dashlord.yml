@@ -21,10 +21,8 @@ urls:
   - url: https://unif.fr
   - url: http://reseaupro.unpidf.fr
 
-  - url: https://www.parisnanterre.fr/welcome-desk
-
-  - url: https://www.univ-paris13.fr/welcome-desk
-
+  - url: https://www.parisnanterre.fr
+  - url: https://www.univ-paris13.fr
   - url: https://parisregion.eu/parisregionfp.html#welcome
 
   - url: https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux
@@ -33,7 +31,7 @@ urls:
 
   - url: https://datakairos.unif.fr
 
-  - url: https://www.univ-paris13.fr
+  - url: https://www.univ-paris13.fr/welcome-desk
 
   - url: https://ent.univ-paris13.fr
   
