@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Tue, 12 Oct 2021 12:08:04",
+	"@generated": "Tue, 12 Oct 2021 13:59:44",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -887,7 +887,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "563"
+					"sourceid": "570"
 				},
 				{
 					"pluginid": "10036",
@@ -914,14 +914,14 @@
 							"evidence": "Apache/2.4.10 (Debian)"
 						},
 						{
-							"uri": "https://unif.fr/data-center-regional/",
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "Apache/2.4.10 (Debian)"
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/online-welcome-desk/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1106,28 +1106,42 @@
 							"evidence": "34806106"
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1633989600"
-						},
-						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "20180605"
 						},
 						{
-							"uri": "https://unif.fr/organisation/",
+							"uri": "https://unif.fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "34806106"
+						},
+						{
+							"uri": "https://unif.fr/membres/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1633989600"
+						},
+						{
+							"uri": "https://unif.fr/membres/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "20180605"
+						},
+						{
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "34806106"
 						}
 					],
-					"count": "5",
+					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>20180605, which evaluates to: 1970-08-22 13:43:25</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -1646,7 +1660,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "79"
+					"sourceid": "72"
 				},
 				{
 					"pluginid": "10049",
