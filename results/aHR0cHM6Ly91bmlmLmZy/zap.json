@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Tue, 12 Oct 2021 13:59:44",
+	"@generated": "Tue, 12 Oct 2021 15:38:18",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -526,7 +526,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "800"
+					"sourceid": "849"
 				},
 				{
 					"pluginid": "10054",
@@ -566,7 +566,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "800"
+					"sourceid": "849"
 				},
 				{
 					"pluginid": "10110",
@@ -592,7 +592,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "339"
+					"sourceid": "338"
 				},
 				{
 					"pluginid": "10015",
@@ -914,14 +914,14 @@
 							"evidence": "Apache/2.4.10 (Debian)"
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/data-center-regional/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "Apache/2.4.10 (Debian)"
 						},
 						{
-							"uri": "https://unif.fr/online-welcome-desk/",
+							"uri": "https://unif.fr/membres/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1660,7 +1660,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "72"
+					"sourceid": "79"
 				},
 				{
 					"pluginid": "10049",
@@ -1822,7 +1822,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "800"
+					"sourceid": "849"
 				}
 			]
 		}
