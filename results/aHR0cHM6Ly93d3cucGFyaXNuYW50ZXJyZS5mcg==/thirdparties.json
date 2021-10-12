@@ -18,14 +18,6 @@
     },
     {
       "type": "twitter",
-      "url": "https://pbs.twimg.com/profile_images/911671846344495104/lLdwf0zY_normal.jpg",
-      "details": {
-        "id": "twitter",
-        "message": "Dont embed twitter scripts, use your own tweet embed"
-      }
-    },
-    {
-      "type": "twitter",
       "url": "https://platform.twitter.com/widgets/widget_iframe.58065ae230495f5d9e4b6a916472b2c1.html?origin=https%3A%2F%2Fwww.parisnanterre.fr",
       "details": {
         "id": "twitter",
@@ -34,7 +26,7 @@
     },
     {
       "type": "twitter",
-      "url": "https://syndication.twitter.com/settings?session_id=a5b9ea66da6d9e874859f2f8faaed5d8b7a169b3",
+      "url": "https://syndication.twitter.com/settings?session_id=3087a2fb13ff50634989663b8e8cc264c48a718b",
       "details": {
         "id": "twitter",
         "message": "Dont embed twitter scripts, use your own tweet embed"
@@ -44,7 +36,7 @@
   "cookies": [
     {
       "name": "JSESSIONID",
-      "value": "15B3185EC5B5C13F78D003B8EC465D5A",
+      "value": "DB918C30AEE6E97509460A096357DD62",
       "domain": "www.parisnanterre.fr",
       "path": "/",
       "expires": -1,
@@ -58,9 +50,9 @@
     }
   ],
   "headers": {
-    "date": "Tue, 12 Oct 2021 14:00:43 GMT",
+    "date": "Tue, 12 Oct 2021 15:39:15 GMT",
     "server": "Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_jk/1.2.41",
-    "set-cookie": "JSESSIONID=15B3185EC5B5C13F78D003B8EC465D5A; Path=/; Secure; HttpOnly",
+    "set-cookie": "JSESSIONID=DB918C30AEE6E97509460A096357DD62; Path=/; Secure; HttpOnly",
     "keep-alive": "timeout=5, max=100",
     "connection": "Keep-Alive",
     "transfer-encoding": "chunked",
@@ -284,7 +276,7 @@
     },
     {
       "hostname": "syndication.twitter.com",
-      "ip": "104.244.42.200",
+      "ip": "104.244.42.136",
       "geoip": {
         "continent": {
           "code": "NA",

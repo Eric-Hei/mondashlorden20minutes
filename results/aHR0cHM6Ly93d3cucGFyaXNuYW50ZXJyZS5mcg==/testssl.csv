@@ -82,7 +82,7 @@
 "intermediate_cert_chain <#3>","www.parisnanterre.fr/193.50.151.123","443","INFO","GEANT OV RSA CA 4 <-- USERTrust RSA Certification Authority","",""
 "intermediate_cert_badOCSP","www.parisnanterre.fr/193.50.151.123","443","OK","intermediate certificate(s) is/are ok","",""
 "HTTP_status_code","www.parisnanterre.fr/193.50.151.123","443","INFO","200 OK ('/')","",""
-"HTTP_clock_skew","www.parisnanterre.fr/193.50.151.123","443","INFO","0 seconds from localtime","",""
+"HTTP_clock_skew","www.parisnanterre.fr/193.50.151.123","443","INFO","-1 seconds from localtime","",""
 "HSTS","www.parisnanterre.fr/193.50.151.123","443","LOW","not offered","",""
 "HPKP","www.parisnanterre.fr/193.50.151.123","443","INFO","No support for HTTP Public Key Pinning","",""
 "banner_server","www.parisnanterre.fr/193.50.151.123","443","INFO","Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_jk/1.2.41","",""

@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Tue, 12 Oct 2021 14:00:14",
+	"@generated": "Tue, 12 Oct 2021 15:38:45",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -39,7 +39,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2576"
+					"sourceid": "2574"
 				},
 				{
 					"pluginid": "10038",
@@ -101,7 +101,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/les-ufr-et-instituts/",
+							"uri": "https://www.parisnanterre.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -211,7 +211,7 @@
 							"evidence": "<a href=\"https://www.facebook.com/universite.paris.nanterre/\" target=\"_blank\"> \r\n    \t\t<img  class=\"socialCard__photo\" src=\"/medias/photo/social-facebook_1468934803376-png\" alt=\"\"/>\r\n    \t</a>"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=univ-pres",
+							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=univ-orgun",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -286,7 +286,7 @@
 							"evidence": "<link rel=\"schema.DC\" href=\"http://purl.org/dc/elements/1.1/\" />"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/la-presidence/",
+							"uri": "https://www.parisnanterre.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -354,13 +354,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/l-universite-recrute/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/l-universite/",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -397,6 +390,13 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/les-ufr-et-instituts/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/organisation/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -607,7 +607,7 @@
 							"evidence": "<script type=\"text/javascript\" async\n\tsrc=\"https://platform.twitter.com/widgets.js\"></script>"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=univ-pres",
+							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=univ-orgun",
 							"method": "GET",
 							"param": "https://platform.twitter.com/widgets.js",
 							"attack": "",
@@ -660,7 +660,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "2678"
+					"sourceid": "2698"
 				},
 				{
 					"pluginid": "10015",
@@ -688,13 +688,6 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/actualites-de-l-universite/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.parisnanterre.fr/l-universite-recrute/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -737,6 +730,13 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/les-ufr-et-instituts/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/organisation/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -818,7 +818,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/les-ufr-et-instituts/",
+							"uri": "https://www.parisnanterre.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -928,7 +928,7 @@
 							"evidence": "http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=univ-pres",
+							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=univ-orgun",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -944,7 +944,7 @@
 					],
 					"count": "11",
 					"solution": "<p>A page that is available over SSL/TLS must be comprised completely of content which is transmitted over SSL/TLS.</p><p>The page must not contain any content that is transmitted over unencrypted HTTP.</p><p> This includes content from third party sites.</p>",
-					"otherinfo": "<p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p>tag=img src=http://pbs.twimg.com/profile_images/911671846344495104/lLdwf0zY_normal.jpg</p><p></p>",
+					"otherinfo": "<p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p>tag=img src=http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg</p><p></p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
@@ -996,13 +996,6 @@
 							"evidence": "Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_jk/1.2.41"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/linkedin/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_jk/1.2.41"
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/lyceen-ne/",
 							"method": "GET",
 							"param": "",
@@ -1032,6 +1025,13 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_jk/1.2.41"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/twitter/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1092,13 +1092,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/linkedin/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/lyceen-ne/",
 							"method": "GET",
 							"param": "",
@@ -1128,6 +1121,13 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/twitter/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1214,13 +1214,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/l-universite-recrute/",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/l-universite/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -1257,6 +1250,13 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/les-ufr-et-instituts/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/organisation/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1331,7 +1331,7 @@
 							"evidence": "/uas/UNIVERSITE/LOGO/202101-UPN-RVB-header-v06"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/les-services/",
+							"uri": "https://www.parisnanterre.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1447,7 +1447,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2675"
+					"sourceid": "2695"
 				},
 				{
 					"pluginid": "10109",
@@ -1550,7 +1550,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "621"
+					"sourceid": "688"
 				},
 				{
 					"pluginid": "10049",
@@ -1584,13 +1584,6 @@
 							"evidence": "302"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/linkedin/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "302"
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/lyceen-ne/",
 							"method": "GET",
 							"param": "",
@@ -1610,6 +1603,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "302"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/twitter/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "302"
 						}
 					],
 					"count": "7",
@@ -1618,7 +1618,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "215"
+					"sourceid": "217"
 				},
 				{
 					"pluginid": "10049",
@@ -1652,13 +1652,6 @@
 							"evidence": "302"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/linkedin/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "302"
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/lyceen-ne/",
 							"method": "GET",
 							"param": "",
@@ -1674,6 +1667,13 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/servlet/com.jsbsoft.jtf.core.SG?ACTION=CONNECTER&PROC=IDENTIFICATION_FRONT",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "302"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/twitter/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1740,7 +1740,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1610"
+					"sourceid": "1419"
 				}
 			]
 		}
