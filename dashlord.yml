@@ -3,7 +3,7 @@ description: Cockpit conformité technique
 entity: Moi
 footer: Powered by Eric H
 tools:
-  404: false
+  404: true
   screenshot: true
   nmap: true
   zap: true
@@ -16,7 +16,7 @@ tools:
   updownio: false
   dependabot: true
   codescan: true
-  stats: true
+  stats: false
 urls:
   - url: https://unif.fr
   - url: http://reseaupro.unpidf.fr
