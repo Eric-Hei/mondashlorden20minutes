@@ -6,11 +6,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://stats.iledefrance.fr/piwik.php?action_name=parisregion.eu%2FParis%20Region&idsite=36&rec=1&r=027161&h=14&m=12&s=29&url=https%3A%2F%2Fparisregion.eu%2Fparisregionfp.html%23welcome&_id=9d0980213988c261&_idn=1&_refts=0&send_image=0&cookie=1&res=800x600&pv_id=UTuGeU&pf_net=255&pf_srv=127&pf_tfr=112&pf_dm1=885"
+      "url": "https://stats.iledefrance.fr/piwik.php?action_name=parisregion.eu%2FParis%20Region&idsite=36&rec=1&r=273735&h=15&m=50&s=33&url=https%3A%2F%2Fparisregion.eu%2Fparisregionfp.html%23welcome&_id=d1c10303e6f6c4a3&_idn=1&_refts=0&send_image=0&cookie=1&res=800x600&pv_id=pbvIGE&pf_net=185&pf_srv=91&pf_tfr=81&pf_dm1=628"
     },
     {
       "type": "unknown",
-      "url": "https://stats.iledefrance.fr/plugins/HeatmapSessionRecording/configs.php?idsite=36&trackerid=uU5Lop&url=https%3A%2F%2Fparisregion.eu%2Fparisregionfp.html%23welcome"
+      "url": "https://stats.iledefrance.fr/plugins/HeatmapSessionRecording/configs.php?idsite=36&trackerid=SogN8V&url=https%3A%2F%2Fparisregion.eu%2Fparisregionfp.html%23welcome"
     }
   ],
   "cookies": [
@@ -19,7 +19,7 @@
       "value": "1",
       "domain": ".parisregion.eu",
       "path": "/",
-      "expires": 1634049749,
+      "expires": 1634055633,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -31,10 +31,10 @@
     },
     {
       "name": "_pk_id.36.60a6",
-      "value": "9d0980213988c261.1634047950.",
+      "value": "d1c10303e6f6c4a3.1634053834.",
       "domain": ".parisregion.eu",
       "path": "/",
-      "expires": 1667743950,
+      "expires": 1667749834,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -46,13 +46,13 @@
     }
   ],
   "headers": {
-    "date": "Tue, 12 Oct 2021 14:12:27 GMT",
+    "date": "Tue, 12 Oct 2021 15:50:32 GMT",
     "content-type": "text/html; charset=utf-8",
     "content-length": "10869",
     "last-modified": "Thu, 23 Sep 2021 08:50:17 GMT",
     "accept-ranges": "bytes",
     "cache-control": "max-age=0",
-    "expires": "Tue, 12 Oct 2021 14:12:27 GMT",
+    "expires": "Tue, 12 Oct 2021 15:50:32 GMT",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
     "x-content-type-options": "nosniff",
