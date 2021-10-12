@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Tue, 12 Oct 2021 15:38:45",
+	"@generated": "Tue, 12 Oct 2021 19:09:32",
 	"site":[ 
 		{
 			"@name": "https://www.parisnanterre.fr",
@@ -39,7 +39,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2574"
+					"sourceid": "2578"
 				},
 				{
 					"pluginid": "10038",
@@ -190,13 +190,6 @@
 							"evidence": "<a href=\"https://www.facebook.com/universite.paris.nanterre/\" target=\"_blank\"> \r\n    \t\t<img  class=\"socialCard__photo\" src=\"/medias/photo/social-facebook_1468934803376-png\" alt=\"\"/>\r\n    \t</a>"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=1581513597812",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://www.facebook.com/universite.paris.nanterre/\" target=\"_blank\"> \r\n    \t\t<img  class=\"socialCard__photo\" src=\"/medias/photo/social-facebook_1468934803376-png\" alt=\"\"/>\r\n    \t</a>"
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=FR",
 							"method": "GET",
 							"param": "",
@@ -212,6 +205,13 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=univ-orgun",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a href=\"https://www.facebook.com/universite.paris.nanterre/\" target=\"_blank\"> \r\n    \t\t<img  class=\"socialCard__photo\" src=\"/medias/photo/social-facebook_1468934803376-png\" alt=\"\"/>\r\n    \t</a>"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=univ-pres",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -660,7 +660,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "2698"
+					"sourceid": "2702"
 				},
 				{
 					"pluginid": "10015",
@@ -907,13 +907,6 @@
 							"evidence": "http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg"
 						},
 						{
-							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=1581513597812",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg"
-						},
-						{
 							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=FR",
 							"method": "GET",
 							"param": "",
@@ -929,6 +922,13 @@
 						},
 						{
 							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=univ-orgun",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "http://pbs.twimg.com/profile_images/1214923109259759616/P4qERSnL_normal.jpg"
+						},
+						{
+							"uri": "https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp?RF=ACCUEIL_UNIVERSITE&RH=univ-pres",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1447,7 +1447,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2695"
+					"sourceid": "2699"
 				},
 				{
 					"pluginid": "10109",
@@ -1550,7 +1550,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "688"
+					"sourceid": "683"
 				},
 				{
 					"pluginid": "10049",
@@ -1740,7 +1740,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1419"
+					"sourceid": "1342"
 				}
 			]
 		}
