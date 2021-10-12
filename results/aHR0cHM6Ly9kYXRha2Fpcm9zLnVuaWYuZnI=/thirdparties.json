@@ -48,7 +48,7 @@
   "cookies": [],
   "headers": {
     "server": "nginx/1.18.0 (Ubuntu)",
-    "date": "Tue, 12 Oct 2021 12:34:45 GMT",
+    "date": "Tue, 12 Oct 2021 14:27:47 GMT",
     "content-type": "text/html",
     "last-modified": "Mon, 11 Oct 2021 09:57:15 GMT",
     "transfer-encoding": "chunked",
@@ -115,7 +115,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "172.217.1.202",
+      "ip": "142.250.190.106",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -169,12 +169,12 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "104.16.85.20",
+      "ip": "104.16.89.20",
       "geoip": null
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.250.188.35",
+      "ip": "142.250.191.163",
       "geoip": {
         "continent": {
           "code": "NA",
