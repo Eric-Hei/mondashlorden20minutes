@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Tue, 12 Oct 2021 12:38:42",
+	"@generated": "Tue, 12 Oct 2021 14:11:59",
 	"site":[ 
 		{
 			"@name": "https://www.univ-paris13.fr",
@@ -563,9 +563,16 @@
 							"param": "PHPSESSID",
 							"attack": "",
 							"evidence": "Set-Cookie: PHPSESSID"
+						},
+						{
+							"uri": "https://www.univ-paris13.fr/sitemap.xml",
+							"method": "GET",
+							"param": "PHPSESSID",
+							"attack": "",
+							"evidence": "Set-Cookie: PHPSESSID"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
@@ -680,7 +687,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.univ-paris13.fr/archives-2/",
+							"uri": "https://www.univ-paris13.fr/choisir-sa-formation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -695,13 +702,6 @@
 						},
 						{
 							"uri": "https://www.univ-paris13.fr/daeu/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval"
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/financer-sa-formation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -729,7 +729,7 @@
 							"evidence": "eval"
 						},
 						{
-							"uri": "https://www.univ-paris13.fr/orientation/",
+							"uri": "https://www.univ-paris13.fr/professionnels-de-sante/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -757,6 +757,13 @@
 							"evidence": "eval"
 						},
 						{
+							"uri": "https://www.univ-paris13.fr/sinscrire-en-formation-continue/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
 							"uri": "https://www.univ-paris13.fr/valider-ses-acquis/",
 							"method": "GET",
 							"param": "",
@@ -770,7 +777,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "457"
+					"sourceid": "861"
 				},
 				{
 					"pluginid": "10015",
@@ -797,14 +804,7 @@
 							"evidence": "max-age=0, public"
 						},
 						{
-							"uri": "https://www.univ-paris13.fr/choisir-sa-formation/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "max-age=0, public"
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/financer-sa-formation/",
+							"uri": "https://www.univ-paris13.fr/formation-continue/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -825,13 +825,6 @@
 							"evidence": "max-age=0, public"
 						},
 						{
-							"uri": "https://www.univ-paris13.fr/laboratoires/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "max-age=0, public"
-						},
-						{
 							"uri": "https://www.univ-paris13.fr/presentation/",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -839,28 +832,21 @@
 							"evidence": "max-age=0, public"
 						},
 						{
-							"uri": "https://www.univ-paris13.fr/professionnels-de-sante/",
+							"uri": "https://www.univ-paris13.fr/se-former-en-alternance/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "max-age=0, public"
 						},
 						{
-							"uri": "https://www.univ-paris13.fr/services/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "max-age=0, public"
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/sinscrire-en-formation-continue/",
+							"uri": "https://www.univ-paris13.fr/valider-ses-acquis/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "max-age=0, public"
 						}
 					],
-					"count": "11",
+					"count": "8",
 					"solution": "<p>Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
@@ -988,7 +974,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html</p>",
 					"cweid": "311",
 					"wascid": "4",
-					"sourceid": "768"
+					"sourceid": "782"
 				},
 				{
 					"pluginid": "10037",
@@ -1015,14 +1001,7 @@
 							"evidence": "X-Powered-By: WP Rocket/2.11.7"
 						},
 						{
-							"uri": "https://www.univ-paris13.fr/choisir-sa-formation/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: WP Rocket/2.11.7"
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/financer-sa-formation/",
+							"uri": "https://www.univ-paris13.fr/formation-continue/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1043,13 +1022,6 @@
 							"evidence": "X-Powered-By: WP Rocket/2.11.7"
 						},
 						{
-							"uri": "https://www.univ-paris13.fr/laboratoires/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: WP Rocket/2.11.7"
-						},
-						{
 							"uri": "https://www.univ-paris13.fr/presentation/",
 							"method": "GET",
 							"param": "",
@@ -1057,28 +1029,21 @@
 							"evidence": "X-Powered-By: WP Rocket/2.11.7"
 						},
 						{
-							"uri": "https://www.univ-paris13.fr/professionnels-de-sante/",
+							"uri": "https://www.univ-paris13.fr/se-former-en-alternance/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "X-Powered-By: WP Rocket/2.11.7"
 						},
 						{
-							"uri": "https://www.univ-paris13.fr/services/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: WP Rocket/2.11.7"
-						},
-						{
-							"uri": "https://www.univ-paris13.fr/sinscrire-en-formation-continue/",
+							"uri": "https://www.univ-paris13.fr/valider-ses-acquis/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "X-Powered-By: WP Rocket/2.11.7"
 						}
 					],
-					"count": "11",
+					"count": "8",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress \"X-Powered-By\" headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
@@ -1239,13 +1204,6 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1634041758"
-						},
-						{
-							"uri": "https://www.univ-paris13.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "1634041800"
 						},
 						{
@@ -1254,6 +1212,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "1634045400"
+						},
+						{
+							"uri": "https://www.univ-paris13.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1634047772"
 						},
 						{
 							"uri": "https://www.univ-paris13.fr",
@@ -1638,15 +1603,22 @@
 							"param": "",
 							"attack": "",
 							"evidence": ""
+						},
+						{
+							"uri": "https://www.univ-paris13.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>",
-					"otherinfo": "<p>The origin domain used for comparison was: </p><p>www.univ-paris13.fr</p><p>PHPSESSID=40elgt9q49mfbhho4khp8399l7</p><p></p>",
+					"otherinfo": "<p>The origin domain used for comparison was: </p><p>www.univ-paris13.fr</p><p>PHPSESSID=4ksahg4d3nn5pknt15bgn4tj2u</p><p></p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc6265#section-4.1</p><p>https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</p><p>http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</p>",
 					"cweid": "565",
 					"wascid": "15",
-					"sourceid": "29"
+					"sourceid": "371"
 				},
 				{
 					"pluginid": "10109",
@@ -1790,6 +1762,13 @@
 							"evidence": "no-store"
 						},
 						{
+							"uri": "https://www.univ-paris13.fr/services/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store"
+						},
+						{
 							"uri": "https://www.univ-paris13.fr/web/",
 							"method": "GET",
 							"param": "",
@@ -1797,13 +1776,13 @@
 							"evidence": "no-store"
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "488"
+					"sourceid": "486"
 				},
 				{
 					"pluginid": "10049",
@@ -1851,6 +1830,13 @@
 							"evidence": "no-store"
 						},
 						{
+							"uri": "https://www.univ-paris13.fr/services/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store"
+						},
+						{
 							"uri": "https://www.univ-paris13.fr/web/",
 							"method": "GET",
 							"param": "",
@@ -1858,7 +1844,7 @@
 							"evidence": "no-store"
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",

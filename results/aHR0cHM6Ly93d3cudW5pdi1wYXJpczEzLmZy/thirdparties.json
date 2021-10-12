@@ -111,7 +111,7 @@
       "value": "set",
       "domain": "www.univ-paris13.fr",
       "path": "/",
-      "expires": 1665578395,
+      "expires": 1665583991,
       "size": 15,
       "httpOnly": false,
       "secure": true,
@@ -126,7 +126,7 @@
       "value": "",
       "domain": "www.univ-paris13.fr",
       "path": "/",
-      "expires": 1665578395,
+      "expires": 1665583991,
       "size": 8,
       "httpOnly": false,
       "secure": true,
@@ -141,7 +141,7 @@
       "value": "30",
       "domain": "www.univ-paris13.fr",
       "path": "/",
-      "expires": 1665578395,
+      "expires": 1665583991,
       "size": 21,
       "httpOnly": false,
       "secure": true,
@@ -153,7 +153,7 @@
     },
     {
       "name": "PHPSESSID",
-      "value": "mffo2vamhld4tvq6mfntmr7lck",
+      "value": "udq8jdpl0dip2vt3outae7f5ut",
       "domain": ".univ-paris13.fr",
       "path": "/",
       "expires": -1,
@@ -167,7 +167,7 @@
     },
     {
       "name": "hawww",
-      "value": "www2",
+      "value": "www1",
       "domain": "www.univ-paris13.fr",
       "path": "/",
       "expires": -1,
@@ -181,18 +181,18 @@
     }
   ],
   "headers": {
-    "date": "Tue, 12 Oct 2021 12:39:56 GMT",
+    "date": "Tue, 12 Oct 2021 14:13:11 GMT",
     "server": "Apache",
     "vary": "Accept-Encoding",
-    "last-modified": "Tue, 12 Oct 2021 12:39:36 GMT",
+    "last-modified": "Tue, 12 Oct 2021 14:09:32 GMT",
     "accept-ranges": "bytes",
-    "content-length": "99705",
+    "content-length": "99579",
     "cache-control": "max-age=0",
-    "expires": "Tue, 12 Oct 2021 12:39:56 GMT",
+    "expires": "Tue, 12 Oct 2021 14:13:11 GMT",
     "content-type": "text/html; charset=UTF-8",
     "content-encoding": "gzip",
     "strict-transport-security": "max-age=0; includeSubDomains",
-    "set-cookie": "hawww=www2; path=/"
+    "set-cookie": "hawww=www1; path=/"
   },
   "endpoints": [
     {
@@ -289,7 +289,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.250.191.106",
+      "ip": "142.250.191.234",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -343,7 +343,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.250.191.131",
+      "ip": "142.250.190.99",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -489,7 +489,7 @@
     },
     {
       "hostname": "maps.google.com",
-      "ip": "142.250.190.110",
+      "ip": "142.250.191.110",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -543,7 +543,7 @@
     },
     {
       "hostname": "maps.googleapis.com",
-      "ip": "142.251.32.10",
+      "ip": "142.250.190.42",
       "geoip": {
         "continent": {
           "code": "NA",
