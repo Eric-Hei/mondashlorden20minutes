@@ -99,7 +99,7 @@
       "value": "set",
       "domain": "www.univ-paris13.fr",
       "path": "/",
-      "expires": 1665577223,
+      "expires": 1665585090,
       "size": 15,
       "httpOnly": false,
       "secure": true,
@@ -128,7 +128,7 @@
       "value": "",
       "domain": "www.univ-paris13.fr",
       "path": "/",
-      "expires": 1665577223,
+      "expires": 1665585090,
       "size": 8,
       "httpOnly": false,
       "secure": true,
@@ -143,7 +143,7 @@
       "value": "30",
       "domain": "www.univ-paris13.fr",
       "path": "/",
-      "expires": 1665577223,
+      "expires": 1665585090,
       "size": 21,
       "httpOnly": false,
       "secure": true,
@@ -155,7 +155,7 @@
     },
     {
       "name": "PHPSESSID",
-      "value": "diusueqoh70vof3tt943van2uf",
+      "value": "293kopt39klah4snrlgd3sk2mr",
       "domain": ".univ-paris13.fr",
       "path": "/",
       "expires": -1,
@@ -169,13 +169,13 @@
     }
   ],
   "headers": {
-    "date": "Tue, 12 Oct 2021 12:20:23 GMT",
+    "date": "Tue, 12 Oct 2021 14:31:29 GMT",
     "server": "Apache",
     "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
     "cache-control": "no-store, no-cache, must-revalidate",
     "pragma": "no-cache",
     "link": "<https://www.univ-paris13.fr/wp-json/>; rel=\"https://api.w.org/\"\n<https://www.univ-paris13.fr/wp-json/wp/v2/pages/73073>; rel=\"alternate\"; type=\"application/json\"\n<https://www.univ-paris13.fr/?p=73073>; rel=shortlink",
-    "last-modified": "Tue, 12 Oct 2021 12:20:26 GMT",
+    "last-modified": "Tue, 12 Oct 2021 14:31:32 GMT",
     "transfer-encoding": "chunked",
     "content-type": "text/html; charset=UTF-8",
     "content-encoding": "gzip",
@@ -184,7 +184,7 @@
   "endpoints": [
     {
       "hostname": "www.univ-paris13.fr",
-      "ip": "81.194.43.200",
+      "ip": "81.194.43.201",
       "geoip": {
         "city": {
           "geoname_id": 3036145,
@@ -276,7 +276,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "172.217.15.106",
+      "ip": "142.250.188.202",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -330,7 +330,7 @@
     },
     {
       "hostname": "maps.google.com",
-      "ip": "142.251.45.14",
+      "ip": "142.250.188.206",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -384,7 +384,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.217.12.227",
+      "ip": "172.217.0.35",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -438,7 +438,7 @@
     },
     {
       "hostname": "www-test.univ-paris13.fr",
-      "ip": "81.194.43.200",
+      "ip": "81.194.43.201",
       "geoip": {
         "city": {
           "geoname_id": 3036145,

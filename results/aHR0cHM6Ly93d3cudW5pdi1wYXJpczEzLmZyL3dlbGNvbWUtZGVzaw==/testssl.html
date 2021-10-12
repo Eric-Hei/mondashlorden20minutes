@@ -21,16 +21,16 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-chacha (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az152-485:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az191-66:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Jan 18 17:12:17 2019&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="font-weight:bold;">Testing all IPv4 addresses (port 443): </span>81.194.43.200 81.194.43.201
+<span style="font-weight:bold;">Testing all IPv4 addresses (port 443): </span>81.194.43.201 81.194.43.200
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2021-10-12 12:20:39        --&gt;&gt; 81.194.43.200:443 (www.univ-paris13.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2021-10-12 14:31:46        --&gt;&gt; 81.194.43.201:443 (www.univ-paris13.fr) &lt;&lt;--</span>
 
- Further IP addresses:   81.194.43.201 
- rDNS (81.194.43.200):   proxy.univ-paris13.fr.
+ Further IP addresses:   81.194.43.200 
+ rDNS (81.194.43.201):   proxy.univ-paris13.fr.
  Service detected:       HTTP
 
 
@@ -146,9 +146,8 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Ticketbleed</span> (CVE-2016-9244), experiment.  <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>, no session ticket extension
 <span style="font-weight:bold;"> ROBOT                                     </span><span style="color:#cd00cd;"> Oops: TCP connect problem</span>
 
-<span style="color:#cd00cd;">Unable to open a socket to 81.194.43.200:443. </span><span style="color:#e52207;font-weight:bold;">VULNERABLE (NOT ok)</span>
-<span style="font-weight:bold;"> Secure Renegotiation (RFC 5746)           </span><span style="color:#cd00cd;"> Oops: openssl s_client connect problem</span>
-<span style="color:#cd00cd;">OpenSSL handshake didn&apos;t succeed</span>
+<span style="color:#cd00cd;">Unable to open a socket to 81.194.43.201:443. </span><span style="color:#c05600;">VULNERABLE (NOT ok)</span> - weakly vulnerable as the attack would take too long
+<span style="font-weight:bold;"> Secure Renegotiation (RFC 5746)           </span><span style="color:#008817;font-weight:bold;">supported (OK)</span>
 <span style="font-weight:bold;"> Secure Client-Initiated Renegotiation     </span><span style="color:#008817;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> CRIME, TLS </span>(CVE-2012-4929)                <span style="color:#008817;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> BREACH</span> (CVE-2013-3587)                    <span style="color:#c05600;">potentially NOT ok, &quot;gzip&quot; HTTP compression detected.</span> - only supplied &quot;/&quot; tested
