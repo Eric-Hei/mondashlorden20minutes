@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Tue, 12 Oct 2021 15:38:18",
+	"@generated": "Tue, 12 Oct 2021 16:06:39",
 	"site":[ 
 		{
 			"@name": "https://unif.fr",
@@ -526,7 +526,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "849"
+					"sourceid": "800"
 				},
 				{
 					"pluginid": "10054",
@@ -566,7 +566,7 @@
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "849"
+					"sourceid": "800"
 				},
 				{
 					"pluginid": "10110",
@@ -592,7 +592,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "338"
+					"sourceid": "339"
 				},
 				{
 					"pluginid": "10015",
@@ -1120,21 +1120,21 @@
 							"evidence": "34806106"
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "1633989600"
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "20180605"
 						},
 						{
-							"uri": "https://unif.fr/membres/",
+							"uri": "https://unif.fr/organisation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1660,7 +1660,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "79"
+					"sourceid": "65"
 				},
 				{
 					"pluginid": "10049",
@@ -1822,7 +1822,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "849"
+					"sourceid": "800"
 				}
 			]
 		}
