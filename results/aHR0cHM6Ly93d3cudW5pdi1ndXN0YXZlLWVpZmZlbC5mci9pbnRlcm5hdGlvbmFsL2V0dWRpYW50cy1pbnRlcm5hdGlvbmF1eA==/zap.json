@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Tue, 12 Oct 2021 15:54:30",
+	"@generated": "Tue, 12 Oct 2021 16:38:41",
 	"site":[ 
 		{
 			"@name": "https://www.univ-gustave-eiffel.fr",
@@ -18,13 +18,6 @@
 					"riskdesc": "High (High)",
 					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
 					"instances":[ 
-						{
-							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Documents/Brochure_Ecodair.pdf",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "508640577406606"
-						},
 						{
 							"uri": "https://www.univ-gustave-eiffel.fr/fileadmin/Fichiers/Universite_Gustave_Eiffel/Documents/Note_Univ_Gustave_Eiffel_Analyse_du_Cycle_de_Vie_pour_la_RE2020.pdf",
 							"method": "GET",
@@ -54,13 +47,13 @@
 							"evidence": "500222260222349"
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"solution": "",
-					"otherinfo": "<p>Credit Card Type detected: Maestro</p><p>Bank Identification Number: 508640</p><p>Brand: MAESTRO</p><p>Category: </p><p>Issuer: </p>",
+					"otherinfo": "<p>Credit Card Type detected: Maestro</p><p>Bank Identification Number: 503503</p><p>Brand: MAESTRO</p><p>Category: </p><p>Issuer: </p>",
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "1306"
+					"sourceid": "636"
 				},
 				{
 					"pluginid": "10038",
@@ -299,7 +292,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "636"
+					"sourceid": "638"
 				},
 				{
 					"pluginid": "10099",
@@ -346,7 +339,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "639"
+					"sourceid": "641"
 				},
 				{
 					"pluginid": "90003",
@@ -928,7 +921,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "803"
+					"sourceid": "801"
 				},
 				{
 					"pluginid": "10063",
@@ -1057,7 +1050,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "839"
+					"sourceid": "837"
 				},
 				{
 					"pluginid": "10035",
