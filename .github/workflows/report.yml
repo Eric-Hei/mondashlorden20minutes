@@ -24,14 +24,7 @@ jobs:
 
       # build the report
       - id: dashlord-report
-        uses: SocialGouv/dashlord-actions/report@main
-
-      # to save the generated report.json as artifact
-      - uses: actions/upload-artifact@v2
-        with:
-          path: report.json
-          name: report
-          if-no-files-found: error
+        uses: SocialGouv/dashlord-actions/report@v1
 
       # save full report for history
       - uses: EndBug/add-and-commit@v7
@@ -42,7 +35,7 @@ jobs:
 
       # deploy build to gh-pages
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.9
         with:
           branch: gh-pages
           folder: build
