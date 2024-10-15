@@ -18,22 +18,7 @@ tools:
   codescan: true
   stats: false
 urls:
-  - url: https://unif.fr
-  - url: http://reseaupro.unpidf.fr
-
-  - url: https://www.parisnanterre.fr
-  - url: https://www.univ-paris13.fr
-  - url: https://parisregion.eu/parisregionfp.html#welcome
-
-  - url: https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux
-
-  - url: https://www.visium360-ssl1.fr/mb_pacem/index.asp?fkl=38&profil=1
-
-  - url: https://datakairos.unif.fr
-
-  - url: https://www.univ-paris13.fr/welcome-desk
-
-  - url: https://ent.univ-paris13.fr
+  - url: https://www.service-civique.gouv.fr/
   
     repositories:
       - zammad/zammad
