@@ -3,7 +3,7 @@
   "cookies": [
     {
       "name": "TS01c3b0f5",
-      "value": "01b74c0fdda426945fd44fa86361f7671fcf20957a6fbbabe12e18aafad4d676e1d35f1afaa3e3d46b869b83795ef8d4880fbdec18",
+      "value": "01b74c0fdd12202822fb91f81de55279be251c5fd57cebd8edac6359b79e4184c03372eaabc32446e3f717fccfaeda19f0f160a268",
       "domain": ".elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -17,7 +17,7 @@
     },
     {
       "name": "civiq",
-      "value": "169351084.48160.0000",
+      "value": "186128300.48160.0000",
       "domain": "elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -31,7 +31,7 @@
     },
     {
       "name": "api-gateway-8380",
-      "value": "186128300.48160.0000",
+      "value": "169351084.48160.0000",
       "domain": "elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -49,15 +49,15 @@
     "connection": "close",
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Wed, 16 Oct 2024 13:12:10 GMT",
+    "date": "Wed, 16 Oct 2024 14:26:43 GMT",
     "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
     "max-forwards": "20",
     "pragma": "no-cache",
-    "set-cookie": "api-gateway-8380=186128300.48160.0000; path=/; Httponly\nciviq=169351084.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdda426945fd44fa86361f7671fcf20957a6fbbabe12e18aafad4d676e1d35f1afaa3e3d46b869b83795ef8d4880fbdec18; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HTTPOnly",
+    "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=186128300.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd12202822fb91f81de55279be251c5fd57cebd8edac6359b79e4184c03372eaabc32446e3f717fccfaeda19f0f160a268; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HTTPOnly",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "transfer-encoding": "chunked",
-    "via": "1.1 leto-b ()",
-    "x-correlationid": "Id-abbb0f677c4ae798a51f06be 0; Id-aabb0f67302f6205fecb31d1 0"
+    "via": "1.1 leto-p ()",
+    "x-correlationid": "Id-23cd0f676cb6a0474b7b9c44 0; Id-23cd0f67c7ce002beb4d3eb7 0"
   },
   "endpoints": [
     {
