@@ -3,20 +3,26 @@ description: Cockpit conformité technique
 entity: Moi
 footer: Powered by Eric H
 tools:
-  404: true
   screenshot: true
-  nmap: true
-  zap: true
-  wappalyzer: true
-  http: true
-  testssl: true
   lighthouse: true
+  testssl: true
+  wappalyzer: true
+  nuclei: false
+  zap: true
   thirdparties: true
-  nuclei: true
-  updownio: false
   dependabot: true
   codescan: true
-  stats: false
+  updownio: true
+  http: true
+  nmap: true
+  declaration-a11y: true
+  declaration-rgpd: true
+  stats: true
+  budget_page: true
+  dsfr: true
+  ecoindex: true
+  betagouv: true
+  github_repository: true
 urls:
   - url: https://www.service-civique.gouv.fr
   - url: https://oscar.service-civique.gouv.fr
