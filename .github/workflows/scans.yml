@@ -7,14 +7,25 @@ on:
         description: "Single url to scan or scan all urls"
         required: false
         default: ""
-  push:
-    branches:
-      - master
-      - main
-    paths:
-      - 'dashlord.yaml'
-      - 'dashlord.yml'
-      - 'urls.txt'
+      tool:
+        description: "Single tool to run or use all tools"
+        type: choice
+        default: all
+        options:
+          - all
+          - codescan
+          - dependabot
+          - ecoindex
+          - lighthouse
+          - sonarcloud
+          - trivy
+          - zap
+          - ecoindex
+          - dsfr
+          - declaration-a11y
+          - declaration-rgpd
+  schedule:
+    - cron: "0 0 * * 0" # At 00:00 on Sunday
 
 jobs:
   init:
@@ -26,10 +37,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: init
-        uses: "SocialGouv/dashlord-actions/init@main"
+        uses: "SocialGouv/dashlord-actions/init@v1"
         with:
           url: ${{ github.event.inputs.url }}
-
+          tool: ${{ github.event.inputs.tool }}
+      - id: updown-init
+        uses: "SocialGouv/dashlord-actions/updown-init@v1"
+        env:
+          UPDOWNIO_API_KEY: ${{ secrets.UPDOWNIO_API_KEY }}
   scans:
     runs-on: ubuntu-latest
     name: Scan
@@ -41,7 +56,7 @@ jobs:
       matrix:
         sites: ${{ fromJson(needs.init.outputs.sites) }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - run: |
           mkdir scans
@@ -51,45 +66,59 @@ jobs:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
-      - name: Detect 404s
+      - name: dsfr
         continue-on-error: true
-        uses: "socialgouv/detect-404-action@master"
-        if: ${{ matrix.sites.tools['404'] }}
+        timeout-minutes: 10
+        uses: "socialgouv/dashlord-actions/dsfr@v1"
+        if: ${{ matrix.sites.tools.dsfr }}
         with:
           url: ${{ matrix.sites.url }}
-          output: scans/404.json
+          output: scans/dsfr.json
+
+      - name: eco-index
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "socialgouv/dashlord-actions/ecoindex@v1"
+        if: ${{ matrix.sites.tools.ecoindex }}
+        with:
+          url: ${{ matrix.sites.url }}
+          output: scans/ecoindex.json
 
       - name: Screenshot Website
-        uses: swinton/screenshot-website@v1.x
         if: ${{ matrix.sites.tools.screenshot }}
+        uses: swinton/screenshot-website@v1.x
+        continue-on-error: true
         timeout-minutes: 10
         with:
           source: "${{ matrix.sites.url }}"
+          type: jpeg
           destination: screenshot.jpeg
+          width: 1280
+          scaleFactor: 0.5
 
-      - name: Stats page
+      - name: Déclaration a11y
         continue-on-error: true
-        uses: "MTES-MCT/stats-action@main"
-        if: ${{ matrix.sites.tools.stats }}
+        timeout-minutes: 10
+        uses: "socialgouv/dashlord-actions/declaration-a11y@v1"
+        if: ${{ matrix.sites.tools['declaration-a11y'] }}
         with:
           url: ${{ matrix.sites.url }}
-          uri: 'stats'
-          output: scans/stats.json
+          output: scans/declaration-a11y.json
 
       - name: Wappalyzer scan
-        uses: "socialgouv/wappalyzer-action@master"
-        timeout-minutes: 10
         if: ${{ matrix.sites.tools.wappalyzer }}
+        uses: "socialgouv/wappalyzer-action@master"
         continue-on-error: true
+        timeout-minutes: 10
         with:
           url: "${{ matrix.sites.url }}"
           output: scans/wappalyzer.json
 
       - name: ZAP Scan
-        uses: zaproxy/action-baseline@v0.4.0
-        timeout-minutes: 10
         if: ${{ matrix.sites.tools.zap }}
+        uses: zaproxy/action-baseline@v0.4.0
         continue-on-error: true
+        timeout-minutes: 10
         with:
           token: "" # disable issue creation
           rules_file_name: "zap-rules.tsv"
@@ -98,33 +127,50 @@ jobs:
           cmd_options: "-a"
 
       - name: Lighthouse scan
-        continue-on-error: true
-        timeout-minutes: 10
-        uses: treosh/lighthouse-ci-action@v7
         if: ${{ matrix.sites.tools.lighthouse }}
+        continue-on-error: true
+        timeout-minutes: 20
+        uses: SocialGouv/dashlord-actions/lhci@v1
         with:
-          urls: "${{ matrix.sites.url }}"
-          uploadArtifacts: false
-          temporaryPublicStorage: false
-          configPath: "./lighthouserc.json"
+          url: "${{ join(matrix.sites.subpages, ',') }}"
 
       - name: Mozilla HTTP Observatory
-        timeout-minutes: 10
         if: ${{ matrix.sites.tools.http }}
         continue-on-error: true
+        id: http
+        timeout-minutes: 10
+        uses: SocialGouv/httpobs-action@master
+        with:
+          url: "${{ matrix.sites.url }}"
+          output: "scans/http.json"
+
+      - name: Mozilla HTTP Observatory retry
+        if: steps.http.outcome=='failure'
+        continue-on-error: true
+        timeout-minutes: 10
         uses: SocialGouv/httpobs-action@master
         with:
           url: "${{ matrix.sites.url }}"
           output: "scans/http.json"
 
       - name: Third-party scripts scan
-        timeout-minutes: 10
         if: ${{ matrix.sites.tools.thirdparties }}
         continue-on-error: true
+        timeout-minutes: 10
         uses: SocialGouv/thirdparties-action@master
+        id: thirdparties
         with:
           url: "${{ matrix.sites.url }}"
           output: "scans/thirdparties.json"
+
+      - name: Déclaration RGPD
+        continue-on-error: true
+        uses: SocialGouv/dashlord-actions/declaration-rgpd@v1
+        if: ${{ matrix.sites.tools['declaration-rgpd'] }}
+        with:
+          thirdparties: ${{ steps.thirdparties.outputs.json }}
+          url: ${{ matrix.sites.url }}
+          output: scans/declaration-rgpd.json
 
       # testssl.sh action needs an hostname to save its output so we build it here
       - name: Extract hostname
@@ -134,54 +180,15 @@ jobs:
           echo "::set-output name=value::$HOSTNAME"
 
       - name: testssl.sh scan
-        timeout-minutes: 10
-        continue-on-error: true
-        uses: "mbogh/test-ssl-action@v1.1"
         if: ${{ matrix.sites.tools.testssl }}
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "mbogh/test-ssl-action@v1.1"
         with:
           host: ${{ steps.hostname.outputs.value }}
           output: scans
           grade: "F"
           options: "--fast"
-          
-      - name: Nuclei scan
-        timeout-minutes: 10
-        continue-on-error: true
-        uses: "SocialGouv/dashlord-nuclei-action@master"
-        if: ${{ matrix.sites.tools.nuclei }}
-        with:
-          url: ${{ matrix.sites.url }}
-          output: "scans/nuclei.log"
-
-      - name: Updown.io checks
-        continue-on-error: true
-        timeout-minutes: 10
-        uses: "MTES-MCT/updownio-action@main"
-        if: ${{ matrix.sites.tools.updownio }}
-        with:
-          apiKey: ${{ secrets.UPDOWNIO_API_KEY }}
-          url: ${{ matrix.sites.url }}
-          output: scans/updownio.json
-
-      - name: Dependabot vulnerabilities alerts
-        continue-on-error: true
-        timeout-minutes: 10
-        uses: "MTES-MCT/dependabotalerts-action@main"
-        if: ${{ matrix.sites.tools.dependabot && matrix.sites.repositories }}
-        with:
-          token: ${{ secrets.DEPENDABOTALERTS_TOKEN }}
-          repositories: ${{ join(matrix.sites.repositories) }}
-          output: scans/dependabotalerts.json
-          
-      - name: Code quality alerts
-        continue-on-error: true
-        timeout-minutes: 10
-        uses: "MTES-MCT/codescanalerts-action@main"
-        if: ${{ matrix.sites.tools.codescan && matrix.sites.repositories }}
-        with:
-          token: ${{ secrets.CODESCANALERTS_TOKEN }}
-          repositories: ${{ join(matrix.sites.repositories) }}
-          output: scans/codescanalerts.json
 
       - name: nmap vulnerabilities scan
         if: ${{ matrix.sites.tools.nmap }}
@@ -194,15 +201,93 @@ jobs:
           outputFile: "nmapvuln.json"
           withVulnerabilities: true
           raw: false
-          
-      - uses: SocialGouv/dashlord-actions/save@main
+
+      - name: Nuclei scan
+        if: ${{ matrix.sites.tools.nuclei }}
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "SocialGouv/dashlord-nuclei-action@master"
         with:
           url: ${{ matrix.sites.url }}
+          output: "scans/nuclei.log"
 
-      - uses: EndBug/add-and-commit@v7
+      - name: Updown.io checks
+        if: ${{ matrix.sites.tools.updownio }}
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "MTES-MCT/updownio-action@main"
         with:
-          add: '["results"]'
-          author_name: ${{ secrets.SOCIALGROOVYBOT_NAME }}
-          author_email: ${{ secrets.SOCIALGROOVYBOT_EMAIL }}
-          message: "update: ${{ matrix.sites.url }}"
+          apiKey: ${{ secrets.UPDOWNIO_API_KEY }}
+          url: ${{ matrix.sites.url }}
+          output: scans/updownio.json
 
+      - name: Betagouv API scan
+        if: ${{ matrix.sites.tools.betagouv }}
+        continue-on-error: true
+        timeout-minutes: 10
+        id: betagouv
+        uses: betagouv/dashlord-startup-action@main
+        with:
+          id: "${{ matrix.sites.betaId }}"
+          output: "scans/betagouv.json"
+
+      - name: Stats page
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "SocialGouv/dashlord-actions/check-url@v1"
+        if: ${{ matrix.sites.tools.stats }}
+        with:
+          url: ${{ steps.betagouv.outputs.stats_url }}
+          output: scans/stats.json
+
+      - name: Budget page
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "SocialGouv/dashlord-actions/check-url@v1"
+        if: ${{ matrix.sites.tools.budget_page }}
+        with:
+          url: ${{ steps.betagouv.outputs.budget_url }}
+          output: scans/budget_page.json
+
+      - name: Open Github repository
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "SocialGouv/dashlord-actions/check-url@v1"
+        if: ${{ matrix.sites.tools.betagouv }}
+        with:
+          url: ${{ steps.betagouv.outputs.github_repository }}
+          output: scans/github_repository.json
+
+      - name: Dependabot vulnerabilities alerts
+        continue-on-error: true
+        timeout-minutes: 10
+        if: ${{ matrix.sites.tools.dependabot && matrix.sites.repositories }}
+        uses: "MTES-MCT/dependabotalerts-action@main"
+        with:
+          token: ${{ secrets.DEPENDABOTALERTS_TOKEN }}
+          repositories: ${{ join(matrix.sites.repositories) }}
+          output: scans/dependabotalerts.json
+
+      - name: Code quality alerts
+        if: ${{ matrix.sites.tools.codescan && matrix.sites.repositories }}
+        continue-on-error: true
+        timeout-minutes: 10
+        uses: "MTES-MCT/codescanalerts-action@main"
+        with:
+          token: ${{ secrets.CODESCANALERTS_TOKEN }}
+          repositories: ${{ join(matrix.sites.repositories) }}
+          output: scans/codescanalerts.json
+
+      - uses: SocialGouv/dashlord-actions/save@v1
+        with:
+          url: ${{ matrix.sites.url }}
+          # only clean up previous stats when all tools runned
+          cleanup: ${{ github.event.inputs.tool == 'all' && true || false }}
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: "results"
+          author_name: "DashlordBetaGouvBot"
+          author_email: "DashlordBetaGouvBot@incubateur.net"
+          message: "update: ${{ matrix.sites.url }}"
+          pull: "--rebase --autostash"
