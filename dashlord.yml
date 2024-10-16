@@ -18,10 +18,10 @@ tools:
   declaration-a11y: true
   declaration-rgpd: true
   stats: true
-  budget_page: true
+  budget_page: false
   dsfr: true
   ecoindex: true
-  betagouv: true
+  betagouv: false
   github_repository: true
 urls:
   - url: https://www.service-civique.gouv.fr
