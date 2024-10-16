@@ -23,6 +23,8 @@ tools:
   ecoindex: true
   betagouv: false
   github_repository: true
+columns:
+  zap: true
 urls:
   - url: https://www.service-civique.gouv.fr
   - url: https://oscar.service-civique.gouv.fr
