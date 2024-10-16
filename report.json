@@ -1,30 +1,30 @@
 [
   {
-    "404": [],
+    "404": null,
     "url": "https://www.service-civique.gouv.fr",
     "http": {
       "url": "https://www.service-civique.gouv.fr",
       "algorithm_version": 3,
-      "end_time": "Tue, 15 Oct 2024 10:46:24 GMT",
+      "end_time": "Wed, 16 Oct 2024 14:16:28 GMT",
       "grade": "C-",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
       "response_headers": {
         "Accept-Ranges": "bytes",
-        "Age": "0",
+        "Age": "6",
         "Cache-Control": "must-revalidate, max-age=0",
         "Content-Encoding": "gzip",
         "Content-Length": "19487",
         "Content-Type": "text/html; charset=utf-8",
-        "Date": "Tue, 15 Oct 2024 10:46:22 GMT",
-        "Etag": "W/\"1dbde-RxRYbH1kX00nA4OlY8o2rW4aSCE\"",
+        "Date": "Wed, 16 Oct 2024 14:16:26 GMT",
+        "Etag": "W/\"1dbde-awukH/O8EgatYo1ZNNGNkyrplh4\"",
         "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
         "Vary": "Accept-Encoding",
-        "X-Varnish": "46189918 54396733, 32992983"
+        "X-Varnish": "76766594 78186735, 58207287"
       },
-      "scan_id": 56873970,
+      "scan_id": 56918923,
       "score": 45,
-      "start_time": "Tue, 15 Oct 2024 10:46:21 GMT",
+      "start_time": "Wed, 16 Oct 2024 14:16:25 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 4,
@@ -348,7 +348,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "server"
+        "finding": "server -- TLS 1.3 client determined"
       },
       {
         "id": "FS",
@@ -782,21 +782,21 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "+6 seconds from localtime"
+        "finding": "+8 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "1729074032"
+        "finding": "1729088249"
       },
       {
         "id": "HTTP_headerAge",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "6 seconds"
+        "finding": "8 seconds"
       },
       {
         "id": "HSTS_time",
@@ -860,7 +860,7 @@
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-200",
-        "finding": "X-Varnish: 70654710 58552337"
+        "finding": "X-Varnish: 91203171 84987859X-Varnish: 49596296"
       },
       {
         "id": "heartbleed",
@@ -1051,70 +1051,70 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-android_81",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-android_90",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-android_X",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-android_11",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-android_12",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-chrome_79_win10",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-chrome_101_win10",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-firefox_66_win81",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-firefox_100_win10",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-ie_6_xp",
@@ -1177,7 +1177,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-safari_121_ios_122",
@@ -1198,7 +1198,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-java_7u25",
@@ -1226,14 +1226,14 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-go_1178",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-libressl_283",
@@ -1254,21 +1254,21 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-openssl_111d",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-openssl_303",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-apple_mail_16_0",
@@ -1282,7 +1282,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "rating_spec",
@@ -1359,7 +1359,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "149"
+        "finding": "63"
       }
     ],
     "thirdparties": {
@@ -1389,19 +1389,19 @@
           "url": "https://sdk.privacy-center.org/sdk/b2a3c17a678ea7062d171089b67919517c588d58/modern/sdk.b2a3c17a678ea7062d171089b67919517c588d58.js"
         },
         {
-          "type": "facebook",
-          "url": "https://connect.facebook.net/fr_FR/sdk.js",
-          "details": {
-            "id": "facebook",
-            "message": "Dont embed facebook scripts, use your own tweet embed"
-          }
-        },
-        {
           "type": "twitter",
           "url": "https://platform.twitter.com/widgets.js",
           "details": {
             "id": "twitter",
             "message": "Dont embed twitter scripts, use your own tweet embed"
+          }
+        },
+        {
+          "type": "facebook",
+          "url": "https://connect.facebook.net/fr_FR/sdk.js",
+          "details": {
+            "id": "facebook",
+            "message": "Dont embed facebook scripts, use your own tweet embed"
           }
         },
         {
@@ -1430,7 +1430,7 @@
         },
         {
           "type": "facebook",
-          "url": "https://connect.facebook.net/fr_FR/sdk.js?hash=f658b44d99c6119354d5a34a32773137",
+          "url": "https://connect.facebook.net/fr_FR/sdk.js?hash=fd1181cc3111a4bd7c8c839faaafb0fa",
           "details": {
             "id": "facebook",
             "message": "Dont embed facebook scripts, use your own tweet embed"
@@ -1458,7 +1458,7 @@
         },
         {
           "type": "twitter",
-          "url": "https://syndication.twitter.com/settings?session_id=de8dabd46e78979b240dc21e624edd616560e096",
+          "url": "https://syndication.twitter.com/settings?session_id=361a54bba44f09d33135000be06f9b07d2fc1cbc",
           "details": {
             "id": "twitter",
             "message": "Dont embed twitter scripts, use your own tweet embed"
@@ -1466,31 +1466,31 @@
         },
         {
           "type": "unknown",
-          "url": "https://ads-engagement.presage.io/v2/pv/img.gif?e=pv&site=service-civique.gouv.fr&t=1729073901639&full_url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F"
+          "url": "https://ads-engagement.presage.io/v2/pv/img.gif?e=pv&site=service-civique.gouv.fr&t=1729088205362&full_url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F"
         },
         {
           "type": "unknown",
-          "url": "https://server.adform.net/Serving/TrackPoint/?pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=93118088105&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
+          "url": "https://server.adform.net/Serving/TrackPoint/?pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=794949941410&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
         },
         {
           "type": "unknown",
-          "url": "https://server.adform.net/Serving/TrackPoint/?pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=162628542691&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
+          "url": "https://server.adform.net/Serving/TrackPoint/?pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=783640569919&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
         },
         {
           "type": "unknown",
-          "url": "https://server.adform.net/Serving/TrackPoint/?CC=1&pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=93118088105&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
+          "url": "https://ads-engagement.presage.io/v2/pv/img.gif?e=pv&site=service-civique.gouv.fr&t=1729088205362&full_url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F"
         },
         {
           "type": "unknown",
-          "url": "https://server.adform.net/Serving/TrackPoint/?CC=1&pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=162628542691&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
+          "url": "https://server.adform.net/Serving/TrackPoint/?CC=1&pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=783640569919&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
         },
         {
           "type": "unknown",
-          "url": "https://ads-engagement.presage.io/v2/pv/img.gif?e=pv&site=service-civique.gouv.fr&t=1729073901639&full_url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F"
+          "url": "https://server.adform.net/Serving/TrackPoint/?CC=1&pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=794949941410&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
         },
         {
           "type": "unknown",
-          "url": "https://ads-engagement.presage.io/v2/pv/img.gif?e=pv&site=service-civique.gouv.fr&t=1729073901639&full_url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F"
+          "url": "https://ads-engagement.presage.io/v2/pv/img.gif?e=pv&site=service-civique.gouv.fr&t=1729088205362&full_url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F"
         }
       ],
       "cookies": [
@@ -1499,7 +1499,7 @@
           "value": "1",
           "domain": "www.service-civique.gouv.fr",
           "path": "/",
-          "expires": 1729075701,
+          "expires": 1729090005,
           "size": 15,
           "httpOnly": false,
           "secure": false,
@@ -1511,10 +1511,10 @@
         },
         {
           "name": "_pk_id.2.8f0d",
-          "value": "0e197c9246acf2f4.1729073902.",
+          "value": "69db303df64d413f.1729088205.",
           "domain": "www.service-civique.gouv.fr",
           "path": "/",
-          "expires": 1763029102,
+          "expires": 1763043405,
           "size": 41,
           "httpOnly": false,
           "secure": false,
@@ -1527,16 +1527,16 @@
       ],
       "headers": {
         "accept-ranges": "bytes",
-        "age": "4",
+        "age": "11",
         "cache-control": "must-revalidate, max-age=0",
         "content-encoding": "gzip",
         "content-length": "19487",
         "content-type": "text/html; charset=utf-8",
-        "date": "Wed, 16 Oct 2024 10:18:20 GMT",
-        "etag": "W/\"1dbde-4Z2iWstkKPTHqsRZiqZxiYRKhtU\"",
+        "date": "Wed, 16 Oct 2024 14:16:43 GMT",
+        "etag": "W/\"1dbde-awukH/O8EgatYo1ZNNGNkyrplh4\"",
         "strict-transport-security": "max-age=31536000; includeSubDomains",
         "vary": "Accept-Encoding",
-        "x-varnish": "74527568 75031419"
+        "x-varnish": "69416822 87215021"
       },
       "endpoints": [
         {
@@ -1640,7 +1640,7 @@
         },
         {
           "hostname": "service-civique.twic.pics",
-          "ip": "13.249.39.75",
+          "ip": "13.249.39.73",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1747,93 +1747,6 @@
           }
         },
         {
-          "hostname": "connect.facebook.net",
-          "ip": "157.240.229.1",
-          "geoip": {
-            "city": {
-              "geoname_id": 4744870,
-              "names": {
-                "de": "Ashburn",
-                "en": "Ashburn",
-                "es": "Ashburn",
-                "fr": "Ashburn",
-                "ja": "アッシュバーン",
-                "pt-BR": "Ashburn",
-                "ru": "Ашберн",
-                "zh-CN": "阿什本"
-              }
-            },
-            "continent": {
-              "code": "NA",
-              "geoname_id": 6255149,
-              "names": {
-                "de": "Nordamerika",
-                "en": "North America",
-                "es": "Norteamérica",
-                "fr": "Amérique du Nord",
-                "ja": "北アメリカ",
-                "pt-BR": "América do Norte",
-                "ru": "Северная Америка",
-                "zh-CN": "北美洲"
-              }
-            },
-            "country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "location": {
-              "accuracy_radius": 20,
-              "latitude": 39.0469,
-              "longitude": -77.4903,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
-            },
-            "postal": {
-              "code": "20149"
-            },
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "subdivisions": [
-              {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
-                "names": {
-                  "de": "Virginia",
-                  "en": "Virginia",
-                  "es": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
-                }
-              }
-            ]
-          }
-        },
-        {
           "hostname": "platform.twitter.com",
           "ip": "146.75.36.157",
           "geoip": {
@@ -1921,8 +1834,95 @@
           }
         },
         {
+          "hostname": "connect.facebook.net",
+          "ip": "157.240.229.1",
+          "geoip": {
+            "city": {
+              "geoname_id": 4744870,
+              "names": {
+                "de": "Ashburn",
+                "en": "Ashburn",
+                "es": "Ashburn",
+                "fr": "Ashburn",
+                "ja": "アッシュバーン",
+                "pt-BR": "Ashburn",
+                "ru": "Ашберн",
+                "zh-CN": "阿什本"
+              }
+            },
+            "continent": {
+              "code": "NA",
+              "geoname_id": 6255149,
+              "names": {
+                "de": "Nordamerika",
+                "en": "North America",
+                "es": "Norteamérica",
+                "fr": "Amérique du Nord",
+                "ja": "北アメリカ",
+                "pt-BR": "América do Norte",
+                "ru": "Северная Америка",
+                "zh-CN": "北美洲"
+              }
+            },
+            "country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            },
+            "location": {
+              "accuracy_radius": 20,
+              "latitude": 39.0469,
+              "longitude": -77.4903,
+              "metro_code": 511,
+              "time_zone": "America/New_York"
+            },
+            "postal": {
+              "code": "20149"
+            },
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 6254928,
+                "iso_code": "VA",
+                "names": {
+                  "de": "Virginia",
+                  "en": "Virginia",
+                  "es": "Virginia",
+                  "fr": "Virginie",
+                  "ja": "バージニア州",
+                  "pt-BR": "Virgínia",
+                  "ru": "Вирджиния",
+                  "zh-CN": "弗吉尼亚州"
+                }
+              }
+            ]
+          }
+        },
+        {
           "hostname": "s2.adform.net",
-          "ip": "185.167.164.45",
+          "ip": "185.167.164.44",
           "geoip": {
             "continent": {
               "code": "EU",
@@ -1978,7 +1978,7 @@
         },
         {
           "hostname": "ads-engagement.presage.io",
-          "ip": "18.164.124.109",
+          "ip": "18.160.10.25",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -2032,7 +2032,7 @@
         },
         {
           "hostname": "syndication.twitter.com",
-          "ip": "104.244.42.136",
+          "ip": "104.244.42.200",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -2086,7 +2086,7 @@
         },
         {
           "hostname": "server.adform.net",
-          "ip": "37.157.2.230",
+          "ip": "37.157.3.20",
           "geoip": {
             "continent": {
               "code": "EU",
@@ -2560,624 +2560,12 @@
       ]
     },
     "zap": null,
-    "nuclei": [
-      {
-        "template": "dns/caa-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-        "template-id": "caa-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-        "info": {
-          "name": "CAA Record",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "caa"
-          ],
-          "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-          "reference": [
-            "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "www.service-civique.gouv.fr.",
-        "matched-at": "www.service-civique.gouv.fr",
-        "timestamp": "2024-10-16T10:21:22.291363211Z",
-        "matcher-status": true
-      },
-      {
-        "template": "dns/dns-saas-service-detection.yaml",
-        "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
-        "template-id": "dns-saas-service-detection",
-        "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
-        "info": {
-          "name": "DNS SaaS Service Detection",
-          "author": [
-            "noah @thesubtlety",
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "service"
-          ],
-          "description": "A CNAME DNS record was discovered",
-          "reference": [
-            "https://ns1.com/resources/cname",
-            "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
-            "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "dns",
-        "host": "www.service-civique.gouv.fr.",
-        "matched-at": "www.service-civique.gouv.fr",
-        "extracted-results": [
-          "p1-ogo-6.ogosecurity.com."
-        ],
-        "timestamp": "2024-10-16T10:21:22.44279128Z",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "strict-transport-security",
-        "type": "http",
-        "host": "https://www.service-civique.gouv.fr",
-        "matched-at": "https://www.service-civique.gouv.fr",
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:23:20.343487922Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-frame-options",
-        "type": "http",
-        "host": "https://www.service-civique.gouv.fr",
-        "matched-at": "https://www.service-civique.gouv.fr",
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:23:20.343546542Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "referrer-policy",
-        "type": "http",
-        "host": "https://www.service-civique.gouv.fr",
-        "matched-at": "https://www.service-civique.gouv.fr",
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:23:20.34356678Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://www.service-civique.gouv.fr",
-        "matched-at": "https://www.service-civique.gouv.fr",
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:23:20.343581938Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://www.service-civique.gouv.fr",
-        "matched-at": "https://www.service-civique.gouv.fr",
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:23:20.343594802Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "content-security-policy",
-        "type": "http",
-        "host": "https://www.service-civique.gouv.fr",
-        "matched-at": "https://www.service-civique.gouv.fr",
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:23:20.343608698Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "permissions-policy",
-        "type": "http",
-        "host": "https://www.service-civique.gouv.fr",
-        "matched-at": "https://www.service-civique.gouv.fr",
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:23:20.343621552Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-content-type-options",
-        "type": "http",
-        "host": "https://www.service-civique.gouv.fr",
-        "matched-at": "https://www.service-civique.gouv.fr",
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:23:20.343639055Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://www.service-civique.gouv.fr",
-        "matched-at": "https://www.service-civique.gouv.fr",
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:23:20.343657279Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "clear-site-data",
-        "type": "http",
-        "host": "https://www.service-civique.gouv.fr",
-        "matched-at": "https://www.service-civique.gouv.fr",
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:23:20.343671886Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-embedder-policy",
-        "type": "http",
-        "host": "https://www.service-civique.gouv.fr",
-        "matched-at": "https://www.service-civique.gouv.fr",
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:23:20.343683368Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/detect-ssl-issuer.yaml",
-        "template-url": "https://templates.nuclei.sh/public/ssl-issuer",
-        "template-id": "ssl-issuer",
-        "template-path": "/home/runner/nuclei-templates/ssl/detect-ssl-issuer.yaml",
-        "info": {
-          "name": "Detect SSL Certificate Issuer",
-          "author": [
-            "lingtren"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "Extract the issuer's organization from the target's certificate. Issuers are entities which sign and distribute certificates.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "www.service-civique.gouv.fr",
-        "matched-at": "www.service-civique.gouv.fr:443",
-        "extracted-results": [
-          "GEANT Vereniging"
-        ],
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:26:16.72977549Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/ssl-dns-names.yaml",
-        "template-url": "https://templates.nuclei.sh/public/ssl-dns-names",
-        "template-id": "ssl-dns-names",
-        "template-path": "/home/runner/nuclei-templates/ssl/ssl-dns-names.yaml",
-        "info": {
-          "name": "SSL DNS Names",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "www.service-civique.gouv.fr",
-        "matched-at": "www.service-civique.gouv.fr:443",
-        "extracted-results": [
-          "service-civique.gouv.fr",
-          "www.service-civique.gouv.fr"
-        ],
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:26:16.729903369Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tls-version",
-        "template-id": "tls-version",
-        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
-        "info": {
-          "name": "TLS Version - Detect",
-          "author": [
-            "pdteam",
-            "pussycat0x"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 4
-          }
-        },
-        "type": "ssl",
-        "host": "www.service-civique.gouv.fr",
-        "matched-at": "www.service-civique.gouv.fr:443",
-        "extracted-results": [
-          "tls12"
-        ],
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:26:17.966269067Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tls-version",
-        "template-id": "tls-version",
-        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
-        "info": {
-          "name": "TLS Version - Detect",
-          "author": [
-            "pdteam",
-            "pussycat0x"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 4
-          }
-        },
-        "type": "ssl",
-        "host": "www.service-civique.gouv.fr",
-        "matched-at": "www.service-civique.gouv.fr:443",
-        "extracted-results": [
-          "tls13"
-        ],
-        "ip": "37.59.251.196",
-        "timestamp": "2024-10-16T10:26:18.235539367Z",
-        "matcher-status": true
-      }
-    ],
+    "nuclei": [],
     "lhr": [
       {
         "requestedUrl": "https://www.service-civique.gouv.fr/",
         "finalUrl": "https://www.service-civique.gouv.fr/",
-        "fetchTime": "2024-10-16T10:17:51.464Z",
+        "fetchTime": "2024-10-16T14:16:11.957Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -3219,51 +2607,51 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 17209,
+            "numericValue": 16718,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2480,
-                  "firstMeaningfulPaint": 7662,
-                  "largestContentfulPaint": 16138,
-                  "firstCPUIdle": 12449,
-                  "interactive": 17209,
-                  "speedIndex": 9116,
-                  "estimatedInputLatency": 255,
-                  "totalBlockingTime": 1767,
-                  "maxPotentialFID": 790,
+                  "firstContentfulPaint": 2200,
+                  "firstMeaningfulPaint": 7203,
+                  "largestContentfulPaint": 14721,
+                  "firstCPUIdle": 11530,
+                  "interactive": 16718,
+                  "speedIndex": 9243,
+                  "estimatedInputLatency": 238,
+                  "totalBlockingTime": 1860,
+                  "maxPotentialFID": 738,
                   "cumulativeLayoutShift": 0.8941922436820136,
                   "cumulativeLayoutShiftAllFrames": 0.8863932291666666,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 9506238834,
+                  "observedTimeOriginTs": 457826921,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 9506238834,
-                  "observedFirstPaint": 532,
-                  "observedFirstPaintTs": 9506770944,
-                  "observedFirstContentfulPaint": 532,
-                  "observedFirstContentfulPaintTs": 9506770944,
-                  "observedFirstMeaningfulPaint": 888,
-                  "observedFirstMeaningfulPaintTs": 9507126976,
-                  "observedLargestContentfulPaint": 2134,
-                  "observedLargestContentfulPaintTs": 9508372424,
-                  "observedLargestContentfulPaintAllFrames": 3249,
-                  "observedLargestContentfulPaintAllFramesTs": 9509488129,
-                  "observedTraceEnd": 3786,
-                  "observedTraceEndTs": 9510025110,
-                  "observedLoad": 2621,
-                  "observedLoadTs": 9508859450,
-                  "observedDomContentLoaded": 1110,
-                  "observedDomContentLoadedTs": 9507349261,
+                  "observedNavigationStartTs": 457826921,
+                  "observedFirstPaint": 517,
+                  "observedFirstPaintTs": 458343882,
+                  "observedFirstContentfulPaint": 517,
+                  "observedFirstContentfulPaintTs": 458343882,
+                  "observedFirstMeaningfulPaint": 866,
+                  "observedFirstMeaningfulPaintTs": 458693287,
+                  "observedLargestContentfulPaint": 1891,
+                  "observedLargestContentfulPaintTs": 459718321,
+                  "observedLargestContentfulPaintAllFrames": 3189,
+                  "observedLargestContentfulPaintAllFramesTs": 461016087,
+                  "observedTraceEnd": 3717,
+                  "observedTraceEndTs": 461543796,
+                  "observedLoad": 2545,
+                  "observedLoadTs": 460371456,
+                  "observedDomContentLoaded": 1076,
+                  "observedDomContentLoadedTs": 458902575,
                   "observedCumulativeLayoutShift": 0.8941922436820136,
                   "observedCumulativeLayoutShiftAllFrames": 0.8863932291666666,
-                  "observedFirstVisualChange": 530,
-                  "observedFirstVisualChangeTs": 9506768834,
-                  "observedLastVisualChange": 2280,
-                  "observedLastVisualChangeTs": 9508518834,
-                  "observedSpeedIndex": 1386,
-                  "observedSpeedIndexTs": 9507624846
+                  "observedFirstVisualChange": 521,
+                  "observedFirstVisualChangeTs": 458347921,
+                  "observedLastVisualChange": 2188,
+                  "observedLastVisualChangeTs": 460014921,
+                  "observedSpeedIndex": 1366,
+                  "observedSpeedIndexTs": 459192465
                 },
                 {
                   "lcpInvalidated": false
@@ -3285,19 +2673,19 @@
                   "numScripts": 54,
                   "numStylesheets": 6,
                   "numFonts": 7,
-                  "numTasks": 2209,
+                  "numTasks": 1441,
                   "numTasksOver10ms": 30,
-                  "numTasksOver25ms": 22,
-                  "numTasksOver50ms": 7,
+                  "numTasksOver25ms": 19,
+                  "numTasksOver50ms": 6,
                   "numTasksOver100ms": 4,
                   "numTasksOver500ms": 0,
                   "rtt": 0,
-                  "throughput": 25144541.593225338,
-                  "maxRtt": 98.07000000000001,
-                  "maxServerLatency": 97.14199999999998,
-                  "totalByteWeight": 2453683,
-                  "totalTaskTime": 1854.3229999999444,
-                  "mainDocumentTransferSize": 19716
+                  "throughput": 25151087.259143416,
+                  "maxRtt": 97.331,
+                  "maxServerLatency": 129.634,
+                  "totalByteWeight": 2451778,
+                  "totalTaskTime": 1756.2380000000003,
+                  "mainDocumentTransferSize": 19708
                 }
               ]
             }
@@ -3306,7 +2694,11 @@
       }
     ],
     "screenshot": true,
-    "stats": null,
+    "stats": {
+      "grade": "A",
+      "url": "https://www.service-civique.gouv.fr",
+      "uri": "stats"
+    },
     "github_repository": null,
     "budget_page": null,
     "declaration-a11y": null,
@@ -3316,7 +2708,6 @@
     "sonarcloud": null,
     "dsfr": null,
     "summary": {
-      "404": "A+",
       "httpGrade": "C-",
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
@@ -3337,11 +2728,12 @@
       "lighthouse_seo": 0.95,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.42,
-      "lighthouse_pwaGrade": "D"
+      "lighthouse_pwaGrade": "D",
+      "statsGrade": "A"
     }
   },
   {
-    "404": [],
+    "404": null,
     "url": "https://oscar.service-civique.gouv.fr",
     "http": {
       "url": "https://oscar.service-civique.gouv.fr",
@@ -4129,7 +3521,7 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "1729083732"
+        "finding": "1729088226"
       },
       {
         "id": "HSTS_time",
@@ -4706,7 +4098,7 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "50"
+        "finding": "51"
       }
     ],
     "thirdparties": {
@@ -4714,7 +4106,7 @@
       "cookies": [
         {
           "name": "ASP.NET_SessionId",
-          "value": "qpgeh2y1z5rnqjrnzl1f0abt",
+          "value": "4rqbdqwp1qq2tg0jntdqtskl",
           "domain": "oscar.service-civique.gouv.fr",
           "path": "/",
           "expires": -1,
@@ -4732,7 +4124,7 @@
         "cache-control": "private",
         "content-length": "11039",
         "content-type": "text/html; charset=utf-8",
-        "date": "Wed, 16 Oct 2024 13:01:40 GMT",
+        "date": "Wed, 16 Oct 2024 14:16:32 GMT",
         "server": "Microsoft-IIS/8.5",
         "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
         "x-aspnet-version": "4.0.30319",
@@ -4954,990 +4346,12 @@
       ]
     },
     "zap": null,
-    "nuclei": [
-      {
-        "template": "dns/spf-record-detect.yaml",
-        "template-url": "https://templates.nuclei.sh/public/spf-record-detect",
-        "template-id": "spf-record-detect",
-        "template-path": "/home/runner/nuclei-templates/dns/spf-record-detect.yaml",
-        "info": {
-          "name": "SPF Record - Detection",
-          "author": [
-            "rxerium"
-          ],
-          "tags": [
-            "dns",
-            "spf"
-          ],
-          "description": "An SPF TXT record was detected\n",
-          "reference": [
-            "https://www.mimecast.com/content/how-to-create-an-spf-txt-record"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "dns",
-        "host": "oscar.service-civique.gouv.fr.",
-        "matched-at": "oscar.service-civique.gouv.fr",
-        "extracted-results": [
-          "v=spf1 ip4:178.32.192.69 -all\""
-        ],
-        "timestamp": "2024-10-16T13:03:01.361603652Z",
-        "matcher-status": true
-      },
-      {
-        "template": "dns/txt-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/txt-fingerprint",
-        "template-id": "txt-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/txt-fingerprint.yaml",
-        "info": {
-          "name": "DNS TXT Record Detected",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "txt"
-          ],
-          "description": "A DNS TXT record was detected. The TXT record lets a domain admin leave notes on a DNS server.",
-          "reference": [
-            "https://www.netspi.com/blog/technical/network-penetration-testing/analyzing-dns-txt-records-to-fingerprint-service-providers/"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "oscar.service-civique.gouv.fr.",
-        "matched-at": "oscar.service-civique.gouv.fr",
-        "extracted-results": [
-          "\"v=spf1 ip4:178.32.192.69 -all\""
-        ],
-        "timestamp": "2024-10-16T13:03:01.361792604Z",
-        "matcher-status": true
-      },
-      {
-        "template": "dns/caa-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-        "template-id": "caa-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-        "info": {
-          "name": "CAA Record",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "caa"
-          ],
-          "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-          "reference": [
-            "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "oscar.service-civique.gouv.fr.",
-        "matched-at": "oscar.service-civique.gouv.fr",
-        "timestamp": "2024-10-16T13:03:01.362796006Z",
-        "matcher-status": true
-      },
-      {
-        "template": "dns/mx-fingerprint.yaml",
-        "template-url": "https://templates.nuclei.sh/public/mx-fingerprint",
-        "template-id": "mx-fingerprint",
-        "template-path": "/home/runner/nuclei-templates/dns/mx-fingerprint.yaml",
-        "info": {
-          "name": "MX Record Detection",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "dns",
-            "mx"
-          ],
-          "description": "An MX record was detected. MX records direct emails to a mail exchange server.",
-          "reference": [
-            "https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/",
-            "https://mxtoolbox.com/"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "type": "dns",
-        "host": "oscar.service-civique.gouv.fr.",
-        "matched-at": "oscar.service-civique.gouv.fr",
-        "extracted-results": [
-          "0 mx-front-zi-du.adc.education.fr."
-        ],
-        "timestamp": "2024-10-16T13:03:01.368631881Z",
-        "matcher-status": true
-      },
-      {
-        "template": "http/miscellaneous/options-method.yaml",
-        "template-url": "https://templates.nuclei.sh/public/options-method",
-        "template-id": "options-method",
-        "template-path": "/home/runner/nuclei-templates/http/miscellaneous/options-method.yaml",
-        "info": {
-          "name": "Allowed Options Method",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "miscellaneous",
-            "misc",
-            "generic"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr",
-        "extracted-results": [
-          "OPTIONS, TRACE, GET, HEAD, POST"
-        ],
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:03:08.386184693Z",
-        "curl-command": "curl -X 'OPTIONS' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/tech-detect.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tech-detect",
-        "template-id": "tech-detect",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/tech-detect.yaml",
-        "info": {
-          "name": "Wappalyzer Technology Detection",
-          "author": [
-            "hakluke",
-            "righettod"
-          ],
-          "tags": [
-            "tech"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "microsoft-asp.net",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:03:52.251829813Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/tech-detect.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tech-detect",
-        "template-id": "tech-detect",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/tech-detect.yaml",
-        "info": {
-          "name": "Wappalyzer Technology Detection",
-          "author": [
-            "hakluke",
-            "righettod"
-          ],
-          "tags": [
-            "tech"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "bootstrap",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:03:52.251893031Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/tech-detect.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tech-detect",
-        "template-id": "tech-detect",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/tech-detect.yaml",
-        "info": {
-          "name": "Wappalyzer Technology Detection",
-          "author": [
-            "hakluke",
-            "righettod"
-          ],
-          "tags": [
-            "tech"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "ms-iis",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:03:52.251910934Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/tech-detect.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tech-detect",
-        "template-id": "tech-detect",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/tech-detect.yaml",
-        "info": {
-          "name": "Wappalyzer Technology Detection",
-          "author": [
-            "hakluke",
-            "righettod"
-          ],
-          "tags": [
-            "tech"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "ms-iis",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:03:52.296699712Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-frame-options",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:07.895791138Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "clear-site-data",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:07.895835751Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "content-security-policy",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:07.895846651Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "permissions-policy",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:07.895857872Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-content-type-options",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:07.895874563Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:07.895889721Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "referrer-policy",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:07.895903457Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-embedder-policy",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:07.89591572Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-opener-policy",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:07.895928354Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-        "template-id": "http-missing-security-headers",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass",
-            "jub0bs",
-            "userdehghani"
-          ],
-          "tags": [
-            "misconfig",
-            "headers",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:07.895944664Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/microsoft/aspnet-version-detect.yaml",
-        "template-url": "https://templates.nuclei.sh/public/aspnet-version-detect",
-        "template-id": "aspnet-version-detect",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/microsoft/aspnet-version-detect.yaml",
-        "info": {
-          "name": "AspNet Version Disclosure - Detect",
-          "author": [
-            "lucky0x0d",
-            "pulsesecurity.co.nz"
-          ],
-          "tags": [
-            "tech",
-            "detect",
-            "aspnet"
-          ],
-          "description": "Detects version disclosed via 'X-AspNet-Version' header.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1,
-            "shodan-query": "X-AspNet-Version",
-            "verified": true
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ],
-            "cvss-metrics": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
-          }
-        },
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "extracted-results": [
-          "4.0.30319"
-        ],
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:07.896555814Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/microsoft/aspnet-version-detect.yaml",
-        "template-url": "https://templates.nuclei.sh/public/aspnet-version-detect",
-        "template-id": "aspnet-version-detect",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/microsoft/aspnet-version-detect.yaml",
-        "info": {
-          "name": "AspNet Version Disclosure - Detect",
-          "author": [
-            "lucky0x0d",
-            "pulsesecurity.co.nz"
-          ],
-          "tags": [
-            "tech",
-            "detect",
-            "aspnet"
-          ],
-          "description": "Detects version disclosed via 'X-AspNet-Version' header.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1,
-            "shodan-query": "X-AspNet-Version",
-            "verified": true
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ],
-            "cvss-metrics": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
-          }
-        },
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr",
-        "extracted-results": [
-          "4.0.30319"
-        ],
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:07.897467925Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/misconfiguration/aspx-debug-mode.yaml",
-        "template-url": "https://templates.nuclei.sh/public/aspx-debug-mode",
-        "template-id": "aspx-debug-mode",
-        "template-path": "/home/runner/nuclei-templates/http/misconfiguration/aspx-debug-mode.yaml",
-        "info": {
-          "name": "ASP.NET Debugging Enabled",
-          "author": [
-            "dhiyaneshdk"
-          ],
-          "tags": [
-            "debug",
-            "misconfig"
-          ],
-          "reference": [
-            "https://portswigger.net/kb/issues/00100800_asp-net-debugging-enabled"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Foobar-debug.aspx",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:23.594445612Z",
-        "curl-command": "curl -X 'DEBUG' -d '' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' -H 'Command: stop-debug' -H 'Content-Length: 2' -H 'Host: oscar.service-civique.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr/Foobar-debug.aspx'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/microsoft/microsoft-iis-version.yaml",
-        "template-url": "https://templates.nuclei.sh/public/microsoft-iis-version",
-        "template-id": "microsoft-iis-version",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/microsoft/microsoft-iis-version.yaml",
-        "info": {
-          "name": "Microsoft IIS version detect",
-          "author": [
-            "wlayzz"
-          ],
-          "tags": [
-            "tech",
-            "microsoft",
-            "iis"
-          ],
-          "description": "Some Microsoft IIS servers have the version on the response header. Useful when you need to find specific CVEs on your targets.",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "extracted-results": [
-          "Microsoft-IIS/8.5"
-        ],
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:39.016885377Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/microsoft/microsoft-iis-version.yaml",
-        "template-url": "https://templates.nuclei.sh/public/microsoft-iis-version",
-        "template-id": "microsoft-iis-version",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/microsoft/microsoft-iis-version.yaml",
-        "info": {
-          "name": "Microsoft IIS version detect",
-          "author": [
-            "wlayzz"
-          ],
-          "tags": [
-            "tech",
-            "microsoft",
-            "iis"
-          ],
-          "description": "Some Microsoft IIS servers have the version on the response header. Useful when you need to find specific CVEs on your targets.",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr",
-        "extracted-results": [
-          "Microsoft-IIS/8.5"
-        ],
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:39.016997847Z",
-        "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr'",
-        "matcher-status": true
-      },
-      {
-        "template": "http/technologies/waf-detect.yaml",
-        "template-url": "https://templates.nuclei.sh/public/waf-detect",
-        "template-id": "waf-detect",
-        "template-path": "/home/runner/nuclei-templates/http/technologies/waf-detect.yaml",
-        "info": {
-          "name": "WAF Detection",
-          "author": [
-            "dwisiswant0",
-            "lu4nx"
-          ],
-          "tags": [
-            "waf",
-            "tech",
-            "misc"
-          ],
-          "description": "A web application firewall was detected.",
-          "reference": [
-            "https://github.com/ekultek/whatwaf"
-          ],
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          },
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "matcher-name": "aspgeneric",
-        "type": "http",
-        "host": "https://oscar.service-civique.gouv.fr",
-        "matched-at": "https://oscar.service-civique.gouv.fr/",
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:04:40.962041926Z",
-        "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: oscar.service-civique.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://oscar.service-civique.gouv.fr/'",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/detect-ssl-issuer.yaml",
-        "template-url": "https://templates.nuclei.sh/public/ssl-issuer",
-        "template-id": "ssl-issuer",
-        "template-path": "/home/runner/nuclei-templates/ssl/detect-ssl-issuer.yaml",
-        "info": {
-          "name": "Detect SSL Certificate Issuer",
-          "author": [
-            "lingtren"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "Extract the issuer's organization from the target's certificate. Issuers are entities which sign and distribute certificates.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "oscar.service-civique.gouv.fr",
-        "matched-at": "oscar.service-civique.gouv.fr:443",
-        "extracted-results": [
-          "GEANT Vereniging"
-        ],
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:06:40.237641632Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/ssl-dns-names.yaml",
-        "template-url": "https://templates.nuclei.sh/public/ssl-dns-names",
-        "template-id": "ssl-dns-names",
-        "template-path": "/home/runner/nuclei-templates/ssl/ssl-dns-names.yaml",
-        "info": {
-          "name": "SSL DNS Names",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 1
-          }
-        },
-        "type": "ssl",
-        "host": "oscar.service-civique.gouv.fr",
-        "matched-at": "oscar.service-civique.gouv.fr:443",
-        "extracted-results": [
-          "oscar.service-civique.gouv.fr",
-          "www.oscar.service-civique.gouv.fr"
-        ],
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:06:40.237776743Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://templates.nuclei.sh/public/tls-version",
-        "template-id": "tls-version",
-        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
-        "info": {
-          "name": "TLS Version - Detect",
-          "author": [
-            "pdteam",
-            "pussycat0x"
-          ],
-          "tags": [
-            "ssl",
-            "tls"
-          ],
-          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 4
-          }
-        },
-        "type": "ssl",
-        "host": "oscar.service-civique.gouv.fr",
-        "matched-at": "oscar.service-civique.gouv.fr:443",
-        "extracted-results": [
-          "tls12"
-        ],
-        "ip": "178.32.192.70",
-        "timestamp": "2024-10-16T13:06:41.29205413Z",
-        "matcher-status": true
-      }
-    ],
+    "nuclei": [],
     "lhr": [
       {
         "requestedUrl": "https://oscar.service-civique.gouv.fr/",
         "finalUrl": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "fetchTime": "2024-10-16T13:01:15.774Z",
+        "fetchTime": "2024-10-16T14:16:10.077Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://oscar.service-civique.gouv.fr/) was redirected to https://oscar.service-civique.gouv.fr/Connexion.aspx. Try testing the second URL directly."
         ],
@@ -5945,7 +4359,7 @@
           "performance": {
             "title": "Performance",
             "id": "performance",
-            "score": 0.87
+            "score": 0.79
           },
           "accessibility": {
             "title": "Accessibility",
@@ -5981,51 +4395,51 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2261,
+            "numericValue": 2708,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1916,
-                  "firstMeaningfulPaint": 2261,
-                  "largestContentfulPaint": 3916,
-                  "firstCPUIdle": 2261,
-                  "interactive": 2261,
-                  "speedIndex": 2339,
+                  "firstContentfulPaint": 2407,
+                  "firstMeaningfulPaint": 2708,
+                  "largestContentfulPaint": 4884,
+                  "firstCPUIdle": 2708,
+                  "interactive": 2708,
+                  "speedIndex": 2925,
                   "estimatedInputLatency": 13,
                   "totalBlockingTime": 0,
-                  "maxPotentialFID": 41,
-                  "cumulativeLayoutShift": 0.0012374201969633425,
-                  "cumulativeLayoutShiftAllFrames": 0.0012374201969633425,
+                  "maxPotentialFID": 48,
+                  "cumulativeLayoutShift": 0.00015111869324621136,
+                  "cumulativeLayoutShiftAllFrames": 0.00015111869324621136,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 436291565,
+                  "observedTimeOriginTs": 245410494,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 436291565,
-                  "observedFirstPaint": 920,
-                  "observedFirstPaintTs": 437211699,
-                  "observedFirstContentfulPaint": 920,
-                  "observedFirstContentfulPaintTs": 437211699,
-                  "observedFirstMeaningfulPaint": 1028,
-                  "observedFirstMeaningfulPaintTs": 437319561,
-                  "observedLargestContentfulPaint": 1014,
-                  "observedLargestContentfulPaintTs": 437305233,
-                  "observedLargestContentfulPaintAllFrames": 1808,
-                  "observedLargestContentfulPaintAllFramesTs": 438099411,
-                  "observedTraceEnd": 2453,
-                  "observedTraceEndTs": 438744071,
-                  "observedLoad": 1305,
-                  "observedLoadTs": 437596358,
-                  "observedDomContentLoaded": 1011,
-                  "observedDomContentLoadedTs": 437302121,
-                  "observedCumulativeLayoutShift": 0.0012374201969633425,
-                  "observedCumulativeLayoutShiftAllFrames": 0.0012374201969633425,
-                  "observedFirstVisualChange": 924,
-                  "observedFirstVisualChangeTs": 437215565,
-                  "observedLastVisualChange": 1324,
-                  "observedLastVisualChangeTs": 437615565,
-                  "observedSpeedIndex": 938,
-                  "observedSpeedIndexTs": 437229510
+                  "observedNavigationStartTs": 245410494,
+                  "observedFirstPaint": 1140,
+                  "observedFirstPaintTs": 246550679,
+                  "observedFirstContentfulPaint": 1140,
+                  "observedFirstContentfulPaintTs": 246550679,
+                  "observedFirstMeaningfulPaint": 1319,
+                  "observedFirstMeaningfulPaintTs": 246729142,
+                  "observedLargestContentfulPaint": 1140,
+                  "observedLargestContentfulPaintTs": 246550679,
+                  "observedLargestContentfulPaintAllFrames": 1911,
+                  "observedLargestContentfulPaintAllFramesTs": 247321040,
+                  "observedTraceEnd": 2441,
+                  "observedTraceEndTs": 247851989,
+                  "observedLoad": 1290,
+                  "observedLoadTs": 246700767,
+                  "observedDomContentLoaded": 1138,
+                  "observedDomContentLoadedTs": 246548584,
+                  "observedCumulativeLayoutShift": 0.00015111869324621136,
+                  "observedCumulativeLayoutShiftAllFrames": 0.00015111869324621136,
+                  "observedFirstVisualChange": 1146,
+                  "observedFirstVisualChangeTs": 246556494,
+                  "observedLastVisualChange": 1329,
+                  "observedLastVisualChangeTs": 246739494,
+                  "observedSpeedIndex": 1150,
+                  "observedSpeedIndexTs": 246560804
                 },
                 {
                   "lcpInvalidated": false
@@ -6047,18 +4461,18 @@
                   "numScripts": 6,
                   "numStylesheets": 2,
                   "numFonts": 1,
-                  "numTasks": 380,
+                  "numTasks": 337,
                   "numTasksOver10ms": 2,
                   "numTasksOver25ms": 0,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 80.28999999999999,
-                  "throughput": 19249613.161969617,
-                  "maxRtt": 80.28999999999999,
-                  "maxServerLatency": 1.845000000000013,
-                  "totalByteWeight": 1221052,
-                  "totalTaskTime": 104.03800000000005,
+                  "rtt": 85.443,
+                  "throughput": 20490028.962144922,
+                  "maxRtt": 85.443,
+                  "maxServerLatency": 1.0499999999999972,
+                  "totalByteWeight": 1362020,
+                  "totalTaskTime": 94.00100000000003,
                   "mainDocumentTransferSize": 11334
                 }
               ]
@@ -6068,7 +4482,11 @@
       }
     ],
     "screenshot": true,
-    "stats": null,
+    "stats": {
+      "grade": "F",
+      "url": "https://oscar.service-civique.gouv.fr",
+      "uri": "stats"
+    },
     "github_repository": null,
     "budget_page": null,
     "declaration-a11y": null,
@@ -6078,7 +4496,6 @@
     "sonarcloud": null,
     "dsfr": null,
     "summary": {
-      "404": "A+",
       "httpGrade": "C",
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
@@ -6090,8 +4507,8 @@
       "cookiesCount": 1,
       "trackersGrade": "A",
       "trackersCount": 0,
-      "lighthouse_performance": 0.87,
-      "lighthouse_performanceGrade": "A",
+      "lighthouse_performance": 0.79,
+      "lighthouse_performanceGrade": "B",
       "lighthouse_accessibility": 0.45,
       "lighthouse_accessibilityGrade": "D",
       "lighthouse_best-practices": 0.67,
@@ -6099,11 +4516,12 @@
       "lighthouse_seo": 0.5,
       "lighthouse_seoGrade": "D",
       "lighthouse_pwa": 0.17,
-      "lighthouse_pwaGrade": "E"
+      "lighthouse_pwaGrade": "E",
+      "statsGrade": "F"
     }
   },
   {
-    "404": [],
+    "404": null,
     "url": "https://elisa.service-civique.gouv.fr",
     "repositories": [
       "zammad/zammad"
@@ -7341,7 +5759,7 @@
         "ip": "elisa.service-civique.gouv.fr/217.109.233.83",
         "port": "443",
         "severity": "INFO",
-        "finding": "54"
+        "finding": "53"
       }
     ],
     "thirdparties": {
@@ -7349,7 +5767,7 @@
       "cookies": [
         {
           "name": "TS01c3b0f5",
-          "value": "01b74c0fdda426945fd44fa86361f7671fcf20957a6fbbabe12e18aafad4d676e1d35f1afaa3e3d46b869b83795ef8d4880fbdec18",
+          "value": "01b74c0fdd12202822fb91f81de55279be251c5fd57cebd8edac6359b79e4184c03372eaabc32446e3f717fccfaeda19f0f160a268",
           "domain": ".elisa.service-civique.gouv.fr",
           "path": "/",
           "expires": -1,
@@ -7363,7 +5781,7 @@
         },
         {
           "name": "civiq",
-          "value": "169351084.48160.0000",
+          "value": "186128300.48160.0000",
           "domain": "elisa.service-civique.gouv.fr",
           "path": "/",
           "expires": -1,
@@ -7377,7 +5795,7 @@
         },
         {
           "name": "api-gateway-8380",
-          "value": "186128300.48160.0000",
+          "value": "169351084.48160.0000",
           "domain": "elisa.service-civique.gouv.fr",
           "path": "/",
           "expires": -1,
@@ -7395,15 +5813,15 @@
         "connection": "close",
         "content-encoding": "gzip",
         "content-type": "text/html",
-        "date": "Wed, 16 Oct 2024 13:12:10 GMT",
+        "date": "Wed, 16 Oct 2024 14:26:43 GMT",
         "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
         "max-forwards": "20",
         "pragma": "no-cache",
-        "set-cookie": "api-gateway-8380=186128300.48160.0000; path=/; Httponly\nciviq=169351084.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdda426945fd44fa86361f7671fcf20957a6fbbabe12e18aafad4d676e1d35f1afaa3e3d46b869b83795ef8d4880fbdec18; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HTTPOnly",
+        "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=186128300.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd12202822fb91f81de55279be251c5fd57cebd8edac6359b79e4184c03372eaabc32446e3f717fccfaeda19f0f160a268; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HTTPOnly",
         "strict-transport-security": "max-age=31536000; includeSubDomains",
         "transfer-encoding": "chunked",
-        "via": "1.1 leto-b ()",
-        "x-correlationid": "Id-abbb0f677c4ae798a51f06be 0; Id-aabb0f67302f6205fecb31d1 0"
+        "via": "1.1 leto-p ()",
+        "x-correlationid": "Id-23cd0f676cb6a0474b7b9c44 0; Id-23cd0f67c7ce002beb4d3eb7 0"
       },
       "endpoints": [
         {
@@ -7576,7 +5994,6 @@
     "sonarcloud": null,
     "dsfr": null,
     "summary": {
-      "404": "A+",
       "httpGrade": "F",
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
