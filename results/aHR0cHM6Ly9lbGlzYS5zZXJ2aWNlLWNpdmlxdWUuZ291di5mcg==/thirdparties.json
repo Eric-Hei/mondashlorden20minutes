@@ -2,8 +2,22 @@
   "trackers": [],
   "cookies": [
     {
+      "name": "TS01c3b0f5026",
+      "value": "01c558211520f6d7dad5deb14a62b0a6b39abc09ca25e7db1267dcd8de6b8c492891ba25ef878d85b1f276bad4d2153a4f4bdd1ce7c684eb75d451a461b1fc16a0033c065e",
+      "domain": ".elisa.service-civique.gouv.fr",
+      "path": "/",
+      "expires": -1,
+      "size": 151,
+      "httpOnly": true,
+      "secure": true,
+      "session": true,
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
       "name": "TS01c3b0f5",
-      "value": "01b74c0fdd12202822fb91f81de55279be251c5fd57cebd8edac6359b79e4184c03372eaabc32446e3f717fccfaeda19f0f160a268",
+      "value": "01b74c0fdd1fc10728a9ff21a281d0d282bc909d1b617741552c3afc0db9cb3f2dcc65d2228107834dcdbe730e4c481e6c25be5fff",
       "domain": ".elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -49,15 +63,15 @@
     "connection": "close",
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Wed, 16 Oct 2024 14:26:43 GMT",
+    "date": "Thu, 17 Oct 2024 10:03:18 GMT",
     "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
     "max-forwards": "20",
     "pragma": "no-cache",
-    "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=186128300.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd12202822fb91f81de55279be251c5fd57cebd8edac6359b79e4184c03372eaabc32446e3f717fccfaeda19f0f160a268; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HTTPOnly",
+    "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=186128300.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd1fc10728a9ff21a281d0d282bc909d1b617741552c3afc0db9cb3f2dcc65d2228107834dcdbe730e4c481e6c25be5fff; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HTTPOnly\nTS01c3b0f5026=01c558211520f6d7dad5deb14a62b0a6b39abc09ca25e7db1267dcd8de6b8c492891ba25ef878d85b1f276bad4d2153a4f4bdd1ce7c684eb75d451a461b1fc16a0033c065e; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HTTPOnly",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "transfer-encoding": "chunked",
     "via": "1.1 leto-p ()",
-    "x-correlationid": "Id-23cd0f676cb6a0474b7b9c44 0; Id-23cd0f67c7ce002beb4d3eb7 0"
+    "x-correlationid": "Id-e6e01067eeab8302700982d7 0; Id-e6e0106789e834170cb39cbf 0"
   },
   "endpoints": [
     {
