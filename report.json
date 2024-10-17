@@ -544,7 +544,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "112 >= 60 days"
+        "finding": "111 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -782,21 +782,21 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "+6 seconds from localtime"
+        "finding": "+8 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "1729091284"
+        "finding": "1729159376"
       },
       {
         "id": "HTTP_headerAge",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "6 seconds"
+        "finding": "8 seconds"
       },
       {
         "id": "HSTS_time",
@@ -860,7 +860,7 @@
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-200",
-        "finding": "X-Varnish: 84491754 79696363X-Varnish: 58403224"
+        "finding": "X-Varnish: 94234875 91879595X-Varnish: 46514158"
       },
       {
         "id": "heartbleed",
@@ -1359,7 +1359,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "153"
+        "finding": "198"
       }
     ],
     "thirdparties": {
@@ -1405,6 +1405,30 @@
           }
         },
         {
+          "type": "twitter",
+          "url": "https://platform.twitter.com/widgets/widget_iframe.2f70fb173b9000da126c79afe2098f02.html?origin=https%3A%2F%2Fwww.service-civique.gouv.fr",
+          "details": {
+            "id": "twitter",
+            "message": "Dont embed twitter scripts, use your own tweet embed"
+          }
+        },
+        {
+          "type": "facebook",
+          "url": "https://connect.facebook.net/fr_FR/sdk.js?hash=4efb4673942820379c037c214baad7b1",
+          "details": {
+            "id": "facebook",
+            "message": "Dont embed facebook scripts, use your own tweet embed"
+          }
+        },
+        {
+          "type": "twitter",
+          "url": "https://syndication.twitter.com/settings?session_id=a314bc295e5c31e418a6b5175a81f4135facee66",
+          "details": {
+            "id": "twitter",
+            "message": "Dont embed twitter scripts, use your own tweet embed"
+          }
+        },
+        {
           "type": "unknown",
           "url": "https://service-civique.twic.pics/api/media/assets/image/carrousel-service-civique-ecologique.png"
         },
@@ -1429,20 +1453,8 @@
           "url": "https://service-civique.twic.pics/api/media/assets/image/generation2024.png"
         },
         {
-          "type": "facebook",
-          "url": "https://connect.facebook.net/fr_FR/sdk.js?hash=fd1181cc3111a4bd7c8c839faaafb0fa",
-          "details": {
-            "id": "facebook",
-            "message": "Dont embed facebook scripts, use your own tweet embed"
-          }
-        },
-        {
-          "type": "twitter",
-          "url": "https://platform.twitter.com/widgets/widget_iframe.2f70fb173b9000da126c79afe2098f02.html?origin=https%3A%2F%2Fwww.service-civique.gouv.fr",
-          "details": {
-            "id": "twitter",
-            "message": "Dont embed twitter scripts, use your own tweet embed"
-          }
+          "type": "unknown",
+          "url": "https://service-civique.twic.pics/api/media/assets/image/img-3127--1-.jpg"
         },
         {
           "type": "unknown",
@@ -1454,43 +1466,31 @@
         },
         {
           "type": "unknown",
-          "url": "https://service-civique.twic.pics/api/media/assets/image/img-3127--1-.jpg"
-        },
-        {
-          "type": "twitter",
-          "url": "https://syndication.twitter.com/settings?session_id=75345d6d2ce94f293b8541e45cde0f1bd0d36d1c",
-          "details": {
-            "id": "twitter",
-            "message": "Dont embed twitter scripts, use your own tweet embed"
-          }
+          "url": "https://ads-engagement.presage.io/v2/pv/img.gif?e=pv&site=service-civique.gouv.fr&t=1729159173638&full_url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F"
         },
         {
           "type": "unknown",
-          "url": "https://ads-engagement.presage.io/v2/pv/img.gif?e=pv&site=service-civique.gouv.fr&t=1729091149611&full_url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F"
+          "url": "https://server.adform.net/Serving/TrackPoint/?pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=154667353428&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
         },
         {
           "type": "unknown",
-          "url": "https://server.adform.net/Serving/TrackPoint/?pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=611494598921&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
+          "url": "https://server.adform.net/Serving/TrackPoint/?pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=443786862164&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
         },
         {
           "type": "unknown",
-          "url": "https://server.adform.net/Serving/TrackPoint/?pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=626176753484&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
+          "url": "https://ads-engagement.presage.io/v2/pv/img.gif?e=pv&site=service-civique.gouv.fr&t=1729159173638&full_url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F"
         },
         {
           "type": "unknown",
-          "url": "https://ads-engagement.presage.io/v2/pv/img.gif?e=pv&site=service-civique.gouv.fr&t=1729091149611&full_url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F"
+          "url": "https://ads-engagement.presage.io/v2/pv/img.gif?e=pv&site=service-civique.gouv.fr&t=1729159173638&full_url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F"
         },
         {
           "type": "unknown",
-          "url": "https://ads-engagement.presage.io/v2/pv/img.gif?e=pv&site=service-civique.gouv.fr&t=1729091149611&full_url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F"
+          "url": "https://server.adform.net/Serving/TrackPoint/?CC=1&pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=154667353428&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
         },
         {
           "type": "unknown",
-          "url": "https://server.adform.net/Serving/TrackPoint/?CC=1&pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=626176753484&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
-        },
-        {
-          "type": "unknown",
-          "url": "https://server.adform.net/Serving/TrackPoint/?CC=1&pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=611494598921&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
+          "url": "https://server.adform.net/Serving/TrackPoint/?CC=1&pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=443786862164&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
         }
       ],
       "cookies": [
@@ -1499,7 +1499,7 @@
           "value": "1",
           "domain": "www.service-civique.gouv.fr",
           "path": "/",
-          "expires": 1729092949,
+          "expires": 1729160973,
           "size": 15,
           "httpOnly": false,
           "secure": false,
@@ -1511,10 +1511,10 @@
         },
         {
           "name": "_pk_id.2.8f0d",
-          "value": "5f6ec0b022ae4479.1729091150.",
+          "value": "0320b2f3e5f5a520.1729159174.",
           "domain": "www.service-civique.gouv.fr",
           "path": "/",
-          "expires": 1763046350,
+          "expires": 1763114374,
           "size": 41,
           "httpOnly": false,
           "secure": false,
@@ -1527,16 +1527,16 @@
       ],
       "headers": {
         "accept-ranges": "bytes",
-        "age": "10",
+        "age": "12",
         "cache-control": "must-revalidate, max-age=0",
         "content-encoding": "gzip",
         "content-length": "19487",
         "content-type": "text/html; charset=utf-8",
-        "date": "Wed, 16 Oct 2024 15:05:47 GMT",
-        "etag": "W/\"1dbde-7PryJO14TyThuLVPIh2LwzVGk60\"",
+        "date": "Thu, 17 Oct 2024 09:59:31 GMT",
+        "etag": "W/\"1dbde-zYl0tY3o1COMaRFJwKGIZDzQ+JI\"",
         "strict-transport-security": "max-age=31536000; includeSubDomains",
         "vary": "Accept-Encoding",
-        "x-varnish": "84429098 91559335\n54478720"
+        "x-varnish": "91705755 94396449\n61135285"
       },
       "endpoints": [
         {
@@ -1640,7 +1640,7 @@
         },
         {
           "hostname": "service-civique.twic.pics",
-          "ip": "3.167.183.49",
+          "ip": "13.227.74.86",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1694,7 +1694,7 @@
         },
         {
           "hostname": "sdk.privacy-center.org",
-          "ip": "52.84.18.124",
+          "ip": "13.35.121.78",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -1748,19 +1748,18 @@
         },
         {
           "hostname": "platform.twitter.com",
-          "ip": "199.232.152.157",
+          "ip": "151.101.200.157",
           "geoip": {
             "city": {
-              "geoname_id": 5308655,
+              "geoname_id": 5380748,
               "names": {
-                "de": "Phoenix",
-                "en": "Phoenix",
-                "es": "Phoenix",
-                "fr": "Phoenix",
-                "ja": "フェニックス",
-                "pt-BR": "Phoenix",
-                "ru": "Финикс",
-                "zh-CN": "凤凰城"
+                "de": "Palo Alto",
+                "en": "Palo Alto",
+                "es": "Palo Alto",
+                "fr": "Palo Alto",
+                "ja": "パロアルト",
+                "pt-BR": "Palo Alto",
+                "ru": "Пало Альто"
               }
             },
             "continent": {
@@ -1793,13 +1792,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 33.4475,
-              "longitude": -112.0866,
-              "metro_code": 753,
-              "time_zone": "America/Phoenix"
+              "latitude": 37.4433,
+              "longitude": -122.141,
+              "metro_code": 807,
+              "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "85036"
+              "code": "94302"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -1817,16 +1816,17 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 5551752,
-                "iso_code": "AZ",
+                "geoname_id": 5332921,
+                "iso_code": "CA",
                 "names": {
-                  "de": "Arizona",
-                  "en": "Arizona",
-                  "es": "Arizona",
-                  "fr": "Arizona",
-                  "ja": "アリゾナ州",
-                  "pt-BR": "Arizona",
-                  "ru": "Аризона"
+                  "de": "Kalifornien",
+                  "en": "California",
+                  "es": "California",
+                  "fr": "Californie",
+                  "ja": "カリフォルニア州",
+                  "pt-BR": "Califórnia",
+                  "ru": "Калифорния",
+                  "zh-CN": "加州"
                 }
               }
             ]
@@ -1834,19 +1834,19 @@
         },
         {
           "hostname": "connect.facebook.net",
-          "ip": "31.13.66.19",
+          "ip": "157.240.22.25",
           "geoip": {
             "city": {
-              "geoname_id": 4744870,
+              "geoname_id": 5393015,
               "names": {
-                "de": "Ashburn",
-                "en": "Ashburn",
-                "es": "Ashburn",
-                "fr": "Ashburn",
-                "ja": "アッシュバーン",
-                "pt-BR": "Ashburn",
-                "ru": "Ашберн",
-                "zh-CN": "阿什本"
+                "de": "Santa Clara",
+                "en": "Santa Clara",
+                "es": "Santa Clara",
+                "fr": "Santa Clara",
+                "ja": "サンタクララ",
+                "pt-BR": "Santa Clara",
+                "ru": "Санта-Клара",
+                "zh-CN": "圣克拉拉"
               }
             },
             "continent": {
@@ -1879,50 +1879,103 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 39.0469,
-              "longitude": -77.4903,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
+              "latitude": 37.353,
+              "longitude": -121.9543,
+              "metro_code": 807,
+              "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "20149"
+              "code": "95052"
             },
             "registered_country": {
-              "geoname_id": 2963597,
-              "is_in_european_union": true,
-              "iso_code": "IE",
+              "geoname_id": 6252001,
+              "iso_code": "US",
               "names": {
-                "de": "Irland",
-                "en": "Ireland",
-                "es": "Irlanda",
-                "fr": "Irlande",
-                "ja": "アイルランド",
-                "pt-BR": "Irlanda",
-                "ru": "Ирландия",
-                "zh-CN": "爱尔兰"
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
               }
             },
             "subdivisions": [
               {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
+                "geoname_id": 5332921,
+                "iso_code": "CA",
                 "names": {
-                  "de": "Virginia",
-                  "en": "Virginia",
-                  "es": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
+                  "de": "Kalifornien",
+                  "en": "California",
+                  "es": "California",
+                  "fr": "Californie",
+                  "ja": "カリフォルニア州",
+                  "pt-BR": "Califórnia",
+                  "ru": "Калифорния",
+                  "zh-CN": "加州"
                 }
               }
             ]
           }
         },
         {
+          "hostname": "syndication.twitter.com",
+          "ip": "104.244.42.72",
+          "geoip": {
+            "continent": {
+              "code": "NA",
+              "geoname_id": 6255149,
+              "names": {
+                "de": "Nordamerika",
+                "en": "North America",
+                "es": "Norteamérica",
+                "fr": "Amérique du Nord",
+                "ja": "北アメリカ",
+                "pt-BR": "América do Norte",
+                "ru": "Северная Америка",
+                "zh-CN": "北美洲"
+              }
+            },
+            "country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            },
+            "location": {
+              "accuracy_radius": 1000,
+              "latitude": 37.751,
+              "longitude": -97.822,
+              "time_zone": "America/Chicago"
+            },
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            }
+          }
+        },
+        {
           "hostname": "s2.adform.net",
-          "ip": "185.167.164.44",
+          "ip": "185.167.166.41",
           "geoip": {
             "continent": {
               "code": "EU",
@@ -1978,61 +2031,7 @@
         },
         {
           "hostname": "ads-engagement.presage.io",
-          "ip": "65.8.49.112",
-          "geoip": {
-            "continent": {
-              "code": "NA",
-              "geoname_id": 6255149,
-              "names": {
-                "de": "Nordamerika",
-                "en": "North America",
-                "es": "Norteamérica",
-                "fr": "Amérique du Nord",
-                "ja": "北アメリカ",
-                "pt-BR": "América do Norte",
-                "ru": "Северная Америка",
-                "zh-CN": "北美洲"
-              }
-            },
-            "country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "location": {
-              "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
-            },
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            }
-          }
-        },
-        {
-          "hostname": "syndication.twitter.com",
-          "ip": "104.244.42.136",
+          "ip": "99.84.238.97",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -2086,7 +2085,7 @@
         },
         {
           "hostname": "server.adform.net",
-          "ip": "37.157.6.231",
+          "ip": "37.157.2.233",
           "geoip": {
             "continent": {
               "code": "EU",
@@ -2464,6 +2463,24 @@
           ]
         },
         {
+          "slug": "hsts",
+          "name": "HSTS",
+          "description": "HTTP Strict Transport Security (HSTS) informs browsers that the site should only be accessed using HTTPS.",
+          "confidence": 100,
+          "version": null,
+          "icon": "default.svg",
+          "website": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 16,
+              "slug": "security",
+              "name": "Security"
+            }
+          ],
+          "rootPath": true
+        },
+        {
           "slug": "mailchimp",
           "name": "MailChimp",
           "description": "Mailchimp is a marketing automation platform and email marketing service.",
@@ -2482,24 +2499,6 @@
               "id": 75,
               "slug": "email",
               "name": "Email"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "hsts",
-          "name": "HSTS",
-          "description": "HTTP Strict Transport Security (HSTS) informs browsers that the site should only be accessed using HTTPS.",
-          "confidence": 100,
-          "version": null,
-          "icon": "default.svg",
-          "website": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 16,
-              "slug": "security",
-              "name": "Security"
             }
           ],
           "rootPath": true
@@ -2565,39 +2564,60 @@
       {
         "requestedUrl": "https://www.service-civique.gouv.fr/",
         "finalUrl": "https://www.service-civique.gouv.fr/",
-        "fetchTime": "2024-10-16T15:05:17.561Z",
+        "fetchTime": "2024-10-17T09:58:55.301Z",
         "runWarnings": [],
         "categories": {
           "performance": {
             "title": "Performance",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "performance",
-            "score": 0.17
+            "score": 0.12
           },
           "accessibility": {
             "title": "Accessibility",
             "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
             "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "accessibility",
-            "score": 0.73
+            "score": 0.77
           },
           "best-practices": {
             "title": "Best Practices",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "best-practices",
-            "score": 0.73
+            "score": 0.75
           },
           "seo": {
             "title": "SEO",
-            "description": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.google.com/webmasters/answer/35769).",
+            "description": "These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on [Core Web Vitals](https://web.dev/learn-web-vitals/). [Learn more](https://support.google.com/webmasters/answer/35769).",
             "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "seo",
             "score": 0.95
           },
           "pwa": {
-            "title": "Progressive Web App",
+            "title": "PWA",
             "description": "These checks validate the aspects of a Progressive Web App. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist).",
             "manualDescription": "These checks are required by the baseline [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually.",
+            "supportedModes": [
+              "navigation"
+            ],
             "id": "pwa",
-            "score": 0.42
+            "score": 0.3
           }
         },
         "audits": {
@@ -2607,51 +2627,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 17314,
+            "numericValue": 17355,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2235,
-                  "firstMeaningfulPaint": 7421,
-                  "largestContentfulPaint": 14308,
-                  "firstCPUIdle": 11679,
-                  "interactive": 17314,
-                  "speedIndex": 9752,
-                  "estimatedInputLatency": 278,
-                  "totalBlockingTime": 1948,
-                  "maxPotentialFID": 900,
-                  "cumulativeLayoutShift": 1.662603702015347,
-                  "cumulativeLayoutShiftAllFrames": 1.6548046875,
+                  "firstContentfulPaint": 1967,
+                  "firstMeaningfulPaint": 8223,
+                  "largestContentfulPaint": 17057,
+                  "interactive": 17355,
+                  "speedIndex": 11638,
+                  "totalBlockingTime": 2145,
+                  "maxPotentialFID": 739,
+                  "cumulativeLayoutShift": 0.9010477124320135,
+                  "cumulativeLayoutShiftMainFrame": 0.9010477124320135,
+                  "totalCumulativeLayoutShift": 0.9010477124320135,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 561902691,
+                  "observedTimeOriginTs": 584624206,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 561902691,
-                  "observedFirstPaint": 577,
-                  "observedFirstPaintTs": 562479467,
-                  "observedFirstContentfulPaint": 577,
-                  "observedFirstContentfulPaintTs": 562479467,
-                  "observedFirstMeaningfulPaint": 963,
-                  "observedFirstMeaningfulPaintTs": 562865903,
-                  "observedLargestContentfulPaint": 2128,
-                  "observedLargestContentfulPaintTs": 564030304,
-                  "observedLargestContentfulPaintAllFrames": 3426,
-                  "observedLargestContentfulPaintAllFramesTs": 565329000,
-                  "observedTraceEnd": 3977,
-                  "observedTraceEndTs": 565879563,
-                  "observedLoad": 2800,
-                  "observedLoadTs": 564702217,
-                  "observedDomContentLoaded": 1182,
-                  "observedDomContentLoadedTs": 563085029,
-                  "observedCumulativeLayoutShift": 1.662603702015347,
-                  "observedCumulativeLayoutShiftAllFrames": 1.6548046875,
-                  "observedFirstVisualChange": 574,
-                  "observedFirstVisualChangeTs": 562476691,
-                  "observedLastVisualChange": 2308,
-                  "observedLastVisualChangeTs": 564210691,
-                  "observedSpeedIndex": 1434,
-                  "observedSpeedIndexTs": 563336632
+                  "observedNavigationStartTs": 584624206,
+                  "observedFirstPaint": 924,
+                  "observedFirstPaintTs": 585548062,
+                  "observedFirstContentfulPaint": 924,
+                  "observedFirstContentfulPaintTs": 585548062,
+                  "observedFirstContentfulPaintAllFrames": 924,
+                  "observedFirstContentfulPaintAllFramesTs": 585548062,
+                  "observedFirstMeaningfulPaint": 1640,
+                  "observedFirstMeaningfulPaintTs": 586264696,
+                  "observedLargestContentfulPaint": 2971,
+                  "observedLargestContentfulPaintTs": 587595371,
+                  "observedLargestContentfulPaintAllFrames": 2971,
+                  "observedLargestContentfulPaintAllFramesTs": 587595371,
+                  "observedTraceEnd": 5968,
+                  "observedTraceEndTs": 590592691,
+                  "observedLoad": 3657,
+                  "observedLoadTs": 588281618,
+                  "observedDomContentLoaded": 1630,
+                  "observedDomContentLoadedTs": 586254505,
+                  "observedCumulativeLayoutShift": 0.9010477124320135,
+                  "observedCumulativeLayoutShiftMainFrame": 0.9010477124320135,
+                  "observedTotalCumulativeLayoutShift": 0.9010477124320135,
+                  "observedFirstVisualChange": 902,
+                  "observedFirstVisualChangeTs": 585526206,
+                  "observedLastVisualChange": 3185,
+                  "observedLastVisualChangeTs": 587809206,
+                  "observedSpeedIndex": 2062,
+                  "observedSpeedIndexTs": 586686532
                 },
                 {
                   "lcpInvalidated": false
@@ -2673,19 +2695,19 @@
                   "numScripts": 54,
                   "numStylesheets": 6,
                   "numFonts": 7,
-                  "numTasks": 1554,
+                  "numTasks": 1428,
                   "numTasksOver10ms": 30,
-                  "numTasksOver25ms": 19,
-                  "numTasksOver50ms": 5,
+                  "numTasksOver25ms": 22,
+                  "numTasksOver50ms": 7,
                   "numTasksOver100ms": 4,
                   "numTasksOver500ms": 0,
                   "rtt": 0,
-                  "throughput": 19449804.065513104,
-                  "maxRtt": 109.44800000000001,
-                  "maxServerLatency": 107.414,
-                  "totalByteWeight": 2451968,
-                  "totalTaskTime": 1845.666000000002,
-                  "mainDocumentTransferSize": 19708
+                  "throughput": 15558212.755356176,
+                  "maxRtt": 160.28099999999998,
+                  "maxServerLatency": 177.68800000000002,
+                  "totalByteWeight": 2451683,
+                  "totalTaskTime": 1886.933999999998,
+                  "mainDocumentTransferSize": 19718
                 }
               ]
             }
@@ -2695,18 +2717,38 @@
     ],
     "screenshot": true,
     "stats": {
-      "grade": "A",
-      "url": "https://www.service-civique.gouv.fr",
-      "uri": "stats"
+      "grade": "F"
     },
     "github_repository": null,
     "budget_page": null,
-    "declaration-a11y": null,
-    "declaration-rgpd": null,
+    "declaration-a11y": {
+      "mention": null
+    },
+    "declaration-rgpd": [
+      {
+        "slug": "ml",
+        "mention": "Mentions légales",
+        "maxScore": 4,
+        "score": 4,
+        "missingWords": [],
+        "missingTrackers": [],
+        "declarationUrl": "https://www.service-civique.gouv.fr/mentions-legales"
+      },
+      {
+        "slug": "pc",
+        "mention": null,
+        "maxScore": 0,
+        "score": 0,
+        "missingWords": [],
+        "missingTrackers": []
+      }
+    ],
     "betagouv": null,
     "ecoindex": null,
     "sonarcloud": null,
-    "dsfr": null,
+    "dsfr": {
+      "detected": false
+    },
     "summary": {
       "httpGrade": "C-",
       "nmapGrade": "A",
@@ -2719,17 +2761,21 @@
       "cookiesCount": 2,
       "trackersGrade": "F",
       "trackersCount": 27,
-      "lighthouse_performance": 0.17,
-      "lighthouse_performanceGrade": "E",
-      "lighthouse_accessibility": 0.73,
+      "lighthouse_performance": 0.12,
+      "lighthouse_performanceGrade": "F",
+      "lighthouse_accessibility": 0.77,
       "lighthouse_accessibilityGrade": "B",
-      "lighthouse_best-practices": 0.73,
+      "lighthouse_best-practices": 0.75,
       "lighthouse_best-practicesGrade": "B",
       "lighthouse_seo": 0.95,
       "lighthouse_seoGrade": "A",
-      "lighthouse_pwa": 0.42,
-      "lighthouse_pwaGrade": "D",
-      "statsGrade": "A"
+      "lighthouse_pwa": 0.3,
+      "lighthouse_pwaGrade": "E",
+      "statsGrade": "F",
+      "declaration-a11y": "F",
+      "declaration-rgpd-ml": "A",
+      "declaration-rgpd-pc": "F",
+      "dsfrGrade": "F"
     }
   },
   {
@@ -3276,7 +3322,7 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "OK",
-        "finding": "246 >= 60 days"
+        "finding": "245 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -3514,14 +3560,14 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "-2 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "1729091169"
+        "finding": "1729159070"
       },
       {
         "id": "HSTS_time",
@@ -4098,7 +4144,7 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "51"
+        "finding": "50"
       }
     ],
     "thirdparties": {
@@ -4106,7 +4152,7 @@
       "cookies": [
         {
           "name": "ASP.NET_SessionId",
-          "value": "zosgh3dvg2kx4zq2i1pj14ph",
+          "value": "hbcytzq03q5304kf0afwohs2",
           "domain": "oscar.service-civique.gouv.fr",
           "path": "/",
           "expires": -1,
@@ -4124,7 +4170,7 @@
         "cache-control": "private",
         "content-length": "11039",
         "content-type": "text/html; charset=utf-8",
-        "date": "Wed, 16 Oct 2024 15:05:36 GMT",
+        "date": "Thu, 17 Oct 2024 09:57:06 GMT",
         "server": "Microsoft-IIS/8.5",
         "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
         "x-aspnet-version": "4.0.30319",
@@ -4351,41 +4397,62 @@
       {
         "requestedUrl": "https://oscar.service-civique.gouv.fr/",
         "finalUrl": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "fetchTime": "2024-10-16T15:05:09.678Z",
+        "fetchTime": "2024-10-17T09:56:43.377Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://oscar.service-civique.gouv.fr/) was redirected to https://oscar.service-civique.gouv.fr/Connexion.aspx. Try testing the second URL directly."
         ],
         "categories": {
           "performance": {
             "title": "Performance",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "performance",
-            "score": 0.92
+            "score": 0.97
           },
           "accessibility": {
             "title": "Accessibility",
             "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
             "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "accessibility",
-            "score": 0.45
+            "score": 0.5
           },
           "best-practices": {
             "title": "Best Practices",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
             "id": "best-practices",
             "score": 0.67
           },
           "seo": {
             "title": "SEO",
-            "description": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.google.com/webmasters/answer/35769).",
+            "description": "These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on [Core Web Vitals](https://web.dev/learn-web-vitals/). [Learn more](https://support.google.com/webmasters/answer/35769).",
             "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
             "id": "seo",
             "score": 0.5
           },
           "pwa": {
-            "title": "Progressive Web App",
+            "title": "PWA",
             "description": "These checks validate the aspects of a Progressive Web App. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist).",
             "manualDescription": "These checks are required by the baseline [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually.",
+            "supportedModes": [
+              "navigation"
+            ],
             "id": "pwa",
-            "score": 0.17
+            "score": 0
           }
         },
         "audits": {
@@ -4395,51 +4462,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2263,
+            "numericValue": 2259,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1914,
-                  "firstMeaningfulPaint": 2263,
-                  "largestContentfulPaint": 3167,
-                  "firstCPUIdle": 2263,
-                  "interactive": 2263,
-                  "speedIndex": 2353,
-                  "estimatedInputLatency": 13,
+                  "firstContentfulPaint": 1942,
+                  "firstMeaningfulPaint": 2259,
+                  "largestContentfulPaint": 2334,
+                  "interactive": 2259,
+                  "speedIndex": 2391,
                   "totalBlockingTime": 0,
-                  "maxPotentialFID": 16,
-                  "cumulativeLayoutShift": 0.0012374748608046996,
-                  "cumulativeLayoutShiftAllFrames": 0.0012374748608046996,
+                  "maxPotentialFID": 40,
+                  "cumulativeLayoutShift": 0.0012561589838224652,
+                  "cumulativeLayoutShiftMainFrame": 0.0012561589838224652,
+                  "totalCumulativeLayoutShift": 0.0012561589838224652,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 426425022,
+                  "observedTimeOriginTs": 417534950,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 426425022,
-                  "observedFirstPaint": 906,
-                  "observedFirstPaintTs": 427331208,
-                  "observedFirstContentfulPaint": 906,
-                  "observedFirstContentfulPaintTs": 427331208,
-                  "observedFirstMeaningfulPaint": 1178,
-                  "observedFirstMeaningfulPaintTs": 427602999,
-                  "observedLargestContentfulPaint": 1063,
-                  "observedLargestContentfulPaintTs": 427488481,
-                  "observedLargestContentfulPaintAllFrames": 1955,
-                  "observedLargestContentfulPaintAllFramesTs": 428380203,
-                  "observedTraceEnd": 2626,
-                  "observedTraceEndTs": 429051030,
-                  "observedLoad": 1478,
-                  "observedLoadTs": 427902800,
-                  "observedDomContentLoaded": 1157,
-                  "observedDomContentLoadedTs": 427582421,
-                  "observedCumulativeLayoutShift": 0.0012374748608046996,
-                  "observedCumulativeLayoutShiftAllFrames": 0.0012374748608046996,
-                  "observedFirstVisualChange": 907,
-                  "observedFirstVisualChangeTs": 427332022,
-                  "observedLastVisualChange": 1507,
-                  "observedLastVisualChangeTs": 427932022,
-                  "observedSpeedIndex": 947,
-                  "observedSpeedIndexTs": 427371571
+                  "observedNavigationStartTs": 417534950,
+                  "observedFirstPaint": 964,
+                  "observedFirstPaintTs": 418498713,
+                  "observedFirstContentfulPaint": 964,
+                  "observedFirstContentfulPaintTs": 418498713,
+                  "observedFirstContentfulPaintAllFrames": 964,
+                  "observedFirstContentfulPaintAllFramesTs": 418498713,
+                  "observedFirstMeaningfulPaint": 1154,
+                  "observedFirstMeaningfulPaintTs": 418688860,
+                  "observedLargestContentfulPaint": 975,
+                  "observedLargestContentfulPaintTs": 418510008,
+                  "observedLargestContentfulPaintAllFrames": 975,
+                  "observedLargestContentfulPaintAllFramesTs": 418510008,
+                  "observedTraceEnd": 3764,
+                  "observedTraceEndTs": 421299273,
+                  "observedLoad": 1368,
+                  "observedLoadTs": 418902475,
+                  "observedDomContentLoaded": 1136,
+                  "observedDomContentLoadedTs": 418670938,
+                  "observedCumulativeLayoutShift": 0.0012561589838224652,
+                  "observedCumulativeLayoutShiftMainFrame": 0.0012561589838224652,
+                  "observedTotalCumulativeLayoutShift": 0.0012561589838224652,
+                  "observedFirstVisualChange": 964,
+                  "observedFirstVisualChangeTs": 418498950,
+                  "observedLastVisualChange": 1398,
+                  "observedLastVisualChangeTs": 418932950,
+                  "observedSpeedIndex": 976,
+                  "observedSpeedIndexTs": 418511259
                 },
                 {
                   "lcpInvalidated": false
@@ -4461,18 +4530,18 @@
                   "numScripts": 6,
                   "numStylesheets": 2,
                   "numFonts": 1,
-                  "numTasks": 409,
-                  "numTasksOver10ms": 1,
-                  "numTasksOver25ms": 0,
+                  "numTasks": 398,
+                  "numTasksOver10ms": 2,
+                  "numTasksOver25ms": 1,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 84.623,
-                  "throughput": 14010779.68867506,
-                  "maxRtt": 84.623,
-                  "maxServerLatency": 2.2379999999999853,
+                  "rtt": 80.902,
+                  "throughput": 18792261.316408653,
+                  "maxRtt": 80.902,
+                  "maxServerLatency": 1.5139999999999958,
                   "totalByteWeight": 1221052,
-                  "totalTaskTime": 94.88500000000005,
+                  "totalTaskTime": 107.28500000000014,
                   "mainDocumentTransferSize": 11334
                 }
               ]
@@ -4483,18 +4552,53 @@
     ],
     "screenshot": true,
     "stats": {
-      "grade": "F",
-      "url": "https://oscar.service-civique.gouv.fr",
-      "uri": "stats"
+      "grade": "F"
     },
     "github_repository": null,
     "budget_page": null,
-    "declaration-a11y": null,
-    "declaration-rgpd": null,
+    "declaration-a11y": {
+      "mention": null
+    },
+    "declaration-rgpd": [
+      {
+        "slug": "ml",
+        "mention": null,
+        "maxScore": 0,
+        "score": 0,
+        "missingWords": [],
+        "missingTrackers": []
+      },
+      {
+        "slug": "pc",
+        "mention": null,
+        "maxScore": 0,
+        "score": 0,
+        "missingWords": [],
+        "missingTrackers": []
+      }
+    ],
     "betagouv": null,
-    "ecoindex": null,
+    "ecoindex": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "url": "https://oscar.service-civique.gouv.fr",
+        "size": 1484.903,
+        "nodes": 101,
+        "requests": 23,
+        "grade": "A",
+        "score": 81,
+        "ges": 1.38,
+        "water": 2.07,
+        "ecoindex_version": "5.4.2",
+        "date": "2024-10-17 09:53:48.219124",
+        "page_type": null
+      }
+    ],
     "sonarcloud": null,
-    "dsfr": null,
+    "dsfr": {
+      "detected": false
+    },
     "summary": {
       "httpGrade": "C",
       "nmapGrade": "A",
@@ -4507,17 +4611,22 @@
       "cookiesCount": 1,
       "trackersGrade": "A",
       "trackersCount": 0,
-      "lighthouse_performance": 0.92,
+      "lighthouse_performance": 0.97,
       "lighthouse_performanceGrade": "A",
-      "lighthouse_accessibility": 0.45,
+      "lighthouse_accessibility": 0.5,
       "lighthouse_accessibilityGrade": "D",
       "lighthouse_best-practices": 0.67,
       "lighthouse_best-practicesGrade": "B",
       "lighthouse_seo": 0.5,
       "lighthouse_seoGrade": "D",
-      "lighthouse_pwa": 0.17,
-      "lighthouse_pwaGrade": "E",
-      "statsGrade": "F"
+      "lighthouse_pwa": 0,
+      "lighthouse_pwaGrade": "F",
+      "statsGrade": "F",
+      "declaration-a11y": "F",
+      "declaration-rgpd-ml": "F",
+      "declaration-rgpd-pc": "F",
+      "ecoindexGrade": "A",
+      "dsfrGrade": "F"
     }
   },
   {
@@ -5084,7 +5193,7 @@
         "ip": "elisa.service-civique.gouv.fr/217.109.233.83",
         "port": "443",
         "severity": "OK",
-        "finding": "307 >= 60 days"
+        "finding": "306 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -5759,15 +5868,29 @@
         "ip": "elisa.service-civique.gouv.fr/217.109.233.83",
         "port": "443",
         "severity": "INFO",
-        "finding": "53"
+        "finding": "96"
       }
     ],
     "thirdparties": {
       "trackers": [],
       "cookies": [
         {
+          "name": "TS01c3b0f5026",
+          "value": "01c558211520f6d7dad5deb14a62b0a6b39abc09ca25e7db1267dcd8de6b8c492891ba25ef878d85b1f276bad4d2153a4f4bdd1ce7c684eb75d451a461b1fc16a0033c065e",
+          "domain": ".elisa.service-civique.gouv.fr",
+          "path": "/",
+          "expires": -1,
+          "size": 151,
+          "httpOnly": true,
+          "secure": true,
+          "session": true,
+          "sameParty": false,
+          "sourceScheme": "Secure",
+          "sourcePort": 443
+        },
+        {
           "name": "TS01c3b0f5",
-          "value": "01b74c0fdd12202822fb91f81de55279be251c5fd57cebd8edac6359b79e4184c03372eaabc32446e3f717fccfaeda19f0f160a268",
+          "value": "01b74c0fdd1fc10728a9ff21a281d0d282bc909d1b617741552c3afc0db9cb3f2dcc65d2228107834dcdbe730e4c481e6c25be5fff",
           "domain": ".elisa.service-civique.gouv.fr",
           "path": "/",
           "expires": -1,
@@ -5813,15 +5936,15 @@
         "connection": "close",
         "content-encoding": "gzip",
         "content-type": "text/html",
-        "date": "Wed, 16 Oct 2024 14:26:43 GMT",
+        "date": "Thu, 17 Oct 2024 10:03:18 GMT",
         "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
         "max-forwards": "20",
         "pragma": "no-cache",
-        "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=186128300.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd12202822fb91f81de55279be251c5fd57cebd8edac6359b79e4184c03372eaabc32446e3f717fccfaeda19f0f160a268; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HTTPOnly",
+        "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=186128300.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd1fc10728a9ff21a281d0d282bc909d1b617741552c3afc0db9cb3f2dcc65d2228107834dcdbe730e4c481e6c25be5fff; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HTTPOnly\nTS01c3b0f5026=01c558211520f6d7dad5deb14a62b0a6b39abc09ca25e7db1267dcd8de6b8c492891ba25ef878d85b1f276bad4d2153a4f4bdd1ce7c684eb75d451a461b1fc16a0033c065e; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HTTPOnly",
         "strict-transport-security": "max-age=31536000; includeSubDomains",
         "transfer-encoding": "chunked",
         "via": "1.1 leto-p ()",
-        "x-correlationid": "Id-23cd0f676cb6a0474b7b9c44 0; Id-23cd0f67c7ce002beb4d3eb7 0"
+        "x-correlationid": "Id-e6e01067eeab8302700982d7 0; Id-e6e0106789e834170cb39cbf 0"
       },
       "endpoints": [
         {
@@ -5982,17 +6105,213 @@
     },
     "zap": null,
     "nuclei": [],
-    "lhr": [],
+    "lhr": [
+      {
+        "requestedUrl": "https://elisa.service-civique.gouv.fr/",
+        "finalUrl": "https://elisa.service-civique.gouv.fr/civiqs/",
+        "fetchTime": "2024-10-17T10:01:47.233Z",
+        "runWarnings": [
+          "The page loaded too slowly to finish within the time limit. Results may be incomplete.",
+          "The page may not be loading as expected because your test URL (https://elisa.service-civique.gouv.fr/) was redirected to https://elisa.service-civique.gouv.fr/civiqs/. Try testing the second URL directly."
+        ],
+        "categories": {
+          "performance": {
+            "title": "Performance",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
+            "id": "performance",
+            "score": 0.88
+          },
+          "accessibility": {
+            "title": "Accessibility",
+            "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
+            "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
+            "id": "accessibility",
+            "score": 0.9
+          },
+          "best-practices": {
+            "title": "Best Practices",
+            "supportedModes": [
+              "navigation",
+              "timespan",
+              "snapshot"
+            ],
+            "id": "best-practices",
+            "score": 0.83
+          },
+          "seo": {
+            "title": "SEO",
+            "description": "These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on [Core Web Vitals](https://web.dev/learn-web-vitals/). [Learn more](https://support.google.com/webmasters/answer/35769).",
+            "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+            "supportedModes": [
+              "navigation",
+              "snapshot"
+            ],
+            "id": "seo",
+            "score": 0.5
+          },
+          "pwa": {
+            "title": "PWA",
+            "description": "These checks validate the aspects of a Progressive Web App. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist).",
+            "manualDescription": "These checks are required by the baseline [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually.",
+            "supportedModes": [
+              "navigation"
+            ],
+            "id": "pwa",
+            "score": 0
+          }
+        },
+        "audits": {
+          "metrics": {
+            "id": "metrics",
+            "title": "Metrics",
+            "description": "Collects all available metrics.",
+            "score": null,
+            "scoreDisplayMode": "informative",
+            "numericValue": 977,
+            "numericUnit": "millisecond",
+            "details": {
+              "type": "debugdata",
+              "items": [
+                {
+                  "firstContentfulPaint": 950,
+                  "firstMeaningfulPaint": 950,
+                  "largestContentfulPaint": 950,
+                  "interactive": 977,
+                  "speedIndex": 1907,
+                  "totalBlockingTime": 2,
+                  "maxPotentialFID": 76,
+                  "cumulativeLayoutShift": 0.48864114478165266,
+                  "cumulativeLayoutShiftMainFrame": 0.48864114478165266,
+                  "totalCumulativeLayoutShift": 0.48864114478165266,
+                  "observedTimeOrigin": 0,
+                  "observedTimeOriginTs": 757351940,
+                  "observedNavigationStart": 0,
+                  "observedNavigationStartTs": 757351940,
+                  "observedFirstPaint": 685,
+                  "observedFirstPaintTs": 758036835,
+                  "observedFirstContentfulPaint": 685,
+                  "observedFirstContentfulPaintTs": 758036835,
+                  "observedFirstContentfulPaintAllFrames": 685,
+                  "observedFirstContentfulPaintAllFramesTs": 758036835,
+                  "observedFirstMeaningfulPaint": 685,
+                  "observedFirstMeaningfulPaintTs": 758036835,
+                  "observedLargestContentfulPaint": 685,
+                  "observedLargestContentfulPaintTs": 758036835,
+                  "observedLargestContentfulPaintAllFrames": 685,
+                  "observedLargestContentfulPaintAllFramesTs": 758036835,
+                  "observedTraceEnd": 45007,
+                  "observedTraceEndTs": 802359389,
+                  "observedLoad": 2597,
+                  "observedLoadTs": 759949185,
+                  "observedDomContentLoaded": 677,
+                  "observedDomContentLoadedTs": 758029254,
+                  "observedCumulativeLayoutShift": 0.48864114478165266,
+                  "observedCumulativeLayoutShiftMainFrame": 0.48864114478165266,
+                  "observedTotalCumulativeLayoutShift": 0.48864114478165266,
+                  "observedFirstVisualChange": 684,
+                  "observedFirstVisualChangeTs": 758035940,
+                  "observedLastVisualChange": 1784,
+                  "observedLastVisualChangeTs": 759135940,
+                  "observedSpeedIndex": 1064,
+                  "observedSpeedIndexTs": 758416329
+                },
+                {
+                  "lcpInvalidated": false
+                }
+              ]
+            }
+          },
+          "diagnostics": {
+            "id": "diagnostics",
+            "title": "Diagnostics",
+            "description": "Collection of useful page vitals.",
+            "score": null,
+            "scoreDisplayMode": "informative",
+            "details": {
+              "type": "debugdata",
+              "items": [
+                {
+                  "numRequests": 33,
+                  "numScripts": 9,
+                  "numStylesheets": 3,
+                  "numFonts": 0,
+                  "numTasks": 448,
+                  "numTasksOver10ms": 1,
+                  "numTasksOver25ms": 0,
+                  "numTasksOver50ms": 0,
+                  "numTasksOver100ms": 0,
+                  "numTasksOver500ms": 0,
+                  "rtt": 149.625,
+                  "throughput": 3546699.91502754,
+                  "maxRtt": 149.625,
+                  "maxServerLatency": 14.218000000000018,
+                  "totalByteWeight": 223436,
+                  "totalTaskTime": 125.66400000000013,
+                  "mainDocumentTransferSize": 3190
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
     "screenshot": true,
-    "stats": null,
+    "stats": {
+      "grade": "F"
+    },
     "github_repository": null,
     "budget_page": null,
-    "declaration-a11y": null,
-    "declaration-rgpd": null,
+    "declaration-a11y": {
+      "mention": null
+    },
+    "declaration-rgpd": [
+      {
+        "slug": "ml",
+        "mention": null,
+        "maxScore": 0,
+        "score": 0,
+        "missingWords": [],
+        "missingTrackers": []
+      },
+      {
+        "slug": "pc",
+        "mention": null,
+        "maxScore": 0,
+        "score": 0,
+        "missingWords": [],
+        "missingTrackers": []
+      }
+    ],
     "betagouv": null,
-    "ecoindex": null,
+    "ecoindex": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "url": "https://elisa.service-civique.gouv.fr",
+        "size": 294.327,
+        "nodes": 77,
+        "requests": 24,
+        "grade": "A",
+        "score": 88,
+        "ges": 1.24,
+        "water": 1.86,
+        "ecoindex_version": "5.4.2",
+        "date": "2024-10-17 09:53:59.489926",
+        "page_type": null
+      }
+    ],
     "sonarcloud": null,
-    "dsfr": null,
+    "dsfr": {
+      "detected": false
+    },
     "summary": {
       "httpGrade": "F",
       "nmapGrade": "A",
@@ -6002,9 +6321,25 @@
       "testsslExpireDate": "2025-08-19T23:59:00.000Z",
       "testsslGrade": "T",
       "cookiesGrade": "C",
-      "cookiesCount": 3,
+      "cookiesCount": 4,
       "trackersGrade": "A",
-      "trackersCount": 0
+      "trackersCount": 0,
+      "lighthouse_performance": 0.88,
+      "lighthouse_performanceGrade": "A",
+      "lighthouse_accessibility": 0.9,
+      "lighthouse_accessibilityGrade": "A",
+      "lighthouse_best-practices": 0.83,
+      "lighthouse_best-practicesGrade": "B",
+      "lighthouse_seo": 0.5,
+      "lighthouse_seoGrade": "D",
+      "lighthouse_pwa": 0,
+      "lighthouse_pwaGrade": "F",
+      "statsGrade": "F",
+      "declaration-a11y": "F",
+      "declaration-rgpd-ml": "F",
+      "declaration-rgpd-pc": "F",
+      "ecoindexGrade": "A",
+      "dsfrGrade": "F"
     }
   }
 ]
