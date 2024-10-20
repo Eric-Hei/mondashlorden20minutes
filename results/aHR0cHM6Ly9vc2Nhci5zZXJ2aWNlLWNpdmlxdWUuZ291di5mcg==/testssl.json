@@ -339,7 +339,7 @@
               "ip"           : "oscar.service-civique.gouv.fr/178.32.192.70",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "245 >= 60 days"
+              "finding"      : "242 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -577,14 +577,14 @@
               "ip"           : "oscar.service-civique.gouv.fr/178.32.192.70",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "oscar.service-civique.gouv.fr/178.32.192.70",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1729159070"
+              "finding"      : "1729387517"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1161,6 +1161,6 @@
               "ip"           : "oscar.service-civique.gouv.fr/178.32.192.70",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "50"
+              "finding"      : "56"
           }
 ]
