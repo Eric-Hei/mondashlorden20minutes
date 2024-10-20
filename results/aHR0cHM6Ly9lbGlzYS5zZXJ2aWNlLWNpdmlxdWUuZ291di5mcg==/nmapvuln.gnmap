@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Thu Oct 17 10:05:20 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln elisa.service-civique.gouv.fr
+# Nmap 7.92 scan initiated Sun Oct 20 01:33:05 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln elisa.service-civique.gouv.fr
 Host: 217.109.233.83 (d96de953.fsp.oleane.fr)	Status: Up
 Host: 217.109.233.83 (d96de953.fsp.oleane.fr)	Ports: 80/open/tcp//http?///, 443/open/tcp//ssl|https?///	Ignored State: filtered (998)
-# Nmap done at Thu Oct 17 10:09:00 2024 -- 1 IP address (1 host up) scanned in 219.97 seconds
+# Nmap done at Sun Oct 20 01:36:45 2024 -- 1 IP address (1 host up) scanned in 220.19 seconds
