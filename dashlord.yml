@@ -29,6 +29,7 @@ urls:
   - url: https://oscar.service-civique.gouv.fr
   - url: https://elisa.service-civique.gouv.fr
   - url: https://www.service-civique.gouv.fr
+  - url: https://enm.mes-services.mer.gouv.fr
   
     repositories:
       - zammad/zammad
