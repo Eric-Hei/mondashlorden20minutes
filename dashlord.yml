@@ -26,9 +26,9 @@ tools:
 columns:
   zap: true
 urls:
-  - url: https://www.service-civique.gouv.fr
   - url: https://oscar.service-civique.gouv.fr
   - url: https://elisa.service-civique.gouv.fr
+  - url: https://www.service-civique.gouv.fr
   
     repositories:
       - zammad/zammad
