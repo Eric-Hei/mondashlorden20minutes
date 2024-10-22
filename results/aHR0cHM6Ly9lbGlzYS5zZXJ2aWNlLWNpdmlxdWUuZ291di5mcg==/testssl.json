@@ -339,7 +339,7 @@
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "303 >= 60 days"
+              "finding"      : "301 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1014,6 +1014,6 @@
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "98"
+              "finding"      : "53"
           }
 ]
