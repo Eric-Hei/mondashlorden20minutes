@@ -3,7 +3,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://elisa.service-civique.gouv.fr",
-        "size": 287.961,
+        "size": 288.246,
         "nodes": 77,
         "requests": 22,
         "grade": "A",
@@ -11,7 +11,7 @@
         "ges": 1.24,
         "water": 1.86,
         "ecoindex_version": "5.4.2",
-        "date": "2024-10-22 13:33:50.901338",
+        "date": "2024-10-22 15:40:20.151847",
         "page_type": null
     }
 ]
