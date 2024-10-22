@@ -584,7 +584,7 @@
               "ip"           : "oscar.service-civique.gouv.fr/178.32.192.70",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1729604275"
+              "finding"      : "1729611904"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1161,6 +1161,6 @@
               "ip"           : "oscar.service-civique.gouv.fr/178.32.192.70",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "51"
+              "finding"      : "87"
           }
 ]
