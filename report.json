@@ -3186,9 +3186,6 @@
   {
     "404": null,
     "url": "https://www.service-civique.gouv.fr",
-    "repositories": [
-      "zammad/zammad"
-    ],
     "http": null,
     "updownio": null,
     "nmap": {
