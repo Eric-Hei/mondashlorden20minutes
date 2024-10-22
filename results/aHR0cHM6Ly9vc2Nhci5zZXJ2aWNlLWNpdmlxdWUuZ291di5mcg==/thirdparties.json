@@ -3,7 +3,7 @@
   "cookies": [
     {
       "name": "ASP.NET_SessionId",
-      "value": "ij5uvzcmh01asofynyc4oxpn",
+      "value": "ywtg4a2g03bksbc1tllbn4tm",
       "domain": "oscar.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -21,7 +21,7 @@
     "cache-control": "private",
     "content-length": "11039",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 20 Oct 2024 01:24:29 GMT",
+    "date": "Tue, 22 Oct 2024 13:37:12 GMT",
     "server": "Microsoft-IIS/8.5",
     "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
     "x-aspnet-version": "4.0.30319",
