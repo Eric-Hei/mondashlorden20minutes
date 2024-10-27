@@ -3,7 +3,7 @@
   "cookies": [
     {
       "name": "ASP.NET_SessionId",
-      "value": "ydlfy1szv2a21dvd1l23gpdm",
+      "value": "2gcgbvlqnhnifcopnzxrwjeh",
       "domain": "oscar.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -21,7 +21,7 @@
     "cache-control": "private",
     "content-length": "11039",
     "content-type": "text/html; charset=utf-8",
-    "date": "Tue, 22 Oct 2024 15:43:52 GMT",
+    "date": "Sun, 27 Oct 2024 01:23:40 GMT",
     "server": "Microsoft-IIS/8.5",
     "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
     "x-aspnet-version": "4.0.30319",
@@ -33,16 +33,14 @@
       "ip": "178.32.192.70",
       "geoip": {
         "city": {
-          "geoname_id": 2988507,
+          "geoname_id": 3026194,
           "names": {
-            "de": "Paris",
-            "en": "Paris",
-            "es": "París",
-            "fr": "Paris",
-            "ja": "パリ",
-            "pt-BR": "Paris",
-            "ru": "Париж",
-            "zh-CN": "巴黎"
+            "de": "Château-Thierry",
+            "en": "Château-Thierry",
+            "fr": "Château-Thierry",
+            "ja": "シャトー＝ティエリ",
+            "ru": "Шато-Тьерри",
+            "zh-CN": "蒂耶里堡"
           }
         },
         "continent": {
@@ -76,12 +74,12 @@
         },
         "location": {
           "accuracy_radius": 500,
-          "latitude": 48.8323,
-          "longitude": 2.4075,
+          "latitude": 49.0527,
+          "longitude": 3.3935,
           "time_zone": "Europe/Paris"
         },
         "postal": {
-          "code": "75012"
+          "code": "02400"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -100,27 +98,31 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 3012874,
-            "iso_code": "IDF",
+            "geoname_id": 11071624,
+            "iso_code": "HDF",
             "names": {
-              "de": "Île-de-France",
-              "en": "Île-de-France",
-              "es": "Isla de Francia",
-              "fr": "Île-de-France",
-              "ja": "イル・ド・フランス",
-              "pt-BR": "Ilha de França",
-              "ru": "Иль-де-Франс",
-              "zh-CN": "法兰西岛"
+              "de": "Hauts-de-France",
+              "en": "Hauts-de-France",
+              "es": "Alta Francia",
+              "fr": "Hauts-de-France",
+              "ja": "オー＝ド＝フランス地域圏",
+              "pt-BR": "Altos da França",
+              "ru": "О-де-Франс",
+              "zh-CN": "上法兰西大区"
             }
           },
           {
-            "geoname_id": 2968815,
-            "iso_code": "75",
+            "geoname_id": 3038375,
+            "iso_code": "02",
             "names": {
-              "de": "Paris",
-              "en": "Paris",
-              "es": "Paris",
-              "fr": "Paris"
+              "de": "Aisne",
+              "en": "Aisne",
+              "es": "Aisne",
+              "fr": "Aisne",
+              "ja": "エーヌ県",
+              "pt-BR": "Aisne",
+              "ru": "Эна",
+              "zh-CN": "埃纳省"
             }
           }
         ]
