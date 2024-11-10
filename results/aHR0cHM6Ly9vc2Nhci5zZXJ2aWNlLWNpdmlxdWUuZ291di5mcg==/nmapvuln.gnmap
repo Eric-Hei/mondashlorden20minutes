@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Nov  3 01:24:49 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln oscar.service-civique.gouv.fr
+# Nmap 7.92 scan initiated Sun Nov 10 01:23:11 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln oscar.service-civique.gouv.fr
 Host: 178.32.192.70 (ip70.ip-178-32-192.eu)	Status: Up
 Host: 178.32.192.70 (ip70.ip-178-32-192.eu)	Ports: 80/open/tcp//http-proxy//HAProxy http proxy 1.3.1 or later/, 443/open/tcp//ssl|http-proxy//HAProxy http proxy 1.3.1 or later/	Ignored State: filtered (998)
-# Nmap done at Sun Nov  3 01:25:12 2024 -- 1 IP address (1 host up) scanned in 23.64 seconds
+# Nmap done at Sun Nov 10 01:23:33 2024 -- 1 IP address (1 host up) scanned in 22.52 seconds
