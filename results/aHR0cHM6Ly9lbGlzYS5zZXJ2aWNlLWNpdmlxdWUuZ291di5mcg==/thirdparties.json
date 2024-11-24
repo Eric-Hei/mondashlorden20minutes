@@ -3,7 +3,7 @@
   "cookies": [
     {
       "name": "TS01c3b0f5026",
-      "value": "01c55821151e0be921400741f68f34381b1762bbfb940592d30b09a12708f90b46e653ecdf4d1beb71c2060a0c7ce0e73d4af5d0d88db57629162477487b5e0fa2a3120f7a",
+      "value": "01c558211585757effb5976e90819d15698d262f4d9f624aed0cb6a76fc04abe8b4e1a4a5eac5015107487af60d836de28ebe1a4a659717bdbc02945ac691ba95426548872",
       "domain": ".elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -17,7 +17,7 @@
     },
     {
       "name": "TS01c3b0f5",
-      "value": "01b74c0fdd37b71125e17b869b43da2fd21d29da997f279910ad8cabbfd0795116f750cd6642fbcb728dc2e1793252d5fe1c1e3f99",
+      "value": "01b74c0fddb2dd0e1643e0f87c6b66bd924b4da01f6ab0f36ce03995ab5b078feeee78f766831cbe6dcfe1a9500c67058d5097ae80",
       "domain": ".elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -31,7 +31,7 @@
     },
     {
       "name": "civiq",
-      "value": "186128300.48160.0000",
+      "value": "169351084.48160.0000",
       "domain": "elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -63,15 +63,15 @@
     "connection": "close",
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 10 Nov 2024 01:27:55 GMT",
+    "date": "Sun, 24 Nov 2024 01:32:35 GMT",
     "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
     "max-forwards": "20",
     "pragma": "no-cache",
-    "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=186128300.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd37b71125e17b869b43da2fd21d29da997f279910ad8cabbfd0795116f750cd6642fbcb728dc2e1793252d5fe1c1e3f99; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly;\nTS01c3b0f5026=01c55821151e0be921400741f68f34381b1762bbfb940592d30b09a12708f90b46e653ecdf4d1beb71c2060a0c7ce0e73d4af5d0d88db57629162477487b5e0fa2a3120f7a; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly;",
+    "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=169351084.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fddb2dd0e1643e0f87c6b66bd924b4da01f6ab0f36ce03995ab5b078feeee78f766831cbe6dcfe1a9500c67058d5097ae80; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly;\nTS01c3b0f5026=01c558211585757effb5976e90819d15698d262f4d9f624aed0cb6a76fc04abe8b4e1a4a5eac5015107487af60d836de28ebe1a4a659717bdbc02945ac691ba95426548872; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly;",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "transfer-encoding": "chunked",
-    "via": "1.1 leto-p ()",
-    "x-correlationid": "Id-1b0c3067153b5cef00a6a6c3 0; Id-1b0c30679e5faf2f66549cf1 0"
+    "via": "1.1 leto-b ()",
+    "x-correlationid": "Id-33824267df983b84fbd53aac 0; Id-33824267e09871a7817c8baa 0"
   },
   "endpoints": [
     {
@@ -79,11 +79,11 @@
       "ip": "217.109.233.83",
       "geoip": {
         "city": {
-          "geoname_id": 3028838,
+          "geoname_id": 2978935,
           "names": {
-            "en": "Canéjan",
-            "fr": "Canéjean",
-            "zh-CN": "卡内让"
+            "en": "Saint-Laurent-de-Cognac",
+            "ru": "Сен-Лоран-де-Коньяк",
+            "zh-CN": "圣洛朗德科尼亚克"
           }
         },
         "continent": {
@@ -116,13 +116,13 @@
           }
         },
         "location": {
-          "accuracy_radius": 200,
-          "latitude": 44.7617,
-          "longitude": -0.6487,
+          "accuracy_radius": 100,
+          "latitude": 45.6956,
+          "longitude": -0.4038,
           "time_zone": "Europe/Paris"
         },
         "postal": {
-          "code": "33610"
+          "code": "16100"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -149,14 +149,13 @@
             }
           },
           {
-            "geoname_id": 3015948,
-            "iso_code": "33",
+            "geoname_id": 3026646,
+            "iso_code": "16",
             "names": {
-              "de": "Gironde",
-              "en": "Gironde",
-              "es": "Gironda",
-              "fr": "Gironde",
-              "pt-BR": "Gironda"
+              "de": "Charente",
+              "en": "Charente",
+              "es": "Charenta",
+              "fr": "Charente"
             }
           }
         ]
