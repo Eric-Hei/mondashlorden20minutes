@@ -1,16 +1,1 @@
-# Nmap 7.92 scan initiated Sun Nov 17 01:37:13 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln enm.mes-services.mer.gouv.fr
-Nmap scan report for enm.mes-services.mer.gouv.fr (194.5.170.186)
-Host is up (0.17s latency).
-Not shown: 997 filtered tcp ports (no-response)
-PORT    STATE  SERVICE  VERSION
-80/tcp  open   http     Apache httpd
-|_http-server-header: Apache
-113/tcp closed ident
-443/tcp open   ssl/http Apache httpd
-| http-server-header: 
-|   Apache
-|_  nginx
-|_http-trane-info: Problem with XML parsing of /evox/about
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Nov 17 01:37:44 2024 -- 1 IP address (1 host up) scanned in 31.05 seconds
+# Nmap 7.92 scan initiated Sun Nov 24 01:37:38 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln enm.mes-services.mer.gouv.fr

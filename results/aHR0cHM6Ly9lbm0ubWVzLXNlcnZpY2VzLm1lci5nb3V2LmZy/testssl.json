@@ -199,7 +199,7 @@
               "ip"           : "enm.mes-services.mer.gouv.fr/194.5.170.186",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
@@ -346,7 +346,7 @@
               "ip"           : "enm.mes-services.mer.gouv.fr/194.5.170.186",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "54 >= 30 days"
+              "finding"      : "47 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -507,7 +507,7 @@
               "ip"           : "enm.mes-services.mer.gouv.fr/194.5.170.186",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1731807385"
+              "finding"      : "1732412218"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1119,6 +1119,6 @@
               "ip"           : "enm.mes-services.mer.gouv.fr/194.5.170.186",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "111"
+              "finding"      : "89"
           }
 ]
