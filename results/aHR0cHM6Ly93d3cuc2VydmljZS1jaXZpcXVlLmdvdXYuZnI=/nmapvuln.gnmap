@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Dec  1 01:47:08 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.service-civique.gouv.fr
+# Nmap 7.92 scan initiated Sun Dec  8 01:35:33 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.service-civique.gouv.fr
 Host: 37.59.251.196 (p1-ogo.ogosecurity.com)	Status: Up
 Host: 37.59.251.196 (p1-ogo.ogosecurity.com)	Ports: 80/open/tcp//http//Golang net|http server (Go-IPFS json-rpc or InfluxDB API)/, 443/open/tcp//ssl|http//Golang net|http server (Go-IPFS json-rpc or InfluxDB API)/	Ignored State: filtered (998)
-# Nmap done at Sun Dec  1 01:47:33 2024 -- 1 IP address (1 host up) scanned in 24.78 seconds
+# Nmap done at Sun Dec  8 01:36:02 2024 -- 1 IP address (1 host up) scanned in 29.13 seconds
