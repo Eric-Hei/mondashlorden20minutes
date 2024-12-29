@@ -3,7 +3,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://enm.mes-services.mer.gouv.fr",
-        "size": 460.079,
+        "size": 459.772,
         "nodes": 215,
         "requests": 98,
         "grade": "C",
@@ -11,7 +11,7 @@
         "ges": 1.66,
         "water": 2.49,
         "ecoindex_version": "5.4.2",
-        "date": "2024-12-22 01:27:35.056173",
+        "date": "2024-12-29 01:29:14.509224",
         "page_type": null
     }
 ]
