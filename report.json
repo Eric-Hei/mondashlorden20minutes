@@ -373,7 +373,7 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "OK",
-        "finding": "172 >= 60 days"
+        "finding": "165 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -611,14 +611,14 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "1735435606"
+        "finding": "1736040291"
       },
       {
         "id": "HSTS_time",
@@ -1195,7 +1195,7 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "88"
+        "finding": "53"
       }
     ],
     "thirdparties": {
@@ -1324,10 +1324,9 @@
       {
         "requestedUrl": "https://oscar.service-civique.gouv.fr/",
         "finalUrl": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "fetchTime": "2024-12-29T01:25:19.772Z",
+        "fetchTime": "2025-01-05T01:23:51.871Z",
         "runWarnings": [
-          "The page may not be loading as expected because your test URL (https://oscar.service-civique.gouv.fr/) was redirected to https://oscar.service-civique.gouv.fr/Connexion.aspx. Try testing the second URL directly.",
-          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#cpu-throttling)."
+          "The page may not be loading as expected because your test URL (https://oscar.service-civique.gouv.fr/) was redirected to https://oscar.service-civique.gouv.fr/Connexion.aspx. Try testing the second URL directly."
         ],
         "categories": {
           "performance": {
@@ -1338,7 +1337,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.71
+            "score": 0.91
           },
           "accessibility": {
             "title": "Accessibility",
@@ -1390,53 +1389,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 5508,
+            "numericValue": 3563,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3154,
-                  "firstMeaningfulPaint": 3154,
-                  "largestContentfulPaint": 4881,
-                  "interactive": 5508,
-                  "speedIndex": 4463,
-                  "totalBlockingTime": 2,
-                  "maxPotentialFID": 53,
-                  "cumulativeLayoutShift": 0.00010841942115831977,
-                  "cumulativeLayoutShiftMainFrame": 0.00010841942115831977,
-                  "totalCumulativeLayoutShift": 0.00010841942115831977,
+                  "firstContentfulPaint": 1903,
+                  "firstMeaningfulPaint": 2256,
+                  "largestContentfulPaint": 3157,
+                  "interactive": 3563,
+                  "speedIndex": 2399,
+                  "totalBlockingTime": 3,
+                  "maxPotentialFID": 55,
+                  "cumulativeLayoutShift": 0.0001414120513103734,
+                  "cumulativeLayoutShiftMainFrame": 0.0001414120513103734,
+                  "totalCumulativeLayoutShift": 0.0001414120513103734,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 364188876,
+                  "observedTimeOriginTs": 300151848,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 364188876,
-                  "observedFirstPaint": 1908,
-                  "observedFirstPaintTs": 366096850,
-                  "observedFirstContentfulPaint": 1908,
-                  "observedFirstContentfulPaintTs": 366096850,
-                  "observedFirstContentfulPaintAllFrames": 1908,
-                  "observedFirstContentfulPaintAllFramesTs": 366096850,
-                  "observedFirstMeaningfulPaint": 2007,
-                  "observedFirstMeaningfulPaintTs": 366195787,
-                  "observedLargestContentfulPaint": 1908,
-                  "observedLargestContentfulPaintTs": 366096850,
-                  "observedLargestContentfulPaintAllFrames": 1908,
-                  "observedLargestContentfulPaintAllFramesTs": 366096850,
-                  "observedTraceEnd": 4620,
-                  "observedTraceEndTs": 368808670,
-                  "observedLoad": 2158,
-                  "observedLoadTs": 366346554,
-                  "observedDomContentLoaded": 1892,
-                  "observedDomContentLoadedTs": 366080625,
-                  "observedCumulativeLayoutShift": 0.00010841942115831977,
-                  "observedCumulativeLayoutShiftMainFrame": 0.00010841942115831977,
-                  "observedTotalCumulativeLayoutShift": 0.00010841942115831977,
-                  "observedFirstVisualChange": 1896,
-                  "observedFirstVisualChangeTs": 366084876,
-                  "observedLastVisualChange": 2179,
-                  "observedLastVisualChangeTs": 366367876,
-                  "observedSpeedIndex": 1902,
-                  "observedSpeedIndexTs": 366090522
+                  "observedNavigationStartTs": 300151848,
+                  "observedFirstPaint": 958,
+                  "observedFirstPaintTs": 301110256,
+                  "observedFirstContentfulPaint": 958,
+                  "observedFirstContentfulPaintTs": 301110256,
+                  "observedFirstContentfulPaintAllFrames": 958,
+                  "observedFirstContentfulPaintAllFramesTs": 301110256,
+                  "observedFirstMeaningfulPaint": 1148,
+                  "observedFirstMeaningfulPaintTs": 301299676,
+                  "observedLargestContentfulPaint": 1039,
+                  "observedLargestContentfulPaintTs": 301190404,
+                  "observedLargestContentfulPaintAllFrames": 1039,
+                  "observedLargestContentfulPaintAllFramesTs": 301190404,
+                  "observedTraceEnd": 3681,
+                  "observedTraceEndTs": 303833075,
+                  "observedLoad": 1283,
+                  "observedLoadTs": 301434992,
+                  "observedDomContentLoaded": 1129,
+                  "observedDomContentLoadedTs": 301280694,
+                  "observedCumulativeLayoutShift": 0.0001414120513103734,
+                  "observedCumulativeLayoutShiftMainFrame": 0.0001414120513103734,
+                  "observedTotalCumulativeLayoutShift": 0.0001414120513103734,
+                  "observedFirstVisualChange": 969,
+                  "observedFirstVisualChangeTs": 301120848,
+                  "observedLastVisualChange": 1319,
+                  "observedLastVisualChangeTs": 301470848,
+                  "observedSpeedIndex": 984,
+                  "observedSpeedIndexTs": 301135787
                 },
                 {
                   "lcpInvalidated": false
@@ -1458,18 +1457,18 @@
                   "numScripts": 6,
                   "numStylesheets": 2,
                   "numFonts": 1,
-                  "numTasks": 555,
-                  "numTasksOver10ms": 5,
-                  "numTasksOver25ms": 4,
-                  "numTasksOver50ms": 1,
+                  "numTasks": 551,
+                  "numTasksOver10ms": 2,
+                  "numTasksOver25ms": 0,
+                  "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 151.219,
-                  "throughput": 11175041.880813478,
-                  "maxRtt": 151.219,
-                  "maxServerLatency": 0.7990000000000066,
-                  "totalByteWeight": 1474463,
-                  "totalTaskTime": 224.6459999999983,
+                  "rtt": 84.61500000000001,
+                  "throughput": 21622932.64753939,
+                  "maxRtt": 84.61500000000001,
+                  "maxServerLatency": 0.9849999999999852,
+                  "totalByteWeight": 1221052,
+                  "totalTaskTime": 79.89000000000011,
                   "mainDocumentTransferSize": 11334
                 }
               ]
@@ -1519,7 +1518,7 @@
         "ges": 1.38,
         "water": 2.07,
         "ecoindex_version": "5.4.2",
-        "date": "2024-12-29 01:21:46.340243",
+        "date": "2025-01-05 01:20:54.467282",
         "page_type": null
       }
     ],
@@ -1538,8 +1537,8 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.71,
-      "lighthouse_performanceGrade": "B",
+      "lighthouse_performance": 0.91,
+      "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": 0.5,
       "lighthouse_accessibilityGrade": "D",
       "lighthouse_best-practices": 0.67,
@@ -1926,7 +1925,7 @@
         "ip": "elisa.service-civique.gouv.fr/217.109.233.83",
         "port": "443",
         "severity": "OK",
-        "finding": "233 >= 60 days"
+        "finding": "226 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -2601,7 +2600,7 @@
         "ip": "elisa.service-civique.gouv.fr/217.109.233.83",
         "port": "443",
         "severity": "INFO",
-        "finding": "55"
+        "finding": "56"
       }
     ],
     "thirdparties": {
@@ -2679,7 +2678,7 @@
       {
         "requestedUrl": "https://elisa.service-civique.gouv.fr/",
         "finalUrl": "https://elisa.service-civique.gouv.fr/civiqs/",
-        "fetchTime": "2024-12-29T01:29:27.411Z",
+        "fetchTime": "2025-01-05T01:28:38.392Z",
         "runWarnings": [
           "The page loaded too slowly to finish within the time limit. Results may be incomplete.",
           "The page may not be loading as expected because your test URL (https://elisa.service-civique.gouv.fr/) was redirected to https://elisa.service-civique.gouv.fr/civiqs/. Try testing the second URL directly."
@@ -2693,7 +2692,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.74
+            "score": 0.88
           },
           "accessibility": {
             "title": "Accessibility",
@@ -2745,53 +2744,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2691,
+            "numericValue": 950,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 951,
-                  "firstMeaningfulPaint": 951,
-                  "largestContentfulPaint": 951,
-                  "interactive": 2691,
-                  "speedIndex": 1651,
-                  "totalBlockingTime": 664,
-                  "maxPotentialFID": 502,
-                  "cumulativeLayoutShift": 0.2967429148196754,
-                  "cumulativeLayoutShiftMainFrame": 0.2967429148196754,
-                  "totalCumulativeLayoutShift": 0.2967429148196754,
+                  "firstContentfulPaint": 950,
+                  "firstMeaningfulPaint": 950,
+                  "largestContentfulPaint": 950,
+                  "interactive": 950,
+                  "speedIndex": 1321,
+                  "totalBlockingTime": 0,
+                  "maxPotentialFID": 33,
+                  "cumulativeLayoutShift": 0.48864114478165266,
+                  "cumulativeLayoutShiftMainFrame": 0.48864114478165266,
+                  "totalCumulativeLayoutShift": 0.48864114478165266,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 629983910,
+                  "observedTimeOriginTs": 587807389,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 629983910,
-                  "observedFirstPaint": 457,
-                  "observedFirstPaintTs": 630441208,
-                  "observedFirstContentfulPaint": 457,
-                  "observedFirstContentfulPaintTs": 630441208,
-                  "observedFirstContentfulPaintAllFrames": 457,
-                  "observedFirstContentfulPaintAllFramesTs": 630441208,
-                  "observedFirstMeaningfulPaint": 457,
-                  "observedFirstMeaningfulPaintTs": 630441208,
-                  "observedLargestContentfulPaint": 457,
-                  "observedLargestContentfulPaintTs": 630441208,
-                  "observedLargestContentfulPaintAllFrames": 457,
-                  "observedLargestContentfulPaintAllFramesTs": 630441208,
-                  "observedTraceEnd": 45009,
-                  "observedTraceEndTs": 674992644,
-                  "observedLoad": 1602,
-                  "observedLoadTs": 631585510,
-                  "observedDomContentLoaded": 450,
-                  "observedDomContentLoadedTs": 630434362,
-                  "observedCumulativeLayoutShift": 0.2967429148196754,
-                  "observedCumulativeLayoutShiftMainFrame": 0.2967429148196754,
-                  "observedTotalCumulativeLayoutShift": 0.2967429148196754,
-                  "observedFirstVisualChange": 457,
-                  "observedFirstVisualChangeTs": 630440910,
-                  "observedLastVisualChange": 1224,
-                  "observedLastVisualChangeTs": 631207910,
-                  "observedSpeedIndex": 684,
-                  "observedSpeedIndexTs": 630667439
+                  "observedNavigationStartTs": 587807389,
+                  "observedFirstPaint": 445,
+                  "observedFirstPaintTs": 588252409,
+                  "observedFirstContentfulPaint": 445,
+                  "observedFirstContentfulPaintTs": 588252409,
+                  "observedFirstContentfulPaintAllFrames": 445,
+                  "observedFirstContentfulPaintAllFramesTs": 588252409,
+                  "observedFirstMeaningfulPaint": 445,
+                  "observedFirstMeaningfulPaintTs": 588252409,
+                  "observedLargestContentfulPaint": 445,
+                  "observedLargestContentfulPaintTs": 588252409,
+                  "observedLargestContentfulPaintAllFrames": 445,
+                  "observedLargestContentfulPaintAllFramesTs": 588252409,
+                  "observedTraceEnd": 45007,
+                  "observedTraceEndTs": 632814492,
+                  "observedLoad": 1769,
+                  "observedLoadTs": 589576260,
+                  "observedDomContentLoaded": 430,
+                  "observedDomContentLoadedTs": 588237805,
+                  "observedCumulativeLayoutShift": 0.48864114478165266,
+                  "observedCumulativeLayoutShiftMainFrame": 0.48864114478165266,
+                  "observedTotalCumulativeLayoutShift": 0.48864114478165266,
+                  "observedFirstVisualChange": 452,
+                  "observedFirstVisualChangeTs": 588259389,
+                  "observedLastVisualChange": 1219,
+                  "observedLastVisualChangeTs": 589026389,
+                  "observedSpeedIndex": 681,
+                  "observedSpeedIndexTs": 588488460
                 },
                 {
                   "lcpInvalidated": false
@@ -2809,22 +2808,22 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 31,
+                  "numRequests": 32,
                   "numScripts": 9,
                   "numStylesheets": 3,
                   "numFonts": 0,
-                  "numTasks": 495,
-                  "numTasksOver10ms": 7,
-                  "numTasksOver25ms": 4,
-                  "numTasksOver50ms": 2,
-                  "numTasksOver100ms": 1,
+                  "numTasks": 530,
+                  "numTasksOver10ms": 0,
+                  "numTasksOver25ms": 0,
+                  "numTasksOver50ms": 0,
+                  "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 87.995,
-                  "throughput": 4569643.105117115,
-                  "maxRtt": 87.995,
-                  "maxServerLatency": 13.739999999999995,
-                  "totalByteWeight": 214023,
-                  "totalTaskTime": 365.2869999999996,
+                  "rtt": 88.859,
+                  "throughput": 4697859.914284834,
+                  "maxRtt": 88.859,
+                  "maxServerLatency": 14.474000000000032,
+                  "totalByteWeight": 217319,
+                  "totalTaskTime": 105.87200000000004,
                   "mainDocumentTransferSize": 3425
                 }
               ]
@@ -2866,7 +2865,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://elisa.service-civique.gouv.fr",
-        "size": 285.255,
+        "size": 285.41,
         "nodes": 77,
         "requests": 22,
         "grade": "A",
@@ -2874,7 +2873,7 @@
         "ges": 1.24,
         "water": 1.86,
         "ecoindex_version": "5.4.2",
-        "date": "2024-12-29 01:21:36.461396",
+        "date": "2025-01-05 01:20:53.850167",
         "page_type": null
       }
     ],
@@ -2893,8 +2892,8 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.74,
-      "lighthouse_performanceGrade": "B",
+      "lighthouse_performance": 0.88,
+      "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": 0.9,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 0.83,
@@ -3290,7 +3289,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "MEDIUM",
-        "finding": "expires < 60 days (38)"
+        "finding": "expires < 60 days (31)"
       },
       {
         "id": "cert_notBefore",
@@ -3528,14 +3527,14 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "1735436179"
+        "finding": "1736040354"
       },
       {
         "id": "HTTP_headerAge",
@@ -3606,7 +3605,7 @@
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-200",
-        "finding": "X-Varnish: 4175957 4599637X-Varnish: 4228878"
+        "finding": "X-Varnish: 6875777 7136404"
       },
       {
         "id": "heartbleed",
@@ -4105,7 +4104,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "90"
+        "finding": "91"
       }
     ],
     "thirdparties": {
@@ -4114,14 +4113,430 @@
       "headers": null,
       "endpoints": null
     },
-    "wappalyzer": null,
+    "wappalyzer": {
+      "urls": {
+        "https://www.service-civique.gouv.fr/": {
+          "status": 200
+        }
+      },
+      "technologies": [
+        {
+          "slug": "typescript",
+          "name": "TypeScript",
+          "description": "TypeScript is an open-source language which builds on JavaScript  by adding static type definitions.",
+          "confidence": 100,
+          "version": null,
+          "icon": "TypeScript.svg",
+          "website": "https://www.typescriptlang.org",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 27,
+              "slug": "programming-languages",
+              "name": "Programming languages"
+            }
+          ]
+        },
+        {
+          "slug": "facebook-login",
+          "name": "Facebook Login",
+          "description": "Facebook Login is a way for people to create accounts and log into your app across multiple platforms.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Facebook.svg",
+          "website": "https://developers.facebook.com/docs/facebook-login/",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 69,
+              "slug": "authentication",
+              "name": "Authentication"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "bootstrap",
+          "name": "Bootstrap",
+          "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
+          "confidence": 100,
+          "version": "4.6.0",
+          "icon": "Bootstrap.svg",
+          "website": "https://getbootstrap.com",
+          "cpe": "cpe:2.3:a:getbootstrap:bootstrap:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 66,
+              "slug": "ui-frameworks",
+              "name": "UI frameworks"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "varnish",
+          "name": "Varnish",
+          "description": "Varnish is a reverse caching proxy.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Varnish.svg",
+          "website": "https://www.varnish-cache.org",
+          "cpe": "cpe:2.3:a:varnish-software:varnish_cache:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 23,
+              "slug": "caching",
+              "name": "Caching"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "zone-js",
+          "name": "Zone.js",
+          "description": null,
+          "confidence": 100,
+          "version": null,
+          "icon": "Angular.svg",
+          "website": "https://github.com/angular/angular/tree/master/packages/zone.js",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 12,
+              "slug": "javascript-frameworks",
+              "name": "JavaScript frameworks"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "angular",
+          "name": "Angular",
+          "description": "Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google.",
+          "confidence": 100,
+          "version": "9.1.0",
+          "icon": "Angular.svg",
+          "website": "https://angular.io",
+          "cpe": "cpe:2.3:a:angularjs:angular:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 12,
+              "slug": "javascript-frameworks",
+              "name": "JavaScript frameworks"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "twitter",
+          "name": "Twitter",
+          "description": "Twitter is a 'microblogging' system that allows you to send and receive short posts called tweets.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Twitter.svg",
+          "website": "https://twitter.com",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 5,
+              "slug": "widgets",
+              "name": "Widgets"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "didomi",
+          "name": "Didomi",
+          "description": "Didomi is a consent management platform helping brands and businesses collect, store and leverage their customer consents.",
+          "confidence": 100,
+          "version": null,
+          "icon": "didomi.png",
+          "website": "https://www.didomi.io/en/consent-preference-management",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 67,
+              "slug": "cookie-compliance",
+              "name": "Cookie compliance"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "twitter-ads",
+          "name": "Twitter Ads",
+          "description": "Twitter Ads is an advertising platform for Twitter 'microblogging' system.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Twitter.svg",
+          "website": "https://ads.twitter.com",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 36,
+              "slug": "advertising",
+              "name": "Advertising"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "matomo-tag-manager",
+          "name": "Matomo Tag Manager",
+          "description": "Matomo Tag Manager manages tracking and marketing tags.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Matomo.svg",
+          "website": "https://developer.matomo.org/guides/tagmanager/introduction",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 42,
+              "slug": "tag-managers",
+              "name": "Tag managers"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "matomo-analytics",
+          "name": "Matomo Analytics",
+          "description": "Matomo Analytics is a free and open-source web analytics application, that runs on a PHP/MySQL web-server.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Matomo.svg",
+          "website": "https://matomo.org",
+          "cpe": "cpe:2.3:a:matomo:matomo:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 10,
+              "slug": "analytics",
+              "name": "Analytics"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "lazysizes",
+          "name": "LazySizes",
+          "description": "LazySizes is a JavaScript library used to delay the loading of images (iframes, scripts, etc) until they come into view.",
+          "confidence": 100,
+          "version": null,
+          "icon": "default.svg",
+          "website": "https://github.com/aFarkas/lazysizes",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 59,
+              "slug": "javascript-libraries",
+              "name": "JavaScript libraries"
+            },
+            {
+              "id": 92,
+              "slug": "performance",
+              "name": "Performance"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "jquery",
+          "name": "jQuery",
+          "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+          "confidence": 100,
+          "version": "3.4.1",
+          "icon": "jQuery.svg",
+          "website": "https://jquery.com",
+          "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 59,
+              "slug": "javascript-libraries",
+              "name": "JavaScript libraries"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "hammer-js",
+          "name": "Hammer.js",
+          "description": null,
+          "confidence": 100,
+          "version": "2.0.7",
+          "icon": "Hammer.js.png",
+          "website": "https://hammerjs.github.io",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 59,
+              "slug": "javascript-libraries",
+              "name": "JavaScript libraries"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "core-js",
+          "name": "core-js",
+          "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
+          "confidence": 100,
+          "version": "3.6.4",
+          "icon": "core-js.png",
+          "website": "https://github.com/zloirock/core-js",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 59,
+              "slug": "javascript-libraries",
+              "name": "JavaScript libraries"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "twicpics",
+          "name": "TwicPics",
+          "description": "TwicPics offers on-demand responsive image generation.",
+          "confidence": 100,
+          "version": null,
+          "icon": "TwicPics.svg",
+          "website": "https://www.twicpics.com",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 31,
+              "slug": "cdn",
+              "name": "CDN"
+            },
+            {
+              "id": 59,
+              "slug": "javascript-libraries",
+              "name": "JavaScript libraries"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "recaptcha",
+          "name": "reCAPTCHA",
+          "description": "reCAPTCHA is a free service from Google that helps protect websites from spam and abuse.",
+          "confidence": 100,
+          "version": null,
+          "icon": "reCAPTCHA.svg",
+          "website": "https://www.google.com/recaptcha/",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 16,
+              "slug": "security",
+              "name": "Security"
+            }
+          ]
+        },
+        {
+          "slug": "mailchimp",
+          "name": "MailChimp",
+          "description": "Mailchimp is a marketing automation platform and email marketing service.",
+          "confidence": 100,
+          "version": null,
+          "icon": "mailchimp.svg",
+          "website": "https://mailchimp.com",
+          "cpe": "cpe:2.3:a:thinkshout:mailchimp:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 32,
+              "slug": "marketing-automation",
+              "name": "Marketing automation"
+            },
+            {
+              "id": 75,
+              "slug": "email",
+              "name": "Email"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "hsts",
+          "name": "HSTS",
+          "description": "HTTP Strict Transport Security (HSTS) informs browsers that the site should only be accessed using HTTPS.",
+          "confidence": 100,
+          "version": null,
+          "icon": "default.svg",
+          "website": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 16,
+              "slug": "security",
+              "name": "Security"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "webpack",
+          "name": "Webpack",
+          "description": "Webpack is an open-source JavaScript module bundler.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Webpack.svg",
+          "website": "https://webpack.js.org/",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 19,
+              "slug": "miscellaneous",
+              "name": "Miscellaneous"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "open-graph",
+          "name": "Open Graph",
+          "description": "Open Graph is a protocol that is used to integrate any web page into the social graph.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Open Graph.png",
+          "website": "https://ogp.me",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 19,
+              "slug": "miscellaneous",
+              "name": "Miscellaneous"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "module-federation",
+          "name": "Module Federation",
+          "description": "Module Federation is a webpack technology for dynamically loading parts of other independently deployed builds.",
+          "confidence": 50,
+          "version": null,
+          "icon": "Webpack.svg",
+          "website": "https://webpack.js.org/concepts/module-federation/",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 19,
+              "slug": "miscellaneous",
+              "name": "Miscellaneous"
+            }
+          ]
+        }
+      ]
+    },
     "zap": null,
     "nuclei": [],
     "lhr": [
       {
         "requestedUrl": "https://www.service-civique.gouv.fr/",
         "finalUrl": "https://www.service-civique.gouv.fr/",
-        "fetchTime": "2024-12-29T01:34:31.653Z",
+        "fetchTime": "2025-01-05T01:24:06.872Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -4184,53 +4599,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 17307,
+            "numericValue": 16112,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1920,
-                  "firstMeaningfulPaint": 6470,
-                  "largestContentfulPaint": 15790,
-                  "interactive": 17307,
-                  "speedIndex": 11701,
-                  "totalBlockingTime": 1763,
-                  "maxPotentialFID": 731,
-                  "cumulativeLayoutShift": 0.9137940724690755,
-                  "cumulativeLayoutShiftMainFrame": 0.9137940724690755,
-                  "totalCumulativeLayoutShift": 0.9137940724690755,
+                  "firstContentfulPaint": 2219,
+                  "firstMeaningfulPaint": 7427,
+                  "largestContentfulPaint": 15607,
+                  "interactive": 16112,
+                  "speedIndex": 10586,
+                  "totalBlockingTime": 1547,
+                  "maxPotentialFID": 730,
+                  "cumulativeLayoutShift": 0.8909766727023655,
+                  "cumulativeLayoutShiftMainFrame": 0.8909766727023655,
+                  "totalCumulativeLayoutShift": 0.8909766727023655,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 950936283,
+                  "observedTimeOriginTs": 313794502,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 950936283,
-                  "observedFirstPaint": 1229,
-                  "observedFirstPaintTs": 952164839,
-                  "observedFirstContentfulPaint": 1229,
-                  "observedFirstContentfulPaintTs": 952164839,
-                  "observedFirstContentfulPaintAllFrames": 1229,
-                  "observedFirstContentfulPaintAllFramesTs": 952164839,
-                  "observedFirstMeaningfulPaint": 1534,
-                  "observedFirstMeaningfulPaintTs": 952470549,
-                  "observedLargestContentfulPaint": 2812,
-                  "observedLargestContentfulPaintTs": 953748182,
-                  "observedLargestContentfulPaintAllFrames": 2812,
-                  "observedLargestContentfulPaintAllFramesTs": 953748182,
-                  "observedTraceEnd": 6139,
-                  "observedTraceEndTs": 957075287,
-                  "observedLoad": 3351,
-                  "observedLoadTs": 954286991,
-                  "observedDomContentLoaded": 1748,
-                  "observedDomContentLoadedTs": 952684433,
-                  "observedCumulativeLayoutShift": 0.9137940724690755,
-                  "observedCumulativeLayoutShiftMainFrame": 0.9137940724690755,
-                  "observedTotalCumulativeLayoutShift": 0.9137940724690755,
-                  "observedFirstVisualChange": 1242,
-                  "observedFirstVisualChangeTs": 952178283,
-                  "observedLastVisualChange": 2875,
-                  "observedLastVisualChangeTs": 953811283,
-                  "observedSpeedIndex": 2328,
-                  "observedSpeedIndexTs": 953264701
+                  "observedNavigationStartTs": 313794502,
+                  "observedFirstPaint": 946,
+                  "observedFirstPaintTs": 314740788,
+                  "observedFirstContentfulPaint": 946,
+                  "observedFirstContentfulPaintTs": 314740788,
+                  "observedFirstContentfulPaintAllFrames": 946,
+                  "observedFirstContentfulPaintAllFramesTs": 314740788,
+                  "observedFirstMeaningfulPaint": 1233,
+                  "observedFirstMeaningfulPaintTs": 315027445,
+                  "observedLargestContentfulPaint": 2345,
+                  "observedLargestContentfulPaintTs": 316139669,
+                  "observedLargestContentfulPaintAllFrames": 2345,
+                  "observedLargestContentfulPaintAllFramesTs": 316139669,
+                  "observedTraceEnd": 5499,
+                  "observedTraceEndTs": 319293088,
+                  "observedLoad": 2737,
+                  "observedLoadTs": 316531968,
+                  "observedDomContentLoaded": 1218,
+                  "observedDomContentLoadedTs": 315012111,
+                  "observedCumulativeLayoutShift": 0.8909766727023655,
+                  "observedCumulativeLayoutShiftMainFrame": 0.8909766727023655,
+                  "observedTotalCumulativeLayoutShift": 0.8909766727023655,
+                  "observedFirstVisualChange": 959,
+                  "observedFirstVisualChangeTs": 314753502,
+                  "observedLastVisualChange": 2309,
+                  "observedLastVisualChangeTs": 316103502,
+                  "observedSpeedIndex": 1822,
+                  "observedSpeedIndexTs": 315616875
                 },
                 {
                   "lcpInvalidated": false
@@ -4248,23 +4663,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 119,
-                  "numScripts": 58,
+                  "numRequests": 108,
+                  "numScripts": 56,
                   "numStylesheets": 6,
                   "numFonts": 7,
-                  "numTasks": 2121,
-                  "numTasksOver10ms": 28,
-                  "numTasksOver25ms": 19,
+                  "numTasks": 1861,
+                  "numTasksOver10ms": 25,
+                  "numTasksOver25ms": 18,
                   "numTasksOver50ms": 5,
                   "numTasksOver100ms": 3,
                   "numTasksOver500ms": 0,
                   "rtt": 0,
-                  "throughput": 20444796.62033822,
-                  "maxRtt": 111.62100000000001,
-                  "maxServerLatency": 103.51100000000002,
-                  "totalByteWeight": 2242234,
-                  "totalTaskTime": 1581.2609999999947,
-                  "mainDocumentTransferSize": 8890
+                  "throughput": 18577058.109461565,
+                  "maxRtt": 111.48599999999999,
+                  "maxServerLatency": 73.757,
+                  "totalByteWeight": 2202442,
+                  "totalTaskTime": 1461.233999999994,
+                  "mainDocumentTransferSize": 8882
                 }
               ]
             }
@@ -4306,15 +4721,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://www.service-civique.gouv.fr",
-        "size": 2822.558,
-        "nodes": 1067,
-        "requests": 115,
+        "size": 2804.734,
+        "nodes": 1065,
+        "requests": 109,
         "grade": "E",
-        "score": 27,
-        "ges": 2.46,
-        "water": 3.69,
+        "score": 28,
+        "ges": 2.44,
+        "water": 3.66,
         "ecoindex_version": "5.4.2",
-        "date": "2024-12-29 01:21:39.259951",
+        "date": "2025-01-05 01:20:59.448390",
         "page_type": "siteweb"
       }
     ],
@@ -4733,7 +5148,7 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "OK",
-        "finding": "73 >= 30 days"
+        "finding": "66 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -4894,7 +5309,7 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "1735436093"
+        "finding": "1736040851"
       },
       {
         "id": "HSTS_time",
@@ -5506,7 +5921,7 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "95"
+        "finding": "153"
       }
     ],
     "thirdparties": {
@@ -5677,7 +6092,7 @@
       {
         "requestedUrl": "https://enm.mes-services.mer.gouv.fr/",
         "finalUrl": "https://enm.mes-services.mer.gouv.fr/login",
-        "fetchTime": "2024-12-29T01:32:12.599Z",
+        "fetchTime": "2025-01-05T01:30:26.626Z",
         "runWarnings": [
           "The page loaded too slowly to finish within the time limit. Results may be incomplete.",
           "The page may not be loading as expected because your test URL (https://enm.mes-services.mer.gouv.fr/) was redirected to https://enm.mes-services.mer.gouv.fr/login. Try testing the second URL directly."
@@ -5691,7 +6106,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.7
+            "score": 0.62
           },
           "accessibility": {
             "title": "Accessibility",
@@ -5743,53 +6158,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 4500,
+            "numericValue": 5238,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3137,
-                  "firstMeaningfulPaint": 3261,
-                  "largestContentfulPaint": 3905,
-                  "interactive": 4500,
-                  "speedIndex": 3137,
-                  "totalBlockingTime": 183,
-                  "maxPotentialFID": 243,
-                  "cumulativeLayoutShift": 0.25319630432128903,
-                  "cumulativeLayoutShiftMainFrame": 0.25319630432128903,
-                  "totalCumulativeLayoutShift": 0.25319630432128903,
+                  "firstContentfulPaint": 3029,
+                  "firstMeaningfulPaint": 3231,
+                  "largestContentfulPaint": 3769,
+                  "interactive": 5238,
+                  "speedIndex": 3029,
+                  "totalBlockingTime": 416,
+                  "maxPotentialFID": 280,
+                  "cumulativeLayoutShift": 0.2865142288208008,
+                  "cumulativeLayoutShiftMainFrame": 0.2865142288208008,
+                  "totalCumulativeLayoutShift": 0.2865142288208008,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 352306547,
+                  "observedTimeOriginTs": 328658116,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 352306547,
-                  "observedFirstPaint": 461,
-                  "observedFirstPaintTs": 352767418,
-                  "observedFirstContentfulPaint": 461,
-                  "observedFirstContentfulPaintTs": 352767418,
-                  "observedFirstContentfulPaintAllFrames": 461,
-                  "observedFirstContentfulPaintAllFramesTs": 352767418,
-                  "observedFirstMeaningfulPaint": 461,
-                  "observedFirstMeaningfulPaintTs": 352767418,
-                  "observedLargestContentfulPaint": 461,
-                  "observedLargestContentfulPaintTs": 352767418,
-                  "observedLargestContentfulPaintAllFrames": 461,
-                  "observedLargestContentfulPaintAllFramesTs": 352767418,
-                  "observedTraceEnd": 43849,
-                  "observedTraceEndTs": 396155436,
-                  "observedLoad": 545,
-                  "observedLoadTs": 352851840,
+                  "observedNavigationStartTs": 328658116,
+                  "observedFirstPaint": 449,
+                  "observedFirstPaintTs": 329106924,
+                  "observedFirstContentfulPaint": 449,
+                  "observedFirstContentfulPaintTs": 329106924,
+                  "observedFirstContentfulPaintAllFrames": 449,
+                  "observedFirstContentfulPaintAllFramesTs": 329106924,
+                  "observedFirstMeaningfulPaint": 449,
+                  "observedFirstMeaningfulPaintTs": 329106924,
+                  "observedLargestContentfulPaint": 449,
+                  "observedLargestContentfulPaintTs": 329106924,
+                  "observedLargestContentfulPaintAllFrames": 449,
+                  "observedLargestContentfulPaintAllFramesTs": 329106924,
+                  "observedTraceEnd": 43883,
+                  "observedTraceEndTs": 372541348,
+                  "observedLoad": 493,
+                  "observedLoadTs": 329150704,
                   "observedDomContentLoaded": 0,
-                  "observedDomContentLoadedTs": 352306877,
-                  "observedCumulativeLayoutShift": 0.25319630432128903,
-                  "observedCumulativeLayoutShiftMainFrame": 0.25319630432128903,
-                  "observedTotalCumulativeLayoutShift": 0.25319630432128903,
-                  "observedFirstVisualChange": 29,
-                  "observedFirstVisualChangeTs": 352335547,
-                  "observedLastVisualChange": 579,
-                  "observedLastVisualChangeTs": 352885547,
-                  "observedSpeedIndex": 296,
-                  "observedSpeedIndexTs": 352602062
+                  "observedDomContentLoadedTs": 328658472,
+                  "observedCumulativeLayoutShift": 0.2865142288208008,
+                  "observedCumulativeLayoutShiftMainFrame": 0.2865142288208008,
+                  "observedTotalCumulativeLayoutShift": 0.2865142288208008,
+                  "observedFirstVisualChange": 12,
+                  "observedFirstVisualChangeTs": 328670116,
+                  "observedLastVisualChange": 1062,
+                  "observedLastVisualChangeTs": 329720116,
+                  "observedSpeedIndex": 293,
+                  "observedSpeedIndexTs": 328950675
                 },
                 {
                   "lcpInvalidated": false
@@ -5811,18 +6226,18 @@
                   "numScripts": 16,
                   "numStylesheets": 6,
                   "numFonts": 6,
-                  "numTasks": 6970,
-                  "numTasksOver10ms": 8,
-                  "numTasksOver25ms": 3,
-                  "numTasksOver50ms": 3,
+                  "numTasks": 6840,
+                  "numTasksOver10ms": 16,
+                  "numTasksOver25ms": 8,
+                  "numTasksOver50ms": 4,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 85.46300000000001,
-                  "throughput": 7146340.163662753,
-                  "maxRtt": 110.987,
-                  "maxServerLatency": 9.310000000000016,
-                  "totalByteWeight": 420129,
-                  "totalTaskTime": 1216.3069999999843,
+                  "rtt": 102.292,
+                  "throughput": 7463041.9473553635,
+                  "maxRtt": 102.292,
+                  "maxServerLatency": 8.909999999999997,
+                  "totalByteWeight": 422061,
+                  "totalTaskTime": 1568.0509999999938,
                   "mainDocumentTransferSize": 1351
                 }
               ]
@@ -5871,7 +6286,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://enm.mes-services.mer.gouv.fr",
-        "size": 459.772,
+        "size": 458.624,
         "nodes": 215,
         "requests": 98,
         "grade": "C",
@@ -5879,7 +6294,7 @@
         "ges": 1.66,
         "water": 2.49,
         "ecoindex_version": "5.4.2",
-        "date": "2024-12-29 01:29:14.509224",
+        "date": "2025-01-05 01:27:02.267471",
         "page_type": null
       }
     ],
@@ -5898,8 +6313,8 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.7,
-      "lighthouse_performanceGrade": "B",
+      "lighthouse_performance": 0.62,
+      "lighthouse_performanceGrade": "C",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 0.92,
