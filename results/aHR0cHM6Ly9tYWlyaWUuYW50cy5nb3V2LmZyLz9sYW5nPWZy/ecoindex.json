@@ -3,7 +3,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://mairie.ants.gouv.fr/?lang=fr",
-        "size": 3086.846,
+        "size": 3086.831,
         "nodes": 350,
         "requests": 37,
         "grade": "C",
@@ -11,7 +11,7 @@
         "ges": 1.7,
         "water": 2.55,
         "ecoindex_version": "5.4.2",
-        "date": "2025-01-20 18:16:35.951997",
+        "date": "2025-01-26 01:33:27.773186",
         "page_type": "website"
     }
 ]
