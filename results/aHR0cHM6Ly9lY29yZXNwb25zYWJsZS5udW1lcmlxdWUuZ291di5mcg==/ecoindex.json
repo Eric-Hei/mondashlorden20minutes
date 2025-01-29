@@ -1,0 +1,17 @@
+[
+    {
+        "width": 1920,
+        "height": 1080,
+        "url": "https://ecoresponsable.numerique.gouv.fr",
+        "size": 622.401,
+        "nodes": 388,
+        "requests": 35,
+        "grade": "B",
+        "score": 73.0,
+        "ges": 1.54,
+        "water": 2.31,
+        "ecoindex_version": "5.4.2",
+        "date": "2025-01-29 09:06:35.569571",
+        "page_type": null
+    }
+]
