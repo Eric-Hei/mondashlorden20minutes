@@ -3,15 +3,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://pha.ants.gouv.fr/?lang=fr",
-        "size": 3635.489,
+        "size": 3637.217,
         "nodes": 588,
-        "requests": 40,
+        "requests": 41,
         "grade": "D",
         "score": 54.0,
         "ges": 1.92,
         "water": 2.88,
         "ecoindex_version": "5.4.2",
-        "date": "2025-01-29 08:59:18.600905",
+        "date": "2025-02-02 01:30:44.002601",
         "page_type": "website"
     }
 ]
