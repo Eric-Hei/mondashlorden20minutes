@@ -380,7 +380,7 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "OK",
-        "finding": "137 >= 60 days"
+        "finding": "130 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -618,14 +618,14 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "1738459142"
+        "finding": "1739064024"
       },
       {
         "id": "HSTS_time",
@@ -1202,7 +1202,7 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "51"
+        "finding": "53"
       }
     ],
     "thirdparties": {
@@ -1331,7 +1331,7 @@
       {
         "requestedUrl": "https://oscar.service-civique.gouv.fr/",
         "finalUrl": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "fetchTime": "2025-02-02T01:18:03.154Z",
+        "fetchTime": "2025-02-09T01:19:22.550Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://oscar.service-civique.gouv.fr/) was redirected to https://oscar.service-civique.gouv.fr/Connexion.aspx. Try testing the second URL directly."
         ],
@@ -1344,7 +1344,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.94
+            "score": 0.96
           },
           "accessibility": {
             "title": "Accessibility",
@@ -1396,53 +1396,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 5388,
+            "numericValue": 2255,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1970,
-                  "firstMeaningfulPaint": 2267,
-                  "largestContentfulPaint": 2265,
-                  "interactive": 5388,
-                  "speedIndex": 2459,
-                  "totalBlockingTime": 3,
-                  "maxPotentialFID": 56,
-                  "cumulativeLayoutShift": 0.0012374748608046996,
-                  "cumulativeLayoutShiftMainFrame": 0.0012374748608046996,
-                  "totalCumulativeLayoutShift": 0.0012374748608046996,
+                  "firstContentfulPaint": 1956,
+                  "firstMeaningfulPaint": 2255,
+                  "largestContentfulPaint": 2330,
+                  "interactive": 2255,
+                  "speedIndex": 2418,
+                  "totalBlockingTime": 0,
+                  "maxPotentialFID": 49,
+                  "cumulativeLayoutShift": 0.0012157443622132333,
+                  "cumulativeLayoutShiftMainFrame": 0.0012157443622132333,
+                  "totalCumulativeLayoutShift": 0.0012157443622132333,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 234764361,
+                  "observedTimeOriginTs": 259801788,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 234764361,
-                  "observedFirstPaint": 1005,
-                  "observedFirstPaintTs": 235769057,
-                  "observedFirstContentfulPaint": 1005,
-                  "observedFirstContentfulPaintTs": 235769057,
-                  "observedFirstContentfulPaintAllFrames": 1005,
-                  "observedFirstContentfulPaintAllFramesTs": 235769057,
-                  "observedFirstMeaningfulPaint": 1117,
-                  "observedFirstMeaningfulPaintTs": 235881658,
-                  "observedLargestContentfulPaint": 1018,
-                  "observedLargestContentfulPaintTs": 235782292,
-                  "observedLargestContentfulPaintAllFrames": 1018,
-                  "observedLargestContentfulPaintAllFramesTs": 235782292,
-                  "observedTraceEnd": 3837,
-                  "observedTraceEndTs": 238601120,
-                  "observedLoad": 1435,
-                  "observedLoadTs": 236199623,
-                  "observedDomContentLoaded": 1108,
-                  "observedDomContentLoadedTs": 235872410,
-                  "observedCumulativeLayoutShift": 0.0012374748608046996,
-                  "observedCumulativeLayoutShiftMainFrame": 0.0012374748608046996,
-                  "observedTotalCumulativeLayoutShift": 0.0012374748608046996,
-                  "observedFirstVisualChange": 1009,
-                  "observedFirstVisualChangeTs": 235773361,
-                  "observedLastVisualChange": 1459,
-                  "observedLastVisualChangeTs": 236223361,
-                  "observedSpeedIndex": 1021,
-                  "observedSpeedIndexTs": 235785068
+                  "observedNavigationStartTs": 259801788,
+                  "observedFirstPaint": 977,
+                  "observedFirstPaintTs": 260778628,
+                  "observedFirstContentfulPaint": 977,
+                  "observedFirstContentfulPaintTs": 260778628,
+                  "observedFirstContentfulPaintAllFrames": 977,
+                  "observedFirstContentfulPaintAllFramesTs": 260778628,
+                  "observedFirstMeaningfulPaint": 1175,
+                  "observedFirstMeaningfulPaintTs": 260976680,
+                  "observedLargestContentfulPaint": 977,
+                  "observedLargestContentfulPaintTs": 260778628,
+                  "observedLargestContentfulPaintAllFrames": 977,
+                  "observedLargestContentfulPaintAllFramesTs": 260778628,
+                  "observedTraceEnd": 3728,
+                  "observedTraceEndTs": 263529983,
+                  "observedLoad": 1332,
+                  "observedLoadTs": 261133345,
+                  "observedDomContentLoaded": 1116,
+                  "observedDomContentLoadedTs": 260917298,
+                  "observedCumulativeLayoutShift": 0.0012157443622132333,
+                  "observedCumulativeLayoutShiftMainFrame": 0.0012157443622132333,
+                  "observedTotalCumulativeLayoutShift": 0.0012157443622132333,
+                  "observedFirstVisualChange": 987,
+                  "observedFirstVisualChangeTs": 260788788,
+                  "observedLastVisualChange": 1337,
+                  "observedLastVisualChangeTs": 261138788,
+                  "observedSpeedIndex": 998,
+                  "observedSpeedIndexTs": 260799734
                 },
                 {
                   "lcpInvalidated": false
@@ -1464,18 +1464,18 @@
                   "numScripts": 6,
                   "numStylesheets": 2,
                   "numFonts": 1,
-                  "numTasks": 595,
-                  "numTasksOver10ms": 4,
-                  "numTasksOver25ms": 1,
+                  "numTasks": 562,
+                  "numTasksOver10ms": 3,
+                  "numTasksOver25ms": 2,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 86.02600000000001,
-                  "throughput": 15546220.657312736,
-                  "maxRtt": 86.02600000000001,
-                  "maxServerLatency": 2.801999999999964,
+                  "rtt": 83.53,
+                  "throughput": 16615272.442312155,
+                  "maxRtt": 83.53,
+                  "maxServerLatency": 0.8269999999999982,
                   "totalByteWeight": 1221053,
-                  "totalTaskTime": 134.55899999999997,
+                  "totalTaskTime": 157.4719999999994,
                   "mainDocumentTransferSize": 11334
                 }
               ]
@@ -1525,7 +1525,7 @@
         "ges": 1.38,
         "water": 2.07,
         "ecoindex_version": "5.4.2",
-        "date": "2025-02-02 01:17:12.434949",
+        "date": "2025-02-09 01:18:22.555789",
         "page_type": null
       }
     ],
@@ -1544,7 +1544,7 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.94,
+      "lighthouse_performance": 0.96,
       "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": 0.5,
       "lighthouse_accessibilityGrade": "D",
@@ -1932,7 +1932,7 @@
         "ip": "elisa.service-civique.gouv.fr/217.109.233.83",
         "port": "443",
         "severity": "OK",
-        "finding": "198 >= 60 days"
+        "finding": "191 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -2607,7 +2607,7 @@
         "ip": "elisa.service-civique.gouv.fr/217.109.233.83",
         "port": "443",
         "severity": "INFO",
-        "finding": "89"
+        "finding": "55"
       }
     ],
     "thirdparties": {
@@ -2685,7 +2685,7 @@
       {
         "requestedUrl": "https://elisa.service-civique.gouv.fr/",
         "finalUrl": "https://elisa.service-civique.gouv.fr/civiqs/",
-        "fetchTime": "2025-02-02T01:22:40.320Z",
+        "fetchTime": "2025-02-09T01:23:56.925Z",
         "runWarnings": [
           "The page loaded too slowly to finish within the time limit. Results may be incomplete.",
           "The page may not be loading as expected because your test URL (https://elisa.service-civique.gouv.fr/) was redirected to https://elisa.service-civique.gouv.fr/civiqs/. Try testing the second URL directly."
@@ -2699,7 +2699,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.8
+            "score": 0.83
           },
           "accessibility": {
             "title": "Accessibility",
@@ -2751,53 +2751,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 951,
+            "numericValue": 971,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 951,
-                  "firstMeaningfulPaint": 951,
-                  "largestContentfulPaint": 3084,
-                  "interactive": 951,
-                  "speedIndex": 2270,
+                  "firstContentfulPaint": 963,
+                  "firstMeaningfulPaint": 963,
+                  "largestContentfulPaint": 2933,
+                  "interactive": 971,
+                  "speedIndex": 2042,
                   "totalBlockingTime": 0,
-                  "maxPotentialFID": 33,
-                  "cumulativeLayoutShift": 0.6153738974462739,
-                  "cumulativeLayoutShiftMainFrame": 0.6153738974462739,
-                  "totalCumulativeLayoutShift": 0.6153738974462739,
+                  "maxPotentialFID": 69,
+                  "cumulativeLayoutShift": 0.4578398268510482,
+                  "cumulativeLayoutShiftMainFrame": 0.4578398268510482,
+                  "totalCumulativeLayoutShift": 0.4578398268510482,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 449921788,
+                  "observedTimeOriginTs": 495996106,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 449921788,
-                  "observedFirstPaint": 541,
-                  "observedFirstPaintTs": 450462488,
-                  "observedFirstContentfulPaint": 541,
-                  "observedFirstContentfulPaintTs": 450462488,
-                  "observedFirstContentfulPaintAllFrames": 541,
-                  "observedFirstContentfulPaintAllFramesTs": 450462488,
-                  "observedFirstMeaningfulPaint": 541,
-                  "observedFirstMeaningfulPaintTs": 450462488,
-                  "observedLargestContentfulPaint": 1785,
-                  "observedLargestContentfulPaintTs": 451706922,
-                  "observedLargestContentfulPaintAllFrames": 1785,
-                  "observedLargestContentfulPaintAllFramesTs": 451706922,
+                  "observedNavigationStartTs": 495996106,
+                  "observedFirstPaint": 469,
+                  "observedFirstPaintTs": 496465552,
+                  "observedFirstContentfulPaint": 469,
+                  "observedFirstContentfulPaintTs": 496465552,
+                  "observedFirstContentfulPaintAllFrames": 469,
+                  "observedFirstContentfulPaintAllFramesTs": 496465552,
+                  "observedFirstMeaningfulPaint": 469,
+                  "observedFirstMeaningfulPaintTs": 496465552,
+                  "observedLargestContentfulPaint": 1494,
+                  "observedLargestContentfulPaintTs": 497490501,
+                  "observedLargestContentfulPaintAllFrames": 1494,
+                  "observedLargestContentfulPaintAllFramesTs": 497490501,
                   "observedTraceEnd": 45009,
-                  "observedTraceEndTs": 494930403,
-                  "observedLoad": 2064,
-                  "observedLoadTs": 451986237,
-                  "observedDomContentLoaded": 534,
-                  "observedDomContentLoadedTs": 450455340,
-                  "observedCumulativeLayoutShift": 0.6153738974462739,
-                  "observedCumulativeLayoutShiftMainFrame": 0.6153738974462739,
-                  "observedTotalCumulativeLayoutShift": 0.6153738974462739,
-                  "observedFirstVisualChange": 543,
-                  "observedFirstVisualChangeTs": 450464788,
-                  "observedLastVisualChange": 1793,
-                  "observedLastVisualChangeTs": 451714788,
-                  "observedSpeedIndex": 1358,
-                  "observedSpeedIndexTs": 451280115
+                  "observedTraceEndTs": 541005586,
+                  "observedLoad": 1723,
+                  "observedLoadTs": 497719449,
+                  "observedDomContentLoaded": 462,
+                  "observedDomContentLoadedTs": 496458570,
+                  "observedCumulativeLayoutShift": 0.4578398268510482,
+                  "observedCumulativeLayoutShiftMainFrame": 0.4578398268510482,
+                  "observedTotalCumulativeLayoutShift": 0.4578398268510482,
+                  "observedFirstVisualChange": 467,
+                  "observedFirstVisualChangeTs": 496463106,
+                  "observedLastVisualChange": 1500,
+                  "observedLastVisualChangeTs": 497496106,
+                  "observedSpeedIndex": 1170,
+                  "observedSpeedIndexTs": 497165613
                 },
                 {
                   "lcpInvalidated": false
@@ -2815,22 +2815,22 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 33,
+                  "numRequests": 32,
                   "numScripts": 9,
                   "numStylesheets": 3,
                   "numFonts": 0,
-                  "numTasks": 530,
-                  "numTasksOver10ms": 0,
-                  "numTasksOver25ms": 0,
+                  "numTasks": 522,
+                  "numTasksOver10ms": 5,
+                  "numTasksOver25ms": 1,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 109.271,
-                  "throughput": 7503497.098512683,
-                  "maxRtt": 109.271,
-                  "maxServerLatency": 14.22499999999998,
-                  "totalByteWeight": 220598,
-                  "totalTaskTime": 99.8280000000002,
+                  "rtt": 86.459,
+                  "throughput": 6042941.065791762,
+                  "maxRtt": 86.459,
+                  "maxServerLatency": 15.581000000000017,
+                  "totalByteWeight": 216923,
+                  "totalTaskTime": 181.95299999999986,
                   "mainDocumentTransferSize": 3425
                 }
               ]
@@ -2872,15 +2872,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://elisa.service-civique.gouv.fr",
-        "size": 298.652,
-        "nodes": 83,
-        "requests": 23,
+        "size": 295.022,
+        "nodes": 88,
+        "requests": 22,
         "grade": "A",
         "score": 88,
         "ges": 1.24,
         "water": 1.86,
         "ecoindex_version": "5.4.2",
-        "date": "2025-02-02 01:17:13.479105",
+        "date": "2025-02-09 01:18:25.122389",
         "page_type": null
       }
     ],
@@ -2899,7 +2899,7 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.8,
+      "lighthouse_performance": 0.83,
       "lighthouse_performanceGrade": "B",
       "lighthouse_accessibility": 0.9,
       "lighthouse_accessibilityGrade": "A",
@@ -3191,7 +3191,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "SHA384 with RSA"
+        "finding": "SHA256 with RSA"
       },
       {
         "id": "cert_keySize",
@@ -3219,42 +3219,42 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "857DA59AABAA074330C8F478DDCB6FE0"
+        "finding": "048369B9C7533C7E951A12D55899C4BCB890"
       },
       {
         "id": "cert_serialNumberLen",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "16"
+        "finding": "18"
       },
       {
         "id": "cert_fingerprintSHA1",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "734A466D6402A7494EEEC70FDC24E4693AA74EA5"
+        "finding": "4B62C021F0DBFEF00F9DCF376148FD01BC74E6BE"
       },
       {
         "id": "cert_fingerprintSHA256",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "988B4BC39F22B20FC7D138E0FB35437061F563F957B572FD82B50826D271A841"
+        "finding": "BD4A13886479523B1BF545819D794D3355046FBA4E82BB941B6ECB3A07958390"
       },
       {
         "id": "cert",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\nMIIHoTCCBYmgAwIBAgIRAIV9pZqrqgdDMMj0eN3Lb+AwDQYJKoZIhvcNAQEMBQAwRDELMAkGA1UEBhMCTkwxGTAXBgNVBAoTEEdFQU5UIFZlcmVuaWdpbmcxGjAYBgNVBAMTEUdFQU5UIE9WIFJTQSBDQSA0MB4XDTI0MDIwNjAwMDAwMFoXDTI1MDIwNTIzNTk1OVowgYcxCzAJBgNVBAYTAkZSMRcwFQYDVQQIDA7DjmxlLWRlLUZyYW5jZTE9MDsGA1UEChM0TUlOSVNURVJFIERFIEwnRURVQ0FUSU9OIE5BVElPTkFMRSBFVCBERSBMQSBKRVVORVNTRTEgMB4GA1UEAxMXc2VydmljZS1jaXZpcXVlLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDbK51JE7tg+bb0BLpwi+lnFO7iJQZizwEP3VOC7UpfH7J4nfwsNn7rCeDqNtChe3yL35XtFwF8E6PoW7jFg7JVGvtLu0qZTHp9E+K7sJrZfYQb/Tzu72oV1SxNB4j33aIg5G7rWSXzCFr2Ma6KMrAlq+QjkDBFOvBzQB2OC318ygLsI0eWOVwlG3x7rivNP7FeUvC0IF1bvJZkKj7zM7KQZtTx/WzP6QkqYCJzJGJ46x7+5c6F7g+elJ+BS1dWmCnuXxC1imIGT0WrHI4rnb3jAatqRa278q5GJE4zZEdNeujFZBoEpDf00VNmnXGx7Ry0U7b2SWbh/FpEpjOhs0uPAgMBAAGjggNIMIIDRDAfBgNVHSMEGDAWgBRvHTVJEGwy+lmgnryK6B+VvnF6DDAdBgNVHQ4EFgQUIE26lBeCnO6BuKDttdkbY/DD48swDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYBBAGyMQECAk8wJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQICMD8GA1UdHwQ4MDYwNKAyoDCGLmh0dHA6Ly9HRUFOVC5jcmwuc2VjdGlnby5jb20vR0VBTlRPVlJTQUNBNC5jcmwwdQYIKwYBBQUHAQEEaTBnMDoGCCsGAQUFBzAChi5odHRwOi8vR0VBTlQuY3J0LnNlY3RpZ28uY29tL0dFQU5UT1ZSU0FDQTQuY3J0MCkGCCsGAQUFBzABhh1odHRwOi8vR0VBTlQub2NzcC5zZWN0aWdvLmNvbTCCAX8GCisGAQQB1nkCBAIEggFvBIIBawFpAHUAzxFW7tUufK/zh1vZaS6b6RpxZ0qwF+ysAdJbd87MOwgAAAGNfdYwiQAABAMARjBEAiA0+7QxG7UD2soMWEkjyhjguRyMOykpudvHjBCDTlIsCwIgY8QkpJCOmQJ+Cij/1C3z1DZDCuuW2CBzezPd2+2AbS0AdwCi4wrkRe+9rZt+OO1HZ3dT14JbhJTXK14bLMS5UKRH5wAAAY191jCuAAAEAwBIMEYCIQCOPY3bexOEBqa2pWSHRD5luMLgV9S0lQvrbECJCybTqAIhAN6wnKm1uaCkFFN+k1mOGOwJKZ/c+EaHNIEiZ7FVx7QzAHcATnWjJ1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGNfdYwswAABAMASDBGAiEAqsZiFAa2gZxs5hsfnID8R5Cyny+YyTZLSKSYa4itEi0CIQCrtae22z1yzDHgfPLHta98IqHcu8Ll+RgyyG9Lm7p+VzA/BgNVHREEODA2ghdzZXJ2aWNlLWNpdmlxdWUuZ291di5mcoIbd3d3LnNlcnZpY2UtY2l2aXF1ZS5nb3V2LmZyMA0GCSqGSIb3DQEBDAUAA4ICAQA2V2RyS9c4T6Z8M408sPPg+Ro/ujlcL5bYLlHoKAfdbTHMSDr9SqZURICFZclKSZ8qjC8lZTmZiK/NmPxPqmt6aoX/t4YgRi76C1gNPZUJElfuYla17dbmjsJtG0Ejyh8zpvb+AL1O/ZxPS+CXEsQv3dxOdU1I/oF6p62fgtl9lmt3a0E8oMcjFlraxr4To+mYa7sHFp44vEbNkyZn6y8HzAK3Z5EAfn9f6eNRDoLkMNhoIO/KCWUwGNoVw3U57EiJSshccJI0PwItLNbOZhT49NuISVNv/C5BMolyHtXDyppV86yTua6p8l1ihcCrTiMoMIjTzd8M3DJtWahB4TOgpf/M8cxegCW+4jtYFpgWgFrHRyqtQaEvraCmt0zkPuS465kZLLt4V481/QN3BL3j2QAAqD0EkROmN0jOcxjtLXIJsIU3BbqHcHFktOXt31izghTqPEr037YBWQ4VD3/296cN0sF/4Al/iQV8tREnV4pjEq1QZoBn3JSC+6xO4mna2zN6wzsl2qVa5/gpsqruPjvvkyOEkqhMypgOinmfSziB9BfgWKC5C4ojag76YSd8mLD03Fatvt6p9TehJgQpF5z7q4dn71i7VVPQLaCer7rIQPjMO+V7iNpVbrCC6QDP9NFbFkZuktBnZXlEYaw+zGHcmbDQS8ETD063+u/3tQ==\n-----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFCDCCA/CgAwIBAgISBINpucdTPH6VGhLVWJnEvLiQMA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNSMTEwHhcNMjUwMjA2MDAxNTAyWhcNMjUwNTA3MDAxNTAxWjAmMSQwIgYDVQQDExt3d3cuc2VydmljZS1jaXZpcXVlLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCOLoIRu1XYHiV0TDYohR+gRxTRVI1dT0gnKcv+OLLnHessySzg/QYD3i2UpHyePeRDbBMagQliDS4eAM6xMS/QSvz6a8F3pKzlhvyW0vqUUDDfc88HqkKHFpDkBnhCUpPR9iX+EKB5LFRGIphdmJMjLFRsZvKhZMUeIahIPFYGlY0FWJJUdC+QiBrMsNpVgFesVvYR1/syeZD5GZ+OvEKiLwGteQ7CjNguqQG8krlnFJoLmF0yrtoRhpQdhrk8bQslYRCf/EI+Nb6Q7sYkPTgGJsLPyAmxA+lsLizPJ/kiZGrObaAL9rUNddg47ynQyBKlp00kvcr6iegN2cyo/goLAgMBAAGjggIhMIICHTAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFC4hmtEOr1exuXH+mvh573WzAZm1MB8GA1UdIwQYMBaAFMXPRqTq9MPAemyVxC2wXpIvJuO5MFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcwAYYWaHR0cDovL3IxMS5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3IxMS5pLmxlbmNyLm9yZy8wJgYDVR0RBB8wHYIbd3d3LnNlcnZpY2UtY2l2aXF1ZS5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBgYKKwYBBAHWeQIEAgSB9wSB9ADyAHcA5tIxY0B3jMEQQQbXcbnOwdJA9paEhvu6hzId/R43jlAAAAGU2NG/vQAABAMASDBGAiEAj9p0RywfIP2t13eZYyxBWhTs78vka7Gao9OXEXN/seMCIQCm5YG1R7OtrpN6e4tzWd3DZHcPaNzQvq47rG+tEU9eBAB3AKLjCuRF772tm3447Udnd1PXgluElNcrXhssxLlQpEfnAAABlNjRv7kAAAQDAEgwRgIhAMnh5A91iAliP3lEfjxkdxoUdstVu0avOqodvJVf4exBAiEA0vdH13oczb4n1o5twrZirSxIhhc0Ak2LPaNIczlKyDowDQYJKoZIhvcNAQELBQADggEBAIK6u8W4gwTKtwCVcPTcVTATxdQpPHL88zdGabR0ADm0UYHakH42WjZe+0iFFL/HzNhPNOOZCS1bEhiAqaAtJvp2CdGQSepiF8VyHvIPreNIvLA3OPt0nRG8SxEmfp52DuTwHZMKBzvrHuv7Wc+nWjTVltKLumzV9Id/SD/5W61Zu7sw404vjQmI1kNP4LkkACMaz8wT/Zx9q7W79iaOwcW+9n1G3vRVeW6SZxNh8IJmef81wRKNre1p4Ao7ET4YZnKE9VGIMglIRMFaumRJ0cYODgsivyWoeRwYlBUGWD4lyIEHoc+SYZgJVJ/oVj+MioNarYyLgi/rP7SneuCl+p4=\n-----END CERTIFICATE-----"
       },
       {
         "id": "cert_commonName",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "service-civique.gouv.fr"
+        "finding": "www.service-civique.gouv.fr"
       },
       {
         "id": "cert_commonName_wo_SNI",
@@ -3268,14 +3268,14 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "service-civique.gouv.fr www.service-civique.gouv.fr"
+        "finding": "www.service-civique.gouv.fr"
       },
       {
         "id": "cert_trust",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "Ok via SAN (SNI mandatory)"
+        "finding": "Ok via SAN and CN (SNI mandatory)"
       },
       {
         "id": "cert_chain_of_trust",
@@ -3295,22 +3295,22 @@
         "id": "cert_expirationStatus",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
-        "severity": "HIGH",
-        "finding": "expires < 30 days (3)"
+        "severity": "OK",
+        "finding": "86 >= 30 days"
       },
       {
         "id": "cert_notBefore",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "2024-02-06 00:00"
+        "finding": "2025-02-06 00:15"
       },
       {
         "id": "cert_notAfter",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
-        "severity": "HIGH",
-        "finding": "2025-02-05 23:59"
+        "severity": "OK",
+        "finding": "2025-05-07 00:15"
       },
       {
         "id": "cert_extlifeSpan",
@@ -3331,14 +3331,14 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "http://GEANT.crl.sectigo.com/GEANTOVRSACA4.crl"
+        "finding": "--"
       },
       {
         "id": "cert_ocspURL",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "http://GEANT.ocsp.sectigo.com"
+        "finding": "http://r11.o.lencr.org"
       },
       {
         "id": "OCSP_stapling",
@@ -3373,7 +3373,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "4"
+        "finding": "2"
       },
       {
         "id": "certs_list_ordering_problem",
@@ -3387,35 +3387,35 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "GEANT OV RSA CA 4 (GEANT Vereniging from NL)"
+        "finding": "R11 (Let's Encrypt from US)"
       },
       {
         "id": "intermediate_cert <#1>",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\nMIIG5TCCBM2gAwIBAgIRANpDvROb0li7TdYcrMTz2+AwDQYJKoZIhvcNAQEMBQAwgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgUlNBIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTIwMDIxODAwMDAwMFoXDTMzMDUwMTIzNTk1OVowRDELMAkGA1UEBhMCTkwxGTAXBgNVBAoTEEdFQU5UIFZlcmVuaWdpbmcxGjAYBgNVBAMTEUdFQU5UIE9WIFJTQSBDQSA0MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApYhi1aEiPsg9ZKRMAw9Qr8Mthsr6R20VSfFeh7TgwtLQi6RSRLOh4or4EMG/1th8lijv7xnBMVZkTysFiPmTPiLOfvz+QwO1NwjvgY+Jrs7fSoVA/TQkXzcxu4Tl3WHi+qJmKLJVu/JOuHud6mOpLWkIbhODSzOxANJ24IGPx9h4OXDyy6/342eE6UPXCtJ8AzeumTG6Dfv5KVx24lCFTGUzHUB+j+g0lSKg/Sf1OzgCajJV9enmZ/84ydh48wPp6vbWf1H0O3Rd3LhpMSVnTqFTLKZSbQeLcx/l9DOKZfBCC9ghWxsgTqW9gQ7v3T3aIfSaVC9rnwVxO0VjmDdPFNbdoxnh0zYwf45nV1QQgpRwZJ93yWedhp4ch1a6Ajwqs+wv4mZzmBSjovtV0mKwd+CQbSToalEUP4QeJq4Udz5WNmNMI4OYP6cgrnlJ50aa0DZPlJqrKQPGL69KQQz12WgxvhCuVU70y6ZWAPopBa1ykbsttpLxADZre5cH573lIuLHdjx7NjpYIXRx2+QJURnX2qx37eZIxYXz8ggM+wXH6RDbU3V2o5DP67hXPHSAbA+p0orjAocpk2osxHKoNSE3LCjNx8WVdxnXvuQ28tKdaK69knfm3bB7xpdfsNNTPH9ElcjscWZxpeZ5Iij8lyrCG1z0vSWtSBsgSnUyG/sCAwEAAaOCAYswggGHMB8GA1UdIwQYMBaAFFN5v1qqK0rPVIDh2JvAnfKyA2bLMB0GA1UdDgQWBBRvHTVJEGwy+lmgnryK6B+VvnF6DDAOBgNVHQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwOAYDVR0gBDEwLzAtBgRVHSAAMCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMFAGA1UdHwRJMEcwRaBDoEGGP2h0dHA6Ly9jcmwudXNlcnRydXN0LmNvbS9VU0VSVHJ1c3RSU0FDZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNybDB2BggrBgEFBQcBAQRqMGgwPwYIKwYBBQUHMAKGM2h0dHA6Ly9jcnQudXNlcnRydXN0LmNvbS9VU0VSVHJ1c3RSU0FBZGRUcnVzdENBLmNydDAlBggrBgEFBQcwAYYZaHR0cDovL29jc3AudXNlcnRydXN0LmNvbTANBgkqhkiG9w0BAQwFAAOCAgEAUtlC3e0xj/1BMfPhdQhUXeLjb0xp8UE28kzWE5xDzGKbfGgnrT2Rlw5gLIx+/cNVrad//+MrpTppMlxq59AsXYZW3xRasrvkjGfNR3vt/1RAl8iI31lGhIg6dfIX5N4esLkrQeN8HiyHKH6khm4966IkVVtnxz5CgUPqEYn4eQ+4eeESrWBhAqXaiv7HRvpsdwLYekAhnrlGpioZ/CJIT2PTTxf+GHM6cuUnNqdUzfvrQgA8kt1/ASXx2od/M+c8nlJqrGz29lrJveJOSEMX0c/ts02WhsfMhkYa6XujUZLmvR1Eq08r48/EZ4l+t5L4wt0DV8VaPbsEBF1EOFpz/YS2H6mSwcFaNJbnYqqJHIvm3PLJHkFmEoLXRVrQXdCT+3wgBfgU6heCV5CYBz/YkrdWES7tiiT8sVUDqXmVlTsbiRNiyLs2bmEWWFUl76jViIJog5fongEqN3jLIGTG/mXrJT1UyymIcobnIGrbwwRVz/mpFQo0vBYIi1k2ThVh0Dx88BbF9YiP84dd8Fkn5wbE6FxXYJ287qfRTgmhePecPc73YrztapdRcsKVGkOpaTIJP/l+lAHRLZxk/dUtyN95G++bOSQqnOCpVPabUGl2E/OEyFrpIpwgu2L/WJclvd6g+ZA/iWkLSMcpnFb+uX6QBqvD6+RNxul1FaB5iHY=\n-----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFBjCCAu6gAwIBAgIRAIp9PhPWLzDvI4a9KQdrNPgwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjQwMzEzMDAwMDAwWhcNMjcwMzEyMjM1OTU5WjAzMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDEMMAoGA1UEAxMDUjExMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuoe8XBsAOcvKCs3UZxD5ATylTqVhyybKUvsVAbe5KPUoHu0nsyQYOWcJDAjs4DqwO3cOvfPlOVRBDE6uQdaZdN5R2+97/1i9qLcT9t4x1fJyyXJqC4N0lZxGAGQUmfOx2SLZzaiSqhwmej/+71gFewiVgdtxD4774zEJuwm+UE1fj5F2PVqdnoPy6cRms+EGZkNIGIBloDcYmpuEMpexsr3E+BUAnSeI++JjF5ZsmydnS8TbKF5pwnnwSVzgJFDhxLyhBax7QG0AtMJBP6dYuC/FXJuluwme8f7rsIU5/agK70XEeOtlKsLPXzze41xNG/cLJyuqC0J3U095ah2H2QIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHQ4EFgQUxc9GpOr0w8B6bJXELbBeki8m47kwHwYDVR0jBBgwFoAUebRZ5nu25eQBc4AIiMgaWPbpm24wMgYIKwYBBQUHAQEEJjAkMCIGCCsGAQUFBzAChhZodHRwOi8veDEuaS5sZW5jci5vcmcvMBMGA1UdIAQMMAowCAYGZ4EMAQIBMCcGA1UdHwQgMB4wHKAaoBiGFmh0dHA6Ly94MS5jLmxlbmNyLm9yZy8wDQYJKoZIhvcNAQELBQADggIBAE7iiV0KAxyQOND1H/lxXPjDj7I3iHpvsCUf7b632IYGjukJhM1yv4Hz/MrPU0jtvfZpQtSlET41yBOykh0FX+ou1Nj4ScOt9ZmWnO8m2OG0JAtIIE3801S0qcYhyOE2G/93ZCkXufBL713qzXnQv5C/viOykNpKqUgxdKlEC+Hi9i2DcaR1e9KUwQUZRhy5j/PEdEglKg3l9dtD4tuTm7kZtB8v32oOjzHTYw+7KdzdZiw/sBtnUfhBPORNuay4pJxmY/WrhSMdzFO2q3Gu3MUBcdo27goYKjL9CTF8j/Zz55yctUoVaneCWs/ajUX+HypkBTA+c8LGDLnWO2NKq0YD/pnARkAnYGPfUDoHR9gVSp/qRx+ZWghiDLZsMwhN1zjtSC0uBWiugF3vTNzYIEFfaPG7Ws3jDrAMMYebQ95JQ+HIBD/RPBuHRTBpqKlyDnkSHDHYPiNX3adPoPAcgdF3H2/W0rmoswMWgTlLn1Wu0mrks7/qpdWfS6PJ1jty80r2VKsM/Dj3YIDfbjXKdaFU5C+8bhfJGqU3taKauuz0wHVGT3eo6FlWkWYtbt4pgdamlwVeZEW+LM7qZEJEsMNPrfC03APKmZsJgpWCDWOKZvkZcvjVuYkQ4omYCTX5ohy+knMjdOmdH9c7SpqEWBDC86fiNex+O0XOMEZSa8DA\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#1>",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "37834FA5EA40FBF7B61196955962E1CA0558872435E4206653D3F620DD8E988E"
+        "finding": "591E9CE6C863D3A079E9FABE1478C7339A26B21269DDE795211361024AE31A44"
       },
       {
         "id": "intermediate_cert_notBefore <#1>",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "2020-02-18 00:00"
+        "finding": "2024-03-13 00:00"
       },
       {
         "id": "intermediate_cert_notAfter <#1>",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "2033-05-01 23:59"
+        "finding": "2027-03-12 23:59"
       },
       {
         "id": "intermediate_cert_expiration <#1>",
@@ -3429,91 +3429,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "GEANT OV RSA CA 4 <-- USERTrust RSA Certification Authority"
-      },
-      {
-        "id": "intermediate_cert <#2>",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\nMIIFgTCCBGmgAwIBAgIQOXJEOvkit1HX02wQ3TE1lTANBgkqhkiG9w0BAQwFADB7MQswCQYDVQQGEwJHQjEbMBkGA1UECAwSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYDVQQHDAdTYWxmb3JkMRowGAYDVQQKDBFDb21vZG8gQ0EgTGltaXRlZDEhMB8GA1UEAwwYQUFBIENlcnRpZmljYXRlIFNlcnZpY2VzMB4XDTE5MDMxMjAwMDAwMFoXDTI4MTIzMTIzNTk1OVowgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgUlNBIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAgBJlFzYOw9sIs9CsVw127c0n00ytUINh4qogTQktZAnczomfzD2p7PbPwdzx07HWezcoEStH2jnGvDoZtF+mvX2do2NCtnbyqTsrkfjib9DsFiCQCT7i6HTJGLSR1GJk23+jBvGIGGqQIjy8/hPwhxR79uQfjtTkUcYRZ0YIUcuGFFQ/vDP+fmyc/xadGL1RjjWmp2bIcmfbIWax1Jt4A8BQOujM8Ny8nkz+rwWWNR9XWrf/zvk9tyy29lTdyOcSOk2uTIq3XJq0tyA9yn8iNK5+O2hmAUTnAU5GU5szYPeUvlM3kHND8zLDU+/bqv50TmnHa4xgk97Exwzf4TKuzJM7UXiVZ4vuPVb+DNBpDxsP8yUmazNt925H+nND5X4OpWaxKXwyhGNVicQNwZNUMBkTrNN9N6frXTpsNVzbQdcS2qlJC9/YgIoJk2KOtWbPJYjNhLixP6Q5D9kCnusSTJV882sFqV4Wg8y4Z+LoE53MW4LTTLPtW//e5XOsIzstAL81VXQJSdhJWBp/kjbmUZIO8yZ9HE0XvMnsQybQv0FfQKlERPSZ51eHnlAfV1SoPv10Yy+xUGUJ5lhCLkMaTLTwJUdZ+gQek9QmRkpQgbLevni3/GcV4clXhB4PY9bpYrrWX1Uu6lzGKAgEJTm4Diup8kyXHAc/DVL17e8vgg8CAwEAAaOB8jCB7zAfBgNVHSMEGDAWgBSgEQojPpbxB+zirynvgqV/0DCktDAdBgNVHQ4EFgQUU3m/WqorSs9UgOHYm8Cd8rIDZsswDgYDVR0PAQH/BAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wEQYDVR0gBAowCDAGBgRVHSAAMEMGA1UdHwQ8MDowOKA2oDSGMmh0dHA6Ly9jcmwuY29tb2RvY2EuY29tL0FBQUNlcnRpZmljYXRlU2VydmljZXMuY3JsMDQGCCsGAQUFBwEBBCgwJjAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuY29tb2RvY2EuY29tMA0GCSqGSIb3DQEBDAUAA4IBAQAYh1HcdCE9nIrgJ7cz0C7M7PDmy14R3iJvm3WOnnL+5Nb+qh+cli3vA0p+rvSNb3I8QzvAP+u431yqqcau8vzY7qN7Q/aGNnwU4M309z/+3ri0ivCRlv79Q2R+/czSAaF9ffgZGclCKxO/WIu6pKJmBHaIkU4MiRTOok3JMrO66BQavHHxW/BBC5gACiIDEOUMsfnNkjcZ7Tvx5Dq2+UUTJnWvu6rvP3t3O9LEApE9GQDTF1w52z97GA1FzZOFli9d31kWTz9RvdVFGD/tSo7oBmF0Ixa1DVBzJ0RHfxBdiSprhTEUxOipakyAvGp4z7h/jnZymQyd/teRCBaho1+V\n-----END CERTIFICATE-----"
-      },
-      {
-        "id": "intermediate_cert_fingerprintSHA256 <#2>",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "68B9C761219A5B1F0131784474665DB61BBDB109E00F05CA9F74244EE5F5F52B"
-      },
-      {
-        "id": "intermediate_cert_notBefore <#2>",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2019-03-12 00:00"
-      },
-      {
-        "id": "intermediate_cert_notAfter <#2>",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "OK",
-        "finding": "2028-12-31 23:59"
-      },
-      {
-        "id": "intermediate_cert_expiration <#2>",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "OK",
-        "finding": "ok > 40 days"
-      },
-      {
-        "id": "intermediate_cert_chain <#2>",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "USERTrust RSA Certification Authority <-- AAA Certificate Services"
-      },
-      {
-        "id": "intermediate_cert <#3>",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\nMIIEMjCCAxqgAwIBAgIBATANBgkqhkiG9w0BAQUFADB7MQswCQYDVQQGEwJHQjEbMBkGA1UECAwSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYDVQQHDAdTYWxmb3JkMRowGAYDVQQKDBFDb21vZG8gQ0EgTGltaXRlZDEhMB8GA1UEAwwYQUFBIENlcnRpZmljYXRlIFNlcnZpY2VzMB4XDTA0MDEwMTAwMDAwMFoXDTI4MTIzMTIzNTk1OVowezELMAkGA1UEBhMCR0IxGzAZBgNVBAgMEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBwwHU2FsZm9yZDEaMBgGA1UECgwRQ29tb2RvIENBIExpbWl0ZWQxITAfBgNVBAMMGEFBQSBDZXJ0aWZpY2F0ZSBTZXJ2aWNlczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL5AnfRu4ep2hxxNRUSOvkbIgwadwSr+GB+O5AL686tdUIoWMQuaBtDFcCLNSS1UY8y2bmhGC1Pqy0wkwLxyTurxFa70VJoSCsN6sjNg4tqJVfMiWPPe3M/vg4aijJRPn2jymJBGhCfHdr/jzDUsi14HZGWCwEiwqJH5YZ92IFCokcdmtet4YgNW8IoaE+oxox6gmf049vYnMlhvB/VruPsUK6+3qszWY19zjNoFmag4qMsXeDZRrOme9Hg6jc8P2ULimAyrL58OAd7vn5lJ8S3frHRNG5i1R8XlKdH5kBjHYpy+g8cmez6KJcfA3Z3mNWgQIJ2P2N7Sw4ScDV7oL8kCAwEAAaOBwDCBvTAdBgNVHQ4EFgQUoBEKIz6W8Qfs4q8p74Klf9AwpLQwDgYDVR0PAQH/BAQDAgEGMA8GA1UdEwEB/wQFMAMBAf8wewYDVR0fBHQwcjA4oDagNIYyaHR0cDovL2NybC5jb21vZG9jYS5jb20vQUFBQ2VydGlmaWNhdGVTZXJ2aWNlcy5jcmwwNqA0oDKGMGh0dHA6Ly9jcmwuY29tb2RvLm5ldC9BQUFDZXJ0aWZpY2F0ZVNlcnZpY2VzLmNybDANBgkqhkiG9w0BAQUFAAOCAQEACFb8AvCb6P+k+tZ7xkSAzk/ExfYAWMymtrwUSWgEdujm7l3sAg9g1o1QGE8mTgHj5rCl7r+8dFRBv/38ErjHT1r0iWAFf2C3BUrz9vHCv8S5dIa2LX1rzNLzRt0vxuBqw8M0Ayx9lt1awg6nCpnBBYurDC/zXDrPbDdVCYfeU0BsWO/8tqtlbgT2G9w84FoVxp7Z8VlIMCFlA2zs6SFz7JsDoeA3raAVGI/6ugLOpyypEBMs1OUIJqsil2D4kF501KKaU73yqWjgom7C12yxow+ev+to51byrvLjKzg6CYG1a4XXvi3tPxq3smPi9WIsgtRqAEFQ8TmDn5XpNpaYbg==\n-----END CERTIFICATE-----"
-      },
-      {
-        "id": "intermediate_cert_fingerprintSHA256 <#3>",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "D7A7A0FB5D7E2731D771E9484EBCDEF71D5F0C3E0A2948782BC83EE0EA699EF4"
-      },
-      {
-        "id": "intermediate_cert_notBefore <#3>",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2004-01-01 00:00"
-      },
-      {
-        "id": "intermediate_cert_notAfter <#3>",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "OK",
-        "finding": "2028-12-31 23:59"
-      },
-      {
-        "id": "intermediate_cert_expiration <#3>",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "OK",
-        "finding": "ok > 40 days"
-      },
-      {
-        "id": "intermediate_cert_chain <#3>",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "AAA Certificate Services <-- AAA Certificate Services"
+        "finding": "R11 <-- ISRG Root X1"
       },
       {
         "id": "intermediate_cert_badOCSP",
@@ -3534,21 +3450,21 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds from localtime"
+        "finding": "+5 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "1738459822"
+        "finding": "1739064663"
       },
       {
         "id": "HTTP_headerAge",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds"
+        "finding": "5 seconds"
       },
       {
         "id": "HSTS_time",
@@ -3612,7 +3528,7 @@
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-200",
-        "finding": "X-Varnish: 39552437 37750727X-Varnish: 29376640"
+        "finding": "X-Varnish: 14283467 30597467"
       },
       {
         "id": "heartbleed",
@@ -3735,7 +3651,7 @@
         "severity": "INFO",
         "cve": "CVE-2016-0800 CVE-2016-0703",
         "cwe": "CWE-310",
-        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=988B4BC39F22B20FC7D138E0FB35437061F563F957B572FD82B50826D271A841"
+        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BD4A13886479523B1BF545819D794D3355046FBA4E82BB941B6ECB3A07958390"
       },
       {
         "id": "LOGJAM",
@@ -4111,7 +4027,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "64"
+        "finding": "57"
       }
     ],
     "thirdparties": {
@@ -4127,7 +4043,7 @@
       {
         "requestedUrl": "https://www.service-civique.gouv.fr/",
         "finalUrl": "https://www.service-civique.gouv.fr/",
-        "fetchTime": "2025-02-02T01:28:43.765Z",
+        "fetchTime": "2025-02-09T01:29:31.383Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -4138,7 +4054,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.09
+            "score": 0.11
           },
           "accessibility": {
             "title": "Accessibility",
@@ -4190,53 +4106,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 19351,
+            "numericValue": 17660,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2048,
-                  "firstMeaningfulPaint": 6894,
-                  "largestContentfulPaint": 15240,
-                  "interactive": 19351,
-                  "speedIndex": 13027,
-                  "totalBlockingTime": 4946,
-                  "maxPotentialFID": 3041,
-                  "cumulativeLayoutShift": 1.6822055308024089,
-                  "cumulativeLayoutShiftMainFrame": 1.6822055308024089,
-                  "totalCumulativeLayoutShift": 1.6822055308024089,
+                  "firstContentfulPaint": 1572,
+                  "firstMeaningfulPaint": 6351,
+                  "largestContentfulPaint": 15271,
+                  "interactive": 17660,
+                  "speedIndex": 11674,
+                  "totalBlockingTime": 3219,
+                  "maxPotentialFID": 1545,
+                  "cumulativeLayoutShift": 0.9137940724690755,
+                  "cumulativeLayoutShiftMainFrame": 0.9137940724690755,
+                  "totalCumulativeLayoutShift": 0.9137940724690755,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 875994718,
+                  "observedTimeOriginTs": 832587660,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 875994718,
-                  "observedFirstPaint": 968,
-                  "observedFirstPaintTs": 876962902,
-                  "observedFirstContentfulPaint": 968,
-                  "observedFirstContentfulPaintTs": 876962902,
-                  "observedFirstContentfulPaintAllFrames": 968,
-                  "observedFirstContentfulPaintAllFramesTs": 876962902,
-                  "observedFirstMeaningfulPaint": 1142,
-                  "observedFirstMeaningfulPaintTs": 877136993,
-                  "observedLargestContentfulPaint": 2306,
-                  "observedLargestContentfulPaintTs": 878300418,
-                  "observedLargestContentfulPaintAllFrames": 2306,
-                  "observedLargestContentfulPaintAllFramesTs": 878300418,
-                  "observedTraceEnd": 7822,
-                  "observedTraceEndTs": 883816374,
-                  "observedLoad": 5488,
-                  "observedLoadTs": 881482788,
-                  "observedDomContentLoaded": 1346,
-                  "observedDomContentLoadedTs": 877340591,
-                  "observedCumulativeLayoutShift": 1.6822055308024089,
-                  "observedCumulativeLayoutShiftMainFrame": 1.6822055308024089,
-                  "observedTotalCumulativeLayoutShift": 1.6822055308024089,
-                  "observedFirstVisualChange": 970,
-                  "observedFirstVisualChangeTs": 876964718,
-                  "observedLastVisualChange": 7069,
-                  "observedLastVisualChangeTs": 883063718,
-                  "observedSpeedIndex": 2980,
-                  "observedSpeedIndexTs": 878975173
+                  "observedNavigationStartTs": 832587660,
+                  "observedFirstPaint": 1019,
+                  "observedFirstPaintTs": 833606672,
+                  "observedFirstContentfulPaint": 1019,
+                  "observedFirstContentfulPaintTs": 833606672,
+                  "observedFirstContentfulPaintAllFrames": 1019,
+                  "observedFirstContentfulPaintAllFramesTs": 833606672,
+                  "observedFirstMeaningfulPaint": 1372,
+                  "observedFirstMeaningfulPaintTs": 833959334,
+                  "observedLargestContentfulPaint": 2715,
+                  "observedLargestContentfulPaintTs": 835302373,
+                  "observedLargestContentfulPaintAllFrames": 2715,
+                  "observedLargestContentfulPaintAllFramesTs": 835302373,
+                  "observedTraceEnd": 7629,
+                  "observedTraceEndTs": 840216669,
+                  "observedLoad": 5321,
+                  "observedLoadTs": 837909118,
+                  "observedDomContentLoaded": 1592,
+                  "observedDomContentLoadedTs": 834179527,
+                  "observedCumulativeLayoutShift": 0.9137940724690755,
+                  "observedCumulativeLayoutShiftMainFrame": 0.9137940724690755,
+                  "observedTotalCumulativeLayoutShift": 0.9137940724690755,
+                  "observedFirstVisualChange": 1028,
+                  "observedFirstVisualChangeTs": 833615660,
+                  "observedLastVisualChange": 7245,
+                  "observedLastVisualChangeTs": 839832660,
+                  "observedSpeedIndex": 3141,
+                  "observedSpeedIndexTs": 835728403
                 },
                 {
                   "lcpInvalidated": false
@@ -4254,23 +4170,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 137,
-                  "numScripts": 61,
+                  "numRequests": 121,
+                  "numScripts": 59,
                   "numStylesheets": 6,
                   "numFonts": 7,
-                  "numTasks": 2467,
-                  "numTasksOver10ms": 39,
-                  "numTasksOver25ms": 31,
-                  "numTasksOver50ms": 6,
+                  "numTasks": 1979,
+                  "numTasksOver10ms": 40,
+                  "numTasksOver25ms": 27,
+                  "numTasksOver50ms": 5,
                   "numTasksOver100ms": 4,
-                  "numTasksOver500ms": 1,
+                  "numTasksOver500ms": 0,
                   "rtt": 0,
-                  "throughput": 24808383.622807223,
-                  "maxRtt": 91.311,
-                  "maxServerLatency": 63.922,
-                  "totalByteWeight": 2301151,
-                  "totalTaskTime": 2754.5690000000172,
-                  "mainDocumentTransferSize": 8909
+                  "throughput": 22343942.4723306,
+                  "maxRtt": 98.32000000000002,
+                  "maxServerLatency": 77.21100000000001,
+                  "totalByteWeight": 2279481,
+                  "totalTaskTime": 2207.3649999999934,
+                  "mainDocumentTransferSize": 8908
                 }
               ]
             }
@@ -4312,15 +4228,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://www.service-civique.gouv.fr",
-        "size": 3404.295,
-        "nodes": 1075,
-        "requests": 123,
-        "grade": "F",
-        "score": 25,
-        "ges": 2.5,
-        "water": 3.75,
+        "size": 3372.243,
+        "nodes": 1060,
+        "requests": 115,
+        "grade": "E",
+        "score": 26,
+        "ges": 2.48,
+        "water": 3.72,
         "ecoindex_version": "5.4.2",
-        "date": "2025-01-29 08:42:33.796744",
+        "date": "2025-02-09 01:18:35.159746",
         "page_type": "siteweb"
       }
     ],
@@ -4332,14 +4248,14 @@
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
-      "testsslExpireSoon": true,
-      "testsslExpireDate": "2025-02-05T23:59:00.000Z",
+      "testsslExpireSoon": false,
+      "testsslExpireDate": "2025-05-07T00:15:00.000Z",
       "testsslGrade": "A+",
       "cookiesGrade": null,
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.09,
+      "lighthouse_performance": 0.11,
       "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 0.96,
       "lighthouse_accessibilityGrade": "A",
@@ -4353,7 +4269,7 @@
       "declaration-a11y": "F",
       "declaration-rgpd-ml": "A",
       "declaration-rgpd-pc": "F",
-      "ecoindexGrade": "F",
+      "ecoindexGrade": "E",
       "dsfrGrade": "F"
     }
   },
@@ -4365,7 +4281,7 @@
     "nmap": {
       "host": "enm.mes-services.mer.gouv.fr",
       "protocol": "tcp",
-      "closed_ports": "978",
+      "closed_ports": "944",
       "open_ports": [
         {
           "service": {
@@ -4377,154 +4293,14 @@
         },
         {
           "service": {
-            "name": "pop3pw",
-            "id": "106",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "ident",
-            "id": "113",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "snmp",
-            "id": "161",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
             "name": "http",
             "product": "Apache httpd",
             "id": "443",
             "vulnerabilities": []
           }
-        },
-        {
-          "service": {
-            "name": "device",
-            "id": "801",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "webobjects",
-            "id": "1085",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "aeroflight-ads",
-            "id": "1218",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "hermes",
-            "id": "1248",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "landesk-rc",
-            "id": "1761",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "eklogin",
-            "id": "2105",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "satvid-datalnk",
-            "id": "3369",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "radmin",
-            "id": "4899",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "tmi",
-            "id": "8300",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "git",
-            "id": "9418",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "unknown",
-            "id": "18040",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "filenet-rpc",
-            "id": "32769",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "sometimes-rpc7",
-            "id": "32772",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "unknown",
-            "id": "33899",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "unknown",
-            "id": "49158",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "unknown",
-            "id": "49167",
-            "vulnerabilities": []
-          }
-        },
-        {
-          "service": {
-            "name": "unknown",
-            "id": "50003",
-            "vulnerabilities": []
-          }
         }
       ],
-      "grade": "B"
+      "grade": "A"
     },
     "dependabot": null,
     "codescan": null,
@@ -4729,14 +4505,14 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "not supported"
+        "finding": "supported"
       },
       {
         "id": "sessionresumption_ID",
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "not supported"
+        "finding": "supported"
       },
       {
         "id": "TLS_timestamp",
@@ -4876,7 +4652,7 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "OK",
-        "finding": "38 >= 30 days"
+        "finding": "31 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -5037,7 +4813,7 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "1738459528"
+        "finding": "1739064417"
       },
       {
         "id": "HSTS_time",
@@ -5649,7 +5425,7 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "88"
+        "finding": "123"
       }
     ],
     "thirdparties": {
@@ -5820,7 +5596,7 @@
       {
         "requestedUrl": "https://enm.mes-services.mer.gouv.fr/",
         "finalUrl": "https://enm.mes-services.mer.gouv.fr/login",
-        "fetchTime": "2025-02-02T01:22:49.596Z",
+        "fetchTime": "2025-02-09T01:23:43.887Z",
         "runWarnings": [
           "The page loaded too slowly to finish within the time limit. Results may be incomplete.",
           "The page may not be loading as expected because your test URL (https://enm.mes-services.mer.gouv.fr/) was redirected to https://enm.mes-services.mer.gouv.fr/login. Try testing the second URL directly."
@@ -5834,7 +5610,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.47
+            "score": 0.7
           },
           "accessibility": {
             "title": "Accessibility",
@@ -5886,53 +5662,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 6311,
+            "numericValue": 4608,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3179,
-                  "firstMeaningfulPaint": 3406,
-                  "largestContentfulPaint": 3929,
-                  "interactive": 6311,
-                  "speedIndex": 3179,
-                  "totalBlockingTime": 1074,
-                  "maxPotentialFID": 410,
-                  "cumulativeLayoutShift": 0.26099806213378907,
-                  "cumulativeLayoutShiftMainFrame": 0.26099806213378907,
-                  "totalCumulativeLayoutShift": 0.26099806213378907,
+                  "firstContentfulPaint": 3231,
+                  "firstMeaningfulPaint": 3365,
+                  "largestContentfulPaint": 3909,
+                  "interactive": 4608,
+                  "speedIndex": 3231,
+                  "totalBlockingTime": 91,
+                  "maxPotentialFID": 222,
+                  "cumulativeLayoutShift": 0.2881884502834744,
+                  "cumulativeLayoutShiftMainFrame": 0.2881884502834744,
+                  "totalCumulativeLayoutShift": 0.2881884502834744,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 291584546,
+                  "observedTimeOriginTs": 279263332,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 291584546,
-                  "observedFirstPaint": 477,
-                  "observedFirstPaintTs": 292061659,
-                  "observedFirstContentfulPaint": 477,
-                  "observedFirstContentfulPaintTs": 292061659,
-                  "observedFirstContentfulPaintAllFrames": 477,
-                  "observedFirstContentfulPaintAllFramesTs": 292061659,
-                  "observedFirstMeaningfulPaint": 477,
-                  "observedFirstMeaningfulPaintTs": 292061659,
-                  "observedLargestContentfulPaint": 477,
-                  "observedLargestContentfulPaintTs": 292061659,
-                  "observedLargestContentfulPaintAllFrames": 477,
-                  "observedLargestContentfulPaintAllFramesTs": 292061659,
-                  "observedTraceEnd": 43774,
-                  "observedTraceEndTs": 335358883,
-                  "observedLoad": 559,
-                  "observedLoadTs": 292143958,
+                  "observedNavigationStartTs": 279263332,
+                  "observedFirstPaint": 482,
+                  "observedFirstPaintTs": 279744894,
+                  "observedFirstContentfulPaint": 482,
+                  "observedFirstContentfulPaintTs": 279744894,
+                  "observedFirstContentfulPaintAllFrames": 482,
+                  "observedFirstContentfulPaintAllFramesTs": 279744894,
+                  "observedFirstMeaningfulPaint": 482,
+                  "observedFirstMeaningfulPaintTs": 279744894,
+                  "observedLargestContentfulPaint": 482,
+                  "observedLargestContentfulPaintTs": 279744894,
+                  "observedLargestContentfulPaintAllFrames": 482,
+                  "observedLargestContentfulPaintAllFramesTs": 279744894,
+                  "observedTraceEnd": 43912,
+                  "observedTraceEndTs": 323175434,
+                  "observedLoad": 534,
+                  "observedLoadTs": 279797593,
                   "observedDomContentLoaded": 0,
-                  "observedDomContentLoadedTs": 291585036,
-                  "observedCumulativeLayoutShift": 0.26099806213378907,
-                  "observedCumulativeLayoutShiftMainFrame": 0.26099806213378907,
-                  "observedTotalCumulativeLayoutShift": 0.26099806213378907,
-                  "observedFirstVisualChange": 20,
-                  "observedFirstVisualChangeTs": 291604546,
-                  "observedLastVisualChange": 920,
-                  "observedLastVisualChangeTs": 292504546,
-                  "observedSpeedIndex": 383,
-                  "observedSpeedIndexTs": 291967321
+                  "observedDomContentLoadedTs": 279263671,
+                  "observedCumulativeLayoutShift": 0.2881884502834744,
+                  "observedCumulativeLayoutShiftMainFrame": 0.2881884502834744,
+                  "observedTotalCumulativeLayoutShift": 0.2881884502834744,
+                  "observedFirstVisualChange": 42,
+                  "observedFirstVisualChangeTs": 279305332,
+                  "observedLastVisualChange": 1092,
+                  "observedLastVisualChangeTs": 280355332,
+                  "observedSpeedIndex": 322,
+                  "observedSpeedIndexTs": 279585649
                 },
                 {
                   "lcpInvalidated": false
@@ -5954,19 +5730,19 @@
                   "numScripts": 16,
                   "numStylesheets": 6,
                   "numFonts": 6,
-                  "numTasks": 6884,
-                  "numTasksOver10ms": 14,
-                  "numTasksOver25ms": 12,
-                  "numTasksOver50ms": 8,
-                  "numTasksOver100ms": 4,
+                  "numTasks": 6870,
+                  "numTasksOver10ms": 11,
+                  "numTasksOver25ms": 5,
+                  "numTasksOver50ms": 4,
+                  "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 105.211,
-                  "throughput": 7044129.7178547485,
-                  "maxRtt": 105.211,
-                  "maxServerLatency": 9.316000000000003,
-                  "totalByteWeight": 422389,
-                  "totalTaskTime": 1952.9460000000333,
-                  "mainDocumentTransferSize": 1350
+                  "rtt": 84.10499999999999,
+                  "throughput": 6694944.695477862,
+                  "maxRtt": 104.769,
+                  "maxServerLatency": 10.411999999999992,
+                  "totalByteWeight": 421673,
+                  "totalTaskTime": 1689.0939999999748,
+                  "mainDocumentTransferSize": 1351
                 }
               ]
             }
@@ -6014,7 +5790,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://enm.mes-services.mer.gouv.fr",
-        "size": 459.561,
+        "size": 458.54,
         "nodes": 215,
         "requests": 98,
         "grade": "C",
@@ -6022,7 +5798,7 @@
         "ges": 1.66,
         "water": 2.49,
         "ecoindex_version": "5.4.2",
-        "date": "2025-02-02 01:21:21.557964",
+        "date": "2025-02-09 01:22:31.990253",
         "page_type": null
       }
     ],
@@ -6031,9 +5807,9 @@
       "detected": true
     },
     "summary": {
-      "nmapGrade": "B",
-      "nmapOpenPortsCount": 22,
-      "nmapOpenPortsGrade": "F",
+      "nmapGrade": "A",
+      "nmapOpenPortsCount": 2,
+      "nmapOpenPortsGrade": "A",
       "testsslExpireSoon": false,
       "testsslExpireDate": "2025-03-12T07:18:00.000Z",
       "testsslGrade": "A+",
@@ -6041,8 +5817,8 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.47,
-      "lighthouse_performanceGrade": "D",
+      "lighthouse_performance": 0.7,
+      "lighthouse_performanceGrade": "B",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 0.92,
@@ -6120,10 +5896,16 @@
             "version": "1.27.0",
             "vulnerabilities": [
               {
-                "is_exploit": "false",
                 "id": "ADDC71B8-6024-11EF-86A1-8C164567CA3C",
-                "cvss": "5.7",
-                "type": "freebsd"
+                "is_exploit": "false",
+                "type": "freebsd",
+                "cvss": "5.7"
+              },
+              {
+                "id": "9761AF78-E3E4-11EF-9F4A-589CFC10A551",
+                "is_exploit": "false",
+                "type": "freebsd",
+                "cvss": "5.3"
               }
             ]
           }
@@ -6481,7 +6263,7 @@
         "ip": "pha.ants.gouv.fr/66.22.32.116",
         "port": "443",
         "severity": "OK",
-        "finding": "89 >= 60 days"
+        "finding": "82 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -6635,14 +6417,14 @@
         "ip": "pha.ants.gouv.fr/66.22.32.116",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds from localtime"
+        "finding": "-1 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "pha.ants.gouv.fr/66.22.32.116",
         "port": "443",
         "severity": "INFO",
-        "finding": "1738459998"
+        "finding": "1739064842"
       },
       {
         "id": "HSTS_time",
@@ -6712,7 +6494,7 @@
         "ip": "pha.ants.gouv.fr/66.22.32.116",
         "port": "443",
         "severity": "OK",
-        "finding": "default-src 'self';style-src 'self' 'unsafe-inline' https://genii-script.tolk.ai https://fonts.googleapis.com;script-src 'self' https://*.ants.gouv.fr https://gva.et-gv.fr https://genii-script.tolk.ai 'nonce-4df79c39-17a1-4f0a-925f-7d6eebac8d7b' https://captcha.liveidentity.com https://cdn.woopic.com/;frame-src 'self' https://www.youtube.com/ https://www.dailymotion.com/ https://player.vimeo.com/;connect-src 'self' https://geo.api.gouv.fr https://*.ants.gouv.fr https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai https://api.ipify.org https://captcha.liveidentity.com;font-src 'self' https://fonts.gstatic.com data:;img-src 'self' https: http: data:;media-src 'self' https://captcha.liveidentity.com;object-src 'none';base-uri 'self';form-action 'self'"
+        "finding": "default-src 'self';style-src 'self' 'unsafe-inline' https://genii-script.tolk.ai https://fonts.googleapis.com;script-src 'self' https://*.ants.gouv.fr https://gva.et-gv.fr https://genii-script.tolk.ai 'nonce-8b8cc2cc-ebbf-47bd-8e27-4d741487c1c2' https://captcha.liveidentity.com https://cdn.woopic.com/;frame-src 'self' https://www.youtube.com/ https://www.dailymotion.com/ https://player.vimeo.com/;connect-src 'self' https://geo.api.gouv.fr https://*.ants.gouv.fr https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai https://api.ipify.org https://captcha.liveidentity.com;font-src 'self' https://fonts.gstatic.com data:;img-src 'self' https: http: data:;media-src 'self' https://captcha.liveidentity.com;object-src 'none';base-uri 'self';form-action 'self'"
       },
       {
         "id": "Permissions-Policy",
@@ -7247,7 +7029,7 @@
         "ip": "pha.ants.gouv.fr/66.22.32.116",
         "port": "443",
         "severity": "INFO",
-        "finding": "68"
+        "finding": "70"
       }
     ],
     "thirdparties": {
@@ -7402,7 +7184,7 @@
       {
         "requestedUrl": "https://pha.ants.gouv.fr/?lang=fr",
         "finalUrl": "https://pha.ants.gouv.fr/?lang=fr",
-        "fetchTime": "2025-02-02T01:31:37.142Z",
+        "fetchTime": "2025-02-09T01:32:19.139Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -7413,7 +7195,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.38
+            "score": 0.35
           },
           "accessibility": {
             "title": "Accessibility",
@@ -7465,53 +7247,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 8830,
+            "numericValue": 8906,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2884,
-                  "firstMeaningfulPaint": 2884,
-                  "largestContentfulPaint": 8976,
-                  "interactive": 8830,
-                  "speedIndex": 5685,
-                  "totalBlockingTime": 471,
-                  "maxPotentialFID": 767,
-                  "cumulativeLayoutShift": 0.3320057054095798,
-                  "cumulativeLayoutShiftMainFrame": 0.3320057054095798,
-                  "totalCumulativeLayoutShift": 0.3320057054095798,
+                  "firstContentfulPaint": 2887,
+                  "firstMeaningfulPaint": 2887,
+                  "largestContentfulPaint": 9102,
+                  "interactive": 8906,
+                  "speedIndex": 6329,
+                  "totalBlockingTime": 529,
+                  "maxPotentialFID": 815,
+                  "cumulativeLayoutShift": 0.3315252685546875,
+                  "cumulativeLayoutShiftMainFrame": 0.3315252685546875,
+                  "totalCumulativeLayoutShift": 0.3315252685546875,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 257384033,
+                  "observedTimeOriginTs": 321012382,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 257384033,
-                  "observedFirstPaint": 762,
-                  "observedFirstPaintTs": 258146193,
-                  "observedFirstContentfulPaint": 762,
-                  "observedFirstContentfulPaintTs": 258146193,
-                  "observedFirstContentfulPaintAllFrames": 762,
-                  "observedFirstContentfulPaintAllFramesTs": 258146193,
-                  "observedFirstMeaningfulPaint": 762,
-                  "observedFirstMeaningfulPaintTs": 258146193,
-                  "observedLargestContentfulPaint": 1340,
-                  "observedLargestContentfulPaintTs": 258723768,
-                  "observedLargestContentfulPaintAllFrames": 1340,
-                  "observedLargestContentfulPaintAllFramesTs": 258723768,
-                  "observedTraceEnd": 4031,
-                  "observedTraceEndTs": 261415448,
-                  "observedLoad": 1340,
-                  "observedLoadTs": 258724229,
-                  "observedDomContentLoaded": 767,
-                  "observedDomContentLoadedTs": 258151322,
-                  "observedCumulativeLayoutShift": 0.3320057054095798,
-                  "observedCumulativeLayoutShiftMainFrame": 0.3320057054095798,
-                  "observedTotalCumulativeLayoutShift": 0.3320057054095798,
-                  "observedFirstVisualChange": 772,
-                  "observedFirstVisualChangeTs": 258156033,
-                  "observedLastVisualChange": 1488,
-                  "observedLastVisualChangeTs": 258872033,
-                  "observedSpeedIndex": 1132,
-                  "observedSpeedIndexTs": 258516492
+                  "observedNavigationStartTs": 321012382,
+                  "observedFirstPaint": 853,
+                  "observedFirstPaintTs": 321865843,
+                  "observedFirstContentfulPaint": 853,
+                  "observedFirstContentfulPaintTs": 321865843,
+                  "observedFirstContentfulPaintAllFrames": 853,
+                  "observedFirstContentfulPaintAllFramesTs": 321865843,
+                  "observedFirstMeaningfulPaint": 853,
+                  "observedFirstMeaningfulPaintTs": 321865843,
+                  "observedLargestContentfulPaint": 1387,
+                  "observedLargestContentfulPaintTs": 322399107,
+                  "observedLargestContentfulPaintAllFrames": 1387,
+                  "observedLargestContentfulPaintAllFramesTs": 322399107,
+                  "observedTraceEnd": 4138,
+                  "observedTraceEndTs": 325150851,
+                  "observedLoad": 1387,
+                  "observedLoadTs": 322399663,
+                  "observedDomContentLoaded": 849,
+                  "observedDomContentLoadedTs": 321861068,
+                  "observedCumulativeLayoutShift": 0.3315252685546875,
+                  "observedCumulativeLayoutShiftMainFrame": 0.3315252685546875,
+                  "observedTotalCumulativeLayoutShift": 0.3315252685546875,
+                  "observedFirstVisualChange": 858,
+                  "observedFirstVisualChangeTs": 321870382,
+                  "observedLastVisualChange": 1524,
+                  "observedLastVisualChangeTs": 322536382,
+                  "observedSpeedIndex": 1203,
+                  "observedSpeedIndexTs": 322215444
                 },
                 {
                   "lcpInvalidated": false
@@ -7533,19 +7315,19 @@
                   "numScripts": 3,
                   "numStylesheets": 5,
                   "numFonts": 6,
-                  "numTasks": 1688,
+                  "numTasks": 1608,
                   "numTasksOver10ms": 6,
                   "numTasksOver25ms": 4,
                   "numTasksOver50ms": 2,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 75.409,
-                  "throughput": 20663153.545177307,
-                  "maxRtt": 87.721,
-                  "maxServerLatency": 182.051,
-                  "totalByteWeight": 1518951,
-                  "totalTaskTime": 723.5579999999975,
-                  "mainDocumentTransferSize": 206828
+                  "rtt": 76.382,
+                  "throughput": 23695975.480890572,
+                  "maxRtt": 88.097,
+                  "maxServerLatency": 193.551,
+                  "totalByteWeight": 1519226,
+                  "totalTaskTime": 754.6169999999903,
+                  "mainDocumentTransferSize": 206980
                 }
               ]
             }
@@ -7592,7 +7374,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://pha.ants.gouv.fr/?lang=fr",
-        "size": 3637.217,
+        "size": 3637.489,
         "nodes": 588,
         "requests": 41,
         "grade": "D",
@@ -7600,7 +7382,7 @@
         "ges": 1.92,
         "water": 2.88,
         "ecoindex_version": "5.4.2",
-        "date": "2025-02-02 01:30:44.002601",
+        "date": "2025-02-09 01:31:24.555215",
         "page_type": "website"
       }
     ],
@@ -7619,7 +7401,7 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.38,
+      "lighthouse_performance": 0.35,
       "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 0.77,
       "lighthouse_accessibilityGrade": "B",
@@ -7698,10 +7480,16 @@
             "version": "1.27.0",
             "vulnerabilities": [
               {
-                "is_exploit": "false",
-                "type": "freebsd",
                 "cvss": "5.7",
-                "id": "ADDC71B8-6024-11EF-86A1-8C164567CA3C"
+                "id": "ADDC71B8-6024-11EF-86A1-8C164567CA3C",
+                "is_exploit": "false",
+                "type": "freebsd"
+              },
+              {
+                "cvss": "5.3",
+                "id": "9761AF78-E3E4-11EF-9F4A-589CFC10A551",
+                "is_exploit": "false",
+                "type": "freebsd"
               }
             ]
           }
@@ -7912,14 +7700,14 @@
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "sessionresumption_ID",
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "INFO",
-        "finding": "not supported"
+        "finding": "supported"
       },
       {
         "id": "TLS_timestamp",
@@ -8059,7 +7847,7 @@
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "OK",
-        "finding": "89 >= 60 days"
+        "finding": "82 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -8220,7 +8008,7 @@
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "INFO",
-        "finding": "1738460125"
+        "finding": "1739064946"
       },
       {
         "id": "HSTS_time",
@@ -8290,7 +8078,7 @@
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "OK",
-        "finding": "default-src 'self';style-src 'self' 'unsafe-inline' https://genii-script.tolk.ai https://fonts.googleapis.com;script-src 'self' https://*.ants.gouv.fr https://gva.et-gv.fr https://genii-script.tolk.ai 'nonce-4a77e75c-efb8-4d76-a03e-e96bdf59cb42' https://captcha.liveidentity.com https://cdn.woopic.com/;frame-src 'self' https://www.youtube.com/ https://www.dailymotion.com/ https://player.vimeo.com/;connect-src 'self' https://geo.api.gouv.fr https://*.ants.gouv.fr https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai https://api.ipify.org https://captcha.liveidentity.com;font-src 'self' https://fonts.gstatic.com data:;img-src 'self' https: http: data:;media-src 'self' https://captcha.liveidentity.com;object-src 'none';base-uri 'self';form-action 'self'"
+        "finding": "default-src 'self';style-src 'self' 'unsafe-inline' https://genii-script.tolk.ai https://fonts.googleapis.com;script-src 'self' https://*.ants.gouv.fr https://gva.et-gv.fr https://genii-script.tolk.ai 'nonce-3b7e1c65-8872-4343-b679-544661ccb319' https://captcha.liveidentity.com https://cdn.woopic.com/;frame-src 'self' https://www.youtube.com/ https://www.dailymotion.com/ https://player.vimeo.com/;connect-src 'self' https://geo.api.gouv.fr https://*.ants.gouv.fr https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai https://api.ipify.org https://captcha.liveidentity.com;font-src 'self' https://fonts.gstatic.com data:;img-src 'self' https: http: data:;media-src 'self' https://captcha.liveidentity.com;object-src 'none';base-uri 'self';form-action 'self'"
       },
       {
         "id": "Permissions-Policy",
@@ -8825,7 +8613,7 @@
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "INFO",
-        "finding": "65"
+        "finding": "67"
       }
     ],
     "thirdparties": {
@@ -8998,7 +8786,7 @@
       {
         "requestedUrl": "https://mairie.ants.gouv.fr/?lang=fr",
         "finalUrl": "https://mairie.ants.gouv.fr/?lang=fr",
-        "fetchTime": "2025-02-02T01:33:41.363Z",
+        "fetchTime": "2025-02-09T01:34:03.048Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -9009,7 +8797,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.55
+            "score": 0.49
           },
           "accessibility": {
             "title": "Accessibility",
@@ -9061,53 +8849,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 8330,
+            "numericValue": 8281,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2753,
-                  "firstMeaningfulPaint": 2753,
-                  "largestContentfulPaint": 8086,
-                  "interactive": 8330,
-                  "speedIndex": 5593,
-                  "totalBlockingTime": 261,
-                  "maxPotentialFID": 433,
-                  "cumulativeLayoutShift": 0.005568978521558974,
-                  "cumulativeLayoutShiftMainFrame": 0.005568978521558974,
-                  "totalCumulativeLayoutShift": 0.005568978521558974,
+                  "firstContentfulPaint": 2597,
+                  "firstMeaningfulPaint": 2597,
+                  "largestContentfulPaint": 7973,
+                  "interactive": 8281,
+                  "speedIndex": 5403,
+                  "totalBlockingTime": 242,
+                  "maxPotentialFID": 418,
+                  "cumulativeLayoutShift": 0.2725122477213542,
+                  "cumulativeLayoutShiftMainFrame": 0.2725122477213542,
+                  "totalCumulativeLayoutShift": 0.2725122477213542,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 279415693,
+                  "observedTimeOriginTs": 254125736,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 279415693,
-                  "observedFirstPaint": 782,
-                  "observedFirstPaintTs": 280197518,
-                  "observedFirstContentfulPaint": 782,
-                  "observedFirstContentfulPaintTs": 280197518,
-                  "observedFirstContentfulPaintAllFrames": 782,
-                  "observedFirstContentfulPaintAllFramesTs": 280197518,
-                  "observedFirstMeaningfulPaint": 782,
-                  "observedFirstMeaningfulPaintTs": 280197518,
-                  "observedLargestContentfulPaint": 1271,
-                  "observedLargestContentfulPaintTs": 280686791,
-                  "observedLargestContentfulPaintAllFrames": 1271,
-                  "observedLargestContentfulPaintAllFramesTs": 280686791,
-                  "observedTraceEnd": 8378,
-                  "observedTraceEndTs": 287793701,
-                  "observedLoad": 6066,
-                  "observedLoadTs": 285482190,
-                  "observedDomContentLoaded": 777,
-                  "observedDomContentLoadedTs": 280192726,
-                  "observedCumulativeLayoutShift": 0.005568978521558974,
-                  "observedCumulativeLayoutShiftMainFrame": 0.005568978521558974,
-                  "observedTotalCumulativeLayoutShift": 0.005568978521558974,
-                  "observedFirstVisualChange": 789,
-                  "observedFirstVisualChangeTs": 280204693,
-                  "observedLastVisualChange": 1389,
-                  "observedLastVisualChangeTs": 280804693,
-                  "observedSpeedIndex": 1038,
-                  "observedSpeedIndexTs": 280453615
+                  "observedNavigationStartTs": 254125736,
+                  "observedFirstPaint": 750,
+                  "observedFirstPaintTs": 254875961,
+                  "observedFirstContentfulPaint": 750,
+                  "observedFirstContentfulPaintTs": 254875961,
+                  "observedFirstContentfulPaintAllFrames": 750,
+                  "observedFirstContentfulPaintAllFramesTs": 254875961,
+                  "observedFirstMeaningfulPaint": 750,
+                  "observedFirstMeaningfulPaintTs": 254875961,
+                  "observedLargestContentfulPaint": 1216,
+                  "observedLargestContentfulPaintTs": 255341313,
+                  "observedLargestContentfulPaintAllFrames": 1216,
+                  "observedLargestContentfulPaintAllFramesTs": 255341313,
+                  "observedTraceEnd": 7646,
+                  "observedTraceEndTs": 261771819,
+                  "observedLoad": 5339,
+                  "observedLoadTs": 259464605,
+                  "observedDomContentLoaded": 748,
+                  "observedDomContentLoadedTs": 254873474,
+                  "observedCumulativeLayoutShift": 0.2725122477213542,
+                  "observedCumulativeLayoutShiftMainFrame": 0.2725122477213542,
+                  "observedTotalCumulativeLayoutShift": 0.2725122477213542,
+                  "observedFirstVisualChange": 747,
+                  "observedFirstVisualChangeTs": 254872736,
+                  "observedLastVisualChange": 1447,
+                  "observedLastVisualChangeTs": 255572736,
+                  "observedSpeedIndex": 1041,
+                  "observedSpeedIndexTs": 255166960
                 },
                 {
                   "lcpInvalidated": false
@@ -9125,23 +8913,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 41,
+                  "numRequests": 42,
                   "numScripts": 3,
                   "numStylesheets": 5,
                   "numFonts": 6,
-                  "numTasks": 1372,
-                  "numTasksOver10ms": 6,
-                  "numTasksOver25ms": 4,
-                  "numTasksOver50ms": 4,
+                  "numTasks": 1297,
+                  "numTasksOver10ms": 5,
+                  "numTasksOver25ms": 3,
+                  "numTasksOver50ms": 2,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 75.757,
-                  "throughput": 20588882.162336938,
-                  "maxRtt": 88.69499999999971,
-                  "maxServerLatency": 325.128,
-                  "totalByteWeight": 1857758,
-                  "totalTaskTime": 695.2009999999979,
-                  "mainDocumentTransferSize": 145165
+                  "rtt": 79.697,
+                  "throughput": 21533176.319359735,
+                  "maxRtt": 91.32300000000032,
+                  "maxServerLatency": 314.524,
+                  "totalByteWeight": 1859414,
+                  "totalTaskTime": 527.694999999997,
+                  "mainDocumentTransferSize": 145376
                 }
               ]
             }
@@ -9188,15 +8976,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://mairie.ants.gouv.fr/?lang=fr",
-        "size": 3087.725,
-        "nodes": 350,
-        "requests": 38,
+        "size": 3091.845,
+        "nodes": 358,
+        "requests": 40,
         "grade": "C",
-        "score": 65,
-        "ges": 1.7,
-        "water": 2.55,
+        "score": 64,
+        "ges": 1.72,
+        "water": 2.58,
         "ecoindex_version": "5.4.2",
-        "date": "2025-02-02 01:32:34.862054",
+        "date": "2025-02-09 01:33:11.135954",
         "page_type": "website"
       }
     ],
@@ -9215,8 +9003,8 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.55,
-      "lighthouse_performanceGrade": "C",
+      "lighthouse_performance": 0.49,
+      "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 0.77,
       "lighthouse_accessibilityGrade": "B",
       "lighthouse_best-practices": 0.83,
@@ -9270,77 +9058,77 @@
     "testssl": [
       {
         "id": "service",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "HTTP"
       },
       {
         "id": "pre_128cipher",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "No 128 cipher limit bug"
       },
       {
         "id": "SSLv2",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "not offered"
       },
       {
         "id": "SSLv3",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "not offered"
       },
       {
         "id": "TLS1",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "TLS1_1",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "TLS1_2",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "TLS1_3",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "offered with final"
       },
       {
         "id": "ALPN_HTTP2",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "h2"
       },
       {
         "id": "ALPN",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "http/1.1"
       },
       {
         "id": "cipherlist_NULL",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -9348,7 +9136,7 @@
       },
       {
         "id": "cipherlist_aNULL",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -9356,7 +9144,7 @@
       },
       {
         "id": "cipherlist_EXPORT",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -9364,7 +9152,7 @@
       },
       {
         "id": "cipherlist_LOW",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -9372,7 +9160,7 @@
       },
       {
         "id": "cipherlist_3DES_IDEA",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-310",
@@ -9380,7 +9168,7 @@
       },
       {
         "id": "cipherlist_OBSOLETED",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "LOW",
         "cwe": "CWE-310",
@@ -9388,1499 +9176,419 @@
       },
       {
         "id": "cipherlist_STRONG_NOFS",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "cipherlist_STRONG_FS",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "cipher_order-tls1_2",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "server"
       },
       {
         "id": "cipherorder_TLSv1_2",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "cipher_order",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "server"
       },
       {
         "id": "FS",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "FS_ciphers",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA"
       },
       {
         "id": "FS_ECDHE_curves",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "prime256v1 secp384r1"
       },
       {
         "id": "TLS_extensions",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'supported versions/#43' 'key share/#51' 'extended master secret/#23' 'application layer protocol negotiation/#16'"
+        "finding": "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'status request/#5' 'supported versions/#43' 'key share/#51' 'extended master secret/#23' 'application layer protocol negotiation/#16'"
       },
       {
         "id": "TLS_session_ticket",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "valid for 86400 seconds only (<daily)"
       },
       {
         "id": "SSL_sessionID_support",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "yes"
       },
       {
         "id": "sessionresumption_ticket",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "supported"
       },
       {
         "id": "sessionresumption_ID",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "random"
       },
       {
         "id": "certificate_compression",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "none"
       },
       {
         "id": "clientAuth",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "none"
       },
       {
         "id": "cert_numbers",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "1"
       },
       {
         "id": "cert_signatureAlgorithm",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "SHA256 with RSA"
       },
       {
         "id": "cert_keySize",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "RSA 2048 bits (exponent is 65537)"
       },
       {
         "id": "cert_keyUsage",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "Digital Signature, Key Encipherment"
       },
       {
         "id": "cert_extKeyUsage",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "TLS Web Server Authentication, TLS Web Client Authentication"
       },
       {
         "id": "cert_serialNumber",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "04537D31735BA380D88EB3017B37EF90D668"
       },
       {
         "id": "cert_serialNumberLen",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "18"
       },
       {
         "id": "cert_fingerprintSHA1",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "688648A164DFC3D4A3DB911B9DFCB844048BC52D"
       },
       {
         "id": "cert_fingerprintSHA256",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "8622FD13FBBCFC95BC8AA21DA4923D5DAC01B368C7EA0B984B7D5CEA6F2A48F8"
       },
       {
         "id": "cert",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "-----BEGIN CERTIFICATE-----\nMIIFDzCCA/egAwIBAgISBFN9MXNbo4DYjrMBezfvkNZoMA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNSMTEwHhcNMjQxMjMxMjIzMjU5WhcNMjUwMzMxMjIzMjU4WjArMSkwJwYDVQQDEyBlY29yZXNwb25zYWJsZS5udW1lcmlxdWUuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJiYWOvsy7Z3gehwDociMe/SY2NnAZyQThAWlJz1GbYFMFa2gkFi1DELecDU4cE2Ex9ccBYh0BxTE4w8DIxdFUf4x5QpQY/C47Iptht3jahz6thjkTfSJlBhoQS9+nYiBqWgPdwHS4+3BiS2F5Iuya7cFiwsw2yUIy2fndRA2pgmPWeHN7ZMpKPuUjHjhyztOO5wpbWYfcOHlvsuRWyibCT/Y0K25HzUX2uWcyR6DKWJaIbxcQN5Uw6IHG5apfCADGYNpKIgtbkJHAA1jzyJp4qMTlf9HigZOmPQVgPp9TINN0A/mpBxM9fXtH5BSLQFqo73ZTaHh2bK/22DQ+9IrI0CAwEAAaOCAiMwggIfMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUWMmyqmjmpUjM2CvoQrK/f75FZmgwHwYDVR0jBBgwFoAUxc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjExLmkubGVuY3Iub3JnLzArBgNVHREEJDAigiBlY29yZXNwb25zYWJsZS5udW1lcmlxdWUuZ291di5mcjATBgNVHSAEDDAKMAgGBmeBDAECATCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1AMz7D2qFcQll/pWbU87psnwi6YVcDZeNtql+VMD+TA2wAAABlB8PYu4AAAQDAEYwRAIgUCzBHAX0T6rERRYf/RprBFgiWl0aYuYeAqP49ta73+oCIDPnovEIUTdg9MiyRWBDbCihZpSCOgeRCQk2YIcEwKlgAHYATnWjJ1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGUHw9i3QAABAMARzBFAiEA5Zg0dJyfFrjSsWmVccDo8drEOv1kTCCIqN27G5FgfFkCIDD07bPWMl5ZGv50hKPNG5yvvS4cFzI6DsHQ95djWJeEMA0GCSqGSIb3DQEBCwUAA4IBAQCLmSH73/E4MsphTeiGZ5s/3QMR2K8fbeDzG4KBXqoBiH6bWb0/kc+aNU779VwySCmBnZviCb+UcifvGNMOLwIWgd/e3F8w1NEzSoboaCF0cAXjvqsB6tqcGvUFRJWyXCUXVEYS0Fo6wNZcCcFASNaEMPkcOjMjZailjNByUCyFnFV7msgfuqm88MMK6b7aT2IHIAYJB0oPt/tyyRxKCrQY0cnfG564VdKOkYkMfe6yOyD1DVASQw/l/5xm4tFN2msGz/iQHvUX1MhM2pvA0JMgHjFynY8yorf5xJXVfML0RQ4Zc5iMuCeqNdajt3U3l4/Am9/ZnAGOsOe3S+Hsntht\n-----END CERTIFICATE-----"
       },
       {
         "id": "cert_commonName",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "ecoresponsable.numerique.gouv.fr"
       },
       {
         "id": "cert_commonName_wo_SNI",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "*.github.io"
       },
       {
         "id": "cert_subjectAltName",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "ecoresponsable.numerique.gouv.fr"
       },
       {
         "id": "cert_trust",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "Ok via SAN and CN (SNI mandatory)"
       },
       {
         "id": "cert_trust_wildcard",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "LOW",
         "finding": "trust is via wildcard"
       },
       {
         "id": "cert_chain_of_trust",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "passed."
       },
       {
         "id": "cert_certificatePolicies_EV",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "no"
       },
       {
         "id": "cert_expirationStatus",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
-        "finding": "57 >= 30 days"
+        "finding": "50 >= 30 days"
       },
       {
         "id": "cert_notBefore",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "2024-12-31 22:32"
       },
       {
         "id": "cert_notAfter",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "2025-03-31 22:32"
       },
       {
         "id": "cert_extlifeSpan",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "certificate has no extended life time according to browser forum"
       },
       {
         "id": "cert_eTLS",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "not present"
       },
       {
         "id": "cert_crlDistributionPoints",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "--"
       },
       {
         "id": "cert_ocspURL",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "http://r11.o.lencr.org"
       },
       {
         "id": "OCSP_stapling",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
-        "severity": "LOW",
-        "finding": "not offered"
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "cert_ocspRevoked",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "not revoked"
       },
       {
         "id": "cert_mustStapleExtension",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "--"
       },
       {
         "id": "DNS_CAArecord",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "LOW",
         "finding": "--"
       },
       {
         "id": "certificate_transparency",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "yes (certificate extension)"
       },
       {
         "id": "certs_countServer",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "2"
       },
       {
         "id": "certs_list_ordering_problem",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "no"
       },
       {
         "id": "cert_caIssuers",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "R11 (Let's Encrypt from US)"
       },
       {
         "id": "intermediate_cert <#1>",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "-----BEGIN CERTIFICATE-----\nMIIFBjCCAu6gAwIBAgIRAIp9PhPWLzDvI4a9KQdrNPgwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjQwMzEzMDAwMDAwWhcNMjcwMzEyMjM1OTU5WjAzMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDEMMAoGA1UEAxMDUjExMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuoe8XBsAOcvKCs3UZxD5ATylTqVhyybKUvsVAbe5KPUoHu0nsyQYOWcJDAjs4DqwO3cOvfPlOVRBDE6uQdaZdN5R2+97/1i9qLcT9t4x1fJyyXJqC4N0lZxGAGQUmfOx2SLZzaiSqhwmej/+71gFewiVgdtxD4774zEJuwm+UE1fj5F2PVqdnoPy6cRms+EGZkNIGIBloDcYmpuEMpexsr3E+BUAnSeI++JjF5ZsmydnS8TbKF5pwnnwSVzgJFDhxLyhBax7QG0AtMJBP6dYuC/FXJuluwme8f7rsIU5/agK70XEeOtlKsLPXzze41xNG/cLJyuqC0J3U095ah2H2QIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHQ4EFgQUxc9GpOr0w8B6bJXELbBeki8m47kwHwYDVR0jBBgwFoAUebRZ5nu25eQBc4AIiMgaWPbpm24wMgYIKwYBBQUHAQEEJjAkMCIGCCsGAQUFBzAChhZodHRwOi8veDEuaS5sZW5jci5vcmcvMBMGA1UdIAQMMAowCAYGZ4EMAQIBMCcGA1UdHwQgMB4wHKAaoBiGFmh0dHA6Ly94MS5jLmxlbmNyLm9yZy8wDQYJKoZIhvcNAQELBQADggIBAE7iiV0KAxyQOND1H/lxXPjDj7I3iHpvsCUf7b632IYGjukJhM1yv4Hz/MrPU0jtvfZpQtSlET41yBOykh0FX+ou1Nj4ScOt9ZmWnO8m2OG0JAtIIE3801S0qcYhyOE2G/93ZCkXufBL713qzXnQv5C/viOykNpKqUgxdKlEC+Hi9i2DcaR1e9KUwQUZRhy5j/PEdEglKg3l9dtD4tuTm7kZtB8v32oOjzHTYw+7KdzdZiw/sBtnUfhBPORNuay4pJxmY/WrhSMdzFO2q3Gu3MUBcdo27goYKjL9CTF8j/Zz55yctUoVaneCWs/ajUX+HypkBTA+c8LGDLnWO2NKq0YD/pnARkAnYGPfUDoHR9gVSp/qRx+ZWghiDLZsMwhN1zjtSC0uBWiugF3vTNzYIEFfaPG7Ws3jDrAMMYebQ95JQ+HIBD/RPBuHRTBpqKlyDnkSHDHYPiNX3adPoPAcgdF3H2/W0rmoswMWgTlLn1Wu0mrks7/qpdWfS6PJ1jty80r2VKsM/Dj3YIDfbjXKdaFU5C+8bhfJGqU3taKauuz0wHVGT3eo6FlWkWYtbt4pgdamlwVeZEW+LM7qZEJEsMNPrfC03APKmZsJgpWCDWOKZvkZcvjVuYkQ4omYCTX5ohy+knMjdOmdH9c7SpqEWBDC86fiNex+O0XOMEZSa8DA\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#1>",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "591E9CE6C863D3A079E9FABE1478C7339A26B21269DDE795211361024AE31A44"
       },
       {
         "id": "intermediate_cert_notBefore <#1>",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "2024-03-13 00:00"
       },
       {
         "id": "intermediate_cert_notAfter <#1>",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "2027-03-12 23:59"
       },
       {
         "id": "intermediate_cert_expiration <#1>",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "ok > 40 days"
       },
       {
         "id": "intermediate_cert_chain <#1>",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "R11 <-- ISRG Root X1"
       },
       {
         "id": "intermediate_cert_badOCSP",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
         "finding": "intermediate certificate(s) is/are ok"
       },
       {
         "id": "HTTP_status_code",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "200 OK ('/')"
       },
       {
         "id": "HTTP_clock_skew",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "+14 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "1738460272"
+        "finding": "1739065052"
       },
       {
         "id": "HTTP_headerAge",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
         "finding": "14 seconds"
       },
       {
         "id": "HSTS",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "LOW",
-        "finding": "not offered"
-      },
-      {
-        "id": "HPKP",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No support for HTTP Public Key Pinning"
-      },
-      {
-        "id": "banner_server",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "GitHub.com"
-      },
-      {
-        "id": "banner_application",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No application banner found"
-      },
-      {
-        "id": "cookie_count",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "0 at '/'"
-      },
-      {
-        "id": "Access-Control-Allow-Origin",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "*"
-      },
-      {
-        "id": "X-Served-By",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "cache-bur-kbur8200141-BUR"
-      },
-      {
-        "id": "Cache-Control",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "max-age=600"
-      },
-      {
-        "id": "banner_reverseproxy",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "cwe": "CWE-200",
-        "finding": "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 1"
-      },
-      {
-        "id": "heartbleed",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2014-0160",
-        "cwe": "CWE-119",
-        "finding": "not vulnerable, no heartbeat extension"
-      },
-      {
-        "id": "CCS",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2014-0224",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "ticketbleed",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2016-9244",
-        "cwe": "CWE-200",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "ROBOT",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
-        "cwe": "CWE-203",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "secure_renego",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-310",
-        "finding": "supported"
-      },
-      {
-        "id": "secure_client_renego",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2011-1473",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable, mitigated"
-      },
-      {
-        "id": "CRIME_TLS",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2012-4929",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "BREACH",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "MEDIUM",
-        "cve": "CVE-2013-3587",
-        "cwe": "CWE-310",
-        "finding": "potentially VULNERABLE, gzip HTTP compression detected  - only supplied '/' tested"
-      },
-      {
-        "id": "POODLE_SSL",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2014-3566",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable, no SSLv3"
-      },
-      {
-        "id": "fallback_SCSV",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "no protocol below TLS 1.2 offered"
-      },
-      {
-        "id": "SWEET32",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2016-2183 CVE-2016-6329",
-        "cwe": "CWE-327",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "FREAK",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2015-0204",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "DROWN",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2016-0800 CVE-2016-0703",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable on this host and port"
-      },
-      {
-        "id": "DROWN_hint",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "cve": "CVE-2016-0800 CVE-2016-0703",
-        "cwe": "CWE-310",
-        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=8622FD13FBBCFC95BC8AA21DA4923D5DAC01B368C7EA0B984B7D5CEA6F2A48F8"
-      },
-      {
-        "id": "LOGJAM",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2015-4000",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable, no DH EXPORT ciphers,"
-      },
-      {
-        "id": "LOGJAM-common_primes",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2015-4000",
-        "cwe": "CWE-310",
-        "finding": "no DH key with <= TLS 1.2"
-      },
-      {
-        "id": "BEAST",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2011-3389",
-        "cwe": "CWE-20",
-        "finding": "not vulnerable, no SSL3 or TLS1"
-      },
-      {
-        "id": "LUCKY13",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "LOW",
-        "cve": "CVE-2013-0169",
-        "cwe": "CWE-310",
-        "finding": "potentially vulnerable, uses TLS CBC ciphers"
-      },
-      {
-        "id": "winshock",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2014-6321",
-        "cwe": "CWE-94",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "RC4",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2013-2566 CVE-2015-2808",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "clientsimulation-android_60",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-android_70",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-android_81",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-android_90",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-android_X",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-android_11",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-android_12",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-chrome_79_win10",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-chrome_101_win10",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-firefox_66_win81",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-firefox_100_win10",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-ie_6_xp",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-ie_8_win7",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-ie_8_xp",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-ie_11_win7",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA256"
-      },
-      {
-        "id": "clientsimulation-ie_11_win81",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA256"
-      },
-      {
-        "id": "clientsimulation-ie_11_winphone81",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA256"
-      },
-      {
-        "id": "clientsimulation-ie_11_win10",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-edge_15_win10",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-edge_101_win10_21h2",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-safari_121_ios_122",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
-      },
-      {
-        "id": "clientsimulation-safari_130_osx_10146",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
-      },
-      {
-        "id": "clientsimulation-safari_154_osx_1231",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-java_7u25",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-java_8u161",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-java1102",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-java1703",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-go_1178",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-libressl_283",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
-      },
-      {
-        "id": "clientsimulation-openssl_102e",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-openssl_110l",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
-      },
-      {
-        "id": "clientsimulation-openssl_111d",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-openssl_303",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-apple_mail_16_0",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-thunderbird_91_9",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "rating_spec",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
-      },
-      {
-        "id": "rating_doc",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
-      },
-      {
-        "id": "protocol_support_score",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "100"
-      },
-      {
-        "id": "protocol_support_score_weighted",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "30"
-      },
-      {
-        "id": "key_exchange_score",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "90"
-      },
-      {
-        "id": "key_exchange_score_weighted",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "27"
-      },
-      {
-        "id": "cipher_strength_score",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "60"
-      },
-      {
-        "id": "cipher_strength_score_weighted",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "24"
-      },
-      {
-        "id": "final_score",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "81"
-      },
-      {
-        "id": "overall_grade",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "A"
-      },
-      {
-        "id": "grade_cap_reason_1",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "Grade capped to A. HSTS is not offered"
-      },
-      {
-        "id": "service",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "HTTP"
-      },
-      {
-        "id": "pre_128cipher",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No 128 cipher limit bug"
-      },
-      {
-        "id": "SSLv2",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "not offered"
-      },
-      {
-        "id": "SSLv3",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "not offered"
-      },
-      {
-        "id": "TLS1",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "not offered"
-      },
-      {
-        "id": "TLS1_1",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "not offered"
-      },
-      {
-        "id": "TLS1_2",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered"
-      },
-      {
-        "id": "TLS1_3",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered with final"
-      },
-      {
-        "id": "ALPN_HTTP2",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "h2"
-      },
-      {
-        "id": "ALPN",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "http/1.1"
-      },
-      {
-        "id": "cipherlist_NULL",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-327",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_aNULL",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-327",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_EXPORT",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-327",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_LOW",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-327",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_3DES_IDEA",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "cwe": "CWE-310",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_OBSOLETED",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "LOW",
-        "cwe": "CWE-310",
-        "finding": "offered"
-      },
-      {
-        "id": "cipherlist_STRONG_NOFS",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered"
-      },
-      {
-        "id": "cipherlist_STRONG_FS",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered"
-      },
-      {
-        "id": "cipher_order-tls1_2",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "server"
-      },
-      {
-        "id": "cipherorder_TLSv1_2",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "cipher_order",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "server"
-      },
-      {
-        "id": "FS",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered"
-      },
-      {
-        "id": "FS_ciphers",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA"
-      },
-      {
-        "id": "FS_ECDHE_curves",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "prime256v1 secp384r1"
-      },
-      {
-        "id": "TLS_extensions",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'supported versions/#43' 'key share/#51' 'extended master secret/#23' 'application layer protocol negotiation/#16'"
-      },
-      {
-        "id": "TLS_session_ticket",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "valid for 86400 seconds only (<daily)"
-      },
-      {
-        "id": "SSL_sessionID_support",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "yes"
-      },
-      {
-        "id": "sessionresumption_ticket",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "supported"
-      },
-      {
-        "id": "sessionresumption_ID",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "supported"
-      },
-      {
-        "id": "TLS_timestamp",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "random"
-      },
-      {
-        "id": "certificate_compression",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "none"
-      },
-      {
-        "id": "clientAuth",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "none"
-      },
-      {
-        "id": "cert_numbers",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "1"
-      },
-      {
-        "id": "cert_signatureAlgorithm",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "SHA256 with RSA"
-      },
-      {
-        "id": "cert_keySize",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "RSA 2048 bits (exponent is 65537)"
-      },
-      {
-        "id": "cert_keyUsage",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "Digital Signature, Key Encipherment"
-      },
-      {
-        "id": "cert_extKeyUsage",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLS Web Server Authentication, TLS Web Client Authentication"
-      },
-      {
-        "id": "cert_serialNumber",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "04537D31735BA380D88EB3017B37EF90D668"
-      },
-      {
-        "id": "cert_serialNumberLen",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "18"
-      },
-      {
-        "id": "cert_fingerprintSHA1",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "688648A164DFC3D4A3DB911B9DFCB844048BC52D"
-      },
-      {
-        "id": "cert_fingerprintSHA256",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "8622FD13FBBCFC95BC8AA21DA4923D5DAC01B368C7EA0B984B7D5CEA6F2A48F8"
-      },
-      {
-        "id": "cert",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\nMIIFDzCCA/egAwIBAgISBFN9MXNbo4DYjrMBezfvkNZoMA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNSMTEwHhcNMjQxMjMxMjIzMjU5WhcNMjUwMzMxMjIzMjU4WjArMSkwJwYDVQQDEyBlY29yZXNwb25zYWJsZS5udW1lcmlxdWUuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJiYWOvsy7Z3gehwDociMe/SY2NnAZyQThAWlJz1GbYFMFa2gkFi1DELecDU4cE2Ex9ccBYh0BxTE4w8DIxdFUf4x5QpQY/C47Iptht3jahz6thjkTfSJlBhoQS9+nYiBqWgPdwHS4+3BiS2F5Iuya7cFiwsw2yUIy2fndRA2pgmPWeHN7ZMpKPuUjHjhyztOO5wpbWYfcOHlvsuRWyibCT/Y0K25HzUX2uWcyR6DKWJaIbxcQN5Uw6IHG5apfCADGYNpKIgtbkJHAA1jzyJp4qMTlf9HigZOmPQVgPp9TINN0A/mpBxM9fXtH5BSLQFqo73ZTaHh2bK/22DQ+9IrI0CAwEAAaOCAiMwggIfMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUWMmyqmjmpUjM2CvoQrK/f75FZmgwHwYDVR0jBBgwFoAUxc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjExLmkubGVuY3Iub3JnLzArBgNVHREEJDAigiBlY29yZXNwb25zYWJsZS5udW1lcmlxdWUuZ291di5mcjATBgNVHSAEDDAKMAgGBmeBDAECATCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1AMz7D2qFcQll/pWbU87psnwi6YVcDZeNtql+VMD+TA2wAAABlB8PYu4AAAQDAEYwRAIgUCzBHAX0T6rERRYf/RprBFgiWl0aYuYeAqP49ta73+oCIDPnovEIUTdg9MiyRWBDbCihZpSCOgeRCQk2YIcEwKlgAHYATnWjJ1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGUHw9i3QAABAMARzBFAiEA5Zg0dJyfFrjSsWmVccDo8drEOv1kTCCIqN27G5FgfFkCIDD07bPWMl5ZGv50hKPNG5yvvS4cFzI6DsHQ95djWJeEMA0GCSqGSIb3DQEBCwUAA4IBAQCLmSH73/E4MsphTeiGZ5s/3QMR2K8fbeDzG4KBXqoBiH6bWb0/kc+aNU779VwySCmBnZviCb+UcifvGNMOLwIWgd/e3F8w1NEzSoboaCF0cAXjvqsB6tqcGvUFRJWyXCUXVEYS0Fo6wNZcCcFASNaEMPkcOjMjZailjNByUCyFnFV7msgfuqm88MMK6b7aT2IHIAYJB0oPt/tyyRxKCrQY0cnfG564VdKOkYkMfe6yOyD1DVASQw/l/5xm4tFN2msGz/iQHvUX1MhM2pvA0JMgHjFynY8yorf5xJXVfML0RQ4Zc5iMuCeqNdajt3U3l4/Am9/ZnAGOsOe3S+Hsntht\n-----END CERTIFICATE-----"
-      },
-      {
-        "id": "cert_commonName",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "ecoresponsable.numerique.gouv.fr"
-      },
-      {
-        "id": "cert_commonName_wo_SNI",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "*.github.io"
-      },
-      {
-        "id": "cert_subjectAltName",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "ecoresponsable.numerique.gouv.fr"
-      },
-      {
-        "id": "cert_trust",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "Ok via SAN and CN (SNI mandatory)"
-      },
-      {
-        "id": "cert_trust_wildcard",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "LOW",
-        "finding": "trust is via wildcard"
-      },
-      {
-        "id": "cert_chain_of_trust",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "passed."
-      },
-      {
-        "id": "cert_certificatePolicies_EV",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "no"
-      },
-      {
-        "id": "cert_expirationStatus",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "57 >= 30 days"
-      },
-      {
-        "id": "cert_notBefore",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2024-12-31 22:32"
-      },
-      {
-        "id": "cert_notAfter",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "2025-03-31 22:32"
-      },
-      {
-        "id": "cert_extlifeSpan",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "certificate has no extended life time according to browser forum"
-      },
-      {
-        "id": "cert_eTLS",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "not present"
-      },
-      {
-        "id": "cert_crlDistributionPoints",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "--"
-      },
-      {
-        "id": "cert_ocspURL",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "http://r11.o.lencr.org"
-      },
-      {
-        "id": "OCSP_stapling",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "LOW",
-        "finding": "not offered"
-      },
-      {
-        "id": "cert_mustStapleExtension",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "--"
-      },
-      {
-        "id": "DNS_CAArecord",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "LOW",
-        "finding": "--"
-      },
-      {
-        "id": "certificate_transparency",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "yes (certificate extension)"
-      },
-      {
-        "id": "certs_countServer",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2"
-      },
-      {
-        "id": "certs_list_ordering_problem",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "no"
-      },
-      {
-        "id": "cert_caIssuers",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "R11 (Let's Encrypt from US)"
-      },
-      {
-        "id": "intermediate_cert <#1>",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\nMIIFBjCCAu6gAwIBAgIRAIp9PhPWLzDvI4a9KQdrNPgwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjQwMzEzMDAwMDAwWhcNMjcwMzEyMjM1OTU5WjAzMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDEMMAoGA1UEAxMDUjExMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuoe8XBsAOcvKCs3UZxD5ATylTqVhyybKUvsVAbe5KPUoHu0nsyQYOWcJDAjs4DqwO3cOvfPlOVRBDE6uQdaZdN5R2+97/1i9qLcT9t4x1fJyyXJqC4N0lZxGAGQUmfOx2SLZzaiSqhwmej/+71gFewiVgdtxD4774zEJuwm+UE1fj5F2PVqdnoPy6cRms+EGZkNIGIBloDcYmpuEMpexsr3E+BUAnSeI++JjF5ZsmydnS8TbKF5pwnnwSVzgJFDhxLyhBax7QG0AtMJBP6dYuC/FXJuluwme8f7rsIU5/agK70XEeOtlKsLPXzze41xNG/cLJyuqC0J3U095ah2H2QIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHQ4EFgQUxc9GpOr0w8B6bJXELbBeki8m47kwHwYDVR0jBBgwFoAUebRZ5nu25eQBc4AIiMgaWPbpm24wMgYIKwYBBQUHAQEEJjAkMCIGCCsGAQUFBzAChhZodHRwOi8veDEuaS5sZW5jci5vcmcvMBMGA1UdIAQMMAowCAYGZ4EMAQIBMCcGA1UdHwQgMB4wHKAaoBiGFmh0dHA6Ly94MS5jLmxlbmNyLm9yZy8wDQYJKoZIhvcNAQELBQADggIBAE7iiV0KAxyQOND1H/lxXPjDj7I3iHpvsCUf7b632IYGjukJhM1yv4Hz/MrPU0jtvfZpQtSlET41yBOykh0FX+ou1Nj4ScOt9ZmWnO8m2OG0JAtIIE3801S0qcYhyOE2G/93ZCkXufBL713qzXnQv5C/viOykNpKqUgxdKlEC+Hi9i2DcaR1e9KUwQUZRhy5j/PEdEglKg3l9dtD4tuTm7kZtB8v32oOjzHTYw+7KdzdZiw/sBtnUfhBPORNuay4pJxmY/WrhSMdzFO2q3Gu3MUBcdo27goYKjL9CTF8j/Zz55yctUoVaneCWs/ajUX+HypkBTA+c8LGDLnWO2NKq0YD/pnARkAnYGPfUDoHR9gVSp/qRx+ZWghiDLZsMwhN1zjtSC0uBWiugF3vTNzYIEFfaPG7Ws3jDrAMMYebQ95JQ+HIBD/RPBuHRTBpqKlyDnkSHDHYPiNX3adPoPAcgdF3H2/W0rmoswMWgTlLn1Wu0mrks7/qpdWfS6PJ1jty80r2VKsM/Dj3YIDfbjXKdaFU5C+8bhfJGqU3taKauuz0wHVGT3eo6FlWkWYtbt4pgdamlwVeZEW+LM7qZEJEsMNPrfC03APKmZsJgpWCDWOKZvkZcvjVuYkQ4omYCTX5ohy+knMjdOmdH9c7SpqEWBDC86fiNex+O0XOMEZSa8DA\n-----END CERTIFICATE-----"
-      },
-      {
-        "id": "intermediate_cert_fingerprintSHA256 <#1>",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "591E9CE6C863D3A079E9FABE1478C7339A26B21269DDE795211361024AE31A44"
-      },
-      {
-        "id": "intermediate_cert_notBefore <#1>",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2024-03-13 00:00"
-      },
-      {
-        "id": "intermediate_cert_notAfter <#1>",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "2027-03-12 23:59"
-      },
-      {
-        "id": "intermediate_cert_expiration <#1>",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "ok > 40 days"
-      },
-      {
-        "id": "intermediate_cert_chain <#1>",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "R11 <-- ISRG Root X1"
-      },
-      {
-        "id": "intermediate_cert_badOCSP",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "OK",
-        "finding": "intermediate certificate(s) is/are ok"
-      },
-      {
-        "id": "HTTP_status_code",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "200 OK ('/')"
-      },
-      {
-        "id": "HTTP_clock_skew",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "+129 seconds from localtime"
-      },
-      {
-        "id": "HTTP_headerTime",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "1738460388"
-      },
-      {
-        "id": "HTTP_headerAge",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "129 seconds"
-      },
-      {
-        "id": "HSTS",
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "LOW",
@@ -10926,7 +9634,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "cache-bur-kbur8200080-BUR"
+        "finding": "cache-sjc10049-SJC"
       },
       {
         "id": "Cache-Control",
@@ -11621,7 +10329,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'supported versions/#43' 'key share/#51' 'extended master secret/#23' 'application layer protocol negotiation/#16'"
+        "finding": "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'status request/#5' 'supported versions/#43' 'key share/#51' 'extended master secret/#23' 'application layer protocol negotiation/#16'"
       },
       {
         "id": "TLS_session_ticket",
@@ -11649,7 +10357,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
@@ -11796,7 +10504,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "OK",
-        "finding": "57 >= 30 days"
+        "finding": "50 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -11844,8 +10552,15 @@
         "id": "OCSP_stapling",
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
-        "severity": "LOW",
-        "finding": "not offered"
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "cert_ocspRevoked",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "not revoked"
       },
       {
         "id": "cert_mustStapleExtension",
@@ -11950,21 +10665,21 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "+245 seconds from localtime"
+        "finding": "+114 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "1738460504"
+        "finding": "1739065166"
       },
       {
         "id": "HTTP_headerAge",
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "245 seconds"
+        "finding": "114 seconds"
       },
       {
         "id": "HSTS",
@@ -12013,7 +10728,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "cache-bur-kbur8200045-BUR"
+        "finding": "cache-pao-kpao1770064-PAO"
       },
       {
         "id": "Cache-Control",
@@ -12525,16 +11240,1110 @@
       {
         "id": "grade_cap_reason_1",
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "Grade capped to A. HSTS is not offered"
+      },
+      {
+        "id": "service",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "HTTP"
+      },
+      {
+        "id": "pre_128cipher",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No 128 cipher limit bug"
+      },
+      {
+        "id": "SSLv2",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "not offered"
+      },
+      {
+        "id": "SSLv3",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "not offered"
+      },
+      {
+        "id": "TLS1",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not offered"
+      },
+      {
+        "id": "TLS1_1",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not offered"
+      },
+      {
+        "id": "TLS1_2",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "TLS1_3",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered with final"
+      },
+      {
+        "id": "ALPN_HTTP2",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "h2"
+      },
+      {
+        "id": "ALPN",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "http/1.1"
+      },
+      {
+        "id": "cipherlist_NULL",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-327",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_aNULL",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-327",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_EXPORT",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-327",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_LOW",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-327",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_3DES_IDEA",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "cwe": "CWE-310",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_OBSOLETED",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "LOW",
+        "cwe": "CWE-310",
+        "finding": "offered"
+      },
+      {
+        "id": "cipherlist_STRONG_NOFS",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "cipherlist_STRONG_FS",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "cipher_order-tls1_2",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "server"
+      },
+      {
+        "id": "cipherorder_TLSv1_2",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "cipher_order",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "server"
+      },
+      {
+        "id": "FS",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "FS_ciphers",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA"
+      },
+      {
+        "id": "FS_ECDHE_curves",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "prime256v1 secp384r1"
+      },
+      {
+        "id": "TLS_extensions",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'status request/#5' 'supported versions/#43' 'key share/#51' 'extended master secret/#23' 'application layer protocol negotiation/#16'"
+      },
+      {
+        "id": "TLS_session_ticket",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "valid for 86400 seconds only (<daily)"
+      },
+      {
+        "id": "SSL_sessionID_support",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "yes"
+      },
+      {
+        "id": "sessionresumption_ticket",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "supported"
+      },
+      {
+        "id": "sessionresumption_ID",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "supported"
+      },
+      {
+        "id": "TLS_timestamp",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "random"
+      },
+      {
+        "id": "certificate_compression",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "none"
+      },
+      {
+        "id": "clientAuth",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "none"
+      },
+      {
+        "id": "cert_numbers",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "1"
+      },
+      {
+        "id": "cert_signatureAlgorithm",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "SHA256 with RSA"
+      },
+      {
+        "id": "cert_keySize",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "RSA 2048 bits (exponent is 65537)"
+      },
+      {
+        "id": "cert_keyUsage",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "Digital Signature, Key Encipherment"
+      },
+      {
+        "id": "cert_extKeyUsage",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLS Web Server Authentication, TLS Web Client Authentication"
+      },
+      {
+        "id": "cert_serialNumber",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "04537D31735BA380D88EB3017B37EF90D668"
+      },
+      {
+        "id": "cert_serialNumberLen",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "18"
+      },
+      {
+        "id": "cert_fingerprintSHA1",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "688648A164DFC3D4A3DB911B9DFCB844048BC52D"
+      },
+      {
+        "id": "cert_fingerprintSHA256",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "8622FD13FBBCFC95BC8AA21DA4923D5DAC01B368C7EA0B984B7D5CEA6F2A48F8"
+      },
+      {
+        "id": "cert",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFDzCCA/egAwIBAgISBFN9MXNbo4DYjrMBezfvkNZoMA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNSMTEwHhcNMjQxMjMxMjIzMjU5WhcNMjUwMzMxMjIzMjU4WjArMSkwJwYDVQQDEyBlY29yZXNwb25zYWJsZS5udW1lcmlxdWUuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJiYWOvsy7Z3gehwDociMe/SY2NnAZyQThAWlJz1GbYFMFa2gkFi1DELecDU4cE2Ex9ccBYh0BxTE4w8DIxdFUf4x5QpQY/C47Iptht3jahz6thjkTfSJlBhoQS9+nYiBqWgPdwHS4+3BiS2F5Iuya7cFiwsw2yUIy2fndRA2pgmPWeHN7ZMpKPuUjHjhyztOO5wpbWYfcOHlvsuRWyibCT/Y0K25HzUX2uWcyR6DKWJaIbxcQN5Uw6IHG5apfCADGYNpKIgtbkJHAA1jzyJp4qMTlf9HigZOmPQVgPp9TINN0A/mpBxM9fXtH5BSLQFqo73ZTaHh2bK/22DQ+9IrI0CAwEAAaOCAiMwggIfMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUWMmyqmjmpUjM2CvoQrK/f75FZmgwHwYDVR0jBBgwFoAUxc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjExLmkubGVuY3Iub3JnLzArBgNVHREEJDAigiBlY29yZXNwb25zYWJsZS5udW1lcmlxdWUuZ291di5mcjATBgNVHSAEDDAKMAgGBmeBDAECATCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1AMz7D2qFcQll/pWbU87psnwi6YVcDZeNtql+VMD+TA2wAAABlB8PYu4AAAQDAEYwRAIgUCzBHAX0T6rERRYf/RprBFgiWl0aYuYeAqP49ta73+oCIDPnovEIUTdg9MiyRWBDbCihZpSCOgeRCQk2YIcEwKlgAHYATnWjJ1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGUHw9i3QAABAMARzBFAiEA5Zg0dJyfFrjSsWmVccDo8drEOv1kTCCIqN27G5FgfFkCIDD07bPWMl5ZGv50hKPNG5yvvS4cFzI6DsHQ95djWJeEMA0GCSqGSIb3DQEBCwUAA4IBAQCLmSH73/E4MsphTeiGZ5s/3QMR2K8fbeDzG4KBXqoBiH6bWb0/kc+aNU779VwySCmBnZviCb+UcifvGNMOLwIWgd/e3F8w1NEzSoboaCF0cAXjvqsB6tqcGvUFRJWyXCUXVEYS0Fo6wNZcCcFASNaEMPkcOjMjZailjNByUCyFnFV7msgfuqm88MMK6b7aT2IHIAYJB0oPt/tyyRxKCrQY0cnfG564VdKOkYkMfe6yOyD1DVASQw/l/5xm4tFN2msGz/iQHvUX1MhM2pvA0JMgHjFynY8yorf5xJXVfML0RQ4Zc5iMuCeqNdajt3U3l4/Am9/ZnAGOsOe3S+Hsntht\n-----END CERTIFICATE-----"
+      },
+      {
+        "id": "cert_commonName",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "ecoresponsable.numerique.gouv.fr"
+      },
+      {
+        "id": "cert_commonName_wo_SNI",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "*.github.io"
+      },
+      {
+        "id": "cert_subjectAltName",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "ecoresponsable.numerique.gouv.fr"
+      },
+      {
+        "id": "cert_trust",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "Ok via SAN and CN (SNI mandatory)"
+      },
+      {
+        "id": "cert_trust_wildcard",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "LOW",
+        "finding": "trust is via wildcard"
+      },
+      {
+        "id": "cert_chain_of_trust",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "passed."
+      },
+      {
+        "id": "cert_certificatePolicies_EV",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "no"
+      },
+      {
+        "id": "cert_expirationStatus",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "50 >= 30 days"
+      },
+      {
+        "id": "cert_notBefore",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "2024-12-31 22:32"
+      },
+      {
+        "id": "cert_notAfter",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "2025-03-31 22:32"
+      },
+      {
+        "id": "cert_extlifeSpan",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "certificate has no extended life time according to browser forum"
+      },
+      {
+        "id": "cert_eTLS",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not present"
+      },
+      {
+        "id": "cert_crlDistributionPoints",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "--"
+      },
+      {
+        "id": "cert_ocspURL",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "http://r11.o.lencr.org"
+      },
+      {
+        "id": "OCSP_stapling",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "cert_ocspRevoked",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "not revoked"
+      },
+      {
+        "id": "cert_mustStapleExtension",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "--"
+      },
+      {
+        "id": "DNS_CAArecord",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "LOW",
+        "finding": "--"
+      },
+      {
+        "id": "certificate_transparency",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "yes (certificate extension)"
+      },
+      {
+        "id": "certs_countServer",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "2"
+      },
+      {
+        "id": "certs_list_ordering_problem",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "no"
+      },
+      {
+        "id": "cert_caIssuers",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "R11 (Let's Encrypt from US)"
+      },
+      {
+        "id": "intermediate_cert <#1>",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFBjCCAu6gAwIBAgIRAIp9PhPWLzDvI4a9KQdrNPgwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjQwMzEzMDAwMDAwWhcNMjcwMzEyMjM1OTU5WjAzMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDEMMAoGA1UEAxMDUjExMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuoe8XBsAOcvKCs3UZxD5ATylTqVhyybKUvsVAbe5KPUoHu0nsyQYOWcJDAjs4DqwO3cOvfPlOVRBDE6uQdaZdN5R2+97/1i9qLcT9t4x1fJyyXJqC4N0lZxGAGQUmfOx2SLZzaiSqhwmej/+71gFewiVgdtxD4774zEJuwm+UE1fj5F2PVqdnoPy6cRms+EGZkNIGIBloDcYmpuEMpexsr3E+BUAnSeI++JjF5ZsmydnS8TbKF5pwnnwSVzgJFDhxLyhBax7QG0AtMJBP6dYuC/FXJuluwme8f7rsIU5/agK70XEeOtlKsLPXzze41xNG/cLJyuqC0J3U095ah2H2QIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHQ4EFgQUxc9GpOr0w8B6bJXELbBeki8m47kwHwYDVR0jBBgwFoAUebRZ5nu25eQBc4AIiMgaWPbpm24wMgYIKwYBBQUHAQEEJjAkMCIGCCsGAQUFBzAChhZodHRwOi8veDEuaS5sZW5jci5vcmcvMBMGA1UdIAQMMAowCAYGZ4EMAQIBMCcGA1UdHwQgMB4wHKAaoBiGFmh0dHA6Ly94MS5jLmxlbmNyLm9yZy8wDQYJKoZIhvcNAQELBQADggIBAE7iiV0KAxyQOND1H/lxXPjDj7I3iHpvsCUf7b632IYGjukJhM1yv4Hz/MrPU0jtvfZpQtSlET41yBOykh0FX+ou1Nj4ScOt9ZmWnO8m2OG0JAtIIE3801S0qcYhyOE2G/93ZCkXufBL713qzXnQv5C/viOykNpKqUgxdKlEC+Hi9i2DcaR1e9KUwQUZRhy5j/PEdEglKg3l9dtD4tuTm7kZtB8v32oOjzHTYw+7KdzdZiw/sBtnUfhBPORNuay4pJxmY/WrhSMdzFO2q3Gu3MUBcdo27goYKjL9CTF8j/Zz55yctUoVaneCWs/ajUX+HypkBTA+c8LGDLnWO2NKq0YD/pnARkAnYGPfUDoHR9gVSp/qRx+ZWghiDLZsMwhN1zjtSC0uBWiugF3vTNzYIEFfaPG7Ws3jDrAMMYebQ95JQ+HIBD/RPBuHRTBpqKlyDnkSHDHYPiNX3adPoPAcgdF3H2/W0rmoswMWgTlLn1Wu0mrks7/qpdWfS6PJ1jty80r2VKsM/Dj3YIDfbjXKdaFU5C+8bhfJGqU3taKauuz0wHVGT3eo6FlWkWYtbt4pgdamlwVeZEW+LM7qZEJEsMNPrfC03APKmZsJgpWCDWOKZvkZcvjVuYkQ4omYCTX5ohy+knMjdOmdH9c7SpqEWBDC86fiNex+O0XOMEZSa8DA\n-----END CERTIFICATE-----"
+      },
+      {
+        "id": "intermediate_cert_fingerprintSHA256 <#1>",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "591E9CE6C863D3A079E9FABE1478C7339A26B21269DDE795211361024AE31A44"
+      },
+      {
+        "id": "intermediate_cert_notBefore <#1>",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "2024-03-13 00:00"
+      },
+      {
+        "id": "intermediate_cert_notAfter <#1>",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "2027-03-12 23:59"
+      },
+      {
+        "id": "intermediate_cert_expiration <#1>",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "ok > 40 days"
+      },
+      {
+        "id": "intermediate_cert_chain <#1>",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "R11 <-- ISRG Root X1"
+      },
+      {
+        "id": "intermediate_cert_badOCSP",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "intermediate certificate(s) is/are ok"
+      },
+      {
+        "id": "HTTP_status_code",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "200 OK ('/')"
+      },
+      {
+        "id": "HTTP_clock_skew",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "+228 seconds from localtime"
+      },
+      {
+        "id": "HTTP_headerTime",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "1739065279"
+      },
+      {
+        "id": "HTTP_headerAge",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "228 seconds"
+      },
+      {
+        "id": "HSTS",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "LOW",
+        "finding": "not offered"
+      },
+      {
+        "id": "HPKP",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No support for HTTP Public Key Pinning"
+      },
+      {
+        "id": "banner_server",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "GitHub.com"
+      },
+      {
+        "id": "banner_application",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No application banner found"
+      },
+      {
+        "id": "cookie_count",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "0 at '/'"
+      },
+      {
+        "id": "Access-Control-Allow-Origin",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "*"
+      },
+      {
+        "id": "X-Served-By",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "cache-pao-kpao1770020-PAO"
+      },
+      {
+        "id": "Cache-Control",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "max-age=600"
+      },
+      {
+        "id": "banner_reverseproxy",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "cwe": "CWE-200",
+        "finding": "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 1"
+      },
+      {
+        "id": "heartbleed",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2014-0160",
+        "cwe": "CWE-119",
+        "finding": "not vulnerable, no heartbeat extension"
+      },
+      {
+        "id": "CCS",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2014-0224",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "ticketbleed",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2016-9244",
+        "cwe": "CWE-200",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "ROBOT",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
+        "cwe": "CWE-203",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "secure_renego",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-310",
+        "finding": "supported"
+      },
+      {
+        "id": "secure_client_renego",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2011-1473",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable, mitigated"
+      },
+      {
+        "id": "CRIME_TLS",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2012-4929",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "BREACH",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "MEDIUM",
+        "cve": "CVE-2013-3587",
+        "cwe": "CWE-310",
+        "finding": "potentially VULNERABLE, gzip HTTP compression detected  - only supplied '/' tested"
+      },
+      {
+        "id": "POODLE_SSL",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2014-3566",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable, no SSLv3"
+      },
+      {
+        "id": "fallback_SCSV",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "no protocol below TLS 1.2 offered"
+      },
+      {
+        "id": "SWEET32",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2016-2183 CVE-2016-6329",
+        "cwe": "CWE-327",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "FREAK",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2015-0204",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "DROWN",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2016-0800 CVE-2016-0703",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable on this host and port"
+      },
+      {
+        "id": "DROWN_hint",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "cve": "CVE-2016-0800 CVE-2016-0703",
+        "cwe": "CWE-310",
+        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=8622FD13FBBCFC95BC8AA21DA4923D5DAC01B368C7EA0B984B7D5CEA6F2A48F8"
+      },
+      {
+        "id": "LOGJAM",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2015-4000",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable, no DH EXPORT ciphers,"
+      },
+      {
+        "id": "LOGJAM-common_primes",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2015-4000",
+        "cwe": "CWE-310",
+        "finding": "no DH key with <= TLS 1.2"
+      },
+      {
+        "id": "BEAST",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2011-3389",
+        "cwe": "CWE-20",
+        "finding": "not vulnerable, no SSL3 or TLS1"
+      },
+      {
+        "id": "LUCKY13",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "LOW",
+        "cve": "CVE-2013-0169",
+        "cwe": "CWE-310",
+        "finding": "potentially vulnerable, uses TLS CBC ciphers"
+      },
+      {
+        "id": "winshock",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2014-6321",
+        "cwe": "CWE-94",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "RC4",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2013-2566 CVE-2015-2808",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "clientsimulation-android_60",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-android_70",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-android_81",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-android_90",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-android_X",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-android_11",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-android_12",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-chrome_79_win10",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-chrome_101_win10",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-firefox_66_win81",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-firefox_100_win10",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-ie_6_xp",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No connection"
+      },
+      {
+        "id": "clientsimulation-ie_8_win7",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No connection"
+      },
+      {
+        "id": "clientsimulation-ie_8_xp",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No connection"
+      },
+      {
+        "id": "clientsimulation-ie_11_win7",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA256"
+      },
+      {
+        "id": "clientsimulation-ie_11_win81",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA256"
+      },
+      {
+        "id": "clientsimulation-ie_11_winphone81",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA256"
+      },
+      {
+        "id": "clientsimulation-ie_11_win10",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-edge_15_win10",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-edge_101_win10_21h2",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-safari_121_ios_122",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+      },
+      {
+        "id": "clientsimulation-safari_130_osx_10146",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+      },
+      {
+        "id": "clientsimulation-safari_154_osx_1231",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-java_7u25",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No connection"
+      },
+      {
+        "id": "clientsimulation-java_8u161",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-java1102",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-java1703",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-go_1178",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-libressl_283",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+      },
+      {
+        "id": "clientsimulation-openssl_102e",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-openssl_110l",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+      },
+      {
+        "id": "clientsimulation-openssl_111d",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-openssl_303",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-apple_mail_16_0",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-thunderbird_91_9",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "rating_spec",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
+      },
+      {
+        "id": "rating_doc",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
+      },
+      {
+        "id": "protocol_support_score",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "100"
+      },
+      {
+        "id": "protocol_support_score_weighted",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "30"
+      },
+      {
+        "id": "key_exchange_score",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "90"
+      },
+      {
+        "id": "key_exchange_score_weighted",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "27"
+      },
+      {
+        "id": "cipher_strength_score",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "60"
+      },
+      {
+        "id": "cipher_strength_score_weighted",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "24"
+      },
+      {
+        "id": "final_score",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "81"
+      },
+      {
+        "id": "overall_grade",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
+        "port": "443",
+        "severity": "OK",
+        "finding": "A"
+      },
+      {
+        "id": "grade_cap_reason_1",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
         "port": "443",
         "severity": "INFO",
         "finding": "Grade capped to A. HSTS is not offered"
       },
       {
         "id": "scanTime",
-        "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
+        "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "354"
+        "finding": "345"
       }
     ],
     "thirdparties": {
@@ -12684,7 +12493,7 @@
       {
         "requestedUrl": "https://ecoresponsable.numerique.gouv.fr/",
         "finalUrl": "https://ecoresponsable.numerique.gouv.fr/",
-        "fetchTime": "2025-02-02T01:36:26.310Z",
+        "fetchTime": "2025-02-09T01:36:11.315Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -12695,7 +12504,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.96
+            "score": 0.91
           },
           "accessibility": {
             "title": "Accessibility",
@@ -12747,53 +12556,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 3093,
+            "numericValue": 4672,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1655,
-                  "firstMeaningfulPaint": 1655,
-                  "largestContentfulPaint": 2480,
-                  "interactive": 3093,
-                  "speedIndex": 1655,
-                  "totalBlockingTime": 13,
-                  "maxPotentialFID": 75,
+                  "firstContentfulPaint": 2102,
+                  "firstMeaningfulPaint": 2102,
+                  "largestContentfulPaint": 3002,
+                  "interactive": 4672,
+                  "speedIndex": 2102,
+                  "totalBlockingTime": 64,
+                  "maxPotentialFID": 177,
                   "cumulativeLayoutShift": 0.005793457031249999,
                   "cumulativeLayoutShiftMainFrame": 0.005793457031249999,
                   "totalCumulativeLayoutShift": 0.005793457031249999,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 297163168,
+                  "observedTimeOriginTs": 317446516,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 297163168,
-                  "observedFirstPaint": 163,
-                  "observedFirstPaintTs": 297325971,
-                  "observedFirstContentfulPaint": 163,
-                  "observedFirstContentfulPaintTs": 297325971,
-                  "observedFirstContentfulPaintAllFrames": 163,
-                  "observedFirstContentfulPaintAllFramesTs": 297325971,
-                  "observedFirstMeaningfulPaint": 163,
-                  "observedFirstMeaningfulPaintTs": 297325971,
-                  "observedLargestContentfulPaint": 163,
-                  "observedLargestContentfulPaintTs": 297325971,
-                  "observedLargestContentfulPaintAllFrames": 163,
-                  "observedLargestContentfulPaintAllFramesTs": 297325971,
-                  "observedTraceEnd": 3152,
-                  "observedTraceEndTs": 300315198,
-                  "observedLoad": 729,
-                  "observedLoadTs": 297891971,
-                  "observedDomContentLoaded": 171,
-                  "observedDomContentLoadedTs": 297333852,
+                  "observedNavigationStartTs": 317446516,
+                  "observedFirstPaint": 195,
+                  "observedFirstPaintTs": 317641581,
+                  "observedFirstContentfulPaint": 195,
+                  "observedFirstContentfulPaintTs": 317641581,
+                  "observedFirstContentfulPaintAllFrames": 195,
+                  "observedFirstContentfulPaintAllFramesTs": 317641581,
+                  "observedFirstMeaningfulPaint": 195,
+                  "observedFirstMeaningfulPaintTs": 317641581,
+                  "observedLargestContentfulPaint": 195,
+                  "observedLargestContentfulPaintTs": 317641581,
+                  "observedLargestContentfulPaintAllFrames": 195,
+                  "observedLargestContentfulPaintAllFramesTs": 317641581,
+                  "observedTraceEnd": 3276,
+                  "observedTraceEndTs": 320722074,
+                  "observedLoad": 863,
+                  "observedLoadTs": 318309647,
+                  "observedDomContentLoaded": 207,
+                  "observedDomContentLoadedTs": 317653912,
                   "observedCumulativeLayoutShift": 0.005793457031249999,
                   "observedCumulativeLayoutShiftMainFrame": 0.005793457031249999,
                   "observedTotalCumulativeLayoutShift": 0.005793457031249999,
-                  "observedFirstVisualChange": 174,
-                  "observedFirstVisualChangeTs": 297337168,
-                  "observedLastVisualChange": 741,
-                  "observedLastVisualChangeTs": 297904168,
-                  "observedSpeedIndex": 189,
-                  "observedSpeedIndexTs": 297351772
+                  "observedFirstVisualChange": 207,
+                  "observedFirstVisualChangeTs": 317653516,
+                  "observedLastVisualChange": 807,
+                  "observedLastVisualChangeTs": 318253516,
+                  "observedSpeedIndex": 223,
+                  "observedSpeedIndexTs": 317669459
                 },
                 {
                   "lcpInvalidated": false
@@ -12815,19 +12624,19 @@
                   "numScripts": 5,
                   "numStylesheets": 2,
                   "numFonts": 3,
-                  "numTasks": 1241,
-                  "numTasksOver10ms": 3,
-                  "numTasksOver25ms": 1,
-                  "numTasksOver50ms": 0,
+                  "numTasks": 1205,
+                  "numTasksOver10ms": 7,
+                  "numTasksOver25ms": 3,
+                  "numTasksOver50ms": 2,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 7.921,
-                  "throughput": 23792783.228781503,
-                  "maxRtt": 145.694,
-                  "maxServerLatency": 5.2909999999999995,
-                  "totalByteWeight": 554699,
-                  "totalTaskTime": 198.9259999999982,
-                  "mainDocumentTransferSize": 7802
+                  "rtt": 1.31,
+                  "throughput": 24095666.05840033,
+                  "maxRtt": 149.541,
+                  "maxServerLatency": 2.008,
+                  "totalByteWeight": 528177,
+                  "totalTaskTime": 329.78499999999747,
+                  "mainDocumentTransferSize": 8053
                 }
               ]
             }
@@ -12873,15 +12682,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://ecoresponsable.numerique.gouv.fr",
-        "size": 638.951,
-        "nodes": 390,
-        "requests": 37,
-        "grade": "B",
-        "score": 72,
-        "ges": 1.56,
-        "water": 2.34,
+        "size": 624.627,
+        "nodes": 444,
+        "requests": 39,
+        "grade": "C",
+        "score": 70,
+        "ges": 1.6,
+        "water": 2.4,
         "ecoindex_version": "5.4.2",
-        "date": "2025-02-02 01:35:37.110528",
+        "date": "2025-02-09 01:35:06.166154",
         "page_type": null
       }
     ],
@@ -12900,7 +12709,7 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.96,
+      "lighthouse_performance": 0.91,
       "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
@@ -12914,7 +12723,7 @@
       "declaration-a11y": "A",
       "declaration-rgpd-ml": "A",
       "declaration-rgpd-pc": "D",
-      "ecoindexGrade": "B",
+      "ecoindexGrade": "C",
       "dsfrGrade": "A"
     }
   }
