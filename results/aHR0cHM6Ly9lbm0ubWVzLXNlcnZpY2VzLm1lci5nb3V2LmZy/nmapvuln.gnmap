@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Feb  2 01:26:06 2025 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln enm.mes-services.mer.gouv.fr
+# Nmap 7.92 scan initiated Sun Feb  9 01:27:37 2025 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln enm.mes-services.mer.gouv.fr
 Host: 194.5.170.186 ()	Status: Up
-Host: 194.5.170.186 ()	Ports: 80/open/tcp//http//Apache httpd/, 106/closed/tcp//pop3pw///, 113/closed/tcp//ident///, 161/closed/tcp//snmp///, 443/open/tcp//ssl|http//Apache httpd/, 801/closed/tcp//device///, 1085/closed/tcp//webobjects///, 1218/closed/tcp//aeroflight-ads///, 1248/closed/tcp//hermes///, 1761/closed/tcp//landesk-rc///, 2105/closed/tcp//eklogin///, 3369/closed/tcp//satvid-datalnk///, 4899/closed/tcp//radmin///, 8300/closed/tcp//tmi///, 9418/closed/tcp//git///, 18040/closed/tcp//unknown///, 32769/closed/tcp//filenet-rpc///, 32772/closed/tcp//sometimes-rpc7///, 33899/closed/tcp//unknown///, 49158/closed/tcp//unknown///, 49167/closed/tcp//unknown///, 50003/closed/tcp//unknown///	Ignored State: filtered (978)
-# Nmap done at Sun Feb  2 01:35:06 2025 -- 1 IP address (1 host up) scanned in 540.03 seconds
+Host: 194.5.170.186 ()	Ports: 80/open/tcp//http//Apache httpd/, 443/open/tcp//ssl|http//Apache httpd/
+# Nmap done at Sun Feb  9 01:33:32 2025 -- 1 IP address (1 host up) scanned in 354.93 seconds
