@@ -3,15 +3,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://www.service-civique.gouv.fr",
-        "size": 3404.295,
-        "nodes": 1075,
-        "requests": 123,
-        "grade": "F",
-        "score": 25.0,
-        "ges": 2.5,
-        "water": 3.75,
+        "size": 3372.243,
+        "nodes": 1060,
+        "requests": 115,
+        "grade": "E",
+        "score": 26.0,
+        "ges": 2.48,
+        "water": 3.72,
         "ecoindex_version": "5.4.2",
-        "date": "2025-01-29 08:42:33.796744",
+        "date": "2025-02-09 01:18:35.159746",
         "page_type": "siteweb"
     }
 ]
