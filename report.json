@@ -380,7 +380,7 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "OK",
-        "finding": "130 >= 60 days"
+        "finding": "123 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -618,14 +618,14 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds from localtime"
+        "finding": "-1 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "1739064024"
+        "finding": "1739669001"
       },
       {
         "id": "HSTS_time",
@@ -1202,7 +1202,7 @@
         "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
         "port": "443",
         "severity": "INFO",
-        "finding": "53"
+        "finding": "87"
       }
     ],
     "thirdparties": {
@@ -1331,7 +1331,7 @@
       {
         "requestedUrl": "https://oscar.service-civique.gouv.fr/",
         "finalUrl": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "fetchTime": "2025-02-09T01:19:22.550Z",
+        "fetchTime": "2025-02-16T01:21:52.339Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://oscar.service-civique.gouv.fr/) was redirected to https://oscar.service-civique.gouv.fr/Connexion.aspx. Try testing the second URL directly."
         ],
@@ -1344,7 +1344,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.96
+            "score": 0.93
           },
           "accessibility": {
             "title": "Accessibility",
@@ -1396,53 +1396,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2255,
+            "numericValue": 2261,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1956,
-                  "firstMeaningfulPaint": 2255,
-                  "largestContentfulPaint": 2330,
-                  "interactive": 2255,
-                  "speedIndex": 2418,
+                  "firstContentfulPaint": 1913,
+                  "firstMeaningfulPaint": 2261,
+                  "largestContentfulPaint": 2863,
+                  "interactive": 2261,
+                  "speedIndex": 3173,
                   "totalBlockingTime": 0,
-                  "maxPotentialFID": 49,
-                  "cumulativeLayoutShift": 0.0012157443622132333,
-                  "cumulativeLayoutShiftMainFrame": 0.0012157443622132333,
-                  "totalCumulativeLayoutShift": 0.0012157443622132333,
+                  "maxPotentialFID": 16,
+                  "cumulativeLayoutShift": 0.0012374748608046996,
+                  "cumulativeLayoutShiftMainFrame": 0.0012374748608046996,
+                  "totalCumulativeLayoutShift": 0.0012374748608046996,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 259801788,
+                  "observedTimeOriginTs": 320025916,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 259801788,
-                  "observedFirstPaint": 977,
-                  "observedFirstPaintTs": 260778628,
-                  "observedFirstContentfulPaint": 977,
-                  "observedFirstContentfulPaintTs": 260778628,
-                  "observedFirstContentfulPaintAllFrames": 977,
-                  "observedFirstContentfulPaintAllFramesTs": 260778628,
-                  "observedFirstMeaningfulPaint": 1175,
-                  "observedFirstMeaningfulPaintTs": 260976680,
-                  "observedLargestContentfulPaint": 977,
-                  "observedLargestContentfulPaintTs": 260778628,
-                  "observedLargestContentfulPaintAllFrames": 977,
-                  "observedLargestContentfulPaintAllFramesTs": 260778628,
-                  "observedTraceEnd": 3728,
-                  "observedTraceEndTs": 263529983,
-                  "observedLoad": 1332,
-                  "observedLoadTs": 261133345,
-                  "observedDomContentLoaded": 1116,
-                  "observedDomContentLoadedTs": 260917298,
-                  "observedCumulativeLayoutShift": 0.0012157443622132333,
-                  "observedCumulativeLayoutShiftMainFrame": 0.0012157443622132333,
-                  "observedTotalCumulativeLayoutShift": 0.0012157443622132333,
-                  "observedFirstVisualChange": 987,
-                  "observedFirstVisualChangeTs": 260788788,
-                  "observedLastVisualChange": 1337,
-                  "observedLastVisualChangeTs": 261138788,
-                  "observedSpeedIndex": 998,
-                  "observedSpeedIndexTs": 260799734
+                  "observedNavigationStartTs": 320025916,
+                  "observedFirstPaint": 1503,
+                  "observedFirstPaintTs": 321528494,
+                  "observedFirstContentfulPaint": 1503,
+                  "observedFirstContentfulPaintTs": 321528494,
+                  "observedFirstContentfulPaintAllFrames": 1503,
+                  "observedFirstContentfulPaintAllFramesTs": 321528494,
+                  "observedFirstMeaningfulPaint": 1830,
+                  "observedFirstMeaningfulPaintTs": 321856180,
+                  "observedLargestContentfulPaint": 1655,
+                  "observedLargestContentfulPaintTs": 321681361,
+                  "observedLargestContentfulPaintAllFrames": 1655,
+                  "observedLargestContentfulPaintAllFramesTs": 321681361,
+                  "observedTraceEnd": 4695,
+                  "observedTraceEndTs": 324720805,
+                  "observedLoad": 2234,
+                  "observedLoadTs": 322259448,
+                  "observedDomContentLoaded": 1812,
+                  "observedDomContentLoadedTs": 321838350,
+                  "observedCumulativeLayoutShift": 0.0012374748608046996,
+                  "observedCumulativeLayoutShiftMainFrame": 0.0012374748608046996,
+                  "observedTotalCumulativeLayoutShift": 0.0012374748608046996,
+                  "observedFirstVisualChange": 1511,
+                  "observedFirstVisualChangeTs": 321536916,
+                  "observedLastVisualChange": 2261,
+                  "observedLastVisualChangeTs": 322286916,
+                  "observedSpeedIndex": 1534,
+                  "observedSpeedIndexTs": 321559637
                 },
                 {
                   "lcpInvalidated": false
@@ -1464,18 +1464,18 @@
                   "numScripts": 6,
                   "numStylesheets": 2,
                   "numFonts": 1,
-                  "numTasks": 562,
-                  "numTasksOver10ms": 3,
-                  "numTasksOver25ms": 2,
+                  "numTasks": 580,
+                  "numTasksOver10ms": 1,
+                  "numTasksOver25ms": 0,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 83.53,
-                  "throughput": 16615272.442312155,
-                  "maxRtt": 83.53,
-                  "maxServerLatency": 0.8269999999999982,
+                  "rtt": 146.197,
+                  "throughput": 10657726.628012676,
+                  "maxRtt": 146.197,
+                  "maxServerLatency": 1.771000000000015,
                   "totalByteWeight": 1221053,
-                  "totalTaskTime": 157.4719999999994,
+                  "totalTaskTime": 89.7090000000003,
                   "mainDocumentTransferSize": 11334
                 }
               ]
@@ -1525,7 +1525,7 @@
         "ges": 1.38,
         "water": 2.07,
         "ecoindex_version": "5.4.2",
-        "date": "2025-02-09 01:18:22.555789",
+        "date": "2025-02-16 01:21:00.687531",
         "page_type": null
       }
     ],
@@ -1544,7 +1544,7 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.96,
+      "lighthouse_performance": 0.93,
       "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": 0.5,
       "lighthouse_accessibilityGrade": "D",
@@ -1932,7 +1932,7 @@
         "ip": "elisa.service-civique.gouv.fr/217.109.233.83",
         "port": "443",
         "severity": "OK",
-        "finding": "191 >= 60 days"
+        "finding": "184 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -2607,7 +2607,7 @@
         "ip": "elisa.service-civique.gouv.fr/217.109.233.83",
         "port": "443",
         "severity": "INFO",
-        "finding": "55"
+        "finding": "99"
       }
     ],
     "thirdparties": {
@@ -2685,7 +2685,7 @@
       {
         "requestedUrl": "https://elisa.service-civique.gouv.fr/",
         "finalUrl": "https://elisa.service-civique.gouv.fr/civiqs/",
-        "fetchTime": "2025-02-09T01:23:56.925Z",
+        "fetchTime": "2025-02-16T01:26:33.080Z",
         "runWarnings": [
           "The page loaded too slowly to finish within the time limit. Results may be incomplete.",
           "The page may not be loading as expected because your test URL (https://elisa.service-civique.gouv.fr/) was redirected to https://elisa.service-civique.gouv.fr/civiqs/. Try testing the second URL directly."
@@ -2699,7 +2699,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.83
+            "score": 0.8
           },
           "accessibility": {
             "title": "Accessibility",
@@ -2751,53 +2751,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 971,
+            "numericValue": 962,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 963,
-                  "firstMeaningfulPaint": 963,
-                  "largestContentfulPaint": 2933,
-                  "interactive": 971,
-                  "speedIndex": 2042,
+                  "firstContentfulPaint": 962,
+                  "firstMeaningfulPaint": 962,
+                  "largestContentfulPaint": 3033,
+                  "interactive": 962,
+                  "speedIndex": 2942,
                   "totalBlockingTime": 0,
-                  "maxPotentialFID": 69,
-                  "cumulativeLayoutShift": 0.4578398268510482,
-                  "cumulativeLayoutShiftMainFrame": 0.4578398268510482,
-                  "totalCumulativeLayoutShift": 0.4578398268510482,
+                  "maxPotentialFID": 34,
+                  "cumulativeLayoutShift": 0.6382833370241083,
+                  "cumulativeLayoutShiftMainFrame": 0.6382833370241083,
+                  "totalCumulativeLayoutShift": 0.6382833370241083,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 495996106,
+                  "observedTimeOriginTs": 525598968,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 495996106,
-                  "observedFirstPaint": 469,
-                  "observedFirstPaintTs": 496465552,
-                  "observedFirstContentfulPaint": 469,
-                  "observedFirstContentfulPaintTs": 496465552,
-                  "observedFirstContentfulPaintAllFrames": 469,
-                  "observedFirstContentfulPaintAllFramesTs": 496465552,
-                  "observedFirstMeaningfulPaint": 469,
-                  "observedFirstMeaningfulPaintTs": 496465552,
-                  "observedLargestContentfulPaint": 1494,
-                  "observedLargestContentfulPaintTs": 497490501,
-                  "observedLargestContentfulPaintAllFrames": 1494,
-                  "observedLargestContentfulPaintAllFramesTs": 497490501,
-                  "observedTraceEnd": 45009,
-                  "observedTraceEndTs": 541005586,
-                  "observedLoad": 1723,
-                  "observedLoadTs": 497719449,
-                  "observedDomContentLoaded": 462,
-                  "observedDomContentLoadedTs": 496458570,
-                  "observedCumulativeLayoutShift": 0.4578398268510482,
-                  "observedCumulativeLayoutShiftMainFrame": 0.4578398268510482,
-                  "observedTotalCumulativeLayoutShift": 0.4578398268510482,
-                  "observedFirstVisualChange": 467,
-                  "observedFirstVisualChangeTs": 496463106,
-                  "observedLastVisualChange": 1500,
-                  "observedLastVisualChangeTs": 497496106,
-                  "observedSpeedIndex": 1170,
-                  "observedSpeedIndexTs": 497165613
+                  "observedNavigationStartTs": 525598968,
+                  "observedFirstPaint": 717,
+                  "observedFirstPaintTs": 526316386,
+                  "observedFirstContentfulPaint": 717,
+                  "observedFirstContentfulPaintTs": 526316386,
+                  "observedFirstContentfulPaintAllFrames": 717,
+                  "observedFirstContentfulPaintAllFramesTs": 526316386,
+                  "observedFirstMeaningfulPaint": 717,
+                  "observedFirstMeaningfulPaintTs": 526316386,
+                  "observedLargestContentfulPaint": 2350,
+                  "observedLargestContentfulPaintTs": 527949173,
+                  "observedLargestContentfulPaintAllFrames": 2350,
+                  "observedLargestContentfulPaintAllFramesTs": 527949173,
+                  "observedTraceEnd": 45008,
+                  "observedTraceEndTs": 570607177,
+                  "observedLoad": 2671,
+                  "observedLoadTs": 528269889,
+                  "observedDomContentLoaded": 707,
+                  "observedDomContentLoadedTs": 526306264,
+                  "observedCumulativeLayoutShift": 0.6382833370241083,
+                  "observedCumulativeLayoutShiftMainFrame": 0.6382833370241083,
+                  "observedTotalCumulativeLayoutShift": 0.6382833370241083,
+                  "observedFirstVisualChange": 729,
+                  "observedFirstVisualChangeTs": 526327968,
+                  "observedLastVisualChange": 2363,
+                  "observedLastVisualChangeTs": 527961968,
+                  "observedSpeedIndex": 1833,
+                  "observedSpeedIndexTs": 527432235
                 },
                 {
                   "lcpInvalidated": false
@@ -2815,22 +2815,22 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 32,
+                  "numRequests": 33,
                   "numScripts": 9,
                   "numStylesheets": 3,
                   "numFonts": 0,
-                  "numTasks": 522,
-                  "numTasksOver10ms": 5,
-                  "numTasksOver25ms": 1,
+                  "numTasks": 540,
+                  "numTasksOver10ms": 1,
+                  "numTasksOver25ms": 0,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 86.459,
-                  "throughput": 6042941.065791762,
-                  "maxRtt": 86.459,
-                  "maxServerLatency": 15.581000000000017,
-                  "totalByteWeight": 216923,
-                  "totalTaskTime": 181.95299999999986,
+                  "rtt": 157.509,
+                  "throughput": 5077306.847844098,
+                  "maxRtt": 157.509,
+                  "maxServerLatency": 16.999000000000052,
+                  "totalByteWeight": 220974,
+                  "totalTaskTime": 118.4699999999999,
                   "mainDocumentTransferSize": 3425
                 }
               ]
@@ -2872,15 +2872,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://elisa.service-civique.gouv.fr",
-        "size": 295.022,
+        "size": 301.659,
         "nodes": 88,
-        "requests": 22,
+        "requests": 24,
         "grade": "A",
-        "score": 88,
-        "ges": 1.24,
-        "water": 1.86,
+        "score": 87,
+        "ges": 1.26,
+        "water": 1.89,
         "ecoindex_version": "5.4.2",
-        "date": "2025-02-09 01:18:25.122389",
+        "date": "2025-02-16 01:20:58.749523",
         "page_type": null
       }
     ],
@@ -2899,7 +2899,7 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.83,
+      "lighthouse_performance": 0.8,
       "lighthouse_performanceGrade": "B",
       "lighthouse_accessibility": 0.9,
       "lighthouse_accessibilityGrade": "A",
@@ -3296,7 +3296,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "86 >= 30 days"
+        "finding": "79 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -3450,21 +3450,21 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "+5 seconds from localtime"
+        "finding": "+1 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "1739064663"
+        "finding": "1739669103"
       },
       {
         "id": "HTTP_headerAge",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "5 seconds"
+        "finding": "1 seconds"
       },
       {
         "id": "HSTS_time",
@@ -3528,7 +3528,7 @@
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-200",
-        "finding": "X-Varnish: 14283467 30597467"
+        "finding": "X-Varnish: 48048319 22150009"
       },
       {
         "id": "heartbleed",
@@ -4027,7 +4027,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "57"
+        "finding": "99"
       }
     ],
     "thirdparties": {
@@ -4036,14 +4036,133 @@
       "headers": null,
       "endpoints": null
     },
-    "wappalyzer": null,
+    "wappalyzer": {
+      "urls": {
+        "https://www.service-civique.gouv.fr/": {
+          "status": 200,
+          "error": "Navigation timeout of 10000 ms exceeded (https://www.service-civique.gouv.fr/)"
+        }
+      },
+      "technologies": [
+        {
+          "slug": "varnish",
+          "name": "Varnish",
+          "description": "Varnish is a reverse caching proxy.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Varnish.svg",
+          "website": "https://www.varnish-cache.org",
+          "cpe": "cpe:2.3:a:varnish-software:varnish_cache:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 23,
+              "slug": "caching",
+              "name": "Caching"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "recaptcha",
+          "name": "reCAPTCHA",
+          "description": "reCAPTCHA is a free service from Google that helps protect websites from spam and abuse.",
+          "confidence": 100,
+          "version": null,
+          "icon": "reCAPTCHA.svg",
+          "website": "https://www.google.com/recaptcha/",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 16,
+              "slug": "security",
+              "name": "Security"
+            }
+          ]
+        },
+        {
+          "slug": "mailchimp",
+          "name": "MailChimp",
+          "description": "Mailchimp is a marketing automation platform and email marketing service.",
+          "confidence": 100,
+          "version": null,
+          "icon": "mailchimp.svg",
+          "website": "https://mailchimp.com",
+          "cpe": "cpe:2.3:a:thinkshout:mailchimp:*:*:*:*:*:*:*:*",
+          "categories": [
+            {
+              "id": 32,
+              "slug": "marketing-automation",
+              "name": "Marketing automation"
+            },
+            {
+              "id": 75,
+              "slug": "email",
+              "name": "Email"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "hsts",
+          "name": "HSTS",
+          "description": "HTTP Strict Transport Security (HSTS) informs browsers that the site should only be accessed using HTTPS.",
+          "confidence": 100,
+          "version": null,
+          "icon": "default.svg",
+          "website": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 16,
+              "slug": "security",
+              "name": "Security"
+            }
+          ],
+          "rootPath": true
+        },
+        {
+          "slug": "webpack",
+          "name": "Webpack",
+          "description": "Webpack is an open-source JavaScript module bundler.",
+          "confidence": 50,
+          "version": null,
+          "icon": "Webpack.svg",
+          "website": "https://webpack.js.org/",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 19,
+              "slug": "miscellaneous",
+              "name": "Miscellaneous"
+            }
+          ]
+        },
+        {
+          "slug": "module-federation",
+          "name": "Module Federation",
+          "description": "Module Federation is a webpack technology for dynamically loading parts of other independently deployed builds.",
+          "confidence": 50,
+          "version": null,
+          "icon": "Webpack.svg",
+          "website": "https://webpack.js.org/concepts/module-federation/",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 19,
+              "slug": "miscellaneous",
+              "name": "Miscellaneous"
+            }
+          ]
+        }
+      ]
+    },
     "zap": null,
     "nuclei": [],
     "lhr": [
       {
         "requestedUrl": "https://www.service-civique.gouv.fr/",
         "finalUrl": "https://www.service-civique.gouv.fr/",
-        "fetchTime": "2025-02-09T01:29:31.383Z",
+        "fetchTime": "2025-02-16T01:22:51.065Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -4054,7 +4173,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.11
+            "score": 0.01
           },
           "accessibility": {
             "title": "Accessibility",
@@ -4106,53 +4225,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 17660,
+            "numericValue": 20344,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1572,
-                  "firstMeaningfulPaint": 6351,
-                  "largestContentfulPaint": 15271,
-                  "interactive": 17660,
-                  "speedIndex": 11674,
-                  "totalBlockingTime": 3219,
-                  "maxPotentialFID": 1545,
-                  "cumulativeLayoutShift": 0.9137940724690755,
-                  "cumulativeLayoutShiftMainFrame": 0.9137940724690755,
-                  "totalCumulativeLayoutShift": 0.9137940724690755,
+                  "firstContentfulPaint": 6887,
+                  "firstMeaningfulPaint": 7922,
+                  "largestContentfulPaint": 18785,
+                  "interactive": 20344,
+                  "speedIndex": 15109,
+                  "totalBlockingTime": 4763,
+                  "maxPotentialFID": 2817,
+                  "cumulativeLayoutShift": 0.8863932291666666,
+                  "cumulativeLayoutShiftMainFrame": 0.8863932291666666,
+                  "totalCumulativeLayoutShift": 0.8863932291666666,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 832587660,
+                  "observedTimeOriginTs": 301967765,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 832587660,
-                  "observedFirstPaint": 1019,
-                  "observedFirstPaintTs": 833606672,
-                  "observedFirstContentfulPaint": 1019,
-                  "observedFirstContentfulPaintTs": 833606672,
-                  "observedFirstContentfulPaintAllFrames": 1019,
-                  "observedFirstContentfulPaintAllFramesTs": 833606672,
-                  "observedFirstMeaningfulPaint": 1372,
-                  "observedFirstMeaningfulPaintTs": 833959334,
-                  "observedLargestContentfulPaint": 2715,
-                  "observedLargestContentfulPaintTs": 835302373,
-                  "observedLargestContentfulPaintAllFrames": 2715,
-                  "observedLargestContentfulPaintAllFramesTs": 835302373,
-                  "observedTraceEnd": 7629,
-                  "observedTraceEndTs": 840216669,
-                  "observedLoad": 5321,
-                  "observedLoadTs": 837909118,
-                  "observedDomContentLoaded": 1592,
-                  "observedDomContentLoadedTs": 834179527,
-                  "observedCumulativeLayoutShift": 0.9137940724690755,
-                  "observedCumulativeLayoutShiftMainFrame": 0.9137940724690755,
-                  "observedTotalCumulativeLayoutShift": 0.9137940724690755,
-                  "observedFirstVisualChange": 1028,
-                  "observedFirstVisualChangeTs": 833615660,
-                  "observedLastVisualChange": 7245,
-                  "observedLastVisualChangeTs": 839832660,
-                  "observedSpeedIndex": 3141,
-                  "observedSpeedIndexTs": 835728403
+                  "observedNavigationStartTs": 301967765,
+                  "observedFirstPaint": 1423,
+                  "observedFirstPaintTs": 303391045,
+                  "observedFirstContentfulPaint": 1423,
+                  "observedFirstContentfulPaintTs": 303391045,
+                  "observedFirstContentfulPaintAllFrames": 1423,
+                  "observedFirstContentfulPaintAllFramesTs": 303391045,
+                  "observedFirstMeaningfulPaint": 1692,
+                  "observedFirstMeaningfulPaintTs": 303659922,
+                  "observedLargestContentfulPaint": 3942,
+                  "observedLargestContentfulPaintTs": 305909388,
+                  "observedLargestContentfulPaintAllFrames": 3942,
+                  "observedLargestContentfulPaintAllFramesTs": 305909388,
+                  "observedTraceEnd": 10308,
+                  "observedTraceEndTs": 312275486,
+                  "observedLoad": 6088,
+                  "observedLoadTs": 308055485,
+                  "observedDomContentLoaded": 1677,
+                  "observedDomContentLoadedTs": 303644360,
+                  "observedCumulativeLayoutShift": 0.8863932291666666,
+                  "observedCumulativeLayoutShiftMainFrame": 0.8863932291666666,
+                  "observedTotalCumulativeLayoutShift": 0.8863932291666666,
+                  "observedFirstVisualChange": 1436,
+                  "observedFirstVisualChangeTs": 303403765,
+                  "observedLastVisualChange": 7736,
+                  "observedLastVisualChangeTs": 309703765,
+                  "observedSpeedIndex": 3522,
+                  "observedSpeedIndexTs": 305489780
                 },
                 {
                   "lcpInvalidated": false
@@ -4170,23 +4289,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 121,
-                  "numScripts": 59,
+                  "numRequests": 130,
+                  "numScripts": 61,
                   "numStylesheets": 6,
                   "numFonts": 7,
-                  "numTasks": 1979,
-                  "numTasksOver10ms": 40,
-                  "numTasksOver25ms": 27,
-                  "numTasksOver50ms": 5,
+                  "numTasks": 2050,
+                  "numTasksOver10ms": 42,
+                  "numTasksOver25ms": 26,
+                  "numTasksOver50ms": 9,
                   "numTasksOver100ms": 4,
-                  "numTasksOver500ms": 0,
+                  "numTasksOver500ms": 1,
                   "rtt": 0,
-                  "throughput": 22343942.4723306,
-                  "maxRtt": 98.32000000000002,
-                  "maxServerLatency": 77.21100000000001,
-                  "totalByteWeight": 2279481,
-                  "totalTaskTime": 2207.3649999999934,
-                  "mainDocumentTransferSize": 8908
+                  "throughput": 12961857.257133512,
+                  "maxRtt": 163.60500000000002,
+                  "maxServerLatency": 325.07099999999997,
+                  "totalByteWeight": 2288884,
+                  "totalTaskTime": 2664.781000000001,
+                  "mainDocumentTransferSize": 8909
                 }
               ]
             }
@@ -4255,7 +4374,7 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.11,
+      "lighthouse_performance": 0.01,
       "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 0.96,
       "lighthouse_accessibilityGrade": "A",
@@ -4281,20 +4400,18 @@
     "nmap": {
       "host": "enm.mes-services.mer.gouv.fr",
       "protocol": "tcp",
-      "closed_ports": "944",
+      "closed_ports": "950",
       "open_ports": [
         {
           "service": {
-            "name": "http",
-            "product": "Apache httpd",
+            "name": "tcpwrapped",
             "id": "80",
             "vulnerabilities": []
           }
         },
         {
           "service": {
-            "name": "http",
-            "product": "Apache httpd",
+            "name": "tcpwrapped",
             "id": "443",
             "vulnerabilities": []
           }
@@ -4505,7 +4622,7 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "sessionresumption_ID",
@@ -4575,7 +4692,7 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "0455ED8B8C517AF4D5A93B147B640B0E0191"
+        "finding": "038A2D2E165F1FFEF2F428F2D7D0214384E1"
       },
       {
         "id": "cert_serialNumberLen",
@@ -4589,21 +4706,21 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "344235B8A9EDB6ABA9D0BF10C2B5B598404FFFEA"
+        "finding": "B5EAA25A241B11D6D8FD128384591B0CFC592E7E"
       },
       {
         "id": "cert_fingerprintSHA256",
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "5FEF52096C3DF2ACCADFDCFB9665B6D8F482B00508100373E8E4CF6A364EEDF1"
+        "finding": "B1F860647DF1FFAC7DDA89A8764783D3A7A5B12DAACDFA7FD9E5CB5BA79C25C7"
       },
       {
         "id": "cert",
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
       },
       {
         "id": "cert_commonName",
@@ -4652,21 +4769,21 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "OK",
-        "finding": "31 >= 30 days"
+        "finding": "84 >= 30 days"
       },
       {
         "id": "cert_notBefore",
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "2024-12-12 07:18"
+        "finding": "2025-02-10 21:53"
       },
       {
         "id": "cert_notAfter",
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "OK",
-        "finding": "2025-03-12 07:18"
+        "finding": "2025-05-11 21:53"
       },
       {
         "id": "cert_extlifeSpan",
@@ -4806,14 +4923,14 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds from localtime"
+        "finding": "-1 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "1739064417"
+        "finding": "1739669456"
       },
       {
         "id": "HSTS_time",
@@ -5049,7 +5166,7 @@
         "severity": "INFO",
         "cve": "CVE-2016-0800 CVE-2016-0703",
         "cwe": "CWE-310",
-        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=5FEF52096C3DF2ACCADFDCFB9665B6D8F482B00508100373E8E4CF6A364EEDF1"
+        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=B1F860647DF1FFAC7DDA89A8764783D3A7A5B12DAACDFA7FD9E5CB5BA79C25C7"
       },
       {
         "id": "LOGJAM-common_primes",
@@ -5425,7 +5542,7 @@
         "ip": "enm.mes-services.mer.gouv.fr/194.5.170.186",
         "port": "443",
         "severity": "INFO",
-        "finding": "123"
+        "finding": "149"
       }
     ],
     "thirdparties": {
@@ -5596,7 +5713,7 @@
       {
         "requestedUrl": "https://enm.mes-services.mer.gouv.fr/",
         "finalUrl": "https://enm.mes-services.mer.gouv.fr/login",
-        "fetchTime": "2025-02-09T01:23:43.887Z",
+        "fetchTime": "2025-02-16T01:27:22.543Z",
         "runWarnings": [
           "The page loaded too slowly to finish within the time limit. Results may be incomplete.",
           "The page may not be loading as expected because your test URL (https://enm.mes-services.mer.gouv.fr/) was redirected to https://enm.mes-services.mer.gouv.fr/login. Try testing the second URL directly."
@@ -5662,53 +5779,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 4608,
+            "numericValue": 4913,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3231,
-                  "firstMeaningfulPaint": 3365,
-                  "largestContentfulPaint": 3909,
-                  "interactive": 4608,
-                  "speedIndex": 3231,
-                  "totalBlockingTime": 91,
-                  "maxPotentialFID": 222,
-                  "cumulativeLayoutShift": 0.2881884502834744,
-                  "cumulativeLayoutShiftMainFrame": 0.2881884502834744,
-                  "totalCumulativeLayoutShift": 0.2881884502834744,
+                  "firstContentfulPaint": 3147,
+                  "firstMeaningfulPaint": 3353,
+                  "largestContentfulPaint": 3887,
+                  "interactive": 4913,
+                  "speedIndex": 3147,
+                  "totalBlockingTime": 105,
+                  "maxPotentialFID": 175,
+                  "cumulativeLayoutShift": 0.29039718935224745,
+                  "cumulativeLayoutShiftMainFrame": 0.29039718935224745,
+                  "totalCumulativeLayoutShift": 0.29039718935224745,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 279263332,
+                  "observedTimeOriginTs": 386815825,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 279263332,
-                  "observedFirstPaint": 482,
-                  "observedFirstPaintTs": 279744894,
-                  "observedFirstContentfulPaint": 482,
-                  "observedFirstContentfulPaintTs": 279744894,
-                  "observedFirstContentfulPaintAllFrames": 482,
-                  "observedFirstContentfulPaintAllFramesTs": 279744894,
-                  "observedFirstMeaningfulPaint": 482,
-                  "observedFirstMeaningfulPaintTs": 279744894,
-                  "observedLargestContentfulPaint": 482,
-                  "observedLargestContentfulPaintTs": 279744894,
-                  "observedLargestContentfulPaintAllFrames": 482,
-                  "observedLargestContentfulPaintAllFramesTs": 279744894,
-                  "observedTraceEnd": 43912,
-                  "observedTraceEndTs": 323175434,
-                  "observedLoad": 534,
-                  "observedLoadTs": 279797593,
+                  "observedNavigationStartTs": 386815825,
+                  "observedFirstPaint": 611,
+                  "observedFirstPaintTs": 387427117,
+                  "observedFirstContentfulPaint": 611,
+                  "observedFirstContentfulPaintTs": 387427117,
+                  "observedFirstContentfulPaintAllFrames": 611,
+                  "observedFirstContentfulPaintAllFramesTs": 387427117,
+                  "observedFirstMeaningfulPaint": 611,
+                  "observedFirstMeaningfulPaintTs": 387427117,
+                  "observedLargestContentfulPaint": 611,
+                  "observedLargestContentfulPaintTs": 387427117,
+                  "observedLargestContentfulPaintAllFrames": 611,
+                  "observedLargestContentfulPaintAllFramesTs": 387427117,
+                  "observedTraceEnd": 43147,
+                  "observedTraceEndTs": 429962577,
+                  "observedLoad": 769,
+                  "observedLoadTs": 387584506,
                   "observedDomContentLoaded": 0,
-                  "observedDomContentLoadedTs": 279263671,
-                  "observedCumulativeLayoutShift": 0.2881884502834744,
-                  "observedCumulativeLayoutShiftMainFrame": 0.2881884502834744,
-                  "observedTotalCumulativeLayoutShift": 0.2881884502834744,
-                  "observedFirstVisualChange": 42,
-                  "observedFirstVisualChangeTs": 279305332,
-                  "observedLastVisualChange": 1092,
-                  "observedLastVisualChangeTs": 280355332,
-                  "observedSpeedIndex": 322,
-                  "observedSpeedIndexTs": 279585649
+                  "observedDomContentLoadedTs": 386816135,
+                  "observedCumulativeLayoutShift": 0.29039718935224745,
+                  "observedCumulativeLayoutShiftMainFrame": 0.29039718935224745,
+                  "observedTotalCumulativeLayoutShift": 0.29039718935224745,
+                  "observedFirstVisualChange": 2,
+                  "observedFirstVisualChangeTs": 386817825,
+                  "observedLastVisualChange": 718,
+                  "observedLastVisualChangeTs": 387533825,
+                  "observedSpeedIndex": 436,
+                  "observedSpeedIndexTs": 387252176
                 },
                 {
                   "lcpInvalidated": false
@@ -5730,18 +5847,18 @@
                   "numScripts": 16,
                   "numStylesheets": 6,
                   "numFonts": 6,
-                  "numTasks": 6870,
-                  "numTasksOver10ms": 11,
-                  "numTasksOver25ms": 5,
+                  "numTasks": 6935,
+                  "numTasksOver10ms": 13,
+                  "numTasksOver25ms": 7,
                   "numTasksOver50ms": 4,
-                  "numTasksOver100ms": 1,
+                  "numTasksOver100ms": 2,
                   "numTasksOver500ms": 0,
-                  "rtt": 84.10499999999999,
-                  "throughput": 6694944.695477862,
-                  "maxRtt": 104.769,
-                  "maxServerLatency": 10.411999999999992,
-                  "totalByteWeight": 421673,
-                  "totalTaskTime": 1689.0939999999748,
+                  "rtt": 151.951,
+                  "throughput": 4411940.321969537,
+                  "maxRtt": 177.94899999999998,
+                  "maxServerLatency": 11.043000000000035,
+                  "totalByteWeight": 422065,
+                  "totalTaskTime": 1488.696000000016,
                   "mainDocumentTransferSize": 1351
                 }
               ]
@@ -5790,7 +5907,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://enm.mes-services.mer.gouv.fr",
-        "size": 458.54,
+        "size": 458.469,
         "nodes": 215,
         "requests": 98,
         "grade": "C",
@@ -5798,7 +5915,7 @@
         "ges": 1.66,
         "water": 2.49,
         "ecoindex_version": "5.4.2",
-        "date": "2025-02-09 01:22:31.990253",
+        "date": "2025-02-16 01:26:14.907027",
         "page_type": null
       }
     ],
@@ -5811,7 +5928,7 @@
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
       "testsslExpireSoon": false,
-      "testsslExpireDate": "2025-03-12T07:18:00.000Z",
+      "testsslExpireDate": "2025-05-11T21:53:00.000Z",
       "testsslGrade": "A+",
       "cookiesGrade": null,
       "cookiesCount": null,
@@ -5896,16 +6013,16 @@
             "version": "1.27.0",
             "vulnerabilities": [
               {
-                "id": "ADDC71B8-6024-11EF-86A1-8C164567CA3C",
-                "is_exploit": "false",
                 "type": "freebsd",
-                "cvss": "5.7"
+                "cvss": "5.7",
+                "is_exploit": "false",
+                "id": "ADDC71B8-6024-11EF-86A1-8C164567CA3C"
               },
               {
-                "id": "9761AF78-E3E4-11EF-9F4A-589CFC10A551",
-                "is_exploit": "false",
                 "type": "freebsd",
-                "cvss": "5.3"
+                "cvss": "5.3",
+                "is_exploit": "false",
+                "id": "9761AF78-E3E4-11EF-9F4A-589CFC10A551"
               }
             ]
           }
@@ -6263,7 +6380,7 @@
         "ip": "pha.ants.gouv.fr/66.22.32.116",
         "port": "443",
         "severity": "OK",
-        "finding": "82 >= 60 days"
+        "finding": "75 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -6424,7 +6541,7 @@
         "ip": "pha.ants.gouv.fr/66.22.32.116",
         "port": "443",
         "severity": "INFO",
-        "finding": "1739064842"
+        "finding": "1739669419"
       },
       {
         "id": "HSTS_time",
@@ -6494,7 +6611,7 @@
         "ip": "pha.ants.gouv.fr/66.22.32.116",
         "port": "443",
         "severity": "OK",
-        "finding": "default-src 'self';style-src 'self' 'unsafe-inline' https://genii-script.tolk.ai https://fonts.googleapis.com;script-src 'self' https://*.ants.gouv.fr https://gva.et-gv.fr https://genii-script.tolk.ai 'nonce-8b8cc2cc-ebbf-47bd-8e27-4d741487c1c2' https://captcha.liveidentity.com https://cdn.woopic.com/;frame-src 'self' https://www.youtube.com/ https://www.dailymotion.com/ https://player.vimeo.com/;connect-src 'self' https://geo.api.gouv.fr https://*.ants.gouv.fr https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai https://api.ipify.org https://captcha.liveidentity.com;font-src 'self' https://fonts.gstatic.com data:;img-src 'self' https: http: data:;media-src 'self' https://captcha.liveidentity.com;object-src 'none';base-uri 'self';form-action 'self'"
+        "finding": "default-src 'self';style-src 'self' 'unsafe-inline' https://genii-script.tolk.ai https://fonts.googleapis.com;script-src 'self' https://*.ants.gouv.fr https://gva.et-gv.fr https://genii-script.tolk.ai 'nonce-7bc267ed-d712-4c24-bd08-75e85b237455' https://captcha.liveidentity.com https://cdn.woopic.com/;frame-src 'self' https://www.youtube.com/ https://www.dailymotion.com/ https://player.vimeo.com/;connect-src 'self' https://geo.api.gouv.fr https://*.ants.gouv.fr https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai https://api.ipify.org https://captcha.liveidentity.com;font-src 'self' https://fonts.gstatic.com data:;img-src 'self' https: http: data:;media-src 'self' https://captcha.liveidentity.com;object-src 'none';base-uri 'self';form-action 'self'"
       },
       {
         "id": "Permissions-Policy",
@@ -7029,7 +7146,7 @@
         "ip": "pha.ants.gouv.fr/66.22.32.116",
         "port": "443",
         "severity": "INFO",
-        "finding": "70"
+        "finding": "67"
       }
     ],
     "thirdparties": {
@@ -7184,7 +7301,7 @@
       {
         "requestedUrl": "https://pha.ants.gouv.fr/?lang=fr",
         "finalUrl": "https://pha.ants.gouv.fr/?lang=fr",
-        "fetchTime": "2025-02-09T01:32:19.139Z",
+        "fetchTime": "2025-02-16T01:28:39.746Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -7195,7 +7312,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.35
+            "score": 0.44
           },
           "accessibility": {
             "title": "Accessibility",
@@ -7247,53 +7364,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 8906,
+            "numericValue": 9045,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2887,
-                  "firstMeaningfulPaint": 2887,
-                  "largestContentfulPaint": 9102,
-                  "interactive": 8906,
-                  "speedIndex": 6329,
-                  "totalBlockingTime": 529,
-                  "maxPotentialFID": 815,
-                  "cumulativeLayoutShift": 0.3315252685546875,
-                  "cumulativeLayoutShiftMainFrame": 0.3315252685546875,
-                  "totalCumulativeLayoutShift": 0.3315252685546875,
+                  "firstContentfulPaint": 3042,
+                  "firstMeaningfulPaint": 3042,
+                  "largestContentfulPaint": 9036,
+                  "interactive": 9045,
+                  "speedIndex": 6045,
+                  "totalBlockingTime": 528,
+                  "maxPotentialFID": 744,
+                  "cumulativeLayoutShift": 0,
+                  "cumulativeLayoutShiftMainFrame": 0,
+                  "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 321012382,
+                  "observedTimeOriginTs": 284839389,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 321012382,
-                  "observedFirstPaint": 853,
-                  "observedFirstPaintTs": 321865843,
-                  "observedFirstContentfulPaint": 853,
-                  "observedFirstContentfulPaintTs": 321865843,
-                  "observedFirstContentfulPaintAllFrames": 853,
-                  "observedFirstContentfulPaintAllFramesTs": 321865843,
-                  "observedFirstMeaningfulPaint": 853,
-                  "observedFirstMeaningfulPaintTs": 321865843,
-                  "observedLargestContentfulPaint": 1387,
-                  "observedLargestContentfulPaintTs": 322399107,
-                  "observedLargestContentfulPaintAllFrames": 1387,
-                  "observedLargestContentfulPaintAllFramesTs": 322399107,
-                  "observedTraceEnd": 4138,
-                  "observedTraceEndTs": 325150851,
-                  "observedLoad": 1387,
-                  "observedLoadTs": 322399663,
-                  "observedDomContentLoaded": 849,
-                  "observedDomContentLoadedTs": 321861068,
-                  "observedCumulativeLayoutShift": 0.3315252685546875,
-                  "observedCumulativeLayoutShiftMainFrame": 0.3315252685546875,
-                  "observedTotalCumulativeLayoutShift": 0.3315252685546875,
-                  "observedFirstVisualChange": 858,
-                  "observedFirstVisualChangeTs": 321870382,
-                  "observedLastVisualChange": 1524,
-                  "observedLastVisualChangeTs": 322536382,
-                  "observedSpeedIndex": 1203,
-                  "observedSpeedIndexTs": 322215444
+                  "observedNavigationStartTs": 284839389,
+                  "observedFirstPaint": 913,
+                  "observedFirstPaintTs": 285752464,
+                  "observedFirstContentfulPaint": 913,
+                  "observedFirstContentfulPaintTs": 285752464,
+                  "observedFirstContentfulPaintAllFrames": 913,
+                  "observedFirstContentfulPaintAllFramesTs": 285752464,
+                  "observedFirstMeaningfulPaint": 913,
+                  "observedFirstMeaningfulPaintTs": 285752464,
+                  "observedLargestContentfulPaint": 1385,
+                  "observedLargestContentfulPaintTs": 286224807,
+                  "observedLargestContentfulPaintAllFrames": 1385,
+                  "observedLargestContentfulPaintAllFramesTs": 286224807,
+                  "observedTraceEnd": 4107,
+                  "observedTraceEndTs": 288946101,
+                  "observedLoad": 1375,
+                  "observedLoadTs": 286214033,
+                  "observedDomContentLoaded": 907,
+                  "observedDomContentLoadedTs": 285746244,
+                  "observedCumulativeLayoutShift": 0,
+                  "observedCumulativeLayoutShiftMainFrame": 0,
+                  "observedTotalCumulativeLayoutShift": 0,
+                  "observedFirstVisualChange": 915,
+                  "observedFirstVisualChangeTs": 285754389,
+                  "observedLastVisualChange": 1449,
+                  "observedLastVisualChangeTs": 286288389,
+                  "observedSpeedIndex": 1173,
+                  "observedSpeedIndexTs": 286011892
                 },
                 {
                   "lcpInvalidated": false
@@ -7311,23 +7428,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 42,
+                  "numRequests": 41,
                   "numScripts": 3,
                   "numStylesheets": 5,
                   "numFonts": 6,
-                  "numTasks": 1608,
+                  "numTasks": 1461,
                   "numTasksOver10ms": 6,
-                  "numTasksOver25ms": 4,
-                  "numTasksOver50ms": 2,
-                  "numTasksOver100ms": 1,
+                  "numTasksOver25ms": 5,
+                  "numTasksOver50ms": 3,
+                  "numTasksOver100ms": 2,
                   "numTasksOver500ms": 0,
-                  "rtt": 76.382,
-                  "throughput": 23695975.480890572,
-                  "maxRtt": 88.097,
-                  "maxServerLatency": 193.551,
-                  "totalByteWeight": 1519226,
-                  "totalTaskTime": 754.6169999999903,
-                  "mainDocumentTransferSize": 206980
+                  "rtt": 80.102,
+                  "throughput": 22244323.40563798,
+                  "maxRtt": 92.61500000000001,
+                  "maxServerLatency": 188.309,
+                  "totalByteWeight": 1518214,
+                  "totalTaskTime": 753.9209999999987,
+                  "mainDocumentTransferSize": 206890
                 }
               ]
             }
@@ -7374,15 +7491,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://pha.ants.gouv.fr/?lang=fr",
-        "size": 3637.489,
-        "nodes": 588,
-        "requests": 41,
+        "size": 3633.759,
+        "nodes": 580,
+        "requests": 39,
         "grade": "D",
-        "score": 54,
-        "ges": 1.92,
-        "water": 2.88,
+        "score": 55,
+        "ges": 1.9,
+        "water": 2.85,
         "ecoindex_version": "5.4.2",
-        "date": "2025-02-09 01:31:24.555215",
+        "date": "2025-02-16 01:27:40.842267",
         "page_type": "website"
       }
     ],
@@ -7401,7 +7518,7 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.35,
+      "lighthouse_performance": 0.44,
       "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 0.77,
       "lighthouse_accessibilityGrade": "B",
@@ -7480,16 +7597,16 @@
             "version": "1.27.0",
             "vulnerabilities": [
               {
-                "cvss": "5.7",
-                "id": "ADDC71B8-6024-11EF-86A1-8C164567CA3C",
                 "is_exploit": "false",
-                "type": "freebsd"
+                "type": "freebsd",
+                "cvss": "5.7",
+                "id": "ADDC71B8-6024-11EF-86A1-8C164567CA3C"
               },
               {
-                "cvss": "5.3",
-                "id": "9761AF78-E3E4-11EF-9F4A-589CFC10A551",
                 "is_exploit": "false",
-                "type": "freebsd"
+                "type": "freebsd",
+                "cvss": "5.3",
+                "id": "9761AF78-E3E4-11EF-9F4A-589CFC10A551"
               }
             ]
           }
@@ -7700,14 +7817,14 @@
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "INFO",
-        "finding": "not supported"
+        "finding": "supported"
       },
       {
         "id": "sessionresumption_ID",
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
@@ -7847,7 +7964,7 @@
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "OK",
-        "finding": "82 >= 60 days"
+        "finding": "75 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -8001,14 +8118,14 @@
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds from localtime"
+        "finding": "-1 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "INFO",
-        "finding": "1739064946"
+        "finding": "1739669713"
       },
       {
         "id": "HSTS_time",
@@ -8078,7 +8195,7 @@
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "OK",
-        "finding": "default-src 'self';style-src 'self' 'unsafe-inline' https://genii-script.tolk.ai https://fonts.googleapis.com;script-src 'self' https://*.ants.gouv.fr https://gva.et-gv.fr https://genii-script.tolk.ai 'nonce-3b7e1c65-8872-4343-b679-544661ccb319' https://captcha.liveidentity.com https://cdn.woopic.com/;frame-src 'self' https://www.youtube.com/ https://www.dailymotion.com/ https://player.vimeo.com/;connect-src 'self' https://geo.api.gouv.fr https://*.ants.gouv.fr https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai https://api.ipify.org https://captcha.liveidentity.com;font-src 'self' https://fonts.gstatic.com data:;img-src 'self' https: http: data:;media-src 'self' https://captcha.liveidentity.com;object-src 'none';base-uri 'self';form-action 'self'"
+        "finding": "default-src 'self';style-src 'self' 'unsafe-inline' https://genii-script.tolk.ai https://fonts.googleapis.com;script-src 'self' https://*.ants.gouv.fr https://gva.et-gv.fr https://genii-script.tolk.ai 'nonce-f58553dc-d232-4c26-b9d1-7892ca0ae88e' https://captcha.liveidentity.com https://cdn.woopic.com/;frame-src 'self' https://www.youtube.com/ https://www.dailymotion.com/ https://player.vimeo.com/;connect-src 'self' https://geo.api.gouv.fr https://*.ants.gouv.fr https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai https://api.ipify.org https://captcha.liveidentity.com;font-src 'self' https://fonts.gstatic.com data:;img-src 'self' https: http: data:;media-src 'self' https://captcha.liveidentity.com;object-src 'none';base-uri 'self';form-action 'self'"
       },
       {
         "id": "Permissions-Policy",
@@ -8613,7 +8730,7 @@
         "ip": "mairie.ants.gouv.fr/66.22.32.165",
         "port": "443",
         "severity": "INFO",
-        "finding": "67"
+        "finding": "66"
       }
     ],
     "thirdparties": {
@@ -8786,7 +8903,7 @@
       {
         "requestedUrl": "https://mairie.ants.gouv.fr/?lang=fr",
         "finalUrl": "https://mairie.ants.gouv.fr/?lang=fr",
-        "fetchTime": "2025-02-09T01:34:03.048Z",
+        "fetchTime": "2025-02-16T01:33:31.242Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -8797,7 +8914,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.49
+            "score": 0.57
           },
           "accessibility": {
             "title": "Accessibility",
@@ -8849,53 +8966,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 8281,
+            "numericValue": 8284,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2597,
-                  "firstMeaningfulPaint": 2597,
-                  "largestContentfulPaint": 7973,
-                  "interactive": 8281,
-                  "speedIndex": 5403,
-                  "totalBlockingTime": 242,
-                  "maxPotentialFID": 418,
-                  "cumulativeLayoutShift": 0.2725122477213542,
-                  "cumulativeLayoutShiftMainFrame": 0.2725122477213542,
-                  "totalCumulativeLayoutShift": 0.2725122477213542,
+                  "firstContentfulPaint": 2596,
+                  "firstMeaningfulPaint": 2596,
+                  "largestContentfulPaint": 7969,
+                  "interactive": 8284,
+                  "speedIndex": 5651,
+                  "totalBlockingTime": 238,
+                  "maxPotentialFID": 396,
+                  "cumulativeLayoutShift": 0.005088541666666667,
+                  "cumulativeLayoutShiftMainFrame": 0.005088541666666667,
+                  "totalCumulativeLayoutShift": 0.005088541666666667,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 254125736,
+                  "observedTimeOriginTs": 324675817,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 254125736,
-                  "observedFirstPaint": 750,
-                  "observedFirstPaintTs": 254875961,
-                  "observedFirstContentfulPaint": 750,
-                  "observedFirstContentfulPaintTs": 254875961,
-                  "observedFirstContentfulPaintAllFrames": 750,
-                  "observedFirstContentfulPaintAllFramesTs": 254875961,
-                  "observedFirstMeaningfulPaint": 750,
-                  "observedFirstMeaningfulPaintTs": 254875961,
-                  "observedLargestContentfulPaint": 1216,
-                  "observedLargestContentfulPaintTs": 255341313,
-                  "observedLargestContentfulPaintAllFrames": 1216,
-                  "observedLargestContentfulPaintAllFramesTs": 255341313,
-                  "observedTraceEnd": 7646,
-                  "observedTraceEndTs": 261771819,
-                  "observedLoad": 5339,
-                  "observedLoadTs": 259464605,
-                  "observedDomContentLoaded": 748,
-                  "observedDomContentLoadedTs": 254873474,
-                  "observedCumulativeLayoutShift": 0.2725122477213542,
-                  "observedCumulativeLayoutShiftMainFrame": 0.2725122477213542,
-                  "observedTotalCumulativeLayoutShift": 0.2725122477213542,
-                  "observedFirstVisualChange": 747,
-                  "observedFirstVisualChangeTs": 254872736,
-                  "observedLastVisualChange": 1447,
-                  "observedLastVisualChangeTs": 255572736,
-                  "observedSpeedIndex": 1041,
-                  "observedSpeedIndexTs": 255166960
+                  "observedNavigationStartTs": 324675817,
+                  "observedFirstPaint": 741,
+                  "observedFirstPaintTs": 325416789,
+                  "observedFirstContentfulPaint": 741,
+                  "observedFirstContentfulPaintTs": 325416789,
+                  "observedFirstContentfulPaintAllFrames": 741,
+                  "observedFirstContentfulPaintAllFramesTs": 325416789,
+                  "observedFirstMeaningfulPaint": 741,
+                  "observedFirstMeaningfulPaintTs": 325416789,
+                  "observedLargestContentfulPaint": 1190,
+                  "observedLargestContentfulPaintTs": 325866159,
+                  "observedLargestContentfulPaintAllFrames": 1190,
+                  "observedLargestContentfulPaintAllFramesTs": 325866159,
+                  "observedTraceEnd": 7700,
+                  "observedTraceEndTs": 332375550,
+                  "observedLoad": 5389,
+                  "observedLoadTs": 330064983,
+                  "observedDomContentLoaded": 737,
+                  "observedDomContentLoadedTs": 325412373,
+                  "observedCumulativeLayoutShift": 0.005088541666666667,
+                  "observedCumulativeLayoutShiftMainFrame": 0.005088541666666667,
+                  "observedTotalCumulativeLayoutShift": 0.005088541666666667,
+                  "observedFirstVisualChange": 744,
+                  "observedFirstVisualChangeTs": 325419817,
+                  "observedLastVisualChange": 1311,
+                  "observedLastVisualChangeTs": 325986817,
+                  "observedSpeedIndex": 977,
+                  "observedSpeedIndexTs": 325652473
                 },
                 {
                   "lcpInvalidated": false
@@ -8913,23 +9030,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 42,
+                  "numRequests": 41,
                   "numScripts": 3,
                   "numStylesheets": 5,
                   "numFonts": 6,
-                  "numTasks": 1297,
-                  "numTasksOver10ms": 5,
+                  "numTasks": 1258,
+                  "numTasksOver10ms": 7,
                   "numTasksOver25ms": 3,
-                  "numTasksOver50ms": 2,
+                  "numTasksOver50ms": 3,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 79.697,
-                  "throughput": 21533176.319359735,
-                  "maxRtt": 91.32300000000032,
-                  "maxServerLatency": 314.524,
-                  "totalByteWeight": 1859414,
-                  "totalTaskTime": 527.694999999997,
-                  "mainDocumentTransferSize": 145376
+                  "rtt": 76.616,
+                  "throughput": 22466148.183425263,
+                  "maxRtt": 88.10400000000027,
+                  "maxServerLatency": 318.08299999999997,
+                  "totalByteWeight": 1857796,
+                  "totalTaskTime": 551.6359999999979,
+                  "mainDocumentTransferSize": 144984
                 }
               ]
             }
@@ -8976,15 +9093,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://mairie.ants.gouv.fr/?lang=fr",
-        "size": 3091.845,
-        "nodes": 358,
-        "requests": 40,
+        "size": 3089.2,
+        "nodes": 350,
+        "requests": 38,
         "grade": "C",
-        "score": 64,
-        "ges": 1.72,
-        "water": 2.58,
+        "score": 65,
+        "ges": 1.7,
+        "water": 2.55,
         "ecoindex_version": "5.4.2",
-        "date": "2025-02-09 01:33:11.135954",
+        "date": "2025-02-16 01:32:34.641198",
         "page_type": "website"
       }
     ],
@@ -9003,8 +9120,8 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.49,
-      "lighthouse_performanceGrade": "D",
+      "lighthouse_performance": 0.57,
+      "lighthouse_performanceGrade": "C",
       "lighthouse_accessibility": 0.77,
       "lighthouse_accessibilityGrade": "B",
       "lighthouse_best-practices": 0.83,
@@ -9263,7 +9380,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "not supported"
+        "finding": "supported"
       },
       {
         "id": "TLS_timestamp",
@@ -9410,7 +9527,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "OK",
-        "finding": "50 >= 30 days"
+        "finding": "43 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -9571,21 +9688,21 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "+14 seconds from localtime"
+        "finding": "+15 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "1739065052"
+        "finding": "1739669833"
       },
       {
         "id": "HTTP_headerAge",
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "14 seconds"
+        "finding": "15 seconds"
       },
       {
         "id": "HSTS",
@@ -9634,7 +9751,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.109.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "cache-sjc10049-SJC"
+        "finding": "cache-iad-kcgs7200062-IAD"
       },
       {
         "id": "Cache-Control",
@@ -10357,7 +10474,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "not supported"
+        "finding": "supported"
       },
       {
         "id": "TLS_timestamp",
@@ -10504,7 +10621,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "OK",
-        "finding": "50 >= 30 days"
+        "finding": "43 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -10665,21 +10782,21 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "+114 seconds from localtime"
+        "finding": "+135 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "1739065166"
+        "finding": "1739669954"
       },
       {
         "id": "HTTP_headerAge",
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "114 seconds"
+        "finding": "135 seconds"
       },
       {
         "id": "HSTS",
@@ -10728,7 +10845,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.110.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "cache-pao-kpao1770064-PAO"
+        "finding": "cache-iad-kcgs7200043-IAD"
       },
       {
         "id": "Cache-Control",
@@ -11598,7 +11715,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
         "port": "443",
         "severity": "OK",
-        "finding": "50 >= 30 days"
+        "finding": "43 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -11759,21 +11876,21 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "+228 seconds from localtime"
+        "finding": "+251 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "1739065279"
+        "finding": "1739670070"
       },
       {
         "id": "HTTP_headerAge",
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "228 seconds"
+        "finding": "251 seconds"
       },
       {
         "id": "HSTS",
@@ -11822,7 +11939,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "cache-pao-kpao1770020-PAO"
+        "finding": "cache-iad-kcgs7200116-IAD"
       },
       {
         "id": "Cache-Control",
@@ -12343,7 +12460,7 @@
         "ip": "ecoresponsable.numerique.gouv.fr/185.199.111.153",
         "port": "443",
         "severity": "INFO",
-        "finding": "345"
+        "finding": "357"
       }
     ],
     "thirdparties": {
@@ -12493,7 +12610,7 @@
       {
         "requestedUrl": "https://ecoresponsable.numerique.gouv.fr/",
         "finalUrl": "https://ecoresponsable.numerique.gouv.fr/",
-        "fetchTime": "2025-02-09T01:36:11.315Z",
+        "fetchTime": "2025-02-16T01:35:53.976Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -12504,7 +12621,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.91
+            "score": 0.88
           },
           "accessibility": {
             "title": "Accessibility",
@@ -12556,53 +12673,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 4672,
+            "numericValue": 4012,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2102,
-                  "firstMeaningfulPaint": 2102,
-                  "largestContentfulPaint": 3002,
-                  "interactive": 4672,
-                  "speedIndex": 2102,
-                  "totalBlockingTime": 64,
-                  "maxPotentialFID": 177,
-                  "cumulativeLayoutShift": 0.005793457031249999,
-                  "cumulativeLayoutShiftMainFrame": 0.005793457031249999,
-                  "totalCumulativeLayoutShift": 0.005793457031249999,
+                  "firstContentfulPaint": 2367,
+                  "firstMeaningfulPaint": 2383,
+                  "largestContentfulPaint": 3304,
+                  "interactive": 4012,
+                  "speedIndex": 2367,
+                  "totalBlockingTime": 52,
+                  "maxPotentialFID": 87,
+                  "cumulativeLayoutShift": 0.005802286783854166,
+                  "cumulativeLayoutShiftMainFrame": 0.005802286783854166,
+                  "totalCumulativeLayoutShift": 0.005802286783854166,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 317446516,
+                  "observedTimeOriginTs": 355734983,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 317446516,
-                  "observedFirstPaint": 195,
-                  "observedFirstPaintTs": 317641581,
-                  "observedFirstContentfulPaint": 195,
-                  "observedFirstContentfulPaintTs": 317641581,
-                  "observedFirstContentfulPaintAllFrames": 195,
-                  "observedFirstContentfulPaintAllFramesTs": 317641581,
-                  "observedFirstMeaningfulPaint": 195,
-                  "observedFirstMeaningfulPaintTs": 317641581,
-                  "observedLargestContentfulPaint": 195,
-                  "observedLargestContentfulPaintTs": 317641581,
-                  "observedLargestContentfulPaintAllFrames": 195,
-                  "observedLargestContentfulPaintAllFramesTs": 317641581,
-                  "observedTraceEnd": 3276,
-                  "observedTraceEndTs": 320722074,
-                  "observedLoad": 863,
-                  "observedLoadTs": 318309647,
-                  "observedDomContentLoaded": 207,
-                  "observedDomContentLoadedTs": 317653912,
-                  "observedCumulativeLayoutShift": 0.005793457031249999,
-                  "observedCumulativeLayoutShiftMainFrame": 0.005793457031249999,
-                  "observedTotalCumulativeLayoutShift": 0.005793457031249999,
-                  "observedFirstVisualChange": 207,
-                  "observedFirstVisualChangeTs": 317653516,
-                  "observedLastVisualChange": 807,
-                  "observedLastVisualChangeTs": 318253516,
-                  "observedSpeedIndex": 223,
-                  "observedSpeedIndexTs": 317669459
+                  "observedNavigationStartTs": 355734983,
+                  "observedFirstPaint": 187,
+                  "observedFirstPaintTs": 355922307,
+                  "observedFirstContentfulPaint": 187,
+                  "observedFirstContentfulPaintTs": 355922307,
+                  "observedFirstContentfulPaintAllFrames": 187,
+                  "observedFirstContentfulPaintAllFramesTs": 355922307,
+                  "observedFirstMeaningfulPaint": 187,
+                  "observedFirstMeaningfulPaintTs": 355922307,
+                  "observedLargestContentfulPaint": 187,
+                  "observedLargestContentfulPaintTs": 355922307,
+                  "observedLargestContentfulPaintAllFrames": 187,
+                  "observedLargestContentfulPaintAllFramesTs": 355922307,
+                  "observedTraceEnd": 2805,
+                  "observedTraceEndTs": 358539855,
+                  "observedLoad": 481,
+                  "observedLoadTs": 356215899,
+                  "observedDomContentLoaded": 104,
+                  "observedDomContentLoadedTs": 355838672,
+                  "observedCumulativeLayoutShift": 0.005802286783854166,
+                  "observedCumulativeLayoutShiftMainFrame": 0.005802286783854166,
+                  "observedTotalCumulativeLayoutShift": 0.005802286783854166,
+                  "observedFirstVisualChange": 200,
+                  "observedFirstVisualChangeTs": 355934983,
+                  "observedLastVisualChange": 217,
+                  "observedLastVisualChangeTs": 355951983,
+                  "observedSpeedIndex": 204,
+                  "observedSpeedIndexTs": 355939262
                 },
                 {
                   "lcpInvalidated": false
@@ -12624,19 +12741,19 @@
                   "numScripts": 5,
                   "numStylesheets": 2,
                   "numFonts": 3,
-                  "numTasks": 1205,
-                  "numTasksOver10ms": 7,
-                  "numTasksOver25ms": 3,
-                  "numTasksOver50ms": 2,
+                  "numTasks": 1185,
+                  "numTasksOver10ms": 5,
+                  "numTasksOver25ms": 1,
+                  "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.31,
-                  "throughput": 24095666.05840033,
-                  "maxRtt": 149.541,
-                  "maxServerLatency": 2.008,
-                  "totalByteWeight": 528177,
-                  "totalTaskTime": 329.78499999999747,
-                  "mainDocumentTransferSize": 8053
+                  "rtt": 5.728999999999999,
+                  "throughput": 35466917.19225719,
+                  "maxRtt": 85.64,
+                  "maxServerLatency": 4.4090000000000025,
+                  "totalByteWeight": 528528,
+                  "totalTaskTime": 212.22899999999802,
+                  "mainDocumentTransferSize": 8052
                 }
               ]
             }
@@ -12682,7 +12799,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://ecoresponsable.numerique.gouv.fr",
-        "size": 624.627,
+        "size": 622.848,
         "nodes": 444,
         "requests": 39,
         "grade": "C",
@@ -12690,7 +12807,7 @@
         "ges": 1.6,
         "water": 2.4,
         "ecoindex_version": "5.4.2",
-        "date": "2025-02-09 01:35:06.166154",
+        "date": "2025-02-16 01:35:01.781563",
         "page_type": null
       }
     ],
@@ -12709,7 +12826,7 @@
       "cookiesCount": null,
       "trackersGrade": null,
       "trackersCount": null,
-      "lighthouse_performance": 0.91,
+      "lighthouse_performance": 0.88,
       "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
