@@ -346,7 +346,7 @@
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "79 >= 30 days"
+              "finding"      : "72 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -500,21 +500,21 @@
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+1 seconds from localtime"
+              "finding"      : "+10 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1739669103"
+              "finding"      : "1740274472"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1 seconds"
+              "finding"      : "10 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -578,7 +578,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "X-Varnish: 48048319 22150009"
+              "finding"      : "X-Varnish: 83784621 84180277X-Varnish: 64698322"
           }
 ,         {
               "id"           : "heartbleed",
@@ -1077,6 +1077,6 @@
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "99"
+              "finding"      : "79"
           }
 ]
