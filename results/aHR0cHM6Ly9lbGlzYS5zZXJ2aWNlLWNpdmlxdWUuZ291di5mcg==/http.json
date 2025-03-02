@@ -1,0 +1,151 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "C-",
+    "error": null,
+    "score": 45,
+    "statusCode": 200,
+    "testsFailed": 4,
+    "testsPassed": 6,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "max-forwards": "20",
+      "via": "1.1 leto-b ()",
+      "connection": "close",
+      "x-correlationid": "Id-3cb4c367e7120fe02da269bd 0; Id-3cb4c3673163612d8dccbecc 0",
+      "cache-control": "no-cache",
+      "date": "Sun, 02 Mar 2025 01:28:28 GMT",
+      "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
+      "pragma": "no-cache",
+      "set-cookie": [
+        "api-gateway-8380=186128300.48160.0000; path=/; Httponly",
+        "civiq=169351084.48160.0000; path=/; Httponly; Secure",
+        "TS01c3b0f5=01b74c0fdda5850d79589b259720c1f377e957e96b17056c146ecb097714f33d8781b742f22b545ca8f6a987337755e465dc7a3824; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly;",
+        "TS01c3b0f5026=01c5582115a616bc22844e3b3d6bdd3dc60695401a112aa2db5c30534cb7fb1ad98868c315fa77614cc480d4e253529e4d0c069d6c0be7e9263d7e183735ec531c4b2a37ad; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly;"
+      ],
+      "content-type": "text/html",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "transfer-encoding": "chunked"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
+      "meta": false,
+      "policy": null,
+      "numPolicies": 0
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": false,
+      "result": "cookies-without-secure-flag-but-protected-by-hsts",
+      "scoreModifier": -5,
+      "data": {
+        "api-gateway-8380": {
+          "domain": "elisa.service-civique.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null
+        },
+        "civiq": {
+          "domain": "elisa.service-civique.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS01c3b0f5": {
+          "domain": "elisa.service-civique.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        },
+        "TS01c3b0f5026": {
+          "domain": "elisa.service-civique.gouv.fr",
+          "httponly": true,
+          "path": "/",
+          "port": null,
+          "secure": true
+        }
+      },
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://elisa.service-civique.gouv.fr/civiqs/",
+      "redirects": true,
+      "route": [
+        "http://elisa.service-civique.gouv.fr/",
+        "https://elisa.service-civique.gouv.fr/",
+        "https://elisa.service-civique.gouv.fr/civiqs/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
+      "scoreModifier": 0,
+      "data": {}
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}
