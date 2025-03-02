@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln mairie.ants.gouv.fr</pre>
-<p class="lead">Sun Feb 23 01:40:50 2025 – Sun Feb 23 01:41:13 2025<br>1 hosts scanned.
+<p class="lead">Sun Mar  2 01:37:52 2025 – Sun Mar  2 01:38:18 2025<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -149,7 +149,7 @@
   FourOhFourRequest: 
     HTTP/1.1 302 Moved Temporarily
     Server: rdwr
-    Date: Sun, 23 Feb 2025 01:41:00 GMT
+    Date: Sun, 02 Mar 2025 01:38:03 GMT
     Content-Type: text/html
     Content-Length: 137
     Connection: close
@@ -161,25 +161,10 @@
     &lt;hr&gt;&lt;center&gt;rdwr&lt;/center&gt;
     &lt;/body&gt;
     &lt;/html&gt;
-  GetRequest: 
+  GetRequest, HTTPOptions: 
     HTTP/1.1 302 Moved Temporarily
     Server: rdwr
-    Date: Sun, 23 Feb 2025 01:40:59 GMT
-    Content-Type: text/html
-    Content-Length: 137
-    Connection: close
-    Location: https://mairie.ants.gouv.fr:443/
-    &lt;html&gt;
-    &lt;head&gt;&lt;title&gt;302 Found&lt;/title&gt;&lt;/head&gt;
-    &lt;body&gt;
-    &lt;center&gt;&lt;h1&gt;302 Found&lt;/h1&gt;&lt;/center&gt;
-    &lt;hr&gt;&lt;center&gt;rdwr&lt;/center&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
-  HTTPOptions: 
-    HTTP/1.1 302 Moved Temporarily
-    Server: rdwr
-    Date: Sun, 23 Feb 2025 01:41:00 GMT
+    Date: Sun, 02 Mar 2025 01:38:02 GMT
     Content-Type: text/html
     Content-Length: 137
     Connection: close
@@ -194,7 +179,7 @@
   RTSPRequest, X11Probe: 
     HTTP/1.1 400 Bad Request
     Server: rdwr
-    Date: Sun, 23 Feb 2025 01:41:00 GMT
+    Date: Sun, 02 Mar 2025 01:38:03 GMT
     Content-Type: text/html
     Content-Length: 149
     Connection: close
@@ -264,6 +249,7 @@
     	F5:K000139898	9.8	https://vulners.com/f5/F5:K000139898
     	F5:K000139793	9.8	https://vulners.com/f5/F5:K000139793
     	F4080A56-6D84-5987-AA18-2A04DB73CA43	9.8	https://vulners.com/githubexploit/F4080A56-6D84-5987-AA18-2A04DB73CA43	*EXPLOIT*
+    	F1AA7640-CDDE-5A50-9056-90289C2A2CDE	9.8	https://vulners.com/githubexploit/F1AA7640-CDDE-5A50-9056-90289C2A2CDE	*EXPLOIT*
     	EDB-ID:52047	9.8	https://vulners.com/exploitdb/EDB-ID:52047	*EXPLOIT*
     	E12312E7-DAB2-52E9-8EFE-70FBDF0E3D0B	9.8	https://vulners.com/githubexploit/E12312E7-DAB2-52E9-8EFE-70FBDF0E3D0B	*EXPLOIT*
     	DFF9B2E2-C8B3-51E3-B45F-49128E4291AA	9.8	https://vulners.com/githubexploit/DFF9B2E2-C8B3-51E3-B45F-49128E4291AA	*EXPLOIT*
@@ -320,6 +306,7 @@
     	F5:K000140882	9.1	https://vulners.com/f5/F5:K000140882
     	F5:K000140552	8.9	https://vulners.com/f5/F5:K000140552
     	F5:K000140111	8.9	https://vulners.com/f5/F5:K000140111
+    	95499236-C9FE-56A6-9D7D-E943A24B633A	8.9	https://vulners.com/githubexploit/95499236-C9FE-56A6-9D7D-E943A24B633A	*EXPLOIT*
     	F5:K000140964	8.8	https://vulners.com/f5/F5:K000140964
     	F5:K000140960	8.8	https://vulners.com/f5/F5:K000140960
     	F5:K000140039	8.8	https://vulners.com/f5/F5:K000140039
@@ -335,7 +322,6 @@
     	E221B02C-A1D6-5433-9A6A-F6B2ADD5FB22	8.6	https://vulners.com/githubexploit/E221B02C-A1D6-5433-9A6A-F6B2ADD5FB22	*EXPLOIT*
     	BC9FEEE6-2FB9-5AB9-AE66-FA9A45EC059B	8.6	https://vulners.com/githubexploit/BC9FEEE6-2FB9-5AB9-AE66-FA9A45EC059B	*EXPLOIT*
     	AF146DC3-6A91-5DE1-B15A-1D86A070F915	8.6	https://vulners.com/githubexploit/AF146DC3-6A91-5DE1-B15A-1D86A070F915	*EXPLOIT*
-    	95499236-C9FE-56A6-9D7D-E943A24B633A	8.6	https://vulners.com/githubexploit/95499236-C9FE-56A6-9D7D-E943A24B633A	*EXPLOIT*
     	493F1A33-3266-5038-9CD9-3715674D5BEF	8.6	https://vulners.com/githubexploit/493F1A33-3266-5038-9CD9-3715674D5BEF	*EXPLOIT*
     	4603AB8A-DB92-5DBB-A107-0F6563D4553C	8.6	https://vulners.com/githubexploit/4603AB8A-DB92-5DBB-A107-0F6563D4553C	*EXPLOIT*
     	17F0090F-89AC-5757-A39B-45005DECDB39	8.6	https://vulners.com/githubexploit/17F0090F-89AC-5757-A39B-45005DECDB39	*EXPLOIT*
@@ -414,6 +400,7 @@
     	1CF00BB8-B891-5347-A2DC-2C6A6BFF7C99	8.1	https://vulners.com/githubexploit/1CF00BB8-B891-5347-A2DC-2C6A6BFF7C99	*EXPLOIT*
     	1AB9F1F4-9798-59A0-9213-1D907E81E7F6	8.1	https://vulners.com/githubexploit/1AB9F1F4-9798-59A0-9213-1D907E81E7F6	*EXPLOIT*
     	1A779279-F527-5C29-A64D-94AAA4ADD6FD	8.1	https://vulners.com/githubexploit/1A779279-F527-5C29-A64D-94AAA4ADD6FD	*EXPLOIT*
+    	179F72B6-5619-52B5-A040-72F1ECE6CDD8	8.1	https://vulners.com/githubexploit/179F72B6-5619-52B5-A040-72F1ECE6CDD8	*EXPLOIT*
     	15C36683-070A-5CC1-B21F-5F0BF974D9D3	8.1	https://vulners.com/githubexploit/15C36683-070A-5CC1-B21F-5F0BF974D9D3	*EXPLOIT*
     	1337DAY-ID-39674	8.1	https://vulners.com/zdt/1337DAY-ID-39674	*EXPLOIT*
     	123C2683-74BE-5320-AA3A-C376C8E3A992	8.1	https://vulners.com/githubexploit/123C2683-74BE-5320-AA3A-C376C8E3A992	*EXPLOIT*
