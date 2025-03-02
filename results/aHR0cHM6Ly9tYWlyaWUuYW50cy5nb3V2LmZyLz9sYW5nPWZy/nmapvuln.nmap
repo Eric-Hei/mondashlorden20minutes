@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Feb 23 01:40:50 2025 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln mairie.ants.gouv.fr
+# Nmap 7.92 scan initiated Sun Mar  2 01:37:52 2025 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln mairie.ants.gouv.fr
 Nmap scan report for mairie.ants.gouv.fr (66.22.32.165)
-Host is up (0.10s latency).
+Host is up (0.14s latency).
 Not shown: 993 closed tcp ports (reset)
 PORT    STATE    SERVICE  VERSION
 20/tcp  filtered ftp-data
@@ -11,7 +11,7 @@ PORT    STATE    SERVICE  VERSION
 |   FourOhFourRequest: 
 |     HTTP/1.1 302 Moved Temporarily
 |     Server: rdwr
-|     Date: Sun, 23 Feb 2025 01:41:00 GMT
+|     Date: Sun, 02 Mar 2025 01:38:03 GMT
 |     Content-Type: text/html
 |     Content-Length: 137
 |     Connection: close
@@ -23,25 +23,10 @@ PORT    STATE    SERVICE  VERSION
 |     <hr><center>rdwr</center>
 |     </body>
 |     </html>
-|   GetRequest: 
+|   GetRequest, HTTPOptions: 
 |     HTTP/1.1 302 Moved Temporarily
 |     Server: rdwr
-|     Date: Sun, 23 Feb 2025 01:40:59 GMT
-|     Content-Type: text/html
-|     Content-Length: 137
-|     Connection: close
-|     Location: https://mairie.ants.gouv.fr:443/
-|     <html>
-|     <head><title>302 Found</title></head>
-|     <body>
-|     <center><h1>302 Found</h1></center>
-|     <hr><center>rdwr</center>
-|     </body>
-|     </html>
-|   HTTPOptions: 
-|     HTTP/1.1 302 Moved Temporarily
-|     Server: rdwr
-|     Date: Sun, 23 Feb 2025 01:41:00 GMT
+|     Date: Sun, 02 Mar 2025 01:38:02 GMT
 |     Content-Type: text/html
 |     Content-Length: 137
 |     Connection: close
@@ -56,7 +41,7 @@ PORT    STATE    SERVICE  VERSION
 |   RTSPRequest, X11Probe: 
 |     HTTP/1.1 400 Bad Request
 |     Server: rdwr
-|     Date: Sun, 23 Feb 2025 01:41:00 GMT
+|     Date: Sun, 02 Mar 2025 01:38:03 GMT
 |     Content-Type: text/html
 |     Content-Length: 149
 |     Connection: close
@@ -96,6 +81,7 @@ PORT    STATE    SERVICE  VERSION
 |     	F5:K000139898	9.8	https://vulners.com/f5/F5:K000139898
 |     	F5:K000139793	9.8	https://vulners.com/f5/F5:K000139793
 |     	F4080A56-6D84-5987-AA18-2A04DB73CA43	9.8	https://vulners.com/githubexploit/F4080A56-6D84-5987-AA18-2A04DB73CA43	*EXPLOIT*
+|     	F1AA7640-CDDE-5A50-9056-90289C2A2CDE	9.8	https://vulners.com/githubexploit/F1AA7640-CDDE-5A50-9056-90289C2A2CDE	*EXPLOIT*
 |     	EDB-ID:52047	9.8	https://vulners.com/exploitdb/EDB-ID:52047	*EXPLOIT*
 |     	E12312E7-DAB2-52E9-8EFE-70FBDF0E3D0B	9.8	https://vulners.com/githubexploit/E12312E7-DAB2-52E9-8EFE-70FBDF0E3D0B	*EXPLOIT*
 |     	DFF9B2E2-C8B3-51E3-B45F-49128E4291AA	9.8	https://vulners.com/githubexploit/DFF9B2E2-C8B3-51E3-B45F-49128E4291AA	*EXPLOIT*
@@ -152,6 +138,7 @@ PORT    STATE    SERVICE  VERSION
 |     	F5:K000140882	9.1	https://vulners.com/f5/F5:K000140882
 |     	F5:K000140552	8.9	https://vulners.com/f5/F5:K000140552
 |     	F5:K000140111	8.9	https://vulners.com/f5/F5:K000140111
+|     	95499236-C9FE-56A6-9D7D-E943A24B633A	8.9	https://vulners.com/githubexploit/95499236-C9FE-56A6-9D7D-E943A24B633A	*EXPLOIT*
 |     	F5:K000140964	8.8	https://vulners.com/f5/F5:K000140964
 |     	F5:K000140960	8.8	https://vulners.com/f5/F5:K000140960
 |     	F5:K000140039	8.8	https://vulners.com/f5/F5:K000140039
@@ -167,7 +154,6 @@ PORT    STATE    SERVICE  VERSION
 |     	E221B02C-A1D6-5433-9A6A-F6B2ADD5FB22	8.6	https://vulners.com/githubexploit/E221B02C-A1D6-5433-9A6A-F6B2ADD5FB22	*EXPLOIT*
 |     	BC9FEEE6-2FB9-5AB9-AE66-FA9A45EC059B	8.6	https://vulners.com/githubexploit/BC9FEEE6-2FB9-5AB9-AE66-FA9A45EC059B	*EXPLOIT*
 |     	AF146DC3-6A91-5DE1-B15A-1D86A070F915	8.6	https://vulners.com/githubexploit/AF146DC3-6A91-5DE1-B15A-1D86A070F915	*EXPLOIT*
-|     	95499236-C9FE-56A6-9D7D-E943A24B633A	8.6	https://vulners.com/githubexploit/95499236-C9FE-56A6-9D7D-E943A24B633A	*EXPLOIT*
 |     	493F1A33-3266-5038-9CD9-3715674D5BEF	8.6	https://vulners.com/githubexploit/493F1A33-3266-5038-9CD9-3715674D5BEF	*EXPLOIT*
 |     	4603AB8A-DB92-5DBB-A107-0F6563D4553C	8.6	https://vulners.com/githubexploit/4603AB8A-DB92-5DBB-A107-0F6563D4553C	*EXPLOIT*
 |     	17F0090F-89AC-5757-A39B-45005DECDB39	8.6	https://vulners.com/githubexploit/17F0090F-89AC-5757-A39B-45005DECDB39	*EXPLOIT*
@@ -246,6 +232,7 @@ PORT    STATE    SERVICE  VERSION
 |     	1CF00BB8-B891-5347-A2DC-2C6A6BFF7C99	8.1	https://vulners.com/githubexploit/1CF00BB8-B891-5347-A2DC-2C6A6BFF7C99	*EXPLOIT*
 |     	1AB9F1F4-9798-59A0-9213-1D907E81E7F6	8.1	https://vulners.com/githubexploit/1AB9F1F4-9798-59A0-9213-1D907E81E7F6	*EXPLOIT*
 |     	1A779279-F527-5C29-A64D-94AAA4ADD6FD	8.1	https://vulners.com/githubexploit/1A779279-F527-5C29-A64D-94AAA4ADD6FD	*EXPLOIT*
+|     	179F72B6-5619-52B5-A040-72F1ECE6CDD8	8.1	https://vulners.com/githubexploit/179F72B6-5619-52B5-A040-72F1ECE6CDD8	*EXPLOIT*
 |     	15C36683-070A-5CC1-B21F-5F0BF974D9D3	8.1	https://vulners.com/githubexploit/15C36683-070A-5CC1-B21F-5F0BF974D9D3	*EXPLOIT*
 |     	1337DAY-ID-39674	8.1	https://vulners.com/zdt/1337DAY-ID-39674	*EXPLOIT*
 |     	123C2683-74BE-5320-AA3A-C376C8E3A992	8.1	https://vulners.com/githubexploit/123C2683-74BE-5320-AA3A-C376C8E3A992	*EXPLOIT*
@@ -367,38 +354,37 @@ PORT    STATE    SERVICE  VERSION
 |     	5AFBF934-4A7C-5FEB-AD5B-41318EFCC988	0.0	https://vulners.com/githubexploit/5AFBF934-4A7C-5FEB-AD5B-41318EFCC988	*EXPLOIT*
 |_    	39E70D1A-F5D8-59D5-A0CF-E73D9BAA3118	0.0	https://vulners.com/githubexploit/39E70D1A-F5D8-59D5-A0CF-E73D9BAA3118	*EXPLOIT*
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port80-TCP:V=7.92%I=7%D=2/23%Time=67BA7CAB%P=x86_64-alpine-linux-musl%r
-SF:(GetRequest,14B,"HTTP/1\.1\x20302\x20Moved\x20Temporarily\r\nServer:\x2
-SF:0rdwr\r\nDate:\x20Sun,\x2023\x20Feb\x202025\x2001:40:59\x20GMT\r\nConte
-SF:nt-Type:\x20text/html\r\nContent-Length:\x20137\r\nConnection:\x20close
-SF:\r\nLocation:\x20https://mairie\.ants\.gouv\.fr:443/\r\n\r\n<html>\r\n<
-SF:head><title>302\x20Found</title></head>\r\n<body>\r\n<center><h1>302\x2
-SF:0Found</h1></center>\r\n<hr><center>rdwr</center>\r\n</body>\r\n</html>
-SF:\r\n")%r(HTTPOptions,14B,"HTTP/1\.1\x20302\x20Moved\x20Temporarily\r\nS
-SF:erver:\x20rdwr\r\nDate:\x20Sun,\x2023\x20Feb\x202025\x2001:41:00\x20GMT
-SF:\r\nContent-Type:\x20text/html\r\nContent-Length:\x20137\r\nConnection:
-SF:\x20close\r\nLocation:\x20https://mairie\.ants\.gouv\.fr:443/\r\n\r\n<h
-SF:tml>\r\n<head><title>302\x20Found</title></head>\r\n<body>\r\n<center><
-SF:h1>302\x20Found</h1></center>\r\n<hr><center>rdwr</center>\r\n</body>\r
-SF:\n</html>\r\n")%r(RTSPRequest,125,"HTTP/1\.1\x20400\x20Bad\x20Request\r
-SF:\nServer:\x20rdwr\r\nDate:\x20Sun,\x2023\x20Feb\x202025\x2001:41:00\x20
-SF:GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20149\r\nConnecti
-SF:on:\x20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Request</title
-SF:></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r
-SF:\n<hr><center>rdwr</center>\r\n</body>\r\n</html>\r\n")%r(X11Probe,125,
-SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20rdwr\r\nDate:\x20Sun,
-SF:\x2023\x20Feb\x202025\x2001:41:00\x20GMT\r\nContent-Type:\x20text/html\
-SF:r\nContent-Length:\x20149\r\nConnection:\x20close\r\n\r\n<html>\r\n<hea
-SF:d><title>400\x20Bad\x20Request</title></head>\r\n<body>\r\n<center><h1>
-SF:400\x20Bad\x20Request</h1></center>\r\n<hr><center>rdwr</center>\r\n</b
-SF:ody>\r\n</html>\r\n")%r(FourOhFourRequest,16E,"HTTP/1\.1\x20302\x20Move
-SF:d\x20Temporarily\r\nServer:\x20rdwr\r\nDate:\x20Sun,\x2023\x20Feb\x2020
-SF:25\x2001:41:00\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\
-SF:x20137\r\nConnection:\x20close\r\nLocation:\x20https://mairie\.ants\.go
-SF:uv\.fr:443/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\n\r\n<html>\r\n<head>
-SF:<title>302\x20Found</title></head>\r\n<body>\r\n<center><h1>302\x20Foun
-SF:d</h1></center>\r\n<hr><center>rdwr</center>\r\n</body>\r\n</html>\r\n"
-SF:);
+SF-Port80-TCP:V=7.92%I=7%D=3/2%Time=67C3B67A%P=x86_64-alpine-linux-musl%r(
+SF:GetRequest,14B,"HTTP/1\.1\x20302\x20Moved\x20Temporarily\r\nServer:\x20
+SF:rdwr\r\nDate:\x20Sun,\x2002\x20Mar\x202025\x2001:38:02\x20GMT\r\nConten
+SF:t-Type:\x20text/html\r\nContent-Length:\x20137\r\nConnection:\x20close\
+SF:r\nLocation:\x20https://mairie\.ants\.gouv\.fr:443/\r\n\r\n<html>\r\n<h
+SF:ead><title>302\x20Found</title></head>\r\n<body>\r\n<center><h1>302\x20
+SF:Found</h1></center>\r\n<hr><center>rdwr</center>\r\n</body>\r\n</html>\
+SF:r\n")%r(HTTPOptions,14B,"HTTP/1\.1\x20302\x20Moved\x20Temporarily\r\nSe
+SF:rver:\x20rdwr\r\nDate:\x20Sun,\x2002\x20Mar\x202025\x2001:38:02\x20GMT\
+SF:r\nContent-Type:\x20text/html\r\nContent-Length:\x20137\r\nConnection:\
+SF:x20close\r\nLocation:\x20https://mairie\.ants\.gouv\.fr:443/\r\n\r\n<ht
+SF:ml>\r\n<head><title>302\x20Found</title></head>\r\n<body>\r\n<center><h
+SF:1>302\x20Found</h1></center>\r\n<hr><center>rdwr</center>\r\n</body>\r\
+SF:n</html>\r\n")%r(RTSPRequest,125,"HTTP/1\.1\x20400\x20Bad\x20Request\r\
+SF:nServer:\x20rdwr\r\nDate:\x20Sun,\x2002\x20Mar\x202025\x2001:38:03\x20G
+SF:MT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20149\r\nConnectio
+SF:n:\x20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Request</title>
+SF:</head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\
+SF:n<hr><center>rdwr</center>\r\n</body>\r\n</html>\r\n")%r(X11Probe,125,"
+SF:HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20rdwr\r\nDate:\x20Sun,\
+SF:x2002\x20Mar\x202025\x2001:38:03\x20GMT\r\nContent-Type:\x20text/html\r
+SF:\nContent-Length:\x20149\r\nConnection:\x20close\r\n\r\n<html>\r\n<head
+SF:><title>400\x20Bad\x20Request</title></head>\r\n<body>\r\n<center><h1>4
+SF:00\x20Bad\x20Request</h1></center>\r\n<hr><center>rdwr</center>\r\n</bo
+SF:dy>\r\n</html>\r\n")%r(FourOhFourRequest,16E,"HTTP/1\.1\x20302\x20Moved
+SF:\x20Temporarily\r\nServer:\x20rdwr\r\nDate:\x20Sun,\x2002\x20Mar\x20202
+SF:5\x2001:38:03\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x
+SF:20137\r\nConnection:\x20close\r\nLocation:\x20https://mairie\.ants\.gou
+SF:v\.fr:443/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\n\r\n<html>\r\n<head><
+SF:title>302\x20Found</title></head>\r\n<body>\r\n<center><h1>302\x20Found
+SF:</h1></center>\r\n<hr><center>rdwr</center>\r\n</body>\r\n</html>\r\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Feb 23 01:41:13 2025 -- 1 IP address (1 host up) scanned in 23.46 seconds
+# Nmap done at Sun Mar  2 01:38:18 2025 -- 1 IP address (1 host up) scanned in 26.09 seconds
