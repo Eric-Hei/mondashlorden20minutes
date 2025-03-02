@@ -206,7 +206,7 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -352,8 +352,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "36 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (29)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -366,7 +366,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2025-03-31 22:32"
           }
 ,         {
@@ -514,21 +514,21 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "+13 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1740274941"
+              "finding"      : "1740879443"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds"
+              "finding"      : "13 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -577,7 +577,7 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-sjc10066-SJC"
+              "finding"      : "cache-pao-kpao1770082-PAO"
           }
 ,         {
               "id"           : "Cache-Control",
@@ -592,7 +592,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "Via: 1.1 varnishX-Cache: MISSX-Cache-Hits: 0"
+              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 1"
           }
 ,         {
               "id"           : "heartbleed",
@@ -1446,8 +1446,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.110.153",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "36 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (29)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1460,7 +1460,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.110.153",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2025-03-31 22:32"
           }
 ,         {
@@ -1608,21 +1608,21 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+129 seconds from localtime"
+              "finding"      : "+127 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1740275055"
+              "finding"      : "1740879557"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "129 seconds"
+              "finding"      : "127 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -1671,7 +1671,7 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-pao-kpao1770045-PAO"
+              "finding"      : "cache-pao-kpao1770026-PAO"
           }
 ,         {
               "id"           : "Cache-Control",
@@ -2540,8 +2540,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.109.153",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "36 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (29)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -2554,7 +2554,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.109.153",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2025-03-31 22:32"
           }
 ,         {
@@ -2702,21 +2702,21 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+229 seconds from localtime"
+              "finding"      : "+240 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1740275170"
+              "finding"      : "1740879670"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "229 seconds"
+              "finding"      : "240 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -2765,7 +2765,7 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-sjc10078-SJC"
+              "finding"      : "cache-pao-kpao1770061-PAO"
           }
 ,         {
               "id"           : "Cache-Control",
@@ -2780,7 +2780,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 0"
+              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 1"
           }
 ,         {
               "id"           : "heartbleed",
@@ -3286,6 +3286,6 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "348"
+              "finding"      : "346"
           }
 ]
