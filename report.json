@@ -3167,7 +3167,7 @@
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2025-08-19T23:59:00.000Z",
       "testsslGrade": "T",
       "cookiesGrade": null,
