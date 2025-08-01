@@ -13941,9 +13941,6 @@
   {
     "404": null,
     "url": "https://ecoresponsable.numerique.gouv.fr",
-    "repositories": [
-      "zammad/zammad"
-    ],
     "http": {
       "scan": {
         "algorithmVersion": 4,
