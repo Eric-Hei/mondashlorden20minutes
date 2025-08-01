@@ -33,6 +33,7 @@ urls:
   - url: https://pha.ants.gouv.fr/?lang=fr
   - url: https://mairie.ants.gouv.fr/?lang=fr
   - url: https://ecoresponsable.numerique.gouv.fr
+  - url: https://firesplash.netlify.app/
   
     repositories:
       - zammad/zammad
