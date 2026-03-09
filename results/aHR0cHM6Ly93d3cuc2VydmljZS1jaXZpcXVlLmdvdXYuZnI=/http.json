@@ -10,15 +10,15 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "accept-ranges": "bytes",
-      "age": "7",
+      "age": "10",
       "cache-control": "must-revalidate, max-age=0",
       "content-length": "19077",
       "content-type": "text/html; charset=utf-8",
-      "date": "Mon, 09 Mar 2026 14:46:51 GMT",
+      "date": "Mon, 09 Mar 2026 16:59:26 GMT",
       "etag": "W/\"1ce90-1squTwJZG2RmWdQlAMvdOfWnL80\"",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "vary": "Accept-Encoding",
-      "x-varnish": "85014246 86507970, 68607581",
+      "x-varnish": "85374597 85881068",
       "connection": "close"
     }
   },
