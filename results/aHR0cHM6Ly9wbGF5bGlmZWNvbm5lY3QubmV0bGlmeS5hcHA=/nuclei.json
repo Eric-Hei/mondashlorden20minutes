@@ -1,0 +1,736 @@
+[
+  [
+    {
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "info": {
+        "name": "CAA Record",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "caa",
+          "discovery"
+        ],
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "reference": [
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "playlifeconnect.netlify.app.",
+      "matched-at": "playlifeconnect.netlify.app",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 19493\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;playlifeconnect.netlify.app.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 19493\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;playlifeconnect.netlify.app.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nnetlify.app.\t300\tIN\tSOA\tdns1.p01.nsone.net. hostmaster.nsone.net. 1664979656 43200 7200 1209600 300\n",
+      "timestamp": "2026-03-09T17:34:36.430031572Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/aaaa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/aaaa-fingerprint",
+      "template-id": "aaaa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/aaaa-fingerprint.yaml",
+      "info": {
+        "name": "AAAA Record - IPv6 Detection",
+        "author": [
+          "rxerium"
+        ],
+        "tags": [
+          "dns",
+          "aaaa",
+          "ipv6",
+          "discovery"
+        ],
+        "description": "An AAAA record was detected. AAAA records are used to map domain names to IPv6 addresses.\n",
+        "reference": [
+          "https://www.cloudflare.com/learning/dns/dns-records/dns-aaaa-record/",
+          "https://en.wikipedia.org/wiki/ipv6_address"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "playlifeconnect.netlify.app.",
+      "matched-at": "playlifeconnect.netlify.app",
+      "extracted-results": [
+        "2600:1f1c:446:4900::258",
+        "2600:1f1c:446:4900::259"
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 50969\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;playlifeconnect.netlify.app.\tIN\t AAAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 50969\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;playlifeconnect.netlify.app.\tIN\t AAAA\n\n;; ANSWER SECTION:\nplaylifeconnect.netlify.app.\t311\tIN\tAAAA\t2600:1f1c:446:4900::258\nplaylifeconnect.netlify.app.\t311\tIN\tAAAA\t2600:1f1c:446:4900::259\n",
+      "timestamp": "2026-03-09T17:34:36.450904847Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/wildcard-dns-detect.yaml",
+      "template-url": "https://templates.nuclei.sh/public/wildcard-dns-detect",
+      "template-id": "wildcard-dns-detect",
+      "template-path": "/home/runner/nuclei-templates/dns/wildcard-dns-detect.yaml",
+      "info": {
+        "name": "Wildcard DNS Configuration - Detection",
+        "author": [
+          "rxerium"
+        ],
+        "tags": [
+          "dns",
+          "wildcard",
+          "discovery"
+        ],
+        "description": "A wildcard DNS configuration was detected. Wildcard DNS records can resolve all subdomains to the same IP address, which may indicate a catch-all configuration.\n",
+        "reference": [
+          "https://en.wikipedia.org/wiki/wildcard_dns_record",
+          "https://developers.cloudflare.com/dns/manage-dns-records/reference/wildcard-dns-records/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 2
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "playlifeconnect.netlify.app.",
+      "matched-at": "3Aia5pGHCW8uCZ3lnLbMO7EKIxO-3Aia5pGHCW8uCZ3lnLbMO7EKIxO.playlifeconnect.netlify.app",
+      "extracted-results": [
+        "52.52.192.191",
+        "13.52.188.95"
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 54660\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;3Aia5pGHCW8uCZ3lnLbMO7EKIxO-3Aia5pGHCW8uCZ3lnLbMO7EKIxO.playlifeconnect.netlify.app.\tIN\t A\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 54660\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;3Aia5pGHCW8uCZ3lnLbMO7EKIxO-3Aia5pGHCW8uCZ3lnLbMO7EKIxO.playlifeconnect.netlify.app.\tIN\t A\n\n;; ANSWER SECTION:\n3Aia5pGHCW8uCZ3lnLbMO7EKIxO-3Aia5pGHCW8uCZ3lnLbMO7EKIxO.playlifeconnect.netlify.app.\t120\tIN\tA\t52.52.192.191\n3Aia5pGHCW8uCZ3lnLbMO7EKIxO-3Aia5pGHCW8uCZ3lnLbMO7EKIxO.playlifeconnect.netlify.app.\t120\tIN\tA\t13.52.188.95\n",
+      "timestamp": "2026-03-09T17:34:36.452245729Z",
+      "matcher-status": true
+    },
+    {
+      "template": "http/exposures/tokens/generic/jwt-token.yaml",
+      "template-url": "https://templates.nuclei.sh/public/jwt-token",
+      "template-id": "jwt-token",
+      "template-path": "/home/runner/nuclei-templates/http/exposures/tokens/generic/jwt-token.yaml",
+      "info": {
+        "name": "JWT Token Disclosure",
+        "author": [
+          "ice3man"
+        ],
+        "tags": [
+          "exposure",
+          "token",
+          "generic",
+          "vuln"
+        ],
+        "severity": "unknown",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "http",
+      "host": "https://playlifeconnect.netlify.app",
+      "matched-at": "https://playlifeconnect.netlify.app",
+      "extracted-results": [
+        "eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTMuODMuMTY2LjIyNiIsImF1ZCI6WyJzZWMtY2hhbGxlbmdlLm5ldGxpZnkuY29tIl0sImV4cCI6MTc3MzA3NzcxMCwibmJmIjoxNzczMDc3NjcwLCJpYXQiOjE3NzMwNzc2ODAsImNoIjoiYThhNWM4MGQ5ODFlZTcyOSIsImRpZiI6MTYsInBvdyI6dHJ1ZX0.fGR7WWJzC1YVqEhErV7Sr4lEWdixobcAD-yFA647Vcw"
+      ],
+      "request": "GET / HTTP/1.1\r\nHost: playlifeconnect.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Mon, 09 Mar 2026 17:34:40 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KK9TMMAKD91YYGY12823B3SJ\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>playlifeconnect.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>playlifeconnect.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KK9TMMAKD91YYGY12823B3SJ</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"a8a5c80d981ee729\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTMuODMuMTY2LjIyNiIsImF1ZCI6WyJzZWMtY2hhbGxlbmdlLm5ldGxpZnkuY29tIl0sImV4cCI6MTc3MzA3NzcxMCwibmJmIjoxNzczMDc3NjcwLCJpYXQiOjE3NzMwNzc2ODAsImNoIjoiYThhNWM4MGQ5ODFlZTcyOSIsImRpZiI6MTYsInBvdyI6dHJ1ZX0.fGR7WWJzC1YVqEhErV7Sr4lEWdixobcAD-yFA647Vcw\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:34:40.503563151Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://playlifeconnect.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "clear-site-data",
+      "type": "http",
+      "host": "https://playlifeconnect.netlify.app",
+      "matched-at": "https://playlifeconnect.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: playlifeconnect.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Mon, 09 Mar 2026 17:34:49 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KK9TMX2WBS1M2R4ARRNK03FP\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>playlifeconnect.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>playlifeconnect.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KK9TMX2WBS1M2R4ARRNK03FP</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"092ae45bfcd1a6e3\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTMuODMuMTY2LjIyNiIsImF1ZCI6WyJzZWMtY2hhbGxlbmdlLm5ldGxpZnkuY29tIl0sImV4cCI6MTc3MzA3NzcxOSwibmJmIjoxNzczMDc3Njc5LCJpYXQiOjE3NzMwNzc2ODksImNoIjoiMDkyYWU0NWJmY2QxYTZlMyIsImRpZiI6MTYsInBvdyI6dHJ1ZX0.ItpW1x7UfW5IyMUqklbGdR1BS-0Pphc07DciTg5WZOA\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:34:49.435248402Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://playlifeconnect.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-opener-policy",
+      "type": "http",
+      "host": "https://playlifeconnect.netlify.app",
+      "matched-at": "https://playlifeconnect.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: playlifeconnect.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Mon, 09 Mar 2026 17:34:49 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KK9TMX2WBS1M2R4ARRNK03FP\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>playlifeconnect.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>playlifeconnect.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KK9TMX2WBS1M2R4ARRNK03FP</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"092ae45bfcd1a6e3\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTMuODMuMTY2LjIyNiIsImF1ZCI6WyJzZWMtY2hhbGxlbmdlLm5ldGxpZnkuY29tIl0sImV4cCI6MTc3MzA3NzcxOSwibmJmIjoxNzczMDc3Njc5LCJpYXQiOjE3NzMwNzc2ODksImNoIjoiMDkyYWU0NWJmY2QxYTZlMyIsImRpZiI6MTYsInBvdyI6dHJ1ZX0.ItpW1x7UfW5IyMUqklbGdR1BS-0Pphc07DciTg5WZOA\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:34:49.435310043Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://playlifeconnect.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "content-security-policy",
+      "type": "http",
+      "host": "https://playlifeconnect.netlify.app",
+      "matched-at": "https://playlifeconnect.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: playlifeconnect.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Mon, 09 Mar 2026 17:34:49 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KK9TMX2WBS1M2R4ARRNK03FP\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>playlifeconnect.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>playlifeconnect.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KK9TMX2WBS1M2R4ARRNK03FP</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"092ae45bfcd1a6e3\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTMuODMuMTY2LjIyNiIsImF1ZCI6WyJzZWMtY2hhbGxlbmdlLm5ldGxpZnkuY29tIl0sImV4cCI6MTc3MzA3NzcxOSwibmJmIjoxNzczMDc3Njc5LCJpYXQiOjE3NzMwNzc2ODksImNoIjoiMDkyYWU0NWJmY2QxYTZlMyIsImRpZiI6MTYsInBvdyI6dHJ1ZX0.ItpW1x7UfW5IyMUqklbGdR1BS-0Pphc07DciTg5WZOA\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:34:49.435326545Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://playlifeconnect.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-frame-options",
+      "type": "http",
+      "host": "https://playlifeconnect.netlify.app",
+      "matched-at": "https://playlifeconnect.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: playlifeconnect.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Mon, 09 Mar 2026 17:34:49 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KK9TMX2WBS1M2R4ARRNK03FP\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>playlifeconnect.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>playlifeconnect.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KK9TMX2WBS1M2R4ARRNK03FP</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"092ae45bfcd1a6e3\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTMuODMuMTY2LjIyNiIsImF1ZCI6WyJzZWMtY2hhbGxlbmdlLm5ldGxpZnkuY29tIl0sImV4cCI6MTc3MzA3NzcxOSwibmJmIjoxNzczMDc3Njc5LCJpYXQiOjE3NzMwNzc2ODksImNoIjoiMDkyYWU0NWJmY2QxYTZlMyIsImRpZiI6MTYsInBvdyI6dHJ1ZX0.ItpW1x7UfW5IyMUqklbGdR1BS-0Pphc07DciTg5WZOA\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:34:49.435348939Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://playlifeconnect.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-permitted-cross-domain-policies",
+      "type": "http",
+      "host": "https://playlifeconnect.netlify.app",
+      "matched-at": "https://playlifeconnect.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: playlifeconnect.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Mon, 09 Mar 2026 17:34:49 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KK9TMX2WBS1M2R4ARRNK03FP\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>playlifeconnect.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>playlifeconnect.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KK9TMX2WBS1M2R4ARRNK03FP</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"092ae45bfcd1a6e3\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTMuODMuMTY2LjIyNiIsImF1ZCI6WyJzZWMtY2hhbGxlbmdlLm5ldGxpZnkuY29tIl0sImV4cCI6MTc3MzA3NzcxOSwibmJmIjoxNzczMDc3Njc5LCJpYXQiOjE3NzMwNzc2ODksImNoIjoiMDkyYWU0NWJmY2QxYTZlMyIsImRpZiI6MTYsInBvdyI6dHJ1ZX0.ItpW1x7UfW5IyMUqklbGdR1BS-0Pphc07DciTg5WZOA\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:34:49.435361574Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://playlifeconnect.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-embedder-policy",
+      "type": "http",
+      "host": "https://playlifeconnect.netlify.app",
+      "matched-at": "https://playlifeconnect.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: playlifeconnect.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Mon, 09 Mar 2026 17:34:49 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KK9TMX2WBS1M2R4ARRNK03FP\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>playlifeconnect.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>playlifeconnect.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KK9TMX2WBS1M2R4ARRNK03FP</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"092ae45bfcd1a6e3\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTMuODMuMTY2LjIyNiIsImF1ZCI6WyJzZWMtY2hhbGxlbmdlLm5ldGxpZnkuY29tIl0sImV4cCI6MTc3MzA3NzcxOSwibmJmIjoxNzczMDc3Njc5LCJpYXQiOjE3NzMwNzc2ODksImNoIjoiMDkyYWU0NWJmY2QxYTZlMyIsImRpZiI6MTYsInBvdyI6dHJ1ZX0.ItpW1x7UfW5IyMUqklbGdR1BS-0Pphc07DciTg5WZOA\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:34:49.435387153Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://playlifeconnect.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-resource-policy",
+      "type": "http",
+      "host": "https://playlifeconnect.netlify.app",
+      "matched-at": "https://playlifeconnect.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: playlifeconnect.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Mon, 09 Mar 2026 17:34:49 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KK9TMX2WBS1M2R4ARRNK03FP\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>playlifeconnect.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>playlifeconnect.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KK9TMX2WBS1M2R4ARRNK03FP</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"092ae45bfcd1a6e3\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTMuODMuMTY2LjIyNiIsImF1ZCI6WyJzZWMtY2hhbGxlbmdlLm5ldGxpZnkuY29tIl0sImV4cCI6MTc3MzA3NzcxOSwibmJmIjoxNzczMDc3Njc5LCJpYXQiOjE3NzMwNzc2ODksImNoIjoiMDkyYWU0NWJmY2QxYTZlMyIsImRpZiI6MTYsInBvdyI6dHJ1ZX0.ItpW1x7UfW5IyMUqklbGdR1BS-0Pphc07DciTg5WZOA\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:34:49.446301466Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://playlifeconnect.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "permissions-policy",
+      "type": "http",
+      "host": "https://playlifeconnect.netlify.app",
+      "matched-at": "https://playlifeconnect.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: playlifeconnect.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Mon, 09 Mar 2026 17:34:49 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KK9TMX2WBS1M2R4ARRNK03FP\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>playlifeconnect.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>playlifeconnect.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KK9TMX2WBS1M2R4ARRNK03FP</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"092ae45bfcd1a6e3\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTMuODMuMTY2LjIyNiIsImF1ZCI6WyJzZWMtY2hhbGxlbmdlLm5ldGxpZnkuY29tIl0sImV4cCI6MTc3MzA3NzcxOSwibmJmIjoxNzczMDc3Njc5LCJpYXQiOjE3NzMwNzc2ODksImNoIjoiMDkyYWU0NWJmY2QxYTZlMyIsImRpZiI6MTYsInBvdyI6dHJ1ZX0.ItpW1x7UfW5IyMUqklbGdR1BS-0Pphc07DciTg5WZOA\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:34:49.446382845Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://playlifeconnect.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-content-type-options",
+      "type": "http",
+      "host": "https://playlifeconnect.netlify.app",
+      "matched-at": "https://playlifeconnect.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: playlifeconnect.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Mon, 09 Mar 2026 17:34:49 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KK9TMX2WBS1M2R4ARRNK03FP\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>playlifeconnect.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>playlifeconnect.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KK9TMX2WBS1M2R4ARRNK03FP</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"092ae45bfcd1a6e3\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTMuODMuMTY2LjIyNiIsImF1ZCI6WyJzZWMtY2hhbGxlbmdlLm5ldGxpZnkuY29tIl0sImV4cCI6MTc3MzA3NzcxOSwibmJmIjoxNzczMDc3Njc5LCJpYXQiOjE3NzMwNzc2ODksImNoIjoiMDkyYWU0NWJmY2QxYTZlMyIsImRpZiI6MTYsInBvdyI6dHJ1ZX0.ItpW1x7UfW5IyMUqklbGdR1BS-0Pphc07DciTg5WZOA\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:34:49.446397023Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://playlifeconnect.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "referrer-policy",
+      "type": "http",
+      "host": "https://playlifeconnect.netlify.app",
+      "matched-at": "https://playlifeconnect.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: playlifeconnect.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Mon, 09 Mar 2026 17:34:49 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KK9TMX2WBS1M2R4ARRNK03FP\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>playlifeconnect.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>playlifeconnect.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KK9TMX2WBS1M2R4ARRNK03FP</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"092ae45bfcd1a6e3\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTMuODMuMTY2LjIyNiIsImF1ZCI6WyJzZWMtY2hhbGxlbmdlLm5ldGxpZnkuY29tIl0sImV4cCI6MTc3MzA3NzcxOSwibmJmIjoxNzczMDc3Njc5LCJpYXQiOjE3NzMwNzc2ODksImNoIjoiMDkyYWU0NWJmY2QxYTZlMyIsImRpZiI6MTYsInBvdyI6dHJ1ZX0.ItpW1x7UfW5IyMUqklbGdR1BS-0Pphc07DciTg5WZOA\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:34:49.446413755Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://playlifeconnect.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/detect-ssl-issuer.yaml",
+      "template-url": "https://templates.nuclei.sh/public/ssl-issuer",
+      "template-id": "ssl-issuer",
+      "template-path": "/home/runner/nuclei-templates/ssl/detect-ssl-issuer.yaml",
+      "info": {
+        "name": "Detect SSL Certificate Issuer",
+        "author": [
+          "lingtren"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "discovery"
+        ],
+        "description": "Extract the issuer's organization from the target's certificate. Issuers are entities which sign and distribute certificates.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "playlifeconnect.netlify.app",
+      "matched-at": "playlifeconnect.netlify.app:443",
+      "extracted-results": [
+        "DigiCert Inc"
+      ],
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:41:58.023169438Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/ssl-dns-names.yaml",
+      "template-url": "https://templates.nuclei.sh/public/ssl-dns-names",
+      "template-id": "ssl-dns-names",
+      "template-path": "/home/runner/nuclei-templates/ssl/ssl-dns-names.yaml",
+      "info": {
+        "name": "SSL DNS Names",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "vuln"
+        ],
+        "description": "Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "playlifeconnect.netlify.app",
+      "matched-at": "playlifeconnect.netlify.app:443",
+      "extracted-results": [
+        "*.netlify.app",
+        "netlify.app"
+      ],
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:41:58.023366077Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/wildcard-tls.yaml",
+      "template-url": "https://templates.nuclei.sh/public/wildcard-tls",
+      "template-id": "wildcard-tls",
+      "template-path": "/home/runner/nuclei-templates/ssl/wildcard-tls.yaml",
+      "info": {
+        "name": "Wildcard TLS Certificate",
+        "author": [
+          "lucky0x0d"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "wildcard",
+          "vuln"
+        ],
+        "description": "Checks a sites certificate to see if there are wildcard CN or SAN entries.\n",
+        "reference": [
+          "https://cheatsheetseries.owasp.org/cheatsheets/transport_layer_security_cheat_sheet.html#carefully-consider-the-use-of-wildcard-certificates"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "playlifeconnect.netlify.app",
+      "matched-at": "playlifeconnect.netlify.app:443",
+      "extracted-results": [
+        "CN: *.netlify.app",
+        " SAN: [*.netlify.app netlify.app]"
+      ],
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:41:58.023410621Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "discovery"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "playlifeconnect.netlify.app",
+      "matched-at": "playlifeconnect.netlify.app:443",
+      "extracted-results": [
+        "tls12"
+      ],
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:41:58.077117624Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "discovery"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "playlifeconnect.netlify.app",
+      "matched-at": "playlifeconnect.netlify.app:443",
+      "extracted-results": [
+        "tls13"
+      ],
+      "ip": "52.52.192.191",
+      "timestamp": "2026-03-09T17:41:58.150882613Z",
+      "matcher-status": true
+    }
+  ]
+]
