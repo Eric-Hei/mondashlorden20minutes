@@ -14,14 +14,14 @@
         "testsQuantity": 10,
         "responseHeaders": {
           "cache-control": "private",
+          "content-length": "11039",
           "content-type": "text/html; charset=utf-8",
+          "date": "Mon, 09 Mar 2026 14:36:39 GMT",
           "server": "Microsoft-IIS/8.5",
+          "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
           "x-aspnet-version": "4.0.30319",
           "x-powered-by": "ASP.NET",
-          "date": "Sun, 02 Mar 2025 01:22:40 GMT",
-          "connection": "close",
-          "content-length": "11039",
-          "strict-transport-security": "max-age=31536000; includeSubDomains; preload"
+          "connection": "close"
         }
       },
       "tests": {
@@ -134,19 +134,17 @@
       "open_ports": [
         {
           "service": {
-            "name": "http-proxy",
-            "product": "HAProxy http proxy",
+            "name": "http",
+            "product": "Golang net/http server",
             "id": "80",
-            "version": "1.3.1 or later",
             "vulnerabilities": []
           }
         },
         {
           "service": {
-            "name": "http-proxy",
-            "product": "HAProxy http proxy",
+            "name": "http",
+            "product": "Golang net/http server",
             "id": "443",
-            "version": "1.3.1 or later",
             "vulnerabilities": []
           }
         }
@@ -158,70 +156,77 @@
     "testssl": [
       {
         "id": "service",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "HTTP"
       },
       {
         "id": "pre_128cipher",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "No 128 cipher limit bug"
       },
       {
         "id": "SSLv2",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "not offered"
       },
       {
         "id": "SSLv3",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "not offered"
       },
       {
         "id": "TLS1",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "TLS1_1",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "TLS1_2",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "TLS1_3",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
-        "severity": "INFO",
-        "finding": "not offered + downgraded to weaker protocol"
+        "severity": "OK",
+        "finding": "offered with final"
+      },
+      {
+        "id": "ALPN_HTTP2",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
+        "port": "443",
+        "severity": "OK",
+        "finding": "h2"
       },
       {
         "id": "ALPN",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "not offered"
+        "finding": "http/1.1"
       },
       {
         "id": "cipherlist_NULL",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -229,7 +234,7 @@
       },
       {
         "id": "cipherlist_aNULL",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -237,7 +242,7 @@
       },
       {
         "id": "cipherlist_EXPORT",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -245,7 +250,7 @@
       },
       {
         "id": "cipherlist_LOW",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -253,7 +258,7 @@
       },
       {
         "id": "cipherlist_3DES_IDEA",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-310",
@@ -261,7 +266,7 @@
       },
       {
         "id": "cipherlist_OBSOLETED",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "LOW",
         "cwe": "CWE-310",
@@ -269,560 +274,476 @@
       },
       {
         "id": "cipherlist_STRONG_NOFS",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "cipherlist_STRONG_FS",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "cipher_order-tls1_2",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "server"
       },
       {
         "id": "cipherorder_TLSv1_2",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "cipher_order",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "server"
+        "finding": "server -- TLS 1.3 client determined"
       },
       {
         "id": "FS",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "FS_ciphers",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384"
+        "finding": "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA"
+      },
+      {
+        "id": "FS_KEMs",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
+        "port": "443",
+        "severity": "LOW",
+        "finding": "No KEMs offered"
       },
       {
         "id": "FS_ECDHE_curves",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "prime256v1"
+        "finding": "prime256v1 secp384r1 secp521r1"
       },
       {
         "id": "TLS_extensions",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'encrypt-then-mac/#22' 'extended master secret/#23'"
+        "finding": "'EC point formats/#11' 'application layer protocol negotiation/#16' 'extended master secret/#23' 'session ticket/#35' 'supported versions/#43' 'key share/#51' 'renegotiation info/#65281'"
       },
       {
         "id": "TLS_session_ticket",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "no -- no lifetime advertised"
       },
       {
         "id": "SSL_sessionID_support",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "yes"
       },
       {
         "id": "sessionresumption_ticket",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "not supported"
       },
       {
         "id": "sessionresumption_ID",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "random"
       },
       {
-        "id": "cert_compression",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "certificate_compression",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "N/A"
+        "finding": "none"
       },
       {
         "id": "clientAuth",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "none"
       },
       {
         "id": "cert_numbers",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "1"
       },
       {
         "id": "cert_signatureAlgorithm",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "SHA384 with RSA"
+        "finding": "SHA256 with RSA"
       },
       {
         "id": "cert_keySize",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "RSA 2048 bits (exponent is 65537)"
       },
       {
         "id": "cert_keyUsage",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "Digital Signature, Key Encipherment"
       },
       {
         "id": "cert_extKeyUsage",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLS Web Server Authentication, TLS Web Client Authentication"
+        "finding": "TLS Web Server Authentication"
       },
       {
         "id": "cert_serialNumber",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "69134EE513F550E9851142E68F55560E"
+        "finding": "05ADB59EF7784682DC51EF0833BCF816D9F1"
       },
       {
         "id": "cert_serialNumberLen",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "16"
+        "finding": "18"
       },
       {
         "id": "cert_fingerprintSHA1",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "948869B5DAD41D7C2499E7BB46CAE295C00F3485"
+        "finding": "BBF20F246DFAF4EE6CDE69D4DAF0D24A4A7149E0"
       },
       {
         "id": "cert_fingerprintSHA256",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "ED3285363D9B01B88C77C1BE9C323A9D362B648F0114589D9C19A24DD3907923"
+        "finding": "F58D497E0E0DC304772BC70515F33850BD40D484830998141295AC68A7BC2B23"
       },
       {
         "id": "cert",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\nMIIHsDCCBZigAwIBAgIQaRNO5RP1UOmFEULmj1VWDjANBgkqhkiG9w0BAQwFADBEMQswCQYDVQQGEwJOTDEZMBcGA1UEChMQR0VBTlQgVmVyZW5pZ2luZzEaMBgGA1UEAxMRR0VBTlQgT1YgUlNBIENBIDQwHhcNMjQwNjE5MDAwMDAwWhcNMjUwNjE5MjM1OTU5WjCBjTELMAkGA1UEBhMCRlIxFzAVBgNVBAgMDsOObGUtZGUtRnJhbmNlMT0wOwYDVQQKEzRNSU5JU1RFUkUgREUgTCdFRFVDQVRJT04gTkFUSU9OQUxFIEVUIERFIExBIEpFVU5FU1NFMSYwJAYDVQQDEx1vc2Nhci5zZXJ2aWNlLWNpdmlxdWUuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOEwS2gJVFhtNYaX9qZh1GUwNaPvVmBAnn8NzngiEucYkK2A/3CJQuH8E6UbXDrBinVVIGBqIydbXyCdv1ffKjWwB+CTTi0ZFvP4gQyhTqgtHGZXv7m0dlMN4m7MMgTpkIBHS/kP1nG/uFTEmUjJd2Ajbc+LoEKRr2o3P/hJDTua2DLK1kV7Fv7TzWvmoO1ptUENo23iq5+E3UXQ9hrA0EEViRcFLSOvdbGkvXsjiIj8wPTVZoQhl3uXsbvkUFzU3nAp7mUKEgr0RrMJhDlRbixiLsTw749kPefJ8vglJ2nURsA2f1KN9elOuJrYj2pph8Bp/HSTwzCxh8fa7tkfc0cCAwEAAaOCA1IwggNOMB8GA1UdIwQYMBaAFG8dNUkQbDL6WaCevIroH5W+cXoMMB0GA1UdDgQWBBRLLhoAsWFPkOYzDNW559gWF/b+ejAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwSQYDVR0gBEIwQDA0BgsrBgEEAbIxAQICTzAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQUzAIBgZngQwBAgIwPwYDVR0fBDgwNjA0oDKgMIYuaHR0cDovL0dFQU5ULmNybC5zZWN0aWdvLmNvbS9HRUFOVE9WUlNBQ0E0LmNybDB1BggrBgEFBQcBAQRpMGcwOgYIKwYBBQUHMAKGLmh0dHA6Ly9HRUFOVC5jcnQuc2VjdGlnby5jb20vR0VBTlRPVlJTQUNBNC5jcnQwKQYIKwYBBQUHMAGGHWh0dHA6Ly9HRUFOVC5vY3NwLnNlY3RpZ28uY29tMEsGA1UdEQREMEKCHW9zY2FyLnNlcnZpY2UtY2l2aXF1ZS5nb3V2LmZygiF3d3cub3NjYXIuc2VydmljZS1jaXZpcXVlLmdvdXYuZnIwggF9BgorBgEEAdZ5AgQCBIIBbQSCAWkBZwB1AM8RVu7VLnyv84db2Wkum+kacWdKsBfsrAHSW3fOzDsIAAABkDBiv/0AAAQDAEYwRAIgCv2pX1nRHoIufWxn9HygY6NJlsjDfGbvNxRu/qUPf/sCIAz8NJ6H9YG6uro4bPkbcWSJmCqIaoTdnDVsDINofGMXAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzEuVCkR+cAAAGQMGK/4AAABAMARzBFAiBgy4+5PPEjatYOW17Xs/Yg4fFEI8eMXqBOE7g+Hay1EgIhANLrj7Z5m2NWtezNAHtAFnCjFtPOZepr+hHMes8tgro6AHYATnWjJ1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGQMGK/3gAABAMARzBFAiA6z1rZ2pOrkOFZbUO5TW/mxsVeCUXj2z3rye9Ht1Qa+AIhAKoFId1IksbWzHxhq7q91PXnxefVmS9Gb7opuOnDTIgsMA0GCSqGSIb3DQEBDAUAA4ICAQA8Z2bBd1qm/lfPTvE0YK1EaCks1AO/Hn4KqE6/hCRXVlqdthwPhkXzTNWk6T7pWCFu52JkmVZdiw9Ya2LVi1sYP2ag2qP9Ck4hzjZP0bdyAyGmRuVTSVaCaYquryd2cba4C0i935Y2XSVoWnPx240iEG7jdiV1GFYshDzNpQ8SP/Q5nWA5/N5+L9Hyd3RIHo+IltQnI2PIqDrjxNBzR8vxsDwDHu2XLALuWLgIc6BeCPmM0yl4LqaUKdDdRd6LZsVGsMkNbFAnPWBTBf+s3SY/o28juJNdtHyX4qPx1pHrGHLT3Q4BeLf6zXeC7HJLO47U54q3j3L5zsBgxRy048WN4sO0KP1ZJoE3opM84d2LSRkpH2UwjCABKf6uSDziVEpkYHT2EhjOQTTnHGaZ5vWussrHbdQis7MEdeHXyoc6EbxVNVDtVNKI1un0L9hokMdWYlMQoVXGB0Y0cLkzbLo7LUoV6jwlVWE3UHYNBprt6DqRIHojy0MdKJSgQCXARsHzfnejEoIFTn49oTbnzktBtN1gs93qPCHcwywYPP/tFhY7pxL8h0j3hEkzm0lKzqd0wUHZNh0hLbC26qG88UQfuN9Kz1uugaQCecxYxTPEQJ+YBMDmFQ6Gc2B3Bh2JLBFXQThnsZW2xzLSm+O4oTOGraODuQnZZ0Bxz9hYnO8gVg==\n-----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFFjCCA/6gAwIBAgISBa21nvd4RoLcUe8IM7z4FtnxMA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNSMTMwHhcNMjYwMzAxMjMxODA0WhcNMjYwNTMwMjMxODAzWjAoMSYwJAYDVQQDEx1vc2Nhci5zZXJ2aWNlLWNpdmlxdWUuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL7qAvxocBQMCxe0eq8+xBqrEy+TuNslLz5mEeHBIXoY2R8dBzgGnb0ARPUM3UYLqNtPjx5WiLaQK155Snh6qwBSYG1b2a/ADmXexM3XJTnSFbcxIvL1ZcOahWV/HLHAVcnLlJalyeucgE0pDLQWwtpfXqeT4d9ZkHevixsL+jsKBIrMPYeZOw3cUwlgBgl7D9IbfY34sZmz7Zs072AgB+vUhCPs8Nk9SKOq/KnBUiN8KuiQnKY46v3DKs11KmL5KByPF9bW+NAcWeBhSfYNcFnNJ1NCpgcOzVbQ7y1qE6HkI+eQnV0xwenzAInieCWbaoMO8ZZ6NEgOEnHcE2biPWMCAwEAAaOCAi0wggIpMA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQzf+8See0k5b3G1Wm80LHAHzA8kjAfBgNVHSMEGDAWgBTnq58PLDOgU9NeT3jIsoQOO9aSMzAzBggrBgEFBQcBAQQnMCUwIwYIKwYBBQUHMAKGF2h0dHA6Ly9yMTMuaS5sZW5jci5vcmcvMCgGA1UdEQQhMB+CHW9zY2FyLnNlcnZpY2UtY2l2aXF1ZS5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMC8GA1UdHwQoMCYwJKAioCCGHmh0dHA6Ly9yMTMuYy5sZW5jci5vcmcvMTE0LmNybDCCAQ0GCisGAQQB1nkCBAIEgf4EgfsA+QB2AA5XlLzzrqk+MxssmQez95Dfm8I9cTIl3SGpJaxhxU4hAAABnKvnZE4AAAQDAEcwRQIhAKVG+gY7YrUq2UJOIKPcXbE6Fzsv8ohBWUtbf5zXmUo+AiAuXI1BBH9itmjMUfK56SWA+edHjRYztE3IiM1FiCsXLwB/AOMjjfKNoojgquCs8PqQyYXwtr/10qUnsAH8HERYxLboAAABnKvnZNsACAAABQA0MBNNBAMASDBGAiEA4c7sn706zHioZTfQPOq8v8oJfi1HDd1ROq+n2EGivWACIQCBKH0oBF7/HC6QWzvYssEShuC5shxmS3AO5USsEoTXvzANBgkqhkiG9w0BAQsFAAOCAQEAVOaBNk6gyTh4KVdo/ESbflZLpGRUYiOufMn16rRdxrG6xUiU70hsyk4wwXgb0rXvZ3AR1T74NysHkl/2V28lYTb5InAKAoEnC5V422ZOlOPASg2WfNj6dj5lFe48qVwMJsU6wa23gPnFMPzehtrjjNxH1rqBKwCKft9Mfa159VZ9gnZcVVedj2Qt+ElIJtD2S4NGCpNqvx/hFkOVOz5tOHmBeH/FZ1LnY5G/JB17LtE8TZMWNuWM1MfuYllSyiLeO3MdPVya50baot7C5E8vsf/tWo9dCB3kgRm24ZthsPuFy3d9yVGOa3k4R+sWZbdxEMordLRhqjjN4RvsRLaBLw==\n-----END CERTIFICATE-----"
       },
       {
         "id": "cert_commonName",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "oscar.service-civique.gouv.fr"
       },
       {
         "id": "cert_commonName_wo_SNI",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "*.amj-groupe.com"
+        "finding": "request w/o SNI didn't succeed"
       },
       {
         "id": "cert_subjectAltName",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "oscar.service-civique.gouv.fr www.oscar.service-civique.gouv.fr"
+        "finding": "oscar.service-civique.gouv.fr"
       },
       {
         "id": "cert_trust",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "Ok via SAN and CN (SNI mandatory)"
       },
       {
-        "id": "cert_trust_wildcard",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "LOW",
-        "finding": "trust is via wildcard"
-      },
-      {
         "id": "cert_chain_of_trust",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "passed."
       },
       {
         "id": "cert_certificatePolicies_EV",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "no"
       },
       {
         "id": "cert_expirationStatus",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "109 >= 60 days"
+        "finding": "82 >= 30 days"
       },
       {
         "id": "cert_notBefore",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "2024-06-19 00:00"
+        "finding": "2026-03-01 23:18"
       },
       {
         "id": "cert_notAfter",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "2025-06-19 23:59"
+        "finding": "2026-05-30 23:18"
       },
       {
         "id": "cert_extlifeSpan",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "certificate has no extended life time according to browser forum"
       },
       {
         "id": "cert_eTLS",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "not present"
       },
       {
         "id": "cert_crlDistributionPoints",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "http://GEANT.crl.sectigo.com/GEANTOVRSACA4.crl"
+        "finding": "http://r13.c.lencr.org/114.crl"
       },
       {
         "id": "cert_ocspURL",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "http://GEANT.ocsp.sectigo.com"
+        "finding": "--"
       },
       {
         "id": "OCSP_stapling",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
-        "severity": "LOW",
+        "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "cert_mustStapleExtension",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "--"
       },
       {
         "id": "DNS_CAArecord",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "LOW",
         "finding": "--"
       },
       {
         "id": "certificate_transparency",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "yes (certificate extension)"
       },
       {
         "id": "certs_countServer",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "4"
+        "finding": "2"
       },
       {
         "id": "certs_list_ordering_problem",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "no"
       },
       {
         "id": "cert_caIssuers",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "GEANT OV RSA CA 4 (GEANT Vereniging from NL)"
+        "finding": "R13 (Let's Encrypt from US)"
       },
       {
         "id": "intermediate_cert <#1>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFBTCCAu2gAwIBAgIQWgDyEtjUtIDzkkFX6imDBTANBgkqhkiG9w0BAQsFADBPMQswCQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJuZXQgU2VjdXJpdHkgUmVzZWFyY2ggR3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBYMTAeFw0yNDAzMTMwMDAwMDBaFw0yNzAzMTIyMzU5NTlaMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNSMTMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQClZ3CN0FaBZBUXYc25BtStGZCMJlA3mBZjklTb2cyEBZPs0+wIG6BgUUNIfSvHSJaetC3ancgnO1ehn6vw1g7UDjDKb5ux0daknTI+WE41b0VYaHEX/D7YXYKgL7JRbLAaXbhZzjVlyIuhrxA3/+OcXcJJFzT/jCuLjfC8cSyTDB0FxLrHzarJXnzRyQH3nAP2/Apd9Np75tt2QnDr9E0i2gB3b9bJXxf92nUupVcM9upctuBzpWjPoXTidYJ+EJ/B9aLrAek4sQpEzNPCifVJNYIKNLMc6YjCR06CDgo28EdPivEpBHXazeGaXP9enZiVuppD0EqiFwUBBDDTMrOPAgMBAAGjgfgwgfUwDgYDVR0PAQH/BAQDAgGGMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATASBgNVHRMBAf8ECDAGAQH/AgEAMB0GA1UdDgQWBBTnq58PLDOgU9NeT3jIsoQOO9aSMzAfBgNVHSMEGDAWgBR5tFnme7bl5AFzgAiIyBpY9umbbjAyBggrBgEFBQcBAQQmMCQwIgYIKwYBBQUHMAKGFmh0dHA6Ly94MS5pLmxlbmNyLm9yZy8wEwYDVR0gBAwwCjAIBgZngQwBAgEwJwYDVR0fBCAwHjAcoBqgGIYWaHR0cDovL3gxLmMubGVuY3Iub3JnLzANBgkqhkiG9w0BAQsFAAOCAgEAUTdYUqEimzW7TbrOypLqCfL7VOwYf/Q79OH5cHLCZeggfQhDconlk7Kgh8b0vi+/XuWu7CN8n/UPeg1vo3G+taXirrytthQinAHGwc/UdbOygJa9zuBcVyqoH3CXTXDInT+8a+c3aEVMJ2St+pSn4ed+WkDp8ijsijvEyFwE47hulW0Ltzjg9fOV5Pmrg/zxWbRuL+k0DBDHEJennCsAen7c35Pmx7jpmJ/HtgRhcnz0yjSBvyIw6L1QIupkCv2SBODT/xDD3gfQQyKv6roV4G2EhfEyAsWpmojxjCUCGiyg97FvDtm/NK2LSc9lybKxB73I2+P2G3CaWpvvpAiHCVu30jW8GCxKdfhsXtnIy2imskQqVZ2m0Pmxobb28Tucr7xBK7CtwvPrb79os7u2XP3O5f9b/H66GNyRrglRXlrYjI1oGYL/f4I1n/Sgusda6WvA6C190kxjU15Y12mHU4+BxyR9cx2hhGS9fAjMZKJss28qxvz6Axu4CaDmRNZpK/pQrXF17yXCXkmEWgvSOEZy6Z9pcbLIVEGckV/iVeq0AOo2pkg9p4QRIy0tK2diRENLSF2KysFwbY6B26BFeFs3v1sYVRhFW9nLkOrQVporCS0KyZmfwVD89qSTlnctLcZnIavjKsKUu1nA1iU0yYMdYepKR7lWbnwhdx3ewok=\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#1>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "37834FA5EA40FBF7B61196955962E1CA0558872435E4206653D3F620DD8E988E"
+        "finding": "D3B128216A843F8EF1321501F5DF52A5DF52939EE2C19297712CD3DE4D419354"
       },
       {
         "id": "intermediate_cert_notBefore <#1>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "2020-02-18 00:00"
+        "finding": "2024-03-13 00:00"
       },
       {
         "id": "intermediate_cert_notAfter <#1>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "2033-05-01 23:59"
+        "finding": "2027-03-12 23:59"
       },
       {
         "id": "intermediate_cert_expiration <#1>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "ok > 40 days"
       },
       {
         "id": "intermediate_cert_chain <#1>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "GEANT OV RSA CA 4 <-- USERTrust RSA Certification Authority"
-      },
-      {
-        "id": "intermediate_cert <#2>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\nMIIFgTCCBGmgAwIBAgIQOXJEOvkit1HX02wQ3TE1lTANBgkqhkiG9w0BAQwFADB7MQswCQYDVQQGEwJHQjEbMBkGA1UECAwSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYDVQQHDAdTYWxmb3JkMRowGAYDVQQKDBFDb21vZG8gQ0EgTGltaXRlZDEhMB8GA1UEAwwYQUFBIENlcnRpZmljYXRlIFNlcnZpY2VzMB4XDTE5MDMxMjAwMDAwMFoXDTI4MTIzMTIzNTk1OVowgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgUlNBIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAgBJlFzYOw9sIs9CsVw127c0n00ytUINh4qogTQktZAnczomfzD2p7PbPwdzx07HWezcoEStH2jnGvDoZtF+mvX2do2NCtnbyqTsrkfjib9DsFiCQCT7i6HTJGLSR1GJk23+jBvGIGGqQIjy8/hPwhxR79uQfjtTkUcYRZ0YIUcuGFFQ/vDP+fmyc/xadGL1RjjWmp2bIcmfbIWax1Jt4A8BQOujM8Ny8nkz+rwWWNR9XWrf/zvk9tyy29lTdyOcSOk2uTIq3XJq0tyA9yn8iNK5+O2hmAUTnAU5GU5szYPeUvlM3kHND8zLDU+/bqv50TmnHa4xgk97Exwzf4TKuzJM7UXiVZ4vuPVb+DNBpDxsP8yUmazNt925H+nND5X4OpWaxKXwyhGNVicQNwZNUMBkTrNN9N6frXTpsNVzbQdcS2qlJC9/YgIoJk2KOtWbPJYjNhLixP6Q5D9kCnusSTJV882sFqV4Wg8y4Z+LoE53MW4LTTLPtW//e5XOsIzstAL81VXQJSdhJWBp/kjbmUZIO8yZ9HE0XvMnsQybQv0FfQKlERPSZ51eHnlAfV1SoPv10Yy+xUGUJ5lhCLkMaTLTwJUdZ+gQek9QmRkpQgbLevni3/GcV4clXhB4PY9bpYrrWX1Uu6lzGKAgEJTm4Diup8kyXHAc/DVL17e8vgg8CAwEAAaOB8jCB7zAfBgNVHSMEGDAWgBSgEQojPpbxB+zirynvgqV/0DCktDAdBgNVHQ4EFgQUU3m/WqorSs9UgOHYm8Cd8rIDZsswDgYDVR0PAQH/BAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wEQYDVR0gBAowCDAGBgRVHSAAMEMGA1UdHwQ8MDowOKA2oDSGMmh0dHA6Ly9jcmwuY29tb2RvY2EuY29tL0FBQUNlcnRpZmljYXRlU2VydmljZXMuY3JsMDQGCCsGAQUFBwEBBCgwJjAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuY29tb2RvY2EuY29tMA0GCSqGSIb3DQEBDAUAA4IBAQAYh1HcdCE9nIrgJ7cz0C7M7PDmy14R3iJvm3WOnnL+5Nb+qh+cli3vA0p+rvSNb3I8QzvAP+u431yqqcau8vzY7qN7Q/aGNnwU4M309z/+3ri0ivCRlv79Q2R+/czSAaF9ffgZGclCKxO/WIu6pKJmBHaIkU4MiRTOok3JMrO66BQavHHxW/BBC5gACiIDEOUMsfnNkjcZ7Tvx5Dq2+UUTJnWvu6rvP3t3O9LEApE9GQDTF1w52z97GA1FzZOFli9d31kWTz9RvdVFGD/tSo7oBmF0Ixa1DVBzJ0RHfxBdiSprhTEUxOipakyAvGp4z7h/jnZymQyd/teRCBaho1+V\n-----END CERTIFICATE-----"
-      },
-      {
-        "id": "intermediate_cert_fingerprintSHA256 <#2>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "68B9C761219A5B1F0131784474665DB61BBDB109E00F05CA9F74244EE5F5F52B"
-      },
-      {
-        "id": "intermediate_cert_notBefore <#2>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2019-03-12 00:00"
-      },
-      {
-        "id": "intermediate_cert_notAfter <#2>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "OK",
-        "finding": "2028-12-31 23:59"
-      },
-      {
-        "id": "intermediate_cert_expiration <#2>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "OK",
-        "finding": "ok > 40 days"
-      },
-      {
-        "id": "intermediate_cert_chain <#2>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "USERTrust RSA Certification Authority <-- AAA Certificate Services"
-      },
-      {
-        "id": "intermediate_cert <#3>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\nMIIEMjCCAxqgAwIBAgIBATANBgkqhkiG9w0BAQUFADB7MQswCQYDVQQGEwJHQjEbMBkGA1UECAwSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYDVQQHDAdTYWxmb3JkMRowGAYDVQQKDBFDb21vZG8gQ0EgTGltaXRlZDEhMB8GA1UEAwwYQUFBIENlcnRpZmljYXRlIFNlcnZpY2VzMB4XDTA0MDEwMTAwMDAwMFoXDTI4MTIzMTIzNTk1OVowezELMAkGA1UEBhMCR0IxGzAZBgNVBAgMEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBwwHU2FsZm9yZDEaMBgGA1UECgwRQ29tb2RvIENBIExpbWl0ZWQxITAfBgNVBAMMGEFBQSBDZXJ0aWZpY2F0ZSBTZXJ2aWNlczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL5AnfRu4ep2hxxNRUSOvkbIgwadwSr+GB+O5AL686tdUIoWMQuaBtDFcCLNSS1UY8y2bmhGC1Pqy0wkwLxyTurxFa70VJoSCsN6sjNg4tqJVfMiWPPe3M/vg4aijJRPn2jymJBGhCfHdr/jzDUsi14HZGWCwEiwqJH5YZ92IFCokcdmtet4YgNW8IoaE+oxox6gmf049vYnMlhvB/VruPsUK6+3qszWY19zjNoFmag4qMsXeDZRrOme9Hg6jc8P2ULimAyrL58OAd7vn5lJ8S3frHRNG5i1R8XlKdH5kBjHYpy+g8cmez6KJcfA3Z3mNWgQIJ2P2N7Sw4ScDV7oL8kCAwEAAaOBwDCBvTAdBgNVHQ4EFgQUoBEKIz6W8Qfs4q8p74Klf9AwpLQwDgYDVR0PAQH/BAQDAgEGMA8GA1UdEwEB/wQFMAMBAf8wewYDVR0fBHQwcjA4oDagNIYyaHR0cDovL2NybC5jb21vZG9jYS5jb20vQUFBQ2VydGlmaWNhdGVTZXJ2aWNlcy5jcmwwNqA0oDKGMGh0dHA6Ly9jcmwuY29tb2RvLm5ldC9BQUFDZXJ0aWZpY2F0ZVNlcnZpY2VzLmNybDANBgkqhkiG9w0BAQUFAAOCAQEACFb8AvCb6P+k+tZ7xkSAzk/ExfYAWMymtrwUSWgEdujm7l3sAg9g1o1QGE8mTgHj5rCl7r+8dFRBv/38ErjHT1r0iWAFf2C3BUrz9vHCv8S5dIa2LX1rzNLzRt0vxuBqw8M0Ayx9lt1awg6nCpnBBYurDC/zXDrPbDdVCYfeU0BsWO/8tqtlbgT2G9w84FoVxp7Z8VlIMCFlA2zs6SFz7JsDoeA3raAVGI/6ugLOpyypEBMs1OUIJqsil2D4kF501KKaU73yqWjgom7C12yxow+ev+to51byrvLjKzg6CYG1a4XXvi3tPxq3smPi9WIsgtRqAEFQ8TmDn5XpNpaYbg==\n-----END CERTIFICATE-----"
-      },
-      {
-        "id": "intermediate_cert_fingerprintSHA256 <#3>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "D7A7A0FB5D7E2731D771E9484EBCDEF71D5F0C3E0A2948782BC83EE0EA699EF4"
-      },
-      {
-        "id": "intermediate_cert_notBefore <#3>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2004-01-01 00:00"
-      },
-      {
-        "id": "intermediate_cert_notAfter <#3>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "OK",
-        "finding": "2028-12-31 23:59"
-      },
-      {
-        "id": "intermediate_cert_expiration <#3>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "OK",
-        "finding": "ok > 40 days"
-      },
-      {
-        "id": "intermediate_cert_chain <#3>",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "AAA Certificate Services <-- AAA Certificate Services"
+        "finding": "R13 <-- ISRG Root X1"
       },
       {
         "id": "intermediate_cert_badOCSP",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "intermediate certificate(s) is/are ok"
       },
       {
         "id": "HTTP_status_code",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "302 Found ('/')"
       },
       {
         "id": "HTTP_clock_skew",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds from localtime"
+        "finding": "-1 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "1740878612"
+        "finding": "1773067091"
       },
       {
         "id": "HSTS_time",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "365 days (=31536000 seconds) > 15552000 seconds"
       },
       {
         "id": "HSTS_subdomains",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "includes subdomains"
       },
       {
         "id": "HSTS_preload",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "domain IS marked for preloading"
       },
       {
         "id": "HPKP",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "No support for HTTP Public Key Pinning"
       },
       {
         "id": "banner_server",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "Microsoft-IIS/8.5"
       },
       {
         "id": "banner_application",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "X-AspNet-Version: 4.0.30319, X-Powered-By: ASP.NET"
+        "finding": "X-Aspnet-Version: 4.0.30319, X-Powered-By: ASP.NET"
       },
       {
         "id": "cookie_count",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "1 at '/' (30x detected, better try target URL of 30x)"
       },
       {
         "id": "cookie_secure",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "All (1) at '/' marked as secure"
       },
       {
         "id": "cookie_httponly",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "All (1) at '/' marked as HttpOnly (30x detected, better try target URL of 30x)"
       },
       {
         "id": "Cache-Control",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "private"
       },
       {
         "id": "banner_reverseproxy",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-200",
@@ -830,7 +751,7 @@
       },
       {
         "id": "heartbleed",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2014-0160",
@@ -839,7 +760,7 @@
       },
       {
         "id": "CCS",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2014-0224",
@@ -848,16 +769,16 @@
       },
       {
         "id": "ticketbleed",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2016-9244",
         "cwe": "CWE-200",
-        "finding": "no session ticket extension"
+        "finding": "not vulnerable"
       },
       {
         "id": "ROBOT",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
@@ -866,7 +787,7 @@
       },
       {
         "id": "secure_renego",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-310",
@@ -874,7 +795,7 @@
       },
       {
         "id": "secure_client_renego",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2011-1473",
@@ -883,7 +804,7 @@
       },
       {
         "id": "CRIME_TLS",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2012-4929",
@@ -892,7 +813,7 @@
       },
       {
         "id": "BREACH",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2013-3587",
@@ -901,7 +822,7 @@
       },
       {
         "id": "POODLE_SSL",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2014-3566",
@@ -910,14 +831,14 @@
       },
       {
         "id": "fallback_SCSV",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "no protocol below TLS 1.2 offered"
       },
       {
         "id": "SWEET32",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2016-2183 CVE-2016-6329",
@@ -926,7 +847,7 @@
       },
       {
         "id": "FREAK",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2015-0204",
@@ -935,7 +856,7 @@
       },
       {
         "id": "DROWN",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2016-0800 CVE-2016-0703",
@@ -944,16 +865,16 @@
       },
       {
         "id": "DROWN_hint",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "cve": "CVE-2016-0800 CVE-2016-0703",
         "cwe": "CWE-310",
-        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=ED3285363D9B01B88C77C1BE9C323A9D362B648F0114589D9C19A24DD3907923"
+        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=F58D497E0E0DC304772BC70515F33850BD40D484830998141295AC68A7BC2B23"
       },
       {
         "id": "LOGJAM",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2015-4000",
@@ -962,7 +883,7 @@
       },
       {
         "id": "LOGJAM-common_primes",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2015-4000",
@@ -971,7 +892,7 @@
       },
       {
         "id": "BEAST",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2011-3389",
@@ -980,16 +901,16 @@
       },
       {
         "id": "LUCKY13",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "LOW",
         "cve": "CVE-2013-0169",
         "cwe": "CWE-310",
-        "finding": "potentially vulnerable, uses TLS CBC ciphers"
+        "finding": "potentially vulnerable, uses obsolete TLS CBC ciphers"
       },
       {
         "id": "winshock",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2014-6321",
@@ -998,7 +919,7 @@
       },
       {
         "id": "RC4",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2013-2566 CVE-2015-2808",
@@ -1006,333 +927,415 @@
         "finding": "not vulnerable"
       },
       {
-        "id": "clientsimulation-android_60",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-android_70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
-        "id": "clientsimulation-android_70",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
-      },
-      {
         "id": "clientsimulation-android_81",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-android_90",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-android_X",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-android_11",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-android_11_12",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-android_12",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-android_13_14",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-chrome_79_win10",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-android_15",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-chrome_101_win10",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-firefox_66_win81",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-chromium_137_win11",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-firefox_100_win10",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-ie_6_xp",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-firefox_137_win11",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "No connection"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-ie_8_win7",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-ie_8_xp",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_11_win7",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-SHA384"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA"
       },
       {
         "id": "clientsimulation-ie_11_win81",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-SHA384"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA"
       },
       {
         "id": "clientsimulation-ie_11_winphone81",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA"
       },
       {
         "id": "clientsimulation-ie_11_win10",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-edge_15_win10",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-edge_101_win10_21h2",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-safari_121_ios_122",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-edge_133_win11_23h2",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-safari_130_osx_10146",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-safari_184_ios_184",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-safari_154_osx_1231",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-safari_184_osx_154",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-java_7u25",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "No connection"
       },
       {
-        "id": "clientsimulation-java_8u161",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-java_80442",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-java1102",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-java_1102",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-java1703",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-java_1703",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-java_2106",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-go_1178",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-libressl_283",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-libressl_336",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
       },
       {
         "id": "clientsimulation-openssl_102e",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
-      },
-      {
-        "id": "clientsimulation-openssl_110l",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-openssl_111d",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-openssl_303",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "id": "clientsimulation-openssl_315",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-openssl_350",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-apple_mail_16_0",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-thunderbird_91_9",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "rating_spec",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
+        "finding": "SSL Labs's 'SSL Server Rating Guide' (version 2009r from 2025-05-16)"
       },
       {
         "id": "rating_doc",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
       },
       {
         "id": "protocol_support_score",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "100"
       },
       {
         "id": "protocol_support_score_weighted",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "30"
       },
       {
         "id": "key_exchange_score",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "90"
       },
       {
         "id": "key_exchange_score_weighted",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "27"
       },
       {
         "id": "cipher_strength_score",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "60"
       },
       {
         "id": "cipher_strength_score_weighted",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "24"
       },
       {
         "id": "final_score",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "81"
       },
       {
         "id": "overall_grade",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
         "finding": "A+"
       },
       {
         "id": "scanTime",
-        "ip": "oscar.service-civique.gouv.fr/178.32.192.70",
+        "ip": "oscar.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "53"
+        "finding": "88"
       }
     ],
     "thirdparties": {
-      "trackers": null,
-      "cookies": null,
-      "headers": null,
-      "endpoints": null
+      "trackers": [],
+      "cookies": [
+        {
+          "name": "ASP.NET_SessionId",
+          "value": "hnemh4ag3fyekodhamx2rqfz",
+          "domain": "oscar.service-civique.gouv.fr",
+          "path": "/",
+          "expires": -1,
+          "size": 41,
+          "httpOnly": true,
+          "secure": true,
+          "session": true,
+          "sameSite": "Lax",
+          "priority": "Medium",
+          "sourceScheme": "Secure",
+          "sameParty": false
+        }
+      ],
+      "headers": {
+        "cache-control": "private",
+        "content-length": "11039",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 09 Mar 2026 14:36:58 GMT",
+        "server": "Microsoft-IIS/8.5",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "x-aspnet-version": "4.0.30319",
+        "x-powered-by": "ASP.NET"
+      },
+      "endpoints": [
+        {
+          "hostname": "oscar.service-civique.gouv.fr",
+          "ip": "37.59.251.196",
+          "geoip": {
+            "continent": {
+              "code": "EU",
+              "geoname_id": 6255148,
+              "names": {
+                "de": "Europa",
+                "en": "Europe",
+                "es": "Europa",
+                "fr": "Europe",
+                "ja": "ヨーロッパ",
+                "pt-BR": "Europa",
+                "ru": "Европа",
+                "zh-CN": "欧洲"
+              }
+            },
+            "country": {
+              "geoname_id": 3017382,
+              "is_in_european_union": true,
+              "iso_code": "FR",
+              "names": {
+                "de": "Frankreich",
+                "en": "France",
+                "es": "Francia",
+                "fr": "France",
+                "ja": "フランス共和国",
+                "pt-BR": "França",
+                "ru": "Франция",
+                "zh-CN": "法国"
+              }
+            },
+            "location": {
+              "accuracy_radius": 500,
+              "latitude": 48.8582,
+              "longitude": 2.3387,
+              "time_zone": "Europe/Paris"
+            },
+            "registered_country": {
+              "geoname_id": 3017382,
+              "is_in_european_union": true,
+              "iso_code": "FR",
+              "names": {
+                "de": "Frankreich",
+                "en": "France",
+                "es": "Francia",
+                "fr": "France",
+                "ja": "フランス共和国",
+                "pt-BR": "França",
+                "ru": "Франция",
+                "zh-CN": "法国"
+              }
+            }
+          }
+        }
+      ]
     },
     "wappalyzer": {
       "urls": {
@@ -1454,7 +1457,7 @@
       {
         "requestedUrl": "https://oscar.service-civique.gouv.fr/",
         "finalUrl": "https://oscar.service-civique.gouv.fr/Connexion.aspx",
-        "fetchTime": "2025-03-02T01:22:10.770Z",
+        "fetchTime": "2026-03-09T14:36:14.924Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://oscar.service-civique.gouv.fr/) was redirected to https://oscar.service-civique.gouv.fr/Connexion.aspx. Try testing the second URL directly."
         ],
@@ -1467,7 +1470,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.94
+            "score": 0.87
           },
           "accessibility": {
             "title": "Accessibility",
@@ -1519,53 +1522,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2259,
+            "numericValue": 2868,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1882,
-                  "firstMeaningfulPaint": 2259,
-                  "largestContentfulPaint": 2784,
-                  "interactive": 2259,
-                  "speedIndex": 2433,
+                  "firstContentfulPaint": 2568,
+                  "firstMeaningfulPaint": 2868,
+                  "largestContentfulPaint": 3468,
+                  "interactive": 2868,
+                  "speedIndex": 3114,
                   "totalBlockingTime": 0,
                   "maxPotentialFID": 16,
-                  "cumulativeLayoutShift": 0.0001239707592179812,
-                  "cumulativeLayoutShiftMainFrame": 0.0001239707592179812,
-                  "totalCumulativeLayoutShift": 0.0001239707592179812,
+                  "cumulativeLayoutShift": 0.00019988853816030872,
+                  "cumulativeLayoutShiftMainFrame": 0.00019988853816030872,
+                  "totalCumulativeLayoutShift": 0.00019988853816030872,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 292626761,
+                  "observedTimeOriginTs": 231611510,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 292626761,
-                  "observedFirstPaint": 991,
-                  "observedFirstPaintTs": 293617671,
-                  "observedFirstContentfulPaint": 991,
-                  "observedFirstContentfulPaintTs": 293617671,
-                  "observedFirstContentfulPaintAllFrames": 991,
-                  "observedFirstContentfulPaintAllFramesTs": 293617671,
-                  "observedFirstMeaningfulPaint": 1167,
-                  "observedFirstMeaningfulPaintTs": 293793288,
-                  "observedLargestContentfulPaint": 998,
-                  "observedLargestContentfulPaintTs": 293624847,
-                  "observedLargestContentfulPaintAllFrames": 998,
-                  "observedLargestContentfulPaintAllFramesTs": 293624847,
-                  "observedTraceEnd": 3878,
-                  "observedTraceEndTs": 296505237,
-                  "observedLoad": 1478,
-                  "observedLoadTs": 294104384,
-                  "observedDomContentLoaded": 1157,
-                  "observedDomContentLoadedTs": 293783645,
-                  "observedCumulativeLayoutShift": 0.0001239707592179812,
-                  "observedCumulativeLayoutShiftMainFrame": 0.0001239707592179812,
-                  "observedTotalCumulativeLayoutShift": 0.0001239707592179812,
-                  "observedFirstVisualChange": 994,
-                  "observedFirstVisualChangeTs": 293620761,
-                  "observedLastVisualChange": 1494,
-                  "observedLastVisualChangeTs": 294120761,
-                  "observedSpeedIndex": 1006,
-                  "observedSpeedIndexTs": 293632921
+                  "observedNavigationStartTs": 231611510,
+                  "observedFirstPaint": 1204,
+                  "observedFirstPaintTs": 232815768,
+                  "observedFirstContentfulPaint": 1204,
+                  "observedFirstContentfulPaintTs": 232815768,
+                  "observedFirstContentfulPaintAllFrames": 1204,
+                  "observedFirstContentfulPaintAllFramesTs": 232815768,
+                  "observedFirstMeaningfulPaint": 1434,
+                  "observedFirstMeaningfulPaintTs": 233045213,
+                  "observedLargestContentfulPaint": 1204,
+                  "observedLargestContentfulPaintTs": 232815768,
+                  "observedLargestContentfulPaintAllFrames": 1204,
+                  "observedLargestContentfulPaintAllFramesTs": 232815768,
+                  "observedTraceEnd": 3850,
+                  "observedTraceEndTs": 235461234,
+                  "observedLoad": 1415,
+                  "observedLoadTs": 233026507,
+                  "observedDomContentLoaded": 1300,
+                  "observedDomContentLoadedTs": 232911334,
+                  "observedCumulativeLayoutShift": 0.00019988853816030872,
+                  "observedCumulativeLayoutShiftMainFrame": 0.00019988853816030872,
+                  "observedTotalCumulativeLayoutShift": 0.00019988853816030872,
+                  "observedFirstVisualChange": 1204,
+                  "observedFirstVisualChangeTs": 232815510,
+                  "observedLastVisualChange": 1449,
+                  "observedLastVisualChangeTs": 233060510,
+                  "observedSpeedIndex": 1211,
+                  "observedSpeedIndexTs": 232822218
                 },
                 {
                   "lcpInvalidated": false
@@ -1587,19 +1590,19 @@
                   "numScripts": 6,
                   "numStylesheets": 2,
                   "numFonts": 1,
-                  "numTasks": 566,
-                  "numTasksOver10ms": 0,
+                  "numTasks": 472,
+                  "numTasksOver10ms": 2,
                   "numTasksOver25ms": 0,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 85.57900000000001,
-                  "throughput": 13941397.020250399,
-                  "maxRtt": 85.57900000000001,
-                  "maxServerLatency": 1.4329999999999927,
-                  "totalByteWeight": 1221053,
-                  "totalTaskTime": 84.9230000000001,
-                  "mainDocumentTransferSize": 11334
+                  "rtt": 106.003,
+                  "throughput": 21690240.455228344,
+                  "maxRtt": 106.003,
+                  "maxServerLatency": 18.337000000000003,
+                  "totalByteWeight": 1469063,
+                  "totalTaskTime": 109.89900000000021,
+                  "mainDocumentTransferSize": 11089
                 }
               ]
             }
@@ -1640,7 +1643,7 @@
         "width": 1920,
         "height": 1080,
         "url": "https://oscar.service-civique.gouv.fr",
-        "size": 1484.904,
+        "size": 1479.631,
         "nodes": 101,
         "requests": 23,
         "grade": "A",
@@ -1648,7 +1651,7 @@
         "ges": 1.38,
         "water": 2.07,
         "ecoindex_version": "5.4.2",
-        "date": "2025-03-02 01:21:22.897125",
+        "date": "2026-03-09 14:35:17.803620",
         "page_type": null
       }
     ],
@@ -1661,14 +1664,14 @@
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
-      "testsslExpireSoon": true,
-      "testsslExpireDate": "2025-06-19T23:59:00.000Z",
+      "testsslExpireSoon": false,
+      "testsslExpireDate": "2026-05-30T23:18:00.000Z",
       "testsslGrade": "A+",
-      "cookiesGrade": null,
-      "cookiesCount": null,
-      "trackersGrade": null,
-      "trackersCount": null,
-      "lighthouse_performance": 0.94,
+      "cookiesGrade": "B",
+      "cookiesCount": 1,
+      "trackersGrade": "A",
+      "trackersCount": 0,
+      "lighthouse_performance": 0.87,
       "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": 0.5,
       "lighthouse_accessibilityGrade": "D",
@@ -3207,15 +3210,15 @@
         "testsQuantity": 10,
         "responseHeaders": {
           "accept-ranges": "bytes",
-          "age": "6",
+          "age": "12",
           "cache-control": "must-revalidate, max-age=0",
-          "content-length": "8687",
+          "content-length": "19077",
           "content-type": "text/html; charset=utf-8",
-          "date": "Sun, 02 Mar 2025 01:22:53 GMT",
-          "etag": "W/\"b31c-tKe7YF7uZW0trHSz+YOTyDP8Ens\"",
+          "date": "Mon, 09 Mar 2026 14:38:18 GMT",
+          "etag": "W/\"1ce90-1squTwJZG2RmWdQlAMvdOfWnL80\"",
           "strict-transport-security": "max-age=31536000; includeSubDomains",
           "vary": "Accept-Encoding",
-          "x-varnish": "115021159 117184711, 78705584",
+          "x-varnish": "85250036 83099084",
           "connection": "close"
         }
       },
@@ -3507,6 +3510,13 @@
         "finding": "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA"
       },
       {
+        "id": "FS_KEMs",
+        "ip": "www.service-civique.gouv.fr/37.59.251.196",
+        "port": "443",
+        "severity": "LOW",
+        "finding": "No KEMs offered"
+      },
+      {
         "id": "FS_ECDHE_curves",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
@@ -3518,7 +3528,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "'session ticket/#35' 'renegotiation info/#65281' 'EC point formats/#11' 'supported versions/#43' 'key share/#51' 'extended master secret/#23' 'application layer protocol negotiation/#16'"
+        "finding": "'EC point formats/#11' 'application layer protocol negotiation/#16' 'extended master secret/#23' 'session ticket/#35' 'supported versions/#43' 'key share/#51' 'renegotiation info/#65281'"
       },
       {
         "id": "TLS_session_ticket",
@@ -3587,8 +3597,8 @@
         "id": "cert_keySize",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
-        "severity": "INFO",
-        "finding": "RSA 2048 bits (exponent is 65537)"
+        "severity": "OK",
+        "finding": "RSA 4096 bits (exponent is 65537)"
       },
       {
         "id": "cert_keyUsage",
@@ -3602,49 +3612,49 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLS Web Server Authentication, TLS Web Client Authentication"
+        "finding": "TLS Web Client Authentication, TLS Web Server Authentication"
       },
       {
         "id": "cert_serialNumber",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "048369B9C7533C7E951A12D55899C4BCB890"
+        "finding": "491624DFA91005DFD7B853E35437983F"
       },
       {
         "id": "cert_serialNumberLen",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "18"
+        "finding": "16"
       },
       {
         "id": "cert_fingerprintSHA1",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "4B62C021F0DBFEF00F9DCF376148FD01BC74E6BE"
+        "finding": "A3E8A2795D6F6305E0DB606B4C2EF8781B0F1899"
       },
       {
         "id": "cert_fingerprintSHA256",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "BD4A13886479523B1BF545819D794D3355046FBA4E82BB941B6ECB3A07958390"
+        "finding": "6AF1FB6167525B43BDA14EAEF2B71F06215FC2104753BE497DEFE39551951A07"
       },
       {
         "id": "cert",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\nMIIFCDCCA/CgAwIBAgISBINpucdTPH6VGhLVWJnEvLiQMA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNSMTEwHhcNMjUwMjA2MDAxNTAyWhcNMjUwNTA3MDAxNTAxWjAmMSQwIgYDVQQDExt3d3cuc2VydmljZS1jaXZpcXVlLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCOLoIRu1XYHiV0TDYohR+gRxTRVI1dT0gnKcv+OLLnHessySzg/QYD3i2UpHyePeRDbBMagQliDS4eAM6xMS/QSvz6a8F3pKzlhvyW0vqUUDDfc88HqkKHFpDkBnhCUpPR9iX+EKB5LFRGIphdmJMjLFRsZvKhZMUeIahIPFYGlY0FWJJUdC+QiBrMsNpVgFesVvYR1/syeZD5GZ+OvEKiLwGteQ7CjNguqQG8krlnFJoLmF0yrtoRhpQdhrk8bQslYRCf/EI+Nb6Q7sYkPTgGJsLPyAmxA+lsLizPJ/kiZGrObaAL9rUNddg47ynQyBKlp00kvcr6iegN2cyo/goLAgMBAAGjggIhMIICHTAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFC4hmtEOr1exuXH+mvh573WzAZm1MB8GA1UdIwQYMBaAFMXPRqTq9MPAemyVxC2wXpIvJuO5MFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcwAYYWaHR0cDovL3IxMS5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3IxMS5pLmxlbmNyLm9yZy8wJgYDVR0RBB8wHYIbd3d3LnNlcnZpY2UtY2l2aXF1ZS5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBgYKKwYBBAHWeQIEAgSB9wSB9ADyAHcA5tIxY0B3jMEQQQbXcbnOwdJA9paEhvu6hzId/R43jlAAAAGU2NG/vQAABAMASDBGAiEAj9p0RywfIP2t13eZYyxBWhTs78vka7Gao9OXEXN/seMCIQCm5YG1R7OtrpN6e4tzWd3DZHcPaNzQvq47rG+tEU9eBAB3AKLjCuRF772tm3447Udnd1PXgluElNcrXhssxLlQpEfnAAABlNjRv7kAAAQDAEgwRgIhAMnh5A91iAliP3lEfjxkdxoUdstVu0avOqodvJVf4exBAiEA0vdH13oczb4n1o5twrZirSxIhhc0Ak2LPaNIczlKyDowDQYJKoZIhvcNAQELBQADggEBAIK6u8W4gwTKtwCVcPTcVTATxdQpPHL88zdGabR0ADm0UYHakH42WjZe+0iFFL/HzNhPNOOZCS1bEhiAqaAtJvp2CdGQSepiF8VyHvIPreNIvLA3OPt0nRG8SxEmfp52DuTwHZMKBzvrHuv7Wc+nWjTVltKLumzV9Id/SD/5W61Zu7sw404vjQmI1kNP4LkkACMaz8wT/Zx9q7W79iaOwcW+9n1G3vRVeW6SZxNh8IJmef81wRKNre1p4Ao7ET4YZnKE9VGIMglIRMFaumRJ0cYODgsivyWoeRwYlBUGWD4lyIEHoc+SYZgJVJ/oVj+MioNarYyLgi/rP7SneuCl+p4=\n-----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
       },
       {
         "id": "cert_commonName",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "www.service-civique.gouv.fr"
+        "finding": "service-civique.gouv.fr"
       },
       {
         "id": "cert_commonName_wo_SNI",
@@ -3658,21 +3668,21 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "www.service-civique.gouv.fr"
+        "finding": "service-civique.gouv.fr www.service-civique.gouv.fr"
       },
       {
         "id": "cert_trust",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "Ok via SAN and CN (SNI mandatory)"
+        "finding": "Ok via SAN (SNI mandatory)"
       },
       {
         "id": "cert_chain_of_trust",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
-        "severity": "OK",
-        "finding": "passed."
+        "severity": "CRITICAL",
+        "finding": "Some certificate trust checks failed -> Java (chain incomplete)  , OK -> Mozilla Microsoft Linux Apple"
       },
       {
         "id": "cert_certificatePolicies_EV",
@@ -3685,22 +3695,22 @@
         "id": "cert_expirationStatus",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
-        "severity": "OK",
-        "finding": "65 >= 30 days"
+        "severity": "MEDIUM",
+        "finding": "expires < 60 days (36)"
       },
       {
         "id": "cert_notBefore",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "2025-02-06 00:15"
+        "finding": "2025-04-15 13:58"
       },
       {
         "id": "cert_notAfter",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
-        "severity": "OK",
-        "finding": "2025-05-07 00:15"
+        "severity": "MEDIUM",
+        "finding": "2026-04-15 13:58"
       },
       {
         "id": "cert_extlifeSpan",
@@ -3721,14 +3731,14 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "--"
+        "finding": "http://crl.harica.gr/HARICA-GEANT-TLS-R1.crl"
       },
       {
         "id": "cert_ocspURL",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "http://r11.o.lencr.org"
+        "finding": "http://ocsp-tls.harica.gr"
       },
       {
         "id": "OCSP_stapling",
@@ -3777,35 +3787,35 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "R11 (Let's Encrypt from US)"
+        "finding": "GEANT TLS RSA 1 (Hellenic Academic and Research Institutions CA from GR)"
       },
       {
         "id": "intermediate_cert <#1>",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE-----\nMIIFBjCCAu6gAwIBAgIRAIp9PhPWLzDvI4a9KQdrNPgwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjQwMzEzMDAwMDAwWhcNMjcwMzEyMjM1OTU5WjAzMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDEMMAoGA1UEAxMDUjExMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuoe8XBsAOcvKCs3UZxD5ATylTqVhyybKUvsVAbe5KPUoHu0nsyQYOWcJDAjs4DqwO3cOvfPlOVRBDE6uQdaZdN5R2+97/1i9qLcT9t4x1fJyyXJqC4N0lZxGAGQUmfOx2SLZzaiSqhwmej/+71gFewiVgdtxD4774zEJuwm+UE1fj5F2PVqdnoPy6cRms+EGZkNIGIBloDcYmpuEMpexsr3E+BUAnSeI++JjF5ZsmydnS8TbKF5pwnnwSVzgJFDhxLyhBax7QG0AtMJBP6dYuC/FXJuluwme8f7rsIU5/agK70XEeOtlKsLPXzze41xNG/cLJyuqC0J3U095ah2H2QIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHQ4EFgQUxc9GpOr0w8B6bJXELbBeki8m47kwHwYDVR0jBBgwFoAUebRZ5nu25eQBc4AIiMgaWPbpm24wMgYIKwYBBQUHAQEEJjAkMCIGCCsGAQUFBzAChhZodHRwOi8veDEuaS5sZW5jci5vcmcvMBMGA1UdIAQMMAowCAYGZ4EMAQIBMCcGA1UdHwQgMB4wHKAaoBiGFmh0dHA6Ly94MS5jLmxlbmNyLm9yZy8wDQYJKoZIhvcNAQELBQADggIBAE7iiV0KAxyQOND1H/lxXPjDj7I3iHpvsCUf7b632IYGjukJhM1yv4Hz/MrPU0jtvfZpQtSlET41yBOykh0FX+ou1Nj4ScOt9ZmWnO8m2OG0JAtIIE3801S0qcYhyOE2G/93ZCkXufBL713qzXnQv5C/viOykNpKqUgxdKlEC+Hi9i2DcaR1e9KUwQUZRhy5j/PEdEglKg3l9dtD4tuTm7kZtB8v32oOjzHTYw+7KdzdZiw/sBtnUfhBPORNuay4pJxmY/WrhSMdzFO2q3Gu3MUBcdo27goYKjL9CTF8j/Zz55yctUoVaneCWs/ajUX+HypkBTA+c8LGDLnWO2NKq0YD/pnARkAnYGPfUDoHR9gVSp/qRx+ZWghiDLZsMwhN1zjtSC0uBWiugF3vTNzYIEFfaPG7Ws3jDrAMMYebQ95JQ+HIBD/RPBuHRTBpqKlyDnkSHDHYPiNX3adPoPAcgdF3H2/W0rmoswMWgTlLn1Wu0mrks7/qpdWfS6PJ1jty80r2VKsM/Dj3YIDfbjXKdaFU5C+8bhfJGqU3taKauuz0wHVGT3eo6FlWkWYtbt4pgdamlwVeZEW+LM7qZEJEsMNPrfC03APKmZsJgpWCDWOKZvkZcvjVuYkQ4omYCTX5ohy+knMjdOmdH9c7SpqEWBDC86fiNex+O0XOMEZSa8DA\n-----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#1>",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "591E9CE6C863D3A079E9FABE1478C7339A26B21269DDE795211361024AE31A44"
+        "finding": "5B678DC44095A52895B63B31F27227F4B36C3E347491BF2BFA691837A5FB8C79"
       },
       {
         "id": "intermediate_cert_notBefore <#1>",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "2024-03-13 00:00"
+        "finding": "2025-01-03 11:15"
       },
       {
         "id": "intermediate_cert_notAfter <#1>",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "OK",
-        "finding": "2027-03-12 23:59"
+        "finding": "2039-12-31 11:14"
       },
       {
         "id": "intermediate_cert_expiration <#1>",
@@ -3819,7 +3829,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "R11 <-- ISRG Root X1"
+        "finding": "GEANT TLS RSA 1 <-- HARICA TLS RSA Root CA 2021"
       },
       {
         "id": "intermediate_cert_badOCSP",
@@ -3840,21 +3850,21 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "+10 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "1740878643"
+        "finding": "1773067191"
       },
       {
         "id": "HTTP_headerAge",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds"
+        "finding": "10 seconds"
       },
       {
         "id": "HSTS_time",
@@ -3918,7 +3928,7 @@
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-200",
-        "finding": "X-Varnish: 113904279 75754562X-Varnish: 84842363"
+        "finding": "X-Varnish: 84390689 85121857X-Varnish: 72052384"
       },
       {
         "id": "heartbleed",
@@ -4041,7 +4051,7 @@
         "severity": "INFO",
         "cve": "CVE-2016-0800 CVE-2016-0703",
         "cwe": "CWE-310",
-        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BD4A13886479523B1BF545819D794D3355046FBA4E82BB941B6ECB3A07958390"
+        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=6AF1FB6167525B43BDA14EAEF2B71F06215FC2104753BE497DEFE39551951A07"
       },
       {
         "id": "LOGJAM",
@@ -4077,7 +4087,7 @@
         "severity": "LOW",
         "cve": "CVE-2013-0169",
         "cwe": "CWE-310",
-        "finding": "potentially vulnerable, uses TLS CBC ciphers"
+        "finding": "potentially vulnerable, uses obsolete TLS CBC ciphers"
       },
       {
         "id": "winshock",
@@ -4096,13 +4106,6 @@
         "cve": "CVE-2013-2566 CVE-2015-2808",
         "cwe": "CWE-310",
         "finding": "not vulnerable"
-      },
-      {
-        "id": "clientsimulation-android_60",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-android_70",
@@ -4133,21 +4136,21 @@
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-android_11",
+        "id": "clientsimulation-android_11_12",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-android_12",
+        "id": "clientsimulation-android_13_14",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-chrome_79_win10",
+        "id": "clientsimulation-android_15",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
@@ -4161,7 +4164,7 @@
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-firefox_66_win81",
+        "id": "clientsimulation-chromium_137_win11",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
@@ -4175,21 +4178,14 @@
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-ie_6_xp",
+        "id": "clientsimulation-firefox_137_win11",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "No connection"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-ie_8_win7",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-ie_8_xp",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
@@ -4238,21 +4234,28 @@
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-safari_121_ios_122",
+        "id": "clientsimulation-edge_133_win11_23h2",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-safari_130_osx_10146",
+        "id": "clientsimulation-safari_184_ios_184",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-safari_154_osx_1231",
+        "ip": "www.service-civique.gouv.fr/37.59.251.196",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-safari_184_osx_154",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
@@ -4266,21 +4269,28 @@
         "finding": "No connection"
       },
       {
-        "id": "clientsimulation-java_8u161",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-java1102",
+        "id": "clientsimulation-java_80442",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-java1703",
+        "id": "clientsimulation-java_1102",
+        "ip": "www.service-civique.gouv.fr/37.59.251.196",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-java_1703",
+        "ip": "www.service-civique.gouv.fr/37.59.251.196",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-java_2106",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
@@ -4294,21 +4304,14 @@
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-libressl_283",
+        "id": "clientsimulation-libressl_336",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
       },
       {
         "id": "clientsimulation-openssl_102e",
-        "ip": "www.service-civique.gouv.fr/37.59.251.196",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-openssl_110l",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
@@ -4322,7 +4325,14 @@
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-openssl_303",
+        "id": "clientsimulation-openssl_315",
+        "ip": "www.service-civique.gouv.fr/37.59.251.196",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-openssl_350",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
@@ -4347,7 +4357,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
+        "finding": "SSL Labs's 'SSL Server Rating Guide' (version 2009r from 2025-05-16)"
       },
       {
         "id": "rating_doc",
@@ -4375,14 +4385,14 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "90"
+        "finding": "100"
       },
       {
         "id": "key_exchange_score_weighted",
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "27"
+        "finding": "30"
       },
       {
         "id": "cipher_strength_score",
@@ -4403,7 +4413,7 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "81"
+        "finding": "84"
       },
       {
         "id": "overall_grade",
@@ -4417,75 +4427,610 @@
         "ip": "www.service-civique.gouv.fr/37.59.251.196",
         "port": "443",
         "severity": "INFO",
-        "finding": "57"
+        "finding": "59"
       }
     ],
     "thirdparties": {
-      "trackers": null,
-      "cookies": null,
-      "headers": null,
-      "endpoints": null
+      "trackers": [
+        {
+          "type": "unknown",
+          "url": "https://sdk.privacy-center.org/6927f0f3-f4c1-4dfb-966c-a4df78d9c805/loader.js?target_type=notice&target=YRMdET6k"
+        },
+        {
+          "type": "unknown",
+          "url": "https://genii-script.tolk.ai/lightchat.js"
+        },
+        {
+          "type": "unknown",
+          "url": "https://sdk.privacy-center.org/sdk/fb8d07a9b6d6846122469397ea93afd6f7a26f88/modern/sdk.fb8d07a9b6d6846122469397ea93afd6f7a26f88.js"
+        },
+        {
+          "type": "unknown",
+          "url": "https://sdk.privacy-center.org/sdk/fb8d07a9b6d6846122469397ea93afd6f7a26f88/modern/src_sdk_core_modules_integrations_sdk-integrations_providers_gcm_gcm_js.fb8d07a9b6d6846122469397ea93afd6f7a26f88.js"
+        },
+        {
+          "type": "unknown",
+          "url": "https://genii-script.tolk.ai/lightchat-ext.js"
+        },
+        {
+          "type": "unknown",
+          "url": "https://genii-script.tolk.ai/lightchat.css"
+        },
+        {
+          "type": "unknown",
+          "url": "https://genii-api.tolk.ai/v1/projects/358a1d8e-3b14-4e23-984e-a5fdb26449ac/widget-webchat"
+        },
+        {
+          "type": "twitter",
+          "url": "https://platform.twitter.com/widgets.js",
+          "details": {
+            "id": "twitter",
+            "message": "Dont embed twitter scripts, use your own tweet embed"
+          }
+        },
+        {
+          "type": "facebook",
+          "url": "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v18.0&appId=476157405903486&autoLogAppEvents=1",
+          "details": {
+            "id": "facebook",
+            "message": "Dont embed facebook scripts, use your own tweet embed"
+          }
+        },
+        {
+          "type": "facebook",
+          "url": "https://connect.facebook.net/fr_FR/sdk.js?hash=70c583505cabdb26e2dad15b9002cae7",
+          "details": {
+            "id": "facebook",
+            "message": "Dont embed facebook scripts, use your own tweet embed"
+          }
+        },
+        {
+          "type": "twitter",
+          "url": "https://platform.twitter.com/widgets/widget_iframe.2f70fb173b9000da126c79afe2098f02.html?origin=https%3A%2F%2Fwww.service-civique.gouv.fr",
+          "details": {
+            "id": "twitter",
+            "message": "Dont embed twitter scripts, use your own tweet embed"
+          }
+        },
+        {
+          "type": "twitter",
+          "url": "https://syndication.twitter.com/settings?session_id=fba1d797092614ee925a68c05656a75035cb1421",
+          "details": {
+            "id": "twitter",
+            "message": "Dont embed twitter scripts, use your own tweet embed"
+          }
+        },
+        {
+          "type": "google",
+          "url": "https://storage.googleapis.com/genii-public/project-358a1d8e-3b14-4e23-984e-a5fdb26449ac/css/custom.css",
+          "details": {
+            "id": "google",
+            "message": "Use hosted Matomo instance"
+          }
+        }
+      ],
+      "cookies": [],
+      "headers": {
+        "accept-ranges": "bytes",
+        "age": "9",
+        "cache-control": "must-revalidate, max-age=0",
+        "content-encoding": "gzip",
+        "content-length": "19077",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 09 Mar 2026 14:38:39 GMT",
+        "etag": "W/\"1ce90-1squTwJZG2RmWdQlAMvdOfWnL80\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "Accept-Encoding",
+        "x-varnish": "85894090 85962318"
+      },
+      "endpoints": [
+        {
+          "hostname": "www.service-civique.gouv.fr",
+          "ip": "37.59.251.196",
+          "geoip": {
+            "continent": {
+              "code": "EU",
+              "geoname_id": 6255148,
+              "names": {
+                "de": "Europa",
+                "en": "Europe",
+                "es": "Europa",
+                "fr": "Europe",
+                "ja": "ヨーロッパ",
+                "pt-BR": "Europa",
+                "ru": "Европа",
+                "zh-CN": "欧洲"
+              }
+            },
+            "country": {
+              "geoname_id": 3017382,
+              "is_in_european_union": true,
+              "iso_code": "FR",
+              "names": {
+                "de": "Frankreich",
+                "en": "France",
+                "es": "Francia",
+                "fr": "France",
+                "ja": "フランス共和国",
+                "pt-BR": "França",
+                "ru": "Франция",
+                "zh-CN": "法国"
+              }
+            },
+            "location": {
+              "accuracy_radius": 500,
+              "latitude": 48.8582,
+              "longitude": 2.3387,
+              "time_zone": "Europe/Paris"
+            },
+            "registered_country": {
+              "geoname_id": 3017382,
+              "is_in_european_union": true,
+              "iso_code": "FR",
+              "names": {
+                "de": "Frankreich",
+                "en": "France",
+                "es": "Francia",
+                "fr": "France",
+                "ja": "フランス共和国",
+                "pt-BR": "França",
+                "ru": "Франция",
+                "zh-CN": "法国"
+              }
+            }
+          }
+        },
+        {
+          "hostname": "sdk.privacy-center.org",
+          "ip": "18.160.46.98",
+          "geoip": {
+            "city": {
+              "geoname_id": 5809844,
+              "names": {
+                "de": "Seattle",
+                "en": "Seattle",
+                "es": "Seattle",
+                "fr": "Seattle",
+                "ja": "シアトル",
+                "pt-BR": "Seattle",
+                "ru": "Сиэтл"
+              }
+            },
+            "continent": {
+              "code": "NA",
+              "geoname_id": 6255149,
+              "names": {
+                "de": "Nordamerika",
+                "en": "North America",
+                "es": "Norteamérica",
+                "fr": "Amérique du Nord",
+                "ja": "北アメリカ",
+                "pt-BR": "América do Norte",
+                "ru": "Северная Америка",
+                "zh-CN": "北美洲"
+              }
+            },
+            "country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            },
+            "location": {
+              "accuracy_radius": 20,
+              "latitude": 47.6109,
+              "longitude": -122.3303,
+              "metro_code": 819,
+              "time_zone": "America/Los_Angeles"
+            },
+            "postal": {
+              "code": "98101"
+            },
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 5815135,
+                "iso_code": "WA",
+                "names": {
+                  "de": "Washington",
+                  "en": "Washington",
+                  "es": "Washington",
+                  "fr": "Washington",
+                  "ja": "ワシントン州",
+                  "pt-BR": "Washington",
+                  "ru": "Вашингтон",
+                  "zh-CN": "华盛顿州"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "hostname": "genii-script.tolk.ai",
+          "ip": "172.66.47.39",
+          "geoip": {
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            }
+          }
+        },
+        {
+          "hostname": "genii-api.tolk.ai",
+          "ip": "35.195.172.110",
+          "geoip": {
+            "city": {
+              "geoname_id": 2800866,
+              "names": {
+                "de": "Brüssel",
+                "en": "Brussels",
+                "es": "Bruselas",
+                "fr": "Bruxelles",
+                "ja": "ブリュッセル",
+                "pt-BR": "Bruxelas",
+                "ru": "Брюссель",
+                "zh-CN": "布鲁塞尔"
+              }
+            },
+            "continent": {
+              "code": "EU",
+              "geoname_id": 6255148,
+              "names": {
+                "de": "Europa",
+                "en": "Europe",
+                "es": "Europa",
+                "fr": "Europe",
+                "ja": "ヨーロッパ",
+                "pt-BR": "Europa",
+                "ru": "Европа",
+                "zh-CN": "欧洲"
+              }
+            },
+            "country": {
+              "geoname_id": 2802361,
+              "is_in_european_union": true,
+              "iso_code": "BE",
+              "names": {
+                "de": "Belgien",
+                "en": "Belgium",
+                "es": "Bélgica",
+                "fr": "Belgique",
+                "ja": "ベルギー王国",
+                "pt-BR": "Bélgica",
+                "ru": "Бельгия",
+                "zh-CN": "比利时"
+              }
+            },
+            "location": {
+              "accuracy_radius": 20,
+              "latitude": 50.8534,
+              "longitude": 4.347,
+              "time_zone": "Europe/Brussels"
+            },
+            "postal": {
+              "code": "1000"
+            },
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 2800867,
+                "iso_code": "BRU",
+                "names": {
+                  "de": "Region Brüssel-Hauptstadt",
+                  "en": "Brussels Capital",
+                  "es": "Bruselas",
+                  "fr": "Bruxelles-Capitale",
+                  "ja": "ブリュッセル",
+                  "pt-BR": "Bruxelas",
+                  "ru": "Брюссельский столичный регион",
+                  "zh-CN": "布鲁塞尔首都大区"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "hostname": "platform.twitter.com",
+          "ip": "199.232.88.157",
+          "geoip": {
+            "city": {
+              "geoname_id": 5101798,
+              "names": {
+                "de": "Newark",
+                "en": "Newark",
+                "es": "Newark",
+                "fr": "Newark",
+                "ja": "ニューアーク",
+                "pt-BR": "Newark",
+                "ru": "Ньюарк"
+              }
+            },
+            "continent": {
+              "code": "NA",
+              "geoname_id": 6255149,
+              "names": {
+                "de": "Nordamerika",
+                "en": "North America",
+                "es": "Norteamérica",
+                "fr": "Amérique du Nord",
+                "ja": "北アメリカ",
+                "pt-BR": "América do Norte",
+                "ru": "Северная Америка",
+                "zh-CN": "北美洲"
+              }
+            },
+            "country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            },
+            "location": {
+              "accuracy_radius": 20,
+              "latitude": 40.7399,
+              "longitude": -74.1691,
+              "metro_code": 501,
+              "time_zone": "America/New_York"
+            },
+            "postal": {
+              "code": "07192"
+            },
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 5101760,
+                "iso_code": "NJ",
+                "names": {
+                  "de": "New Jersey",
+                  "en": "New Jersey",
+                  "es": "Nueva Jersey",
+                  "fr": "New Jersey",
+                  "ja": "ニュージャージー州",
+                  "pt-BR": "Nova Jérsei",
+                  "ru": "Нью-Джерси",
+                  "zh-CN": "新泽西州"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "hostname": "connect.facebook.net",
+          "ip": "57.144.74.128",
+          "geoip": {
+            "city": {
+              "geoname_id": 4744870,
+              "names": {
+                "de": "Ashburn",
+                "en": "Ashburn",
+                "es": "Ashburn",
+                "fr": "Ashburn",
+                "ja": "アッシュバーン",
+                "pt-BR": "Ashburn",
+                "ru": "Ашберн",
+                "zh-CN": "阿什本"
+              }
+            },
+            "continent": {
+              "code": "NA",
+              "geoname_id": 6255149,
+              "names": {
+                "de": "Nordamerika",
+                "en": "North America",
+                "es": "Norteamérica",
+                "fr": "Amérique du Nord",
+                "ja": "北アメリカ",
+                "pt-BR": "América do Norte",
+                "ru": "Северная Америка",
+                "zh-CN": "北美洲"
+              }
+            },
+            "country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            },
+            "location": {
+              "accuracy_radius": 20,
+              "latitude": 39.0469,
+              "longitude": -77.4903,
+              "metro_code": 511,
+              "time_zone": "America/New_York"
+            },
+            "postal": {
+              "code": "20149"
+            },
+            "registered_country": {
+              "geoname_id": 2963597,
+              "is_in_european_union": true,
+              "iso_code": "IE",
+              "names": {
+                "de": "Irland",
+                "en": "Ireland",
+                "es": "Irlanda",
+                "fr": "Irlande",
+                "ja": "アイルランド",
+                "pt-BR": "Irlanda",
+                "ru": "Ирландия",
+                "zh-CN": "爱尔兰"
+              }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 6254928,
+                "iso_code": "VA",
+                "names": {
+                  "de": "Virginia",
+                  "en": "Virginia",
+                  "es": "Virginia",
+                  "fr": "Virginie",
+                  "ja": "バージニア州",
+                  "pt-BR": "Virgínia",
+                  "ru": "Вирджиния",
+                  "zh-CN": "弗吉尼亚州"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "hostname": "syndication.twitter.com",
+          "ip": "162.159.140.229",
+          "geoip": {
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            }
+          }
+        },
+        {
+          "hostname": "storage.googleapis.com",
+          "ip": "142.251.179.207",
+          "geoip": {
+            "continent": {
+              "code": "NA",
+              "geoname_id": 6255149,
+              "names": {
+                "de": "Nordamerika",
+                "en": "North America",
+                "es": "Norteamérica",
+                "fr": "Amérique du Nord",
+                "ja": "北アメリカ",
+                "pt-BR": "América do Norte",
+                "ru": "Северная Америка",
+                "zh-CN": "北美洲"
+              }
+            },
+            "country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            },
+            "location": {
+              "accuracy_radius": 1000,
+              "latitude": 37.751,
+              "longitude": -97.822,
+              "time_zone": "America/Chicago"
+            },
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            }
+          }
+        }
+      ]
     },
     "wappalyzer": {
       "urls": {
         "https://www.service-civique.gouv.fr/": {
-          "status": 200
+          "status": 200,
+          "error": "Navigation timeout of 10000 ms exceeded (https://www.service-civique.gouv.fr/)"
         }
       },
       "technologies": [
-        {
-          "slug": "typescript",
-          "name": "TypeScript",
-          "description": "TypeScript is an open-source language which builds on JavaScript  by adding static type definitions.",
-          "confidence": 100,
-          "version": null,
-          "icon": "TypeScript.svg",
-          "website": "https://www.typescriptlang.org",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 27,
-              "slug": "programming-languages",
-              "name": "Programming languages"
-            }
-          ]
-        },
-        {
-          "slug": "facebook-login",
-          "name": "Facebook Login",
-          "description": "Facebook Login is a way for people to create accounts and log into your app across multiple platforms.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Facebook.svg",
-          "website": "https://developers.facebook.com/docs/facebook-login/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 69,
-              "slug": "authentication",
-              "name": "Authentication"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "bootstrap",
-          "name": "Bootstrap",
-          "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
-          "confidence": 100,
-          "version": "4.6.0",
-          "icon": "Bootstrap.svg",
-          "website": "https://getbootstrap.com",
-          "cpe": "cpe:2.3:a:getbootstrap:bootstrap:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 66,
-              "slug": "ui-frameworks",
-              "name": "UI frameworks"
-            }
-          ],
-          "rootPath": true
-        },
         {
           "slug": "varnish",
           "name": "Varnish",
@@ -4500,42 +5045,6 @@
               "id": 23,
               "slug": "caching",
               "name": "Caching"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "zone-js",
-          "name": "Zone.js",
-          "description": null,
-          "confidence": 100,
-          "version": null,
-          "icon": "Angular.svg",
-          "website": "https://github.com/angular/angular/tree/master/packages/zone.js",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "angular",
-          "name": "Angular",
-          "description": "Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google.",
-          "confidence": 100,
-          "version": "9.1.0",
-          "icon": "Angular.svg",
-          "website": "https://angular.io",
-          "cpe": "cpe:2.3:a:angularjs:angular:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
             }
           ],
           "rootPath": true
@@ -4558,232 +5067,6 @@
           ]
         },
         {
-          "slug": "twitter",
-          "name": "Twitter",
-          "description": "Twitter is a 'microblogging' system that allows you to send and receive short posts called tweets.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Twitter.svg",
-          "website": "https://twitter.com",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 5,
-              "slug": "widgets",
-              "name": "Widgets"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "google-analytics",
-          "name": "Google Analytics",
-          "description": "Google Analytics is a free web analytics service that tracks and reports website traffic.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Google Analytics.svg",
-          "website": "https://google.com/analytics",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 10,
-              "slug": "analytics",
-              "name": "Analytics"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "didomi",
-          "name": "Didomi",
-          "description": "Didomi is a consent management platform helping brands and businesses collect, store and leverage their customer consents.",
-          "confidence": 100,
-          "version": null,
-          "icon": "didomi.png",
-          "website": "https://www.didomi.io/en/consent-preference-management",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 67,
-              "slug": "cookie-compliance",
-              "name": "Cookie compliance"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "adform",
-          "name": "Adform",
-          "description": "Adform is an all-in-one platform for digital advertising.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Adform.svg",
-          "website": "https://site.adform.com",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 36,
-              "slug": "advertising",
-              "name": "Advertising"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "twitter-ads",
-          "name": "Twitter Ads",
-          "description": "Twitter Ads is an advertising platform for Twitter 'microblogging' system.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Twitter.svg",
-          "website": "https://ads.twitter.com",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 36,
-              "slug": "advertising",
-              "name": "Advertising"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "matomo-tag-manager",
-          "name": "Matomo Tag Manager",
-          "description": "Matomo Tag Manager manages tracking and marketing tags.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Matomo.svg",
-          "website": "https://developer.matomo.org/guides/tagmanager/introduction",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 42,
-              "slug": "tag-managers",
-              "name": "Tag managers"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "matomo-analytics",
-          "name": "Matomo Analytics",
-          "description": "Matomo Analytics is a free and open-source web analytics application, that runs on a PHP/MySQL web-server.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Matomo.svg",
-          "website": "https://matomo.org",
-          "cpe": "cpe:2.3:a:matomo:matomo:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 10,
-              "slug": "analytics",
-              "name": "Analytics"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "lazysizes",
-          "name": "LazySizes",
-          "description": "LazySizes is a JavaScript library used to delay the loading of images (iframes, scripts, etc) until they come into view.",
-          "confidence": 100,
-          "version": null,
-          "icon": "default.svg",
-          "website": "https://github.com/aFarkas/lazysizes",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            },
-            {
-              "id": 92,
-              "slug": "performance",
-              "name": "Performance"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "jquery",
-          "name": "jQuery",
-          "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
-          "confidence": 100,
-          "version": "3.4.1",
-          "icon": "jQuery.svg",
-          "website": "https://jquery.com",
-          "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "hammer-js",
-          "name": "Hammer.js",
-          "description": null,
-          "confidence": 100,
-          "version": "2.0.7",
-          "icon": "Hammer.js.png",
-          "website": "https://hammerjs.github.io",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "core-js",
-          "name": "core-js",
-          "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
-          "confidence": 100,
-          "version": "3.6.4",
-          "icon": "core-js.png",
-          "website": "https://github.com/zloirock/core-js",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "twicpics",
-          "name": "TwicPics",
-          "description": "TwicPics offers on-demand responsive image generation.",
-          "confidence": 100,
-          "version": null,
-          "icon": "TwicPics.svg",
-          "website": "https://www.twicpics.com",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 31,
-              "slug": "cdn",
-              "name": "CDN"
-            },
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ],
-          "rootPath": true
-        },
-        {
           "slug": "google-ads-conversion-tracking",
           "name": "Google Ads Conversion Tracking",
           "description": "Google Ads Conversion Tracking is a free tool that shows you what happens after a customer interacts with your ads.",
@@ -4798,8 +5081,7 @@
               "slug": "analytics",
               "name": "Analytics"
             }
-          ],
-          "rootPath": true
+          ]
         },
         {
           "slug": "recaptcha",
@@ -4863,7 +5145,7 @@
           "slug": "webpack",
           "name": "Webpack",
           "description": "Webpack is an open-source JavaScript module bundler.",
-          "confidence": 100,
+          "confidence": 50,
           "version": null,
           "icon": "Webpack.svg",
           "website": "https://webpack.js.org/",
@@ -4874,26 +5156,7 @@
               "slug": "miscellaneous",
               "name": "Miscellaneous"
             }
-          ],
-          "rootPath": true
-        },
-        {
-          "slug": "open-graph",
-          "name": "Open Graph",
-          "description": "Open Graph is a protocol that is used to integrate any web page into the social graph.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Open Graph.png",
-          "website": "https://ogp.me",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ],
-          "rootPath": true
+          ]
         },
         {
           "slug": "module-federation",
@@ -4920,7 +5183,7 @@
       {
         "requestedUrl": "https://www.service-civique.gouv.fr/",
         "finalUrl": "https://www.service-civique.gouv.fr/",
-        "fetchTime": "2025-03-02T01:22:20.781Z",
+        "fetchTime": "2026-03-09T14:36:55.103Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -4931,7 +5194,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.12
+            "score": 0.1
           },
           "accessibility": {
             "title": "Accessibility",
@@ -4983,53 +5246,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 16709,
+            "numericValue": 19666,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2326,
-                  "firstMeaningfulPaint": 7543,
-                  "largestContentfulPaint": 15139,
-                  "interactive": 16709,
-                  "speedIndex": 10297,
-                  "totalBlockingTime": 1733,
-                  "maxPotentialFID": 640,
-                  "cumulativeLayoutShift": 0.8909766727023655,
-                  "cumulativeLayoutShiftMainFrame": 0.8909766727023655,
-                  "totalCumulativeLayoutShift": 0.8909766727023655,
+                  "firstContentfulPaint": 2281,
+                  "firstMeaningfulPaint": 2281,
+                  "largestContentfulPaint": 14441,
+                  "interactive": 19666,
+                  "speedIndex": 9932,
+                  "totalBlockingTime": 3140,
+                  "maxPotentialFID": 354,
+                  "cumulativeLayoutShift": 0.8869869422912597,
+                  "cumulativeLayoutShiftMainFrame": 0.8869869422912597,
+                  "totalCumulativeLayoutShift": 0.8869869422912597,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 302592886,
+                  "observedTimeOriginTs": 199906308,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 302592886,
-                  "observedFirstPaint": 830,
-                  "observedFirstPaintTs": 303422529,
-                  "observedFirstContentfulPaint": 830,
-                  "observedFirstContentfulPaintTs": 303422529,
-                  "observedFirstContentfulPaintAllFrames": 830,
-                  "observedFirstContentfulPaintAllFramesTs": 303422529,
-                  "observedFirstMeaningfulPaint": 1101,
-                  "observedFirstMeaningfulPaintTs": 303694019,
-                  "observedLargestContentfulPaint": 1897,
-                  "observedLargestContentfulPaintTs": 304490071,
-                  "observedLargestContentfulPaintAllFrames": 1897,
-                  "observedLargestContentfulPaintAllFramesTs": 304490071,
-                  "observedTraceEnd": 4856,
-                  "observedTraceEndTs": 307448581,
-                  "observedLoad": 2439,
-                  "observedLoadTs": 305031407,
-                  "observedDomContentLoaded": 1082,
-                  "observedDomContentLoadedTs": 303674893,
-                  "observedCumulativeLayoutShift": 0.8909766727023655,
-                  "observedCumulativeLayoutShiftMainFrame": 0.8909766727023655,
-                  "observedTotalCumulativeLayoutShift": 0.8909766727023655,
-                  "observedFirstVisualChange": 828,
-                  "observedFirstVisualChangeTs": 303420886,
-                  "observedLastVisualChange": 2128,
-                  "observedLastVisualChangeTs": 304720886,
-                  "observedSpeedIndex": 1670,
-                  "observedSpeedIndexTs": 304262496
+                  "observedNavigationStartTs": 199906308,
+                  "observedFirstPaint": 592,
+                  "observedFirstPaintTs": 200498263,
+                  "observedFirstContentfulPaint": 592,
+                  "observedFirstContentfulPaintTs": 200498263,
+                  "observedFirstContentfulPaintAllFrames": 592,
+                  "observedFirstContentfulPaintAllFramesTs": 200498263,
+                  "observedFirstMeaningfulPaint": 592,
+                  "observedFirstMeaningfulPaintTs": 200498263,
+                  "observedLargestContentfulPaint": 1705,
+                  "observedLargestContentfulPaintTs": 201611349,
+                  "observedLargestContentfulPaintAllFrames": 1705,
+                  "observedLargestContentfulPaintAllFramesTs": 201611349,
+                  "observedTraceEnd": 5359,
+                  "observedTraceEndTs": 205265508,
+                  "observedLoad": 4287,
+                  "observedLoadTs": 204193064,
+                  "observedDomContentLoaded": 1085,
+                  "observedDomContentLoadedTs": 200991179,
+                  "observedCumulativeLayoutShift": 0.8869869422912597,
+                  "observedCumulativeLayoutShiftMainFrame": 0.8869869422912597,
+                  "observedTotalCumulativeLayoutShift": 0.8869869422912597,
+                  "observedFirstVisualChange": 592,
+                  "observedFirstVisualChangeTs": 200498308,
+                  "observedLastVisualChange": 4108,
+                  "observedLastVisualChangeTs": 204014308,
+                  "observedSpeedIndex": 1506,
+                  "observedSpeedIndexTs": 201412201
                 },
                 {
                   "lcpInvalidated": false
@@ -5047,23 +5310,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 109,
-                  "numScripts": 58,
-                  "numStylesheets": 6,
-                  "numFonts": 7,
-                  "numTasks": 1992,
-                  "numTasksOver10ms": 32,
-                  "numTasksOver25ms": 19,
-                  "numTasksOver50ms": 6,
-                  "numTasksOver100ms": 3,
+                  "numRequests": 112,
+                  "numScripts": 53,
+                  "numStylesheets": 17,
+                  "numFonts": 8,
+                  "numTasks": 2231,
+                  "numTasksOver10ms": 112,
+                  "numTasksOver25ms": 93,
+                  "numTasksOver50ms": 8,
+                  "numTasksOver100ms": 4,
                   "numTasksOver500ms": 0,
                   "rtt": 0,
-                  "throughput": 24209281.56592889,
-                  "maxRtt": 101.003,
-                  "maxServerLatency": 53.883000000000024,
-                  "totalByteWeight": 2254222,
-                  "totalTaskTime": 1605.3519999999971,
-                  "mainDocumentTransferSize": 8898
+                  "throughput": 25341694.155572485,
+                  "maxRtt": 90.433,
+                  "maxServerLatency": 238.184,
+                  "totalByteWeight": 2617820,
+                  "totalTaskTime": 4418.080000000001,
+                  "mainDocumentTransferSize": 19315
                 }
               ]
             }
@@ -5105,15 +5368,15 @@
         "width": 1920,
         "height": 1080,
         "url": "https://www.service-civique.gouv.fr",
-        "size": 3359.187,
-        "nodes": 1066,
-        "requests": 113,
+        "size": 3183.517,
+        "nodes": 1019,
+        "requests": 112,
         "grade": "E",
-        "score": 27,
-        "ges": 2.46,
-        "water": 3.69,
+        "score": 28,
+        "ges": 2.44,
+        "water": 3.66,
         "ecoindex_version": "5.4.2",
-        "date": "2025-03-02 01:21:24.543105",
+        "date": "2026-03-09 14:35:29.801541",
         "page_type": "siteweb"
       }
     ],
@@ -5126,14 +5389,14 @@
       "nmapGrade": "A",
       "nmapOpenPortsCount": 2,
       "nmapOpenPortsGrade": "A",
-      "testsslExpireSoon": true,
-      "testsslExpireDate": "2025-05-07T00:15:00.000Z",
+      "testsslExpireSoon": false,
+      "testsslExpireDate": "2026-04-15T13:58:00.000Z",
       "testsslGrade": "A+",
-      "cookiesGrade": null,
-      "cookiesCount": null,
-      "trackersGrade": null,
-      "trackersCount": null,
-      "lighthouse_performance": 0.12,
+      "cookiesGrade": "A",
+      "cookiesCount": 0,
+      "trackersGrade": "F",
+      "trackersCount": 13,
+      "lighthouse_performance": 0.1,
       "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 0.96,
       "lighthouse_accessibilityGrade": "A",
