@@ -1,0 +1,149 @@
+{
+  "trackers": [
+    {
+      "type": "unknown",
+      "url": "https://rqrkorimpcobmbbsdcgz.supabase.co/rest/v1/site_config?select=value&key=eq.impact_metrics"
+    },
+    {
+      "type": "unknown",
+      "url": "https://rqrkorimpcobmbbsdcgz.supabase.co/rest/v1/site_config?select=value&key=eq.slideshow_photos"
+    },
+    {
+      "type": "unknown",
+      "url": "https://rqrkorimpcobmbbsdcgz.supabase.co/rest/v1/site_config?select=value&key=eq.slideshow_photos"
+    },
+    {
+      "type": "unknown",
+      "url": "https://rqrkorimpcobmbbsdcgz.supabase.co/rest/v1/site_config?select=value&key=eq.impact_metrics"
+    }
+  ],
+  "cookies": [],
+  "headers": {
+    "accept-ranges": "bytes",
+    "age": "96",
+    "cache-control": "public,max-age=0,must-revalidate",
+    "cache-status": "\"Netlify Edge\"; hit",
+    "content-length": "548",
+    "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.supabase.in wss://*.supabase.in; media-src 'self' data: blob: https:; manifest-src 'self'",
+    "content-type": "text/html; charset=UTF-8",
+    "cross-origin-opener-policy": "same-origin",
+    "date": "Mon, 09 Mar 2026 15:20:08 GMT",
+    "etag": "\"31f1a9786a0aed21b16b9cd10de06166-ssl\"",
+    "permissions-policy": "accelerometer=(), autoplay=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "server": "Netlify",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-nf-request-id": "01KK9JY980X36SVCHQ604308EA"
+  },
+  "endpoints": [
+    {
+      "hostname": "playlifeconnect.netlify.app",
+      "ip": "98.84.224.111",
+      "geoip": {
+        "city": {
+          "geoname_id": 4744870,
+          "names": {
+            "de": "Ashburn",
+            "en": "Ashburn",
+            "es": "Ashburn",
+            "fr": "Ashburn",
+            "ja": "アッシュバーン",
+            "pt-BR": "Ashburn",
+            "ru": "Ашберн",
+            "zh-CN": "阿什本"
+          }
+        },
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 20,
+          "latitude": 39.0469,
+          "longitude": -77.4903,
+          "metro_code": 511,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "20149"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 6254928,
+            "iso_code": "VA",
+            "names": {
+              "de": "Virginia",
+              "en": "Virginia",
+              "es": "Virginia",
+              "fr": "Virginie",
+              "ja": "バージニア州",
+              "pt-BR": "Virgínia",
+              "ru": "Вирджиния",
+              "zh-CN": "弗吉尼亚州"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hostname": "rqrkorimpcobmbbsdcgz.supabase.co",
+      "ip": "104.18.38.10",
+      "geoip": {
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    }
+  ]
+}
