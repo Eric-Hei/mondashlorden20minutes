@@ -1,6 +1,114 @@
 {
-  "trackers": null,
-  "cookies": null,
-  "headers": null,
-  "endpoints": null
+  "trackers": [],
+  "cookies": [
+    {
+      "name": "_pk_ses.281.b6ea",
+      "value": "1",
+      "domain": "ecoresponsable.numerique.gouv.fr",
+      "path": "/",
+      "expires": 1773071196,
+      "size": 17,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    },
+    {
+      "name": "_pk_id.281.b6ea",
+      "value": "c75d8d35d64aeb0d.1773069397.",
+      "domain": "ecoresponsable.numerique.gouv.fr",
+      "path": "/",
+      "expires": 1807024597,
+      "size": 43,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    }
+  ],
+  "headers": {
+    "accept-ranges": "bytes",
+    "access-control-allow-origin": "*",
+    "age": "97",
+    "cache-control": "max-age=600",
+    "content-encoding": "gzip",
+    "content-length": "7583",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Mon, 09 Mar 2026 15:16:35 GMT",
+    "etag": "W/\"69adb3fc-8446\"",
+    "expires": "Mon, 09 Mar 2026 15:22:10 GMT",
+    "last-modified": "Sun, 08 Mar 2026 17:38:04 GMT",
+    "server": "GitHub.com",
+    "vary": "Accept-Encoding",
+    "via": "1.1 varnish",
+    "x-cache": "HIT",
+    "x-cache-hits": "1",
+    "x-fastly-request-id": "b4d82a785394800daa66e80372c9fbaea8e488fd",
+    "x-github-request-id": "D93E:C22DF:2432B3:26DAE3:69AEE349",
+    "x-proxy-cache": "MISS",
+    "x-served-by": "cache-iad-kcgs7200020-IAD",
+    "x-timer": "S1773069396.961976,VS0,VE2"
+  },
+  "endpoints": [
+    {
+      "hostname": "ecoresponsable.numerique.gouv.fr",
+      "ip": "185.199.110.153",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    }
+  ]
 }
