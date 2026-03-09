@@ -1,6 +1,150 @@
 {
-  "trackers": null,
-  "cookies": null,
-  "headers": null,
-  "endpoints": null
+  "trackers": [],
+  "cookies": [
+    {
+      "name": "TS01c3b0f5",
+      "value": "01b74c0fdd58f27072b60f0d79ddc208bcb34e4f6942714ad02f7a885e7b55247666f71bc30f76cb2cb90de757d561b0d4434e82d0",
+      "domain": ".elisa.service-civique.gouv.fr",
+      "path": "/",
+      "expires": -1,
+      "size": 116,
+      "httpOnly": true,
+      "secure": true,
+      "session": true,
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    },
+    {
+      "name": "api-gateway-8380",
+      "value": "169351084.48160.0000",
+      "domain": "elisa.service-civique.gouv.fr",
+      "path": "/",
+      "expires": -1,
+      "size": 36,
+      "httpOnly": true,
+      "secure": false,
+      "session": true,
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    },
+    {
+      "name": "civiq",
+      "value": "169351084.48160.0000",
+      "domain": "elisa.service-civique.gouv.fr",
+      "path": "/",
+      "expires": -1,
+      "size": 25,
+      "httpOnly": true,
+      "secure": true,
+      "session": true,
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    }
+  ],
+  "headers": {
+    "cache-control": "no-cache",
+    "connection": "close",
+    "content-encoding": "gzip",
+    "content-type": "text/html",
+    "date": "Mon, 09 Mar 2026 14:57:13 GMT",
+    "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
+    "max-forwards": "20",
+    "pragma": "no-cache",
+    "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=169351084.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd58f27072b60f0d79ddc208bcb34e4f6942714ad02f7a885e7b55247666f71bc30f76cb2cb90de757d561b0d4434e82d0; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "transfer-encoding": "chunked",
+    "via": "1.1 leto-b ()",
+    "x-correlationid": "Id-c9dfae692ae2172fb8677b7d 0; Id-c9dfae692be2fc61783a554c 0"
+  },
+  "endpoints": [
+    {
+      "hostname": "elisa.service-civique.gouv.fr",
+      "ip": "217.109.233.83",
+      "geoip": {
+        "city": {
+          "geoname_id": 2988657,
+          "names": {
+            "en": "Panazol",
+            "zh-CN": "帕纳佐"
+          }
+        },
+        "continent": {
+          "code": "EU",
+          "geoname_id": 6255148,
+          "names": {
+            "de": "Europa",
+            "en": "Europe",
+            "es": "Europa",
+            "fr": "Europe",
+            "ja": "ヨーロッパ",
+            "pt-BR": "Europa",
+            "ru": "Европа",
+            "zh-CN": "欧洲"
+          }
+        },
+        "country": {
+          "geoname_id": 3017382,
+          "is_in_european_union": true,
+          "iso_code": "FR",
+          "names": {
+            "de": "Frankreich",
+            "en": "France",
+            "es": "Francia",
+            "fr": "France",
+            "ja": "フランス共和国",
+            "pt-BR": "França",
+            "ru": "Франция",
+            "zh-CN": "法国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 200,
+          "latitude": 45.8378,
+          "longitude": 1.3044,
+          "time_zone": "Europe/Paris"
+        },
+        "postal": {
+          "code": "87350"
+        },
+        "registered_country": {
+          "geoname_id": 3017382,
+          "is_in_european_union": true,
+          "iso_code": "FR",
+          "names": {
+            "de": "Frankreich",
+            "en": "France",
+            "es": "Francia",
+            "fr": "France",
+            "ja": "フランス共和国",
+            "pt-BR": "França",
+            "ru": "Франция",
+            "zh-CN": "法国"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 11071620,
+            "iso_code": "NAQ",
+            "names": {
+              "en": "Nouvelle-Aquitaine",
+              "fr": "Nouvelle-Aquitaine"
+            }
+          },
+          {
+            "geoname_id": 3013719,
+            "iso_code": "87",
+            "names": {
+              "de": "Haute-Vienne",
+              "en": "Haute-Vienne",
+              "es": "Alta Viena",
+              "fr": "Haute-Vienne"
+            }
+          }
+        ]
+      }
+    }
+  ]
 }
