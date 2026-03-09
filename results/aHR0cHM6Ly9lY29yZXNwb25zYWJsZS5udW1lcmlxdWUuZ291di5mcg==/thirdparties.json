@@ -2,12 +2,12 @@
   "trackers": [],
   "cookies": [
     {
-      "name": "_pk_ses.281.b6ea",
-      "value": "1",
+      "name": "_pk_id.281.b6ea",
+      "value": "ea6b7ed8ad11ed87.1773077290.",
       "domain": "ecoresponsable.numerique.gouv.fr",
       "path": "/",
-      "expires": 1773071196,
-      "size": 17,
+      "expires": 1807032490,
+      "size": 43,
       "httpOnly": false,
       "secure": false,
       "session": false,
@@ -17,12 +17,12 @@
       "sameParty": false
     },
     {
-      "name": "_pk_id.281.b6ea",
-      "value": "c75d8d35d64aeb0d.1773069397.",
+      "name": "_pk_ses.281.b6ea",
+      "value": "1",
       "domain": "ecoresponsable.numerique.gouv.fr",
       "path": "/",
-      "expires": 1807024597,
-      "size": 43,
+      "expires": 1773079089,
+      "size": 17,
       "httpOnly": false,
       "secure": false,
       "session": false,
@@ -35,30 +35,30 @@
   "headers": {
     "accept-ranges": "bytes",
     "access-control-allow-origin": "*",
-    "age": "97",
+    "age": "21",
     "cache-control": "max-age=600",
     "content-encoding": "gzip",
     "content-length": "7583",
     "content-type": "text/html; charset=utf-8",
-    "date": "Mon, 09 Mar 2026 15:16:35 GMT",
+    "date": "Mon, 09 Mar 2026 17:28:08 GMT",
     "etag": "W/\"69adb3fc-8446\"",
-    "expires": "Mon, 09 Mar 2026 15:22:10 GMT",
+    "expires": "Mon, 09 Mar 2026 17:37:01 GMT",
     "last-modified": "Sun, 08 Mar 2026 17:38:04 GMT",
     "server": "GitHub.com",
     "vary": "Accept-Encoding",
     "via": "1.1 varnish",
     "x-cache": "HIT",
     "x-cache-hits": "1",
-    "x-fastly-request-id": "b4d82a785394800daa66e80372c9fbaea8e488fd",
-    "x-github-request-id": "D93E:C22DF:2432B3:26DAE3:69AEE349",
+    "x-fastly-request-id": "a7f208cb583aa2db8e26d0facd814e4fd8dcc045",
+    "x-github-request-id": "9A3C:C22DF:475CF7:4D00E0:69AF02E4",
     "x-proxy-cache": "MISS",
-    "x-served-by": "cache-iad-kcgs7200020-IAD",
-    "x-timer": "S1773069396.961976,VS0,VE2"
+    "x-served-by": "cache-chi-kigq8000118-CHI",
+    "x-timer": "S1773077288.444329,VS0,VE2"
   },
   "endpoints": [
     {
       "hostname": "ecoresponsable.numerique.gouv.fr",
-      "ip": "185.199.110.153",
+      "ip": "185.199.111.153",
       "geoip": {
         "continent": {
           "code": "NA",
