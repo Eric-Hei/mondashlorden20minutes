@@ -3,28 +3,20 @@ description: Cockpit conformité technique
 entity: Moi
 footer: Powered by Eric H
 tools:
+  404: true
   screenshot: true
-  lighthouse: true
-  testssl: true
-  wappalyzer: true
-  nuclei: false
+  nmap: true
   zap: true
+  wappalyzer: true
+  http: true
+  testssl: true
+  lighthouse: true
   thirdparties: true
+  nuclei: true
+  updownio: false
   dependabot: true
   codescan: true
-  updownio: true
-  http: true
-  nmap: true
-  declaration-a11y: true
-  declaration-rgpd: true
   stats: true
-  budget_page: false
-  dsfr: true
-  ecoindex: true
-  betagouv: false
-  github_repository: true
-columns:
-  zap: true
 urls:
   - url: https://oscar.service-civique.gouv.fr
   - url: https://elisa.service-civique.gouv.fr
@@ -34,6 +26,7 @@ urls:
   - url: https://mairie.ants.gouv.fr/?lang=fr
   - url: https://ecoresponsable.numerique.gouv.fr
   - url: https://playlifeconnect.netlify.app
-  
+    title: Playlife Connect
     repositories:
-      - zammad/zammad
+      - Eric-Hei/Playlife
+  
