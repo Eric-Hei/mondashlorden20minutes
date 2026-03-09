@@ -2,8 +2,22 @@
   "trackers": [],
   "cookies": [
     {
+      "name": "TS01c3b0f5026",
+      "value": "01c55821154307b9b456704e0a780fc5c3cf07d7ea55b6a88c2cbee244ba1c03ab932c621a0874d4122e1767578315661b254f7094004862991de7ab1859dbf73191617b57",
+      "domain": ".elisa.service-civique.gouv.fr",
+      "path": "/",
+      "expires": -1,
+      "size": 151,
+      "httpOnly": true,
+      "secure": true,
+      "session": true,
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    },
+    {
       "name": "TS01c3b0f5",
-      "value": "01b74c0fdd58f27072b60f0d79ddc208bcb34e4f6942714ad02f7a885e7b55247666f71bc30f76cb2cb90de757d561b0d4434e82d0",
+      "value": "01b74c0fdde10d94a7fd2fa75eb1448ac727aee79b4bacfee52d1f94e0ef4c5e734ad9429b1ab8c8a619949666a1ee2b77478b4a95",
       "domain": ".elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -49,15 +63,15 @@
     "connection": "close",
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Mon, 09 Mar 2026 14:57:13 GMT",
+    "date": "Mon, 09 Mar 2026 17:10:16 GMT",
     "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
     "max-forwards": "20",
     "pragma": "no-cache",
-    "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=169351084.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd58f27072b60f0d79ddc208bcb34e4f6942714ad02f7a885e7b55247666f71bc30f76cb2cb90de757d561b0d4434e82d0; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
+    "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=169351084.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdde10d94a7fd2fa75eb1448ac727aee79b4bacfee52d1f94e0ef4c5e734ad9429b1ab8c8a619949666a1ee2b77478b4a95; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly\nTS01c3b0f5026=01c55821154307b9b456704e0a780fc5c3cf07d7ea55b6a88c2cbee244ba1c03ab932c621a0874d4122e1767578315661b254f7094004862991de7ab1859dbf73191617b57; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "transfer-encoding": "chunked",
     "via": "1.1 leto-b ()",
-    "x-correlationid": "Id-c9dfae692ae2172fb8677b7d 0; Id-c9dfae692be2fc61783a554c 0"
+    "x-correlationid": "Id-f8feae69211c849ca73d5234 0; Id-f8feae69221c207b7104e3d4 0"
   },
   "endpoints": [
     {
