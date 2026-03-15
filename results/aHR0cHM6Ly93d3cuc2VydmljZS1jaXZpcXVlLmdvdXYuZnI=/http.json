@@ -12,13 +12,13 @@
       "accept-ranges": "bytes",
       "age": "10",
       "cache-control": "must-revalidate, max-age=0",
-      "content-length": "19077",
+      "content-length": "19131",
       "content-type": "text/html; charset=utf-8",
-      "date": "Mon, 09 Mar 2026 16:59:26 GMT",
-      "etag": "W/\"1ce90-1squTwJZG2RmWdQlAMvdOfWnL80\"",
+      "date": "Sun, 15 Mar 2026 02:25:32 GMT",
+      "etag": "W/\"1cf7b-80vZhUS0aF0u4jOjfDJ7OXIfDGA\"",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
       "vary": "Accept-Encoding",
-      "x-varnish": "85374597 85881068",
+      "x-varnish": "101342036 103110830, 86830583",
       "connection": "close"
     }
   },
