@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln firesplash.netlify.app</pre>
-<p class="lead">Sun Mar 15 02:40:36 2026 – Sun Mar 15 02:42:18 2026<br>1 hosts scanned.
+<p class="lead">Sun Mar 22 02:25:46 2026 – Sun Mar 22 02:27:32 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -124,28 +124,28 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 <h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, Help, RPCCheck, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 22 Mar 2026 02:26:03 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01KM9NT85CEBRJF2CZGRW5W9RB
+    Content-Length: 0
+  GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 15 Mar 2026 02:40:51 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01KKQNWA3D7GZM15WHY54AM5QW
-    Content-Length: 0
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 15 Mar 2026 02:40:46 GMT
+    Date: Sun, 22 Mar 2026 02:25:58 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KKQNW56JX9JBQVNF0P90RWZX
+    X-Nf-Request-Id: 01KM9NT35AXW8NFVCH3B9M6A3E
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 15 Mar 2026 02:40:46 GMT
+    Date: Sun, 22 Mar 2026 02:25:58 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KKQNW56R8M5YSGKRQ2S0J3TH
+    X-Nf-Request-Id: 01KM9NT36CYCW25ZKPSEB9W85M
     Content-Length: 0</pre>
 </td></tr>
 <tr class="success">
@@ -164,9 +164,9 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 15 Mar 2026 02:40:51 GMT
+    Date: Sun, 22 Mar 2026 02:26:03 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KKQNWA7XTBB7FQSYTEBX08N5
+    X-Nf-Request-Id: 01KM9NT8E01EZG6Z4GRMK46P95
     Content-Length: 0
   GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
@@ -175,15 +175,15 @@
     Request
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 15 Mar 2026 02:40:51 GMT
+    Date: Sun, 22 Mar 2026 02:26:03 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KKQNWA4JER3382XKYYVBAP98
+    X-Nf-Request-Id: 01KM9NT873SQKAJF7N7VPJXZFN
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 15 Mar 2026 02:40:51 GMT
+    Date: Sun, 22 Mar 2026 02:26:03 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KKQNWA69E0M7C0S14V93YZB2
+    X-Nf-Request-Id: 01KM9NT8AJ3XBH1JPM84MSA6JS
     Content-Length: 0</pre>
 </td></tr>
 </tbody>
