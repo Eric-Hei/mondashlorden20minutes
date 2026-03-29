@@ -10,14 +10,14 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "accept-ranges": "bytes",
-      "age": "68",
+      "age": "70",
       "cache-control": "public,max-age=0,must-revalidate",
       "cache-status": "\"Netlify Edge\"; hit",
       "content-length": "548",
       "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.supabase.in wss://*.supabase.in; media-src 'self' data: blob: https:; manifest-src 'self'",
       "content-type": "text/html; charset=UTF-8",
       "cross-origin-opener-policy": "same-origin",
-      "date": "Sun, 22 Mar 2026 02:39:31 GMT",
+      "date": "Sun, 29 Mar 2026 02:56:03 GMT",
       "etag": "\"f63f1761288ff3c96e3ce43b799a8156-ssl\"",
       "permissions-policy": "accelerometer=(), autoplay=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
       "referrer-policy": "strict-origin-when-cross-origin",
@@ -25,7 +25,7 @@
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
       "x-content-type-options": "nosniff",
       "x-frame-options": "DENY",
-      "x-nf-request-id": "01KM9PJX92KBJ6MRWZ1YV2WB6T",
+      "x-nf-request-id": "01KMVRA6KHWK9C6KHE88ZZR05D",
       "connection": "close"
     }
   },
