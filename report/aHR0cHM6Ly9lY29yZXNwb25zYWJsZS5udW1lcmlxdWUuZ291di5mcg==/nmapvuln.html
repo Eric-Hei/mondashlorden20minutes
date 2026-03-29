@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ecoresponsable.numerique.gouv.fr</pre>
-<p class="lead">Sun Mar 22 02:44:53 2026 – Sun Mar 22 02:45:11 2026<br>1 hosts scanned.
+<p class="lead">Sun Mar 29 03:00:16 2026 – Sun Mar 29 03:00:36 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>185.199.110.153</td>
+<td>185.199.109.153</td>
 <td>ecoresponsable.numerique.gouv.fr</td>
 <td>2</td>
 <td>0</td>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#185-199-110-153"><h3 class="panel-title">185.199.110.153 - ecoresponsable.numerique.gouv.fr</h3></div>
-<div class="panel-body collapse in" id="185-199-110-153">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#185-199-109-153"><h3 class="panel-title">185.199.109.153 - ecoresponsable.numerique.gouv.fr</h3></div>
+<div class="panel-body collapse in" id="185-199-109-153">
 <h4>Hostnames</h4>
 <ul>
 <li>ecoresponsable.numerique.gouv.fr (user)</li>
-<li>cdn-185-199-110-153.github.com (PTR)</li>
+<li>cdn-185-199-109-153.github.com (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -121,63 +121,78 @@
 </tr>
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  GitHub.com
-  Varnish</pre>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">GitHub.com</pre>
 <h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
+  DNSStatusRequestTCP: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+    Content-Length: 11
+    content-type: text/plain; charset=utf-8
+    x-served-by: cache-dfw-kdfw8210036
+    Request
+  DNSVersionBindReqTCP: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+    Content-Length: 11
+    content-type: text/plain; charset=utf-8
+    x-served-by: cache-dfw-kdfw8210145
+    Request
+  FourOhFourRequest: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+    Content-Length: 17
+    content-type: text/plain; charset=utf-8
+    x-served-by: cache-dfw-kdfw8210021
+    missing authority
   GetRequest: 
-    HTTP/1.1 404 Not Found
+    HTTP/1.1 400 Bad Request
     Connection: close
-    Content-Length: 9115
-    Server: GitHub.com
-    Content-Type: text/html; charset=utf-8
-    x-origin-cache: HIT
-    ETag: "69b0b3ec-239b"
-    Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
-    X-GitHub-Request-Id: 7992:165506:1DC8014:1FE85F2:69BF4A81
-    Accept-Ranges: bytes
-    Age: 3375
-    Date: Sun, 22 Mar 2026 02:45:04 GMT
-    Via: 1.1 varnish
-    X-Served-By: cache-iad-kcgs7200130-IAD
-    X-Cache: HIT
-    X-Cache-Hits: 0
-    X-Timer: S1774147505.812829,VS0,VE2
-    Vary: Accept-Encoding
-    X-Fastly-Request-ID: 2da07267b0d7618a6d4c70fecf952dd5d6cf59d8
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-    &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8"&gt;
-    &lt;meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'"&gt;
-    &lt;title&gt;Site not found &amp;middot; Git
+    Content-Length: 17
+    content-type: text/plain; charset=utf-8
+    x-served-by: cache-dfw-kdfw8210079
+    missing authority
   HTTPOptions: 
-    HTTP/1.1 405 Method Not Allowed
+    HTTP/1.1 400 Bad Request
     Connection: close
-    Content-Length: 131
-    Server: Varnish
-    Retry-After: 0
-    Accept-Ranges: bytes
-    Date: Sun, 22 Mar 2026 02:45:04 GMT
-    Via: 1.1 varnish
-    X-Served-By: cache-iad-kcgs7200070-IAD
-    X-Cache: MISS
-    X-Cache-Hits: 0
-    X-Timer: S1774147505.827484,VS0,VE0
-    X-Fastly-Request-ID: 61a6bd18fa1f0f2a9d1f6c9f4aa671d726776693
-    &lt;html&gt;
-    &lt;head&gt;&lt;title&gt;405 Not Allowed&lt;/title&gt;&lt;/head&gt;
-    &lt;body bgcolor="white"&gt;
-    &lt;center&gt;&lt;h1&gt;405 Not Allowed&lt;/h1&gt;&lt;/center&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
+    Content-Length: 17
+    content-type: text/plain; charset=utf-8
+    x-served-by: cache-dfw-kdfw8210074
+    missing authority
+  Help: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+    Content-Length: 11
+    content-type: text/plain; charset=utf-8
+    x-served-by: cache-dfw-kdfw8210140
+    Request
+  RPCCheck: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+    Content-Length: 11
+    content-type: text/plain; charset=utf-8
+    x-served-by: cache-dfw-kdfw8210080
+    Request
   RTSPRequest: 
     HTTP/1.1 400 Bad Request
     Connection: close
     Content-Length: 11
     content-type: text/plain; charset=utf-8
-    x-served-by: cache-iad-kcgs7200099
+    x-served-by: cache-dfw-kdfw8210026
+    Request
+  SSLSessionReq: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+    Content-Length: 11
+    content-type: text/plain; charset=utf-8
+    x-served-by: cache-dfw-kdfw8210060
+    Request
+  X11Probe: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+    Content-Length: 11
+    content-type: text/plain; charset=utf-8
+    x-served-by: cache-dfw-kdfw8210040
     Request</pre>
 </td></tr>
 <tr class="success">
@@ -197,49 +212,31 @@
 <h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
-    HTTP/1.1 404 Not Found
+    HTTP/1.1 400 Bad Request
     Connection: close
-    Content-Length: 9115
-    Server: GitHub.com
-    Content-Type: text/html; charset=utf-8
-    ETag: "69b0b3ec-239b"
-    Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
-    X-GitHub-Request-Id: 6F74:1BC2:1184F84:13EF122:69BF4CF3
-    Accept-Ranges: bytes
-    Age: 2755
-    Date: Sun, 22 Mar 2026 02:45:10 GMT
-    Via: 1.1 varnish
-    X-Served-By: cache-iad-kcgs7200153-IAD
-    X-Cache: HIT
-    X-Cache-Hits: 0
-    X-Timer: S1774147511.870559,VS0,VE1
-    Vary: Accept-Encoding
-    X-Fastly-Request-ID: eee9eae54be18ef8102cfb8ed75954142531146b
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-    &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8"&gt;
-    &lt;meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'"&gt;
-    &lt;title&gt;Site not found &amp;middot; GitHub Pages&lt;/title&gt;
+    Content-Length: 17
+    content-type: text/plain; charset=utf-8
+    x-served-by: cache-dfw-kdfw8210041
+    missing authority
   GetRequest: 
     HTTP/1.1 404 Not Found
     Connection: close
     Content-Length: 9115
     Server: GitHub.com
     Content-Type: text/html; charset=utf-8
-    ETag: "69b0b3ec-239b"
+    ETag: "69c463e4-239b"
     Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
-    X-GitHub-Request-Id: 2F06:DDA73:1DBB397:21D8846:69BF4FFF
+    X-GitHub-Request-Id: 4E70:22617B:151F803:16FBDD9:69C88A34
     Accept-Ranges: bytes
-    Age: 1975
-    Date: Sun, 22 Mar 2026 02:45:10 GMT
+    Age: 2973
+    Date: Sun, 29 Mar 2026 03:00:34 GMT
     Via: 1.1 varnish
-    X-Served-By: cache-iad-kcgs7200095-IAD
+    X-Served-By: cache-dfw-kdfw8210056-DFW
     X-Cache: HIT
     X-Cache-Hits: 0
-    X-Timer: S1774147511.832819,VS0,VE1
+    X-Timer: S1774753234.349101,VS0,VE2
     Vary: Accept-Encoding
-    X-Fastly-Request-ID: ebe5da4f9cf771ce5178e785c5a28ab50daf3d02
+    X-Fastly-Request-ID: 3070b543213c3f0a40523f43e7d6901cb5373bf1
     &lt;!DOCTYPE html&gt;
     &lt;html&gt;
     &lt;head&gt;
@@ -253,13 +250,13 @@
     Server: Varnish
     Retry-After: 0
     Accept-Ranges: bytes
-    Date: Sun, 22 Mar 2026 02:45:10 GMT
+    Date: Sun, 29 Mar 2026 03:00:34 GMT
     Via: 1.1 varnish
-    X-Served-By: cache-iad-kcgs7200030-IAD
+    X-Served-By: cache-dfw-kdfw8210148-DFW
     X-Cache: MISS
     X-Cache-Hits: 0
-    X-Timer: S1774147511.853864,VS0,VE0
-    X-Fastly-Request-ID: 12ecf70385b4a7ab319856b0f0c3daf77ae92335
+    X-Timer: S1774753234.433270,VS0,VE0
+    X-Fastly-Request-ID: cb34be6b2ff88718eba8a7f628ae8ce1b45e0527
     &lt;html&gt;
     &lt;head&gt;&lt;title&gt;405 Not Allowed&lt;/title&gt;&lt;/head&gt;
     &lt;body bgcolor="white"&gt;
@@ -285,7 +282,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>185.199.110.153 - ecoresponsable.numerique.gouv.fr</td>
+<td>185.199.109.153 - ecoresponsable.numerique.gouv.fr</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -295,7 +292,7 @@
 <td></td>
 </tr>
 <tr>
-<td>185.199.110.153 - ecoresponsable.numerique.gouv.fr</td>
+<td>185.199.109.153 - ecoresponsable.numerique.gouv.fr</td>
 <td>443</td>
 <td>tcp</td>
 <td>https</td>
