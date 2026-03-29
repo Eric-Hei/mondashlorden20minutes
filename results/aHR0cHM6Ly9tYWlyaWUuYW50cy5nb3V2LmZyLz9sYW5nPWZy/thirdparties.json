@@ -3,7 +3,7 @@
   "cookies": [
     {
       "name": "bot_mitigation_cookie",
-      "value": "L3WRNATPRT4I5JMGMDOB2BVNFUMRSF2GQ5DT3FBVZRY37VRISLTQY7KUC6EAA2NOBCZFUPBZQH6AE2G3M67GPFZHGQMDBWXKTA2QXZ57ASVPW===",
+      "value": "5DTLJVMVR7V443WNTHFYOMHQAO32ZQT7ODA2QPX7NR4O6L374PDDIUBMCIMTQM5ZNEQJUFRAUXEBAALDTS47NQMEWZZQVBZSVLEVYZKILXJ6A===",
       "domain": "mairie.ants.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -18,16 +18,16 @@
   ],
   "headers": {
     "content-encoding": "br",
-    "content-security-policy": "default-src 'self';style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://storage.googleapis.com/genii-public/ https://cdn.jsdelivr.net/npm/@gouvfr/ https://genii-script.tolk.ai https://genii-messages-01.tolk.ai https://genii-messages-02.tolk.ai https://genii-messages-03.tolk.ai https://genii-messages-04.tolk.ai https://genii-messages-05.tolk.ai https://genii-messages-06.tolk.ai;script-src 'self' https://*.ants.gouv.fr https://gva.et-gv.fr 'nonce-1f97c85d-4364-454e-ae26-207b92e05283' https://captcha.liveidentity.com https://cdn.woopic.com/ https://cake.cdn.s.woopic.com/ https://genii-script.tolk.ai https://genii-messages-01.tolk.ai https://genii-messages-02.tolk.ai https://genii-messages-03.tolk.ai https://genii-messages-04.tolk.ai https://genii-messages-05.tolk.ai https://genii-messages-06.tolk.ai;frame-src 'self' https://www.youtube.com/ https://www.dailymotion.com/ https://player.vimeo.com/;connect-src 'self' https://geo.api.gouv.fr https://*.ants.gouv.fr https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai wss://genii-messages-03.tolk.ai wss://genii-messages-04.tolk.ai https://api.ipify.org https://captcha.liveidentity.com;font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/npm/@gouvfr/ data:;img-src 'self' https: http: data:;media-src 'self' https://captcha.liveidentity.com;object-src 'none';base-uri 'self';form-action 'self'\nframe-ancestors 'self'",
+    "content-security-policy": "default-src 'self';style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://storage.googleapis.com/genii-public/ https://cdn.jsdelivr.net/npm/@gouvfr/ https://genii-script.tolk.ai https://genii-messages-01.tolk.ai https://genii-messages-02.tolk.ai https://genii-messages-03.tolk.ai https://genii-messages-04.tolk.ai https://genii-messages-05.tolk.ai https://genii-messages-06.tolk.ai;script-src 'self' https://*.ants.gouv.fr https://gva.et-gv.fr 'nonce-54bd39e2-832a-4d26-bb8f-70be19a3b469' https://captcha.liveidentity.com https://cdn.woopic.com/ https://cake.cdn.s.woopic.com/ https://genii-script.tolk.ai https://genii-messages-01.tolk.ai https://genii-messages-02.tolk.ai https://genii-messages-03.tolk.ai https://genii-messages-04.tolk.ai https://genii-messages-05.tolk.ai https://genii-messages-06.tolk.ai;frame-src 'self' https://www.youtube.com/ https://www.dailymotion.com/ https://player.vimeo.com/;connect-src 'self' https://geo.api.gouv.fr https://*.ants.gouv.fr https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai wss://genii-messages-03.tolk.ai wss://genii-messages-04.tolk.ai https://api.ipify.org https://captcha.liveidentity.com;font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/npm/@gouvfr/ data:;img-src 'self' https: http: data:;media-src 'self' https://captcha.liveidentity.com;object-src 'none';base-uri 'self';form-action 'self'\nframe-ancestors 'self'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 22 Mar 2026 02:25:27 GMT",
-    "etag": "W/\"ec0e4-r2duckQ8eiuSC8W79RXOjCYNTng\"",
+    "date": "Sun, 29 Mar 2026 02:41:08 GMT",
+    "etag": "W/\"ece30-3F6AgHX2KMawconNt2a5gTcc6h4\"",
     "permissions-policy": "geolocation=(self), autoplay=(), camera=(), fullscreen=(), microphone=(), payment=()\ncamera=(), geolocation=(), microphone=()",
     "referrer-policy": "strict-origin-when-cross-origin\nstrict-origin-when-cross-origin",
     "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff\nnosniff",
-    "x-cp-via": "C2-5850fd27-40c1c23b",
+    "x-cp-via": "C2-84fc7c87-7324c81b",
     "x-frame-options": "SAMEORIGIN\nSAMEORIGIN",
     "x-xss-protection": "0\n1; mode=block"
   },
