@@ -360,7 +360,7 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "66 >= 30 days"
+              "finding"      : "59 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -521,7 +521,7 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1774147159"
+              "finding"      : "1774752884"
           }
 ,         {
               "id"           : "HTTP_headerAge",
@@ -577,7 +577,7 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.109.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kcgs7200143-IAD"
+              "finding"      : "cache-dfw-kdfw8210036-DFW"
           }
 ,         {
               "id"           : "Cache-Control",
@@ -1447,7 +1447,7 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "66 >= 30 days"
+              "finding"      : "59 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1608,7 +1608,7 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1774147274"
+              "finding"      : "1774752999"
           }
 ,         {
               "id"           : "HTTP_headerAge",
@@ -1664,7 +1664,7 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.110.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kcgs7200119-IAD"
+              "finding"      : "cache-dfw-kdfw8210079-DFW"
           }
 ,         {
               "id"           : "Cache-Control",
@@ -2534,7 +2534,7 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "66 >= 30 days"
+              "finding"      : "59 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -2688,21 +2688,21 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+244 seconds from localtime"
+              "finding"      : "+242 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1774147389"
+              "finding"      : "1774753113"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "244 seconds"
+              "finding"      : "242 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -2751,7 +2751,7 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kcgs7200148-IAD"
+              "finding"      : "cache-dfw-kdfw8210151-DFW"
           }
 ,         {
               "id"           : "Cache-Control",
@@ -3265,6 +3265,6 @@
               "ip"           : "ecoresponsable.numerique.gouv.fr/185.199.111.153",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "349"
+              "finding"      : "346"
           }
 ]

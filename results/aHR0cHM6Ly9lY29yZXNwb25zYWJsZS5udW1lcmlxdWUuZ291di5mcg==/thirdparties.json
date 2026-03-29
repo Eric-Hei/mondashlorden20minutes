@@ -3,10 +3,10 @@
   "cookies": [
     {
       "name": "_pk_id.281.b6ea",
-      "value": "9ad6e1e1355153ba.1774147135.",
+      "value": "f8ed9e032952d7b7.1774752859.",
       "domain": "ecoresponsable.numerique.gouv.fr",
       "path": "/",
-      "expires": 1808102335,
+      "expires": 1808708059,
       "size": 43,
       "httpOnly": false,
       "secure": false,
@@ -21,7 +21,7 @@
       "value": "1",
       "domain": "ecoresponsable.numerique.gouv.fr",
       "path": "/",
-      "expires": 1774148934,
+      "expires": 1774754658,
       "size": 17,
       "httpOnly": false,
       "secure": false,
@@ -35,30 +35,30 @@
   "headers": {
     "accept-ranges": "bytes",
     "access-control-allow-origin": "*",
-    "age": "82",
+    "age": "43",
     "cache-control": "max-age=600",
     "content-encoding": "gzip",
     "content-length": "7529",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 22 Mar 2026 02:38:54 GMT",
+    "date": "Sun, 29 Mar 2026 02:54:18 GMT",
     "etag": "W/\"69bd2399-83ab\"",
-    "expires": "Sun, 22 Mar 2026 02:42:50 GMT",
+    "expires": "Sun, 29 Mar 2026 03:02:52 GMT",
     "last-modified": "Fri, 20 Mar 2026 10:38:17 GMT",
     "server": "GitHub.com",
     "vary": "Accept-Encoding",
     "via": "1.1 varnish",
     "x-cache": "HIT",
     "x-cache-hits": "2",
-    "x-fastly-request-id": "7263fdc7616d7e7661ff94d809a58c7f2ff6a002",
-    "x-github-request-id": "C1AE:1C62CC:C9EFCD:E06626:69BF54D2",
+    "x-fastly-request-id": "d6e4263bf979456938a4494bc7804198bb998ee8",
+    "x-github-request-id": "5E40:12FB5A:157BA69:17697BA:69C89404",
     "x-proxy-cache": "MISS",
-    "x-served-by": "cache-iad-kcgs7200039-IAD",
-    "x-timer": "S1774147134.079459,VS0,VE0"
+    "x-served-by": "cache-dfw-kdfw8210148-DFW",
+    "x-timer": "S1774752858.241557,VS0,VE0"
   },
   "endpoints": [
     {
       "hostname": "ecoresponsable.numerique.gouv.fr",
-      "ip": "185.199.110.153",
+      "ip": "185.199.111.153",
       "geoip": {
         "continent": {
           "code": "NA",
