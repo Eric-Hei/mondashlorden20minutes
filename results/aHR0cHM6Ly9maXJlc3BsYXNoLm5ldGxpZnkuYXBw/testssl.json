@@ -360,7 +360,7 @@
               "ip"           : "firesplash.netlify.app/98.84.224.111",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "355 >= 60 days"
+              "finding"      : "348 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -514,21 +514,21 @@
               "ip"           : "firesplash.netlify.app/98.84.224.111",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+13 seconds from localtime"
+              "finding"      : "+12 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "firesplash.netlify.app/98.84.224.111",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1774752073"
+              "finding"      : "1775356979"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "firesplash.netlify.app/98.84.224.111",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "13 seconds"
+              "finding"      : "12 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1447,7 +1447,7 @@
               "ip"           : "firesplash.netlify.app/18.208.88.157",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "355 >= 60 days"
+              "finding"      : "348 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1601,21 +1601,21 @@
               "ip"           : "firesplash.netlify.app/18.208.88.157",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+50 seconds from localtime"
+              "finding"      : "+48 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "firesplash.netlify.app/18.208.88.157",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1774752110"
+              "finding"      : "1775357015"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "firesplash.netlify.app/18.208.88.157",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "50 seconds"
+              "finding"      : "48 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2178,6 +2178,6 @@
               "ip"           : "firesplash.netlify.app/18.208.88.157",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "77"
+              "finding"      : "75"
           }
 ]
