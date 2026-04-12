@@ -9,15 +9,15 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 05 Apr 2026 02:43:16 GMT",
+      "date": "Sun, 12 Apr 2026 02:47:36 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=RYNFY7OZHXB4QNPQM5NH57ZU2RRKXMGXA7GZJO2ZOTVBDEVS5CWUTRGBKGG5FXFZAS6SOHWTSW2UMXI24PHTLDGHFQZLUHE4Z2ZIHXY7CV6C67XKV3GQ====; Path=/"
+        "bot_mitigation_cookie=IMOMF44LDJK4JVTXPKZMST3X634KNDJUP452E3R2PRRDNFHLEPSQ7HWQMRWP45UYMSSUYLFQ3SDCX65JRFDLYOKOXY7NZZHA5TAHKFMKXGQ7M3NZJ6VQ====; Path=/"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "205",
-      "x-cp-via": "C3-144d0b58-dd9e3bf8",
+      "content-length": "207",
+      "x-cp-via": "C3-a5e0f668-dd9e3bf8",
       "connection": "close"
     }
   },
@@ -57,7 +57,7 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-all-redirects-preloaded",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
       "destination": "https://mairie.ants.gouv.fr/?lang=fr",
       "redirects": true,
