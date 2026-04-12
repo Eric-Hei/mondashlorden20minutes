@@ -37,7 +37,7 @@
             content: "\e080"; /* glyphicon-chevron-right */
           }
         </style>
-<title>Scan Report Nmap 7.92</title>
+<title>Scan Report Nmap 7.95</title>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top"><div class="container-fluid">
@@ -51,10 +51,10 @@
 </ul></div>
 </div></nav><div class="container">
 <div class="jumbotron">
-<h1>Scan Report<br><small>Nmap 7.92</small>
+<h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln firesplash.netlify.app</pre>
-<p class="lead">Sun Apr  5 02:44:01 2026 – Sun Apr  5 02:45:43 2026<br>1 hosts scanned.
+<p class="lead">Sun Apr 12 02:49:30 2026 – Sun Apr 12 02:50:12 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -115,76 +115,86 @@
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">http</td>
-<td title="Product">Netlify</td>
+<td title="Product">Golang net/http server</td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
-<h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, Help, RPCCheck, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 12 Apr 2026 02:49:40 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01KNZSGK3BR58HFVYN0PAKTKEV
+    Content-Length: 0
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 05 Apr 2026 02:44:16 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01KNDRDN2TCGPSS0B61WQNM27T
-    Content-Length: 0
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 05 Apr 2026 02:44:11 GMT
+    Date: Sun, 12 Apr 2026 02:49:40 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KNDRDG5SPWETTKXY92NX7P2H
+    X-Nf-Request-Id: 01KNZSGJYXD41BT5HN9E5RTXBF
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 05 Apr 2026 02:44:11 GMT
+    Date: Sun, 12 Apr 2026 02:49:40 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KNDRDG60VFVNFB27C5SHA57N
-    Content-Length: 0</pre>
+    X-Nf-Request-Id: 01KNZSGK0VZ9E071ZKXDBRK6PB
+    Content-Length: 0
+  OfficeScan: 
+    HTTP/1.1 400 Bad Request: missing required Host header
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request: missing required Host header</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">https</td>
-<td title="Product">Netlify</td>
+<td title="Service">http</td>
+<td title="Product">Golang net/http server</td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
-<h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 05 Apr 2026 02:44:16 GMT
+    Date: Sun, 12 Apr 2026 02:49:46 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KNDRDN7A2DCY9CMFGJAG81A6
+    X-Nf-Request-Id: 01KNZSGR8KQ6H8J6SRT0DSWH71
     Content-Length: 0
-  GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 05 Apr 2026 02:44:16 GMT
+    Date: Sun, 12 Apr 2026 02:49:45 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KNDRDN40BA6BRDZ911GHWX5Y
+    X-Nf-Request-Id: 01KNZSGR12PXE6XDK95S23X48E
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 05 Apr 2026 02:44:16 GMT
+    Date: Sun, 12 Apr 2026 02:49:45 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KNDRDN5QAE9X4RZSYMNNVCZH
-    Content-Length: 0</pre>
+    X-Nf-Request-Id: 01KNZSGR4KMF24M6J92X0808NA
+    Content-Length: 0
+  OfficeScan: 
+    HTTP/1.1 400 Bad Request: missing required Host header
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request: missing required Host header</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
 </tbody>
 </table></div>
@@ -208,19 +218,19 @@
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
-<td>Netlify</td>
+<td>Golang net/http server</td>
 <td></td>
-<td></td>
+<td>cpe:/a:golang:go</td>
 <td></td>
 </tr>
 <tr>
 <td>18.208.88.157 - firesplash.netlify.app</td>
 <td>443</td>
 <td>tcp</td>
-<td>https</td>
-<td>Netlify</td>
+<td>http</td>
+<td>Golang net/http server</td>
 <td></td>
-<td></td>
+<td>cpe:/a:golang:go</td>
 <td></td>
 </tr>
 </tbody>
