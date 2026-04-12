@@ -2,8 +2,22 @@
   "trackers": [],
   "cookies": [
     {
+      "name": "TS01c3b0f5026",
+      "value": "01c5582115fcca423da4852aff8126fd9ad494984e7d9d0bc5f70d66c93800b6a28c95f34a0a587ca8b2640484273b8770262882822f4b6dad9d21975acdb9f8b1aff82d1f",
+      "domain": ".elisa.service-civique.gouv.fr",
+      "path": "/",
+      "expires": -1,
+      "size": 151,
+      "httpOnly": true,
+      "secure": true,
+      "session": true,
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    },
+    {
       "name": "TS01c3b0f5",
-      "value": "01b74c0fdd3f866b2b356dbf36e2a45501cca2f9cc2cd970341184e6d0ce08be73b72ee1b115c1f9eef8848d958dda31551c3fdbec",
+      "value": "01b74c0fdd86570fda0847c535ebe76e5d4c748ebfcf7a6066745ab413e3a1f6f8c6b424806fbe9139cae33d869481b00d581cd8e0",
       "domain": ".elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -17,7 +31,7 @@
     },
     {
       "name": "api-gateway-8380",
-      "value": "169351084.48160.0000",
+      "value": "186128300.48160.0000",
       "domain": "elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -49,29 +63,21 @@
     "connection": "close",
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 05 Apr 2026 02:39:34 GMT",
+    "date": "Sun, 12 Apr 2026 02:44:22 GMT",
     "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
     "max-forwards": "20",
     "pragma": "no-cache",
-    "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=186128300.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd3f866b2b356dbf36e2a45501cca2f9cc2cd970341184e6d0ce08be73b72ee1b115c1f9eef8848d958dda31551c3fdbec; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
+    "set-cookie": "api-gateway-8380=186128300.48160.0000; path=/; Httponly\nciviq=186128300.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd86570fda0847c535ebe76e5d4c748ebfcf7a6066745ab413e3a1f6f8c6b424806fbe9139cae33d869481b00d581cd8e0; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly\nTS01c3b0f5026=01c5582115fcca423da4852aff8126fd9ad494984e7d9d0bc5f70d66c93800b6a28c95f34a0a587ca8b2640484273b8770262882822f4b6dad9d21975acdb9f8b1aff82d1f; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "transfer-encoding": "chunked",
     "via": "1.1 leto-p ()",
-    "x-correlationid": "Id-66cbd1697a68199d41046005 0; Id-66cbd169d755a6d6a27e53fc 0"
+    "x-correlationid": "Id-0607db69e25248c5daf89620 0; Id-0607db69e3529effe614eed3 0"
   },
   "endpoints": [
     {
       "hostname": "elisa.service-civique.gouv.fr",
       "ip": "217.109.233.83",
       "geoip": {
-        "city": {
-          "geoname_id": 3038698,
-          "names": {
-            "en": "Acigné",
-            "fr": "Acigné",
-            "zh-CN": "阿西涅"
-          }
-        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -103,12 +109,9 @@
         },
         "location": {
           "accuracy_radius": 200,
-          "latitude": 48.131,
-          "longitude": -1.5349,
+          "latitude": 44.8412,
+          "longitude": -0.5806,
           "time_zone": "Europe/Paris"
-        },
-        "postal": {
-          "code": "35690"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -127,30 +130,11 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 3030293,
-            "iso_code": "BRE",
+            "geoname_id": 11071620,
+            "iso_code": "NAQ",
             "names": {
-              "de": "Bretagne",
-              "en": "Brittany",
-              "es": "Bretaña",
-              "fr": "Bretagne",
-              "ja": "ブルターニュ地域圏",
-              "pt-BR": "Bretanha",
-              "ru": "Бретань"
-            }
-          },
-          {
-            "geoname_id": 3012849,
-            "iso_code": "35",
-            "names": {
-              "de": "Ille-et-Vilaine",
-              "en": "Ille-et-Vilaine",
-              "es": "Ille y Vilaine",
-              "fr": "Ille-et-Vilaine",
-              "ja": "イル＝エ＝ヴィレーヌ県",
-              "pt-BR": "Ille-et-Vilaine",
-              "ru": "Иль и Вилен",
-              "zh-CN": "伊勒-维莱讷省"
+              "en": "Nouvelle-Aquitaine",
+              "fr": "Nouvelle-Aquitaine"
             }
           }
         ]
