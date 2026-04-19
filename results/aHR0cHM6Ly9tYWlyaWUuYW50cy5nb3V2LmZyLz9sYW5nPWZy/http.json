@@ -9,15 +9,15 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 12 Apr 2026 02:47:36 GMT",
+      "date": "Sun, 19 Apr 2026 02:53:31 GMT",
       "set-cookie": [
-        "bot_mitigation_cookie=IMOMF44LDJK4JVTXPKZMST3X634KNDJUP452E3R2PRRDNFHLEPSQ7HWQMRWP45UYMSSUYLFQ3SDCX65JRFDLYOKOXY7NZZHA5TAHKFMKXGQ7M3NZJ6VQ====; Path=/"
+        "bot_mitigation_cookie=5LUHRXHPHPQW7JJKL24FBIP5PVSBGRKJLBQBX47FFGZKBYTT3ZKTPNLCVRIYV4JS23YTX3I2QQDSU3BMV4MH474RU6A6VXD5EPXSJGX6RGWLXTUD3BUA====; Path=/; SameSite=lax"
       ],
       "content-type": "text/html",
       "cache-control": "no-store",
       "vary": "Accept-Encoding",
-      "content-length": "207",
-      "x-cp-via": "C3-a5e0f668-dd9e3bf8",
+      "content-length": "206",
+      "x-cp-via": "C3-a5e0f668-a5c9ba87",
       "connection": "close"
     }
   },
@@ -42,7 +42,8 @@
         "bot_mitigation_cookie": {
           "domain": "mairie.ants.gouv.fr",
           "path": "/",
-          "port": null
+          "port": null,
+          "samesite": "lax"
         }
       },
       "sameSite": false
