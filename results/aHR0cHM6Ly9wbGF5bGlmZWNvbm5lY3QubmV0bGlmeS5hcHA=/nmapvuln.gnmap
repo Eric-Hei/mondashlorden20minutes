@@ -1,4 +1,4 @@
-# Nmap 7.95 scan initiated Sun Apr 19 03:07:50 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln playlifeconnect.netlify.app
-Host: 18.208.88.157 (ec2-18-208-88-157.compute-1.amazonaws.com)	Status: Up
-Host: 18.208.88.157 (ec2-18-208-88-157.compute-1.amazonaws.com)	Ports: 80/open/tcp//http//Golang net|http server/, 443/open/tcp//ssl|http//Golang net|http server/	Ignored State: filtered (998)
-# Nmap done at Sun Apr 19 03:08:31 2026 -- 1 IP address (1 host up) scanned in 41.12 seconds
+# Nmap 7.95 scan initiated Sun Apr 26 03:10:49 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln playlifeconnect.netlify.app
+Host: 13.52.188.95 (ec2-13-52-188-95.us-west-1.compute.amazonaws.com)	Status: Up
+Host: 13.52.188.95 (ec2-13-52-188-95.us-west-1.compute.amazonaws.com)	Ports: 80/open/tcp//http//Golang net|http server/, 443/open/tcp//ssl|http//Golang net|http server/	Ignored State: filtered (998)
+# Nmap done at Sun Apr 26 03:11:29 2026 -- 1 IP address (1 host up) scanned in 40.37 seconds
