@@ -54,14 +54,14 @@
 <h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln firesplash.netlify.app</pre>
-<p class="lead">Sun Apr 19 02:53:29 2026 – Sun Apr 19 02:54:12 2026<br>1 hosts scanned.
-              1 hosts up.
-              0 hosts down.
+<p class="lead">Sun Apr 26 02:57:09 2026 – Sun Apr 26 02:57:12 2026<br>1 hosts scanned.
+              0 hosts up.
+              1 hosts down.
             </p>
 <div class="progress">
-<div class="progress-bar progress-bar-success" style="width:100%;">1<span class="sr-only"></span>
+<div class="progress-bar progress-bar-success" style="width:0%;">0<span class="sr-only"></span>
 </div>
-<div class="progress-bar progress-bar-danger" style="width:0%;">0<span class="sr-only"></span>
+<div class="progress-bar progress-bar-danger" style="width:100%;">1<span class="sr-only"></span>
 </div>
 </div>
 </div>
@@ -74,13 +74,7 @@
 <th>TCP (open)</th>
 <th>UDP (open)</th>
 </tr></thead>
-<tbody><tr>
-<td><span class="label label-success">up</span></td>
-<td>18.208.88.157</td>
-<td>firesplash.netlify.app</td>
-<td>2</td>
-<td>0</td>
-</tr></tbody>
+<tbody></tbody>
 </table></div>
 <script>
             $(document).ready(function() {
@@ -90,116 +84,6 @@
               "lengthMenu": [ [10, 25, 50, 100, -1], [10, 25, 50, 100, "All"] ]
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
-<div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#18-208-88-157"><h3 class="panel-title">18.208.88.157 - firesplash.netlify.app</h3></div>
-<div class="panel-body collapse in" id="18-208-88-157">
-<h4>Hostnames</h4>
-<ul>
-<li>firesplash.netlify.app (user)</li>
-<li>ec2-18-208-88-157.compute-1.amazonaws.com (PTR)</li>
-</ul>
-<h4>Ports</h4>
-<div class="table-responsive"><table class="table table-bordered">
-<thead><tr>
-<th>Port</th>
-<th>Protocol</th>
-<th>State<br>Reason</th>
-<th>Service</th>
-<th>Product</th>
-<th>Version</th>
-<th>Extra Info</th>
-</tr></thead>
-<tbody>
-<tr class="success">
-<td title="Port">80</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http</td>
-<td title="Product">Golang net/http server</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Apr 2026 02:53:39 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01KPHTGXGS8BHTXGY5ZQ5D06JH
-    Content-Length: 0
-  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
-    HTTP/1.1 400 Bad Request
-    Content-Type: text/plain; charset=utf-8
-    Connection: close
-    Request
-  GetRequest: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Apr 2026 02:53:39 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01KPHTGX9XHXN2DWTDVF6WCMDQ
-    Content-Length: 0
-  HTTPOptions: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Apr 2026 02:53:39 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01KPHTGXCW4XKPJ28R3B1AG6TB
-    Content-Length: 0
-  OfficeScan: 
-    HTTP/1.1 400 Bad Request: missing required Host header
-    Content-Type: text/plain; charset=utf-8
-    Connection: close
-    Request: missing required Host header</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
-</td></tr>
-<tr class="success">
-<td title="Port">443</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http</td>
-<td title="Product">Golang net/http server</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
-</tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Apr 2026 02:53:45 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01KPHTH2RXCKM3974G11PCVAMJ
-    Content-Length: 0
-  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
-    HTTP/1.1 400 Bad Request
-    Content-Type: text/plain; charset=utf-8
-    Connection: close
-    Request
-  GetRequest: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Apr 2026 02:53:44 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01KPHTH2EWRNFB9TX6E493S4EX
-    Content-Length: 0
-  HTTPOptions: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Apr 2026 02:53:44 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01KPHTH2KA6Y8CA57TWN9EN0YK
-    Content-Length: 0
-  OfficeScan: 
-    HTTP/1.1 400 Bad Request: missing required Host header
-    Content-Type: text/plain; charset=utf-8
-    Connection: close
-    Request: missing required Host header</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
-</td></tr>
-</tbody>
-</table></div>
-</div>
-</div>
 <h2 id="openservices" class="target">Open Services</h2>
 <div class="table-responsive"><table id="table-services" class="table table-striped dataTable" role="grid">
 <thead><tr>
@@ -212,28 +96,7 @@
 <th>CPE</th>
 <th>Extra info</th>
 </tr></thead>
-<tbody>
-<tr>
-<td>18.208.88.157 - firesplash.netlify.app</td>
-<td>80</td>
-<td>tcp</td>
-<td>http</td>
-<td>Golang net/http server</td>
-<td></td>
-<td>cpe:/a:golang:go</td>
-<td></td>
-</tr>
-<tr>
-<td>18.208.88.157 - firesplash.netlify.app</td>
-<td>443</td>
-<td>tcp</td>
-<td>http</td>
-<td>Golang net/http server</td>
-<td></td>
-<td>cpe:/a:golang:go</td>
-<td></td>
-</tr>
-</tbody>
+<tbody></tbody>
 </table></div>
 <script>
             $(document).ready(function() {
