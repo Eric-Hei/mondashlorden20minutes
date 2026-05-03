@@ -1,0 +1,790 @@
+[
+  [
+    {
+      "template": "dns/aaaa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/aaaa-fingerprint",
+      "template-id": "aaaa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/aaaa-fingerprint.yaml",
+      "info": {
+        "name": "AAAA Record - IPv6 Detection",
+        "author": [
+          "rxerium"
+        ],
+        "tags": [
+          "dns",
+          "aaaa",
+          "ipv6",
+          "discovery"
+        ],
+        "description": "An AAAA record was detected. AAAA records are used to map domain names to IPv6 addresses.\n",
+        "reference": [
+          "https://www.cloudflare.com/learning/dns/dns-records/dns-aaaa-record/",
+          "https://en.wikipedia.org/wiki/ipv6_address"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "firesplash.netlify.app.",
+      "matched-at": "firesplash.netlify.app",
+      "extracted-results": [
+        "2600:1f18:16e:df01::259",
+        "2600:1f18:16e:df01::258"
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 30763\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;firesplash.netlify.app.\tIN\t AAAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 30763\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;firesplash.netlify.app.\tIN\t AAAA\n\n;; ANSWER SECTION:\nfiresplash.netlify.app.\t311\tIN\tAAAA\t2600:1f18:16e:df01::259\nfiresplash.netlify.app.\t311\tIN\tAAAA\t2600:1f18:16e:df01::258\n",
+      "timestamp": "2026-05-03T03:08:41.028538445Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "info": {
+        "name": "CAA Record",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "caa",
+          "discovery"
+        ],
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "reference": [
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "firesplash.netlify.app.",
+      "matched-at": "firesplash.netlify.app",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 30478\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;firesplash.netlify.app.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 30478\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;firesplash.netlify.app.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nnetlify.app.\t300\tIN\tSOA\tdns1.p01.nsone.net. hostmaster.nsone.net. 1664979656 43200 7200 1209600 300\n",
+      "timestamp": "2026-05-03T03:08:42.025240586Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/wildcard-dns-detect.yaml",
+      "template-url": "https://templates.nuclei.sh/public/wildcard-dns-detect",
+      "template-id": "wildcard-dns-detect",
+      "template-path": "/home/runner/nuclei-templates/dns/wildcard-dns-detect.yaml",
+      "info": {
+        "name": "Wildcard DNS Configuration - Detection",
+        "author": [
+          "rxerium"
+        ],
+        "tags": [
+          "dns",
+          "wildcard",
+          "discovery"
+        ],
+        "description": "A wildcard DNS configuration was detected. Wildcard DNS records can resolve all subdomains to the same IP address, which may indicate a catch-all configuration.\n",
+        "reference": [
+          "https://en.wikipedia.org/wiki/wildcard_dns_record",
+          "https://developers.cloudflare.com/dns/manage-dns-records/reference/wildcard-dns-records/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 2
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "firesplash.netlify.app.",
+      "matched-at": "3DCEYzij0ctR5Zdx3VBsrJTpxMp-3DCEYzij0ctR5Zdx3VBsrJTpxMp.firesplash.netlify.app",
+      "extracted-results": [
+        "18.208.88.157",
+        "98.84.224.111"
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 15875\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;3DCEYzij0ctR5Zdx3VBsrJTpxMp-3DCEYzij0ctR5Zdx3VBsrJTpxMp.firesplash.netlify.app.\tIN\t A\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 15875\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;3DCEYzij0ctR5Zdx3VBsrJTpxMp-3DCEYzij0ctR5Zdx3VBsrJTpxMp.firesplash.netlify.app.\tIN\t A\n\n;; ANSWER SECTION:\n3DCEYzij0ctR5Zdx3VBsrJTpxMp-3DCEYzij0ctR5Zdx3VBsrJTpxMp.firesplash.netlify.app.\t120\tIN\tA\t18.208.88.157\n3DCEYzij0ctR5Zdx3VBsrJTpxMp-3DCEYzij0ctR5Zdx3VBsrJTpxMp.firesplash.netlify.app.\t120\tIN\tA\t98.84.224.111\n",
+      "timestamp": "2026-05-03T03:08:42.05833628Z",
+      "matcher-status": true
+    },
+    {
+      "template": "http/exposures/tokens/generic/jwt-token.yaml",
+      "template-url": "https://templates.nuclei.sh/public/jwt-token",
+      "template-id": "jwt-token",
+      "template-path": "/home/runner/nuclei-templates/http/exposures/tokens/generic/jwt-token.yaml",
+      "info": {
+        "name": "JWT Token Disclosure",
+        "author": [
+          "ice3man"
+        ],
+        "tags": [
+          "exposure",
+          "token",
+          "generic",
+          "vuln"
+        ],
+        "severity": "unknown",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "http",
+      "host": "https://firesplash.netlify.app",
+      "matched-at": "https://firesplash.netlify.app",
+      "extracted-results": [
+        "eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTcyLjIxMi4xNjAuNTAiLCJhdWQiOlsic2VjLWNoYWxsZW5nZS5uZXRsaWZ5LmNvbSJdLCJleHAiOjE3Nzc3Nzc3NTYsIm5iZiI6MTc3Nzc3NzcxNiwiaWF0IjoxNzc3Nzc3NzI2LCJjaCI6ImVlNGU3NjQwOWYxZWU2NTMiLCJkaWYiOjE2LCJwb3ciOnRydWV9.Mb0SHjI-UJ0bd8Vn3oCl-Nvi3-ut8H49BwriXhiLJEY"
+      ],
+      "request": "GET / HTTP/1.1\r\nHost: firesplash.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 03 May 2026 03:08:46 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KQNWYMWM63K33H7J475J5MZZ\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>firesplash.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>firesplash.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KQNWYMWM63K33H7J475J5MZZ</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"ee4e76409f1ee653\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTcyLjIxMi4xNjAuNTAiLCJhdWQiOlsic2VjLWNoYWxsZW5nZS5uZXRsaWZ5LmNvbSJdLCJleHAiOjE3Nzc3Nzc3NTYsIm5iZiI6MTc3Nzc3NzcxNiwiaWF0IjoxNzc3Nzc3NzI2LCJjaCI6ImVlNGU3NjQwOWYxZWU2NTMiLCJkaWYiOjE2LCJwb3ciOnRydWV9.Mb0SHjI-UJ0bd8Vn3oCl-Nvi3-ut8H49BwriXhiLJEY\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:08:46.389660349Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://firesplash.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "content-security-policy",
+      "type": "http",
+      "host": "https://firesplash.netlify.app",
+      "matched-at": "https://firesplash.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: firesplash.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 03 May 2026 03:08:55 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KQNWYXH1H9PP20AM9F60VF6Z\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>firesplash.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>firesplash.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KQNWYXH1H9PP20AM9F60VF6Z</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"ea6ef14957d7be79\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTcyLjIxMi4xNjAuNTAiLCJhdWQiOlsic2VjLWNoYWxsZW5nZS5uZXRsaWZ5LmNvbSJdLCJleHAiOjE3Nzc3Nzc3NjUsIm5iZiI6MTc3Nzc3NzcyNSwiaWF0IjoxNzc3Nzc3NzM1LCJjaCI6ImVhNmVmMTQ5NTdkN2JlNzkiLCJkaWYiOjE2LCJwb3ciOnRydWV9.G_aL2TBPDzQM7w5puK9POrXuPmx8HBE2T5ZjmCPqUio\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:08:55.21662287Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://firesplash.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "permissions-policy",
+      "type": "http",
+      "host": "https://firesplash.netlify.app",
+      "matched-at": "https://firesplash.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: firesplash.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 03 May 2026 03:08:55 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KQNWYXH1H9PP20AM9F60VF6Z\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>firesplash.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>firesplash.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KQNWYXH1H9PP20AM9F60VF6Z</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"ea6ef14957d7be79\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTcyLjIxMi4xNjAuNTAiLCJhdWQiOlsic2VjLWNoYWxsZW5nZS5uZXRsaWZ5LmNvbSJdLCJleHAiOjE3Nzc3Nzc3NjUsIm5iZiI6MTc3Nzc3NzcyNSwiaWF0IjoxNzc3Nzc3NzM1LCJjaCI6ImVhNmVmMTQ5NTdkN2JlNzkiLCJkaWYiOjE2LCJwb3ciOnRydWV9.G_aL2TBPDzQM7w5puK9POrXuPmx8HBE2T5ZjmCPqUio\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:08:55.216669982Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://firesplash.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-frame-options",
+      "type": "http",
+      "host": "https://firesplash.netlify.app",
+      "matched-at": "https://firesplash.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: firesplash.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 03 May 2026 03:08:55 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KQNWYXH1H9PP20AM9F60VF6Z\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>firesplash.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>firesplash.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KQNWYXH1H9PP20AM9F60VF6Z</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"ea6ef14957d7be79\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTcyLjIxMi4xNjAuNTAiLCJhdWQiOlsic2VjLWNoYWxsZW5nZS5uZXRsaWZ5LmNvbSJdLCJleHAiOjE3Nzc3Nzc3NjUsIm5iZiI6MTc3Nzc3NzcyNSwiaWF0IjoxNzc3Nzc3NzM1LCJjaCI6ImVhNmVmMTQ5NTdkN2JlNzkiLCJkaWYiOjE2LCJwb3ciOnRydWV9.G_aL2TBPDzQM7w5puK9POrXuPmx8HBE2T5ZjmCPqUio\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:08:55.216678026Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://firesplash.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-permitted-cross-domain-policies",
+      "type": "http",
+      "host": "https://firesplash.netlify.app",
+      "matched-at": "https://firesplash.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: firesplash.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 03 May 2026 03:08:55 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KQNWYXH1H9PP20AM9F60VF6Z\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>firesplash.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>firesplash.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KQNWYXH1H9PP20AM9F60VF6Z</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"ea6ef14957d7be79\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTcyLjIxMi4xNjAuNTAiLCJhdWQiOlsic2VjLWNoYWxsZW5nZS5uZXRsaWZ5LmNvbSJdLCJleHAiOjE3Nzc3Nzc3NjUsIm5iZiI6MTc3Nzc3NzcyNSwiaWF0IjoxNzc3Nzc3NzM1LCJjaCI6ImVhNmVmMTQ5NTdkN2JlNzkiLCJkaWYiOjE2LCJwb3ciOnRydWV9.G_aL2TBPDzQM7w5puK9POrXuPmx8HBE2T5ZjmCPqUio\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:08:55.216684669Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://firesplash.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "referrer-policy",
+      "type": "http",
+      "host": "https://firesplash.netlify.app",
+      "matched-at": "https://firesplash.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: firesplash.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 03 May 2026 03:08:55 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KQNWYXH1H9PP20AM9F60VF6Z\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>firesplash.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>firesplash.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KQNWYXH1H9PP20AM9F60VF6Z</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"ea6ef14957d7be79\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTcyLjIxMi4xNjAuNTAiLCJhdWQiOlsic2VjLWNoYWxsZW5nZS5uZXRsaWZ5LmNvbSJdLCJleHAiOjE3Nzc3Nzc3NjUsIm5iZiI6MTc3Nzc3NzcyNSwiaWF0IjoxNzc3Nzc3NzM1LCJjaCI6ImVhNmVmMTQ5NTdkN2JlNzkiLCJkaWYiOjE2LCJwb3ciOnRydWV9.G_aL2TBPDzQM7w5puK9POrXuPmx8HBE2T5ZjmCPqUio\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:08:55.216691442Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://firesplash.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "clear-site-data",
+      "type": "http",
+      "host": "https://firesplash.netlify.app",
+      "matched-at": "https://firesplash.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: firesplash.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 03 May 2026 03:08:55 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KQNWYXH1H9PP20AM9F60VF6Z\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>firesplash.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>firesplash.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KQNWYXH1H9PP20AM9F60VF6Z</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"ea6ef14957d7be79\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTcyLjIxMi4xNjAuNTAiLCJhdWQiOlsic2VjLWNoYWxsZW5nZS5uZXRsaWZ5LmNvbSJdLCJleHAiOjE3Nzc3Nzc3NjUsIm5iZiI6MTc3Nzc3NzcyNSwiaWF0IjoxNzc3Nzc3NzM1LCJjaCI6ImVhNmVmMTQ5NTdkN2JlNzkiLCJkaWYiOjE2LCJwb3ciOnRydWV9.G_aL2TBPDzQM7w5puK9POrXuPmx8HBE2T5ZjmCPqUio\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:08:55.21670403Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://firesplash.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-opener-policy",
+      "type": "http",
+      "host": "https://firesplash.netlify.app",
+      "matched-at": "https://firesplash.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: firesplash.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 03 May 2026 03:08:55 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KQNWYXH1H9PP20AM9F60VF6Z\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>firesplash.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>firesplash.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KQNWYXH1H9PP20AM9F60VF6Z</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"ea6ef14957d7be79\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTcyLjIxMi4xNjAuNTAiLCJhdWQiOlsic2VjLWNoYWxsZW5nZS5uZXRsaWZ5LmNvbSJdLCJleHAiOjE3Nzc3Nzc3NjUsIm5iZiI6MTc3Nzc3NzcyNSwiaWF0IjoxNzc3Nzc3NzM1LCJjaCI6ImVhNmVmMTQ5NTdkN2JlNzkiLCJkaWYiOjE2LCJwb3ciOnRydWV9.G_aL2TBPDzQM7w5puK9POrXuPmx8HBE2T5ZjmCPqUio\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:08:55.216712801Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://firesplash.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-content-type-options",
+      "type": "http",
+      "host": "https://firesplash.netlify.app",
+      "matched-at": "https://firesplash.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: firesplash.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 03 May 2026 03:08:55 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KQNWYXH1H9PP20AM9F60VF6Z\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>firesplash.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>firesplash.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KQNWYXH1H9PP20AM9F60VF6Z</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"ea6ef14957d7be79\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTcyLjIxMi4xNjAuNTAiLCJhdWQiOlsic2VjLWNoYWxsZW5nZS5uZXRsaWZ5LmNvbSJdLCJleHAiOjE3Nzc3Nzc3NjUsIm5iZiI6MTc3Nzc3NzcyNSwiaWF0IjoxNzc3Nzc3NzM1LCJjaCI6ImVhNmVmMTQ5NTdkN2JlNzkiLCJkaWYiOjE2LCJwb3ciOnRydWV9.G_aL2TBPDzQM7w5puK9POrXuPmx8HBE2T5ZjmCPqUio\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:08:55.216721893Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://firesplash.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-embedder-policy",
+      "type": "http",
+      "host": "https://firesplash.netlify.app",
+      "matched-at": "https://firesplash.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: firesplash.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 03 May 2026 03:08:55 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KQNWYXH1H9PP20AM9F60VF6Z\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>firesplash.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>firesplash.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KQNWYXH1H9PP20AM9F60VF6Z</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"ea6ef14957d7be79\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTcyLjIxMi4xNjAuNTAiLCJhdWQiOlsic2VjLWNoYWxsZW5nZS5uZXRsaWZ5LmNvbSJdLCJleHAiOjE3Nzc3Nzc3NjUsIm5iZiI6MTc3Nzc3NzcyNSwiaWF0IjoxNzc3Nzc3NzM1LCJjaCI6ImVhNmVmMTQ5NTdkN2JlNzkiLCJkaWYiOjE2LCJwb3ciOnRydWV9.G_aL2TBPDzQM7w5puK9POrXuPmx8HBE2T5ZjmCPqUio\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:08:55.216730326Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://firesplash.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-resource-policy",
+      "type": "http",
+      "host": "https://firesplash.netlify.app",
+      "matched-at": "https://firesplash.netlify.app",
+      "request": "GET / HTTP/1.1\r\nHost: firesplash.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 403 Forbidden\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 03 May 2026 03:08:55 GMT\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Nf-Request-Id: 01KQNWYXH1H9PP20AM9F60VF6Z\r\n\r\n<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content=\"width=device-width,initial-scale=1\"><title>firesplash.netlify.app</title><style>:root{--colorRgbFacetsTeal600:2 128 125;--colorTealAction:var(--colorRgbFacetsTeal600);--colorRgbFacetsNeutralLight100:246 246 247;--colorRgbFacetsNeutralLight200:233 235 237;--colorHr:var(--colorRgbFacetsNeutralLight200);--colorRgbFacetsNeutralLight700:53 58 62;--colorGrayDarkest:var(--colorRgbFacetsNeutralLight700);--colorGrayLighter:var(--colorRgbFacetsNeutralLight200);--colorGrayLightest:var(--colorRgbFacetsNeutralLight100);--colorText:var(--colorGrayDarkest);--effectShadowLightShallow:0 1px 10px 0 rgb(53 58 62 / 6%),\n          0 2px 4px 0 rgb(53 58 62 / 8%);--colorRgbFacetsNeutralDark900:6 11 16;--colorStackText:rgb(var(--colorGrayDarkest));--colorCodeText:rgb(var(--colorGrayLightest));--colorRgbFacetsNeutralLight600:84 90 97;--colorGrayDarker:var(--colorRgbFacetsNeutralLight600);--colorTextMuted:var(--colorGrayDarker)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;background:#fff;overflow-x:hidden;margin:0;padding:0;line-height:1.5;color:rgb(var(--colorText))}@media(prefers-color-scheme:dark){body{background:rgb(var(--colorRgbFacetsNeutralDark900))}}h1{margin:0;font-size:1.375rem;line-height:1}h1+p{margin-top:8px}.main{position:relative;display:flex;gap:16px;flex-direction:column;align-items:center;justify-content:space-between;min-height:100vh;width:100vw}.card{position:relative;width:75%;max-width:364px;padding:24px;background:#fff;border-radius:8px;box-shadow:var(--effectShadowLightShallow);border:1px solid rgb(var(--colorGrayLighter))}a{margin:0;font-weight:600;color:rgb(var(--colorTealAction));text-decoration-skip-ink:all;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgb(var(--colorTealAction)/.5);transition:text-decoration-color .15s ease-in-out}a:hover,a:focus-visible{text-decoration-color:rgb(var(--colorTealAction))}p:last-of-type{margin-bottom:0}hr{border:0;height:1px;background:rgb(var(--colorHr));margin-top:16px;margin-bottom:16px}.branding{font-size:.875rem;color:rgb(var(--colorTextMuted))}.inline-code{display:inline-block;background-color:var(--colorCodeText);color:var(--colorStackText);padding:4px 8px;border-radius:4px;font-size:.875rem;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;user-select:all}svg{display:block;margin-bottom:16px}.footer{font-size:.875rem;color:rgb(var(--colorTextMuted));padding-bottom:16px}.inline-code.request-id{font-size:.75rem;padding:2px 6px}</style><div class=main><div></div><div class=card><h1>firesplash.netlify.app</h1><p>We are verifying your connection.<br>This will only take a few seconds<span class=dots>...</span></p><noscript><p>Please enable Javascript to allow the check to run.</p></noscript><hr><p class=branding>Security by <a href=https://www.netlify.com/security/ target=_blank rel=\"noopener noreferrer\">Netlify</a></div><div class=footer>Challenge ID: <span class=\"inline-code request-id\"><code>01KQNWYXH1H9PP20AM9F60VF6Z</code></span></div></div><script>\n      \"use strict\";\n\n      var dots = document.querySelector(\".dots\");\n      var interval = setInterval(function () {\n        if (dots.textContent.length >= 3) {\n          dots.textContent = \"\";\n        } else {\n          dots.textContent += \".\";\n        }\n      }, 300);\n\n      function stopSpinner() {\n        if (interval) {\n          clearInterval(interval);\n          interval = null;\n        }\n      }\n\n      function showError(message) {\n        stopSpinner();\n        if (typeof message === \"string\") {\n          dots.textContent = \" Error: \" + message;\n        } else {\n          dots.textContent = \" Error\";\n        }\n        console.error(message);\n      }\n\n      \n      function leadingZeroBits(num) {\n        if (num === 0) return 32;\n        var count = 0;\n        for (var bit = 31; bit >= 0; bit--) {\n          if ((num & (1 << bit)) === 0) {\n            count += 1;\n          } else {\n            break;\n          }\n        }\n        return count;\n      }\n\n      var encoder = new TextEncoder();\n\n      async function solve(challenge, difficulty) {\n        var target = Math.min(Math.max(difficulty | 0, 0), 32);\n        var prefix = challenge + \":\";\n        var nonce = 0;\n        var yieldInterval = 1000; \n        for (;;) {\n          var data = encoder.encode(prefix + nonce);\n          var digest = await crypto.subtle.digest(\"SHA-256\", data);\n          var view = new DataView(digest);\n          var firstWord = view.getUint32(0, false);\n          if (leadingZeroBits(firstWord) >= target) {\n            return { nonce: nonce, hash: firstWord };\n          }\n          nonce += 1;\n          if (nonce % yieldInterval === 0) {\n            await new Promise(function (resolve) { setTimeout(resolve, 0); });\n          }\n        }\n      }\n\n      if (!window.crypto || !crypto.subtle || typeof TextEncoder === \"undefined\") {\n        showError(\"Browser does not support required crypto APIs.\");\n      } else {\n        var difficulty = parseInt(\"16\", 10);\n        solve(\"ea6ef14957d7be79\", difficulty)\n          .then(function (result) {\n            return fetch(\"\\/.netlify\\/submit-challenge\", {\n              method: \"POST\",\n              headers: { \"Content-Type\": \"application/json\" },\n              credentials: \"same-origin\",\n              body: JSON.stringify({\n                token: \"eyJhbGciOiJIUzI1NiIsImtpZCI6IlYrN1B4SXIvNmlaT1V0aS9QVmtGazBPYm9sQXJmdEhuVWltelVGd0UvVTgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJuZXRsaWZ5Iiwic3ViIjoiMTcyLjIxMi4xNjAuNTAiLCJhdWQiOlsic2VjLWNoYWxsZW5nZS5uZXRsaWZ5LmNvbSJdLCJleHAiOjE3Nzc3Nzc3NjUsIm5iZiI6MTc3Nzc3NzcyNSwiaWF0IjoxNzc3Nzc3NzM1LCJjaCI6ImVhNmVmMTQ5NTdkN2JlNzkiLCJkaWYiOjE2LCJwb3ciOnRydWV9.G_aL2TBPDzQM7w5puK9POrXuPmx8HBE2T5ZjmCPqUio\",\n                nonce: result.nonce,\n              }),\n            });\n          })\n          .then(function () {\n            stopSpinner();\n            location.reload();\n          })\n          .catch(function (err) {\n            showError(err);\n          });\n      }\n      \n    </script>",
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:08:55.216740559Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://firesplash.netlify.app'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/missing-sri.yaml",
+      "template-url": "https://templates.nuclei.sh/public/missing-sri",
+      "template-id": "missing-sri",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/missing-sri.yaml",
+      "info": {
+        "name": "Missing Subresource Integrity",
+        "author": [
+          "lucky0x0d",
+          "pulsesecurity.co.nz",
+          "sullo amarsct"
+        ],
+        "tags": [
+          "compliance",
+          "js",
+          "css",
+          "sri",
+          "misconfig",
+          "vuln"
+        ],
+        "description": "Checks if external script and stylesheet tags in the HTML response are missing the Subresource Integrity (SRI) attribute.\n",
+        "reference": [
+          "https://cheatsheetseries.owasp.org/cheatsheets/third_party_javascript_management_cheat_sheet.html#subresource-integrity",
+          "https://developer.mozilla.org/en-us/docs/web/security/subresource_integrity"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "http",
+      "host": "https://firesplash.netlify.app",
+      "matched-at": "https://firesplash.netlify.app/",
+      "extracted-results": [
+        "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+        "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      ],
+      "request": "GET / HTTP/1.1\r\nHost: firesplash.netlify.app\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nAge: 193\r\nCache-Control: public,max-age=0,must-revalidate\r\nCache-Status: \"Netlify Edge\"; hit\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 03 May 2026 03:09:19 GMT\r\nEtag: \"70b7a413445c55800ba31fe109f9cc0a-ssl-df\"\r\nServer: Netlify\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nVary: Accept-Encoding\r\nX-Nf-Request-Id: 01KQNWZNM6E1QV5NQQZW6M911A\r\n\r\n<!doctype html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"UTF-8\" />\n\n    <!-- Favicons -->\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\" />\n    <link rel=\"icon\" type=\"image/svg+xml\" sizes=\"16x16\" href=\"/favicon-16x16.svg\" />\n    <link rel=\"icon\" type=\"image/svg+xml\" sizes=\"32x32\" href=\"/favicon-32x32.svg\" />\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.svg\" />\n    <link rel=\"manifest\" href=\"/site.webmanifest\" />\n\n    <!-- Fallback pour anciens navigateurs -->\n    <link rel=\"shortcut icon\" href=\"/favicon.svg\" />\n\n    <!-- Meta tags -->\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta name=\"description\" content=\"FireSplash - Système d'estimation de moyens aériens pour la lutte contre les incendies\" />\n    <meta name=\"theme-color\" content=\"#DC2626\" />\n\n    <title>FireSplash - Estimation moyens aériens</title>\n\n    <!-- Leaflet CSS -->\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\" />\n    <script type=\"module\" crossorigin src=\"/assets/index-DJIhTL2-.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-jI6-RSrQ.css\">\n  </head>\n  <body>\n    <div id=\"root\"></div>\n    <script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n  </body>\n</html>",
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:09:19.955409598Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://firesplash.netlify.app/'",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/detect-ssl-issuer.yaml",
+      "template-url": "https://templates.nuclei.sh/public/ssl-issuer",
+      "template-id": "ssl-issuer",
+      "template-path": "/home/runner/nuclei-templates/ssl/detect-ssl-issuer.yaml",
+      "info": {
+        "name": "Detect SSL Certificate Issuer",
+        "author": [
+          "lingtren"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "discovery"
+        ],
+        "description": "Extract the issuer's organization from the target's certificate. Issuers are entities which sign and distribute certificates.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "firesplash.netlify.app",
+      "matched-at": "firesplash.netlify.app:443",
+      "extracted-results": [
+        "DigiCert Inc"
+      ],
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:16:07.449922695Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/ssl-dns-names.yaml",
+      "template-url": "https://templates.nuclei.sh/public/ssl-dns-names",
+      "template-id": "ssl-dns-names",
+      "template-path": "/home/runner/nuclei-templates/ssl/ssl-dns-names.yaml",
+      "info": {
+        "name": "SSL DNS Names",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "vuln"
+        ],
+        "description": "Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "firesplash.netlify.app",
+      "matched-at": "firesplash.netlify.app:443",
+      "extracted-results": [
+        "*.netlify.app",
+        "netlify.app"
+      ],
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:16:07.450094721Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/wildcard-tls.yaml",
+      "template-url": "https://templates.nuclei.sh/public/wildcard-tls",
+      "template-id": "wildcard-tls",
+      "template-path": "/home/runner/nuclei-templates/ssl/wildcard-tls.yaml",
+      "info": {
+        "name": "Wildcard TLS Certificate",
+        "author": [
+          "lucky0x0d"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "wildcard",
+          "vuln"
+        ],
+        "description": "Checks a sites certificate to see if there are wildcard CN or SAN entries.\n",
+        "reference": [
+          "https://cheatsheetseries.owasp.org/cheatsheets/transport_layer_security_cheat_sheet.html#carefully-consider-the-use-of-wildcard-certificates"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "firesplash.netlify.app",
+      "matched-at": "firesplash.netlify.app:443",
+      "extracted-results": [
+        "CN: *.netlify.app",
+        " SAN: [*.netlify.app netlify.app]"
+      ],
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:16:07.450137315Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "discovery"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "firesplash.netlify.app",
+      "matched-at": "firesplash.netlify.app:443",
+      "extracted-results": [
+        "tls12"
+      ],
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:16:07.460156451Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "discovery"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "firesplash.netlify.app",
+      "matched-at": "firesplash.netlify.app:443",
+      "extracted-results": [
+        "tls13"
+      ],
+      "ip": "18.208.88.157",
+      "timestamp": "2026-05-03T03:16:07.734245401Z",
+      "matcher-status": true
+    }
+  ]
+]
