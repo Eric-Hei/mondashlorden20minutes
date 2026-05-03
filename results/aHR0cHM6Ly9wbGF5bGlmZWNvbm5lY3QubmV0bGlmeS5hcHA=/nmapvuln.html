@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln playlifeconnect.netlify.app</pre>
-<p class="lead">Sun Apr 26 03:10:49 2026 – Sun Apr 26 03:11:29 2026<br>1 hosts scanned.
+<p class="lead">Sun May  3 03:21:12 2026 – Sun May  3 03:21:54 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -120,33 +120,38 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
-<h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSVersionBindReqTCP, GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, oracle-tns: 
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 03 May 2026 03:21:22 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01KQNXNPZ3C9H6EB9QPX9X775N
+    Content-Length: 0
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 26 Apr 2026 03:10:58 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01KQ3W9N3QKW0XCDMR2WEX95R2
-    Content-Length: 0
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 26 Apr 2026 03:10:58 GMT
+    Date: Sun, 03 May 2026 03:21:21 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KQ3W9N2C8WM6N6EG3P6Z7T1B
+    X-Nf-Request-Id: 01KQNXNPSNK1HFFBSGRSJC5DMG
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 26 Apr 2026 03:10:58 GMT
+    Date: Sun, 03 May 2026 03:21:22 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KQ3W9N38J31P4G87S6TB479J
-    Content-Length: 0</pre>
+    X-Nf-Request-Id: 01KQNXNPVTF0X7K8SRV9G54EN7
+    Content-Length: 0
+  OfficeScan: 
+    HTTP/1.1 400 Bad Request: missing required Host header
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request: missing required Host header</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
@@ -162,27 +167,32 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 26 Apr 2026 03:11:03 GMT
+    Date: Sun, 03 May 2026 03:21:27 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KQ3W9T4AYENHED4BJCMPEJEC
+    X-Nf-Request-Id: 01KQNXNW62VJ3EPHW6Q70Z5DRD
     Content-Length: 0
-  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, Socks5, oracle-tns: 
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 26 Apr 2026 03:11:03 GMT
+    Date: Sun, 03 May 2026 03:21:27 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KQ3W9T15CK1HHE653B1H7MZC
+    X-Nf-Request-Id: 01KQNXNVX9DJE1JWF3SND8B3FE
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 26 Apr 2026 03:11:03 GMT
+    Date: Sun, 03 May 2026 03:21:27 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KQ3W9T2RE0RZ4BYS12BYG4GW
-    Content-Length: 0</pre>
+    X-Nf-Request-Id: 01KQNXNW1PY4F1GYARSH619P57
+    Content-Length: 0
+  OfficeScan: 
+    HTTP/1.1 400 Bad Request: missing required Host header
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request: missing required Host header</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
