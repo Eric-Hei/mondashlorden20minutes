@@ -2,8 +2,22 @@
   "trackers": [],
   "cookies": [
     {
+      "name": "civiq",
+      "value": "2937200300.55839.0000",
+      "domain": "elisa.service-civique.gouv.fr",
+      "path": "/",
+      "expires": -1,
+      "size": 26,
+      "httpOnly": true,
+      "secure": true,
+      "session": true,
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    },
+    {
       "name": "TS01c3b0f5",
-      "value": "01b74c0fddfd67b2da751bfeb00597032e76fcdd787fb2209bb4bf8157d167254dca98927c12c495092327dba7bc1a87ea82d0850c",
+      "value": "01b74c0fdd30ac6d001c06c23153aa404f85a37bfca3723a243da83b9691f07625513856b3355c5d8376bbfc0c498c3a66a43bdc89",
       "domain": ".elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -14,64 +28,25 @@
       "priority": "Medium",
       "sourceScheme": "Secure",
       "sameParty": false
-    },
-    {
-      "name": "api-gateway-8380",
-      "value": "169351084.48160.0000",
-      "domain": "elisa.service-civique.gouv.fr",
-      "path": "/",
-      "expires": -1,
-      "size": 36,
-      "httpOnly": true,
-      "secure": false,
-      "session": true,
-      "priority": "Medium",
-      "sourceScheme": "Secure",
-      "sameParty": false
-    },
-    {
-      "name": "civiq",
-      "value": "186128300.48160.0000",
-      "domain": "elisa.service-civique.gouv.fr",
-      "path": "/",
-      "expires": -1,
-      "size": 25,
-      "httpOnly": true,
-      "secure": true,
-      "session": true,
-      "priority": "Medium",
-      "sourceScheme": "Secure",
-      "sameParty": false
-    },
-    {
-      "name": "TS01c3b0f5026",
-      "value": "01c5582115ed4832f89225502b096993fef8b322755beed91d699afc4a319e77e9274654bc3c614fd7abb700f3de69a21ad2498a22a4860b5116d4bf0c0043277608f95cad",
-      "domain": ".elisa.service-civique.gouv.fr",
-      "path": "/",
-      "expires": -1,
-      "size": 151,
-      "httpOnly": true,
-      "secure": true,
-      "session": true,
-      "priority": "Medium",
-      "sourceScheme": "Secure",
-      "sameParty": false
     }
   ],
   "headers": {
-    "cache-control": "no-cache",
-    "connection": "close",
-    "content-encoding": "gzip",
+    "accept-ranges": "bytes",
+    "connection": "Keep-Alive",
+    "content-language": "fr",
+    "content-length": "4381",
+    "content-security-policy": "default-src 'self' blob:; connect-src 'self' *.asp-public.fr/; frame-ancestors 'self' blob: *.asp-public.fr/; frame-src 'self' blob: *.asp-public.fr/; worker-src 'self' blob: *.asp-public.fr/; object-src 'self' *.asp-public.fr/; style-src 'self' 'unsafe-inline'; font-src 'self' data: 'unsafe-inline'; img-src 'self' data: *.asp-public.fr/; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.asp-public.fr/; media-src 'self' data: *.asp-public.fr/;",
     "content-type": "text/html",
-    "date": "Sun, 03 May 2026 03:02:36 GMT",
-    "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
-    "max-forwards": "20",
-    "pragma": "no-cache",
-    "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=186128300.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fddfd67b2da751bfeb00597032e76fcdd787fb2209bb4bf8157d167254dca98927c12c495092327dba7bc1a87ea82d0850c; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly\nTS01c3b0f5026=01c5582115ed4832f89225502b096993fef8b322755beed91d699afc4a319e77e9274654bc3c614fd7abb700f3de69a21ad2498a22a4860b5116d4bf0c0043277608f95cad; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
+    "date": "Sun, 10 May 2026 02:58:44 GMT",
+    "etag": "\"111d-4f0a16662e240\"",
+    "keep-alive": "timeout=60, max=1000",
+    "last-modified": "Thu, 23 Jan 2014 11:18:25 GMT",
+    "set-cookie": "civiq=2937200300.55839.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd30ac6d001c06c23153aa404f85a37bfca3723a243da83b9691f07625513856b3355c5d8376bbfc0c498c3a66a43bdc89; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
-    "transfer-encoding": "chunked",
-    "via": "1.1 leto-p ()",
-    "x-correlationid": "Id-ccbaf66932f3c15037921eb0 0; Id-ccbaf669ac80b09ad72dbcfd 0"
+    "x-content-security-policy": "allow 'self' *.asp-public.fr; options eval-script inline-script; connect-src 'self' *.asp-public.fr; frame-ancestors 'self' blob: *.asp-public.fr; frame-src 'self' blob: *.asp-public.fr; object-src 'self' *.asp-public.fr; style-src 'self' 'unsafe-inline'; font-src 'self' data: 'unsafe-inline'; img-src 'self' data: *.asp-public.fr; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.asp-public.fr; media-src 'self' data: *.asp-public.fr;",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
@@ -109,8 +84,8 @@
         },
         "location": {
           "accuracy_radius": 200,
-          "latitude": 48.8582,
-          "longitude": 2.3387,
+          "latitude": 44.8412,
+          "longitude": -0.5806,
           "time_zone": "Europe/Paris"
         },
         "registered_country": {
@@ -127,7 +102,21 @@
             "ru": "Франция",
             "zh-CN": "法国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 11071620,
+            "iso_code": "NAQ",
+            "names": {
+              "de": "Neuguitanien",
+              "en": "New Aquitaine",
+              "es": "Nueva Aquitania",
+              "fr": "Nouvelle-Aquitaine",
+              "ja": "ヌーヴェル=アキテーヌ",
+              "pt-BR": "Nova Aquitânia"
+            }
+          }
+        ]
       }
     }
   ]
