@@ -54,14 +54,14 @@
 <h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln playlifeconnect.netlify.app</pre>
-<p class="lead">Sun May 10 03:22:28 2026 – Sun May 10 03:22:31 2026<br>1 hosts scanned.
-              0 hosts up.
-              1 hosts down.
+<p class="lead">Sun May 17 03:30:16 2026 – Sun May 17 03:30:59 2026<br>1 hosts scanned.
+              1 hosts up.
+              0 hosts down.
             </p>
 <div class="progress">
-<div class="progress-bar progress-bar-success" style="width:0%;">0<span class="sr-only"></span>
+<div class="progress-bar progress-bar-success" style="width:100%;">1<span class="sr-only"></span>
 </div>
-<div class="progress-bar progress-bar-danger" style="width:100%;">1<span class="sr-only"></span>
+<div class="progress-bar progress-bar-danger" style="width:0%;">0<span class="sr-only"></span>
 </div>
 </div>
 </div>
@@ -74,7 +74,13 @@
 <th>TCP (open)</th>
 <th>UDP (open)</th>
 </tr></thead>
-<tbody></tbody>
+<tbody><tr>
+<td><span class="label label-success">up</span></td>
+<td>18.208.88.157</td>
+<td>playlifeconnect.netlify.app</td>
+<td>2</td>
+<td>0</td>
+</tr></tbody>
 </table></div>
 <script>
             $(document).ready(function() {
@@ -84,6 +90,116 @@
               "lengthMenu": [ [10, 25, 50, 100, -1], [10, 25, 50, 100, "All"] ]
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
+<div class="panel panel-default">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#18-208-88-157"><h3 class="panel-title">18.208.88.157 - playlifeconnect.netlify.app</h3></div>
+<div class="panel-body collapse in" id="18-208-88-157">
+<h4>Hostnames</h4>
+<ul>
+<li>playlifeconnect.netlify.app (user)</li>
+<li>ec2-18-208-88-157.compute-1.amazonaws.com (PTR)</li>
+</ul>
+<h4>Ports</h4>
+<div class="table-responsive"><table class="table table-bordered">
+<thead><tr>
+<th>Port</th>
+<th>Protocol</th>
+<th>State<br>Reason</th>
+<th>Service</th>
+<th>Product</th>
+<th>Version</th>
+<th>Extra Info</th>
+</tr></thead>
+<tbody>
+<tr class="success">
+<td title="Port">80</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">http</td>
+<td title="Product">Golang net/http server</td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 17 May 2026 03:30:27 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01KRSZRDBNVVB44KHZ5H6C430R
+    Content-Length: 0
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
+    HTTP/1.1 400 Bad Request
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request
+  GetRequest: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 17 May 2026 03:30:27 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01KRSZRD76CZQJY86C9SAE6R3F
+    Content-Length: 0
+  HTTPOptions: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 17 May 2026 03:30:27 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01KRSZRD91KR233R9PP770DK9G
+    Content-Length: 0
+  OfficeScan: 
+    HTTP/1.1 400 Bad Request: missing required Host header
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request: missing required Host header</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
+</td></tr>
+<tr class="success">
+<td title="Port">443</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">http</td>
+<td title="Product">Golang net/http server</td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 17 May 2026 03:30:32 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01KRSZRJJ7B5CF5QMYBH6XW64G
+    Content-Length: 0
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
+    HTTP/1.1 400 Bad Request
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request
+  GetRequest: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 17 May 2026 03:30:32 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01KRSZRJA2N51DZE969RJWJF5W
+    Content-Length: 0
+  HTTPOptions: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 17 May 2026 03:30:32 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01KRSZRJE7FHY165YZX8D1YTPG
+    Content-Length: 0
+  OfficeScan: 
+    HTTP/1.1 400 Bad Request: missing required Host header
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request: missing required Host header</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
+</td></tr>
+</tbody>
+</table></div>
+</div>
+</div>
 <h2 id="openservices" class="target">Open Services</h2>
 <div class="table-responsive"><table id="table-services" class="table table-striped dataTable" role="grid">
 <thead><tr>
@@ -96,7 +212,28 @@
 <th>CPE</th>
 <th>Extra info</th>
 </tr></thead>
-<tbody></tbody>
+<tbody>
+<tr>
+<td>18.208.88.157 - playlifeconnect.netlify.app</td>
+<td>80</td>
+<td>tcp</td>
+<td>http</td>
+<td>Golang net/http server</td>
+<td></td>
+<td>cpe:/a:golang:go</td>
+<td></td>
+</tr>
+<tr>
+<td>18.208.88.157 - playlifeconnect.netlify.app</td>
+<td>443</td>
+<td>tcp</td>
+<td>http</td>
+<td>Golang net/http server</td>
+<td></td>
+<td>cpe:/a:golang:go</td>
+<td></td>
+</tr>
+</tbody>
 </table></div>
 <script>
             $(document).ready(function() {
