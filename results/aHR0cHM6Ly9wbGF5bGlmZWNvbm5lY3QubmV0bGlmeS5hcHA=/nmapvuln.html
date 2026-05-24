@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln playlifeconnect.netlify.app</pre>
-<p class="lead">Sun May 17 03:30:16 2026 – Sun May 17 03:30:59 2026<br>1 hosts scanned.
+<p class="lead">Sun May 24 04:03:40 2026 – Sun May 24 04:04:21 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>18.208.88.157</td>
+<td>13.52.188.95</td>
 <td>playlifeconnect.netlify.app</td>
 <td>2</td>
 <td>0</td>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#18-208-88-157"><h3 class="panel-title">18.208.88.157 - playlifeconnect.netlify.app</h3></div>
-<div class="panel-body collapse in" id="18-208-88-157">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#13-52-188-95"><h3 class="panel-title">13.52.188.95 - playlifeconnect.netlify.app</h3></div>
+<div class="panel-body collapse in" id="13-52-188-95">
 <h4>Hostnames</h4>
 <ul>
 <li>playlifeconnect.netlify.app (user)</li>
-<li>ec2-18-208-88-157.compute-1.amazonaws.com (PTR)</li>
+<li>ec2-13-52-188-95.us-west-1.compute.amazonaws.com (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -122,34 +122,29 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 17 May 2026 03:30:27 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01KRSZRDBNVVB44KHZ5H6C430R
-    Content-Length: 0
-  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
+  DNSVersionBindReqTCP, GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, oracle-tns: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 24 May 2026 04:03:50 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01KSC2EJX8M8MKXKBKBK6JQ5AV
+    Content-Length: 0
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 17 May 2026 03:30:27 GMT
+    Date: Sun, 24 May 2026 04:03:50 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KRSZRD76CZQJY86C9SAE6R3F
+    X-Nf-Request-Id: 01KSC2EJVV43VCGW8BDKA6SAWN
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 17 May 2026 03:30:27 GMT
+    Date: Sun, 24 May 2026 04:03:50 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KRSZRD91KR233R9PP770DK9G
-    Content-Length: 0
-  OfficeScan: 
-    HTTP/1.1 400 Bad Request: missing required Host header
-    Content-Type: text/plain; charset=utf-8
-    Connection: close
-    Request: missing required Host header</pre>
+    X-Nf-Request-Id: 01KSC2EJWSB7WJ3SS9SPNV81MB
+    Content-Length: 0</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
@@ -167,32 +162,27 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 17 May 2026 03:30:32 GMT
+    Date: Sun, 24 May 2026 04:03:55 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KRSZRJJ7B5CF5QMYBH6XW64G
+    X-Nf-Request-Id: 01KSC2EQXRAV1T41TZ01ZXXV2Z
     Content-Length: 0
-  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, Socks5, oracle-tns: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 17 May 2026 03:30:32 GMT
+    Date: Sun, 24 May 2026 04:03:55 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KRSZRJA2N51DZE969RJWJF5W
+    X-Nf-Request-Id: 01KSC2EQTHPR5VVRDVXFRD91NB
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 17 May 2026 03:30:32 GMT
+    Date: Sun, 24 May 2026 04:03:55 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KRSZRJE7FHY165YZX8D1YTPG
-    Content-Length: 0
-  OfficeScan: 
-    HTTP/1.1 400 Bad Request: missing required Host header
-    Content-Type: text/plain; charset=utf-8
-    Connection: close
-    Request: missing required Host header</pre>
+    X-Nf-Request-Id: 01KSC2EQW54FX3QR120BPR3C1J
+    Content-Length: 0</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
@@ -214,7 +204,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>18.208.88.157 - playlifeconnect.netlify.app</td>
+<td>13.52.188.95 - playlifeconnect.netlify.app</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -224,7 +214,7 @@
 <td></td>
 </tr>
 <tr>
-<td>18.208.88.157 - playlifeconnect.netlify.app</td>
+<td>13.52.188.95 - playlifeconnect.netlify.app</td>
 <td>443</td>
 <td>tcp</td>
 <td>http</td>
