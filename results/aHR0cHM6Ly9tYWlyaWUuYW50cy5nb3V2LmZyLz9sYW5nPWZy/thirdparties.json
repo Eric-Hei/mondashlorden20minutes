@@ -3,7 +3,7 @@
   "cookies": [
     {
       "name": "bot_mitigation_cookie",
-      "value": "IJ3LTP2K7GVY6UQAFZM7FHSGYFRXQEPBBJL6BEL6AOLEXN7KPNKUYFY33UTBYBLFYREXR2KU6ASTOYHWXVQUZRFF5AZGXY253XSM7HPBXKYJQ===",
+      "value": "YJM43PMRN7463FBZK7J3OWY74APQPAD6MQNIBR6B3CSG2QK53SD57YDUXAIBFV7UT2JEG54Y5ADBGFVGUB4IMRARARL6E3RZU5PB2H563XWWG===",
       "domain": "mairie.ants.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -19,19 +19,19 @@
   ],
   "headers": {
     "content-encoding": "br",
-    "content-security-policy": "default-src 'self';style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://storage.googleapis.com/genii-public/ https://cdn.jsdelivr.net/npm/@gouvfr/ https://www.cybermalveillance.gouv.fr/build-widget/ https://genii-script.tolk.ai https://genii-messages-01.tolk.ai https://genii-messages-02.tolk.ai https://genii-messages-03.tolk.ai https://genii-messages-04.tolk.ai https://genii-messages-05.tolk.ai https://genii-messages-06.tolk.ai;script-src 'self' https://*.ants.gouv.fr https://gva.et-gv.fr 'nonce-e44654e3-71e1-4b09-8ef5-b893da6f079f' https://captcha.liveidentity.com https://cdn.woopic.com/ https://cake.cdn.s.woopic.com/ https://www.cybermalveillance.gouv.fr/build-widget/ https://genii-script.tolk.ai https://genii-messages-01.tolk.ai https://genii-messages-02.tolk.ai https://genii-messages-03.tolk.ai https://genii-messages-04.tolk.ai https://genii-messages-05.tolk.ai https://genii-messages-06.tolk.ai;frame-src 'self' https://www.youtube.com/ https://www.dailymotion.com/ https://player.vimeo.com/ https://www.cybermalveillance.gouv.fr/;connect-src 'self' https://geo.api.gouv.fr https://*.ants.gouv.fr https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai wss://genii-messages-03.tolk.ai wss://genii-messages-04.tolk.ai https://api.ipify.org https://captcha.liveidentity.com;font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/npm/@gouvfr/ https://www.cybermalveillance.gouv.fr/build-widget/ data:;img-src 'self' https: http: data:;media-src 'self' https://captcha.liveidentity.com;object-src 'none';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests\nframe-ancestors 'self'",
+    "content-security-policy": "default-src 'self';style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://storage.googleapis.com/genii-public/ https://cdn.jsdelivr.net/npm/@gouvfr/ https://www.cybermalveillance.gouv.fr/build-widget/ https://genii-script.tolk.ai https://genii-messages-01.tolk.ai https://genii-messages-02.tolk.ai https://genii-messages-03.tolk.ai https://genii-messages-04.tolk.ai https://genii-messages-05.tolk.ai https://genii-messages-06.tolk.ai;script-src 'self' https://*.ants.gouv.fr https://gva.et-gv.fr 'nonce-8bbd4d0c-cac3-49b4-a836-7c20841ee74f' https://captcha.liveidentity.com https://cdn.woopic.com/ https://cake.cdn.s.woopic.com/ https://www.cybermalveillance.gouv.fr/build-widget/ https://genii-script.tolk.ai https://genii-messages-01.tolk.ai https://genii-messages-02.tolk.ai https://genii-messages-03.tolk.ai https://genii-messages-04.tolk.ai https://genii-messages-05.tolk.ai https://genii-messages-06.tolk.ai;frame-src 'self' https://www.youtube.com/ https://www.dailymotion.com/ https://player.vimeo.com/ https://www.cybermalveillance.gouv.fr/;connect-src 'self' https://geo.api.gouv.fr https://*.ants.gouv.fr https://genii-api.tolk.ai https://genii-messages.tolk.ai wss://genii-messages.tolk.ai wss://genii-messages-03.tolk.ai wss://genii-messages-04.tolk.ai https://api.ipify.org https://captcha.liveidentity.com;font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/npm/@gouvfr/ https://www.cybermalveillance.gouv.fr/build-widget/ data:;img-src 'self' https: http: data:;media-src 'self' https://captcha.liveidentity.com;object-src 'none';base-uri 'self';form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests\nframe-ancestors 'self'",
     "content-type": "text/html; charset=utf-8",
     "cross-origin-opener-policy": "same-origin",
     "cross-origin-resource-policy": "same-origin",
-    "date": "Sun, 24 May 2026 03:48:51 GMT",
-    "etag": "W/\"d1ea7-AbCk3ubJT8H7qRC9DyVhJ8dnXmE\"",
+    "date": "Sun, 31 May 2026 03:59:59 GMT",
+    "etag": "W/\"d1ea7-5eEQZ7QX0MimGokkPiOf7zyQ3bg\"",
     "origin-agent-cluster": "?1",
     "permissions-policy": "geolocation=(self), autoplay=(), camera=(), fullscreen=(), microphone=(), payment=()\ncamera=(), geolocation=(), microphone=()",
     "referrer-policy": "strict-origin-when-cross-origin\nstrict-origin-when-cross-origin",
     "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff\nnosniff",
-    "x-cp-via": "C2-0c45e69d-b4e7c44b",
+    "x-cp-via": "C2-39ab91db-b4e7c44b",
     "x-dns-prefetch-control": "off",
     "x-download-options": "noopen",
     "x-frame-options": "SAMEORIGIN\nSAMEORIGIN",
@@ -41,7 +41,7 @@
   "endpoints": [
     {
       "hostname": "mairie.ants.gouv.fr",
-      "ip": "87.98.187.73",
+      "ip": "46.105.60.75",
       "geoip": {
         "continent": {
           "code": "EU",
