@@ -10,17 +10,17 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "accept-ranges": "bytes",
-      "age": "52",
+      "age": "57",
       "cache-control": "public,max-age=0,must-revalidate",
       "cache-status": "\"Netlify Edge\"; hit",
-      "content-length": "485",
+      "content-length": "463",
       "content-type": "text/html; charset=UTF-8",
-      "date": "Sun, 31 May 2026 03:57:33 GMT",
+      "date": "Sun, 07 Jun 2026 04:05:22 GMT",
       "etag": "\"70b7a413445c55800ba31fe109f9cc0a-ssl-df\"",
       "server": "Netlify",
       "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
       "vary": "Accept-Encoding",
-      "x-nf-request-id": "01KSY2W3TFRABB8PARBK8PRB8F",
+      "x-nf-request-id": "01KTG43ENZDYARWSATR3JK0NZ7",
       "connection": "close"
     }
   },
