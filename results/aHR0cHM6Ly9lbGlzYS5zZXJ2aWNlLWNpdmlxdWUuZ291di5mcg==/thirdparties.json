@@ -2,22 +2,8 @@
   "trackers": [],
   "cookies": [
     {
-      "name": "TS01c3b0f5026",
-      "value": "01c558211533464af4e1cc9a3df55d3303d2a56702295ffddb3e2f0786ec3229f363a5a32c55eeec3153ce5c9c36f8240cd47e7bd29cd8e9f30f0baf5fed371d7a5a319a0d",
-      "domain": ".elisa.service-civique.gouv.fr",
-      "path": "/",
-      "expires": -1,
-      "size": 151,
-      "httpOnly": true,
-      "secure": true,
-      "session": true,
-      "priority": "Medium",
-      "sourceScheme": "Secure",
-      "sameParty": false
-    },
-    {
       "name": "TS01c3b0f5",
-      "value": "01b74c0fdd1a77cd38a3f489449a082f3decb0f7b458ce6654aca6360b094ab117b5e21ab60f99c0bca9722e2c705e5d74b8cd9599",
+      "value": "01b74c0fddcf895448d01d69b6d71558c4b46a3a5a3ab94769d20d2660f6ac48118aa9e7d2b6db4147218a3b76b7b79d51e6e62fa7",
       "domain": ".elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -31,7 +17,7 @@
     },
     {
       "name": "api-gateway-8380",
-      "value": "169351084.48160.0000",
+      "value": "186128300.48160.0000",
       "domain": "elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -63,15 +49,15 @@
     "connection": "close",
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 07 Jun 2026 03:53:26 GMT",
+    "date": "Sun, 14 Jun 2026 04:01:31 GMT",
     "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
     "max-forwards": "20",
     "pragma": "no-cache",
-    "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=169351084.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd1a77cd38a3f489449a082f3decb0f7b458ce6654aca6360b094ab117b5e21ab60f99c0bca9722e2c705e5d74b8cd9599; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly\nTS01c3b0f5026=01c558211533464af4e1cc9a3df55d3303d2a56702295ffddb3e2f0786ec3229f363a5a32c55eeec3153ce5c9c36f8240cd47e7bd29cd8e9f30f0baf5fed371d7a5a319a0d; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
+    "set-cookie": "api-gateway-8380=186128300.48160.0000; path=/; Httponly\nciviq=169351084.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fddcf895448d01d69b6d71558c4b46a3a5a3ab94769d20d2660f6ac48118aa9e7d2b6db4147218a3b76b7b79d51e6e62fa7; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "transfer-encoding": "chunked",
     "via": "1.1 leto-b ()",
-    "x-correlationid": "Id-36eb246a88dcb1d5a97bf9d0 0; Id-36eb246a89dc465b711aa80f 0"
+    "x-correlationid": "Id-9b272e6a0cb134882e30c52c 0; Id-9b272e6ac7dc9e095ca0075c 0"
   },
   "endpoints": [
     {
@@ -79,11 +65,10 @@
       "ip": "217.109.233.83",
       "geoip": {
         "city": {
-          "geoname_id": 2971707,
+          "geoname_id": 2993053,
           "names": {
-            "en": "Triac-Lautrait",
-            "ru": "Трияк-Лотре",
-            "zh-CN": "特里阿克洛特赖"
+            "en": "Montamisé",
+            "zh-CN": "蒙塔米瑟"
           }
         },
         "continent": {
@@ -117,12 +102,12 @@
         },
         "location": {
           "accuracy_radius": 200,
-          "latitude": 45.6868,
-          "longitude": -0.1304,
+          "latitude": 46.6186,
+          "longitude": 0.4221,
           "time_zone": "Europe/Paris"
         },
         "postal": {
-          "code": "16200"
+          "code": "86360"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -153,13 +138,13 @@
             }
           },
           {
-            "geoname_id": 3026646,
-            "iso_code": "16",
+            "geoname_id": 2969280,
+            "iso_code": "86",
             "names": {
-              "de": "Charente",
-              "en": "Charente",
-              "es": "Charenta",
-              "fr": "Charente"
+              "de": "Vienne",
+              "en": "Vienne",
+              "es": "Viena",
+              "fr": "Vienne"
             }
           }
         ]
