@@ -20,18 +20,18 @@
   "cookies": [],
   "headers": {
     "accept-ranges": "bytes",
-    "age": "80",
+    "age": "79",
     "cache-control": "public,max-age=0,must-revalidate",
     "cache-status": "\"Netlify Edge\"; hit",
     "content-encoding": "br",
-    "content-length": "479",
+    "content-length": "463",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 21 Jun 2026 04:23:40 GMT",
+    "date": "Sun, 28 Jun 2026 03:57:32 GMT",
     "etag": "\"70b7a413445c55800ba31fe109f9cc0a-ssl-df\"",
     "server": "Netlify",
     "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
     "vary": "Accept-Encoding",
-    "x-nf-request-id": "01KVM6Q0DYCFVX3QEVDKA1SDJY"
+    "x-nf-request-id": "01KW6606BJDV724C58JR1FWBTM"
   },
   "endpoints": [
     {
