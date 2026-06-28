@@ -1,6 +1,6 @@
-# Nmap 7.95 scan initiated Sun Jun 21 04:26:25 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln mairie.ants.gouv.fr
+# Nmap 7.95 scan initiated Sun Jun 28 04:02:36 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln mairie.ants.gouv.fr
 Nmap scan report for mairie.ants.gouv.fr (46.105.60.75)
-Host is up (0.087s latency).
+Host is up (0.15s latency).
 Other addresses for mairie.ants.gouv.fr (not scanned): 87.98.187.73
 rDNS record for 46.105.60.75: ip75.ip-46-105-60.eu
 Not shown: 998 filtered tcp ports (no-response)
@@ -11,106 +11,106 @@ PORT    STATE SERVICE        VERSION
 |     HTTP/1.1 400 Bad Request
 |     content-length: 11
 |     content-type: text/plain
-|     date: Sun, 21 Jun 2026 04:26:57 GMT
+|     date: Sun, 28 Jun 2026 04:03:12 GMT
 |     connection: close
 |     Request
 |   DNSVersionBindReqTCP: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 11
 |     content-type: text/plain
-|     date: Sun, 21 Jun 2026 04:26:56 GMT
+|     date: Sun, 28 Jun 2026 04:03:11 GMT
 |     connection: close
 |     Request
 |   FourOhFourRequest: 
 |     HTTP/1.1 426 Upgrade Required
 |     content-length: 16
 |     content-type: text/plain
-|     date: Sun, 21 Jun 2026 04:26:45 GMT
+|     date: Sun, 28 Jun 2026 04:02:59 GMT
 |     connection: close
 |     Upgrade Required
 |   GetRequest: 
 |     HTTP/1.1 426 Upgrade Required
 |     content-length: 16
 |     content-type: text/plain
-|     date: Sun, 21 Jun 2026 04:26:36 GMT
+|     date: Sun, 28 Jun 2026 04:02:50 GMT
 |     connection: close
 |     Upgrade Required
 |   HTTPOptions: 
 |     HTTP/1.1 426 Upgrade Required
 |     content-length: 16
 |     content-type: text/plain
-|     date: Sun, 21 Jun 2026 04:26:37 GMT
+|     date: Sun, 28 Jun 2026 04:02:51 GMT
 |     connection: close
 |     Upgrade Required
 |   Help: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 11
 |     content-type: text/plain
-|     date: Sun, 21 Jun 2026 04:26:58 GMT
+|     date: Sun, 28 Jun 2026 04:03:13 GMT
 |     connection: close
 |     Request
 |   RTSPRequest: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 11
 |     content-type: text/plain
-|     date: Sun, 21 Jun 2026 04:26:38 GMT
+|     date: Sun, 28 Jun 2026 04:02:53 GMT
 |     connection: close
 |     Request
 |   SSLSessionReq: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 11
 |     content-type: text/plain
-|     date: Sun, 21 Jun 2026 04:27:00 GMT
+|     date: Sun, 28 Jun 2026 04:03:14 GMT
 |     connection: close
 |     Request
 |   TLSSessionReq: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 11
 |     content-type: text/plain
-|     date: Sun, 21 Jun 2026 04:27:02 GMT
+|     date: Sun, 28 Jun 2026 04:03:17 GMT
 |     connection: close
 |     Request
 |   TerminalServerCookie: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 11
 |     content-type: text/plain
-|     date: Sun, 21 Jun 2026 04:27:01 GMT
+|     date: Sun, 28 Jun 2026 04:03:16 GMT
 |     connection: close
 |_    Request
 443/tcp open  ssl/tcpwrapped
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port80-TCP:V=7.95%I=7%D=6/21%Time=6A3767FD%P=x86_64-alpine-linux-musl%r
+SF-Port80-TCP:V=7.95%I=7%D=6/28%Time=6A409CEB%P=x86_64-alpine-linux-musl%r
 SF:(GetRequest,97,"HTTP/1\.1\x20426\x20Upgrade\x20Required\r\ncontent-leng
-SF:th:\x2016\r\ncontent-type:\x20text/plain\r\ndate:\x20Sun,\x2021\x20Jun\
-SF:x202026\x2004:26:36\x20GMT\r\nconnection:\x20close\r\n\r\nUpgrade\x20Re
+SF:th:\x2016\r\ncontent-type:\x20text/plain\r\ndate:\x20Sun,\x2028\x20Jun\
+SF:x202026\x2004:02:50\x20GMT\r\nconnection:\x20close\r\n\r\nUpgrade\x20Re
 SF:quired")%r(HTTPOptions,97,"HTTP/1\.1\x20426\x20Upgrade\x20Required\r\nc
 SF:ontent-length:\x2016\r\ncontent-type:\x20text/plain\r\ndate:\x20Sun,\x2
-SF:021\x20Jun\x202026\x2004:26:37\x20GMT\r\nconnection:\x20close\r\n\r\nUp
+SF:028\x20Jun\x202026\x2004:02:51\x20GMT\r\nconnection:\x20close\r\n\r\nUp
 SF:grade\x20Required")%r(RTSPRequest,8D,"HTTP/1\.1\x20400\x20Bad\x20Reques
 SF:t\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20S
-SF:un,\x2021\x20Jun\x202026\x2004:26:38\x20GMT\r\nconnection:\x20close\r\n
+SF:un,\x2028\x20Jun\x202026\x2004:02:53\x20GMT\r\nconnection:\x20close\r\n
 SF:\r\nBad\x20Request")%r(FourOhFourRequest,97,"HTTP/1\.1\x20426\x20Upgrad
 SF:e\x20Required\r\ncontent-length:\x2016\r\ncontent-type:\x20text/plain\r
-SF:\ndate:\x20Sun,\x2021\x20Jun\x202026\x2004:26:45\x20GMT\r\nconnection:\
+SF:\ndate:\x20Sun,\x2028\x20Jun\x202026\x2004:02:59\x20GMT\r\nconnection:\
 SF:x20close\r\n\r\nUpgrade\x20Required")%r(DNSVersionBindReqTCP,8D,"HTTP/1
 SF:\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\
-SF:x20text/plain\r\ndate:\x20Sun,\x2021\x20Jun\x202026\x2004:26:56\x20GMT\
+SF:x20text/plain\r\ndate:\x20Sun,\x2028\x20Jun\x202026\x2004:03:11\x20GMT\
 SF:r\nconnection:\x20close\r\n\r\nBad\x20Request")%r(DNSStatusRequestTCP,8
 SF:D,"HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\nconte
-SF:nt-type:\x20text/plain\r\ndate:\x20Sun,\x2021\x20Jun\x202026\x2004:26:5
-SF:7\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request")%r(Help,8D,"HTT
+SF:nt-type:\x20text/plain\r\ndate:\x20Sun,\x2028\x20Jun\x202026\x2004:03:1
+SF:2\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request")%r(Help,8D,"HTT
 SF:P/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-typ
-SF:e:\x20text/plain\r\ndate:\x20Sun,\x2021\x20Jun\x202026\x2004:26:58\x20G
+SF:e:\x20text/plain\r\ndate:\x20Sun,\x2028\x20Jun\x202026\x2004:03:13\x20G
 SF:MT\r\nconnection:\x20close\r\n\r\nBad\x20Request")%r(SSLSessionReq,8D,"
 SF:HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-
-SF:type:\x20text/plain\r\ndate:\x20Sun,\x2021\x20Jun\x202026\x2004:27:00\x
+SF:type:\x20text/plain\r\ndate:\x20Sun,\x2028\x20Jun\x202026\x2004:03:14\x
 SF:20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request")%r(TerminalServerC
 SF:ookie,8D,"HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r
-SF:\ncontent-type:\x20text/plain\r\ndate:\x20Sun,\x2021\x20Jun\x202026\x20
-SF:04:27:01\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request")%r(TLSSe
+SF:\ncontent-type:\x20text/plain\r\ndate:\x20Sun,\x2028\x20Jun\x202026\x20
+SF:04:03:16\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request")%r(TLSSe
 SF:ssionReq,8D,"HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x201
-SF:1\r\ncontent-type:\x20text/plain\r\ndate:\x20Sun,\x2021\x20Jun\x202026\
-SF:x2004:27:02\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request");
+SF:1\r\ncontent-type:\x20text/plain\r\ndate:\x20Sun,\x2028\x20Jun\x202026\
+SF:x2004:03:17\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Jun 21 04:27:49 2026 -- 1 IP address (1 host up) scanned in 83.32 seconds
+# Nmap done at Sun Jun 28 04:04:07 2026 -- 1 IP address (1 host up) scanned in 91.48 seconds
