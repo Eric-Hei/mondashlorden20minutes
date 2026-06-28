@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln playlifeconnect.netlify.app</pre>
-<p class="lead">Sun Jun 21 04:38:31 2026 – Sun Jun 21 04:39:12 2026<br>1 hosts scanned.
+<p class="lead">Sun Jun 28 04:13:20 2026 – Sun Jun 28 04:14:02 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>18.208.88.157</td>
+<td>13.52.188.95</td>
 <td>playlifeconnect.netlify.app</td>
 <td>2</td>
 <td>0</td>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#18-208-88-157"><h3 class="panel-title">18.208.88.157 - playlifeconnect.netlify.app</h3></div>
-<div class="panel-body collapse in" id="18-208-88-157">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#13-52-188-95"><h3 class="panel-title">13.52.188.95 - playlifeconnect.netlify.app</h3></div>
+<div class="panel-body collapse in" id="13-52-188-95">
 <h4>Hostnames</h4>
 <ul>
 <li>playlifeconnect.netlify.app (user)</li>
-<li>ec2-18-208-88-157.compute-1.amazonaws.com (PTR)</li>
+<li>ec2-13-52-188-95.us-west-1.compute.amazonaws.com (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -120,9 +120,7 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
-<h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   DNSVersionBindReqTCP, GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, oracle-tns: 
     HTTP/1.1 400 Bad Request
@@ -131,22 +129,24 @@
     Request
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 21 Jun 2026 04:38:41 GMT
+    Date: Sun, 28 Jun 2026 04:13:31 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KVM7JGQNV2KXQHANB34GQNV3
+    X-Nf-Request-Id: 01KW66XF3S2BEQCFP8HX0QX4ZX
     Content-Length: 0
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 21 Jun 2026 04:38:41 GMT
+    Date: Sun, 28 Jun 2026 04:13:31 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KVM7JGP4NMHVSN84NX6AD9YV
+    X-Nf-Request-Id: 01KW66XF2H1E636BDCD49ZM8HC
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 21 Jun 2026 04:38:41 GMT
+    Date: Sun, 28 Jun 2026 04:13:31 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KVM7JGQ45QHMZEV0R11S3E2X
+    X-Nf-Request-Id: 01KW66XF3DZC0E0QER1BEBJH3A
     Content-Length: 0</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
@@ -158,15 +158,13 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
-<h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 21 Jun 2026 04:38:46 GMT
+    Date: Sun, 28 Jun 2026 04:13:36 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KVM7JNRQ2NA1VN0Z0DF4SZT7
+    X-Nf-Request-Id: 01KW66XM4NKN7A59504GVSE0XW
     Content-Length: 0
   GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, Socks5, oracle-tns: 
     HTTP/1.1 400 Bad Request
@@ -175,16 +173,18 @@
     Request
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 21 Jun 2026 04:38:46 GMT
+    Date: Sun, 28 Jun 2026 04:13:36 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KVM7JNNBX50CC3GHFF8E73XD
+    X-Nf-Request-Id: 01KW66XM1FB2SK9C382SH7JJS3
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 21 Jun 2026 04:38:46 GMT
+    Date: Sun, 28 Jun 2026 04:13:36 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KVM7JNQ0SZVBNP52DKZPDFB5
+    X-Nf-Request-Id: 01KW66XM31A3MEZGMA60PZCCHF
     Content-Length: 0</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
 </tbody>
 </table></div>
@@ -204,7 +204,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>18.208.88.157 - playlifeconnect.netlify.app</td>
+<td>13.52.188.95 - playlifeconnect.netlify.app</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -214,7 +214,7 @@
 <td></td>
 </tr>
 <tr>
-<td>18.208.88.157 - playlifeconnect.netlify.app</td>
+<td>13.52.188.95 - playlifeconnect.netlify.app</td>
 <td>443</td>
 <td>tcp</td>
 <td>http</td>
