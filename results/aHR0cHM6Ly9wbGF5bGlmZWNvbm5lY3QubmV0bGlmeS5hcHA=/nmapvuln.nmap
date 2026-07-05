@@ -1,43 +1,43 @@
-# Nmap 7.95 scan initiated Sun Jun 28 04:13:20 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln playlifeconnect.netlify.app
-Nmap scan report for playlifeconnect.netlify.app (13.52.188.95)
-Host is up (0.0028s latency).
-Other addresses for playlifeconnect.netlify.app (not scanned): 52.52.192.191 2600:1f1c:446:4900::259 2600:1f1c:446:4900::258
-rDNS record for 13.52.188.95: ec2-13-52-188-95.us-west-1.compute.amazonaws.com
+# Nmap 7.95 scan initiated Sun Jul  5 03:49:44 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln playlifeconnect.netlify.app
+Nmap scan report for playlifeconnect.netlify.app (18.208.88.157)
+Host is up (0.0035s latency).
+Other addresses for playlifeconnect.netlify.app (not scanned): 98.84.224.111 2600:1f18:16e:df01::259 2600:1f18:16e:df01::258
+rDNS record for 18.208.88.157: ec2-18-208-88-157.compute-1.amazonaws.com
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE  VERSION
 80/tcp  open  http     Golang net/http server
+|_http-server-header: Netlify
 | fingerprint-strings: 
-|   DNSVersionBindReqTCP, GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, oracle-tns: 
+|   DNSVersionBindReqTCP, GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, Socks5: 
 |     HTTP/1.1 400 Bad Request
 |     Content-Type: text/plain; charset=utf-8
 |     Connection: close
 |     Request
 |   FourOhFourRequest: 
 |     HTTP/1.0 400 Bad Request
-|     Date: Sun, 28 Jun 2026 04:13:31 GMT
+|     Date: Sun, 05 Jul 2026 03:49:54 GMT
 |     Server: Netlify
-|     X-Nf-Request-Id: 01KW66XF3S2BEQCFP8HX0QX4ZX
+|     X-Nf-Request-Id: 01KWR6B8HPNVQ0GD78Q6HRYTNA
 |     Content-Length: 0
 |   GetRequest: 
 |     HTTP/1.0 400 Bad Request
-|     Date: Sun, 28 Jun 2026 04:13:31 GMT
+|     Date: Sun, 05 Jul 2026 03:49:54 GMT
 |     Server: Netlify
-|     X-Nf-Request-Id: 01KW66XF2H1E636BDCD49ZM8HC
+|     X-Nf-Request-Id: 01KWR6B8FVMT6DBGZN35H96M9M
 |     Content-Length: 0
 |   HTTPOptions: 
 |     HTTP/1.0 400 Bad Request
-|     Date: Sun, 28 Jun 2026 04:13:31 GMT
+|     Date: Sun, 05 Jul 2026 03:49:54 GMT
 |     Server: Netlify
-|     X-Nf-Request-Id: 01KW66XF3DZC0E0QER1BEBJH3A
+|     X-Nf-Request-Id: 01KWR6B8H1SQDNH4XAKE6EDWK5
 |_    Content-Length: 0
-|_http-server-header: Netlify
 443/tcp open  ssl/http Golang net/http server
 | fingerprint-strings: 
 |   FourOhFourRequest: 
 |     HTTP/1.0 400 Bad Request
-|     Date: Sun, 28 Jun 2026 04:13:36 GMT
+|     Date: Sun, 05 Jul 2026 03:50:00 GMT
 |     Server: Netlify
-|     X-Nf-Request-Id: 01KW66XM4NKN7A59504GVSE0XW
+|     X-Nf-Request-Id: 01KWR6BDJS6GYYMBPBA0TRY7RZ
 |     Content-Length: 0
 |   GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, Socks5, oracle-tns: 
 |     HTTP/1.1 400 Bad Request
@@ -46,81 +46,80 @@ PORT    STATE SERVICE  VERSION
 |     Request
 |   GetRequest: 
 |     HTTP/1.0 400 Bad Request
-|     Date: Sun, 28 Jun 2026 04:13:36 GMT
+|     Date: Sun, 05 Jul 2026 03:49:59 GMT
 |     Server: Netlify
-|     X-Nf-Request-Id: 01KW66XM1FB2SK9C382SH7JJS3
+|     X-Nf-Request-Id: 01KWR6BDF985MWBJBFP5K91W2W
 |     Content-Length: 0
 |   HTTPOptions: 
 |     HTTP/1.0 400 Bad Request
-|     Date: Sun, 28 Jun 2026 04:13:36 GMT
+|     Date: Sun, 05 Jul 2026 03:49:59 GMT
 |     Server: Netlify
-|     X-Nf-Request-Id: 01KW66XM31A3MEZGMA60PZCCHF
+|     X-Nf-Request-Id: 01KWR6BDGZA32T5GT15W4TZSCG
 |_    Content-Length: 0
 |_http-server-header: Netlify
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.95%I=7%D=6/28%Time=6A409F6B%P=x86_64-alpine-linux-musl%r
-SF:(GetRequest,92,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x20Sun,\x20
-SF:28\x20Jun\x202026\x2004:13:31\x20GMT\r\nServer:\x20Netlify\r\nX-Nf-Requ
-SF:est-Id:\x2001KW66XF2H1E636BDCD49ZM8HC\r\nContent-Length:\x200\r\n\r\n")
-SF:%r(HTTPOptions,92,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x20Sun,\
-SF:x2028\x20Jun\x202026\x2004:13:31\x20GMT\r\nServer:\x20Netlify\r\nX-Nf-R
-SF:equest-Id:\x2001KW66XF3DZC0E0QER1BEBJH3A\r\nContent-Length:\x200\r\n\r\
-SF:n")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Typ
-SF:e:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x
-SF:20Bad\x20Request")%r(FourOhFourRequest,92,"HTTP/1\.0\x20400\x20Bad\x20R
-SF:equest\r\nDate:\x20Sun,\x2028\x20Jun\x202026\x2004:13:31\x20GMT\r\nServ
-SF:er:\x20Netlify\r\nX-Nf-Request-Id:\x2001KW66XF3S2BEQCFP8HX0QX4ZX\r\nCon
-SF:tent-Length:\x200\r\n\r\n")%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\
-SF:x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnecti
-SF:on:\x20close\r\n\r\n400\x20Bad\x20Request")%r(DNSVersionBindReqTCP,67,"
-SF:HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20c
-SF:harset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(H
-SF:elp,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/pla
-SF:in;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Reque
-SF:st")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-
-SF:Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n40
-SF:0\x20Bad\x20Request")%r(SMBProgNeg,67,"HTTP/1\.1\x20400\x20Bad\x20Reque
-SF:st\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20c
-SF:lose\r\n\r\n400\x20Bad\x20Request")%r(LPDString,67,"HTTP/1\.1\x20400\x2
-SF:0Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nCon
-SF:nection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SIPOptions,67,"HTTP/
-SF:1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charse
-SF:t=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(oracle
-SF:-tns,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/pl
-SF:ain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Requ
-SF:est");
+SF-Port80-TCP:V=7.95%I=7%D=7/5%Time=6A49D462%P=x86_64-alpine-linux-musl%r(
+SF:GetRequest,92,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x20Sun,\x200
+SF:5\x20Jul\x202026\x2003:49:54\x20GMT\r\nServer:\x20Netlify\r\nX-Nf-Reque
+SF:st-Id:\x2001KWR6B8FVMT6DBGZN35H96M9M\r\nContent-Length:\x200\r\n\r\n")%
+SF:r(HTTPOptions,92,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x20Sun,\x
+SF:2005\x20Jul\x202026\x2003:49:54\x20GMT\r\nServer:\x20Netlify\r\nX-Nf-Re
+SF:quest-Id:\x2001KWR6B8H1SQDNH4XAKE6EDWK5\r\nContent-Length:\x200\r\n\r\n
+SF:")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type
+SF::\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x2
+SF:0Bad\x20Request")%r(FourOhFourRequest,92,"HTTP/1\.0\x20400\x20Bad\x20Re
+SF:quest\r\nDate:\x20Sun,\x2005\x20Jul\x202026\x2003:49:54\x20GMT\r\nServe
+SF:r:\x20Netlify\r\nX-Nf-Request-Id:\x2001KWR6B8HPNVQ0GD78Q6HRYTNA\r\nCont
+SF:ent-Length:\x200\r\n\r\n")%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x
+SF:20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnectio
+SF:n:\x20close\r\n\r\n400\x20Bad\x20Request")%r(DNSVersionBindReqTCP,67,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20ch
+SF:arset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(He
+SF:lp,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plai
+SF:n;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Reques
+SF:t")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-T
+SF:ype:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400
+SF:\x20Bad\x20Request")%r(SMBProgNeg,67,"HTTP/1\.1\x20400\x20Bad\x20Reques
+SF:t\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20cl
+SF:ose\r\n\r\n400\x20Bad\x20Request")%r(LPDString,67,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConn
+SF:ection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SIPOptions,67,"HTTP/1
+SF:\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset
+SF:=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Socks5,
+SF:67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\
+SF:x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.95%T=SSL%I=7%D=6/28%Time=6A409F70%P=x86_64-alpine-linux
-SF:-musl%r(GetRequest,92,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x20S
-SF:un,\x2028\x20Jun\x202026\x2004:13:36\x20GMT\r\nServer:\x20Netlify\r\nX-
-SF:Nf-Request-Id:\x2001KW66XM1FB2SK9C382SH7JJS3\r\nContent-Length:\x200\r\
-SF:n\r\n")%r(HTTPOptions,92,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x
-SF:20Sun,\x2028\x20Jun\x202026\x2004:13:36\x20GMT\r\nServer:\x20Netlify\r\
-SF:nX-Nf-Request-Id:\x2001KW66XM31A3MEZGMA60PZCCHF\r\nContent-Length:\x200
-SF:\r\n\r\n")%r(FourOhFourRequest,92,"HTTP/1\.0\x20400\x20Bad\x20Request\r
-SF:\nDate:\x20Sun,\x2028\x20Jun\x202026\x2004:13:36\x20GMT\r\nServer:\x20N
-SF:etlify\r\nX-Nf-Request-Id:\x2001KW66XM4NKN7A59504GVSE0XW\r\nContent-Len
-SF:gth:\x200\r\n\r\n")%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Reque
-SF:st\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20c
-SF:lose\r\n\r\n400\x20Bad\x20Request")%r(RTSPRequest,67,"HTTP/1\.1\x20400\
-SF:x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nC
-SF:onnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Help,67,"HTTP/1\.1
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=7/5%Time=6A49D467%P=x86_64-alpine-linux-
+SF:musl%r(GetRequest,92,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x20Su
+SF:n,\x2005\x20Jul\x202026\x2003:49:59\x20GMT\r\nServer:\x20Netlify\r\nX-N
+SF:f-Request-Id:\x2001KWR6BDF985MWBJBFP5K91W2W\r\nContent-Length:\x200\r\n
+SF:\r\n")%r(HTTPOptions,92,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x2
+SF:0Sun,\x2005\x20Jul\x202026\x2003:49:59\x20GMT\r\nServer:\x20Netlify\r\n
+SF:X-Nf-Request-Id:\x2001KWR6BDGZA32T5GT15W4TZSCG\r\nContent-Length:\x200\
+SF:r\n\r\n")%r(FourOhFourRequest,92,"HTTP/1\.0\x20400\x20Bad\x20Request\r\
+SF:nDate:\x20Sun,\x2005\x20Jul\x202026\x2003:50:00\x20GMT\r\nServer:\x20Ne
+SF:tlify\r\nX-Nf-Request-Id:\x2001KWR6BDJS6GYYMBPBA0TRY7RZ\r\nContent-Leng
+SF:th:\x200\r\n\r\n")%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Reques
+SF:t\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20cl
+SF:ose\r\n\r\n400\x20Bad\x20Request")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x
+SF:20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nCo
+SF:nnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Help,67,"HTTP/1\.1\
+SF:x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf
+SF:-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SSLSessionR
+SF:eq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plai
+SF:n;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Reques
+SF:t")%r(SMBProgNeg,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type
+SF::\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x2
+SF:0Bad\x20Request")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\
+SF:nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\
+SF:r\n\r\n400\x20Bad\x20Request")%r(SIPOptions,67,"HTTP/1\.1\x20400\x20Bad
+SF:\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnect
+SF:ion:\x20close\r\n\r\n400\x20Bad\x20Request")%r(oracle-tns,67,"HTTP/1\.1
 SF:\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=ut
-SF:f-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SSLSession
-SF:Req,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/pla
-SF:in;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Reque
-SF:st")%r(SMBProgNeg,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Typ
-SF:e:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x
-SF:20Bad\x20Request")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r
-SF:\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close
-SF:\r\n\r\n400\x20Bad\x20Request")%r(SIPOptions,67,"HTTP/1\.1\x20400\x20Ba
-SF:d\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnec
-SF:tion:\x20close\r\n\r\n400\x20Bad\x20Request")%r(oracle-tns,67,"HTTP/1\.
-SF:1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=u
-SF:tf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Socks5,67
-SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x2
-SF:0charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request");
+SF:f-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Socks5,67,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20
+SF:charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Jun 28 04:14:02 2026 -- 1 IP address (1 host up) scanned in 42.62 seconds
+# Nmap done at Sun Jul  5 03:50:25 2026 -- 1 IP address (1 host up) scanned in 40.89 seconds
