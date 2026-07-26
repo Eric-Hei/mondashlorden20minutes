@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln firesplash.netlify.app</pre>
-<p class="lead">Sun Jul 19 02:52:46 2026 – Sun Jul 19 02:53:27 2026<br>1 hosts scanned.
+<p class="lead">Sun Jul 26 02:58:07 2026 – Sun Jul 26 02:58:50 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>18.208.88.157</td>
+<td>13.52.188.95</td>
 <td>firesplash.netlify.app</td>
 <td>2</td>
 <td>0</td>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#18-208-88-157"><h3 class="panel-title">18.208.88.157 - firesplash.netlify.app</h3></div>
-<div class="panel-body collapse in" id="18-208-88-157">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#13-52-188-95"><h3 class="panel-title">13.52.188.95 - firesplash.netlify.app</h3></div>
+<div class="panel-body collapse in" id="13-52-188-95">
 <h4>Hostnames</h4>
 <ul>
 <li>firesplash.netlify.app (user)</li>
-<li>ec2-18-208-88-157.compute-1.amazonaws.com (PTR)</li>
+<li>ec2-13-52-188-95.us-west-1.compute.amazonaws.com (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -124,29 +124,34 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 <h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSVersionBindReqTCP, GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, oracle-tns: 
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 26 Jul 2026 02:58:17 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01KYE5QTQCQPY5GDF4120P7HPF
+    Content-Length: 0
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Jul 2026 02:52:56 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01KXW4N0FY05XAE2S7TSNKJ74C
-    Content-Length: 0
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Jul 2026 02:52:56 GMT
+    Date: Sun, 26 Jul 2026 02:58:17 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KXW4N0E9VCXH05Y4GB72P7G1
+    X-Nf-Request-Id: 01KYE5QTGY4SND5EV13X7ACFNV
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Jul 2026 02:52:56 GMT
+    Date: Sun, 26 Jul 2026 02:58:17 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KXW4N0FA6JW3KM1F0DE1DZ5S
-    Content-Length: 0</pre>
+    X-Nf-Request-Id: 01KYE5QTKGJ55FTKPX8PGD2923
+    Content-Length: 0
+  OfficeScan: 
+    HTTP/1.1 400 Bad Request: missing required Host header
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request: missing required Host header</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
@@ -158,33 +163,38 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
-<h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Jul 2026 02:53:01 GMT
+    Date: Sun, 26 Jul 2026 02:58:22 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KXW4N5GVH29B3GGQ2DYARGAM
+    X-Nf-Request-Id: 01KYE5QZZJ2EXD4PH13G878E76
     Content-Length: 0
-  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, Socks5, oracle-tns: 
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Jul 2026 02:53:01 GMT
+    Date: Sun, 26 Jul 2026 02:58:22 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KXW4N5D7G6QJHPEBYSQD27B9
+    X-Nf-Request-Id: 01KYE5QZNNFAT42RD1NK5R0F76
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Jul 2026 02:53:01 GMT
+    Date: Sun, 26 Jul 2026 02:58:22 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KXW4N5F1WDJ196YMM0S5Q4K1
-    Content-Length: 0</pre>
+    X-Nf-Request-Id: 01KYE5QZTMK2DTGK1T7XKKA7SV
+    Content-Length: 0
+  OfficeScan: 
+    HTTP/1.1 400 Bad Request: missing required Host header
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request: missing required Host header</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
 </tbody>
 </table></div>
@@ -204,7 +214,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>18.208.88.157 - firesplash.netlify.app</td>
+<td>13.52.188.95 - firesplash.netlify.app</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -214,7 +224,7 @@
 <td></td>
 </tr>
 <tr>
-<td>18.208.88.157 - firesplash.netlify.app</td>
+<td>13.52.188.95 - firesplash.netlify.app</td>
 <td>443</td>
 <td>tcp</td>
 <td>http</td>
