@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln playlifeconnect.netlify.app</pre>
-<p class="lead">Sun Jul 19 03:06:58 2026 – Sun Jul 19 03:07:39 2026<br>1 hosts scanned.
+<p class="lead">Sun Jul 26 03:12:37 2026 – Sun Jul 26 03:13:19 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -122,29 +122,34 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSVersionBindReqTCP, GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, oracle-tns: 
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 26 Jul 2026 03:12:47 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01KYE6JC55D6CHHC8PXKTV518W
+    Content-Length: 0
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Jul 2026 03:07:08 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01KXW5F038XXFPJ0G2PVXZBDA4
-    Content-Length: 0
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Jul 2026 03:07:08 GMT
+    Date: Sun, 26 Jul 2026 03:12:47 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KXW5F01XS1P8YHMHF3ZHQC8N
+    X-Nf-Request-Id: 01KYE6JC0M6504QC84FMVFY5EK
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Jul 2026 03:07:08 GMT
+    Date: Sun, 26 Jul 2026 03:12:47 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KXW5F02TSYD72X7QQXYC1XYM
-    Content-Length: 0</pre>
+    X-Nf-Request-Id: 01KYE6JC2GPY66H12CHX05HXRR
+    Content-Length: 0
+  OfficeScan: 
+    HTTP/1.1 400 Bad Request: missing required Host header
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request: missing required Host header</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
@@ -158,33 +163,38 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
+<h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Jul 2026 03:07:13 GMT
+    Date: Sun, 26 Jul 2026 03:12:52 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KXW5F543Y8YNZ5W0S65VFWR6
+    X-Nf-Request-Id: 01KYE6JH9VPDFJKVMHRBJ451RR
     Content-Length: 0
-  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, Socks5, oracle-tns: 
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Jul 2026 03:07:13 GMT
+    Date: Sun, 26 Jul 2026 03:12:52 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KXW5F50V8S96QDJWC7SEZMM8
+    X-Nf-Request-Id: 01KYE6JH2CRY29XASXPH82BGZK
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 19 Jul 2026 03:07:13 GMT
+    Date: Sun, 26 Jul 2026 03:12:52 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01KXW5F52FP1EQ9F22ZFSEDCRH
-    Content-Length: 0</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
+    X-Nf-Request-Id: 01KYE6JH64V9QT2QEFEXD8PDM1
+    Content-Length: 0
+  OfficeScan: 
+    HTTP/1.1 400 Bad Request: missing required Host header
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request: missing required Host header</pre>
 </td></tr>
 </tbody>
 </table></div>
