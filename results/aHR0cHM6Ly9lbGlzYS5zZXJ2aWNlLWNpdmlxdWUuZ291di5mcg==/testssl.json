@@ -106,9 +106,9 @@
               "id"           : "cipherlist_OBSOLETED",
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
-              "severity"     : "INFO",
+              "severity"     : "LOW",
               "cwe"          : "CWE-310",
-              "finding"      : "not offered"
+              "finding"      : "offered"
           }
 ,         {
               "id"           : "cipherlist_STRONG_NOFS",
@@ -157,7 +157,7 @@
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384"
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA"
           }
 ,         {
               "id"           : "FS_KEMs",
@@ -247,8 +247,8 @@
               "id"           : "cert_keySize",
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "RSA 2048 bits (exponent is 65537)"
+              "severity"     : "OK",
+              "finding"      : "RSA 4096 bits (exponent is 65537)"
           }
 ,         {
               "id"           : "cert_keyUsage",
@@ -269,7 +269,7 @@
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "02B5F7274477E480A29C2E8307C78827"
+              "finding"      : "5CF1C60EC841666CCC049D19C5F7235D"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -283,21 +283,21 @@
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "95572E990AD2F577DF8941765B0B6BB0307BB540"
+              "finding"      : "DE4467A2B04A9646FD62304E64A67E01225AC522"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "D7DE123FC1144EC8A6C3E38039594D7EE4A4B2643D69175C072A155A14E50EA7"
+              "finding"      : "BE45E43125A6AADD8CC0203FFB3CC861ED29145ABD101C0464EC9F740DC5BC9B"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIH+zCCBmOgAwIBAgIQXPHGDshBZmzMBJ0ZxfcjXTANBgkqhkiG9w0BAQsFADBgMQswCQYDVQQGEwJHUjE3MDUGA1UECgwuSGVsbGVuaWMgQWNhZGVtaWMgYW5kIFJlc2VhcmNoIEluc3RpdHV0aW9ucyBDQTEYMBYGA1UEAwwPR0VBTlQgVExTIFJTQSAxMB4XDTI2MDcyODA3MDE0MVoXDTI3MDIxMjA3MDE0MFowgasxCzAJBgNVBAYTAkZSMRcwFQYDVQQIDA7DjmxlLWRlLUZyYW5jZTEOMAwGA1UEBwwFUGFyaXMxSzBJBgNVBAoMQk1pbmlzdMOocmUgZGUgbOKAmcOJZHVjLiBOYXRpb25hbGUsIEVuc2VpZ25lbWVudCBTdXAuIGV0IFJlY2hlcmNoZTEmMCQGA1UEAwwdZWxpc2Euc2VydmljZS1jaXZpcXVlLmdvdXYuZnIwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQC1Bgf4/+OEAqaliI/sKhNUu95IwMNS8L9kuS7EtSDhn+gBzmETKLXXRKg10bytPztbg2o0oX0FusVjZATpsrYiicIDrS2Y8pQT3+upK47pqI8MIBuzSt4q20AsDbe/bEQG294wbdUbr3/tmp2HRRZ2Npjov0IigO9eiCkAUaIrN6phfsq218oBVz9RM/SOc1Adslx+0HQdpdlaolpmoS88wlK/uOkepEhDWet4y1M6nlP5w1gSr6gQNTp99Ndxj/3k1MKwjTHlq7/Va+kmGfPRx1RsVLLD7H3tvfYBRAPO42wSKpvXEmTAHZd9sKoLYIodRgKZiS8by9b0s9eDk6kx8i0lv8Khz8tzNDnOba5Li+4q/AtD5CCsG1ipgz9ByhMFZyK3PLUxoM5K6W/JH4B5ND+T7QBAYhMvEVqZk9gdMQqFKbQfmEjeoBMdDnjnFtrYf0ZGvuY6Jhg21Ps/GfFF1aw+AakXYn0hmN0CutcmtsRmG20csxM5jVnos5M0HEWRPdU4Qq81ofSBNLyK1vNHzvAxMk3yjydRcLkwLsqJVuE7moNkbSsCikWb/kKrubwy8US8uyt6gRavKXPSKfjPMJO66Mj6f6r8RCfR72l1OfsFWI9TgqtlgufQYLlRjv0bWeHWixwz7Zi1QmZjBXstAHzJN3MUnRk6N2kW8gY4vQIDAQABo4IC4zCCAt8wDAYDVR0TAQH/BAIwADAfBgNVHSMEGDAWgBSGAXI/jKlw4jEGUxbOAV9becg8OzBIBggrBgEFBQcBAQQ8MDowOAYIKwYBBQUHMAKGLGh0dHA6Ly9jcnQuaGFyaWNhLmdyL0hBUklDQS1HRUFOVC1UTFMtUjEuY2VyMCgGA1UdEQQhMB+CHWVsaXNhLnNlcnZpY2UtY2l2aXF1ZS5nb3V2LmZyMC0GA1UdIAQmMCQwCAYGZ4EMAQICMAgGBgQAj3oBBzAOBgwrBgEEAYHPEQEBAQIwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMD0GA1UdHwQ2MDQwMqAwoC6GLGh0dHA6Ly9jcmwuaGFyaWNhLmdyL0hBUklDQS1HRUFOVC1UTFMtUjEuY3JsMB0GA1UdDgQWBBRebc43BtmjG5FXt2CwGeKhqm7IEDAOBgNVHQ8BAf8EBAMCBaAwggF8BgorBgEEAdZ5AgQCBIIBbASCAWgBZgB1AGBMmq96f3dfAdQG/JINyJnrCxx9+MlSG/r6F3c7l4vJAAABn6eQphoAAAQDAEYwRAIgaCE3cDsYIPM7KQKj7uwd7SPngqqP1sdcfJ7euJLIBlsCIC698v3PV/42ekWsS2bmHzypyB16kNz1EPqXfkbde2wUAHUARqI5Z8YNtkaHxm89+ZmUdpOmphEghFfVVefj0KHZtkYAAAGfp5CmPgAABAMARjBEAiAKi+Rtf/Yt/6kShHGbQ4LJyf9M+1n81hMpHZtajk2BsAIgSmIGYJcYERsX7+D+bzRSoAPU/m9pvPxfT3VCGd6W+fsAdgBEwr0M6RQOZKXJSgGTClqhuzWXDgDuERaJaCocRNe1ZgAAAZ+nkKYJAAAEAwBHMEUCIF33XG1fCSalHpzE2VT/f5dBvnGb/0LU1AJ7F9mrvmjkAiEAo2o0UDrG4zy2rC6Tb3ruL4uy8nCHtBrUKWYtNQoO6k0wDQYJKoZIhvcNAQELBQADggGBADjlZd1hRwZZNOxAuU7efkORQZCwXciFF+uVY/j2EuDyjnnrC7SnDGJL9FMuTKyQ5A3NJ0hPHrAKbvKZmhYjoNiMgbI0CHAbblrlQ+mTXcEreuCqu0oTtocIqCHDDIoPXCo+MvrlBknXoC3N6pEkUQ4Z9Puvgl6HSPSKGyZiOG50SpZmnKNHAtY2atBheyV5gw17B7plpxEwf7ZBgOxu/jy4tp/L6hf+RY1CVlVo/z6PT+Ulch2FA7PRWKnMCGT5IhGIJQzFtourCXj29VGTyQCY2quMxLDC9nV0vFue5qfGwTTVuIU+Asxmjj5q7b6btu0qaHbwnQPzKWt25KxUgIWyMNnD+guhy0VrBeLyu2o5ZFPBJejDOwosTWulgL6pTfhpS4kYmYFtxqtyKUvRR/XXVXoaQD++XPODEJp9VekuiR5npFfHtV3W3ghggEWeLym2Skuh8MFcONkrPAzCXvvoTSOdd/VA5DeDVoAJR70NB0XNeF2Z/Lwk0arfcMWiwA==\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -345,22 +345,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "expires < 30 days (17)"
+              "severity"     : "OK",
+              "finding"      : "194 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2025-08-12 14:48"
+              "finding"      : "2026-07-28 07:01"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "2026-08-12 14:48"
+              "severity"     : "OK",
+              "finding"      : "2027-02-12 07:01"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -388,13 +388,13 @@
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://ocsp-tls.harica.gr"
+              "finding"      : "--"
           }
 ,         {
               "id"           : "OCSP_stapling",
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
-              "severity"     : "LOW",
+              "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
@@ -631,7 +631,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=D7DE123FC1144EC8A6C3E38039594D7EE4A4B2643D69175C072A155A14E50EA7"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BE45E43125A6AADD8CC0203FFB3CC861ED29145ABD101C0464EC9F740DC5BC9B"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -664,10 +664,10 @@
               "id"           : "LUCKY13",
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "LOW",
               "cve"          : "CVE-2013-0169",
               "cwe"          : "CWE-310",
-              "finding"      : "not vulnerable"
+              "finding"      : "potentially vulnerable, uses obsolete TLS CBC ciphers"
           }
 ,         {
               "id"           : "winshock",
@@ -776,21 +776,21 @@
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-SHA"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_win81",
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-SHA"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_winphone81",
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES256-SHA"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_win10",
@@ -965,14 +965,14 @@
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "90"
+              "finding"      : "100"
           }
 ,         {
               "id"           : "key_exchange_score_weighted",
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "27"
+              "finding"      : "30"
           }
 ,         {
               "id"           : "cipher_strength_score",
@@ -993,7 +993,7 @@
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "81"
+              "finding"      : "84"
           }
 ,         {
               "id"           : "overall_grade",
@@ -1014,6 +1014,6 @@
               "ip"           : "elisa.service-civique.gouv.fr/217.109.233.83",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "124"
+              "finding"      : "122"
           }
 ]
