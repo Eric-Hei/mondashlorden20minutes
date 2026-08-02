@@ -16,20 +16,21 @@
       "last-modified": "Fri, 20 Mar 2026 10:38:17 GMT",
       "access-control-allow-origin": "*",
       "etag": "W/\"69bd2399-83ab\"",
-      "expires": "Sun, 26 Jul 2026 03:09:49 GMT",
+      "expires": "Sun, 02 Aug 2026 03:09:05 GMT",
       "cache-control": "max-age=600",
       "x-proxy-cache": "MISS",
-      "x-github-request-id": "AFBA:39E4A5:BC6213:C43970:6A657825",
+      "x-github-request-id": "BE50:37445:B2180C:B957AB:6A6EB279",
+      "x-github-edge-region": "sea",
       "accept-ranges": "bytes",
-      "date": "Sun, 26 Jul 2026 03:00:54 GMT",
+      "date": "Sun, 02 Aug 2026 03:00:08 GMT",
       "via": "1.1 varnish",
-      "age": "34",
-      "x-served-by": "cache-sjc10021-SJC",
+      "age": "0",
+      "x-served-by": "cache-bur-kbur8200120-BUR",
       "x-cache": "HIT",
       "x-cache-hits": "1",
-      "x-timer": "S1785034854.239942,VS0,VE5",
+      "x-timer": "S1785639608.021407,VS0,VE97",
       "vary": "Accept-Encoding",
-      "x-fastly-request-id": "443e6835d5b6d6bd93966dd6ee7838162275f39c"
+      "x-fastly-request-id": "df233c1474b590f79253b5471b7ba29a2c478fbc"
     }
   },
   "tests": {
