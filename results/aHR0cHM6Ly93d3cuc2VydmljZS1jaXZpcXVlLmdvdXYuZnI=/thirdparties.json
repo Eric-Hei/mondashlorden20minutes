@@ -10,19 +10,19 @@
     },
     {
       "type": "unknown",
+      "url": "https://sdk.privacy-center.org/sdk/50888b6d7194abd91159a67df4022b345ddabba9/modern/sdk.50888b6d7194abd91159a67df4022b345ddabba9.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://sdk.privacy-center.org/sdk/50888b6d7194abd91159a67df4022b345ddabba9/modern/src_sdk_core_modules_integrations_sdk-integrations_providers_gcm_gcm_js.50888b6d7194abd91159a67df4022b345ddabba9.js"
+    },
+    {
+      "type": "unknown",
       "url": "https://genii-script.tolk.ai/lightchat.css"
     },
     {
       "type": "unknown",
-      "url": "https://sdk.privacy-center.org/sdk/f0adf7410e01ee400c4d1051e0b9493d831f4718/modern/sdk.f0adf7410e01ee400c4d1051e0b9493d831f4718.js"
-    },
-    {
-      "type": "unknown",
       "url": "https://genii-api.tolk.ai/v1/projects/358a1d8e-3b14-4e23-984e-a5fdb26449ac/widget-webchat"
-    },
-    {
-      "type": "unknown",
-      "url": "https://sdk.privacy-center.org/sdk/f0adf7410e01ee400c4d1051e0b9493d831f4718/modern/src_sdk_core_modules_integrations_sdk-integrations_providers_gcm_gcm_js.f0adf7410e01ee400c4d1051e0b9493d831f4718.js"
     },
     {
       "type": "twitter",
@@ -50,7 +50,7 @@
     },
     {
       "type": "twitter",
-      "url": "https://syndication.twitter.com/settings?session_id=2dd25184f35a0fd17d3187b7f0a6585c3a365c8d",
+      "url": "https://syndication.twitter.com/settings?session_id=b38c7fa469de6d1adaedc2089c7bedd57bec82c8",
       "details": {
         "id": "twitter",
         "message": "Dont embed twitter scripts, use your own tweet embed"
@@ -101,24 +101,8 @@
       "url": "https://bat.bing.com/p/action/73010746.js"
     },
     {
-      "type": "unknown",
-      "url": "https://www.clarity.ms/tag/uet/73010746?conversions=1&insights=1"
-    },
-    {
-      "type": "unknown",
-      "url": "https://bat.bing.com/action/0?ti=73010746&Ver=2&mid=27280912-effe-42c5-a8d7-84ee6f4fe2d1&bo=1&sid=9e43e300889b11f1b13cd56a7ee4eca4&vid=9e442b90889b11f186f7cb0fb0f7be05&vids=1&msclkid=N&pi=918639831&lg=en-US&sw=800&sh=600&sc=24&nwd=1&tl=Site%20Officiel%20du%20Service%20Civique&p=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&r=&lt=2553&evt=pageLoad&sv=2&cdb=AQAU&rn=873250"
-    },
-    {
-      "type": "unknown",
-      "url": "https://server.adform.net/Serving/TrackPoint/?pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=261588091299&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
-    },
-    {
-      "type": "unknown",
-      "url": "https://server.adform.net/Serving/TrackPoint/?pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-ToutesPages-ToutesPages&ADFdivider=%7C&ord=683288355594&ADFtpmode=2&itm=eyJzdjEiOiI8aW5zZXJ0IFBhZ2VVUkwgdmFsdWUgaGVyZT4ifQ&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
-    },
-    {
       "type": "google analytics",
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1168309503.1785033738&gtm=45be67m0v9207082134za200zd9207082134xec",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=591564783.1785638497&gtm=45fe67t1v9189600831za200zd9189600831xec",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -126,7 +110,55 @@
     },
     {
       "type": "google analytics",
-      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1040415230/?random=1785033738338&cv=11&fst=1785033738338&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67m0v9207082134za200zd9207082134xec&gcd=13t3t3t3t5l1&dma=0&tcfd=10000&tag_exp=115938465~115938468~118395333~118897920~118897930~119732171~119896803&u_w=800&u_h=600&url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&rcb=12&frm=0&tiba=Site%20Officiel%20du%20Service%20Civique&did=dMTc4Zm&gdid=dMTc4Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1168309503.1785033738&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+      "url": "https://ad.doubleclick.net/activity;src=9232743;type=nsite22;cat=allpag01;rcb=15;ord=1;num=9005610425676;npa=0;auiddc=591564783.1785638497;gdid=dMTc4Zm;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IJA;gtm=45fe67t1v9189600831za200zd9189600831xec;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tcfd=10000;tag_exp=115938465~115938468~118012007~118395333~118897920~118897930~119259606~119527019~119896803;epver=2;dc_random=1785638496_UD5h5ZB3Zy4Ox0UidoMfQayvGUR5gAXLZw;~oref=https%3A%2F%2Fwww.service-civique.gouv.fr%2F?",
+      "details": {
+        "id": "google analytics",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "google analytics",
+      "url": "https://9232743.fls.doubleclick.net/activityi;src=9232743;type=nsite22;cat=allpag01;rcb=15;ord=1;num=9005610425676;npa=0;auiddc=591564783.1785638497;gdid=dMTc4Zm;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IJA;gtm=45fe67t1v9189600831za200zd9189600831xec;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tcfd=10000;tag_exp=115938465~115938468~118012007~118395333~118897920~118897930~119259606~119527019~119896803;epver=2;dc_random=1785638496_UD5h5ZB3Zy4Ox0UidoMfQayvGUR5gAXLZw;_dc_test=1;~oref=https%3A%2F%2Fwww.service-civique.gouv.fr%2F?",
+      "details": {
+        "id": "google analytics",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "google tag manager",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-1040415230&cx=c&gtm=4e67t1",
+      "details": {
+        "id": "google tag manager",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "google tag manager",
+      "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&auid=591564783.1785638497&dt=Site%20Officiel%20du%20Service%20Civique&en=page_view&dl=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&scrsrc=www.googletagmanager.com&rnd=883144977.1785638497&navt=n&npa=0&gdid=dMTc4Zm&gtm=45fe67t1v9189600831za200zd9189600831xec&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tcfd=10000&tag_exp=115938465~115938468~118012007~118395333~118897920~118897930~119259606~119527019~119896803&apvc=1&tids=DC-9232743&tid=DC-9232743&tft=1785638496849&tfd=4066&fmt=8",
+      "details": {
+        "id": "google tag manager",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "unknown",
+      "url": "https://server.adform.net/Serving/TrackPoint/?pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=555591934926&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
+    },
+    {
+      "type": "unknown",
+      "url": "https://server.adform.net/Serving/TrackPoint/?pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-ToutesPages-ToutesPages&ADFdivider=%7C&ord=648299454663&ADFtpmode=2&itm=eyJzdjEiOiI8aW5zZXJ0IFBhZ2VVUkwgdmFsdWUgaGVyZT4ifQ&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
+    },
+    {
+      "type": "unknown",
+      "url": "https://www.clarity.ms/tag/uet/73010746?conversions=1&insights=1"
+    },
+    {
+      "type": "unknown",
+      "url": "https://bat.bing.com/action/0?ti=73010746&Ver=2&mid=780f3e21-211a-45fa-a745-48010869d103&bo=1&sid=ae8b19008e1b11f1b99d0784968ceb0e&vid=ae8b4ba08e1b11f1890dc57e97fa0e5c&vids=1&msclkid=N&pi=918639831&lg=en-US&sw=800&sh=600&sc=24&nwd=1&tl=Site%20Officiel%20du%20Service%20Civique&p=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&r=&lt=2814&evt=pageLoad&sv=2&cdb=AQAW&rn=189183"
+    },
+    {
+      "type": "google analytics",
+      "url": "https://9232743.fls.doubleclick.net/activityi;dc_pre=CJWmuOL1gJYDFZGN7gEdFvIIng;src=9232743;type=nsite22;cat=allpag01;rcb=15;ord=1;num=9005610425676;npa=0;auiddc=591564783.1785638497;gdid=dMTc4Zm;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IJA;gtm=45fe67t1v9189600831za200zd9189600831xec;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tcfd=10000;tag_exp=115938465~115938468~118012007~118395333~118897920~118897930~119259606~119527019~119896803;epver=2;dc_random=1785638496_UD5h5ZB3Zy4Ox0UidoMfQayvGUR5gAXLZw;_dc_test=1;~oref=https%3A%2F%2Fwww.service-civique.gouv.fr%2F?",
       "details": {
         "id": "google analytics",
         "message": "Use hosted Matomo instance"
@@ -134,7 +166,23 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/rmkt/collect/1040415230/?random=1785033738338&cv=11&fst=1785033738338&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67m0v9207082134za200zd9207082134xec&gcd=13t3t3t3t5l1&dma=0&tcfd=10000&tag_exp=115938465~115938468~118395333~118897920~118897930~119732171~119896803&u_w=800&u_h=600&url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&rcb=12&frm=0&tiba=Site%20Officiel%20du%20Service%20Civique&did=dMTc4Zm&gdid=dMTc4Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1168309503.1785033738&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "url": "https://adservice.google.com/ddm/fls/z/dc_pre=CJWmuOL1gJYDFZGN7gEdFvIIng;src=9232743;type=nsite22;cat=allpag01;rcb=15;ord=1;num=9005610425676;npa=0;auiddc=*;gdid=dMTc4Zm;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IJA;gtm=45fe67t1v9189600831za200zd9189600831xec;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tcfd=10000;tag_exp=115938465~115938468~118012007~118395333~118897920~118897930~119259606~119527019~119896803;epver=2;dc_random=1785638496_UD5h5ZB3Zy4Ox0UidoMfQayvGUR5gAXLZw;_dc_test=1;~oref=https%3A%2F%2Fwww.service-civique.gouv.fr%2F",
+      "details": {
+        "id": "google",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "google analytics",
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1040415230/?random=1785638496995&cv=11&fst=1785638496995&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67t1v9207082134za200zb9189600831zd9189600831xec&gcd=13t3t3t3t5l1&dma=0&tcfd=10000&tag_exp=115938465~115938469~118897920~118897930~119259606~119896803&u_w=800&u_h=600&url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&rcb=9&frm=0&tiba=Site%20Officiel%20du%20Service%20Civique&did=dMTc4Zm&gdid=dMTc4Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=591564783.1785638497&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+      "details": {
+        "id": "google analytics",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "google",
+      "url": "https://www.google.com/rmkt/collect/1040415230/?random=1785638496995&cv=11&fst=1785638496995&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67t1v9207082134za200zb9189600831zd9189600831xec&gcd=13t3t3t3t5l1&dma=0&tcfd=10000&tag_exp=115938465~115938469~118897920~118897930~119259606~119896803&u_w=800&u_h=600&url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&rcb=9&frm=0&tiba=Site%20Officiel%20du%20Service%20Civique&did=dMTc4Zm&gdid=dMTc4Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=591564783.1785638497&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -142,33 +190,17 @@
     },
     {
       "type": "google tag manager",
-      "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&auid=1168309503.1785033738&dt=Site%20Officiel%20du%20Service%20Civique&en=page_view&dl=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&scrsrc=www.googletagmanager.com&rnd=779322476.1785033738&navt=n&npa=0&did=dMTc4Zm&gdid=dMTc4Zm&gtm=45be67m0v9207082134za200zd9207082134xec&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tcfd=10000&tag_exp=115938465~115938468~118395333~118897920~118897930~119732171~119896803&apve=1&apvf=f&apvc=1&tids=AW-1040415230&tid=AW-1040415230&tft=1785033738373&tfd=3820&fmt=8",
+      "url": "https://www.google.com/ccm/collect?rcb=9&frm=0&auid=591564783.1785638497&dt=Site%20Officiel%20du%20Service%20Civique&en=page_view&dl=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&scrsrc=www.googletagmanager.com&rnd=883144977.1785638497&navt=n&npa=0&did=dMTc4Zm&gdid=dMTc4Zm&gtm=45be67t1v9207082134za200zb9189600831zd9189600831xec&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tcfd=10000&tag_exp=115938465~115938469~118897920~118897930~119259606~119896803&apvc=0&tids=AW-1040415230&tid=AW-1040415230&tft=1785638497025&tfd=4243&fmt=8",
       "details": {
         "id": "google tag manager",
         "message": "Use hosted Matomo instance"
       }
     },
     {
-      "type": "google analytics",
-      "url": "https://ad.doubleclick.net/activity;src=9232743;type=nsite22;cat=allpag01;rcb=7;ord=1;num=1924575921369;npa=0;auiddc=1168309503.1785033738;gdid=dMTc4Zm;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IJA;gtm=45fe67m0v9189600831za200zd9189600831xec;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tcfd=10000;tag_exp=115616986~115938465~115938468~118897920~118897930~119732171~119896803;epver=2;dc_random=1785033738_3hykWMUgqovYSrG44Al6HEsYlEexbC2JtQ;~oref=https%3A%2F%2Fwww.service-civique.gouv.fr%2F?",
+      "type": "google",
+      "url": "https://www.google.com/pagead/1p-user-list/1040415230/?random=1785638496995&cv=11&fst=1785636000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67t1v9207082134za200zb9189600831zd9189600831xec&gcd=13t3t3t3t5l1&dma=0&tcfd=10000&tag_exp=115938465~115938469~118897920~118897930~119259606~119896803&u_w=800&u_h=600&url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&rcb=9&frm=0&tiba=Site%20Officiel%20du%20Service%20Civique&did=dMTc4Zm&gdid=dMTc4Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=591564783.1785638497&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4gEAEQoqgV5VWSNqOvwI6s6KDuqjiOmWKXy68TSsIWkZBhtWXWw5dMz4WbxBnPihcQ2Ke1FFqHuvCM--NQlKeO43wAh23Bk-TJlOVzZaOA0i4ApZtVJJlxQwa3qmOfdvvMqdwerQ700ZEVhnxQg5EFxuMj6EEbDZ-FCd0RUA4EWRUcWM7o9wH3XfAE6_wW_4W93RgO9lhuFTHtBOMbayfldMULLNC395lbMt5JLVqiEeWqbFQm2njyQbUQl0SGIY5xJeZ04g1s0mRk05k2Ggw7G5-QVTEG2axPZ9KpIAPOw_D-oE&random=2361634102&rmt_tld=0&ipr=y",
       "details": {
-        "id": "google analytics",
-        "message": "Use hosted Matomo instance"
-      }
-    },
-    {
-      "type": "google analytics",
-      "url": "https://9232743.fls.doubleclick.net/activityi;src=9232743;type=nsite22;cat=allpag01;rcb=7;ord=1;num=1924575921369;npa=0;auiddc=1168309503.1785033738;gdid=dMTc4Zm;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IJA;gtm=45fe67m0v9189600831za200zd9189600831xec;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tcfd=10000;tag_exp=115616986~115938465~115938468~118897920~118897930~119732171~119896803;epver=2;dc_random=1785033738_3hykWMUgqovYSrG44Al6HEsYlEexbC2JtQ;_dc_test=1;~oref=https%3A%2F%2Fwww.service-civique.gouv.fr%2F?",
-      "details": {
-        "id": "google analytics",
-        "message": "Use hosted Matomo instance"
-      }
-    },
-    {
-      "type": "google tag manager",
-      "url": "https://www.google.com/ccm/collect?rcb=7&frm=0&auid=1168309503.1785033738&dt=Site%20Officiel%20du%20Service%20Civique&en=page_view&dl=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&scrsrc=www.googletagmanager.com&rnd=779322476.1785033738&navt=n&npa=0&gdid=dMTc4Zm&gtm=45fe67m0v9189600831za200zd9189600831xec&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tcfd=10000&tag_exp=115616986~115938465~115938468~118897920~118897930~119732171~119896803&apve=1&apvf=f&apvc=0&tids=DC-9232743&tid=DC-9232743&tft=1785033738404&tfd=3851&fmt=8",
-      "details": {
-        "id": "google tag manager",
+        "id": "google",
         "message": "Use hosted Matomo instance"
       }
     },
@@ -181,63 +213,39 @@
       "url": "https://c.clarity.ms/c.gif"
     },
     {
-      "type": "google analytics",
-      "url": "https://9232743.fls.doubleclick.net/activityi;dc_pre=CK2lke-o75UDFTG_AAAdBRQxuA;src=9232743;type=nsite22;cat=allpag01;rcb=7;ord=1;num=1924575921369;npa=0;auiddc=1168309503.1785033738;gdid=dMTc4Zm;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IJA;gtm=45fe67m0v9189600831za200zd9189600831xec;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tcfd=10000;tag_exp=115616986~115938465~115938468~118897920~118897930~119732171~119896803;epver=2;dc_random=1785033738_3hykWMUgqovYSrG44Al6HEsYlEexbC2JtQ;_dc_test=1;~oref=https%3A%2F%2Fwww.service-civique.gouv.fr%2F?",
-      "details": {
-        "id": "google analytics",
-        "message": "Use hosted Matomo instance"
-      }
-    },
-    {
-      "type": "google",
-      "url": "https://www.google.com/pagead/1p-user-list/1040415230/?random=1785033738338&cv=11&fst=1785031200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67m0v9207082134za200zd9207082134xec&gcd=13t3t3t3t5l1&dma=0&tcfd=10000&tag_exp=115938465~115938468~118395333~118897920~118897930~119732171~119896803&u_w=800&u_h=600&url=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&rcb=12&frm=0&tiba=Site%20Officiel%20du%20Service%20Civique&did=dMTc4Zm&gdid=dMTc4Zm&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1168309503.1785033738&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS0wEAEQoqgYGrzp2HcMdkpU7Ss4HcfHD4_AuwnAnlPP1bbr8sNU7xENHjUINuQgbPq_eMC6z2siEsqQv53IxiibjedRrn-ImsIVCHWR_guPo6SOjqD-U8QTTUUAa7LIW6ySE_ZLz-LIWbD4ELfKXt9d5U4LnaiNUOvuzNZl1EZQm7BSUNgiuCyBvhucaV6jEICD1NEZi-yJmUZZ40fdCicJf1-tVNdPJKMgByIamsCfOvu2A2XrPBZDywyy0DRmpCtkdEa4uh4aRW-V8Awyd5DuWwi-ZO&random=2758468027&rmt_tld=0&ipr=y",
-      "details": {
-        "id": "google",
-        "message": "Use hosted Matomo instance"
-      }
+      "type": "unknown",
+      "url": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=B1B5FED2C21D4AC399B8D70B1E969C48&RedC=c.clarity.ms&MXFR=1434C0D9006661283261D77004666F35"
     },
     {
       "type": "unknown",
-      "url": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=CA6B887D89F84664BF966575AF6E3CA8&RedC=c.clarity.ms&MXFR=3040F26FF96460383902E5CDFD646EE4"
-    },
-    {
-      "type": "google",
-      "url": "https://adservice.google.com/ddm/fls/z/dc_pre=CK2lke-o75UDFTG_AAAdBRQxuA;src=9232743;type=nsite22;cat=allpag01;rcb=7;ord=1;num=1924575921369;npa=0;auiddc=*;gdid=dMTc4Zm;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=IJA;gtm=45fe67m0v9189600831za200zd9189600831xec;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tcfd=10000;tag_exp=115616986~115938465~115938468~118897920~118897930~119732171~119896803;epver=2;dc_random=1785033738_3hykWMUgqovYSrG44Al6HEsYlEexbC2JtQ;_dc_test=1;~oref=https%3A%2F%2Fwww.service-civique.gouv.fr%2F",
-      "details": {
-        "id": "google",
-        "message": "Use hosted Matomo instance"
-      }
+      "url": "https://c.clarity.ms/c.gif?ctsa=mr&CtsSyncId=B1B5FED2C21D4AC399B8D70B1E969C48&MUID=068A006FE28F6A5C352617C6E3B06B4A"
     },
     {
       "type": "unknown",
-      "url": "https://c.clarity.ms/c.gif?ctsa=mr&CtsSyncId=CA6B887D89F84664BF966575AF6E3CA8&MUID=369CF7E803006D283C1BE04A02246C91"
+      "url": "https://e.clarity.ms/collect"
     },
     {
       "type": "unknown",
-      "url": "https://server.adform.net/Serving/TrackPoint/?CC=1&pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=261588091299&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
+      "url": "https://server.adform.net/Serving/TrackPoint/?CC=1&pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-PageAccueil-PageAccueil&ADFdivider=%7C&ord=555591934926&ADFtpmode=2&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
     },
     {
       "type": "unknown",
-      "url": "https://server.adform.net/Serving/TrackPoint/?CC=1&pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-ToutesPages-ToutesPages&ADFdivider=%7C&ord=683288355594&ADFtpmode=2&itm=eyJzdjEiOiI8aW5zZXJ0IFBhZ2VVUkwgdmFsdWUgaGVyZT4ifQ&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
-    },
-    {
-      "type": "unknown",
-      "url": "https://j.clarity.ms/collect"
+      "url": "https://server.adform.net/Serving/TrackPoint/?CC=1&pm=2867370&ADFPageName=2022-11-service-civique.gouv.fr-ToutesPages-ToutesPages&ADFdivider=%7C&ord=648299454663&ADFtpmode=2&itm=eyJzdjEiOiI8aW5zZXJ0IFBhZ2VVUkwgdmFsdWUgaGVyZT4ifQ&loc=https%3A%2F%2Fwww.service-civique.gouv.fr%2F&Set1=en-US%7Cen-US%7C800x600%7C24"
     }
   ],
   "cookies": [],
   "headers": {
     "accept-ranges": "bytes",
-    "age": "13",
+    "age": "0",
     "cache-control": "must-revalidate, max-age=0",
     "content-encoding": "gzip",
     "content-length": "22287",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 26 Jul 2026 02:42:14 GMT",
-    "etag": "W/\"21801-W6NsXCofzxx8/J3E0A8OPD9PlCk\"",
+    "date": "Sun, 02 Aug 2026 02:41:33 GMT",
+    "etag": "W/\"21801-loyd05OBmphRwZszBotA6AieAfM\"",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "Accept-Encoding",
-    "x-varnish": "18878076 13300295\n14746661"
+    "x-varnish": "270745089 266858123"
   },
   "endpoints": [
     {
@@ -298,7 +306,7 @@
     },
     {
       "hostname": "sdk.privacy-center.org",
-      "ip": "143.204.204.13",
+      "ip": "65.8.180.62",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -330,9 +338,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "latitude": 27.9947,
+          "longitude": -81.7381,
+          "time_zone": "America/New_York"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -347,12 +355,28 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 4155751,
+            "iso_code": "FL",
+            "names": {
+              "de": "Florida",
+              "en": "Florida",
+              "es": "Florida",
+              "fr": "Floride",
+              "ja": "フロリダ州",
+              "pt-BR": "Flórida",
+              "ru": "Флорида",
+              "zh-CN": "佛罗里达州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "genii-script.tolk.ai",
-      "ip": "172.66.44.217",
+      "ip": "172.66.47.39",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,
@@ -428,19 +452,18 @@
     },
     {
       "hostname": "platform.twitter.com",
-      "ip": "140.248.144.157",
+      "ip": "151.101.200.157",
       "geoip": {
         "city": {
-          "geoname_id": 4887398,
+          "geoname_id": 5380748,
           "names": {
-            "de": "Chicago",
-            "en": "Chicago",
-            "es": "Chicago",
-            "fr": "Chicago",
-            "ja": "シカゴ",
-            "pt-BR": "Chicago",
-            "ru": "Чикаго",
-            "zh-CN": "芝加哥"
+            "de": "Palo Alto",
+            "en": "Palo Alto",
+            "es": "Palo Alto",
+            "fr": "Palo Alto",
+            "ja": "パロアルト",
+            "pt-BR": "Palo Alto",
+            "ru": "Пало Альто"
           }
         },
         "continent": {
@@ -473,13 +496,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 41.8483,
-          "longitude": -87.6517,
-          "metro_code": 602,
-          "time_zone": "America/Chicago"
+          "latitude": 37.4433,
+          "longitude": -122.141,
+          "metro_code": 807,
+          "time_zone": "America/Los_Angeles"
         },
         "postal": {
-          "code": "60602"
+          "code": "94302"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -497,17 +520,17 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 4896861,
-            "iso_code": "IL",
+            "geoname_id": 5332921,
+            "iso_code": "CA",
             "names": {
-              "de": "Illinois",
-              "en": "Illinois",
-              "es": "Illinois",
-              "fr": "Illinois",
-              "ja": "イリノイ州",
-              "pt-BR": "Ilinóis",
-              "ru": "Иллинойс",
-              "zh-CN": "伊利诺伊州"
+              "de": "Kalifornien",
+              "en": "California",
+              "es": "California",
+              "fr": "Californie",
+              "ja": "カリフォルニア州",
+              "pt-BR": "Califórnia",
+              "ru": "Калифорния",
+              "zh-CN": "加州"
             }
           }
         ]
@@ -515,19 +538,18 @@
     },
     {
       "hostname": "connect.facebook.net",
-      "ip": "57.144.132.128",
+      "ip": "57.144.180.128",
       "geoip": {
         "city": {
-          "geoname_id": 4180439,
+          "geoname_id": 5128581,
           "names": {
-            "de": "Atlanta",
-            "en": "Atlanta",
-            "es": "Atlanta",
-            "fr": "Atlanta",
-            "ja": "アトランタ",
-            "pt-BR": "Atlanta",
-            "ru": "Атланта",
-            "zh-CN": "亚特兰大"
+            "de": "New York City",
+            "en": "New York",
+            "es": "Nueva York",
+            "fr": "New York",
+            "ja": "ニューヨーク",
+            "pt-BR": "Nova Iorque",
+            "ru": "Нью-Йорк"
           }
         },
         "continent": {
@@ -560,13 +582,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 33.7485,
-          "longitude": -84.3871,
-          "metro_code": 524,
+          "latitude": 40.7126,
+          "longitude": -74.0066,
+          "metro_code": 501,
           "time_zone": "America/New_York"
         },
         "postal": {
-          "code": "30301"
+          "code": "10118"
         },
         "registered_country": {
           "geoname_id": 2963597,
@@ -585,17 +607,17 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 4197000,
-            "iso_code": "GA",
+            "geoname_id": 5128638,
+            "iso_code": "NY",
             "names": {
-              "de": "Georgia",
-              "en": "Georgia",
-              "es": "Georgia",
-              "fr": "Géorgie",
-              "ja": "ジョージア州",
-              "pt-BR": "Geórgia",
-              "ru": "Джорджия",
-              "zh-CN": "乔治亚"
+              "de": "New York",
+              "en": "New York",
+              "es": "Nueva York",
+              "fr": "New York",
+              "ja": "ニューヨーク州",
+              "pt-BR": "Nova Iorque",
+              "ru": "Нью-Йорк",
+              "zh-CN": "纽约州"
             }
           }
         ]
@@ -603,8 +625,42 @@
     },
     {
       "hostname": "syndication.twitter.com",
-      "ip": "172.66.0.227",
+      "ip": "162.159.140.229",
       "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
         "registered_country": {
           "geoname_id": 6252001,
           "iso_code": "US",
@@ -623,7 +679,7 @@
     },
     {
       "hostname": "storage.googleapis.com",
-      "ip": "104.154.125.27",
+      "ip": "142.251.219.59",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -677,7 +733,7 @@
     },
     {
       "hostname": "s2.adform.net",
-      "ip": "185.167.164.44",
+      "ip": "185.167.166.41",
       "geoip": {
         "continent": {
           "code": "EU",
@@ -787,7 +843,7 @@
     },
     {
       "hostname": "www.googletagmanager.com",
-      "ip": "142.251.34.232",
+      "ip": "142.251.218.104",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -835,6 +891,224 @@
             "pt-BR": "EUA",
             "ru": "США",
             "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "ad.doubleclick.net",
+      "ip": "142.251.214.38",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "9232743.fls.doubleclick.net",
+      "ip": "142.251.218.70",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "www.google.com",
+      "ip": "142.251.152.119",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "server.adform.net",
+      "ip": "37.157.6.230",
+      "geoip": {
+        "continent": {
+          "code": "EU",
+          "geoname_id": 6255148,
+          "names": {
+            "de": "Europa",
+            "en": "Europe",
+            "es": "Europa",
+            "fr": "Europe",
+            "ja": "ヨーロッパ",
+            "pt-BR": "Europa",
+            "ru": "Европа",
+            "zh-CN": "欧洲"
+          }
+        },
+        "country": {
+          "geoname_id": 2623032,
+          "is_in_european_union": true,
+          "iso_code": "DK",
+          "names": {
+            "de": "Dänemark",
+            "en": "Denmark",
+            "es": "Dinamarca",
+            "fr": "Danemark",
+            "ja": "デンマーク王国",
+            "pt-BR": "Dinamarca",
+            "ru": "Дания",
+            "zh-CN": "丹麦"
+          }
+        },
+        "location": {
+          "accuracy_radius": 200,
+          "latitude": 55.7123,
+          "longitude": 12.0564,
+          "time_zone": "Europe/Copenhagen"
+        },
+        "registered_country": {
+          "geoname_id": 2623032,
+          "is_in_european_union": true,
+          "iso_code": "DK",
+          "names": {
+            "de": "Dänemark",
+            "en": "Denmark",
+            "es": "Dinamarca",
+            "fr": "Danemark",
+            "ja": "デンマーク王国",
+            "pt-BR": "Dinamarca",
+            "ru": "Дания",
+            "zh-CN": "丹麦"
           }
         }
       }
@@ -920,64 +1194,8 @@
       }
     },
     {
-      "hostname": "server.adform.net",
-      "ip": "37.157.6.230",
-      "geoip": {
-        "continent": {
-          "code": "EU",
-          "geoname_id": 6255148,
-          "names": {
-            "de": "Europa",
-            "en": "Europe",
-            "es": "Europa",
-            "fr": "Europe",
-            "ja": "ヨーロッパ",
-            "pt-BR": "Europa",
-            "ru": "Европа",
-            "zh-CN": "欧洲"
-          }
-        },
-        "country": {
-          "geoname_id": 2623032,
-          "is_in_european_union": true,
-          "iso_code": "DK",
-          "names": {
-            "de": "Dänemark",
-            "en": "Denmark",
-            "es": "Dinamarca",
-            "fr": "Danemark",
-            "ja": "デンマーク王国",
-            "pt-BR": "Dinamarca",
-            "ru": "Дания",
-            "zh-CN": "丹麦"
-          }
-        },
-        "location": {
-          "accuracy_radius": 200,
-          "latitude": 55.7123,
-          "longitude": 12.0564,
-          "time_zone": "Europe/Copenhagen"
-        },
-        "registered_country": {
-          "geoname_id": 2623032,
-          "is_in_european_union": true,
-          "iso_code": "DK",
-          "names": {
-            "de": "Dänemark",
-            "en": "Denmark",
-            "es": "Dinamarca",
-            "fr": "Danemark",
-            "ja": "デンマーク王国",
-            "pt-BR": "Dinamarca",
-            "ru": "Дания",
-            "zh-CN": "丹麦"
-          }
-        }
-      }
-    },
-    {
-      "hostname": "ad.doubleclick.net",
-      "ip": "142.250.177.230",
+      "hostname": "adservice.google.com",
+      "ip": "142.251.214.34",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -1031,115 +1249,7 @@
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "142.251.34.226",
-      "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États-Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États-Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        }
-      }
-    },
-    {
-      "hostname": "www.google.com",
-      "ip": "142.251.157.119",
-      "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États-Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États-Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        }
-      }
-    },
-    {
-      "hostname": "9232743.fls.doubleclick.net",
-      "ip": "142.250.177.230",
+      "ip": "142.251.218.130",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -1193,7 +1303,7 @@
     },
     {
       "hostname": "scripts.clarity.ms",
-      "ip": "150.171.110.210",
+      "ip": "150.171.109.150",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -1247,7 +1357,7 @@
     },
     {
       "hostname": "c.clarity.ms",
-      "ip": "150.171.110.211",
+      "ip": "150.171.109.150",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -1354,62 +1464,8 @@
       }
     },
     {
-      "hostname": "adservice.google.com",
-      "ip": "142.251.214.66",
-      "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États-Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États-Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        }
-      }
-    },
-    {
-      "hostname": "j.clarity.ms",
-      "ip": "52.184.215.111",
+      "hostname": "e.clarity.ms",
+      "ip": "20.57.85.160",
       "geoip": {
         "city": {
           "geoname_id": 4748634,
