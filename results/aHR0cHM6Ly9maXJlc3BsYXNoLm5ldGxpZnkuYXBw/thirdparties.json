@@ -1,5 +1,144 @@
 {
-  "trackers": null,
-  "cookies": null,
-  "headers": null
+  "trackers": [
+    {
+      "type": "unpkg",
+      "url": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+      "details": {
+        "id": "unpkg",
+        "message": "Host files locally"
+      }
+    },
+    {
+      "type": "unpkg",
+      "url": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+      "details": {
+        "id": "unpkg",
+        "message": "Host files locally"
+      }
+    }
+  ],
+  "cookies": [],
+  "headers": {
+    "accept-ranges": "bytes",
+    "age": "65",
+    "cache-control": "public,max-age=0,must-revalidate",
+    "cache-status": "\"Netlify Edge\"; hit; ttl=31535936",
+    "content-encoding": "br",
+    "content-length": "463",
+    "content-type": "text/html; charset=UTF-8",
+    "date": "Sun, 16 Aug 2026 01:28:08 GMT",
+    "etag": "\"70b7a413445c55800ba31fe109f9cc0a-ssl-df\"",
+    "server": "Netlify",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "vary": "Accept-Encoding",
+    "x-nf-request-id": "01M042XVQFG6ZGDFCEM3KD0984"
+  },
+  "endpoints": [
+    {
+      "hostname": "firesplash.netlify.app",
+      "ip": "52.52.192.191",
+      "geoip": {
+        "city": {
+          "geoname_id": 5392171,
+          "names": {
+            "de": "San José",
+            "en": "San Jose",
+            "es": "San José",
+            "fr": "San José",
+            "ja": "サンノゼ",
+            "pt-BR": "San José",
+            "ru": "Сан-Хосе"
+          }
+        },
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 20,
+          "latitude": 37.3388,
+          "longitude": -121.8916,
+          "metro_code": 807,
+          "time_zone": "America/Los_Angeles"
+        },
+        "postal": {
+          "code": "95141"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5332921,
+            "iso_code": "CA",
+            "names": {
+              "de": "Kalifornien",
+              "en": "California",
+              "es": "California",
+              "fr": "Californie",
+              "ja": "カリフォルニア州",
+              "pt-BR": "Califórnia",
+              "ru": "Калифорния",
+              "zh-CN": "加州"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hostname": "unpkg.com",
+      "ip": "104.18.0.22",
+      "geoip": {
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États-Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    }
+  ]
 }
