@@ -19,9 +19,9 @@
 <span style="font-weight:bold;">#####################################################################</span>
 
   Using <i>OpenSSL 1.0.2-bad (Mar 28 2025)</i>  [~183 ciphers]
-  on runnervm76f27:/home/testssl/bin/openssl.Linux.x86_64
+  on runnervmgx7h7:/home/testssl/bin/openssl.Linux.x86_64
 
-<span style="color:white;background-color:black;"> Start 2026-08-23 01:16:21        --&gt;&gt; 37.59.251.196:443 (www.service-civique.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2026-08-30 03:49:19        --&gt;&gt; 37.59.251.196:443 (www.service-civique.gouv.fr) &lt;&lt;--</span>
 
  Further IP addresses:   2001:41d0:203:9faf::1 2001:41d0:303:f29c::1 
  rDNS (37.59.251.196):   p1-ogo.ogosecurity.com.
@@ -101,7 +101,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">63 &gt;= 30 days</span> (2026-07-27 10:41 --&gt; 2026-10-25 10:41)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">56 &gt;= 30 days</span> (2026-07-27 10:41 --&gt; 2026-10-25 10:41)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://yr1.c.lencr.org/51.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>--
@@ -119,15 +119,91 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>+2 sec from localtime
-<span style="font-weight:bold;"> HTTP Age</span> (RFC 7234)          2
+<span style="font-weight:bold;"> HTTP clock skew              </span>+9 sec from localtime
+<span style="font-weight:bold;"> HTTP Age</span> (RFC 7234)          9
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">365 days</span>=31536000 s<span style="color:#008817;">, includeSubDomains</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
 <span style="font-weight:bold;"> Application banner           </span>--
 <span style="font-weight:bold;"> Cookie(s)                    </span>(none issued at &quot;/&quot;)
-<span style="font-weight:bold;"> Security headers             </span>Cache-Control: must-revalidate, max-age=0
-<span style="font-weight:bold;"> Reverse Proxy banner         </span><span style="color:#8a7237;font-weight:bold;">X-Varnish</span>: <span style="color:#8a7237;">2</span><span style="color:#8a7237;">3</span><span style="color:#8a7237;">4</span><span style="color:#8a7237;">0</span><span style="color:#8a7237;">3</span><span style="color:#8a7237;">4</span><span style="color:#8a7237;">9</span><span style="color:#8a7237;">7</span> <span style="color:#8a7237;">2</span><span style="color:#8a7237;">3</span><span style="color:#8a7237;">4</span><span style="color:#8a7237;">0</span><span style="color:#8a7237;">3</span><span style="color:#8a7237;">4</span><span style="color:#8a7237;">8</span><span style="color:#8a7237;">1</span>&apos;
+<span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Frame-Options</span>: SAMEORIGIN
+                              <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
+                              <span style="color:#008817;">Content-Security-Policy</span>: default-src &apos;self&apos;;
+                                script-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos;
+                                https://www.googletagmanager.com
+                                https://www.google.com https://www.gstatic.com
+                                https://sdk.woosmap.com
+                                https://platform.twitter.com
+                                https://connect.facebook.net
+                                https://genii-script.tolk.ai
+                                https://app.api-engagement.beta.gouv.fr
+                                https://funnel.service-civique.gouv.fr
+                                https://sdk.privacy-center.org
+                                https://tarteaucitron.io
+                                https://media.service-civique.gouv.fr
+                                https://s2.adform.net https://*.bing.com
+                                https://*.bing.net
+                                https://googleads.g.doubleclick.net
+                                https://www.clarity.ms
+                                https://scripts.clarity.ms
+                                https://server.adform.net
+                                https://www.tiktok.com https://*.ttwstatic.com
+                                https://youtube.com https://*.youtube.com
+                                https://sc-static.net
+                                https://analytics.tiktok.com
+                                https://tags.srv.stackadapt.com
+                                https://kwo.eulerian.net
+                                https://tr.snapchat.com; style-src &apos;self&apos;
+                                &apos;unsafe-inline&apos; https://sdk.privacy-center.org
+                                https://genii-script.tolk.ai
+                                https://storage.googleapis.com
+                                https://fonts.googleapis.com
+                                https://tags.srv.stackadapt.com; img-src &apos;self&apos;
+                                data: https://media.service-civique.gouv.fr
+                                https://www.facebook.com
+                                https://storage.googleapis.com
+                                https://www.service-civique.gouv.fr
+                                https://tile.openstreetmap.org
+                                https://*.tile.openstreetmap.org
+                                https://www.google.com https://www.google.fr
+                                https://*.bing.com https://*.bing.net
+                                https://*.clarity.ms
+                                https://www.googletagmanager.com
+                                https://server.adform.net
+                                https://ad.doubleclick.net
+                                https://tags.srv.stackadapt.com
+                                https://sdk.privacy-center.org; connect-src
+                                &apos;self&apos;
+                                https://funnel-ui.service-civique.gouv.fr
+                                https://funnel.service-civique.gouv.fr
+                                https://api.woosmap.com https://sdk.woosmap.com
+                                https://app.api-engagement.beta.gouv.fr
+                                https://genii-api.tolk.ai
+                                https://genii-messages-01.tolk.ai
+                                wss://genii-messages-01.tolk.ai
+                                https://hooks.zapier.com
+                                https://api.privacy-center.org
+                                https://ad.doubleclick.net
+                                https://server.adform.net
+                                https://www.google.com https://*.bing.com
+                                https://*.bing.net https://*.clarity.ms
+                                https://connect.facebook.net
+                                https://analytics.tiktok.com
+                                https://tr6.snapchat.com
+                                https://tr.snapchat.com; worker-src &apos;self&apos;
+                                blob:; frame-src &apos;self&apos; https://www.google.com
+                                https://youtube.com https://*.youtube.com
+                                https://www.facebook.com
+                                https://platform.twitter.com
+                                https://*.fls.doubleclick.net
+                                https://www.tiktok.com https://*.adform.net
+                                https://tr.snapchat.com; font-src &apos;self&apos; data:
+                                https://cdn.jsdelivr.net
+                                https://fonts.gstatic.com
+                                https://sdk.woosmap.com; frame-ancestors
+                                &apos;self&apos;; form-action &apos;self&apos;; base-uri &apos;self&apos;
+                              Cache-Control: must-revalidate, max-age=0
+<span style="font-weight:bold;"> Reverse Proxy banner         </span><span style="color:#8a7237;font-weight:bold;">X-Varnish</span>: <span style="color:#8a7237;">7</span><span style="color:#8a7237;">2</span><span style="color:#8a7237;">9</span><span style="color:#8a7237;">8</span><span style="color:#8a7237;">5</span><span style="color:#8a7237;">7</span><span style="color:#8a7237;">5</span><span style="color:#8a7237;">8</span> <span style="color:#8a7237;">6</span><span style="color:#8a7237;">9</span><span style="color:#8a7237;">2</span><span style="color:#8a7237;">5</span><span style="color:#8a7237;">6</span><span style="color:#8a7237;">5</span><span style="color:#8a7237;">7</span><span style="color:#8a7237;">6</span>&apos;
 
 
 <span style="text-decoration:underline;font-weight:bold;"> Testing vulnerabilities </span>
@@ -206,7 +282,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2026-08-23 01:17:56 [  97s] --&gt;&gt; 37.59.251.196:443 (www.service-civique.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2026-08-30 03:50:52 [  94s] --&gt;&gt; 37.59.251.196:443 (www.service-civique.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
