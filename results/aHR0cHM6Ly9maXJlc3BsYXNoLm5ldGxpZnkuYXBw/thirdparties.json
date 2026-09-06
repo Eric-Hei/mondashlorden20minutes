@@ -20,35 +20,36 @@
   "cookies": [],
   "headers": {
     "accept-ranges": "bytes",
-    "age": "65",
+    "age": "15",
     "cache-control": "public,max-age=0,must-revalidate",
-    "cache-status": "\"Netlify Edge\"; hit; ttl=31535936",
+    "cache-status": "\"Netlify Edge\"; hit; ttl=31535985",
     "content-encoding": "br",
     "content-length": "686",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 30 Aug 2026 04:02:47 GMT",
+    "date": "Sun, 06 Sep 2026 03:09:14 GMT",
     "etag": "\"70b7a413445c55800ba31fe109f9cc0a-ssl-df\"",
     "netlify-hosting": "provider=Netlify; deploy=\"https://netlify.new/?utm_campaign=ai-legible&utm_source=header&utm_medium=referral&utm_id=149a1a62-70c9-4b6c-8fab-cbacfbc18282\"",
     "server": "Netlify",
     "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
     "vary": "Accept-Encoding",
-    "x-nf-request-id": "01M18DB2TKFP08Q579VF4BJRFN"
+    "x-nf-request-id": "01M1TB22HXNXG603DVXVVM3WHW"
   },
   "endpoints": [
     {
       "hostname": "firesplash.netlify.app",
-      "ip": "13.52.188.95",
+      "ip": "98.84.224.111",
       "geoip": {
         "city": {
-          "geoname_id": 5392171,
+          "geoname_id": 4744870,
           "names": {
-            "de": "San José",
-            "en": "San Jose",
-            "es": "San José",
-            "fr": "San José",
-            "ja": "サンノゼ",
-            "pt-BR": "San José",
-            "ru": "Сан-Хосе"
+            "de": "Ashburn",
+            "en": "Ashburn",
+            "es": "Ashburn",
+            "fr": "Ashburn",
+            "ja": "アッシュバーン",
+            "pt-BR": "Ashburn",
+            "ru": "Ашберн",
+            "zh-CN": "阿什本"
           }
         },
         "continent": {
@@ -81,13 +82,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 37.3388,
-          "longitude": -121.8916,
-          "metro_code": 807,
-          "time_zone": "America/Los_Angeles"
+          "latitude": 39.0469,
+          "longitude": -77.4903,
+          "metro_code": 511,
+          "time_zone": "America/New_York"
         },
         "postal": {
-          "code": "95141"
+          "code": "20149"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -105,17 +106,17 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 5332921,
-            "iso_code": "CA",
+            "geoname_id": 6254928,
+            "iso_code": "VA",
             "names": {
-              "de": "Kalifornien",
-              "en": "California",
-              "es": "California",
-              "fr": "Californie",
-              "ja": "カリフォルニア州",
-              "pt-BR": "Califórnia",
-              "ru": "Калифорния",
-              "zh-CN": "加州"
+              "de": "Virginia",
+              "en": "Virginia",
+              "es": "Virginia",
+              "fr": "Virginie",
+              "ja": "バージニア州",
+              "pt-BR": "Virgínia",
+              "ru": "Вирджиния",
+              "zh-CN": "弗吉尼亚州"
             }
           }
         ]
@@ -123,7 +124,7 @@
     },
     {
       "hostname": "unpkg.com",
-      "ip": "104.18.1.22",
+      "ip": "104.18.0.22",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,
