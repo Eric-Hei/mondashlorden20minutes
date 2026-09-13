@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln playlifeconnect.netlify.app</pre>
-<p class="lead">Sun Sep  6 03:24:54 2026 – Sun Sep  6 03:25:36 2026<br>1 hosts scanned.
+<p class="lead">Sun Sep 13 03:50:03 2026 – Sun Sep 13 03:50:46 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -122,29 +122,34 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSVersionBindReqTCP, GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5, oracle-tns: 
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 13 Sep 2026 03:50:13 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01M2CE64S9WNET1VE78WT94J91
+    Content-Length: 0
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 06 Sep 2026 03:25:05 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01M1TBZ2PFKDZVB57M292GHEG4
-    Content-Length: 0
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 06 Sep 2026 03:25:05 GMT
+    Date: Sun, 13 Sep 2026 03:50:13 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M1TBZ2N50BCH64Q22BV1R198
+    X-Nf-Request-Id: 01M2CE64K916T0KYAC547XEMS8
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 06 Sep 2026 03:25:05 GMT
+    Date: Sun, 13 Sep 2026 03:50:13 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M1TBZ2P24SZTPJTPRX6TXV5E
-    Content-Length: 0</pre>
+    X-Nf-Request-Id: 01M2CE64NHQ90MQYXVHTQJW6RA
+    Content-Length: 0
+  OfficeScan: 
+    HTTP/1.1 400 Bad Request: missing required Host header
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request: missing required Host header</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
@@ -158,33 +163,38 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
-<h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 06 Sep 2026 03:25:10 GMT
+    Date: Sun, 13 Sep 2026 03:50:18 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M1TBZ7QASB8EMVZ1ZX22XGZC
+    X-Nf-Request-Id: 01M2CE6A094Q404PBRN8N08BPG
     Content-Length: 0
-  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, Socks5, oracle-tns: 
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 06 Sep 2026 03:25:10 GMT
+    Date: Sun, 13 Sep 2026 03:50:18 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M1TBZ7M2JWB9V0HGT06JWSJ2
+    X-Nf-Request-Id: 01M2CE69PN41MFFAB7AX7KRXGW
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 06 Sep 2026 03:25:10 GMT
+    Date: Sun, 13 Sep 2026 03:50:18 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M1TBZ7NPMYVDDW3XQ9N98DJV
-    Content-Length: 0</pre>
+    X-Nf-Request-Id: 01M2CE69VHSVYTYHVB4VVHAV7B
+    Content-Length: 0
+  OfficeScan: 
+    HTTP/1.1 400 Bad Request: missing required Host header
+    Content-Type: text/plain; charset=utf-8
+    Connection: close
+    Request: missing required Host header</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
 </tbody>
 </table></div>
