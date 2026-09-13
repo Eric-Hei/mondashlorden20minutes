@@ -2,26 +2,12 @@
   "trackers": [],
   "cookies": [
     {
-      "name": "TS01c3b0f5026",
-      "value": "01c5582115766d4b530bd5c21a008f9668427617b011c0a46cdf6ded8e4776f8fb5630ef792af31536f92611dae3a892e3aa43da3ff9bf404f0a63d8920710f91935f21f34",
-      "domain": ".elisa.service-civique.gouv.fr",
+      "name": "civiq",
+      "value": "169351084.48160.0000",
+      "domain": "elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
-      "size": 151,
-      "httpOnly": true,
-      "secure": true,
-      "session": true,
-      "priority": "Medium",
-      "sourceScheme": "Secure",
-      "sameParty": false
-    },
-    {
-      "name": "TS01c3b0f5",
-      "value": "01b74c0fdd0e932d1e12573a58bf6dbad82f9d39cb8fea4c2131417e1a0c663cf496ddfe61ed915ac6c887ceeb539256c63188bec9",
-      "domain": ".elisa.service-civique.gouv.fr",
-      "path": "/",
-      "expires": -1,
-      "size": 116,
+      "size": 25,
       "httpOnly": true,
       "secure": true,
       "session": true,
@@ -31,7 +17,7 @@
     },
     {
       "name": "api-gateway-8380",
-      "value": "169351084.48160.0000",
+      "value": "186128300.48160.0000",
       "domain": "elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -44,12 +30,26 @@
       "sameParty": false
     },
     {
-      "name": "civiq",
-      "value": "169351084.48160.0000",
-      "domain": "elisa.service-civique.gouv.fr",
+      "name": "TS01c3b0f5",
+      "value": "01b74c0fddfd0e8e53c8569b32e214f980e0e4c313b8ce04d7389119206261d0d9f6d92636fdbf1d56f43bd387aedb288b30089fe8",
+      "domain": ".elisa.service-civique.gouv.fr",
       "path": "/",
       "expires": -1,
-      "size": 25,
+      "size": 116,
+      "httpOnly": true,
+      "secure": true,
+      "session": true,
+      "priority": "Medium",
+      "sourceScheme": "Secure",
+      "sameParty": false
+    },
+    {
+      "name": "TS01c3b0f5026",
+      "value": "01c5582115cd4ebbcaacee06d3f55bb621ac6d571ad39a39caa11f4cf6179c434105257d4bf160f6681f35135c92944e3d46cc1130e0ef63df3e8b07cde24fa53be83359f3",
+      "domain": ".elisa.service-civique.gouv.fr",
+      "path": "/",
+      "expires": -1,
+      "size": 151,
       "httpOnly": true,
       "secure": true,
       "session": true,
@@ -63,15 +63,15 @@
     "connection": "close",
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 06 Sep 2026 03:06:05 GMT",
+    "date": "Sun, 13 Sep 2026 03:21:17 GMT",
     "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
     "max-forwards": "20",
     "pragma": "no-cache",
-    "set-cookie": "api-gateway-8380=169351084.48160.0000; path=/; Httponly\nciviq=169351084.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fdd0e932d1e12573a58bf6dbad82f9d39cb8fea4c2131417e1a0c663cf496ddfe61ed915ac6c887ceeb539256c63188bec9; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly\nTS01c3b0f5026=01c5582115766d4b530bd5c21a008f9668427617b011c0a46cdf6ded8e4776f8fb5630ef792af31536f92611dae3a892e3aa43da3ff9bf404f0a63d8920710f91935f21f34; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
+    "set-cookie": "api-gateway-8380=186128300.48160.0000; path=/; Httponly\nciviq=169351084.48160.0000; path=/; Httponly; Secure\nTS01c3b0f5=01b74c0fddfd0e8e53c8569b32e214f980e0e4c313b8ce04d7389119206261d0d9f6d92636fdbf1d56f43bd387aedb288b30089fe8; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly\nTS01c3b0f5026=01c5582115cd4ebbcaacee06d3f55bb621ac6d571ad39a39caa11f4cf6179c434105257d4bf160f6681f35135c92944e3d46cc1130e0ef63df3e8b07cde24fa53be83359f3; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "transfer-encoding": "chunked",
     "via": "1.1 leto-b ()",
-    "x-correlationid": "Id-9dd89c6a46d03d033cebc410 0; Id-9dd89c6a47d0c53a34be9571 0"
+    "x-correlationid": "Id-ad16a66a0a6ebc344869729e 0; Id-ad16a66aae9a9a6d69c35fb0 0"
   },
   "endpoints": [
     {
@@ -79,12 +79,10 @@
       "ip": "217.109.233.83",
       "geoip": {
         "city": {
-          "geoname_id": 3023324,
+          "geoname_id": 2993053,
           "names": {
-            "en": "Couëron",
-            "fr": "Couëron",
-            "ja": "クエロン",
-            "zh-CN": "库厄龙"
+            "en": "Montamisé",
+            "zh-CN": "蒙塔米瑟"
           }
         },
         "continent": {
@@ -118,12 +116,12 @@
         },
         "location": {
           "accuracy_radius": 200,
-          "latitude": 47.2075,
-          "longitude": -1.7237,
+          "latitude": 46.6186,
+          "longitude": 0.4221,
           "time_zone": "Europe/Paris"
         },
         "postal": {
-          "code": "44220"
+          "code": "86360"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -142,31 +140,25 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 2988289,
-            "iso_code": "PDL",
+            "geoname_id": 11071620,
+            "iso_code": "NAQ",
             "names": {
-              "de": "Pays de la Loire",
-              "en": "Pays de la Loire",
-              "es": "Países del Loira",
-              "fr": "Pays de la Loire",
-              "ja": "ペイ・ド・ラ・ロワール地域圏",
-              "pt-BR": "País do Loire",
-              "ru": "Пеи-де-ла-Луар",
-              "zh-CN": "卢瓦尔河地区大区"
+              "de": "Neuguitanien",
+              "en": "New Aquitaine",
+              "es": "Nueva Aquitania",
+              "fr": "Nouvelle-Aquitaine",
+              "ja": "ヌーヴェル=アキテーヌ",
+              "pt-BR": "Nova Aquitânia"
             }
           },
           {
-            "geoname_id": 2997861,
-            "iso_code": "44",
+            "geoname_id": 2969280,
+            "iso_code": "86",
             "names": {
-              "de": "Loire-Atlantique",
-              "en": "Loire-Atlantique",
-              "es": "Loira Atlántico",
-              "fr": "Loire-Atlantique",
-              "ja": "ロワール＝アトランティック県",
-              "pt-BR": "Loire-Atlantique",
-              "ru": "Атлантическая Луара",
-              "zh-CN": "大西洋卢瓦尔省"
+              "de": "Vienne",
+              "en": "Vienne",
+              "es": "Viena",
+              "fr": "Vienne"
             }
           }
         ]
