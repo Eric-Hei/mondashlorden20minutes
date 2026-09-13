@@ -20,24 +20,23 @@
   "cookies": [],
   "headers": {
     "accept-ranges": "bytes",
-    "age": "15",
+    "age": "0",
     "cache-control": "public,max-age=0,must-revalidate",
-    "cache-status": "\"Netlify Edge\"; hit; ttl=31535985",
+    "cache-status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
     "content-encoding": "br",
-    "content-length": "686",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 06 Sep 2026 03:09:14 GMT",
+    "date": "Sun, 13 Sep 2026 03:34:16 GMT",
     "etag": "\"70b7a413445c55800ba31fe109f9cc0a-ssl-df\"",
     "netlify-hosting": "provider=Netlify; deploy=\"https://netlify.new/?utm_campaign=ai-legible&utm_source=header&utm_medium=referral&utm_id=149a1a62-70c9-4b6c-8fab-cbacfbc18282\"",
     "server": "Netlify",
     "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
     "vary": "Accept-Encoding",
-    "x-nf-request-id": "01M1TB22HXNXG603DVXVVM3WHW"
+    "x-nf-request-id": "01M2CD8YCS0GT6JJN106WZY2S8"
   },
   "endpoints": [
     {
       "hostname": "firesplash.netlify.app",
-      "ip": "98.84.224.111",
+      "ip": "18.208.88.157",
       "geoip": {
         "city": {
           "geoname_id": 4744870,
@@ -81,7 +80,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 20,
+          "accuracy_radius": 50,
           "latitude": 39.0469,
           "longitude": -77.4903,
           "metro_code": 511,
@@ -124,7 +123,7 @@
     },
     {
       "hostname": "unpkg.com",
-      "ip": "104.18.0.22",
+      "ip": "104.18.1.22",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,

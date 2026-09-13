@@ -1,4 +1,4 @@
-# Nmap 7.95 scan initiated Sun Sep  6 03:10:46 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln firesplash.netlify.app
+# Nmap 7.95 scan initiated Sun Sep 13 03:35:47 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln firesplash.netlify.app
 Host: 18.208.88.157 (ec2-18-208-88-157.compute-1.amazonaws.com)	Status: Up
 Host: 18.208.88.157 (ec2-18-208-88-157.compute-1.amazonaws.com)	Ports: 80/open/tcp//http//Golang net|http server/, 443/open/tcp//ssl|http//Golang net|http server/	Ignored State: filtered (998)
-# Nmap done at Sun Sep  6 03:11:27 2026 -- 1 IP address (1 host up) scanned in 40.99 seconds
+# Nmap done at Sun Sep 13 03:36:28 2026 -- 1 IP address (1 host up) scanned in 40.78 seconds
