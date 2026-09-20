@@ -1,5 +1,12 @@
 [
          {
+              "id"           : "cmdline_fast_depreciation",
+              "ip"           : "oscar.service-civique.gouv.fr/",
+              "port"         : "443",
+              "severity"     : "WARN",
+              "finding"      : "'--fast' can have some undesired side effects thus it is not recommended to use anymore"
+          }
+,         {
               "id"           : "service",
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
@@ -276,7 +283,7 @@
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "05C37B2D956D5F3D9D9834705B41FC0C588A"
+              "finding"      : "05B9D9A5A5AF3AAF3D6FFCB05D75B13330F7"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -290,21 +297,21 @@
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "84C0574AD6B0B42AEA208564DE9A9D3DC2BB24FF"
+              "finding"      : "BC32D989DFF6D390F0E5BE52609E1349D11D3991"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "FCD7E64C0E2CEF10F7A9F9CC7B27A71CB293885E31D0239EBA6E56D4B9E7D345"
+              "finding"      : "790C4D85DDF1D271A885D8F522A3A80A07BE2B151A268ED9BBBED5E370DC4048"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFEzCCA/ugAwIBAgISBcN7LZVtXz2dmDRwW0H8DFiKMA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNZUjEwHhcNMjYwNzEzMjMwODM2WhcNMjYxMDExMjMwODM1WjAoMSYwJAYDVQQDEx1vc2Nhci5zZXJ2aWNlLWNpdmlxdWUuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL7qAvxocBQMCxe0eq8+xBqrEy+TuNslLz5mEeHBIXoY2R8dBzgGnb0ARPUM3UYLqNtPjx5WiLaQK155Snh6qwBSYG1b2a/ADmXexM3XJTnSFbcxIvL1ZcOahWV/HLHAVcnLlJalyeucgE0pDLQWwtpfXqeT4d9ZkHevixsL+jsKBIrMPYeZOw3cUwlgBgl7D9IbfY34sZmz7Zs072AgB+vUhCPs8Nk9SKOq/KnBUiN8KuiQnKY46v3DKs11KmL5KByPF9bW+NAcWeBhSfYNcFnNJ1NCpgcOzVbQ7y1qE6HkI+eQnV0xwenzAInieCWbaoMO8ZZ6NEgOEnHcE2biPWMCAwEAAaOCAiowggImMA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQzf+8See0k5b3G1Wm80LHAHzA8kjAfBgNVHSMEGDAWgBQfLzW+RhSCzUCxrnksVXj699Ro+zAzBggrBgEFBQcBAQQnMCUwIwYIKwYBBQUHMAKGF2h0dHA6Ly95cjEuaS5sZW5jci5vcmcvMCgGA1UdEQQhMB+CHW9zY2FyLnNlcnZpY2UtY2l2aXF1ZS5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMC4GA1UdHwQnMCUwI6AhoB+GHWh0dHA6Ly95cjEuYy5sZW5jci5vcmcvMTEuY3JsMIIBCwYKKwYBBAHWeQIEAgSB/ASB+QD3AHYAyKPEf8ezrbk1awE/anoSbeM6TkOlxkb5l605dZkdz5oAAAGfXfLj6gAABAMARzBFAiEA1Bj3BY9SdLyoh0SdnvBTcb5gaXDcVPJkTQOWoMif1zcCIATLPvCuTYP7k+cp06/lK7zjp5rF+xKa5T7mKDx315qvAH0AGoudaw/+v4G0eTnG0jEKhtbRAtTwRuIYLJ3jX14mJe8AAAGfXfLm3gAIAAAFAClnXcMEAwBGMEQCICGEXyJaCd9KIFsCSzMI0K6JTk1fy9WYlB5BS0WfCF2yAiApsU/gV3gtAvRGfGoySxxRTKRAzPzX8RiIqIOxUu8AMzANBgkqhkiG9w0BAQsFAAOCAQEAUTgUKIMP2GFVe2on7LF/pe6MtM1OsdDs0qDDBNNBc0vR/qEmbZSz8RBDNsdTUDBFTW4NG/DM8vSuD74QbhrL1IEoN0z9YUDDA7al6oSIPJTah81xgd33mARFhwPjp3+FyUWOLD+qMhnoJgD4+DYNNV+8FyhpbF2M9pNMKe994N9If65IPyax7SC0QcbwR907Rg0sW7S5YFwnrV5bGhaf869QKmB3S0k5PVI2iBCsW2cGfsprrv+aYDQ5blckkh9zauQtf5JTRwmofaw5ycR8H1do9sC5gHmP83+Mk2cAAsAT9sYzGwNo8CxmgXZsijorlXlN3qejC2WsSia518yklg==\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFFTCCA/2gAwIBAgISBbnZpaWvOq89b/ywXXWxMzD3MA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNZUjEwHhcNMjYwOTE4MjMzOTIzWhcNMjYxMjE3MjMzOTIyWjAoMSYwJAYDVQQDEx1vc2Nhci5zZXJ2aWNlLWNpdmlxdWUuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL7qAvxocBQMCxe0eq8+xBqrEy+TuNslLz5mEeHBIXoY2R8dBzgGnb0ARPUM3UYLqNtPjx5WiLaQK155Snh6qwBSYG1b2a/ADmXexM3XJTnSFbcxIvL1ZcOahWV/HLHAVcnLlJalyeucgE0pDLQWwtpfXqeT4d9ZkHevixsL+jsKBIrMPYeZOw3cUwlgBgl7D9IbfY34sZmz7Zs072AgB+vUhCPs8Nk9SKOq/KnBUiN8KuiQnKY46v3DKs11KmL5KByPF9bW+NAcWeBhSfYNcFnNJ1NCpgcOzVbQ7y1qE6HkI+eQnV0xwenzAInieCWbaoMO8ZZ6NEgOEnHcE2biPWMCAwEAAaOCAiwwggIoMA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQzf+8See0k5b3G1Wm80LHAHzA8kjAfBgNVHSMEGDAWgBQfLzW+RhSCzUCxrnksVXj699Ro+zAzBggrBgEFBQcBAQQnMCUwIwYIKwYBBQUHMAKGF2h0dHA6Ly95cjEuaS5sZW5jci5vcmcvMCgGA1UdEQQhMB+CHW9zY2FyLnNlcnZpY2UtY2l2aXF1ZS5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMC8GA1UdHwQoMCYwJKAioCCGHmh0dHA6Ly95cjEuYy5sZW5jci5vcmcvMTIwLmNybDCCAQwGCisGAQQB1nkCBAIEgf0EgfoA+AB2AJROQ4f67MHvgfMZJCaoGGUBx9NfOAIBP3JnfVU3LhnYAAABoLcZJekAAAQDAEcwRQIhAIoOcobIVG3IU4+hfi9EvhHiOQXQiJUeF/nLK27BIEcbAiBdh67Oml7pLjE7EsW+YhTPP+65SBUMN9CKbV8BYuSA5AB+ABqLnWsP/r+BtHk5xtIxCobW0QLU8EbiGCyd419eJiXvAAABoLcZKDwACAAABQBCuN7zBAMARzBFAiEAySD/geT1zJvP1dQmZkG5ae7dM2oGceW8TB/+xq5uOSYCICJiqwB1L55bG+DajOaownf5KAYo/hoMBA2X/WV6FBGfMA0GCSqGSIb3DQEBCwUAA4IBAQBSKYlOJvxmABe2Do/EPlwYlqb2fn0tw89z7/b70/rLcgiWIAKyu6M91u2rrNm01qcFmKFdeZsmIaK8EmbZuiTWv8bEMnBlTuvd2JErbnClIkrHFzAR8GDqhBgG1s26qF0on50vCB8AfNMyX113DLCWT3Yj6g8NGfa4hr7qCnO1/UG7F8qGCyGCTNicKn3ZUq2q+78qOlF7phS47wISZxwdLUHeccVys0CzBFi3x6LC+SMtxaur3/tfI3PWOlPFr/cbvGKdKdV8t+PSQzX1tL39AN+uXCmiR0BEDNJb7MTcYPgoWcEGFyWdvGeSnLoDgpTHL52Q2zEsw4YXklzB4yqO\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -352,22 +359,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (28)"
+              "severity"     : "OK",
+              "finding"      : "88 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2026-07-13 23:08"
+              "finding"      : "2026-09-18 23:39"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "2026-10-11 23:08"
+              "severity"     : "OK",
+              "finding"      : "2026-12-17 23:39"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -388,7 +395,7 @@
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://yr1.c.lencr.org/11.crl"
+              "finding"      : "http://yr1.c.lencr.org/120.crl"
           }
 ,         {
               "id"           : "cert_ocspURL",
@@ -549,14 +556,14 @@
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-2 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789269694"
+              "finding"      : "1789875296"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -757,7 +764,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=FCD7E64C0E2CEF10F7A9F9CC7B27A71CB293885E31D0239EBA6E56D4B9E7D345"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=790C4D85DDF1D271A885D8F522A3A80A07BE2B151A268ED9BBBED5E370DC4048"
           }
 ,         {
               "id"           : "LOGJAM",
