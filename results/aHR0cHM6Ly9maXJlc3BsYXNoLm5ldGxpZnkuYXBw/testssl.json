@@ -1,5 +1,12 @@
 [
          {
+              "id"           : "cmdline_fast_depreciation",
+              "ip"           : "firesplash.netlify.app/",
+              "port"         : "443",
+              "severity"     : "WARN",
+              "finding"      : "'--fast' can have some undesired side effects thus it is not recommended to use anymore"
+          }
+,         {
               "id"           : "service",
               "ip"           : "firesplash.netlify.app/98.84.224.111",
               "port"         : "443",
@@ -360,7 +367,7 @@
               "ip"           : "firesplash.netlify.app/98.84.224.111",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "187 >= 60 days"
+              "finding"      : "180 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -514,21 +521,21 @@
               "ip"           : "firesplash.netlify.app/98.84.224.111",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "+14 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "firesplash.netlify.app/98.84.224.111",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789270482"
+              "finding"      : "1789875589"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "firesplash.netlify.app/98.84.224.111",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds"
+              "finding"      : "14 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1447,7 +1454,7 @@
               "ip"           : "firesplash.netlify.app/18.208.88.157",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "187 >= 60 days"
+              "finding"      : "180 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1608,7 +1615,7 @@
               "ip"           : "firesplash.netlify.app/18.208.88.157",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1789270520"
+              "finding"      : "1789875630"
           }
 ,         {
               "id"           : "HTTP_headerAge",
@@ -2178,6 +2185,6 @@
               "ip"           : "firesplash.netlify.app/18.208.88.157",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "79"
+              "finding"      : "84"
           }
 ]
