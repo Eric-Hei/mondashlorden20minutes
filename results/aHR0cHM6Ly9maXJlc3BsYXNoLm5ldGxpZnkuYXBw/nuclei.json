@@ -33,14 +33,14 @@
       },
       "type": "dns",
       "host": "firesplash.netlify.app",
-      "matched-at": "3JZjus0uFqdqAPEkBGG74H4nDCW-3JZjus0uFqdqAPEkBGG74H4nDCW.firesplash.netlify.app",
+      "matched-at": "3JtXeh57ALIlAOhXz78P3dYt62s-3JtXeh57ALIlAOhXz78P3dYt62s.firesplash.netlify.app",
       "extracted-results": [
-        "18.208.88.157",
-        "98.84.224.111"
+        "13.52.188.95",
+        "52.52.192.191"
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 46319\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;3JZjus0uFqdqAPEkBGG74H4nDCW-3JZjus0uFqdqAPEkBGG74H4nDCW.firesplash.netlify.app.\tIN\t A\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 46319\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;3JZjus0uFqdqAPEkBGG74H4nDCW-3JZjus0uFqdqAPEkBGG74H4nDCW.firesplash.netlify.app.\tIN\t A\n\n;; ANSWER SECTION:\n3JZjus0uFqdqAPEkBGG74H4nDCW-3JZjus0uFqdqAPEkBGG74H4nDCW.firesplash.netlify.app.\t120\tIN\tA\t18.208.88.157\n3JZjus0uFqdqAPEkBGG74H4nDCW-3JZjus0uFqdqAPEkBGG74H4nDCW.firesplash.netlify.app.\t120\tIN\tA\t98.84.224.111\n",
-      "timestamp": "2026-09-20T03:41:52.948339483Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 57900\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;3JtXeh57ALIlAOhXz78P3dYt62s-3JtXeh57ALIlAOhXz78P3dYt62s.firesplash.netlify.app.\tIN\t A\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 57900\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;3JtXeh57ALIlAOhXz78P3dYt62s-3JtXeh57ALIlAOhXz78P3dYt62s.firesplash.netlify.app.\tIN\t A\n\n;; ANSWER SECTION:\n3JtXeh57ALIlAOhXz78P3dYt62s-3JtXeh57ALIlAOhXz78P3dYt62s.firesplash.netlify.app.\t120\tIN\tA\t13.52.188.95\n3JtXeh57ALIlAOhXz78P3dYt62s-3JtXeh57ALIlAOhXz78P3dYt62s.firesplash.netlify.app.\t120\tIN\tA\t52.52.192.191\n",
+      "timestamp": "2026-09-27T03:57:19.965494288Z",
       "matcher-status": true
     }
   ]
