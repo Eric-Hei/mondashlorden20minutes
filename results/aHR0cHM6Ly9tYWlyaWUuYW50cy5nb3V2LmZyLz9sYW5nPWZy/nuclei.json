@@ -47,7 +47,7 @@
       ],
       "request": "content = template.http_all_headers\nconst setCookieLines = content\n    .split(/\\r\\n/)\n    .filter(line => line.trim().toLowerCase().startsWith('set-cookie:'***\n\nconst nonHttpOnlyCookies = setCookieLines.filter(line => !line.toLowerCase().includes('httponly'));\n\nconst cookieNames = nonHttpOnlyCookies.map(line => {\n    const match = line.match(/set-cookie:***\n    return match ? match[1] : null;\n}).filter(Boolean);\ncookieNames",
       "response": "[bot_mitigation_cookie]",
-      "timestamp": "2026-09-20T03:45:12.974171188Z",
+      "timestamp": "2026-09-27T04:01:00.151029047Z",
       "matcher-status": true
     },
     {
@@ -97,7 +97,7 @@
       ],
       "request": "content = template.http_all_headers\nconst setCookieLines = content\n    .split(/\\r\\n/)\n    .filter(line => line.trim().toLowerCase().startsWith('set-cookie:'***\nconst nonSecureCookies = setCookieLines.filter(line => !line.toLowerCase().includes('secure'));\nconst cookieNames = nonSecureCookies.map(line => {\n    const match = line.match(/set-cookie:***\n    return match ? match[1] : null;\n}).filter(Boolean);\ncookieNames",
       "response": "[bot_mitigation_cookie]",
-      "timestamp": "2026-09-20T03:45:12.982258795Z",
+      "timestamp": "2026-09-27T04:01:00.201570942Z",
       "matcher-status": true
     },
     {
@@ -130,7 +130,7 @@
         "tls12"
       ],
       "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:27.172354607Z",
+      "timestamp": "2026-09-27T04:02:09.55645569Z",
       "matcher-status": true
     },
     {
@@ -163,48 +163,43 @@
         "tls13"
       ],
       "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:27.39334653Z",
+      "timestamp": "2026-09-27T04:02:09.849353332Z",
       "matcher-status": true
     },
     {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "template": "http/misconfiguration/missing-cookie-samesite-strict.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/missing-cookie-samesite-strict",
+      "template-id": "missing-cookie-samesite-strict",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/missing-cookie-samesite-strict.yaml",
       "info": {
-        "name": "HTTP Missing Security Headers",
+        "name": "Missing Cookie SameSite Strict",
         "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani",
-          "celbahraoui",
-          "safejulian"
+          "lucky0x0d",
+          "pulsesecurity.co.nz"
         ],
         "tags": [
           "misconfig",
-          "headers",
-          "generic",
+          "samesite",
+          "cookie",
           "vuln"
         ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "description": "Identified cookies that lacked the samesite=strict attribute, which prevented enforcement of restrictions on cross-domain cookie transmission.\n",
+        "reference": [
+          "https://pulsesecurity.co.nz/articles/samesite-lax-csrf"
+        ],
         "severity": "info",
         "metadata": {
-          "max-request": 1
+          "max-request": 1,
+          "verified": true
         },
         "classification": {
           "cve-id": null,
           "cwe-id": [
             "cwe-693"
-          ]
+          ],
+          "cvss-metrics": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
         }
       },
-      "matcher-name": "permissions-policy",
       "type": "http",
       "host": "mairie.ants.gouv.fr",
       "port": "443",
@@ -212,169 +207,13 @@
       "url": "https://mairie.ants.gouv.fr/?lang=fr",
       "path": "/",
       "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
+      "extracted-results": [
+        "bot_mitigation_cookie=3M7H2P7FZBYYHIW5QFYWEPCMPZ7I7KNRBTAUMOVOSGJG2VRCHU5LVXUJW3YGGX5EJDN3LOGDAOU2QYSADKG7GU3JFPPYXQC6ZW5WRKADFBRMT7B553SA====; Path=/; SameSite=lax"
+      ],
       "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 03:46:47 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C3-a8991b80-43b5a736\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_6U4CFHNKE5AYXNPXL7TEKF3NLUSFCFAQXHRXFKLX76GZTNTGDRTA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 04:02:12 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C2-0bea2356-225fff76\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_BFABQ6Q6GRWD7WX7QMHASKDZCLUOM4WKCA4E332W5AGYYENBALZA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
       "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:47.915149494Z",
-      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani",
-          "celbahraoui",
-          "safejulian"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic",
-          "vuln"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-693"
-          ]
-        }
-      },
-      "matcher-name": "cross-origin-opener-policy",
-      "type": "http",
-      "host": "mairie.ants.gouv.fr",
-      "port": "443",
-      "scheme": "https",
-      "url": "https://mairie.ants.gouv.fr/?lang=fr",
-      "path": "/",
-      "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
-      "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 03:46:47 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C3-a8991b80-43b5a736\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_6U4CFHNKE5AYXNPXL7TEKF3NLUSFCFAQXHRXFKLX76GZTNTGDRTA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
-      "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:47.915363964Z",
-      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani",
-          "celbahraoui",
-          "safejulian"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic",
-          "vuln"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-693"
-          ]
-        }
-      },
-      "matcher-name": "content-security-policy",
-      "type": "http",
-      "host": "mairie.ants.gouv.fr",
-      "port": "443",
-      "scheme": "https",
-      "url": "https://mairie.ants.gouv.fr/?lang=fr",
-      "path": "/",
-      "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
-      "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 03:46:47 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C3-a8991b80-43b5a736\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_6U4CFHNKE5AYXNPXL7TEKF3NLUSFCFAQXHRXFKLX76GZTNTGDRTA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
-      "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:47.915542731Z",
-      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani",
-          "celbahraoui",
-          "safejulian"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic",
-          "vuln"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-693"
-          ]
-        }
-      },
-      "matcher-name": "x-frame-options",
-      "type": "http",
-      "host": "mairie.ants.gouv.fr",
-      "port": "443",
-      "scheme": "https",
-      "url": "https://mairie.ants.gouv.fr/?lang=fr",
-      "path": "/",
-      "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
-      "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 03:46:47 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C3-a8991b80-43b5a736\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_6U4CFHNKE5AYXNPXL7TEKF3NLUSFCFAQXHRXFKLX76GZTNTGDRTA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
-      "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:47.915767276Z",
+      "timestamp": "2026-09-27T04:02:12.890460602Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
       "matcher-status": true
     },
@@ -425,62 +264,9 @@
       "path": "/",
       "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
       "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 03:46:47 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C3-a8991b80-43b5a736\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_6U4CFHNKE5AYXNPXL7TEKF3NLUSFCFAQXHRXFKLX76GZTNTGDRTA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 04:02:17 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C2-109ae1bd-b33133ee\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_BFABQ6Q6GRWD7WX7QMHASKDZCLUOM4WKCA4E332W5AGYYENBALZA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
       "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:47.915939743Z",
-      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani",
-          "celbahraoui",
-          "safejulian"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic",
-          "vuln"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-693"
-          ]
-        }
-      },
-      "matcher-name": "x-permitted-cross-domain-policies",
-      "type": "http",
-      "host": "mairie.ants.gouv.fr",
-      "port": "443",
-      "scheme": "https",
-      "url": "https://mairie.ants.gouv.fr/?lang=fr",
-      "path": "/",
-      "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
-      "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 03:46:47 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C3-a8991b80-43b5a736\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_6U4CFHNKE5AYXNPXL7TEKF3NLUSFCFAQXHRXFKLX76GZTNTGDRTA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
-      "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:47.916117618Z",
+      "timestamp": "2026-09-27T04:02:17.177065865Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
       "matcher-status": true
     },
@@ -531,9 +317,168 @@
       "path": "/",
       "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
       "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 03:46:47 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C3-a8991b80-43b5a736\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_6U4CFHNKE5AYXNPXL7TEKF3NLUSFCFAQXHRXFKLX76GZTNTGDRTA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 04:02:17 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C2-109ae1bd-b33133ee\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_BFABQ6Q6GRWD7WX7QMHASKDZCLUOM4WKCA4E332W5AGYYENBALZA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
       "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:47.916283205Z",
+      "timestamp": "2026-09-27T04:02:17.177346017Z",
+      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui",
+          "safejulian"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-693"
+          ]
+        }
+      },
+      "matcher-name": "cross-origin-opener-policy",
+      "type": "http",
+      "host": "mairie.ants.gouv.fr",
+      "port": "443",
+      "scheme": "https",
+      "url": "https://mairie.ants.gouv.fr/?lang=fr",
+      "path": "/",
+      "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
+      "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 04:02:17 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C2-109ae1bd-b33133ee\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_BFABQ6Q6GRWD7WX7QMHASKDZCLUOM4WKCA4E332W5AGYYENBALZA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
+      "ip": "46.105.60.75",
+      "timestamp": "2026-09-27T04:02:17.177606733Z",
+      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui",
+          "safejulian"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-693"
+          ]
+        }
+      },
+      "matcher-name": "content-security-policy",
+      "type": "http",
+      "host": "mairie.ants.gouv.fr",
+      "port": "443",
+      "scheme": "https",
+      "url": "https://mairie.ants.gouv.fr/?lang=fr",
+      "path": "/",
+      "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
+      "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 04:02:17 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C2-109ae1bd-b33133ee\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_BFABQ6Q6GRWD7WX7QMHASKDZCLUOM4WKCA4E332W5AGYYENBALZA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
+      "ip": "46.105.60.75",
+      "timestamp": "2026-09-27T04:02:17.177878309Z",
+      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui",
+          "safejulian"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-693"
+          ]
+        }
+      },
+      "matcher-name": "x-permitted-cross-domain-policies",
+      "type": "http",
+      "host": "mairie.ants.gouv.fr",
+      "port": "443",
+      "scheme": "https",
+      "url": "https://mairie.ants.gouv.fr/?lang=fr",
+      "path": "/",
+      "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
+      "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 04:02:17 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C2-109ae1bd-b33133ee\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_BFABQ6Q6GRWD7WX7QMHASKDZCLUOM4WKCA4E332W5AGYYENBALZA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
+      "ip": "46.105.60.75",
+      "timestamp": "2026-09-27T04:02:17.178099822Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
       "matcher-status": true
     },
@@ -584,9 +529,9 @@
       "path": "/",
       "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
       "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 03:46:47 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C3-a8991b80-43b5a736\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_6U4CFHNKE5AYXNPXL7TEKF3NLUSFCFAQXHRXFKLX76GZTNTGDRTA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 04:02:17 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C2-109ae1bd-b33133ee\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_BFABQ6Q6GRWD7WX7QMHASKDZCLUOM4WKCA4E332W5AGYYENBALZA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
       "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:47.916455432Z",
+      "timestamp": "2026-09-27T04:02:17.178319932Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
       "matcher-status": true
     },
@@ -637,9 +582,9 @@
       "path": "/",
       "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
       "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 03:46:47 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C3-a8991b80-43b5a736\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_6U4CFHNKE5AYXNPXL7TEKF3NLUSFCFAQXHRXFKLX76GZTNTGDRTA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 04:02:17 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C2-109ae1bd-b33133ee\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_BFABQ6Q6GRWD7WX7QMHASKDZCLUOM4WKCA4E332W5AGYYENBALZA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
       "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:47.916605556Z",
+      "timestamp": "2026-09-27T04:02:17.178518863Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
       "matcher-status": true
     },
@@ -690,46 +635,51 @@
       "path": "/",
       "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
       "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 03:46:47 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C3-a8991b80-43b5a736\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_6U4CFHNKE5AYXNPXL7TEKF3NLUSFCFAQXHRXFKLX76GZTNTGDRTA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 04:02:17 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C2-109ae1bd-b33133ee\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_BFABQ6Q6GRWD7WX7QMHASKDZCLUOM4WKCA4E332W5AGYYENBALZA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
       "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:47.916749321Z",
+      "timestamp": "2026-09-27T04:02:17.178734806Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
       "matcher-status": true
     },
     {
-      "template": "http/misconfiguration/missing-cookie-samesite-strict.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/missing-cookie-samesite-strict",
-      "template-id": "missing-cookie-samesite-strict",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/missing-cookie-samesite-strict.yaml",
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
       "info": {
-        "name": "Missing Cookie SameSite Strict",
+        "name": "HTTP Missing Security Headers",
         "author": [
-          "lucky0x0d",
-          "pulsesecurity.co.nz"
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui",
+          "safejulian"
         ],
         "tags": [
           "misconfig",
-          "samesite",
-          "cookie",
+          "headers",
+          "generic",
           "vuln"
         ],
-        "description": "Identified cookies that lacked the samesite=strict attribute, which prevented enforcement of restrictions on cross-domain cookie transmission.\n",
-        "reference": [
-          "https://pulsesecurity.co.nz/articles/samesite-lax-csrf"
-        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
         "severity": "info",
         "metadata": {
-          "max-request": 1,
-          "verified": true
+          "max-request": 1
         },
         "classification": {
           "cve-id": null,
           "cwe-id": [
             "cwe-693"
-          ],
-          "cvss-metrics": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+          ]
         }
       },
+      "matcher-name": "permissions-policy",
       "type": "http",
       "host": "mairie.ants.gouv.fr",
       "port": "443",
@@ -737,13 +687,63 @@
       "url": "https://mairie.ants.gouv.fr/?lang=fr",
       "path": "/",
       "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
-      "extracted-results": [
-        "bot_mitigation_cookie=BXDDXFJFF5PQYHDFVUTEIC4PZYQ5MQ2X4WWQ6IOMH4VLKDLRKVCVV6RWYDII6VJPC7NLZNXTFX32J3RTMCSH25IQZ4R5WGPU5Q7UDKE7C5KSOU3ORF3Q====; Path=/; SameSite=lax"
-      ],
       "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 03:46:49 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C2-bf573e0e-225fff76\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_6U4CFHNKE5AYXNPXL7TEKF3NLUSFCFAQXHRXFKLX76GZTNTGDRTA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 04:02:17 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C2-109ae1bd-b33133ee\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_BFABQ6Q6GRWD7WX7QMHASKDZCLUOM4WKCA4E332W5AGYYENBALZA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
       "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:46:49.351435349Z",
+      "timestamp": "2026-09-27T04:02:17.179028183Z",
+      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui",
+          "safejulian"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-693"
+          ]
+        }
+      },
+      "matcher-name": "x-frame-options",
+      "type": "http",
+      "host": "mairie.ants.gouv.fr",
+      "port": "443",
+      "scheme": "https",
+      "url": "https://mairie.ants.gouv.fr/?lang=fr",
+      "path": "/",
+      "matched-at": "https://mairie.ants.gouv.fr/?lang=fr",
+      "request": "GET /?lang=fr HTTP/1.1\r\nHost: mairie.ants.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 04:02:17 GMT\r\nSet-Cookie: ***\r\nVary: Accept-Encoding\r\nX-Cp-Via: C2-109ae1bd-b33133ee\r\n\r\n<html lang=\"en\"><head></head><body><script>window.location.href='/redirect_BFABQ6Q6GRWD7WX7QMHASKDZCLUOM4WKCA4E332W5AGYYENBALZA====/?lang=fr';</script><noscript>This website requires JS enabled and cookies</noscript></body></html>",
+      "ip": "46.105.60.75",
+      "timestamp": "2026-09-27T04:02:17.179340725Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://mairie.ants.gouv.fr/?lang=fr'",
       "matcher-status": true
     },
@@ -780,9 +780,9 @@
       "extracted-results": [
         "dmwvcmoufu535olvm4nbxt5v3tlslwisa254k5iyngad6zyv.fr.d.ubika.io"
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 25123\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;mairie.ants.gouv.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 25123\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;mairie.ants.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nmairie.ants.gouv.fr.\t600\tIN\tCNAME\tdmwvcmoufu535olvm4nbxt5v3tlslwisa254k5iyngad6zyv.fr.d.ubika.io.\n",
-      "timestamp": "2026-09-20T03:47:05.125265756Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 49525\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;mairie.ants.gouv.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 49525\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;mairie.ants.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nmairie.ants.gouv.fr.\t600\tIN\tCNAME\tdmwvcmoufu535olvm4nbxt5v3tlslwisa254k5iyngad6zyv.fr.d.ubika.io.\n",
+      "timestamp": "2026-09-27T04:02:47.179749956Z",
       "matcher-status": true
     },
     {
@@ -814,7 +814,7 @@
         "GlobalSign nv-sa"
       ],
       "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:47:05.325178112Z",
+      "timestamp": "2026-09-27T04:02:47.346559183Z",
       "matcher-status": true
     },
     {
@@ -843,28 +843,28 @@
       "port": "443",
       "matched-at": "mairie.ants.gouv.fr:443",
       "extracted-results": [
-        "www.pha.ants.gouv.fr",
-        "passeport.ants.gouv.fr",
-        "www.ants.gouv.fr",
-        "www.cni-passeport.ants.gouv.fr",
-        "bo.ants.gouv.fr",
-        "cni-passeport.ants.gouv.fr",
-        "permisdeconduire.ants.gouv.fr",
-        "www.permisdeconduire.ants.gouv.fr",
         "img.ants.gouv.fr",
-        "www.mairie.ants.gouv.fr",
-        "osm.ants.gouv.fr",
-        "autoecole.ants.gouv.fr",
-        "www.autoecole.ants.gouv.fr",
         "mairie.ants.gouv.fr",
-        "ants.gouv.fr",
         "www.immatriculation.ants.gouv.fr",
         "www.passeport.ants.gouv.fr",
+        "www.cni-passeport.ants.gouv.fr",
+        "www.mairie.ants.gouv.fr",
+        "osm.ants.gouv.fr",
         "pha.ants.gouv.fr",
-        "immatriculation.ants.gouv.fr"
+        "autoecole.ants.gouv.fr",
+        "www.autoecole.ants.gouv.fr",
+        "immatriculation.ants.gouv.fr",
+        "www.pha.ants.gouv.fr",
+        "ants.gouv.fr",
+        "www.permisdeconduire.ants.gouv.fr",
+        "bo.ants.gouv.fr",
+        "passeport.ants.gouv.fr",
+        "www.ants.gouv.fr",
+        "permisdeconduire.ants.gouv.fr",
+        "cni-passeport.ants.gouv.fr"
       ],
       "ip": "46.105.60.75",
-      "timestamp": "2026-09-20T03:47:05.325415646Z",
+      "timestamp": "2026-09-27T04:02:47.346796385Z",
       "matcher-status": true
     }
   ]
