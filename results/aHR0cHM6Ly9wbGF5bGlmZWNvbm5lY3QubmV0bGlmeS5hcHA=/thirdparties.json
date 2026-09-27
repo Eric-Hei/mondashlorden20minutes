@@ -10,11 +10,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://rqrkorimpcobmbbsdcgz.supabase.co/rest/v1/site_config?select=value&key=eq.impact_metrics"
+      "url": "https://rqrkorimpcobmbbsdcgz.supabase.co/rest/v1/site_config?select=value&key=eq.slideshow_photos"
     },
     {
       "type": "unknown",
-      "url": "https://rqrkorimpcobmbbsdcgz.supabase.co/rest/v1/site_config?select=value&key=eq.slideshow_photos"
+      "url": "https://rqrkorimpcobmbbsdcgz.supabase.co/rest/v1/site_config?select=value&key=eq.impact_metrics"
     }
   ],
   "cookies": [],
@@ -27,9 +27,8 @@
     "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.supabase.in wss://*.supabase.in; media-src 'self' data: blob: https:; manifest-src 'self'",
     "content-type": "text/html; charset=UTF-8",
     "cross-origin-opener-policy": "same-origin",
-    "date": "Sun, 20 Sep 2026 03:44:56 GMT",
+    "date": "Sun, 27 Sep 2026 04:01:49 GMT",
     "etag": "\"f63f1761288ff3c96e3ce43b799a8156-ssl-df\"",
-    "netlify-hosting": "provider=Netlify; deploy=\"https://netlify.new/?utm_campaign=ai-legible&utm_source=header&utm_medium=referral&utm_id=67a81d60-961b-4cf3-ae90-9671e9a3beda\"",
     "permissions-policy": "accelerometer=(), autoplay=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
     "referrer-policy": "strict-origin-when-cross-origin",
     "server": "Netlify",
@@ -37,12 +36,12 @@
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
     "x-frame-options": "DENY",
-    "x-nf-request-id": "01M2YENG4YQBQ0HVR6EER13K8W"
+    "x-nf-request-id": "01M3GGDEFDDQSQGNPTDY9SZMYZ"
   },
   "endpoints": [
     {
       "hostname": "playlifeconnect.netlify.app",
-      "ip": "18.208.88.157",
+      "ip": "98.84.224.111",
       "geoip": {
         "city": {
           "geoname_id": 4744870,
@@ -86,7 +85,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 50,
+          "accuracy_radius": 20,
           "latitude": 39.0469,
           "longitude": -77.4903,
           "metro_code": 511,
@@ -129,7 +128,7 @@
     },
     {
       "hostname": "rqrkorimpcobmbbsdcgz.supabase.co",
-      "ip": "104.18.38.10",
+      "ip": "172.64.149.246",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,
