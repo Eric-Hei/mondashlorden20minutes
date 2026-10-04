@@ -1,5 +1,12 @@
 [
          {
+              "id"           : "engine_problem",
+              "ip"           : "www.service-civique.gouv.fr/",
+              "port"         : "443",
+              "severity"     : "WARN",
+              "finding"      : "No engine or GOST support via engine with your /home/testssl/bin/openssl.Linux.x86_64"
+          }
+,         {
               "id"           : "cmdline_fast_depreciation",
               "ip"           : "www.service-civique.gouv.fr/",
               "port"         : "443",
@@ -283,7 +290,7 @@
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "05F156AF189B25D06A4CB9782C22BD528832"
+              "finding"      : "06CC1D1538B9DF63D2EFB5C0CC3EE7E8DDFA"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -297,21 +304,21 @@
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "ED1B43541502F31D293B7D1EBFED2082677946F0"
+              "finding"      : "558D2E3169C5D59D380FFF6CE8E362EF277FDB54"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2184D61ED88C711899E65AD2FBBA32AF763B4D628CA77345328D16E5C5B49FCA"
+              "finding"      : "33287F99F6DD8E6A9EEC4F3518D589F75B23C6CE661D82A20E64187916E5191A"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFDzCCA/egAwIBAgISBfFWrxibJdBqTLl4LCK9UogyMA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNZUjEwHhcNMjYwNzI3MTA0MTEyWhcNMjYxMDI1MTA0MTExWjAmMSQwIgYDVQQDExt3d3cuc2VydmljZS1jaXZpcXVlLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDTlSVRW3XSzZ1syGYwpS/t9q2P/NMcJ6vAhbjcmvkZiCf8iAM2DeMXIEIBnmunMSXeaj9uLIbRMvtAtnTMETT4OqP2Xk4Zhl89dq6AKQUokJVjau76morVkoFe6ZpLbqhsES9OdNrv8+0sGtgBiZ8+4i6F4/5Kj98Owo5CLTdaDXKvDPR3CJdffRkIwD6xCRyiM3OKZqqBkpYKMY/lXfYemTqOELu6pXNoarJhp5CzjcwZUfLbyWFVLqLaYPReRsEDKj4GOxjZZw0lxf26jy45k8AjwknzCAZFmGB9agQbyaOA0B/FYsFvz9jvy7zhLvU372pHIm6I9fdco/MiKC6LAgMBAAGjggIoMIICJDAOBgNVHQ8BAf8EBAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUBYC/09fkr40OkokSpZjPLmV83+swHwYDVR0jBBgwFoAUHy81vkYUgs1Asa55LFV4+vfUaPswMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8veXIxLmkubGVuY3Iub3JnLzAmBgNVHREEHzAdght3d3cuc2VydmljZS1jaXZpcXVlLmdvdXYuZnIwEwYDVR0gBAwwCjAIBgZngQwBAgEwLgYDVR0fBCcwJTAjoCGgH4YdaHR0cDovL3lyMS5jLmxlbmNyLm9yZy81MS5jcmwwggELBgorBgEEAdZ5AgQCBIH8BIH5APcAdQDYCVU7lE96/8gWGW+UT4WrsPj8XodVJg8V0S5yu0VLFAAAAZ+jX6bNAAAEAwBGMEQCIHj+S79GC+j1jKgddX/UpqOiw3NxZiMzGFMpi5koaG+nAiAgqaowRMvMjMZ8RZZK2moUptwVg2ofg3RKZlIA8AbzagB+ABqLnWsP/r+BtHk5xtIxCobW0QLU8EbiGCyd419eJiXvAAABn6NfqmYACAAABQAuQGJMBAMARzBFAiAtsSRWuf6yzDcBgxuB35XxZtF7eWQhbTxvRf+OAa6NoQIhAKRaEcS7fpsqacA25c1DFUbKo4QttNjXAyUthVRjg2vWMA0GCSqGSIb3DQEBCwUAA4IBAQCSMb64KVUfUmsytrUkS2Xd48Ni3Fg0UleZvC/RBuaFhjTxqb1bx5Of5/S+xoTy185EjXQXcJzvwd9o9drmOoQKZIEzjDn0WeZh/UCplwX00ZKB3/nd4/dATD+rkposUcn0pBl5M0YZRnRmNlfwW5KdxWgWUenRgUQ/Q7huR98aMnJviTQbinbRh7mbZ7GSolXNiMqRs/gqkFrG6SvVIv1hHo5nsWyc1REYXCMfEdUIiZPlsbOkyjU616/MR7yOhcTeoaDD/Hc5bR+WWQwt3bOLqXx02Qq8l69OIYfUFgLmyts+vV+lvWgM5FW80myX6dcu6bBM3jkpF/LF7XeE6bta\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFEjCCA/qgAwIBAgISBswdFTi532PS77XAzD7n6N36MA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNZUjEwHhcNMjYxMDAzMDA0NzQzWhcNMjcwMTAxMDA0NzQyWjAmMSQwIgYDVQQDExt3d3cuc2VydmljZS1jaXZpcXVlLmdvdXYuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDTlSVRW3XSzZ1syGYwpS/t9q2P/NMcJ6vAhbjcmvkZiCf8iAM2DeMXIEIBnmunMSXeaj9uLIbRMvtAtnTMETT4OqP2Xk4Zhl89dq6AKQUokJVjau76morVkoFe6ZpLbqhsES9OdNrv8+0sGtgBiZ8+4i6F4/5Kj98Owo5CLTdaDXKvDPR3CJdffRkIwD6xCRyiM3OKZqqBkpYKMY/lXfYemTqOELu6pXNoarJhp5CzjcwZUfLbyWFVLqLaYPReRsEDKj4GOxjZZw0lxf26jy45k8AjwknzCAZFmGB9agQbyaOA0B/FYsFvz9jvy7zhLvU372pHIm6I9fdco/MiKC6LAgMBAAGjggIrMIICJzAOBgNVHQ8BAf8EBAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUBYC/09fkr40OkokSpZjPLmV83+swHwYDVR0jBBgwFoAUHy81vkYUgs1Asa55LFV4+vfUaPswMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8veXIxLmkubGVuY3Iub3JnLzAmBgNVHREEHzAdght3d3cuc2VydmljZS1jaXZpcXVlLmdvdXYuZnIwEwYDVR0gBAwwCjAIBgZngQwBAgEwLwYDVR0fBCgwJjAkoCKgIIYeaHR0cDovL3lyMS5jLmxlbmNyLm9yZy8xMjMuY3JsMIIBDQYKKwYBBAHWeQIEAgSB/gSB+wD5AH4AWW5sM4aUsllyolbIoOjdkEp26Ag92oc7AQg4KBQ87lkAAAGg/3C+sgAIAAAFAAZdzhkEAwBHMEUCIQDwTN/+97mzvffrHnS8gL2lEP4LzEk5Ni3skdOYHacxVAIgezPzomapFDrra3z13VOQ3I48sDg8LAkXRzQlwNmWqyYAdwDW1Y2p0BdT82pKoMdXSQKv68fcLNOM2fdkyAyJGR6fAgAAAaD/cL5xAAAEAwBIMEYCIQCRDHm5OPUBJrFbvpuPx2iqNsR+s4MGNemcN1V5oY3rjgIhAM58INfS2QFYYRuDvLbR9VIVdV8tlpPLwY3aety3X8cHMA0GCSqGSIb3DQEBCwUAA4IBAQBwkU/Z3EXUGIYWjYMod+KjBWCiKD231hLuiEoyxHmdhA9Qt8/0NlfviuYGFeZpEGkM9ZLocixQ+dqW+7oHdutvMjw8BHfGJlTi//go996X1C4IpWMQI476EXNJBADWstGpwkbzmiTacND1NIBfy+CD62gO2FB9A9gA2ASVaPo437lc3MHQ6wl1rvTKWu+DkOvwzpYahMrSthxqTVxAuZhxAGjgZDsjCzfdsdmwANdjJTZ9qOALStTGZljJdAYH0vdw4mmTBQq4vK9x2c/+7jA+nPge0lslrRz1KocNEiNz7HJPZBFSrFvugM0RuTpNpntuii7Mhkj66tSNFcEKX+v+\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -359,22 +366,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (28)"
+              "severity"     : "OK",
+              "finding"      : "88 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2026-07-27 10:41"
+              "finding"      : "2026-10-03 00:47"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "2026-10-25 10:41"
+              "severity"     : "OK",
+              "finding"      : "2027-01-01 00:47"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -395,7 +402,7 @@
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://yr1.c.lencr.org/51.crl"
+              "finding"      : "http://yr1.c.lencr.org/123.crl"
           }
 ,         {
               "id"           : "cert_ocspURL",
@@ -563,7 +570,7 @@
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1790481074"
+              "finding"      : "1791088125"
           }
 ,         {
               "id"           : "HTTP_headerAge",
@@ -577,7 +584,7 @@
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "365 days (=31536000 seconds) > 15552000 seconds"
+              "finding"      : "730 days (=63072000 seconds) > 15552000 seconds"
           }
 ,         {
               "id"           : "HSTS_subdomains",
@@ -590,8 +597,8 @@
               "id"           : "HSTS_preload",
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "domain is NOT marked for preloading"
+              "severity"     : "OK",
+              "finding"      : "domain IS marked for preloading"
           }
 ,         {
               "id"           : "HPKP",
@@ -655,7 +662,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "X-Varnish: 1459203248 1459468169"
+              "finding"      : "X-Varnish: 513545732 510072210X-Varnish: 258735035"
           }
 ,         {
               "id"           : "heartbleed",
@@ -778,7 +785,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=2184D61ED88C711899E65AD2FBBA32AF763B4D628CA77345328D16E5C5B49FCA"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=33287F99F6DD8E6A9EEC4F3518D589F75B23C6CE661D82A20E64187916E5191A"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1154,6 +1161,6 @@
               "ip"           : "www.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "61"
+              "finding"      : "62"
           }
 ]
