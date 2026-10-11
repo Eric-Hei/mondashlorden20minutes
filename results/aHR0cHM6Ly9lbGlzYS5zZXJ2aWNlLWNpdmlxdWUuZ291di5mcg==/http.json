@@ -12,16 +12,16 @@
       "max-forwards": "20",
       "via": "1.1 leto-p ()",
       "connection": "close",
-      "x-correlationid": "Id-c5d5c16afa41cf5200b737ea 0; Id-c5d5c16afb414afcb34039ea 0",
+      "x-correlationid": "Id-6d0ccb6a36ed0f2583c32561 0; Id-6d0ccb6a86efa7d848d12537 0",
       "cache-control": "no-cache",
-      "date": "Sun, 04 Oct 2026 04:27:49 GMT",
+      "date": "Sun, 11 Oct 2026 04:11:25 GMT",
       "last-modified": "Wed, 31 May 2023 08:41:50 GMT",
       "pragma": "no-cache",
       "set-cookie": [
-        "api-gateway-8380=186128300.48160.0000; path=/; Httponly",
+        "api-gateway-8380=169351084.48160.0000; path=/; Httponly",
         "civiq=186128300.48160.0000; path=/; Httponly; Secure",
-        "TS01c3b0f5=01b74c0fdda4de0aa2d9c59c658fbfb82900a2cfdc5979d018489148d974f77e4cc5cc551f41d03de723f498de2bacce0e25eb8914; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
-        "TS01c3b0f5026=01c5582115c2a92fc99118935b225705bc42278f556e338d477f341be63cf32b61c6f7b9ecf9a3b0bee7fc3c0c787bdeb79a48abe1f557d71cff31ecdf61256f3947fac9e8; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly"
+        "TS01c3b0f5=01b74c0fdd8bc436bab488a0a268c59d2944d9d412c4126f6a9a3161fbff98733fb34831682b2eaf5497bcc723c161e6574e6ea256; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly",
+        "TS01c3b0f5026=01c5582115a8e2254b31fae0247aea769a4c7fd6af5ed0990a97f163f67b149b369e4a1dfb621e442fa8be54fadf6ff3351dfd1567a81f3c7000b8d8faa11ddc3591daf0a1; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly"
       ],
       "content-type": "text/html",
       "strict-transport-security": "max-age=31536000; includeSubDomains",
