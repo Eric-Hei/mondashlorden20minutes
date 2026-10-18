@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln playlifeconnect.netlify.app</pre>
-<p class="lead">Sun Oct 11 04:27:21 2026 – Sun Oct 11 04:28:04 2026<br>1 hosts scanned.
+<p class="lead">Sun Oct 18 03:24:18 2026 – Sun Oct 18 03:25:01 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -124,34 +124,29 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 <h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Date: Sun, 11 Oct 2026 04:27:31 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01M4MKEJJQMAD04H2JK75Q42MZ
-    Content-Length: 0
-  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
+  DNSVersionBindReqTCP, GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, oracle-tns: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Date: Sun, 18 Oct 2026 03:24:30 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01M56GM7AYJ9JE19CBZVHH911T
+    Content-Length: 0
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 11 Oct 2026 04:27:31 GMT
+    Date: Sun, 18 Oct 2026 03:24:30 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M4MKEJEFT6TNBX8XZ9FAGVMN
+    X-Nf-Request-Id: 01M56GM79ED63V2CF6AAZT7BM0
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 11 Oct 2026 04:27:31 GMT
+    Date: Sun, 18 Oct 2026 03:24:30 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M4MKEJG7P7ME0F4CE8JW61ZF
-    Content-Length: 0
-  OfficeScan: 
-    HTTP/1.1 400 Bad Request: missing required Host header
-    Content-Type: text/plain; charset=utf-8
-    Connection: close
-    Request: missing required Host header</pre>
+    X-Nf-Request-Id: 01M56GM7AEZFHF0WDSW20W5MV2
+    Content-Length: 0</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
@@ -163,38 +158,33 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
+<h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 11 Oct 2026 04:27:37 GMT
+    Date: Sun, 18 Oct 2026 03:24:36 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M4MKEQQRECC4AK4P7KB5679G
+    X-Nf-Request-Id: 01M56GMCBJZHMJMXNEMM2MMXP3
     Content-Length: 0
-  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, Socks5, oracle-tns: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
   GetRequest: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 11 Oct 2026 04:27:36 GMT
+    Date: Sun, 18 Oct 2026 03:24:35 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M4MKEQG9SACZR6JSCJKVE4GR
+    X-Nf-Request-Id: 01M56GMC87DJRSG2RNHR55Y6VD
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
-    Date: Sun, 11 Oct 2026 04:27:36 GMT
+    Date: Sun, 18 Oct 2026 03:24:36 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M4MKEQM1G0Z06XWPBDJFN44V
-    Content-Length: 0
-  OfficeScan: 
-    HTTP/1.1 400 Bad Request: missing required Host header
-    Content-Type: text/plain; charset=utf-8
-    Connection: close
-    Request: missing required Host header</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
+    X-Nf-Request-Id: 01M56GMC9WH5E583FY0E3DYKFJ
+    Content-Length: 0</pre>
 </td></tr>
 </tbody>
 </table></div>
