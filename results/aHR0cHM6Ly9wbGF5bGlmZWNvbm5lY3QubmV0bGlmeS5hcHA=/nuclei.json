@@ -33,14 +33,14 @@
       },
       "type": "dns",
       "host": "playlifeconnect.netlify.app",
-      "matched-at": "3KqnMEQreptd6CMHqYKWfJQQYnW-3KqnMEQreptd6CMHqYKWfJQQYnW.playlifeconnect.netlify.app",
+      "matched-at": "3LAaB1l5LNcTUEkz0n08RP4MOtM-3LAaB1l5LNcTUEkz0n08RP4MOtM.playlifeconnect.netlify.app",
       "extracted-results": [
-        "52.52.192.191",
-        "13.52.188.95"
+        "18.208.88.157",
+        "98.84.224.111"
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 59709\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;3KqnMEQreptd6CMHqYKWfJQQYnW-3KqnMEQreptd6CMHqYKWfJQQYnW.playlifeconnect.netlify.app.\tIN\t A\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 59709\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;3KqnMEQreptd6CMHqYKWfJQQYnW-3KqnMEQreptd6CMHqYKWfJQQYnW.playlifeconnect.netlify.app.\tIN\t A\n\n;; ANSWER SECTION:\n3KqnMEQreptd6CMHqYKWfJQQYnW-3KqnMEQreptd6CMHqYKWfJQQYnW.playlifeconnect.netlify.app.\t120\tIN\tA\t52.52.192.191\n3KqnMEQreptd6CMHqYKWfJQQYnW-3KqnMEQreptd6CMHqYKWfJQQYnW.playlifeconnect.netlify.app.\t120\tIN\tA\t13.52.188.95\n",
-      "timestamp": "2026-10-18T03:25:20.5839569Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 4782\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;3LAaB1l5LNcTUEkz0n08RP4MOtM-3LAaB1l5LNcTUEkz0n08RP4MOtM.playlifeconnect.netlify.app.\tIN\t A\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 4782\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;3LAaB1l5LNcTUEkz0n08RP4MOtM-3LAaB1l5LNcTUEkz0n08RP4MOtM.playlifeconnect.netlify.app.\tIN\t A\n\n;; ANSWER SECTION:\n3LAaB1l5LNcTUEkz0n08RP4MOtM-3LAaB1l5LNcTUEkz0n08RP4MOtM.playlifeconnect.netlify.app.\t120\tIN\tA\t98.84.224.111\n3LAaB1l5LNcTUEkz0n08RP4MOtM-3LAaB1l5LNcTUEkz0n08RP4MOtM.playlifeconnect.netlify.app.\t120\tIN\tA\t18.208.88.157\n",
+      "timestamp": "2026-10-25T03:33:11.451283441Z",
       "matcher-status": true
     }
   ]
