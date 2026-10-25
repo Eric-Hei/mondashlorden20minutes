@@ -47,7 +47,7 @@
       ],
       "request": "content = template.http_all_headers\nconst setCookieLines = content\n    .split(/\\r\\n/)\n    .filter(line => line.trim().toLowerCase().startsWith('set-cookie:'***\n\nconst nonHttpOnlyCookies = setCookieLines.filter(line => !line.toLowerCase().includes('httponly'));\n\nconst cookieNames = nonHttpOnlyCookies.map(line => {\n    const match = line.match(/set-cookie:***\n    return match ? match[1] : null;\n}).filter(Boolean);\ncookieNames",
       "response": "[bot_mitigation_cookie]",
-      "timestamp": "2026-10-18T03:21:12.392227266Z",
+      "timestamp": "2026-10-25T03:31:20.999832633Z",
       "matcher-status": true
     },
     {
@@ -97,7 +97,7 @@
       ],
       "request": "content = template.http_all_headers\nconst setCookieLines = content\n    .split(/\\r\\n/)\n    .filter(line => line.trim().toLowerCase().startsWith('set-cookie:'***\nconst nonSecureCookies = setCookieLines.filter(line => !line.toLowerCase().includes('secure'));\nconst cookieNames = nonSecureCookies.map(line => {\n    const match = line.match(/set-cookie:***\n    return match ? match[1] : null;\n}).filter(Boolean);\ncookieNames",
       "response": "[bot_mitigation_cookie]",
-      "timestamp": "2026-10-18T03:21:12.84788585Z",
+      "timestamp": "2026-10-25T03:31:22.367983526Z",
       "matcher-status": true
     }
   ]
