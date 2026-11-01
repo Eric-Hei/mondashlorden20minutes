@@ -1,15 +1,15 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C+",
+    "grade": "B+",
     "error": null,
-    "score": 60,
+    "score": 80,
     "statusCode": 200,
-    "testsFailed": 2,
-    "testsPassed": 8,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 25 Oct 2026 03:20:51 GMT",
+      "date": "Sun, 01 Nov 2026 04:33:31 GMT",
       "last-modified": "Mon, 11 May 2026 08:16:34 GMT",
       "etag": "\"111d-651865d601a23\"",
       "accept-ranges": "bytes",
@@ -24,7 +24,7 @@
       "connection": "close",
       "set-cookie": [
         "civiq=1829904044.55839.0000; path=/; Httponly; Secure",
-        "TS01c3b0f5=01b74c0fdd79ccd4fa466e16baa5ee584c08af004940f9ac4518f08f60d9b989fc04ab5b6aa7bf03a07a8627db086bfbef38e9b9be; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly"
+        "TS01c3b0f5=01b74c0fddc59e423d9a80c1a30754551c6a2d4bfc31dd3714b422e6784d46c7a44b99a149816baaaf94e8d44e23ead65529a3a4fe; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly"
       ],
       "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
@@ -161,12 +161,12 @@
     },
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
-      "pass": false,
-      "result": "hsts-not-implemented-no-https",
-      "scoreModifier": -20,
-      "data": null,
-      "includeSubDomains": false,
-      "maxAge": null,
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 31536000,
       "preload": false,
       "preloaded": false
     },
