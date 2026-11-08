@@ -367,7 +367,7 @@
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "53 >= 30 days"
+              "finding"      : "39 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,21 +556,21 @@
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "302 Found ('/')"
+              "finding"      : "200 OK ('/')"
           }
 ,         {
               "id"           : "HTTP_clock_skew",
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-2 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1792898448"
+              "finding"      : "1794112638"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -612,35 +612,21 @@
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "X-Aspnet-Version: 4.0.30319, X-Powered-By: ASP.NET"
+              "finding"      : "X-Powered-By: ASP.NET"
           }
 ,         {
               "id"           : "cookie_count",
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1 at '/' (30x detected, better try target URL of 30x)"
+              "finding"      : "0 at '/'"
           }
 ,         {
-              "id"           : "cookie_secure",
+              "id"           : "security_headers",
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "All (1) at '/' marked as secure"
-          }
-,         {
-              "id"           : "cookie_httponly",
-              "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "All (1) at '/' marked as HttpOnly (30x detected, better try target URL of 30x)"
-          }
-,         {
-              "id"           : "Cache-Control",
-              "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "private"
+              "severity"     : "MEDIUM",
+              "finding"      : "--"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1147,6 +1133,6 @@
               "ip"           : "oscar.service-civique.gouv.fr/37.59.251.196",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "59"
+              "finding"      : "75"
           }
 ]

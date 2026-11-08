@@ -1,30 +1,15 @@
 {
   "trackers": [],
-  "cookies": [
-    {
-      "name": "ASP.NET_SessionId",
-      "value": "qoljwgs4eezy0gebqpiukany",
-      "domain": "oscar.service-civique.gouv.fr",
-      "path": "/",
-      "expires": -1,
-      "size": 41,
-      "httpOnly": true,
-      "secure": true,
-      "session": true,
-      "sameSite": "Lax",
-      "priority": "Medium",
-      "sourceScheme": "Secure",
-      "sameParty": false
-    }
-  ],
+  "cookies": [],
   "headers": {
-    "cache-control": "private",
-    "content-length": "11039",
-    "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 25 Oct 2026 03:20:08 GMT",
+    "accept-ranges": "bytes",
+    "content-length": "1618",
+    "content-type": "text/html",
+    "date": "Sun, 08 Nov 2026 04:36:28 GMT",
+    "etag": "\"d59df6db416cdd1:0\"",
+    "last-modified": "Wed, 04 Nov 2026 09:50:01 GMT",
     "server": "Microsoft-IIS/8.5",
     "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
-    "x-aspnet-version": "4.0.30319",
     "x-powered-by": "ASP.NET"
   },
   "endpoints": [
