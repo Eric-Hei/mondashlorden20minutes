@@ -9,11 +9,11 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 01 Nov 2026 04:33:31 GMT",
-      "last-modified": "Mon, 11 May 2026 08:16:34 GMT",
-      "etag": "\"111d-651865d601a23\"",
+      "date": "Sun, 08 Nov 2026 04:37:16 GMT",
+      "last-modified": "Thu, 05 Nov 2026 14:04:37 GMT",
+      "etag": "\"111e-65f87f9d95dcc\"",
       "accept-ranges": "bytes",
-      "content-length": "4381",
+      "content-length": "4382",
       "x-frame-options": "SAMEORIGIN",
       "content-security-policy": "default-src 'self' blob:; connect-src 'self' *.asp-public.fr/; frame-ancestors 'self' blob: *.asp-public.fr/; frame-src 'self' blob: *.asp-public.fr/; worker-src 'self' blob: *.asp-public.fr/; object-src 'self' *.asp-public.fr/; style-src 'self' 'unsafe-inline'; font-src 'self' data: 'unsafe-inline'; img-src 'self' data: *.asp-public.fr/; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.asp-public.fr/; media-src 'self' data: *.asp-public.fr/;",
       "x-content-security-policy": "allow 'self' *.asp-public.fr; options eval-script inline-script; connect-src 'self' *.asp-public.fr; frame-ancestors 'self' blob: *.asp-public.fr; frame-src 'self' blob: *.asp-public.fr; object-src 'self' *.asp-public.fr; style-src 'self' 'unsafe-inline'; font-src 'self' data: 'unsafe-inline'; img-src 'self' data: *.asp-public.fr; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.asp-public.fr; media-src 'self' data: *.asp-public.fr;",
@@ -24,7 +24,7 @@
       "connection": "close",
       "set-cookie": [
         "civiq=1829904044.55839.0000; path=/; Httponly; Secure",
-        "TS01c3b0f5=01b74c0fddc59e423d9a80c1a30754551c6a2d4bfc31dd3714b422e6784d46c7a44b99a149816baaaf94e8d44e23ead65529a3a4fe; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly"
+        "TS01c3b0f5=01b74c0fdd48282fda79c7f15e215c19a86d378b32a28efaf6882f0873923c569ff417c18ba4c49da913ce5d67ae22970dce161421; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly"
       ],
       "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
@@ -139,16 +139,12 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-to-https",
+      "result": "redirection-not-needed-no-http",
       "scoreModifier": 0,
-      "destination": "https://elisa.service-civique.gouv.fr/civiqs/",
+      "destination": "https://elisa.service-civique.gouv.fr/",
       "redirects": true,
-      "route": [
-        "http://elisa.service-civique.gouv.fr/",
-        "https://elisa.service-civique.gouv.fr/",
-        "https://elisa.service-civique.gouv.fr/civiqs/"
-      ],
-      "statusCode": 200
+      "route": [],
+      "statusCode": null
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",

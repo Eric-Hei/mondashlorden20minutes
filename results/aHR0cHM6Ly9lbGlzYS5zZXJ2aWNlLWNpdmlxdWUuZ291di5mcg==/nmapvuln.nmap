@@ -1,11 +1,10 @@
-# Nmap 7.95 scan initiated Sun Nov  1 04:36:05 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln elisa.service-civique.gouv.fr
+# Nmap 7.95 scan initiated Sun Nov  8 04:41:33 2026 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln elisa.service-civique.gouv.fr
 Nmap scan report for elisa.service-civique.gouv.fr (217.109.233.83)
-Host is up (0.14s latency).
+Host is up (0.12s latency).
 rDNS record for 217.109.233.83: d96de953.fsp.oleane.fr
-Not shown: 998 filtered tcp ports (no-response)
-PORT    STATE SERVICE    VERSION
-80/tcp  open  http?
-443/tcp open  tcpwrapped
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+80/tcp open  http?
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Nov  1 04:39:22 2026 -- 1 IP address (1 host up) scanned in 197.48 seconds
+# Nmap done at Sun Nov  8 04:44:44 2026 -- 1 IP address (1 host up) scanned in 191.25 seconds
