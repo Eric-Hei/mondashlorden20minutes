@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.95</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln playlifeconnect.netlify.app</pre>
-<p class="lead">Sun Nov  1 04:45:52 2026 – Sun Nov  1 04:46:36 2026<br>1 hosts scanned.
+<p class="lead">Sun Nov  8 04:49:31 2026 – Sun Nov  8 04:50:12 2026<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -120,38 +120,33 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
-<h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:golang:go">cpe:/a:golang:go</a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.1 400 Bad Request
-    Date: Sun, 01 Nov 2026 04:46:03 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01M6APVKA2R44Z12SS77M2WZKT
-    Connection: close
-  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
+  DNSVersionBindReqTCP, GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, oracle-tns: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
+  FourOhFourRequest: 
+    HTTP/1.1 400 Bad Request
+    Date: Sun, 08 Nov 2026 04:49:41 GMT
+    Server: Netlify
+    X-Nf-Request-Id: 01M6WQV8XD9796WMAYGJ7PJNFZ
+    Connection: close
   GetRequest: 
     HTTP/1.1 400 Bad Request
-    Date: Sun, 01 Nov 2026 04:46:03 GMT
+    Date: Sun, 08 Nov 2026 04:49:41 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M6APVK21GB3CA87QDT2D34B2
+    X-Nf-Request-Id: 01M6WQV8VV7807BJ397D82EVHJ
     Connection: close
   HTTPOptions: 
     HTTP/1.1 400 Bad Request
-    Date: Sun, 01 Nov 2026 04:46:03 GMT
+    Date: Sun, 08 Nov 2026 04:49:41 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M6APVK51C9FK7SGA0WV54XE1
-    Connection: close
-  OfficeScan: 
-    HTTP/1.1 400 Bad Request: missing required Host header
-    Content-Type: text/plain; charset=utf-8
-    Connection: close
-    Request: missing required Host header</pre>
+    X-Nf-Request-Id: 01M6WQV8WVAV0R2YGJME7NYH2J
+    Connection: close</pre>
+<h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
@@ -167,26 +162,26 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
     HTTP/1.1 400 Bad Request
-    Date: Sun, 01 Nov 2026 04:46:09 GMT
+    Date: Sun, 08 Nov 2026 04:49:46 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M6APVRMT49EBQDEH0FSGSEZD
+    X-Nf-Request-Id: 01M6WQVDY1DB6SZ2R66QVJ60NY
     Connection: close
-  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
+  GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5, oracle-tns: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
   GetRequest: 
     HTTP/1.1 400 Bad Request
-    Date: Sun, 01 Nov 2026 04:46:08 GMT
+    Date: Sun, 08 Nov 2026 04:49:46 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M6APVR8H2GHWQEQ9EZ2Y212Y
+    X-Nf-Request-Id: 01M6WQVDTJAMJ73BHCFPP6NQ35
     Connection: close
   HTTPOptions: 
     HTTP/1.1 400 Bad Request
-    Date: Sun, 01 Nov 2026 04:46:08 GMT
+    Date: Sun, 08 Nov 2026 04:49:46 GMT
     Server: Netlify
-    X-Nf-Request-Id: 01M6APVREV38RKC9V8KX3SR42G
+    X-Nf-Request-Id: 01M6WQVDWCYE3BYDMX038S5HWM
     Connection: close
   OfficeScan: 
     HTTP/1.1 400 Bad Request: missing required Host header
