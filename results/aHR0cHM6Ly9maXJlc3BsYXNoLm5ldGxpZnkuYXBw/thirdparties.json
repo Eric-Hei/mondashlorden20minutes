@@ -25,17 +25,17 @@
     "cache-status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
     "content-encoding": "br",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 01 Nov 2026 04:38:04 GMT",
-    "etag": "\"70b7a413445c55800ba31fe109f9cc0a-ssl-df\"",
+    "date": "Sun, 08 Nov 2026 04:41:43 GMT",
+    "etag": "W/\"70b7a413445c55800ba31fe109f9cc0a-ssl\"",
     "server": "Netlify",
     "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
     "vary": "Accept-Encoding",
-    "x-nf-request-id": "01M6APCZBQG66JXRGQVAC340JB"
+    "x-nf-request-id": "01M6WQCNY2DSNFTWYQ76PE05WG"
   },
   "endpoints": [
     {
       "hostname": "firesplash.netlify.app",
-      "ip": "18.208.88.157",
+      "ip": "98.84.224.111",
       "geoip": {
         "city": {
           "geoname_id": 4744870,
@@ -79,7 +79,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 50,
+          "accuracy_radius": 20,
           "latitude": 39.0469,
           "longitude": -77.4903,
           "metro_code": 511,
@@ -122,7 +122,7 @@
     },
     {
       "hostname": "unpkg.com",
-      "ip": "104.18.1.22",
+      "ip": "104.18.0.22",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,
