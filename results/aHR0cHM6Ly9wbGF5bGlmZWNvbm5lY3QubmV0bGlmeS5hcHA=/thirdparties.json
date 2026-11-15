@@ -20,14 +20,15 @@
   "cookies": [],
   "headers": {
     "accept-ranges": "bytes",
-    "age": "0",
+    "age": "98",
     "cache-control": "public,max-age=0,must-revalidate",
-    "cache-status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+    "cache-status": "\"Netlify Edge\"; hit; ttl=31535902",
     "content-encoding": "br",
+    "content-length": "446",
     "content-security-policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.supabase.in wss://*.supabase.in; media-src 'self' data: blob: https:; manifest-src 'self'",
     "content-type": "text/html; charset=UTF-8",
     "cross-origin-opener-policy": "same-origin",
-    "date": "Sun, 08 Nov 2026 04:47:53 GMT",
+    "date": "Sun, 15 Nov 2026 05:10:00 GMT",
     "etag": "W/\"f63f1761288ff3c96e3ce43b799a8156-ssl\"",
     "permissions-policy": "accelerometer=(), autoplay=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
     "referrer-policy": "strict-origin-when-cross-origin",
@@ -36,7 +37,7 @@
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
     "x-frame-options": "DENY",
-    "x-nf-request-id": "01M6WQQZQ7P0D0MBHPVG00WYPN"
+    "x-nf-request-id": "01M7ESSGCD9MXWNNADMW31T5JN"
   },
   "endpoints": [
     {
