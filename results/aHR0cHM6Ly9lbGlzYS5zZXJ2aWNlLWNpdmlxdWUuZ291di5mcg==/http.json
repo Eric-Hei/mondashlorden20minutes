@@ -9,7 +9,7 @@
     "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
-      "date": "Sun, 08 Nov 2026 04:37:16 GMT",
+      "date": "Sun, 15 Nov 2026 04:57:00 GMT",
       "last-modified": "Thu, 05 Nov 2026 14:04:37 GMT",
       "etag": "\"111e-65f87f9d95dcc\"",
       "accept-ranges": "bytes",
@@ -24,7 +24,7 @@
       "connection": "close",
       "set-cookie": [
         "civiq=1829904044.55839.0000; path=/; Httponly; Secure",
-        "TS01c3b0f5=01b74c0fdd48282fda79c7f15e215c19a86d378b32a28efaf6882f0873923c569ff417c18ba4c49da913ce5d67ae22970dce161421; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly"
+        "TS01c3b0f5=01b74c0fdddc82f9366f42044e29ebd251952511a09c367b484c99f6d38faab2fa97d30499840b95fbc6942b34d2c7aa7e8f9fd433; Path=/; Domain=.elisa.service-civique.gouv.fr; Secure; HttpOnly"
       ],
       "strict-transport-security": "max-age=31536000; includeSubDomains"
     }
@@ -139,12 +139,16 @@
     "redirection": {
       "expectation": "redirection-to-https",
       "pass": true,
-      "result": "redirection-not-needed-no-http",
+      "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://elisa.service-civique.gouv.fr/",
+      "destination": "https://elisa.service-civique.gouv.fr/civiqs/",
       "redirects": true,
-      "route": [],
-      "statusCode": null
+      "route": [
+        "http://elisa.service-civique.gouv.fr/",
+        "https://elisa.service-civique.gouv.fr/",
+        "https://elisa.service-civique.gouv.fr/civiqs/"
+      ],
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
